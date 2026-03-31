@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@source "../components";
+@source "../app";
+
+@theme {
+  --color-foreground: #FED7AA;
+  --color-background: #0A0E1A;
+  --color-accent: #86B8BE;
+  --color-orange: #F97316;
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+/* Custom utilities */
+.glass {
+  @apply backdrop-blur-xl border border-white/5 bg-white/5;
+}
+
+.glass-sidebar {
+  background: linear-gradient(145deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.025) 100%);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.07), 0 0 0 1px rgba(134,184,190,0.06);
+}
+
+.text-stroke-orange {
+  -webkit-text-stroke: 0.6px rgba(251, 146, 60, 0.65);
+  paint-order: stroke fill;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-amber-300;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0E1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A1E2A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2A2E3A;
+}
+
+/* Thin scrollbar for sidebars */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(249,115,22,0.2);
+  border-radius: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
