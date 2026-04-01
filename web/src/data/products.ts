@@ -922,9 +922,9 @@ export const products: Product[] = [
     "price": "59,00 €",
     "oldPrice": "79,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-250-254-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
+      "https://c1.neweggimages.com/ProductImageOriginal/20-250-254-01.jpg"
     ],
     "description": "NVMe Gen4 acessível com até 4,150 MB/s de leitura. Perfeita para armazenamento de jogos e sistema operativo com fiabilidade WD comprovada.",
     "badge": "Acessível",
@@ -943,9 +943,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-242-731-06.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg"
+      "https://c1.neweggimages.com/ProductImageOriginal/20-242-731-06.jpg"
     ],
     "description": "2TB de armazenamento NVMe Gen4 ao melhor preço por gigabyte. Até 3,500 MB/s de leitura, ideal como drive secundário ou para bibliotecas de jogos grandes.",
     "badge": "Melhor €/GB",
@@ -964,9 +964,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-156-299-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
+      "https://c1.neweggimages.com/ProductImageOriginal/20-156-299-01.jpg"
     ],
     "description": "NVMe Gen4 da Micron com 5,000 MB/s de leitura. Excelente desempenho para o preço com 2TB de capacidade. Software Crucial Storage Executive incluído.",
     "badge": "Custo-Benefício",
@@ -1005,9 +1005,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-248-194-06.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg"
+      "https://c1.neweggimages.com/ProductImageOriginal/20-248-194-06.png"
     ],
     "description": "NVMe Gen4 de topo com 7,300 MB/s e durabilidade extrema de 2,550 TBW. Heatsink incluído para instalação em PS5 ou PC sem preocupações térmicas.",
     "badge": "Durável",
@@ -1026,9 +1026,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-156-387-01.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
+      "https://c1.neweggimages.com/ProductImageOriginal/20-156-387-01.png"
     ],
     "description": "A NVMe mais rápida da Crucial com 7,400 MB/s de leitura graças ao controlador Phison E26. Microsoft DirectStorage ready para gaming de próxima geração.",
     "badge": "Gen4 Máximo",
@@ -1047,9 +1047,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "189,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/BU8YS2404160GLTKXE7.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg"
+      "https://c1.neweggimages.com/ProductImageOriginal/BU8YS2404160GLTKXE7.jpg"
     ],
     "description": "Controlador e NAND 176-layer da SK Hynix in-house. 7,000 MB/s com eficiência energética superior — ideal para portáteis e desktops.",
     "badge": "Eficiente",
@@ -1068,9 +1068,9 @@ export const products: Product[] = [
     "price": "139,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
+    "img": "https://cdn.shopify.com/s/files/1/0518/5073/9904/files/KTC-KC3000-KF3.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
+      "https://cdn.shopify.com/s/files/1/0518/5073/9904/files/KTC-KC3000-KF3.jpg"
     ],
     "description": "NVMe Gen4 de alto desempenho com 7,000 MB/s e dissipador de calor de grafeno. Controlador Phison E18 com NAND TLC 3D 176-layer.",
     "badge": "Alto Desempenho",
