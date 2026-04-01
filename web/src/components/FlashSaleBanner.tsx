@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Zap, Clock, ArrowRight, Flame } from "lucide-react";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -29,13 +30,38 @@ function getTimeLeft(endTime: Date): TimeLeft {
 }
 
 function CountdownDigit({ value, label }: { value: number; label: string }) {
+  const prevValue = useRef(value);
+  const [flipping, setFlipping] = useState(false);
+
+  useEffect(() => {
+    if (prevValue.current !== value) {
+      prevValue.current = value;
+      setFlipping(true);
+      const timer = setTimeout(() => setFlipping(false), 500);
+      return () => clearTimeout(timer);
+    }
+  }, [value]);
+
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-black/40 border border-orange-500/30 flex items-center justify-center backdrop-blur-md shadow-lg shadow-orange-500/10">
-        <span className="text-2xl sm:text-3xl font-black text-white tabular-nums" style={{ fontFamily: "var(--font-outfit)" }}>
+      <div
+        className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-black/40 border border-orange-500/30 flex items-center justify-center backdrop-blur-md shadow-lg shadow-orange-500/10 overflow-hidden"
+        style={{ perspective: "200px" }}
+      >
+        <span
+          className={cn(
+            "text-2xl sm:text-3xl font-black text-white tabular-nums",
+            flipping && "digit-flip-enter"
+          )}
+          style={{ fontFamily: "var(--font-outfit)" }}
+        >
           {String(value).padStart(2, "0")}
         </span>
         <div className="absolute inset-x-0 top-1/2 h-px bg-orange-500/10" />
+        {/* Shimmer on flip */}
+        {flipping && (
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-500/10 via-transparent to-transparent animate-pulse pointer-events-none" />
+        )}
       </div>
       <span className="text-[9px] font-bold uppercase tracking-widest text-orange-300/60 mt-1.5">
         {label}
@@ -150,9 +176,10 @@ export function FlashSaleBanner() {
             {/* Right: CTA */}
             <Link href="/produtos" className="shrink-0">
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(249,115,22,0.5)" }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-orange-500 text-white font-bold text-sm hover:bg-orange-400 transition-colors shadow-lg shadow-orange-500/30"
+                data-magnetic
+                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-orange-500 text-white font-bold text-sm hover:bg-orange-400 transition-colors shadow-lg shadow-orange-500/30 relative"
               >
                 Ver Ofertas
                 <ArrowRight size={16} />

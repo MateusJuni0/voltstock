@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { products, categories, Product } from "@/data/products";
 import { Plus, Heart, Star, Search, SlidersHorizontal, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
 import { ProductModal } from "./ProductModal";
+import { use3DTilt } from "@/hooks/use3DTilt";
+import { useCartFlight } from "./CartFlight";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -263,10 +265,12 @@ export function ProductsPage() {
   );
 }
 
-// ── ProductCard ────────────────────────────────────────────────────────────
+// ── ProductCard: True 3D Pop-Out ──────────────────────────────────
+// Same dramatic 3D as FeaturedProducts — image escapes card bounds
 
 function ProductCard({
   product,
+  index,
   onOpen,
 }: {
   product: Product;
@@ -275,82 +279,176 @@ function ProductCard({
 }) {
   const [isAdded, setIsAdded] = useState(false);
   const addItem = useCart((s) => s.addItem);
+  const { fireCartFlight } = useCartFlight();
+
+  const { tiltRef, glowRef, imgRef, shadowRef } = use3DTilt({
+    maxTilt: 14,
+    preset: "snappy",
+    perspective: 520,
+    hoverScale: 1.03,
+    glowFollow: true,
+    imageZ: 65,
+  });
+
+  const cardRef = useRef<HTMLDivElement>(null);
+  const imgElRef = useRef<HTMLImageElement>(null);
+
+  const setCardRef = useCallback(
+    (el: HTMLDivElement | null) => {
+      cardRef.current = el;
+      (tiltRef as React.MutableRefObject<HTMLElement | null>).current = el;
+    },
+    [tiltRef]
+  );
+
+  const setImgRef = useCallback(
+    (el: HTMLImageElement | null) => {
+      imgElRef.current = el;
+      (imgRef as React.MutableRefObject<HTMLElement | null>).current = el;
+    },
+    [imgRef]
+  );
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     addItem(product);
     setIsAdded(true);
+
+    if (imgElRef.current) {
+      const rect = imgElRef.current.getBoundingClientRect();
+      fireCartFlight({
+        imgSrc: product.img,
+        startX: rect.left + rect.width / 2,
+        startY: rect.top + rect.height / 2,
+      });
+    }
+
     setTimeout(() => setIsAdded(false), 2000);
   };
 
   return (
     <div
-      className="product-card group relative flex flex-col rounded-[2.5rem] bg-gradient-to-b from-white/[0.05] to-white/[0.02] border border-white/[0.08] overflow-hidden hover:border-orange-500/30 transition-all duration-500 shadow-2xl hover:shadow-[0_20px_60px_rgba(249,115,22,0.08),0_0_0_1px_rgba(249,115,22,0.15)] hover:-translate-y-2 hover:scale-[1.01]"
+      className="product-card relative h-full"
+      style={{ perspective: "520px" }}
     >
-      <div onClick={onOpen} className="flex flex-col flex-1 cursor-pointer">
-        {/* Badge */}
+      {/* Card: NO overflow:hidden so image pops out */}
+      <div
+        ref={setCardRef}
+        onClick={onOpen}
+        className="group relative flex flex-col rounded-[2rem] border border-white/[0.07] bg-gradient-to-b from-white/[0.05] to-white/[0.01] h-full cursor-pointer"
+        style={{
+          transformStyle: "preserve-3d",
+          willChange: "transform",
+          boxShadow: "0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.04)",
+        }}
+      >
+        {/* Cursor glow */}
+        <div
+          ref={glowRef as React.RefObject<HTMLDivElement>}
+          className="absolute inset-0 rounded-[2rem] pointer-events-none z-10 transition-opacity duration-300"
+          style={{ opacity: 0 }}
+        />
+
+        {/* Holographic shimmer */}
+        <div className="absolute inset-0 rounded-[2rem] pointer-events-none z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 overflow-hidden">
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(110deg, transparent 40%, rgba(249,115,22,0.07) 50%, transparent 60%)",
+              backgroundSize: "200% 100%",
+              animation: "shimmer 2.5s infinite",
+            }}
+          />
+        </div>
+
+        {/* Badge at Z+30 */}
         {product.badge && (
-          <span className="absolute top-6 left-6 z-10 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest bg-orange-500 text-white shadow-xl shadow-orange-500/30">
+          <span
+            className="absolute top-5 left-5 z-20 px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest bg-orange-500 text-white shadow-lg shadow-orange-500/40"
+            style={{ transform: "translateZ(30px)", transformStyle: "preserve-3d" }}
+          >
             {product.badge}
           </span>
         )}
 
-        {/* Image */}
-        <div className="relative aspect-square overflow-hidden bg-transparent p-6">
-          <div className="absolute inset-0 bg-gradient-to-b from-orange-500/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+        {/* Image area — tall, no overflow:hidden */}
+        <div
+          className="relative flex items-center justify-center pt-10 pb-2 px-6"
+          style={{ minHeight: "220px" }}
+        >
+          {/* Volumetric shadow disc */}
+          <div
+            ref={shadowRef as React.RefObject<HTMLDivElement>}
+            className="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-8 bg-black/60 rounded-full pointer-events-none"
+            style={{ transform: "translateZ(-10px)" }}
+          />
+
+          {/* Product image — springs to Z+65 on hover */}
           <img
+            ref={setImgRef}
             src={product.img}
             alt={product.name}
-            className="w-full h-full object-contain opacity-85 group-hover:opacity-100 group-hover:scale-[1.08] transition-all duration-700 ease-out drop-shadow-[0_10px_30px_rgba(134,184,190,0.15)]"
+            className="relative w-full max-w-[180px] h-[160px] object-contain z-20 pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+            style={{
+              transform: "translateZ(0px)",
+              willChange: "transform",
+              filter: "drop-shadow(0 15px 30px rgba(0,0,0,0.35))",
+            }}
           />
+
+          {/* Wishlist */}
           <button
-            onClick={(e) => e.stopPropagation()}
-            className="absolute top-6 right-6 p-3 rounded-full bg-black/50 backdrop-blur-md text-white/40 hover:text-rose-400 hover:bg-black/70 transition-all z-10 opacity-0 group-hover:opacity-100"
+            onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}
+            className="absolute top-5 right-5 p-2.5 rounded-xl bg-black/40 backdrop-blur-md text-white/30 hover:text-rose-400 hover:bg-black/60 transition-all z-30 opacity-0 group-hover:opacity-100"
+            style={{ transform: "translateZ(35px)", transformStyle: "preserve-3d" }}
           >
-            <Heart size={18} />
+            <Heart size={15} />
           </button>
         </div>
 
-        {/* Info */}
-        <div className="px-8 pb-8 flex-1 flex flex-col">
-          <div className="mb-6">
-            <p className="text-[10px] font-black tracking-[0.2em] text-orange-400/70 uppercase mb-3">
-              {product.category}
-            </p>
-            <h3
-              className="text-stroke-orange text-lg font-bold text-white mb-4 leading-tight group-hover:[text-shadow:0_0_20px_rgba(251,146,60,0.3)] transition-all duration-300"
-              style={{ fontFamily: "var(--font-outfit)" }}
-            >
-              {product.name}
-            </h3>
-            <div className="flex items-center gap-1.5">
-              {Array.from({ length: 5 }).map((_, j) => (
-                <Star
-                  key={j}
-                  size={14}
-                  className={
-                    j < Math.floor(Number(product.rating))
-                      ? "text-amber-400 fill-amber-400"
-                      : "text-white/15"
-                  }
-                />
-              ))}
-              <span className="text-xs font-bold text-white/30 ml-2">
-                {product.rating}
-              </span>
-            </div>
+        {/* Info section at Z+10 */}
+        <div
+          className="px-6 pb-6 pt-4 flex-1 flex flex-col border-t border-white/[0.05]"
+          style={{ transform: "translateZ(10px)", transformStyle: "preserve-3d" }}
+        >
+          <p className="text-[9px] font-black tracking-[0.25em] text-orange-400/50 uppercase mb-2">
+            {product.category}
+          </p>
+          <h3
+            className="text-[15px] font-bold text-white mb-3 leading-tight group-hover:text-orange-300 transition-colors duration-300 line-clamp-2"
+            style={{ fontFamily: "var(--font-outfit)" }}
+          >
+            {product.name}
+          </h3>
+
+          <div className="flex items-center gap-1 mb-5">
+            {Array.from({ length: 5 }).map((_, j) => (
+              <Star
+                key={j}
+                size={12}
+                className={
+                  j < Math.floor(Number(product.rating))
+                    ? "text-amber-400 fill-amber-400"
+                    : "text-white/10"
+                }
+              />
+            ))}
+            <span className="text-xs text-white/25 ml-1.5">{product.rating}</span>
           </div>
 
-          {/* Price + CTA */}
-          <div className="mt-auto flex items-center justify-between gap-4">
+          <div className="mt-auto flex items-center justify-between gap-3">
             <div className="flex flex-col">
               {product.oldPrice && (
-                <span className="text-xs text-white/25 line-through mb-0.5">
+                <span className="text-xs text-white/20 line-through mb-0.5">
                   {product.oldPrice}
                 </span>
               )}
-              <span className="text-xl font-black text-orange-300 group-hover:[text-shadow:0_0_16px_rgba(251,146,60,0.5)] transition-all duration-300">
+              <span
+                className="text-xl font-black text-orange-300"
+                style={{ textShadow: "0 0 16px rgba(251,146,60,0.25)" }}
+              >
                 {product.price}
               </span>
             </div>
@@ -358,10 +456,10 @@ function ProductCard({
             <button
               onClick={handleAddToCart}
               className={cn(
-                "relative flex items-center justify-center gap-2 h-14 px-5 rounded-2xl transition-all duration-500 font-bold text-sm overflow-hidden",
+                "relative flex items-center justify-center gap-2 h-12 rounded-xl transition-all duration-500 font-bold text-sm",
                 isAdded
                   ? "w-full bg-emerald-500 text-white shadow-lg shadow-emerald-500/30"
-                  : "w-14 bg-orange-500/10 border border-orange-500/20 text-orange-300 hover:bg-orange-500 hover:text-white hover:w-full hover:shadow-lg hover:shadow-orange-500/30"
+                  : "w-12 bg-orange-500/10 border border-orange-500/20 text-orange-300 hover:bg-orange-500 hover:text-white hover:w-full hover:shadow-lg hover:shadow-orange-500/30"
               )}
             >
               <AnimatePresence mode="wait">
@@ -373,7 +471,7 @@ function ProductCard({
                     exit={{ scale: 0, opacity: 0 }}
                     className="flex items-center gap-2 whitespace-nowrap"
                   >
-                    <Check size={18} className="shrink-0" />
+                    <Check size={16} className="shrink-0" />
                     <span>No Carrinho</span>
                   </motion.div>
                 ) : (
@@ -384,7 +482,7 @@ function ProductCard({
                     exit={{ opacity: 0 }}
                     className="flex items-center gap-2 whitespace-nowrap"
                   >
-                    <Plus size={20} className="shrink-0" />
+                    <Plus size={18} className="shrink-0" />
                     <span className="max-w-0 overflow-hidden group-hover:max-w-[80px] transition-all duration-500">
                       Adicionar
                     </span>

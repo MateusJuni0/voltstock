@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useMagnetic } from "@/hooks/useMagnetic";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +24,68 @@ const trustItems = [
   { icon: CreditCard, label: "MBWay & Stripe" },
   { icon: Headphones, label: "Suporte PT" },
 ];
+
+// ── Magnetic CTA Wrapper ─────────────────────────────────────────
+function MagneticButton({
+  children,
+  className,
+  href,
+  strength = 5,
+  radius = 150,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  href: string;
+  strength?: number;
+  radius?: number;
+}) {
+  const magnetRef = useMagnetic({ strength, radius, hoverScale: 1.06, preset: "snappy" });
+
+  return (
+    <Link href={href}>
+      <div
+        ref={magnetRef as React.RefObject<HTMLDivElement>}
+        data-magnetic
+        className={className}
+        style={{ willChange: "transform" }}
+      >
+        {children}
+      </div>
+    </Link>
+  );
+}
+
+// ── Spring Trust Badge ───────────────────────────────────────────
+function TrustBadge({
+  icon: Icon,
+  label,
+  index,
+}: {
+  icon: typeof Truck;
+  label: string;
+  index: number;
+}) {
+  const magnetRef = useMagnetic({
+    strength: 10,
+    radius: 80,
+    hoverScale: 1.08,
+    preset: "stiff",
+  });
+
+  return (
+    <div
+      ref={magnetRef as React.RefObject<HTMLDivElement>}
+      data-magnetic
+      className="flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm hover:border-orange-500/20 hover:bg-orange-500/[0.05] transition-colors duration-300"
+      style={{ willChange: "transform" }}
+    >
+      <Icon size={16} className="text-orange-400/70" />
+      <span className="text-xs font-bold text-orange-400/50 uppercase tracking-wider">
+        {label}
+      </span>
+    </div>
+  );
+}
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -111,7 +174,10 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* ── Animated background orbs ── */}
-      <div ref={orbsRef} className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      <div
+        ref={orbsRef}
+        className="absolute inset-0 z-0 pointer-events-none overflow-hidden"
+      >
         <div className="hero-orb absolute top-[15%] left-[10%] w-[400px] h-[400px] rounded-full bg-orange-500/[0.04] blur-[100px]" />
         <div className="hero-orb absolute top-[60%] right-[5%] w-[350px] h-[350px] rounded-full bg-blue-500/[0.03] blur-[120px]" />
         <div className="hero-orb absolute bottom-[10%] left-[30%] w-[300px] h-[300px] rounded-full bg-orange-600/[0.03] blur-[80px]" />
@@ -160,7 +226,10 @@ export function Hero() {
       </div>
 
       {/* ── Main content ── */}
-      <div ref={contentRef} className="relative z-10 max-w-[1280px] mx-auto px-6 w-full pt-28 pb-16">
+      <div
+        ref={contentRef}
+        className="relative z-10 max-w-[1280px] mx-auto px-6 w-full pt-28 pb-16"
+      >
         <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
           {/* Badge */}
           <motion.div
@@ -172,7 +241,11 @@ export function Hero() {
             <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-orange-500/10 border border-orange-500/20 backdrop-blur-md">
               <motion.div
                 animate={{ rotate: [0, 360] }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                transition={{
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
               >
                 <Zap size={14} className="text-orange-400" />
               </motion.div>
@@ -212,48 +285,48 @@ export function Hero() {
             emitida automaticamente.
           </p>
 
-          {/* CTAs */}
-          <div ref={ctasRef} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Link href="/produtos">
-              <motion.div
-                whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(249,115,22,0.5)" }}
-                whileTap={{ scale: 0.97 }}
-                className="group relative flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-lg rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.35)] cursor-pointer"
-              >
-                <span className="relative z-10">Explorar Catalogo</span>
-                <ArrowRight
-                  size={20}
-                  className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </motion.div>
-            </Link>
+          {/* Magnetic CTAs */}
+          <div
+            ref={ctasRef}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+          >
+            <MagneticButton
+              href="/produtos"
+              strength={4}
+              radius={180}
+              className="group relative flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-lg rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.35)] cursor-pointer"
+            >
+              <span className="relative z-10">Explorar Catalogo</span>
+              <ArrowRight
+                size={20}
+                className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            </MagneticButton>
 
-            <Link href="/produtos">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="flex items-center gap-2 px-8 py-5 rounded-full border border-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/10 hover:border-orange-500/40 transition-all duration-300 cursor-pointer backdrop-blur-md"
-              >
-                <Star size={16} className="text-amber-400" />
-                Ver Promocoes
-              </motion.div>
-            </Link>
+            <MagneticButton
+              href="/produtos"
+              strength={5}
+              radius={140}
+              className="flex items-center gap-2 px-8 py-5 rounded-full border border-orange-500/20 text-orange-400 font-semibold hover:bg-orange-500/10 hover:border-orange-500/40 transition-all duration-300 cursor-pointer backdrop-blur-md"
+            >
+              <Star size={16} className="text-amber-400" />
+              Ver Promocoes
+            </MagneticButton>
           </div>
 
-          {/* Trust badges */}
-          <div ref={trustRef} className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
-            {trustItems.map((item) => (
-              <motion.div
+          {/* Magnetic Trust badges */}
+          <div
+            ref={trustRef}
+            className="flex flex-wrap items-center justify-center gap-3 md:gap-4"
+          >
+            {trustItems.map((item, i) => (
+              <TrustBadge
                 key={item.label}
-                whileHover={{ y: -3, scale: 1.03 }}
-                className="flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] backdrop-blur-sm hover:border-orange-500/20 hover:bg-orange-500/[0.05] transition-all duration-300"
-              >
-                <item.icon size={16} className="text-orange-400/70" />
-                <span className="text-xs font-bold text-orange-400/50 uppercase tracking-wider">
-                  {item.label}
-                </span>
-              </motion.div>
+                icon={item.icon}
+                label={item.label}
+                index={i}
+              />
             ))}
           </div>
         </div>
@@ -268,12 +341,20 @@ export function Hero() {
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
           className="w-6 h-10 rounded-full border-2 border-orange-400/20 flex justify-center pt-2"
         >
           <motion.div
             animate={{ opacity: [0.3, 1, 0.3], y: [0, 6, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
             className="w-1 h-2 rounded-full bg-orange-400/60"
           />
         </motion.div>

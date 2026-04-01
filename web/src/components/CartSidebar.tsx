@@ -32,12 +32,12 @@ export function CartSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () 
             className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[2000]"
           />
 
-          {/* Sidebar */}
+          {/* Sidebar — spring wobbly entrance */}
           <motion.aside
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            transition={{ type: "spring", stiffness: 180, damping: 22, mass: 0.8 }}
             className="fixed top-0 right-0 bottom-0 w-full max-w-md bg-[#0A0E1A]/80 backdrop-blur-2xl border-l border-accent/10 z-[2001] shadow-2xl flex flex-col"
           >
             {/* Header */}

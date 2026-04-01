@@ -248,21 +248,29 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <button
               aria-label="Pesquisar"
+              data-magnetic
               onClick={() => router.push("/produtos")}
-              className="p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400"
+              className="p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400 relative"
             >
               <Search size={18} />
             </button>
             <button
               aria-label="Carrinho"
+              data-magnetic
               onClick={() => setCartOpen(true)}
               className="relative p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400"
             >
               <ShoppingCart size={18} />
               {itemCount > 0 && (
-                <span className="absolute top-1.5 right-1.5 w-5 h-5 bg-orange-500 text-white text-[10px] font-black rounded-full flex items-center justify-center shadow-[0_0_12px_rgba(249,115,22,0.5)]">
+                <motion.span
+                  key={itemCount}
+                  initial={{ scale: 0.5 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                  className="absolute top-1.5 right-1.5 w-5 h-5 bg-orange-500 text-white text-[10px] font-black rounded-full flex items-center justify-center shadow-[0_0_12px_rgba(249,115,22,0.5)]"
+                >
                   {itemCount}
-                </span>
+                </motion.span>
               )}
             </button>
 
@@ -276,12 +284,15 @@ export function Navbar() {
                     onClose={() => {}}
                   />
                 ) : (
-                  <button
+                  <motion.button
+                    whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(249,115,22,0.3)" }}
+                    whileTap={{ scale: 0.95 }}
                     onClick={() => setIsAuthOpen(true)}
-                    className="ml-1 px-4 py-2 rounded-xl text-sm font-medium border border-orange-500/50 text-orange-300 hover:bg-orange-500 hover:text-white transition-all duration-200"
+                    data-magnetic
+                    className="ml-1 px-4 py-2 rounded-xl text-sm font-medium border border-orange-500/50 text-orange-300 hover:bg-orange-500 hover:text-white transition-all duration-200 relative"
                   >
                     Entrar
-                  </button>
+                  </motion.button>
                 )}
               </div>
             )}

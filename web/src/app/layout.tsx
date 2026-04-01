@@ -6,6 +6,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingButtons } from "@/components/FloatingButtons";
 import { PromoBanner } from "@/components/PromoBanner";
+import { CustomCursor } from "@/components/CustomCursor";
+import { CartFlightProvider } from "@/components/CartFlight";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -53,13 +55,16 @@ export default function RootLayout({
           yGap={24}
           className="fixed inset-0 z-[1] opacity-60 pointer-events-none mix-blend-screen"
         />
-        <div className="relative z-[2] flex flex-col flex-1">
-          <PromoBanner />
-          <Navbar />
-          {children}
-          <Footer />
-          <FloatingButtons />
-        </div>
+        <CustomCursor />
+        <CartFlightProvider>
+          <div className="relative z-[2] flex flex-col flex-1">
+            <PromoBanner />
+            <Navbar />
+            {children}
+            <Footer />
+            <FloatingButtons />
+          </div>
+        </CartFlightProvider>
       </body>
     </html>
   );
