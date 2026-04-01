@@ -80,9 +80,9 @@ export const products: Product[] = [
     "price": "829,00 €",
     "oldPrice": "899,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sb3a7f6e8d2c94c3c8e5c2f4b6a1d3e7fN.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/14-137-855-04.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb3a7f6e8d2c94c3c8e5c2f4b6a1d3e7fN.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/14-137-855-04.png"
     ],
     "description": "A RTX 4070 Ti Super oferece desempenho excecional em 1440p e 4K com 16GB GDDR6X e arquitetura Ada Lovelace. DLSS 3 com Frame Generation para FPS extremos.",
     "badge": "1440p Beast",
@@ -101,9 +101,9 @@ export const products: Product[] = [
     "price": "429,00 €",
     "oldPrice": "479,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S7c8d2e5f1a3b4d6e9f0a1b2c3d4e5f6gH.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/14-137-797-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S7c8d2e5f1a3b4d6e9f0a1b2c3d4e5f6gH.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/14-137-797-01.jpg"
     ],
     "description": "Excelente desempenho 1080p e 1440p com suporte DLSS 3 e ray tracing. Eficiente em consumo energético com apenas 160W TDP, ideal para builds compactas.",
     "badge": "1080p King",
@@ -121,9 +121,9 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "309,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6dT.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/14-932-628-16.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6dT.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/14-932-628-16.jpg"
     ],
     "description": "A placa gráfica mais acessível da série RTX 40 com 8GB GDDR6 e suporte completo a DLSS 3. Perfeita para gaming 1080p com ray tracing ativado.",
     "badge": "Melhor Custo-Benefício",
@@ -142,9 +142,9 @@ export const products: Product[] = [
     "price": "899,00 €",
     "oldPrice": "1.049,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sf4e5d6c7b8a9f0e1d2c3b4a5f6e7d8c9K.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf4e5d6c7b8a9f0e1d2c3b4a5f6e7d8c9K.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg"
     ],
     "description": "A flagship da AMD com 24GB GDDR6 e arquitetura RDNA 3. Performance de topo em 4K com excelente rasterização e suporte FSR 3 com Frame Generation.",
     "badge": "AMD Flagship",
@@ -163,9 +163,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3dR.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-434-11.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3dR.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/14-202-434-11.jpg"
     ],
     "description": "16GB de VRAM GDDR6 para gaming 1440p sem compromissos. Arquitetura RDNA 3 com excelente eficiência energética e suporte FSR 3.",
     "badge": "1440p AMD",
@@ -184,9 +184,9 @@ export const products: Product[] = [
     "price": "269,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/S2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7eP.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-432-18.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7eP.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/14-202-432-18.jpg"
     ],
     "description": "Entrada no gaming 1080p com arquitetura RDNA 3. Suporte FSR 3 e excelente consumo energético com apenas 165W, perfeita para builds budget.",
     "badge": "Budget Pick",
@@ -205,9 +205,9 @@ export const products: Product[] = [
     "price": "619,00 €",
     "oldPrice": "679,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8L.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/14-932-681-11.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8L.jpg"
+      "https://c1.neweggimages.com/ProductImage/14-932-681-11.jpg"
     ],
     "description": "O sweet spot da geração Ada Lovelace com 12GB GDDR6X. Performance 1440p excecional com DLSS 3, ray tracing e eficiência de 220W TDP.",
     "badge": "Sweet Spot",
@@ -225,9 +225,9 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "239,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9Q.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/14-932-402-V01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9Q.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/14-932-402-V01.jpg"
     ],
     "description": "12GB de VRAM GDDR6 a um preço imbatível. Ainda relevante para gaming 1080p com ray tracing básico e DLSS 2. Excelente para builds económicas.",
     "badge": "Económica",
@@ -291,9 +291,9 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0W.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sae8958cccc4b48cba872f2083c9ead22L.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0W.jpg"
+      "https://ae01.alicdn.com/kf/Sae8958cccc4b48cba872f2083c9ead22L.jpg"
     ],
     "description": "6 cores e 12 threads Zen 4 com boost até 5.3 GHz. Entrada na plataforma AM5 com suporte DDR5 e PCIe 5.0 a um preço acessível.",
     "badge": "Melhor Valor AM5",
@@ -312,9 +312,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1X.jpg",
+    "img": "https://ae01.alicdn.com/kf/S700c05dab59c420788fa3279e4e82ab5n.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1X.jpg"
+      "https://ae01.alicdn.com/kf/S700c05dab59c420788fa3279e4e82ab5n.jpg"
     ],
     "description": "16 cores Zen 4 com 3D V-Cache de 128MB para o máximo em gaming e produtividade. O processador definitivo para quem não faz compromissos.",
     "badge": "Enthusiast",
@@ -333,9 +333,9 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sa7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2Y.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-118-470-07.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2Y.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-118-470-07.jpg"
     ],
     "description": "14 cores (6P + 8E) e 20 threads com boost até 5.3 GHz. O mid-range da Intel com performance gaming excelente e overclocking desbloqueado.",
     "badge": "Mid-Range Intel",
@@ -354,9 +354,9 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sb8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3Z.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-118-466-04.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3Z.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-118-466-04.jpg"
     ],
     "description": "20 cores (8P + 12E) e 28 threads com boost até 5.6 GHz. Multitasking extremo para gaming, streaming e criação de conteúdo em simultâneo.",
     "badge": "Produtividade",
@@ -374,9 +374,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "129,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sc9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4A.jpg",
+    "img": "https://ae01.alicdn.com/kf/Seb9989f929f64020b9a03b61e09b19f35.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4A.jpg"
+      "https://ae01.alicdn.com/kf/Seb9989f929f64020b9a03b61e09b19f35.jpg"
     ],
     "description": "6 cores Zen 3 que ainda dão conta de qualquer jogo atual. Excelente custo-benefício para upgrades em plataforma AM4 já existente.",
     "badge": "Budget King",
@@ -395,9 +395,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "209,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sd0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5B.jpg",
+    "img": "https://ae01.alicdn.com/kf/S27b0d840e3984c95946b64e2931f3d13w.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5B.jpg"
+      "https://ae01.alicdn.com/kf/S27b0d840e3984c95946b64e2931f3d13w.jpg"
     ],
     "description": "10 cores (6P + 4E) sem gráficos integrados para quem usa placa gráfica dedicada. Excelente performance por euro na plataforma LGA1700.",
     "badge": "Valor Imbatível",
@@ -416,9 +416,9 @@ export const products: Product[] = [
     "price": "379,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Se1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6C.jpg",
+    "img": "https://ae01.alicdn.com/kf/S0a1a72ff87f34e71bbffd8d530df94295.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6C.jpg"
+      "https://ae01.alicdn.com/kf/S0a1a72ff87f34e71bbffd8d530df94295.jpg"
     ],
     "description": "12 cores Zen 4 com boost até 5.6 GHz. Potência bruta para renderização, compilação e gaming de alta performance na plataforma AM5.",
     "badge": "Workstation",
@@ -436,9 +436,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "89,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sf2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7D.jpg",
+    "img": "https://ae01.alicdn.com/kf/S6991925c026c4c1aa219ae12ea9e1d55w.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7D.jpg"
+      "https://ae01.alicdn.com/kf/S6991925c026c4c1aa219ae12ea9e1d55w.jpg"
     ],
     "description": "4 cores e 8 threads Alder Lake a um preço de entrada. Surpreendente em gaming 1080p quando combinado com uma placa gráfica dedicada.",
     "badge": "Entry Level",
@@ -502,9 +502,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sa3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8E.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8E.jpg"
+      "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg"
     ],
     "description": "Micro-ATX compacta para Intel 12ª/13ª/14ª geração com WiFi 6E e VRM de 12+1+1 fases. Ideal para builds compactas sem sacrificar funcionalidades.",
     "badge": "Compacta",
@@ -523,9 +523,9 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9F.jpg",
+    "img": "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9F.jpg"
+      "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg"
     ],
     "description": "Robustez TUF Gaming com VRM de 12+2 fases para Ryzen 7000. PCIe 5.0, DDR5 e WiFi 6 com a fiabilidade militar certificada da ASUS.",
     "badge": "TUF Durável",
@@ -543,9 +543,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "139,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sc5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0G.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0G.jpg"
+      "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg"
     ],
     "description": "Plataforma AM4 madura e estável com VRM digital de 12+2 fases. Suporte DDR4 até 5400MHz OC e PCIe 4.0 x16 para Ryzen 5000.",
     "badge": "AM4 Clássica",
@@ -563,9 +563,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "119,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sd6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1H.jpg",
+    "img": "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1H.jpg"
+      "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg"
     ],
     "description": "Micro-ATX acessível para Intel 12ª/13ª geração com design Steel Legend icónico. VRM de 8 fases, 2 slots M.2 e saída HDMI 2.1.",
     "badge": "Budget Intel",
@@ -584,9 +584,9 @@ export const products: Product[] = [
     "price": "429,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Se7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2I.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2I.jpg"
+      "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg"
     ],
     "description": "Topo de gama AM5 com PCIe 5.0 duplo (GPU + M.2), VRM de 18+2 fases e WiFi 6E. Construída para overclockers e entusiastas exigentes.",
     "badge": "ROG Premium",
@@ -605,9 +605,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sf8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3J.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3J.jpg"
+      "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg"
     ],
     "description": "Motherboard de elite para Intel 14ª geração com VRM de 24+1+2 fases, DDR5-7800+ OC e design premium em preto e dourado. Feita para overclock extremo.",
     "badge": "OC Extreme",
@@ -626,9 +626,9 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "459,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sa9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4K.jpg",
+    "img": "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4K.jpg"
+      "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg"
     ],
     "description": "16+2+2 fases VRM twinned com 4 slots M.2 Gen5 e conectividade completa. A Aorus Master para builds AM5 de referência com design térmico Fins-Array III.",
     "badge": "Aorus Master",
@@ -646,9 +646,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "129,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sb0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5L.jpg",
+    "img": "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5L.jpg"
+      "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg"
     ],
     "description": "Micro-ATX acessível com WiFi 6E para Intel 12ª/13ª/14ª geração. VRM de 8+1+1 fases, DDR5 e 2 slots M.2 a um preço competitivo.",
     "badge": "WiFi Budget",
@@ -712,9 +712,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sc1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6M.jpg",
+    "img": "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6M.jpg"
+      "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png"
     ],
     "description": "Kit 2×16GB DDR5-5600 com dissipador de calor preto compacto. Compatível com Intel XMP 3.0 e AMD EXPO para facilidade de overclock.",
     "badge": "Preço/Performance",
@@ -733,9 +733,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sd2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7N.jpg",
+    "img": "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7N.jpg"
+      "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg"
     ],
     "description": "A linha premium da Corsair com dissipador Dominator em alumínio anodizado e iluminação Capellix RGB de 12 LEDs. DDR5-6200 CL32 com chips Samsung selecionados.",
     "badge": "Premium",
@@ -754,9 +754,9 @@ export const products: Product[] = [
     "price": "145,00 €",
     "oldPrice": "175,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Se3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8O.jpg",
+    "img": "https://ae01.alicdn.com/kf/S1f295a3c4ae54c55b8d936faa71ade6as.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8O.jpg"
+      "https://ae01.alicdn.com/kf/S1f295a3c4ae54c55b8d936faa71ade6as.png"
     ],
     "description": "A topo de gama da Kingston com DDR5-6400 CL32 e dissipador de calor agressivo. Otimizada para overclocking com chips Hynix A-Die selecionados.",
     "badge": "OC Ready",
@@ -775,9 +775,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sf4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9P.jpg",
+    "img": "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9P.jpg"
+      "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg"
     ],
     "description": "RGB difusor de zona completa com design futurista Delta. DDR5-6000 CL38 com perfis XMP 3.0 e AMD EXPO. Excelente relação qualidade/preço.",
     "badge": "RGB Acessível",
@@ -795,9 +795,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "49,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sa5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0Q.jpg",
+    "img": "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0Q.jpg"
+      "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg"
     ],
     "description": "Kit 2×8GB DDR5-5600 para builds budget. Perfil baixo compatível com qualquer cooler e suporte XMP 3.0 para configuração simples.",
     "badge": "Entry DDR5",
@@ -816,9 +816,9 @@ export const products: Product[] = [
     "price": "105,00 €",
     "oldPrice": "125,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sb6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1R.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sdc408c3879144e45b29d813fc072db2er.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1R.jpg"
+      "https://ae01.alicdn.com/kf/Sdc408c3879144e45b29d813fc072db2er.png"
     ],
     "description": "Design perfil baixo sem RGB para builds minimalistas. DDR5-6000 CL30 com excelente compatibilidade e estabilidade comprovada.",
     "badge": "Minimalista",
@@ -836,9 +836,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "59,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sc7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2S.jpg",
+    "img": "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2S.jpg"
+      "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png"
     ],
     "description": "Kit 2×16GB DDR4-3200 CL16 para upgrades em plataformas AM4 e LGA1700. Dissipador preto compacto com excelente compatibilidade.",
     "badge": "DDR4 Clássica",
@@ -856,9 +856,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "69,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/Sd8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3T.jpg",
+    "img": "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3T.jpg"
+      "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg"
     ],
     "description": "Kit 2×16GB DDR5-4800 JEDEC sem overclock. Memória fiável e acessível da Micron para quem quer DDR5 ao melhor preço sem complicações.",
     "badge": "DDR5 Básica",
@@ -922,9 +922,9 @@ export const products: Product[] = [
     "price": "59,00 €",
     "oldPrice": "79,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Se9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4U.jpg",
+    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4U.jpg"
+      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
     ],
     "description": "NVMe Gen4 acessível com até 4,150 MB/s de leitura. Perfeita para armazenamento de jogos e sistema operativo com fiabilidade WD comprovada.",
     "badge": "Acessível",
@@ -943,9 +943,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/Sf0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5V.jpg",
+    "img": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5V.jpg"
+      "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg"
     ],
     "description": "2TB de armazenamento NVMe Gen4 ao melhor preço por gigabyte. Até 3,500 MB/s de leitura, ideal como drive secundário ou para bibliotecas de jogos grandes.",
     "badge": "Melhor €/GB",
@@ -964,9 +964,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6W.jpg",
+    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6W.jpg"
+      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
     ],
     "description": "NVMe Gen4 da Micron com 5,000 MB/s de leitura. Excelente desempenho para o preço com 2TB de capacidade. Software Crucial Storage Executive incluído.",
     "badge": "Custo-Benefício",
@@ -984,9 +984,9 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "79,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7X.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/20-147-792-V01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7X.jpg"
+      "https://c1.neweggimages.com/ProductImage/20-147-792-V01.jpg"
     ],
     "description": "O SSD SATA mais vendido do mundo com 560 MB/s de leitura. Perfeito para upgrade de portáteis e PCs mais antigos sem suporte NVMe.",
     "badge": "SATA Referência",
@@ -1005,9 +1005,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8Y.jpg",
+    "img": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8Y.jpg"
+      "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg"
     ],
     "description": "NVMe Gen4 de topo com 7,300 MB/s e durabilidade extrema de 2,550 TBW. Heatsink incluído para instalação em PS5 ou PC sem preocupações térmicas.",
     "badge": "Durável",
@@ -1026,9 +1026,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9Z.jpg",
+    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9Z.jpg"
+      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
     ],
     "description": "A NVMe mais rápida da Crucial com 7,400 MB/s de leitura graças ao controlador Phison E26. Microsoft DirectStorage ready para gaming de próxima geração.",
     "badge": "Gen4 Máximo",
@@ -1047,9 +1047,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "189,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0A.jpg",
+    "img": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0A.jpg"
+      "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg"
     ],
     "description": "Controlador e NAND 176-layer da SK Hynix in-house. 7,000 MB/s com eficiência energética superior — ideal para portáteis e desktops.",
     "badge": "Eficiente",
@@ -1068,9 +1068,9 @@ export const products: Product[] = [
     "price": "139,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1B.jpg",
+    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1B.jpg"
+      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
     ],
     "description": "NVMe Gen4 de alto desempenho com 7,000 MB/s e dissipador de calor de grafeno. Controlador Phison E18 com NAND TLC 3D 176-layer.",
     "badge": "Alto Desempenho",
@@ -1114,9 +1114,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sa7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2C.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2C.jpg"
+      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
     ],
     "description": "A fonte mais popular para builds gaming com 850W 80+ Gold e cabos totalmente modulares. Modo zero-RPM e ATX 3.0 com conector 12VHPWR nativo.",
     "badge": "Best Seller",
@@ -1135,9 +1135,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3D.jpg",
+    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3D.jpg"
+      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
     ],
     "description": "Qualidade Seasonic premium com 750W 80+ Gold e cabos modulares. Ventoinha FDB de 120mm com modo Hybrid Fan Control para funcionamento silencioso.",
     "badge": "Fiável",
@@ -1156,9 +1156,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sc9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4E.jpg",
+    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4E.jpg"
+      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
     ],
     "description": "ATX 3.0 com conector 12VHPWR nativo e 80+ Gold. Ventoinha be quiet! 120mm de alta qualidade com operação ultra-silenciosa.",
     "badge": "Silenciosa",
@@ -1177,9 +1177,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5F.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5F.jpg"
+      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
     ],
     "description": "1000W com certificação 80+ Gold e tamanho compacto de 150mm. Totalmente modular com proteções OVP, UVP, OCP, OPP, SCP e OTP.",
     "badge": "Compacta 1000W",
@@ -1198,9 +1198,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Se1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6G.jpg",
+    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6G.jpg"
+      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
     ],
     "description": "A melhor fonte SFX do mercado com 750W e 80+ Platinum em formato compacto. Perfeita para builds ITX e caixas pequenas sem comprometer potência.",
     "badge": "ITX Champion",
@@ -1219,9 +1219,9 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "349,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sf2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7H.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7H.jpg"
+      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
     ],
     "description": "1300W ATX 3.0 com conector 12VHPWR e monitorização inteligente via MSI Center. Preparada para as GPUs mais exigentes como a RTX 4090/5090.",
     "badge": "Powerhouse",
@@ -1240,9 +1240,9 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "359,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sa3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8I.jpg",
+    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8I.jpg"
+      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
     ],
     "description": "A eficiência máxima com certificação 80+ Titanium. 1000W de potência premium com 12 anos de garantia e componentes de grau industrial.",
     "badge": "Titanium",
@@ -1260,9 +1260,9 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "109,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sb4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9J.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9J.jpg"
+      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
     ],
     "description": "850W modular com design minimalista NZXT. ATX 3.0 com conector 12VHPWR e cabos pretos flat para cable management limpo.",
     "badge": "Clean Build",
@@ -1281,9 +1281,9 @@ export const products: Product[] = [
     "price": "115,00 €",
     "oldPrice": "135,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sc5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0K.jpg",
+    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0K.jpg"
+      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
     ],
     "description": "ATX 3.0 com conector PCIe 5.0 nativo e 80+ Gold. Ventoinha hidráulica de 120mm com Smart Zero Fan para operação silenciosa em cargas baixas.",
     "badge": "ATX 3.0",
@@ -1347,9 +1347,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1L.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1L.jpg"
+      "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg"
     ],
     "description": "Design minimalista NZXT com painel frontal perfurado para airflow optimizado. 3 ventoinhas RGB incluídas e espaço para radiadores até 360mm.",
     "badge": "Clean Design",
@@ -1368,9 +1368,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Se7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2M.jpg",
+    "img": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2M.jpg"
+      "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg"
     ],
     "description": "A caixa mid-tower mais popular da Corsair com frente mesh de alto fluxo. 2 ventoinhas 120mm incluídas e USB-C frontal. O clássico que nunca falha.",
     "badge": "Clássico",
@@ -1388,9 +1388,9 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "79,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sf8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3N.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3N.jpg"
+      "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg"
     ],
     "description": "Excelente airflow a preço budget com frente mesh ultra-fina e 3 ventoinhas D-RGB de 120mm incluídas. Vidro temperado e espaço generoso.",
     "badge": "Budget Airflow",
@@ -1409,9 +1409,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sa9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4O.jpg",
+    "img": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4O.jpg"
+      "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg"
     ],
     "description": "Equilíbrio perfeito entre silêncio e airflow com mesh frontal e 3 Pure Wings 2 de 140mm. Iluminação ARGB discreta no painel frontal.",
     "badge": "Silent Airflow",
@@ -1430,9 +1430,9 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5P.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5P.jpg"
+      "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg"
     ],
     "description": "Full tower monstruosa com 200mm frontal e ecrã LCD integrado. Suporte para radiadores de 420mm e builds extremas com múltiplas GPUs.",
     "badge": "Enthusiast Tower",
@@ -1451,9 +1451,9 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sc1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6Q.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6Q.jpg"
+      "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg"
     ],
     "description": "Panorâmica com 3 painéis de vidro temperado para showcase total do hardware. Design invertido inovador com GPU montada verticalmente de fábrica.",
     "badge": "Showcase",
@@ -1472,9 +1472,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7R.jpg",
+    "img": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7R.jpg"
+      "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg"
     ],
     "description": "A irmã maior da 4000D com espaço para radiadores até 420mm. Painel frontal high-airflow, cable management RapidRoute e 2 ventoinhas 120mm incluídas.",
     "badge": "Big Brother",
@@ -1493,9 +1493,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Se3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8S.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8S.jpg"
+      "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg"
     ],
     "description": "A icónica O11 reinventada com suporte reversível, mesh frontal opcional e espaço para 3 radiadores de 360mm. A favorita dos custom loops.",
     "badge": "Dual Chamber",
@@ -1559,9 +1559,9 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "269,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sf4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9T.jpg",
+    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9T.jpg"
+      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
     ],
     "description": "AIO 360mm com ecrã IPS LCD de 2.1\" na bomba e 3 ventoinhas AF120 RGB Elite. Controlo total via iCUE com monitorização de temperaturas em tempo real.",
     "badge": "LCD Premium",
@@ -1580,9 +1580,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sa5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0U.jpg",
+    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0U.jpg"
+      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
     ],
     "description": "A melhor AIO em relação preço/performance com radiador de 360mm e bomba offset integrada. VRM cooling fan na bomba para refrigeração adicional da motherboard.",
     "badge": "Melhor Valor AIO",
@@ -1601,9 +1601,9 @@ export const products: Product[] = [
     "price": "69,00 €",
     "oldPrice": "85,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1V.jpg",
+    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1V.jpg"
+      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
     ],
     "description": "Dual tower air cooler com ecrã digital de temperatura integrado. 6 heatpipes de cobre e 2 ventoinhas de 120mm com 260W TDP máximo.",
     "badge": "Digital Air",
@@ -1621,9 +1621,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "109,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sc7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2W.jpg",
+    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2W.jpg"
+      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
     ],
     "description": "A lenda do arrefecimento a ar em versão all-black. Dual tower com 2 NF-A15 PWM de 140mm, 6 heatpipes e 250W TDP. Silêncio e performance sem rival.",
     "badge": "Lenda Air Cool",
@@ -1642,9 +1642,9 @@ export const products: Product[] = [
     "price": "79,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3X.jpg",
+    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3X.jpg"
+      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
     ],
     "description": "O novo air cooler premium da Corsair que rivaliza com AIOs de 240mm. Design de dupla torre com 2 ventoinhas NexFan de 140mm e 270W de capacidade.",
     "badge": "AIO Killer",
@@ -1663,9 +1663,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Se9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4Y.jpg",
+    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4Y.jpg"
+      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
     ],
     "description": "AIO 280mm da marca de referência em water cooling custom. Bomba EK de alto desempenho com 2 ventoinhas EK-Vardar de 140mm D-RGB.",
     "badge": "Custom DNA",
@@ -1683,9 +1683,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "39,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sf0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5Z.jpg",
+    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5Z.jpg"
+      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
     ],
     "description": "Single tower compacto com excelente custo-benefício. 4 heatpipes de contacto direto e ventoinha P12 A-RGB de 120mm. Ideal para Ryzen 5 e i5.",
     "badge": "Budget Air",
@@ -1703,9 +1703,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "35,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6A.jpg",
+    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6A.jpg"
+      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
     ],
     "description": "Dual tower budget que rivaliza com coolers 2× mais caros. 6 heatpipes e 2 ventoinhas TL-C12C de 120mm com 260W TDP. O segredo dos builds inteligentes.",
     "badge": "Hidden Gem",
@@ -1748,9 +1748,9 @@ export const products: Product[] = [
     "price": "329,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7B.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7B.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "Monitor IPS QHD de 27\" com 165Hz (OC 180Hz) e 1ms GtG. Cobertura DCI-P3 98% e VESA DisplayHDR 400 para cores vivas e gaming responsivo.",
     "badge": "IPS Gaming",
@@ -1769,9 +1769,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8C.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8C.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "Monitor VA curvo de 27\" com 1440p e 165Hz. Curvatura 1500R imersiva com contraste nativo superior a 3000:1 e FreeSync Premium.",
     "badge": "Curvo Acessível",
@@ -1790,9 +1790,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9D.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9D.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "VA curvo 1000R de 32\" com QHD e 240Hz. QLED com cobertura de cor de 125% sRGB e DisplayHDR 600 para uma experiência de jogo envolvente.",
     "badge": "240Hz Curvo",
@@ -1810,9 +1810,9 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "289,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0E.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0E.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "IPS 27\" QHD com 170Hz e ELMB Sync para clareza de movimento superior. Certificação G-SYNC Compatible e DisplayHDR 400.",
     "badge": "TUF Fiável",
@@ -1831,9 +1831,9 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1F.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1F.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "IPS 27\" QHD com 165Hz e sistema de som treVolo 2.1 integrado com subwoofer. HDRi inteligente que ajusta automaticamente o HDR ao ambiente.",
     "badge": "Som Integrado",
@@ -1852,9 +1852,9 @@ export const products: Product[] = [
     "price": "749,00 €",
     "oldPrice": "849,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sa7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2G.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2G.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "OLED QHD 27\" com 240Hz e tempo de resposta de 0.03ms. Anti-glare low reflection coating e cobertura DCI-P3 98.5% para o gaming definitivo.",
     "badge": "OLED Gaming",
@@ -1873,9 +1873,9 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sb8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3H.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3H.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "SS IPS 27\" QHD com 240Hz e KVM Switch integrado. Perfeito para quem alterna entre PC gaming e trabalho com um único monitor.",
     "badge": "KVM Switch",
@@ -1893,9 +1893,9 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "139,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sc9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4I.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4I.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "IPS 24\" Full HD com 165Hz e 1ms MPRT. O monitor gaming mais acessível com painel IPS verdadeiro, FreeSync Premium e base ajustável em altura.",
     "badge": "Budget 1080p",
@@ -1914,9 +1914,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "369,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5J.jpg",
+    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5J.jpg"
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
     "description": "Rapid IPS com Quantum Dots para 27\" QHD e 170Hz. Cobertura DCI-P3 97% e sRGB 100% com Night Vision AI para visibilidade em cenários escuros.",
     "badge": "Quantum Dot",
@@ -1979,9 +1979,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Se1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6K.jpg",
+    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6K.jpg"
+      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
     ],
     "description": "Ergonomia icónica DeathAdder reinventada com apenas 59g. Sensor Focus Pro 30K e switches ópticos Gen 3 com 90M cliques de durabilidade.",
     "badge": "Ergonómico Pro",
@@ -2000,9 +2000,9 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sf2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7L.jpg",
+    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7L.jpg"
+      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
     ],
     "description": "Switches OmniPoint 2.0 com atuação ajustável de 0.2mm a 3.8mm por tecla. Rapid Trigger para resposta instantânea em FPS competitivos. Ecrã OLED integrado.",
     "badge": "Rapid Trigger",
@@ -2021,9 +2021,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sa3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8M.jpg",
+    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8M.jpg"
+      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
     ],
     "description": "Chassi de alumínio escovado com Cherry MX Red e polling rate de 8000Hz. Teclas de mídia dedicadas, roda de volume e iluminação RGB per-key via iCUE.",
     "badge": "Alumínio Premium",
@@ -2042,9 +2042,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sb4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9N.jpg",
+    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9N.jpg"
+      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
     ],
     "description": "54g ultraleve com sensor Focus Pro 35K e polling rate sem fios de 4000Hz. O rato wireless mais rápido do mundo para eSports profissional.",
     "badge": "eSports Pro",
@@ -2063,9 +2063,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sc5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0O.jpg",
+    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0O.jpg"
+      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
     ],
     "description": "O rato de produtividade mais popular do mundo. Scroll MagSpeed electromagnético, sensor 8K DPI em vidro e ligação a 3 dispositivos em simultâneo.",
     "badge": "Produtividade",
@@ -2083,9 +2083,9 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "89,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sd6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1P.jpg",
+    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1P.jpg"
+      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
     ],
     "description": "65% compacto com chassis de alumínio full-body e switches HyperX Red mecânicos. Perfeito para gamers que querem espaço para o rato.",
     "badge": "65% Compacto",
@@ -2104,9 +2104,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Se7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2Q.jpg",
+    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2Q.jpg"
+      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
     ],
     "description": "Switches ópticos analógicos de 2ª geração com Rapid Trigger e atuação ajustável de 0.1mm a 4.0mm. Polling rate de 8000Hz para o teclado competitivo definitivo.",
     "badge": "Competitivo",
@@ -2125,9 +2125,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sf8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3R.jpg",
+    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3R.jpg"
+      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
     ],
     "description": "Ultra-leve com 74g e design honeycomb impermeável IP54. 9 botões programáveis incluindo joystick lateral, ideal para MMOs e MOBA.",
     "badge": "Multi-Género",
@@ -2171,9 +2171,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sa9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4S.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4S.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Drivers de 53mm com 120 horas de bateria wireless a 2.4GHz. Microfone destacável com indicador LED de mute e memory foam ultra-confortável.",
     "badge": "Maratona",
@@ -2192,9 +2192,9 @@ export const products: Product[] = [
     "price": "219,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sb0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5T.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5T.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Drivers de grafeno PRO-G de 50mm com DTS Headphone:X 2.0. Usado por profissionais de eSports com microfone com Blue VO!CE technology.",
     "badge": "eSports Choice",
@@ -2213,9 +2213,9 @@ export const products: Product[] = [
     "price": "239,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sc1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6U.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6U.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Drivers de 50mm com Dolby Atmos e áudio espacial. Tripla conectividade (Slipstream 2.4GHz + Bluetooth + USB) e construção premium em alumínio.",
     "badge": "Dolby Atmos",
@@ -2234,9 +2234,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sd2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7V.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7V.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Drivers Razer TriForce de 40mm com iluminação Chroma RGB e THX Spatial Audio. Microfone HyperClear Cardioid destacável para voz cristalina.",
     "badge": "Chroma RGB",
@@ -2255,9 +2255,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Se3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8W.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8W.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "O melhor ANC do mercado com 8 microfones e processador V1. 30 horas de bateria, carga rápida de 3 min para 3 horas e multipoint Bluetooth 5.2.",
     "badge": "ANC Líder",
@@ -2276,9 +2276,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sf4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9X.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9X.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Head tracking 3D com JBL QuantumSPHERE 360 para posicionamento espacial real. ANC com modo ambiente e Dual Wireless (2.4GHz + BT).",
     "badge": "Head Tracking",
@@ -2297,9 +2297,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sa5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0Y.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0Y.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Drivers de 50mm com Dolby Atmos wireless e SoundID para personalização de perfil sonoro. Slipstream dual wireless com 65 horas de bateria.",
     "badge": "SoundID",
@@ -2318,9 +2318,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1Z.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1Z.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Drivers Razer TriForce Titanium de 50mm com THX Spatial Audio. Microfone HyperClear Super Wideband para a voz mais natural em gaming wireless.",
     "badge": "Wireless Pro",
@@ -2338,9 +2338,9 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "139,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sc7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2A.jpg",
+    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2A.jpg"
+      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
     ],
     "description": "Os auscultadores de estúdio de referência da indústria. Drivers de 45mm com resposta plana para mixing, mastering e gaming audiófilo. Cabo destacável.",
     "badge": "Studio Reference",
@@ -2384,9 +2384,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sd8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3B.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3B.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Suporte lombar adaptativo com zona lombar totalmente ajustável e espuma de memória de alta densidade. Apoios de braço 4D e couro sintético EPU premium.",
     "badge": "Lombar Adaptivo",
@@ -2405,9 +2405,9 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Se9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4C.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4C.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Construção wide-seat com assento de 52cm para conforto prolongado. Espuma moldada a frio e apoio lombar externo incluído. Base de aço reforçada.",
     "badge": "Wide Seat",
@@ -2426,9 +2426,9 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sf0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5D.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5D.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Estética elegante com couro PU premium e espuma de frio de alta densidade. Mecanismo de inclinação integrado e apoios de braço 4D em aço.",
     "badge": "Elegante",
@@ -2446,9 +2446,9 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "399,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6E.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6E.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Designs temáticos personalizáveis com bordados premium. Estrutura de aço tubular e espuma de frio moldada com mecanismo de 4 posições.",
     "badge": "Custom Design",
@@ -2467,9 +2467,9 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "529,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7F.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7F.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Suporte lombar magnético DuraXtra com espuma de frio de alta resiliência. Apoios de braço 4D e mecanismo de reclinação até 165° com trava.",
     "badge": "XL Comfort",
@@ -2488,9 +2488,9 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8G.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8G.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Cadeira gaming acessível com design agressivo e almofadas lombar e cervical incluídas. Base de aço com rodas silenciosas de 60mm.",
     "badge": "Budget Gaming",
@@ -2509,9 +2509,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9H.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9H.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Construção premium com espuma de frio de alta densidade e couro PU durável. Mecanismo de reclinação 4D com apoios de braço metálicos ajustáveis.",
     "badge": "Pro Durável",
@@ -2529,9 +2529,9 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "1.595,00 €",
     "rating": 5.0,
-    "img": "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0I.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Se5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0I.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "A cadeira ergonómica definitiva adaptada para gaming. BackFit que se molda à coluna, pixelated support para distribuição de peso e espuma de arrefecimento SCI-engineered.",
     "badge": "Ergonomia Suprema",
@@ -2550,9 +2550,9 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1J.jpg",
+    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sf6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1J.jpg"
+      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
     ],
     "description": "Cadeira ergonómica com mesh respirável e suporte lombar adaptativo. 11 pontos de ajuste para personalização total da postura durante sessões longas.",
     "badge": "Mesh Ergonómico",
