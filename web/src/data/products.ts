@@ -1114,9 +1114,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-139-333-04.png",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
+      "https://c1.neweggimages.com/productimage/nb640/17-139-333-04.png"
     ],
     "description": "A fonte mais popular para builds gaming com 850W 80+ Gold e cabos totalmente modulares. Modo zero-RPM e ATX 3.0 com conector 12VHPWR nativo.",
     "badge": "Best Seller",
@@ -1135,9 +1135,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg"
     ],
     "description": "Qualidade Seasonic premium com 750W 80+ Gold e cabos modulares. Ventoinha FDB de 120mm com modo Hybrid Fan Control para funcionamento silencioso.",
     "badge": "Fiável",
@@ -1156,9 +1156,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A68VS2306080ZMG2ED1.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/A68VS2306080ZMG2ED1.jpg"
     ],
     "description": "ATX 3.0 com conector 12VHPWR nativo e 80+ Gold. Ventoinha be quiet! 120mm de alta qualidade com operação ultra-silenciosa.",
     "badge": "Silenciosa",
@@ -1177,9 +1177,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-438-238-V01.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
+      "https://c1.neweggimages.com/productimage/nb640/17-438-238-V01.jpg"
     ],
     "description": "1000W com certificação 80+ Gold e tamanho compacto de 150mm. Totalmente modular com proteções OVP, UVP, OCP, OPP, SCP e OTP.",
     "badge": "Compacta 1000W",
@@ -1198,9 +1198,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-139-330-01.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/17-139-330-01.png"
     ],
     "description": "A melhor fonte SFX do mercado com 750W e 80+ Platinum em formato compacto. Perfeita para builds ITX e caixas pequenas sem comprometer potência.",
     "badge": "ITX Champion",
@@ -1219,9 +1219,9 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "349,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
+      "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"
     ],
     "description": "1300W ATX 3.0 com conector 12VHPWR e monitorização inteligente via MSI Center. Preparada para as GPUs mais exigentes como a RTX 4090/5090.",
     "badge": "Powerhouse",
@@ -1240,9 +1240,9 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "359,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg"
     ],
     "description": "A eficiência máxima com certificação 80+ Titanium. 1000W de potência premium com 12 anos de garantia e componentes de grau industrial.",
     "badge": "Titanium",
@@ -1260,9 +1260,9 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "109,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/ProductImage/17-139-333-04.png",
+    "img": "https://nzxt.com/cdn/shop/files/power_c_series_gold_c850-vents-up-right.png?v=1762528174",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/17-139-333-04.png"
+      "https://nzxt.com/cdn/shop/files/power_c_series_gold_c850-vents-up-right.png?v=1762528174"
     ],
     "description": "850W modular com design minimalista NZXT. ATX 3.0 com conector 12VHPWR e cabos pretos flat para cable management limpo.",
     "badge": "Clean Build",
@@ -1281,9 +1281,9 @@ export const products: Product[] = [
     "price": "115,00 €",
     "oldPrice": "135,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"
     ],
     "description": "ATX 3.0 com conector PCIe 5.0 nativo e 80+ Gold. Ventoinha hidráulica de 120mm com Smart Zero Fan para operação silenciosa em cargas baixas.",
     "badge": "ATX 3.0",
@@ -1347,9 +1347,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-146-361-04.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/11-146-361-04.jpg"
     ],
     "description": "Design minimalista NZXT com painel frontal perfurado para airflow optimizado. 3 ventoinhas RGB incluídas e espaço para radiadores até 360mm.",
     "badge": "Clean Design",
@@ -1368,9 +1368,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-139-231-12.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/11-139-231-12.png"
     ],
     "description": "A caixa mid-tower mais popular da Corsair com frente mesh de alto fluxo. 2 ventoinhas 120mm incluídas e USB-C frontal. O clássico que nunca falha.",
     "badge": "Clássico",
@@ -1388,9 +1388,9 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "79,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg"
     ],
     "description": "Excelente airflow a preço budget com frente mesh ultra-fina e 3 ventoinhas D-RGB de 120mm incluídas. Vidro temperado e espaço generoso.",
     "badge": "Budget Airflow",
@@ -1409,9 +1409,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-734-018-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/11-734-018-01.jpg"
     ],
     "description": "Equilíbrio perfeito entre silêncio e airflow com mesh frontal e 3 Pure Wings 2 de 140mm. Iluminação ARGB discreta no painel frontal.",
     "badge": "Silent Airflow",
@@ -1430,9 +1430,9 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
     ],
     "description": "Full tower monstruosa com 200mm frontal e ecrã LCD integrado. Suporte para radiadores de 420mm e builds extremas com múltiplas GPUs.",
     "badge": "Enthusiast Tower",
@@ -1451,9 +1451,9 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg",
+    "img": "https://cdn.sanity.io/images/mqc7p4g4/production/82d0db796ef76ffa52ade9761ca1bee0b4b9a9ec-3480x2460.jpg?w=3840&q=75&fit=clip&auto=format",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/11-146-361-04.jpg"
+      "https://cdn.sanity.io/images/mqc7p4g4/production/82d0db796ef76ffa52ade9761ca1bee0b4b9a9ec-3480x2460.jpg?w=3840&q=75&fit=clip&auto=format"
     ],
     "description": "Panorâmica com 3 painéis de vidro temperado para showcase total do hardware. Design invertido inovador com GPU montada verticalmente de fábrica.",
     "badge": "Showcase",
@@ -1472,9 +1472,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-139-165-V21.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/11-139-165-V21.jpg"
     ],
     "description": "A irmã maior da 4000D com espaço para radiadores até 420mm. Painel frontal high-airflow, cable management RapidRoute e 2 ventoinhas 120mm incluídas.",
     "badge": "Big Brother",
@@ -1493,9 +1493,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/AFSTS211210aAqTM.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/AFSTS211210aAqTM.jpg"
     ],
     "description": "A icónica O11 reinventada com suporte reversível, mesh frontal opcional e espaço para 3 radiadores de 360mm. A favorita dos custom loops.",
     "badge": "Dual Chamber",
@@ -1559,9 +1559,9 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "269,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png"
     ],
     "description": "AIO 360mm com ecrã IPS LCD de 2.1\" na bomba e 3 ventoinhas AF120 RGB Elite. Controlo total via iCUE com monitorização de temperaturas em tempo real.",
     "badge": "LCD Premium",
@@ -1580,9 +1580,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/APGPS210616Ju0d9.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/APGPS210616Ju0d9.jpg"
     ],
     "description": "A melhor AIO em relação preço/performance com radiador de 360mm e bomba offset integrada. VRM cooling fan na bomba para refrigeração adicional da motherboard.",
     "badge": "Melhor Valor AIO",
@@ -1601,9 +1601,9 @@ export const products: Product[] = [
     "price": "69,00 €",
     "oldPrice": "85,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-856-229-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/35-856-229-01.jpg"
     ],
     "description": "Dual tower air cooler com ecrã digital de temperatura integrado. 6 heatpipes de cobre e 2 ventoinhas de 120mm com 260W TDP máximo.",
     "badge": "Digital Air",
@@ -1621,9 +1621,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "109,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/AADY_1321448318623154024hVzlOURbe.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/AADY_1321448318623154024hVzlOURbe.jpg"
     ],
     "description": "A lenda do arrefecimento a ar em versão all-black. Dual tower com 2 NF-A15 PWM de 140mm, 6 heatpipes e 250W TDP. Silêncio e performance sem rival.",
     "badge": "Lenda Air Cool",
@@ -1642,9 +1642,9 @@ export const products: Product[] = [
     "price": "79,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
     ],
     "description": "O novo air cooler premium da Corsair que rivaliza com AIOs de 240mm. Design de dupla torre com 2 ventoinhas NexFan de 140mm e 270W de capacidade.",
     "badge": "AIO Killer",
@@ -1663,9 +1663,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/2SA-000U-00007-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/2SA-000U-00007-01.jpg"
     ],
     "description": "AIO 280mm da marca de referência em water cooling custom. Bomba EK de alto desempenho com 2 ventoinhas EK-Vardar de 140mm D-RGB.",
     "badge": "Custom DNA",
@@ -1683,9 +1683,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "39,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png"
     ],
     "description": "Single tower compacto com excelente custo-benefício. 4 heatpipes de contacto direto e ventoinha P12 A-RGB de 120mm. Ideal para Ryzen 5 e i5.",
     "badge": "Budget Air",
@@ -1703,9 +1703,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "35,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A4RES21102597E29.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/A4RES21102597E29.jpg"
     ],
     "description": "Dual tower budget que rivaliza com coolers 2× mais caros. 6 heatpipes e 2 ventoinhas TL-C12C de 120mm com 260W TDP. O segredo dos builds inteligentes.",
     "badge": "Hidden Gem",
