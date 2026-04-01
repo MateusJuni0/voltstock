@@ -712,9 +712,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png"
+      "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg"
     ],
     "description": "Kit 2×16GB DDR5-5600 com dissipador de calor preto compacto. Compatível com Intel XMP 3.0 e AMD EXPO para facilidade de overclock.",
     "badge": "Preço/Performance",
@@ -733,9 +733,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg",
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/CMT32GX5M2C4800C34/Gallery/DOMINATOR_RGB_PLATINUM_BLACK_DDR5_01.webp",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg"
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/CMT32GX5M2C4800C34/Gallery/DOMINATOR_RGB_PLATINUM_BLACK_DDR5_01.webp"
     ],
     "description": "A linha premium da Corsair com dissipador Dominator em alumínio anodizado e iluminação Capellix RGB de 12 LEDs. DDR5-6200 CL32 com chips Samsung selecionados.",
     "badge": "Premium",
@@ -754,9 +754,9 @@ export const products: Product[] = [
     "price": "145,00 €",
     "oldPrice": "175,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S1f295a3c4ae54c55b8d936faa71ade6as.png",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A4YUD23052206SYWO60.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S1f295a3c4ae54c55b8d936faa71ade6as.png"
+      "https://c1.neweggimages.com/productimage/nb640/A4YUD23052206SYWO60.jpg"
     ],
     "description": "A topo de gama da Kingston com DDR5-6400 CL32 e dissipador de calor agressivo. Otimizada para overclocking com chips Hynix A-Die selecionados.",
     "badge": "OC Ready",
@@ -775,9 +775,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg",
+    "img": "https://images.teamgroupinc.com/products/memory/u-dimm/ddr5/delta-rgb/black/dual_01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg"
+      "https://images.teamgroupinc.com/products/memory/u-dimm/ddr5/delta-rgb/black/dual_01.jpg"
     ],
     "description": "RGB difusor de zona completa com design futurista Delta. DDR5-6000 CL38 com perfis XMP 3.0 e AMD EXPO. Excelente relação qualidade/preço.",
     "badge": "RGB Acessível",
@@ -795,9 +795,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "49,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg",
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/vengeance-ddr5-blk-config/Gallery/Vengeance-DDR5-1UP-16GB-BLACK_01.webp",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg"
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/vengeance-ddr5-blk-config/Gallery/Vengeance-DDR5-1UP-16GB-BLACK_01.webp"
     ],
     "description": "Kit 2×8GB DDR5-5600 para builds budget. Perfil baixo compatível com qualquer cooler e suporte XMP 3.0 para configuração simples.",
     "badge": "Entry DDR5",
@@ -816,9 +816,9 @@ export const products: Product[] = [
     "price": "105,00 €",
     "oldPrice": "125,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sdc408c3879144e45b29d813fc072db2er.png",
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-451-03.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sdc408c3879144e45b29d813fc072db2er.png"
+      "https://c1.neweggimages.com/productimage/nb640/20-374-451-03.png"
     ],
     "description": "Design perfil baixo sem RGB para builds minimalistas. DDR5-6000 CL30 com excelente compatibilidade e estabilidade comprovada.",
     "badge": "Minimalista",
@@ -836,9 +836,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "59,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png",
+    "img": "https://c1.neweggimages.com/ProductImage/AFYUD210829238JE.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S415c528c95314df69711a1e0c0ef042fB.png"
+      "https://c1.neweggimages.com/ProductImage/AFYUD210829238JE.jpg"
     ],
     "description": "Kit 2×16GB DDR4-3200 CL16 para upgrades em plataformas AM4 e LGA1700. Dissipador preto compacto com excelente compatibilidade.",
     "badge": "DDR4 Clássica",
@@ -856,9 +856,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "69,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg",
+    "img": "https://assets.micron.com/adobe/assets/urn:aaid:aem:10781863-41f2-495a-9613-96e8f995614f/renditions/transformpng-640-640.png/as/crucial-ddr5-UDIMM-iso-3.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg"
+      "https://assets.micron.com/adobe/assets/urn:aaid:aem:10781863-41f2-495a-9613-96e8f995614f/renditions/transformpng-640-640.png/as/crucial-ddr5-UDIMM-iso-3.png"
     ],
     "description": "Kit 2×16GB DDR5-4800 JEDEC sem overclock. Memória fiável e acessível da Micron para quem quer DDR5 ao melhor preço sem complicações.",
     "badge": "DDR5 Básica",
