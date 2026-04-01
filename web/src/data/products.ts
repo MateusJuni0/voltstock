@@ -1748,9 +1748,9 @@ export const products: Product[] = [
     "price": "329,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://www.lg.com/content/dam/channel/wcms/ca_en/images/desktop-monitors/27gp850-b_aus_enci_ca_en_c/gallery/DZ_01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://www.lg.com/content/dam/channel/wcms/ca_en/images/desktop-monitors/27gp850-b_aus_enci_ca_en_c/gallery/DZ_01.jpg"
     ],
     "description": "Monitor IPS QHD de 27\" com 165Hz (OC 180Hz) e 1ms GtG. Cobertura DCI-P3 98% e VESA DisplayHDR 400 para cores vivas e gaming responsivo.",
     "badge": "IPS Gaming",
@@ -1769,9 +1769,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2722dgm/pdp/monitors-dell-gaming-27-s2722dgm-pdp-design-gallery504x350.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2722dgm/pdp/monitors-dell-gaming-27-s2722dgm-pdp-design-gallery504x350.jpg"
     ],
     "description": "Monitor VA curvo de 27\" com 1440p e 165Hz. Curvatura 1500R imersiva com contraste nativo superior a 3000:1 e FreeSync Premium.",
     "badge": "Curvo Acessível",
@@ -1790,9 +1790,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-022-816-V01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/24-022-816-V01.jpg"
     ],
     "description": "VA curvo 1000R de 32\" com QHD e 240Hz. QLED com cobertura de cor de 125% sRGB e DisplayHDR 600 para uma experiência de jogo envolvente.",
     "badge": "240Hz Curvo",
@@ -1810,9 +1810,9 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "289,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://dlcdnwebimgs.asus.com/gain/d452f143-b494-41d0-9e4b-6d7ae0ff6291/w692",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://dlcdnwebimgs.asus.com/gain/d452f143-b494-41d0-9e4b-6d7ae0ff6291/w692"
     ],
     "description": "IPS 27\" QHD com 170Hz e ELMB Sync para clareza de movimento superior. Certificação G-SYNC Compatible e DisplayHDR 400.",
     "badge": "TUF Fiável",
@@ -1831,9 +1831,9 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://image.benq.com/is/image/benqco/ex2710q-2product?$ResponsivePreset$",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://image.benq.com/is/image/benqco/ex2710q-2product?$ResponsivePreset$"
     ],
     "description": "IPS 27\" QHD com 165Hz e sistema de som treVolo 2.1 integrado com subwoofer. HDRi inteligente que ajusta automaticamente o HDR ao ambiente.",
     "badge": "Som Integrado",
@@ -1852,9 +1852,9 @@ export const products: Product[] = [
     "price": "749,00 €",
     "oldPrice": "849,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg"
     ],
     "description": "OLED QHD 27\" com 240Hz e tempo de resposta de 0.03ms. Anti-glare low reflection coating e cobertura DCI-P3 98.5% para o gaming definitivo.",
     "badge": "OLED Gaming",
@@ -1873,9 +1873,9 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg"
     ],
     "description": "SS IPS 27\" QHD com 240Hz e KVM Switch integrado. Perfeito para quem alterna entre PC gaming e trabalho com um único monitor.",
     "badge": "KVM Switch",
@@ -1893,9 +1893,9 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "139,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://cdn.sanity.io/images/hf5b3axp/production/d711ca9aaf71f961f8ab64eff8d6624d4d532839-3840x3840.png?w=1920&fit=max&auto=format",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://cdn.sanity.io/images/hf5b3axp/production/d711ca9aaf71f961f8ab64eff8d6624d4d532839-3840x3840.png?w=1920&fit=max&auto=format"
     ],
     "description": "IPS 24\" Full HD com 165Hz e 1ms MPRT. O monitor gaming mais acessível com painel IPS verdadeiro, FreeSync Premium e base ajustável em altura.",
     "badge": "Budget 1080p",
@@ -1914,9 +1914,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "369,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-475-096-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/24-475-096-01.jpg"
     ],
     "description": "Rapid IPS com Quantum Dots para 27\" QHD e 170Hz. Cobertura DCI-P3 97% e sRGB 100% com Night Vision AI para visibilidade em cenários escuros.",
     "badge": "Quantum Dot",
@@ -1979,9 +1979,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
+    "img": "https://www.razer.com/newsroom/wp-content/uploads/2023/02/daV3-pressrelease-img.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
+      "https://www.razer.com/newsroom/wp-content/uploads/2023/02/daV3-pressrelease-img.png"
     ],
     "description": "Ergonomia icónica DeathAdder reinventada com apenas 59g. Sensor Focus Pro 30K e switches ópticos Gen 3 com 90M cliques de durabilidade.",
     "badge": "Ergonómico Pro",
@@ -2000,9 +2000,9 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
+    "img": "https://images.ctfassets.net/hmm5mo4qf4mf/5T6OTTzl1B5zaX1nILPFw4/186d8f786745424cdd8770cda23623af/apex_pro_tkl_wl_img_buy_01.png?fm=webp&q=90&fit=scale&w=1920",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
+      "https://images.ctfassets.net/hmm5mo4qf4mf/5T6OTTzl1B5zaX1nILPFw4/186d8f786745424cdd8770cda23623af/apex_pro_tkl_wl_img_buy_01.png?fm=webp&q=90&fit=scale&w=1920"
     ],
     "description": "Switches OmniPoint 2.0 com atuação ajustável de 0.2mm a 3.8mm por tecla. Rapid Trigger para resposta instantânea em FPS competitivos. Ecrã OLED integrado.",
     "badge": "Rapid Trigger",
@@ -2021,9 +2021,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Keyboards/CH-9109410-NA/Gallery/K70_RGB_PRO_PBT_01.webp",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
+      "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Keyboards/CH-9109410-NA/Gallery/K70_RGB_PRO_PBT_01.webp"
     ],
     "description": "Chassi de alumínio escovado com Cherry MX Red e polling rate de 8000Hz. Teclas de mídia dedicadas, roda de volume e iluminação RGB per-key via iCUE.",
     "badge": "Alumínio Premium",
@@ -2042,9 +2042,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
+    "img": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h08/h61/9765618188318/viper-v3-pro-black-500x500.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
+      "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h08/h61/9765618188318/viper-v3-pro-black-500x500.png"
     ],
     "description": "54g ultraleve com sensor Focus Pro 35K e polling rate sem fios de 4000Hz. O rato wireless mais rápido do mundo para eSports profissional.",
     "badge": "eSports Pro",
@@ -2063,9 +2063,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
+    "img": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2025-update/mx-master-3s-bluetooth-edition-top-view-black-new-1.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
+      "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2025-update/mx-master-3s-bluetooth-edition-top-view-black-new-1.png"
     ],
     "description": "O rato de produtividade mais popular do mundo. Scroll MagSpeed electromagnético, sensor 8K DPI em vidro e ligação a 3 dispositivos em simultâneo.",
     "badge": "Produtividade",
@@ -2083,9 +2083,9 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "89,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
+    "img": "https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_65_english_us_1_top_down.jpg?v=1763563176",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
+      "https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_65_english_us_1_top_down.jpg?v=1763563176"
     ],
     "description": "65% compacto com chassis de alumínio full-body e switches HyperX Red mecânicos. Perfeito para gamers que querem espaço para o rato.",
     "badge": "65% Compacto",
@@ -2104,9 +2104,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg"
     ],
     "description": "Switches ópticos analógicos de 2ª geração com Rapid Trigger e atuação ajustável de 0.1mm a 4.0mm. Polling rate de 8000Hz para o teclado competitivo definitivo.",
     "badge": "Competitivo",
@@ -2125,9 +2125,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg"
     ],
     "description": "Ultra-leve com 74g e design honeycomb impermeável IP54. 9 botões programáveis incluindo joystick lateral, ideal para MMOs e MOBA.",
     "badge": "Multi-Género",
@@ -2171,9 +2171,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://row.hyperx.com/cdn/shop/files/hyperx_cloud_iii_wireless_black_77z45aa_main_1.jpg?v=1764893494",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://row.hyperx.com/cdn/shop/files/hyperx_cloud_iii_wireless_black_77z45aa_main_1.jpg?v=1764893494"
     ],
     "description": "Drivers de 53mm com 120 horas de bateria wireless a 2.4GHz. Microfone destacável com indicador LED de mute e memory foam ultra-confortável.",
     "badge": "Maratona",
@@ -2192,9 +2192,9 @@ export const products: Product[] = [
     "price": "219,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://resource.logitechg.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://resource.logitechg.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png"
     ],
     "description": "Drivers de grafeno PRO-G de 50mm com DTS Headphone:X 2.0. Usado por profissionais de eSports com microfone com Blue VO!CE technology.",
     "badge": "eSports Choice",
@@ -2213,9 +2213,9 @@ export const products: Product[] = [
     "price": "239,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/CA-9011188-NA/Gallery/VIRTUOSO_XT_01.webp",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/CA-9011188-NA/Gallery/VIRTUOSO_XT_01.webp"
     ],
     "description": "Drivers de 50mm com Dolby Atmos e áudio espacial. Tripla conectividade (Slipstream 2.4GHz + Bluetooth + USB) e construção premium em alumínio.",
     "badge": "Dolby Atmos",
@@ -2234,9 +2234,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg"
     ],
     "description": "Drivers Razer TriForce de 40mm com iluminação Chroma RGB e THX Spatial Audio. Microfone HyperClear Cardioid destacável para voz cristalina.",
     "badge": "Chroma RGB",
@@ -2255,9 +2255,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/ARUXS22052606ACVA3A.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/ARUXS22052606ACVA3A.jpg"
     ],
     "description": "O melhor ANC do mercado com 8 microfones e processador V1. 30 horas de bateria, carga rápida de 3 min para 3 horas e multipoint Bluetooth 5.2.",
     "badge": "ANC Líder",
@@ -2276,9 +2276,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://images.samsung.com/is/image/samsung/p6pim/us/jblq910wlblkam/gallery/us-jbl-quantum910-wireless-jblq910wlblkam-551554636",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://images.samsung.com/is/image/samsung/p6pim/us/jblq910wlblkam/gallery/us-jbl-quantum910-wireless-jblq910wlblkam-551554636"
     ],
     "description": "Head tracking 3D com JBL QuantumSPHERE 360 para posicionamento espacial real. ANC com modo ambiente e Dual Wireless (2.4GHz + BT).",
     "badge": "Head Tracking",
@@ -2297,9 +2297,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/hs80-max-wireless/steel-grey/HS80_MAX_WIRELESS_STEEL_GRAY_01.webp",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/hs80-max-wireless/steel-grey/HS80_MAX_WIRELESS_STEEL_GRAY_01.webp"
     ],
     "description": "Drivers de 50mm com Dolby Atmos wireless e SoundID para personalização de perfil sonoro. Slipstream dual wireless com 65 horas de bateria.",
     "badge": "SoundID",
@@ -2318,9 +2318,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-371-07.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/26-153-371-07.jpg"
     ],
     "description": "Drivers Razer TriForce Titanium de 50mm com THX Spatial Audio. Microfone HyperClear Super Wideband para a voz mais natural em gaming wireless.",
     "badge": "Wireless Pro",
@@ -2338,9 +2338,9 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "139,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg"
     ],
     "description": "Os auscultadores de estúdio de referência da indústria. Drivers de 45mm com resposta plana para mixing, mastering e gaming audiófilo. Cabo destacável.",
     "badge": "Studio Reference",
@@ -2384,9 +2384,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-373-01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/26-153-373-01.jpg"
     ],
     "description": "Suporte lombar adaptativo com zona lombar totalmente ajustável e espuma de memória de alta densidade. Apoios de braço 4D e couro sintético EPU premium.",
     "badge": "Lombar Adaptivo",
@@ -2405,9 +2405,9 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Chairs/CF-9010043-WW/Gallery/CF-9010043-WW_01.webp",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Chairs/CF-9010043-WW/Gallery/CF-9010043-WW_01.webp"
     ],
     "description": "Construção wide-seat com assento de 52cm para conforto prolongado. Espuma moldada a frio e apoio lombar externo incluído. Base de aço reforçada.",
     "badge": "Wide Seat",
@@ -2426,9 +2426,9 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://img.noblechairs.com/images/GAGC-255/167c6091e83aee48b4a95a42f9a765ab.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://img.noblechairs.com/images/GAGC-255/167c6091e83aee48b4a95a42f9a765ab.jpg"
     ],
     "description": "Estética elegante com couro PU premium e espuma de frio de alta densidade. Mecanismo de inclinação integrado e apoios de braço 4D em aço.",
     "badge": "Elegante",
@@ -2446,9 +2446,9 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "399,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://nex-img.dxracer.cc/20001/fcda253d-9214-405e-9b6d-b7a1dc5cdbaf-1.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://nex-img.dxracer.cc/20001/fcda253d-9214-405e-9b6d-b7a1dc5cdbaf-1.png"
     ],
     "description": "Designs temáticos personalizáveis com bordados premium. Estrutura de aço tubular e espuma de frio moldada com mecanismo de 4 posições.",
     "badge": "Custom Design",
@@ -2467,9 +2467,9 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "529,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://www.andaseat.com/cdn/shop/files/andaseat-kasier-3-series-gaming-chair-carbon-black-ign_grande.webp?v=1757903020",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://www.andaseat.com/cdn/shop/files/andaseat-kasier-3-series-gaming-chair-carbon-black-ign_grande.webp?v=1757903020"
     ],
     "description": "Suporte lombar magnético DuraXtra com espuma de frio de alta resiliência. Apoios de braço 4D e mecanismo de reclinação até 165° com trava.",
     "badge": "XL Comfort",
@@ -2488,9 +2488,9 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://cougargaming.com/_cgrwdr_/wwdpp/wp-content/uploads/2023/03/ARMOR-elite-banner-s.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://cougargaming.com/_cgrwdr_/wwdpp/wp-content/uploads/2023/03/ARMOR-elite-banner-s.jpg"
     ],
     "description": "Cadeira gaming acessível com design agressivo e almofadas lombar e cervical incluídas. Base de aço com rodas silenciosas de 60mm.",
     "badge": "Budget Gaming",
@@ -2509,9 +2509,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg"
     ],
     "description": "Construção premium com espuma de frio de alta densidade e couro PU durável. Mecanismo de reclinação 4D com apoios de braço metálicos ajustáveis.",
     "badge": "Pro Durável",
@@ -2529,9 +2529,9 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "1.595,00 €",
     "rating": 5.0,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://images.hermanmiller.group/asset/521e115b-9214-402a-92d2-2b8529a5a228/W/HMG_2517590_100698359_Embody_Gaming_Ignite_OnBlkF34R_68477_PDP_v7.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://images.hermanmiller.group/asset/521e115b-9214-402a-92d2-2b8529a5a228/W/HMG_2517590_100698359_Embody_Gaming_Ignite_OnBlkF34R_68477_PDP_v7.png"
     ],
     "description": "A cadeira ergonómica definitiva adaptada para gaming. BackFit que se molda à coluna, pixelated support para distribuição de peso e espuma de arrefecimento SCI-engineered.",
     "badge": "Ergonomia Suprema",
@@ -2550,9 +2550,9 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "https://cdn.autonomous.ai/production/ecm/240715/1(1).jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg"
+      "https://cdn.autonomous.ai/production/ecm/240715/1(1).jpg"
     ],
     "description": "Cadeira ergonómica com mesh respirável e suporte lombar adaptativo. 11 pontos de ajuste para personalização total da postura durante sessões longas.",
     "badge": "Mesh Ergonómico",
