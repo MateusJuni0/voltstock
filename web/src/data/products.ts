@@ -502,9 +502,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-648-10.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg"
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-648-10.png"
     ],
     "description": "Micro-ATX compacta para Intel 12ª/13ª/14ª geração com WiFi 6E e VRM de 12+1+1 fases. Ideal para builds compactas sem sacrificar funcionalidades.",
     "badge": "Compacta",
@@ -523,9 +523,9 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg",
+    "img": "https://dlcdnwebimgs.asus.com/gain/d52e1dd0-6b0b-4c62-a625-01c5e41a8b07/w800",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg"
+      "https://dlcdnwebimgs.asus.com/gain/d52e1dd0-6b0b-4c62-a625-01c5e41a8b07/w800"
     ],
     "description": "Robustez TUF Gaming com VRM de 12+2 fases para Ryzen 7000. PCIe 5.0, DDR5 e WiFi 6 com a fiabilidade militar certificada da ASUS.",
     "badge": "TUF Durável",
@@ -543,9 +543,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "139,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-271-V07.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg"
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-271-V07.jpg"
     ],
     "description": "Plataforma AM4 madura e estável com VRM digital de 12+2 fases. Suporte DDR4 até 5400MHz OC e PCIe 4.0 x16 para Ryzen 5000.",
     "badge": "AM4 Clássica",
@@ -563,9 +563,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "119,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-047-V01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg"
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-047-V01.jpg"
     ],
     "description": "Micro-ATX acessível para Intel 12ª/13ª geração com design Steel Legend icónico. VRM de 8 fases, 2 slots M.2 e saída HDMI 2.1.",
     "badge": "Budget Intel",
@@ -584,9 +584,9 @@ export const products: Product[] = [
     "price": "429,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg",
+    "img": "https://dlcdnwebimgs.asus.com/gain/BADFA920-702B-451B-9592-8279ACD6857B/w800",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg"
+      "https://dlcdnwebimgs.asus.com/gain/BADFA920-702B-451B-9592-8279ACD6857B/w800"
     ],
     "description": "Topo de gama AM5 com PCIe 5.0 duplo (GPU + M.2), VRM de 18+2 fases e WiFi 6E. Construída para overclockers e entusiastas exigentes.",
     "badge": "ROG Premium",
@@ -605,9 +605,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-562-10.jpg",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg"
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-562-10.jpg"
     ],
     "description": "Motherboard de elite para Intel 14ª geração com VRM de 24+1+2 fases, DDR5-7800+ OC e design premium em preto e dourado. Feita para overclock extremo.",
     "badge": "OC Extreme",
@@ -626,9 +626,9 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "459,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/BSTDD2312190WYIKA6A.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg"
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/BSTDD2312190WYIKA6A.jpg"
     ],
     "description": "16+2+2 fases VRM twinned com 4 slots M.2 Gen5 e conectividade completa. A Aorus Master para builds AM5 de referência com design térmico Fins-Array III.",
     "badge": "Aorus Master",
@@ -646,9 +646,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "129,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-228-04.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg"
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-228-04.png"
     ],
     "description": "Micro-ATX acessível com WiFi 6E para Intel 12ª/13ª/14ª geração. VRM de 8+1+1 fases, DDR5 e 2 slots M.2 a um preço competitivo.",
     "badge": "WiFi Budget",
