@@ -291,9 +291,9 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sae8958cccc4b48cba872f2083c9ead22L.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-113-770-02.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Sae8958cccc4b48cba872f2083c9ead22L.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-113-770-02.jpg"
     ],
     "description": "6 cores e 12 threads Zen 4 com boost até 5.3 GHz. Entrada na plataforma AM5 com suporte DDR5 e PCIe 5.0 a um preço acessível.",
     "badge": "Melhor Valor AM5",
@@ -312,9 +312,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S700c05dab59c420788fa3279e4e82ab5n.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-113-791-03.png",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S700c05dab59c420788fa3279e4e82ab5n.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-113-791-03.png"
     ],
     "description": "16 cores Zen 4 com 3D V-Cache de 128MB para o máximo em gaming e produtividade. O processador definitivo para quem não faz compromissos.",
     "badge": "Enthusiast",
@@ -374,9 +374,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "129,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Seb9989f929f64020b9a03b61e09b19f35.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-113-670-V01.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/Seb9989f929f64020b9a03b61e09b19f35.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-113-670-V01.jpg"
     ],
     "description": "6 cores Zen 3 que ainda dão conta de qualquer jogo atual. Excelente custo-benefício para upgrades em plataforma AM4 já existente.",
     "badge": "Budget King",
@@ -395,9 +395,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "209,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S27b0d840e3984c95946b64e2931f3d13w.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-118-431-04.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S27b0d840e3984c95946b64e2931f3d13w.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-118-431-04.jpg"
     ],
     "description": "10 cores (6P + 4E) sem gráficos integrados para quem usa placa gráfica dedicada. Excelente performance por euro na plataforma LGA1700.",
     "badge": "Valor Imbatível",
@@ -416,9 +416,9 @@ export const products: Product[] = [
     "price": "379,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S0a1a72ff87f34e71bbffd8d530df94295.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-113-769-02.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S0a1a72ff87f34e71bbffd8d530df94295.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-113-769-02.jpg"
     ],
     "description": "12 cores Zen 4 com boost até 5.6 GHz. Potência bruta para renderização, compilação e gaming de alta performance na plataforma AM5.",
     "badge": "Workstation",
@@ -436,9 +436,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "89,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S6991925c026c4c1aa219ae12ea9e1d55w.jpg",
+    "img": "https://c1.neweggimages.com/ProductImage/19-118-357-03.jpg",
     "gallery": [
-      "https://ae01.alicdn.com/kf/S6991925c026c4c1aa219ae12ea9e1d55w.jpg"
+      "https://c1.neweggimages.com/ProductImage/19-118-357-03.jpg"
     ],
     "description": "4 cores e 8 threads Alder Lake a um preço de entrada. Surpreendente em gaming 1080p quando combinado com uma placa gráfica dedicada.",
     "badge": "Entry Level",
