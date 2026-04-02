@@ -39,9 +39,9 @@ export const products: Product[] = [
     "price": "2.199,00 €",
     "oldPrice": "2.350,00 €",
     "rating": 4.9,
-    "img": "https://asset.msi.com/resize/image/global/product/product_1665543166b2a4d38c6bf8dc8e7751ea87d19c30f4.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+    "img": "https://asset.msi.com/resize/image/global/product/product_1665543166b2a4d38c6bf8dc8e7751ea87d19c30f4.png",
     "gallery": [
-      "https://asset.msi.com/resize/image/global/product/product_16655431665a8ea2dc3d7c588a44d8cd3ff2d6da61.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"
+      "https://asset.msi.com/resize/image/global/product/product_16655431665a8ea2dc3d7c588a44d8cd3ff2d6da61.png"
     ],
     "description": "A MSI GeForce RTX 5090 SUPRIM X traz o pináculo da arquitetura NVIDIA Blackwell. Desenhada para entusiastas que exigem o máximo de performance em 4K e 8K, com sistema de refrigeração TRI FROZR 3S em alumínio escovado, câmara de vapor e ventoinhas TORX 5.0.",
     "badge": "O Mais Rápido",
