@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { stripe, formatAmountForStripe } from "@/lib/stripe";
+import { getStripe, formatAmountForStripe } from "@/lib/stripe";
 
 interface CartItemPayload {
   id: number;
@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       mode: "payment",
       payment_method_types: ["card"],
       locale: "pt",
