@@ -198,7 +198,10 @@ export function Navbar() {
           "fixed top-0 md:top-4 left-0 right-0 z-[1001] transition-all duration-500 max-w-[1280px] mx-auto px-0 md:px-6 h-[64px] md:h-[72px] bg-[#0A0E1A] md:bg-transparent"
         )}
       >
-        <div className="absolute inset-0 px-4 md:px-6 z-0">
+        {/* Mobile: solid opaque background — no glass effect */}
+        <div className="absolute inset-0 bg-[#0A0E1A] md:hidden z-0" />
+        {/* Desktop: glass effect */}
+        <div className="absolute inset-0 px-4 md:px-6 z-0 hidden md:block">
           <GlassSurface
             width="100%"
             height="100%"

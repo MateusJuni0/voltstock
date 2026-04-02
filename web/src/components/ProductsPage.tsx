@@ -36,8 +36,14 @@ function sortProducts(list: Product[], sort: SortOption): Product[] {
 export function ProductsPage() {
   const searchParams = useSearchParams();
   const [activeCategory, setActiveCategory] = useState<string>("Todos");
-  const [searchQuery, setSearchQuery] = useState(searchParams.get("q") ?? "");
+  const qParam = searchParams.get("q") ?? "";
+  const [searchQuery, setSearchQuery] = useState(qParam);
   const [sort, setSort] = useState<SortOption>("relevance");
+
+  // Sync search query when URL param changes (e.g. from Navbar search)
+  useEffect(() => {
+    setSearchQuery(qParam);
+  }, [qParam]);
   const [sortOpen, setSortOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 

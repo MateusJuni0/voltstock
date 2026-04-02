@@ -52,11 +52,11 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
         onClick={onClose}
-        className="fixed inset-0 z-40 bg-black/75 backdrop-blur-md"
+        className="fixed inset-0 z-[1100] bg-black/75 backdrop-blur-md"
       />
 
       {/* Modal container */}
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
+      <div className="fixed inset-0 z-[1200] flex items-center justify-center p-4 pointer-events-none">
         <motion.div
           initial={{ opacity: 0, scale: 0.93, y: 24 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -65,10 +65,10 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           className="relative w-full max-w-5xl max-h-[92vh] overflow-y-auto rounded-[2.5rem] bg-[#0D1221] border border-accent/10 shadow-2xl shadow-black/60 pointer-events-auto"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Close button — pushed below fixed header on mobile */}
+          {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-[72px] md:top-6 right-4 md:right-6 z-20 w-11 h-11 rounded-full flex items-center justify-center bg-[#0A0E1A]/90 md:bg-accent/5 border border-accent/10 text-orange-400/50 hover:text-orange-400 hover:bg-accent/10 transition-all duration-200"
+            className="absolute top-4 md:top-6 right-4 md:right-6 z-20 w-11 h-11 rounded-full flex items-center justify-center bg-[#0A0E1A] md:bg-accent/5 border border-accent/10 text-orange-400 hover:text-orange-300 hover:bg-accent/10 transition-all duration-200 shadow-lg shadow-black/40"
           >
             <X size={18} />
           </button>
