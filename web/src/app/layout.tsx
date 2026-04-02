@@ -60,9 +60,7 @@ export default function RootLayout({
           <div className="relative z-[2] flex flex-col flex-1">
             <PromoBanner />
             <Navbar />
-            <main className="pt-[96px] md:pt-[88px]">
-              {children}
-            </main>
+            {children}
             <Footer />
             <FloatingButtons />
           </div>
