@@ -68,9 +68,9 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-4 md:top-6 right-4 md:right-6 z-20 w-11 h-11 rounded-full flex items-center justify-center bg-[#0A0E1A] md:bg-accent/5 border border-accent/10 text-orange-400 hover:text-orange-300 hover:bg-accent/10 transition-all duration-200 shadow-lg shadow-black/40"
+            className="sticky top-3 md:top-4 float-right mr-4 md:mr-6 mt-3 md:mt-4 z-20 w-12 h-12 rounded-full flex items-center justify-center bg-[#0A0E1A] border border-orange-400/30 text-orange-400 hover:text-orange-300 hover:bg-orange-500/10 transition-all duration-200 shadow-lg shadow-black/40"
           >
-            <X size={18} />
+            <X size={20} />
           </button>
 
           <div className="grid grid-cols-1 lg:grid-cols-2">
