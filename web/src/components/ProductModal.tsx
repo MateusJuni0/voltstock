@@ -65,10 +65,10 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           className="relative w-full max-w-5xl max-h-[92vh] overflow-y-auto rounded-[2.5rem] bg-[#0D1221] border border-accent/10 shadow-2xl shadow-black/60 pointer-events-auto"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Close button */}
+          {/* Close button — pushed below fixed header on mobile */}
           <button
             onClick={onClose}
-            className="absolute top-6 right-6 z-20 w-11 h-11 rounded-full flex items-center justify-center bg-accent/5 border border-accent/10 text-orange-400/50 hover:text-orange-400 hover:bg-accent/10 transition-all duration-200"
+            className="absolute top-[72px] md:top-6 right-4 md:right-6 z-20 w-11 h-11 rounded-full flex items-center justify-center bg-[#0A0E1A]/90 md:bg-accent/5 border border-accent/10 text-orange-400/50 hover:text-orange-400 hover:bg-accent/10 transition-all duration-200"
           >
             <X size={18} />
           </button>

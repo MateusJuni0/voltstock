@@ -157,6 +157,9 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const items = useCart((state) => state.items);
   const itemCount = items.reduce((acc, item) => acc + item.quantity, 0);
@@ -192,7 +195,7 @@ export function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={cn(
-          "fixed top-4 left-0 right-0 z-[1001] transition-all duration-500 max-w-[1280px] mx-auto px-4 md:px-6 h-[72px]"
+          "fixed top-0 md:top-4 left-0 right-0 z-[1001] transition-all duration-500 max-w-[1280px] mx-auto px-0 md:px-6 h-[64px] md:h-[72px] bg-[#0A0E1A] md:bg-transparent"
         )}
       >
         <div className="absolute inset-0 px-4 md:px-6 z-0">
@@ -249,7 +252,10 @@ export function Navbar() {
             <button
               aria-label="Pesquisar"
               data-magnetic
-              onClick={() => router.push("/produtos")}
+              onClick={() => {
+                setIsSearchOpen(true);
+                setTimeout(() => searchInputRef.current?.focus(), 100);
+              }}
               className="p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400 relative"
             >
               <Search size={18} />
@@ -409,6 +415,62 @@ export function Navbar() {
               )}
             </nav>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Search overlay */}
+      <AnimatePresence>
+        {isSearchOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsSearchOpen(false)}
+              className="fixed inset-0 z-[1100] bg-black/60 backdrop-blur-sm"
+            />
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ type: "spring", stiffness: 400, damping: 30 }}
+              className="fixed top-0 left-0 right-0 z-[1101] p-4 pt-6"
+            >
+              <div className="max-w-xl mx-auto">
+                <div className="flex items-center gap-3 bg-[#0D1221] border border-orange-500/20 rounded-2xl px-5 py-3 shadow-2xl shadow-black/50">
+                  <Search size={20} className="text-orange-400/60 shrink-0" />
+                  <input
+                    ref={searchInputRef}
+                    type="text"
+                    placeholder="Pesquisar produtos..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && searchQuery.trim()) {
+                        setIsSearchOpen(false);
+                        router.push(`/produtos?q=${encodeURIComponent(searchQuery.trim())}`);
+                        setSearchQuery("");
+                      }
+                      if (e.key === "Escape") {
+                        setIsSearchOpen(false);
+                        setSearchQuery("");
+                      }
+                    }}
+                    className="flex-1 bg-transparent text-white placeholder-orange-400/30 text-base outline-none"
+                  />
+                  <button
+                    onClick={() => {
+                      setIsSearchOpen(false);
+                      setSearchQuery("");
+                    }}
+                    className="p-1.5 rounded-lg hover:bg-orange-500/10 text-orange-400/50 hover:text-orange-400 transition-colors"
+                  >
+                    <X size={18} />
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
 

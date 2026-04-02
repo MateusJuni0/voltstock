@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useSearchParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { products, categories, Product } from "@/data/products";
 import { Plus, Heart, Star, Search, SlidersHorizontal, Check } from "lucide-react";
@@ -33,8 +34,9 @@ function sortProducts(list: Product[], sort: SortOption): Product[] {
 // ── component ──────────────────────────────────────────────────────────────
 
 export function ProductsPage() {
+  const searchParams = useSearchParams();
   const [activeCategory, setActiveCategory] = useState<string>("Todos");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(searchParams.get("q") ?? "");
   const [sort, setSort] = useState<SortOption>("relevance");
   const [sortOpen, setSortOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
