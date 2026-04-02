@@ -29,11 +29,11 @@ const shippingSchema = z.object({
   city: z.string().min(2, "Cidade obrigatória"),
   postalCode: z
     .string()
-    .regex(/^\d{4}-\d{3}$/, "Formato: XXXX-XXX"),
+    .regex(/^\d{4}[- ]?\d{3}$/, "Formato: XXXX-XXX"),
   district: z.string().min(2, "Distrito obrigatório"),
   phone: z
     .string()
-    .regex(/^(\+351)?\s?\d{9}$/, "Número de telefone inválido"),
+    .regex(/^(\+\d{1,3}\s?)?\d{9,15}$/, "Número de telefone inválido"),
   nif: z
     .string()
     .regex(/^\d{9}$/, "NIF deve ter 9 dígitos")
@@ -125,7 +125,7 @@ function StepShipping({ form, onNext }: Step1Props) {
 
   const fieldClass =
     "w-full bg-white/[0.04] border border-accent/10 rounded-xl px-4 py-3 text-accent placeholder:text-accent/25 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/30 transition-all text-sm";
-  const labelClass = "block text-xs font-semibold text-accent/50 mb-1.5";
+  const labelClass = "block text-xs sm:text-sm font-semibold text-accent/50 mb-1.5";
   const errorClass = "text-rose-400 text-xs mt-1";
 
   return (
@@ -600,7 +600,23 @@ export default function CheckoutPage() {
             </AnimatePresence>
           </div>
 
-          {/* Right — Order Sidebar (desktop) */}
+          {/* Order Summary — collapsible on mobile, sticky sidebar on desktop */}
+          <div className="lg:hidden">
+            <details className="rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-accent/10 overflow-hidden">
+              <summary className="p-4 flex items-center justify-between cursor-pointer text-accent font-semibold text-sm">
+                <span className="flex items-center gap-2">
+                  <ShieldCheck size={16} className="text-orange-400" />
+                  Ver resumo da encomenda ({items.length} {items.length === 1 ? "item" : "itens"})
+                </span>
+                <span className="text-orange-400 font-bold">
+                  {formatEUR(items.reduce((acc, item) => acc + parsePrice(item.price) * item.quantity, 0))}
+                </span>
+              </summary>
+              <div className="px-4 pb-4">
+                <OrderSidebar />
+              </div>
+            </details>
+          </div>
           <div className="hidden lg:block">
             <OrderSidebar />
           </div>

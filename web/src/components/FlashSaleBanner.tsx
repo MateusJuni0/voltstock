@@ -151,7 +151,7 @@ export function FlashSaleBanner() {
                   </span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black text-white leading-tight" style={{ fontFamily: "var(--font-outfit)" }}>
-                  {isExpired ? "A proxima sale esta a chegar!" : "Ate 40% de desconto"}
+                  {isExpired ? "A próxima sale está a chegar!" : "Até 40% de desconto"}
                 </h3>
                 <p className="text-xs text-orange-300/60 mt-1 font-medium">
                   Em componentes selecionados. Stock limitado.

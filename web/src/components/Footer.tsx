@@ -65,7 +65,7 @@ export function Footer() {
   return (
     <footer className="bg-transparent border-t border-white/5 pt-20 pb-10 px-6">
       <div className="max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-16">
           {/* ── Brand column ── */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -104,21 +104,21 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-orange-400/40 hover:text-green-400 hover:bg-green-500/10 transition-all duration-300"
+                className="w-11 h-11 rounded-lg bg-white/5 flex items-center justify-center text-orange-400/40 hover:text-green-400 hover:bg-green-500/10 transition-all duration-300"
               >
                 <WhatsAppIcon size={16} />
               </a>
               <a
                 href="#"
                 aria-label="Instagram (em breve)"
-                className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-orange-400/40 hover:text-pink-400 hover:bg-pink-500/10 transition-all duration-300"
+                className="w-11 h-11 rounded-lg bg-white/5 flex items-center justify-center text-orange-400/40 hover:text-pink-400 hover:bg-pink-500/10 transition-all duration-300"
               >
                 <InstagramIcon size={16} />
               </a>
               <a
                 href={`mailto:${EMAIL}`}
                 aria-label="Email"
-                className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-orange-400/40 hover:text-orange-400 hover:bg-orange-500/10 transition-all duration-300"
+                className="w-11 h-11 rounded-lg bg-white/5 flex items-center justify-center text-orange-400/40 hover:text-orange-400 hover:bg-orange-500/10 transition-all duration-300"
               >
                 <MailIcon size={16} />
               </a>

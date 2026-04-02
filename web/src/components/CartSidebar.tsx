@@ -13,8 +13,10 @@ export function CartSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () 
   const router = useRouter();
 
   const subtotal = items.reduce((acc, item) => {
-    const p = parseFloat(item.price.replace(/[^\d,]/g, '').replace(',', '.'));
-    return acc + p * item.quantity;
+    const p = parseFloat(
+      item.price.replace(/\./g, '').replace(',', '.').replace(/[^\d.]/g, '')
+    );
+    return acc + (isNaN(p) ? 0 : p) * item.quantity;
   }, 0);
   const remaining = FREE_SHIPPING_THRESHOLD - subtotal;
   const shippingProgress = Math.min(subtotal / FREE_SHIPPING_THRESHOLD, 1);
@@ -97,21 +99,23 @@ export function CartSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         </button>
                       </div>
                       <div className="flex items-center justify-between mt-2">
-                        <div className="flex items-center gap-1 bg-accent/5 rounded-lg border border-accent/10 p-1">
+                        <div className="flex items-center gap-1 bg-accent/5 rounded-lg border border-accent/10 p-0.5">
                           <button
                             onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                            className="p-1 rounded hover:bg-accent/10 text-orange-400/60"
+                            aria-label="Diminuir quantidade"
+                            className="p-2 rounded hover:bg-accent/10 text-orange-400/60 min-w-[36px] min-h-[36px] flex items-center justify-center"
                           >
-                            <Minus size={12} />
+                            <Minus size={14} />
                           </button>
                           <span className="w-8 text-center text-xs font-bold text-orange-400">
                             {item.quantity}
                           </span>
                           <button
                             onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                            className="p-1 rounded hover:bg-accent/10 text-orange-400/60"
+                            aria-label="Aumentar quantidade"
+                            className="p-2 rounded hover:bg-accent/10 text-orange-400/60 min-w-[36px] min-h-[36px] flex items-center justify-center"
                           >
-                            <Plus size={12} />
+                            <Plus size={14} />
                           </button>
                         </div>
                         <span className="text-sm font-black text-orange-400">{item.price}</span>

@@ -35,7 +35,7 @@ export function ProductDetail({ product }: { product: Product }) {
           </motion.button>
         </Link>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16">
           {/* Left: Images */}
           <div className="space-y-6">
             <motion.div
@@ -55,7 +55,7 @@ export function ProductDetail({ product }: { product: Product }) {
               )}
             </motion.div>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 sm:gap-4">
               {images.map((img, idx) => (
                 <motion.button
                   key={idx}
@@ -85,7 +85,7 @@ export function ProductDetail({ product }: { product: Product }) {
                 {product.category}
               </p>
               <h1
-                className="text-4xl md:text-5xl font-extrabold text-orange-400 mb-6 leading-tight"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-400 mb-6 leading-tight"
                 style={{ fontFamily: "var(--font-outfit)" }}
               >
                 {product.name}
@@ -122,7 +122,7 @@ export function ProductDetail({ product }: { product: Product }) {
               </p>
 
               {product.features && (
-                <div className="grid grid-cols-2 gap-4 mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-10">
                   {product.features.map((f, i) => (
                     <div key={i} className="p-4 rounded-2xl bg-accent/[0.03] border border-accent/5 flex flex-col gap-1">
                       <span className="text-[10px] uppercase tracking-wider text-orange-400/40 font-bold">{f.name}</span>

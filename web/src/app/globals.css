@@ -162,3 +162,27 @@
 [data-magnetic]:hover::after {
   opacity: 1;
 }
+
+/* ── Reduced motion: disable all heavy animations ─────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .digit-flip-enter {
+    animation: none;
+  }
+
+  [data-magnetic] {
+    will-change: auto;
+  }
+
+  .card-glow::before {
+    display: none;
+  }
+}

@@ -95,7 +95,7 @@ export function Categories() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
               whileHover={{ y: -12 }}
-              className="group cursor-pointer h-[320px] relative rounded-[2.5rem] overflow-hidden border border-accent/5 hover:border-orange-500/30 transition-all duration-500 shadow-2xl"
+              className="group cursor-pointer h-[260px] sm:h-[320px] relative rounded-[2.5rem] overflow-hidden border border-accent/5 hover:border-orange-500/30 transition-all duration-500 shadow-2xl"
             >
               {/* Background Image */}
               <div className="absolute inset-0 z-0">

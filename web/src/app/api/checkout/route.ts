@@ -39,13 +39,52 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate all items have valid prices and quantities
+    for (const item of body.items) {
+      if (typeof item.price !== "number" || item.price <= 0) {
+        return NextResponse.json(
+          { error: "Preço de produto inválido." },
+          { status: 400 },
+        );
+      }
+      if (
+        typeof item.quantity !== "number" ||
+        !Number.isInteger(item.quantity) ||
+        item.quantity <= 0 ||
+        item.quantity > 100
+      ) {
+        return NextResponse.json(
+          { error: "Quantidade inválida." },
+          { status: 400 },
+        );
+      }
+      if (typeof item.name !== "string" || item.name.length === 0 || item.name.length > 500) {
+        return NextResponse.json(
+          { error: "Nome do produto inválido." },
+          { status: 400 },
+        );
+      }
+    }
+
+    // Validate shipping cost is within expected bounds
+    if (
+      typeof body.shippingCost !== "number" ||
+      body.shippingCost < 0 ||
+      body.shippingCost > 50
+    ) {
+      return NextResponse.json(
+        { error: "Custo de envio inválido." },
+        { status: 400 },
+      );
+    }
+
     // Map cart items to Stripe line items
     const lineItems = body.items.map((item) => ({
       price_data: {
         currency: "eur",
         product_data: {
-          name: item.name,
-          images: item.img.startsWith("http") ? [item.img] : [],
+          name: item.name.slice(0, 250),
+          images: item.img.startsWith("https://") ? [item.img] : [],
         },
         unit_amount: formatAmountForStripe(item.price),
       },
@@ -81,6 +120,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ url: session.url });
   } catch (err: unknown) {
+    console.error("[checkout] Error creating session:", err);
     const message =
       err instanceof Error ? err.message : "Erro interno do servidor";
     return NextResponse.json({ error: message }, { status: 500 });

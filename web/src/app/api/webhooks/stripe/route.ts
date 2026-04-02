@@ -32,12 +32,16 @@ export async function POST(request: NextRequest) {
     case "checkout.session.completed": {
       const session = event.data.object as Stripe.Checkout.Session;
 
-      const shippingAddress = session.metadata?.shipping_address
-        ? JSON.parse(session.metadata.shipping_address)
-        : null;
+      let shippingAddress = null;
+      try {
+        shippingAddress = session.metadata?.shipping_address
+          ? JSON.parse(session.metadata.shipping_address)
+          : null;
+      } catch {
+        console.error("[Stripe Webhook] Failed to parse shipping address metadata");
+      }
 
-      // TODO: Save order to database (Supabase)
-      // For now, log the completed order details
+      // Log the completed order details
       // eslint-disable-next-line no-console
       console.log("[Stripe Webhook] Order completed:", {
         sessionId: session.id,
@@ -46,6 +50,25 @@ export async function POST(request: NextRequest) {
         customerEmail: session.customer_details?.email,
         shippingAddress,
       });
+
+      // Save order to database (Supabase)
+      try {
+        const { createServiceSupabase } = await import("@/lib/supabase/server");
+        const supabase = await createServiceSupabase();
+
+        await supabase.from("orders").insert({
+          stripe_session_id: session.id,
+          stripe_payment_intent: session.payment_intent as string,
+          status: "paid",
+          total: session.amount_total ? session.amount_total / 100 : 0,
+          currency: session.currency ?? "eur",
+          customer_email: session.customer_details?.email ?? null,
+          shipping_address: shippingAddress,
+        });
+      } catch (dbError) {
+        // Log but don't fail the webhook — Stripe will retry
+        console.error("[Stripe Webhook] Failed to save order to DB:", dbError);
+      }
 
       break;
     }

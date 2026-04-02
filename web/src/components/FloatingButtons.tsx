@@ -16,7 +16,7 @@ function WhatsAppIcon({ size = 24 }: { size?: number }) {
 
 export function FloatingButtons() {
   return (
-    <div className="fixed bottom-6 left-0 right-0 z-[999] pointer-events-none px-6">
+    <div className="fixed bottom-6 left-0 right-0 z-[1002] pointer-events-none px-6 pb-[env(safe-area-inset-bottom)]">
       <div className="max-w-[1400px] mx-auto flex items-end justify-between">
         {/* ── Left: Animated logo ── */}
         <Link href="/" className="pointer-events-auto">

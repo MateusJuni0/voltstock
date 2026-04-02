@@ -250,7 +250,7 @@ export function Navbar() {
               aria-label="Pesquisar"
               data-magnetic
               onClick={() => router.push("/produtos")}
-              className="p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400 relative"
+              className="p-3 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400 relative min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <Search size={18} />
             </button>
@@ -258,7 +258,7 @@ export function Navbar() {
               aria-label="Carrinho"
               data-magnetic
               onClick={() => setCartOpen(true)}
-              className="relative p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400"
+              className="relative p-3 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <ShoppingCart size={18} />
               {itemCount > 0 && (
@@ -300,7 +300,7 @@ export function Navbar() {
             <button
               aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400"
+              className="md:hidden p-3 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               {mobileOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
