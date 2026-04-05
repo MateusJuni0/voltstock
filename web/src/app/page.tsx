@@ -3,6 +3,8 @@ import { FlashSaleBanner } from "@/components/FlashSaleBanner";
 import { BrandsStrip } from "@/components/BrandsStrip";
 import { Categories } from "@/components/Categories";
 import { FeaturedProducts } from "@/components/FeaturedProducts";
+import { BestSellers } from "@/components/BestSellers";
+import { NewArrivals } from "@/components/NewArrivals";
 import { Features } from "@/components/Features";
 import { Stats } from "@/components/Stats";
 import { Testimonials } from "@/components/Testimonials";
@@ -18,6 +20,8 @@ export default function Home() {
       <BrandsStrip />
       <Categories />
       <FeaturedProducts />
+      <BestSellers />
+      <NewArrivals />
       <Features />
       <Stats />
       <Testimonials />

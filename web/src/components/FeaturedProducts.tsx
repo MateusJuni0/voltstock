@@ -23,7 +23,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function FeaturedProducts() {
-  const featured = products.slice(0, 8);
+  const featuredIds = [1, 136, 185, 137, 169, 178, 209, 6];
+  const featured = featuredIds
+    .map(id => products.find(p => p.id === id))
+    .filter((p): p is Product => p !== undefined);
   const containerRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const cardsContainerRef = useRef<HTMLDivElement>(null);
