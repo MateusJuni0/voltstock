@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import { products, type Product } from "@/data/products";
 import { useCart } from "@/store/useCart";
 import { ProductModal } from "./ProductModal";
+import { toast } from "sonner";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -154,6 +155,9 @@ function BestSellerCard({
     e.stopPropagation();
     addItem(product);
     setIsAdded(true);
+    toast.success(`${product.name} adicionado ao carrinho`, {
+      description: "Continuar a comprar ou finalizar compra",
+    });
     setTimeout(() => setIsAdded(false), 2000);
   };
 

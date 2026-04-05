@@ -13,6 +13,8 @@ import {
   websiteSchema,
   localBusinessSchema,
 } from "@/lib/structured-data";
+import { Toaster } from "sonner";
+import { CookieConsent } from "@/components/CookieConsent";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -99,9 +101,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
-  },
+  // verification: {
+  //   google: "TODO: Add Google Search Console verification code after deploy",
+  // },
 };
 
 export default function RootLayout({
@@ -141,6 +143,19 @@ export default function RootLayout({
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
         <JsonLd data={localBusinessSchema()} />
+        <CookieConsent />
+        <Toaster
+          position="bottom-right"
+          toastOptions={{
+            style: {
+              background: "rgba(20, 16, 12, 0.95)",
+              border: "1px solid rgba(251, 146, 60, 0.2)",
+              color: "#fb923c",
+              backdropFilter: "blur(12px)",
+            },
+          }}
+          theme="dark"
+        />
       </body>
     </html>
   );

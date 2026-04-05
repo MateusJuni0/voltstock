@@ -57,9 +57,9 @@ const values = [
 ];
 
 const stats = [
-  { value: "500+", label: "Produtos" },
-  { value: "10.000+", label: "Clientes" },
-  { value: "4.9★", label: "Avaliação" },
+  { value: "200+", label: "Produtos" },
+  { value: "100%", label: "Garantia" },
+  { value: "IVA", label: "Incluído" },
   { value: "24-48h", label: "Entrega" },
 ];
 

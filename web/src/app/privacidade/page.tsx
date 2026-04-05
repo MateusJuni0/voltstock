@@ -83,15 +83,15 @@ export default function PrivacidadePage() {
                 Tecnologia, Unipessoal Lda. (VoltStock)
               </p>
               <p>
-                <strong className="text-orange-400/90">NIF:</strong> [INSERIR NIF]
+                <strong className="text-orange-400/90">NIF:</strong> 311848710
               </p>
               <p>
-                <strong className="text-orange-400/90">Morada:</strong> [INSERIR
-                MORADA]
+                <strong className="text-orange-400/90">Morada:</strong> Portugal
+                (empresa 100% digital)
               </p>
               <p>
-                <strong className="text-orange-400/90">Email:</strong> [INSERIR
-                EMAIL]
+                <strong className="text-orange-400/90">Email:</strong>{" "}
+                info@voltstock.pt
               </p>
             </div>
           </section>
@@ -340,7 +340,7 @@ export default function PrivacidadePage() {
               <p>
                 Para exercer qualquer um destes direitos, contacte-nos atraves
                 de{" "}
-                <span className="text-orange-400">[INSERIR EMAIL]</span>.
+                <a href="mailto:info@voltstock.pt" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors duration-200">info@voltstock.pt</a>.
                 Responderemos no prazo maximo de 30 dias.
               </p>
             </div>
@@ -359,7 +359,7 @@ export default function PrivacidadePage() {
               </p>
               <p>
                 <strong className="text-orange-400/90">Email:</strong>{" "}
-                <span className="text-orange-400">[INSERIR EMAIL]</span>
+                <a href="mailto:info@voltstock.pt" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors duration-200">info@voltstock.pt</a>
               </p>
               <p>
                 Tem igualmente o direito de apresentar reclamacao junto da

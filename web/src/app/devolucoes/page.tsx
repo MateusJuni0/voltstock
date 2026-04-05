@@ -101,7 +101,7 @@ export default function DevolucoesPage() {
                     Comunique a sua intencao:
                   </strong>{" "}
                   Envie um email para{" "}
-                  <span className="text-orange-400">[INSERIR EMAIL]</span> com o
+                  <a href="mailto:info@voltstock.pt" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors duration-200">info@voltstock.pt</a> com o
                   assunto &quot;Devolucao - [Numero da Encomenda]&quot;, indicando os
                   produtos que pretende devolver e o motivo (opcional).
                 </li>
@@ -109,7 +109,7 @@ export default function DevolucoesPage() {
                   <strong className="text-orange-400/90">
                     Aguarde confirmacao:
                   </strong>{" "}
-                  Receberao um email com as instrucoes de devolucao e a morada
+                  Recebera um email com as instrucoes de devolucao e a morada
                   para envio no prazo de 2 dias uteis.
                 </li>
                 <li>
@@ -304,11 +304,11 @@ export default function DevolucoesPage() {
               <div className="glass rounded-xl p-5 space-y-2 mt-3">
                 <p>
                   <strong className="text-orange-400/90">Email:</strong>{" "}
-                  <span className="text-orange-400">[INSERIR EMAIL]</span>
+                  <a href="mailto:info@voltstock.pt" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors duration-200">info@voltstock.pt</a>
                 </p>
                 <p>
-                  <strong className="text-orange-400/90">Morada:</strong>{" "}
-                  [INSERIR MORADA]
+                  <strong className="text-orange-400/90">WhatsApp:</strong>{" "}
+                  <a href="https://wa.me/351961227666" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-green-400 transition-colors duration-200">+351 961 227 666</a>
                 </p>
               </div>
               <p className="mt-4">

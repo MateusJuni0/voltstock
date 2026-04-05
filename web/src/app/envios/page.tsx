@@ -307,7 +307,7 @@ export default function EnviosPage() {
               <div className="glass rounded-xl p-5 space-y-2 mt-3">
                 <p>
                   <strong className="text-orange-400/90">Email:</strong>{" "}
-                  <span className="text-orange-400">[INSERIR EMAIL]</span>
+                  <a href="mailto:info@voltstock.pt" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors duration-200">info@voltstock.pt</a>
                 </p>
                 <p>
                   <strong className="text-orange-400/90">Horario de atendimento:</strong>{" "}

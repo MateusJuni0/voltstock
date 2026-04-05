@@ -200,7 +200,7 @@ export function CartSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                 <PaymentLogos size="sm" className="justify-center" />
 
                 <p className="text-center text-[10px] text-orange-400/30">
-                  Envio grátis a partir de 50€
+                  Envio grátis: Continental 50€ | Ilhas 100€
                 </p>
               </div>
             )}

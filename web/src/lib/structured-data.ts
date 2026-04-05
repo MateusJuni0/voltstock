@@ -13,9 +13,14 @@ export function organizationSchema(): Record<string, unknown> {
       addressCountry: "PT",
       addressLocality: "Portugal",
     },
+    email: "info@voltstock.pt",
+    telephone: "+351961227666",
+    taxID: "311848710",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
+      email: "info@voltstock.pt",
+      telephone: "+351961227666",
       availableLanguage: "Portuguese",
     },
     sameAs: [],
@@ -206,7 +211,11 @@ export function localBusinessSchema(): Record<string, unknown> {
     "@context": "https://schema.org",
     "@type": "Store",
     name: "VoltStock",
+    legalName: "CM Tecnologia, Unipessoal Lda.",
+    taxID: "311848710",
     url: "https://voltstock.pt",
+    email: "info@voltstock.pt",
+    telephone: "+351961227666",
     description:
       "Loja online de hardware premium e componentes informáticos em Portugal",
     address: {

@@ -7,7 +7,9 @@ import { Product } from "@/data/products";
 import { Star, X, ShoppingCart, Heart, Shield, Truck, Package, Check, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
+import { useWishlist } from "@/store/useWishlist";
 import { TRUST } from "@/lib/trust-constants";
+import { toast } from "sonner";
 
 interface ProductModalProps {
   product: Product;
@@ -18,6 +20,8 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   const [selectedImage, setSelectedImage] = useState(product.img);
   const [isAdded, setIsAdded] = useState(false);
   const addItem = useCart((s) => s.addItem);
+  const { toggleItem, hasItem } = useWishlist();
+  const isInWishlist = hasItem(product.id);
   const router = useRouter();
 
   // Deterministic pseudo-random review count from product ID (3-182 range)
@@ -46,6 +50,9 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   const handleAddToCart = () => {
     addItem(product);
     setIsAdded(true);
+    toast.success(`${product.name} adicionado ao carrinho`, {
+      description: "Continuar a comprar ou finalizar compra",
+    });
     setTimeout(() => setIsAdded(false), 2000);
   };
 
@@ -53,6 +60,13 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
     addItem(product);
     onClose();
     router.push("/checkout");
+  };
+
+  const handleToggleWishlist = () => {
+    toggleItem(product.id);
+    toast.success(
+      isInWishlist ? "Removido da lista de desejos" : "Adicionado à lista de desejos"
+    );
   };
 
   return (
@@ -244,8 +258,16 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                       )}
                     </AnimatePresence>
                   </motion.button>
-                  <button className="w-14 h-14 rounded-2xl bg-accent/5 border border-accent/10 flex items-center justify-center text-orange-400/50 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-                    <Heart size={22} />
+                  <button
+                    onClick={handleToggleWishlist}
+                    className={cn(
+                      "w-14 h-14 rounded-2xl border flex items-center justify-center transition-all",
+                      isInWishlist
+                        ? "bg-rose-500/10 border-rose-500/20 text-rose-400"
+                        : "bg-accent/5 border-accent/10 text-orange-400/50 hover:text-rose-400 hover:bg-rose-500/10"
+                    )}
+                  >
+                    <Heart size={22} className={isInWishlist ? "fill-rose-400" : ""} />
                   </button>
                 </div>
                 <motion.button

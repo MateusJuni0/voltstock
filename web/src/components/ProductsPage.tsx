@@ -8,6 +8,8 @@ import { products, categories, Product } from "@/data/products";
 import { Plus, Heart, Star, Search, SlidersHorizontal, Check, X, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
+import { useWishlist } from "@/store/useWishlist";
+import { toast } from "sonner";
 import { ProductModal } from "./ProductModal";
 import { use3DTilt } from "@/hooks/use3DTilt";
 import { useCartFlight } from "./CartFlight";
@@ -326,6 +328,8 @@ function ProductCard({
 }) {
   const [isAdded, setIsAdded] = useState(false);
   const addItem = useCart((s) => s.addItem);
+  const { toggleItem, hasItem } = useWishlist();
+  const isInWishlist = hasItem(product.id);
   const { fireCartFlight } = useCartFlight();
 
   const { tiltRef, glowRef, imgRef, shadowRef } = use3DTilt({
@@ -370,6 +374,9 @@ function ProductCard({
     e.stopPropagation();
     addItem(product);
     setIsAdded(true);
+    toast.success(`${product.name} adicionado ao carrinho`, {
+      description: "Continuar a comprar ou finalizar compra",
+    });
 
     const el = imgElRef.current ?? imgContainerRef.current;
     if (el) {
@@ -382,6 +389,15 @@ function ProductCard({
     }
 
     setTimeout(() => setIsAdded(false), 2000);
+  };
+
+  const handleToggleWishlist = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleItem(product.id);
+    toast.success(
+      isInWishlist ? "Removido da lista de desejos" : "Adicionado à lista de desejos"
+    );
   };
 
   return (
@@ -467,11 +483,16 @@ function ProductCard({
 
           {/* Wishlist */}
           <button
-            onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}
-            className="absolute top-5 right-5 p-2.5 rounded-xl bg-black/40 backdrop-blur-md text-white/30 hover:text-rose-400 hover:bg-black/60 transition-all z-30 opacity-0 group-hover:opacity-100"
+            onClick={handleToggleWishlist}
+            className={cn(
+              "absolute top-5 right-5 p-2.5 rounded-xl backdrop-blur-md transition-all z-30 opacity-0 group-hover:opacity-100",
+              isInWishlist
+                ? "bg-rose-500/20 text-rose-400"
+                : "bg-black/40 text-white/30 hover:text-rose-400 hover:bg-black/60"
+            )}
             style={{ transform: "translateZ(35px)", transformStyle: "preserve-3d" }}
           >
-            <Heart size={15} />
+            <Heart size={15} className={isInWishlist ? "fill-rose-400" : ""} />
           </button>
         </div>
 

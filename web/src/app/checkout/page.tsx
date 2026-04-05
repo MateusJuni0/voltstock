@@ -55,9 +55,13 @@ function parsePrice(priceStr: string): number {
 }
 
 function calculateShipping(subtotal: number, postalCode: string): number {
-  if (subtotal >= 50) return 0;
-  if (postalCode.startsWith("9")) return 9.99;
-  return 4.99;
+  const isIslands = postalCode.startsWith("9");
+
+  if (isIslands) {
+    return subtotal >= 100 ? 0 : 9.99;
+  }
+
+  return subtotal >= 50 ? 0 : 4.99;
 }
 
 function formatEUR(value: number): string {

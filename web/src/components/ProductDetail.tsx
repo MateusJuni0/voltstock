@@ -11,8 +11,10 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
+import { useWishlist } from "@/store/useWishlist";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { RelatedProducts } from "./RelatedProducts";
+import { toast } from "sonner";
 
 // --- Helpers ---
 
@@ -39,13 +41,25 @@ export function ProductDetail({ product }: { product: Product }) {
   const [showStickyBar, setShowStickyBar] = useState(false);
   const [magnifier, setMagnifier] = useState({ active: false, x: 0, y: 0 });
   const addItem = useCart((state) => state.addItem);
+  const { toggleItem, hasItem } = useWishlist();
+  const isInWishlist = hasItem(product.id);
   const addToCartRef = useRef<HTMLDivElement | null>(null);
   const imageContainerRef = useRef<HTMLDivElement | null>(null);
 
   const handleAddToCart = () => {
     addItem(product);
     setIsAdded(true);
+    toast.success(`${product.name} adicionado ao carrinho`, {
+      description: "Continuar a comprar ou finalizar compra",
+    });
     setTimeout(() => setIsAdded(false), 2000);
+  };
+
+  const handleToggleWishlist = () => {
+    toggleItem(product.id);
+    toast.success(
+      isInWishlist ? "Removido da lista de desejos" : "Adicionado à lista de desejos"
+    );
   };
 
   // Sticky bar: show when original add-to-cart scrolls out of view
@@ -400,8 +414,16 @@ export function ProductDetail({ product }: { product: Product }) {
                     </AnimatePresence>
                   </button>
                 )}
-                <button className="w-16 h-16 rounded-2xl bg-accent/5 border border-accent/10 flex items-center justify-center text-orange-400/60 hover:text-rose-400 hover:bg-rose-500/10 transition-all shadow-lg">
-                  <Heart size={24} />
+                <button
+                  onClick={handleToggleWishlist}
+                  className={cn(
+                    "w-16 h-16 rounded-2xl border flex items-center justify-center transition-all shadow-lg",
+                    isInWishlist
+                      ? "bg-rose-500/10 border-rose-500/20 text-rose-400"
+                      : "bg-accent/5 border-accent/10 text-orange-400/60 hover:text-rose-400 hover:bg-rose-500/10"
+                  )}
+                >
+                  <Heart size={24} className={isInWishlist ? "fill-rose-400" : ""} />
                 </button>
               </div>
             </motion.div>

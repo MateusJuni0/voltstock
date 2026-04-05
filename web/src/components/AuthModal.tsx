@@ -46,7 +46,7 @@ const registerSchema = z
 
 type LoginFormData = z.infer<typeof loginSchema>;
 type RegisterFormData = z.infer<typeof registerSchema>;
-type Tab = "login" | "register";
+type AuthView = "login" | "register" | "forgot";
 interface ToastMessage { type: "error" | "success"; text: string; }
 interface AuthModalProps { isOpen: boolean; onClose: () => void; }
 
@@ -124,8 +124,11 @@ function InputField({
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
+type Tab = "login" | "register";
+
 export function AuthModal({ isOpen, onClose }: AuthModalProps) {
   const [activeTab, setActiveTab] = useState<Tab>("login");
+  const [view, setView] = useState<AuthView>("login");
   const [toast, setToast] = useState<ToastMessage | null>(null);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -133,6 +136,10 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
   const [oauthLoading, setOauthLoading] = useState(false);
   /** Show email/password form collapsed by default — OAuth is the primary path */
   const [showEmailForm, setShowEmailForm] = useState(false);
+  const [forgotEmail, setForgotEmail] = useState("");
+  const [forgotEmailError, setForgotEmailError] = useState("");
+  const [forgotSent, setForgotSent] = useState(false);
+  const [resendingConfirmation, setResendingConfirmation] = useState(false);
 
   const loginForm = useForm<LoginFormData>({
     resolver: zodResolver(loginSchema),
@@ -170,6 +177,11 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
       setIsSubmitting(false);
       setOauthLoading(false);
       setShowEmailForm(false);
+      setView("login");
+      setForgotEmail("");
+      setForgotEmailError("");
+      setForgotSent(false);
+      setResendingConfirmation(false);
       loginForm.reset();
       registerForm.reset();
     }
@@ -181,6 +193,10 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
     setShowPassword(false);
     setShowConfirmPassword(false);
     setShowEmailForm(false);
+    setView(activeTab);
+    setForgotEmail("");
+    setForgotEmailError("");
+    setForgotSent(false);
   }, [activeTab]);
 
   // ─── OAuth ────────────────────────────────────────────────────────────────
@@ -219,12 +235,18 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
         password: data.password,
       });
       if (error) {
+        const isUnconfirmed = error.message === "Email not confirmed";
         const messages: Record<string, string> = {
           "Invalid login credentials": "Email ou password incorretos.",
           "Email not confirmed": "Confirme o seu email antes de entrar.",
           "Too many requests": "Demasiadas tentativas. Aguarde um momento.",
         };
-        setToast({ type: "error", text: messages[error.message] ?? "Erro ao iniciar sessão." });
+        setToast({
+          type: "error",
+          text: isUnconfirmed
+            ? "Email não confirmado. Confirme o seu email antes de entrar."
+            : messages[error.message] ?? "Erro ao iniciar sessão.",
+        });
         return;
       }
       setToast({ type: "success", text: "Sessão iniciada com sucesso!" });
@@ -264,6 +286,75 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
       setToast({ type: "error", text: "Erro de ligação. Verifique a sua internet." });
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  // ─── Forgot Password ──────────────────────────────────────────────────────
+
+  const handleForgotPassword = async () => {
+    setForgotEmailError("");
+    setToast(null);
+
+    const trimmed = forgotEmail.trim();
+    if (!trimmed) {
+      setForgotEmailError("O email é obrigatório");
+      return;
+    }
+    const emailResult = z.string().email("Email inválido").safeParse(trimmed);
+    if (!emailResult.success) {
+      setForgotEmailError(emailResult.error.issues[0]?.message ?? "Email inválido");
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const supabase = createClient();
+      const { error } = await supabase.auth.resetPasswordForEmail(trimmed, {
+        redirectTo: `${window.location.origin}/api/auth/callback?next=/conta/perfil`,
+      });
+      if (error) {
+        const messages: Record<string, string> = {
+          "For security purposes, you can only request this once every 60 seconds":
+            "Demasiados pedidos. Tente novamente em alguns minutos.",
+          "Too many requests": "Demasiados pedidos. Tente novamente em alguns minutos.",
+        };
+        setToast({
+          type: "error",
+          text: messages[error.message] ?? "Não foi possível enviar o email. Tente novamente.",
+        });
+        return;
+      }
+      setForgotSent(true);
+    } catch {
+      setToast({ type: "error", text: "Erro de ligação. Verifique a sua internet." });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // ─── Resend Confirmation Email ────────────────────────────────────────────
+
+  const handleResendConfirmation = async () => {
+    const email = loginForm.getValues("email")?.trim();
+    if (!email) return;
+
+    setResendingConfirmation(true);
+    setToast(null);
+    try {
+      const supabase = createClient();
+      const { error } = await supabase.auth.resend({ type: "signup", email });
+      if (error) {
+        setToast({
+          type: "error",
+          text: "Não foi possível reenviar o email. Tente novamente.",
+        });
+        return;
+      }
+      setToast({ type: "success", text: "Email de confirmação reenviado!" });
+    } catch {
+      setToast({ type: "error", text: "Erro de ligação. Verifique a sua internet." });
+    } finally {
+      setResendingConfirmation(false);
     }
   };
 
@@ -307,35 +398,17 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
                 {/* Header */}
                 <div className="text-center mb-6">
                   <h2 className="text-2xl font-bold text-white" style={{ fontFamily: "var(--font-outfit)" }}>
-                    {activeTab === "login" ? "Bem-vindo de volta" : "Criar conta"}
+                    {view === "forgot"
+                      ? forgotSent ? "Email Enviado!" : "Recuperar Password"
+                      : activeTab === "login" ? "Bem-vindo de volta" : "Criar conta"}
                   </h2>
                   <p className="text-sm text-white/50 mt-1">
-                    {activeTab === "login" ? "Aceda à sua conta VoltStock" : "Junte-se à comunidade VoltStock"}
+                    {view === "forgot"
+                      ? forgotSent
+                        ? "Verifique a sua caixa de entrada para o link de recuperação. Se não receber em poucos minutos, verifique o spam."
+                        : "Introduza o seu email para receber um link de recuperação."
+                      : activeTab === "login" ? "Aceda à sua conta VoltStock" : "Junte-se à comunidade VoltStock"}
                   </p>
-                </div>
-
-                {/* Tabs */}
-                <div className="flex gap-1 p-1 rounded-xl bg-white/[0.05] mb-6">
-                  {(["login", "register"] as const).map((tab) => (
-                    <button
-                      key={tab}
-                      onClick={() => setActiveTab(tab)}
-                      className={`relative flex-1 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 ${
-                        activeTab === tab ? "text-white" : "text-white/40 hover:text-white/60"
-                      }`}
-                    >
-                      {activeTab === tab && (
-                        <motion.div
-                          layoutId="auth-tab-indicator"
-                          className="absolute inset-0 bg-white/10 rounded-lg border border-white/[0.08]"
-                          transition={{ type: "spring", stiffness: 400, damping: 30 }}
-                        />
-                      )}
-                      <span className="relative z-10">
-                        {tab === "login" ? "Entrar" : "Criar Conta"}
-                      </span>
-                    </button>
-                  ))}
                 </div>
 
                 {/* Toast */}
@@ -343,148 +416,309 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
                   {toast && (
                     <div className="mb-4">
                       <Toast message={toast} />
+                      {/* Resend confirmation button when email not confirmed */}
+                      {toast.type === "error" && toast.text.includes("não confirmado") && (
+                        <motion.button
+                          initial={{ opacity: 0, y: -4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          type="button"
+                          onClick={handleResendConfirmation}
+                          disabled={resendingConfirmation}
+                          className="mt-2 w-full text-xs text-orange-400/70 hover:text-orange-400 transition-colors disabled:opacity-50 flex items-center justify-center gap-1.5"
+                        >
+                          {resendingConfirmation ? (
+                            <><Loader2 size={12} className="animate-spin" />A reenviar…</>
+                          ) : (
+                            "Reenviar email de confirmação"
+                          )}
+                        </motion.button>
+                      )}
                     </div>
                   )}
                 </AnimatePresence>
 
-                {/* ── Google OAuth — primary CTA ── */}
-                <button
-                  onClick={handleGoogleOAuth}
-                  disabled={oauthLoading || isSubmitting}
-                  className="w-full flex items-center justify-center gap-3 py-3.5 rounded-xl bg-white hover:bg-white/90 text-gray-800 font-semibold text-sm shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed mb-4"
-                >
-                  {oauthLoading ? (
-                    <Loader2 size={20} className="animate-spin text-gray-500" />
-                  ) : (
-                    <GoogleIcon size={20} />
-                  )}
-                  {oauthLoading
-                    ? "A redirecionar…"
-                    : activeTab === "login"
-                    ? "Continuar com Google"
-                    : "Registar com Google"}
-                </button>
-
-                {/* ── Divider ── */}
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="flex-1 h-px bg-white/[0.08]" />
-                  <button
-                    onClick={() => setShowEmailForm((v) => !v)}
-                    className="flex items-center gap-1.5 text-xs text-white/30 hover:text-white/60 transition-colors whitespace-nowrap"
-                  >
-                    ou continuar com email
-                    <ChevronDown
-                      size={14}
-                      className={`transition-transform duration-200 ${showEmailForm ? "rotate-180" : ""}`}
-                    />
-                  </button>
-                  <div className="flex-1 h-px bg-white/[0.08]" />
-                </div>
-
-                {/* ── Email/Password Forms (collapsible) ── */}
-                <AnimatePresence>
-                  {showEmailForm && (
+                <AnimatePresence mode="wait">
+                  {/* ── Forgot Password View ── */}
+                  {view === "forgot" && (
                     <motion.div
-                      key="email-forms"
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.25, ease: "easeInOut" }}
-                      style={{ overflow: "hidden" }}
+                      key="forgot"
+                      initial={{ opacity: 0, x: 16 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -16 }}
+                      transition={{ duration: 0.2 }}
+                      className="space-y-4"
                     >
-                      <AnimatePresence mode="wait">
-                        {/* Login Form */}
-                        {activeTab === "login" && (
-                          <motion.form
-                            key="login"
-                            initial={{ opacity: 0, x: -16 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: 16 }}
-                            transition={{ duration: 0.2 }}
-                            onSubmit={loginForm.handleSubmit(handleLogin)}
-                            className="space-y-4"
-                            noValidate
+                      {forgotSent ? (
+                        /* Success state */
+                        <div className="space-y-4">
+                          <div className="flex justify-center">
+                            <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                              <CheckCircle size={28} className="text-emerald-400" />
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setView("login");
+                              setForgotSent(false);
+                              setForgotEmail("");
+                              setForgotEmailError("");
+                              setToast(null);
+                            }}
+                            className="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white shadow-lg shadow-orange-500/20 transition-all duration-200 flex items-center justify-center gap-2"
                           >
-                            <InputField
-                              id="login-email"
-                              label="Email"
+                            Voltar ao login
+                          </button>
+                        </div>
+                      ) : (
+                        /* Email input form */
+                        <div className="space-y-4">
+                          <div className="space-y-1.5">
+                            <label htmlFor="forgot-email" className="block text-sm font-medium text-white/60">
+                              Email
+                            </label>
+                            <input
+                              id="forgot-email"
                               type="email"
-                              registration={loginForm.register("email")}
-                              error={loginForm.formState.errors.email?.message}
+                              autoComplete="email"
+                              value={forgotEmail}
+                              onChange={(e) => {
+                                setForgotEmail(e.target.value);
+                                if (forgotEmailError) setForgotEmailError("");
+                              }}
+                              className={`w-full px-4 py-3 rounded-xl bg-white/[0.06] border transition-all duration-200 text-white placeholder-white/30 focus:outline-none focus:ring-2 ${
+                                forgotEmailError
+                                  ? "border-red-500/50 focus:ring-red-500/30"
+                                  : "border-white/10 focus:border-orange-500/50 focus:ring-orange-500/20"
+                              }`}
                             />
-                            <InputField
-                              id="login-password"
-                              label="Password"
-                              type="password"
-                              registration={loginForm.register("password")}
-                              error={loginForm.formState.errors.password?.message}
-                              showToggle
-                              onToggle={() => setShowPassword((p) => !p)}
-                              isVisible={showPassword}
-                            />
-                            <button
-                              type="submit"
-                              disabled={isSubmitting}
-                              className="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white shadow-lg shadow-orange-500/20 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                            >
-                              {isSubmitting ? <><Loader2 size={18} className="animate-spin" />A entrar…</> : "Entrar"}
-                            </button>
-                          </motion.form>
-                        )}
+                            <AnimatePresence mode="wait">
+                              {forgotEmailError && (
+                                <motion.p
+                                  initial={{ opacity: 0, y: -4 }}
+                                  animate={{ opacity: 1, y: 0 }}
+                                  exit={{ opacity: 0 }}
+                                  className="text-xs text-red-400 flex items-center gap-1"
+                                >
+                                  <AlertCircle size={12} />
+                                  {forgotEmailError}
+                                </motion.p>
+                              )}
+                            </AnimatePresence>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={handleForgotPassword}
+                            disabled={isSubmitting}
+                            className="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white shadow-lg shadow-orange-500/20 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                          >
+                            {isSubmitting ? <><Loader2 size={18} className="animate-spin" />A enviar…</> : "Enviar Link"}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setView("login");
+                              setForgotEmail("");
+                              setForgotEmailError("");
+                              setToast(null);
+                            }}
+                            className="w-full text-sm text-orange-400/50 hover:text-orange-400 transition-colors"
+                          >
+                            Voltar ao login
+                          </button>
+                        </div>
+                      )}
+                    </motion.div>
+                  )}
 
-                        {/* Register Form */}
-                        {activeTab === "register" && (
-                          <motion.form
-                            key="register"
-                            initial={{ opacity: 0, x: 16 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -16 }}
-                            transition={{ duration: 0.2 }}
-                            onSubmit={registerForm.handleSubmit(handleRegister)}
-                            className="space-y-4"
-                            noValidate
+                  {/* ── Login / Register View ── */}
+                  {view !== "forgot" && (
+                    <motion.div
+                      key="auth-main"
+                      initial={{ opacity: 0, x: -16 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: 16 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {/* Tabs */}
+                      <div className="flex gap-1 p-1 rounded-xl bg-white/[0.05] mb-6">
+                        {(["login", "register"] as const).map((tab) => (
+                          <button
+                            key={tab}
+                            onClick={() => setActiveTab(tab)}
+                            className={`relative flex-1 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 ${
+                              activeTab === tab ? "text-white" : "text-white/40 hover:text-white/60"
+                            }`}
                           >
-                            <InputField
-                              id="register-name"
-                              label="Nome completo"
-                              registration={registerForm.register("fullName")}
-                              error={registerForm.formState.errors.fullName?.message}
-                            />
-                            <InputField
-                              id="register-email"
-                              label="Email"
-                              type="email"
-                              registration={registerForm.register("email")}
-                              error={registerForm.formState.errors.email?.message}
-                            />
-                            <InputField
-                              id="register-password"
-                              label="Password"
-                              type="password"
-                              registration={registerForm.register("password")}
-                              error={registerForm.formState.errors.password?.message}
-                              showToggle
-                              onToggle={() => setShowPassword((p) => !p)}
-                              isVisible={showPassword}
-                            />
-                            <InputField
-                              id="register-confirm-password"
-                              label="Confirmar password"
-                              type="password"
-                              registration={registerForm.register("confirmPassword")}
-                              error={registerForm.formState.errors.confirmPassword?.message}
-                              showToggle
-                              onToggle={() => setShowConfirmPassword((p) => !p)}
-                              isVisible={showConfirmPassword}
-                            />
-                            <button
-                              type="submit"
-                              disabled={isSubmitting}
-                              className="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white shadow-lg shadow-orange-500/20 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                            >
-                              {isSubmitting ? <><Loader2 size={18} className="animate-spin" />A criar…</> : "Criar Conta"}
-                            </button>
-                          </motion.form>
+                            {activeTab === tab && (
+                              <motion.div
+                                layoutId="auth-tab-indicator"
+                                className="absolute inset-0 bg-white/10 rounded-lg border border-white/[0.08]"
+                                transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                              />
+                            )}
+                            <span className="relative z-10">
+                              {tab === "login" ? "Entrar" : "Criar Conta"}
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+
+                      {/* ── Google OAuth — primary CTA ── */}
+                      <button
+                        onClick={handleGoogleOAuth}
+                        disabled={oauthLoading || isSubmitting}
+                        className="w-full flex items-center justify-center gap-3 py-3.5 rounded-xl bg-white hover:bg-white/90 text-gray-800 font-semibold text-sm shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed mb-4"
+                      >
+                        {oauthLoading ? (
+                          <Loader2 size={20} className="animate-spin text-gray-500" />
+                        ) : (
+                          <GoogleIcon size={20} />
+                        )}
+                        {oauthLoading
+                          ? "A redirecionar…"
+                          : activeTab === "login"
+                          ? "Continuar com Google"
+                          : "Registar com Google"}
+                      </button>
+
+                      {/* ── Divider ── */}
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="flex-1 h-px bg-white/[0.08]" />
+                        <button
+                          onClick={() => setShowEmailForm((v) => !v)}
+                          className="flex items-center gap-1.5 text-xs text-white/30 hover:text-white/60 transition-colors whitespace-nowrap"
+                        >
+                          ou continuar com email
+                          <ChevronDown
+                            size={14}
+                            className={`transition-transform duration-200 ${showEmailForm ? "rotate-180" : ""}`}
+                          />
+                        </button>
+                        <div className="flex-1 h-px bg-white/[0.08]" />
+                      </div>
+
+                      {/* ── Email/Password Forms (collapsible) ── */}
+                      <AnimatePresence>
+                        {showEmailForm && (
+                          <motion.div
+                            key="email-forms"
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.25, ease: "easeInOut" }}
+                            style={{ overflow: "hidden" }}
+                          >
+                            <AnimatePresence mode="wait">
+                              {/* Login Form */}
+                              {activeTab === "login" && (
+                                <motion.form
+                                  key="login"
+                                  initial={{ opacity: 0, x: -16 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  exit={{ opacity: 0, x: 16 }}
+                                  transition={{ duration: 0.2 }}
+                                  onSubmit={loginForm.handleSubmit(handleLogin)}
+                                  className="space-y-4"
+                                  noValidate
+                                >
+                                  <InputField
+                                    id="login-email"
+                                    label="Email"
+                                    type="email"
+                                    registration={loginForm.register("email")}
+                                    error={loginForm.formState.errors.email?.message}
+                                  />
+                                  <InputField
+                                    id="login-password"
+                                    label="Password"
+                                    type="password"
+                                    registration={loginForm.register("password")}
+                                    error={loginForm.formState.errors.password?.message}
+                                    showToggle
+                                    onToggle={() => setShowPassword((p) => !p)}
+                                    isVisible={showPassword}
+                                  />
+                                  {/* Forgot password link */}
+                                  <div className="flex justify-end -mt-2">
+                                    <button
+                                      type="button"
+                                      onClick={() => {
+                                        setView("forgot");
+                                        setToast(null);
+                                        setForgotEmail(loginForm.getValues("email") || "");
+                                      }}
+                                      className="text-xs text-orange-400/50 hover:text-orange-400 transition-colors"
+                                    >
+                                      Esqueceu a password?
+                                    </button>
+                                  </div>
+                                  <button
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    className="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white shadow-lg shadow-orange-500/20 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                                  >
+                                    {isSubmitting ? <><Loader2 size={18} className="animate-spin" />A entrar…</> : "Entrar"}
+                                  </button>
+                                </motion.form>
+                              )}
+
+                              {/* Register Form */}
+                              {activeTab === "register" && (
+                                <motion.form
+                                  key="register"
+                                  initial={{ opacity: 0, x: 16 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  exit={{ opacity: 0, x: -16 }}
+                                  transition={{ duration: 0.2 }}
+                                  onSubmit={registerForm.handleSubmit(handleRegister)}
+                                  className="space-y-4"
+                                  noValidate
+                                >
+                                  <InputField
+                                    id="register-name"
+                                    label="Nome completo"
+                                    registration={registerForm.register("fullName")}
+                                    error={registerForm.formState.errors.fullName?.message}
+                                  />
+                                  <InputField
+                                    id="register-email"
+                                    label="Email"
+                                    type="email"
+                                    registration={registerForm.register("email")}
+                                    error={registerForm.formState.errors.email?.message}
+                                  />
+                                  <InputField
+                                    id="register-password"
+                                    label="Password"
+                                    type="password"
+                                    registration={registerForm.register("password")}
+                                    error={registerForm.formState.errors.password?.message}
+                                    showToggle
+                                    onToggle={() => setShowPassword((p) => !p)}
+                                    isVisible={showPassword}
+                                  />
+                                  <InputField
+                                    id="register-confirm-password"
+                                    label="Confirmar password"
+                                    type="password"
+                                    registration={registerForm.register("confirmPassword")}
+                                    error={registerForm.formState.errors.confirmPassword?.message}
+                                    showToggle
+                                    onToggle={() => setShowConfirmPassword((p) => !p)}
+                                    isVisible={showConfirmPassword}
+                                  />
+                                  <button
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    className="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white shadow-lg shadow-orange-500/20 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                                  >
+                                    {isSubmitting ? <><Loader2 size={18} className="animate-spin" />A criar…</> : "Criar Conta"}
+                                  </button>
+                                </motion.form>
+                              )}
+                            </AnimatePresence>
+                          </motion.div>
                         )}
                       </AnimatePresence>
                     </motion.div>

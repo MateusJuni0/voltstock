@@ -69,15 +69,15 @@ export default function TermosPage() {
                 VoltStock
               </p>
               <p>
-                <strong className="text-orange-400/90">NIF:</strong> [INSERIR NIF]
+                <strong className="text-orange-400/90">NIF:</strong> 311848710
               </p>
               <p>
-                <strong className="text-orange-400/90">Sede:</strong> [INSERIR
-                MORADA]
+                <strong className="text-orange-400/90">Sede:</strong> Portugal
+                (empresa 100% digital)
               </p>
               <p>
-                <strong className="text-orange-400/90">Email:</strong> [INSERIR
-                EMAIL]
+                <strong className="text-orange-400/90">Email:</strong>{" "}
+                info@voltstock.pt
               </p>
               <p>
                 <strong className="text-orange-400/90">
@@ -274,7 +274,7 @@ export default function TermosPage() {
               <p>
                 Para exercer o direito de livre resolucao, o cliente deve
                 comunicar a sua decisao de forma inequivoca, enviando email para{" "}
-                <span className="text-orange-400">[INSERIR EMAIL]</span>,
+                <a href="mailto:info@voltstock.pt" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors duration-200">info@voltstock.pt</a>,
                 indicando o numero da encomenda e os produtos a devolver.
               </p>
               <p>
@@ -313,7 +313,7 @@ export default function TermosPage() {
               <p>
                 Para acionar a garantia, o cliente deve contactar-nos por email
                 para{" "}
-                <span className="text-orange-400">[INSERIR EMAIL]</span>,
+                <a href="mailto:info@voltstock.pt" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors duration-200">info@voltstock.pt</a>,
                 indicando o numero da encomenda, o produto em causa e uma
                 descricao do defeito.
               </p>

@@ -15,6 +15,8 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/store/useCart";
+import { useWishlist } from "@/store/useWishlist";
+import { toast } from "sonner";
 
 interface WishlistProduct {
   wishlist_id: string;
@@ -46,6 +48,7 @@ function formatRating(rating: number | string): string {
 export default function WishlistPage() {
   const { user, loading: authLoading } = useAuth();
   const { addItem } = useCart();
+  const { toggleItem, syncWithSupabase } = useWishlist();
   const [items, setItems] = useState<WishlistProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -57,6 +60,9 @@ export default function WishlistPage() {
 
     async function fetchWishlist() {
       try {
+        // Sync Zustand store with Supabase on page load
+        await syncWithSupabase(user!.id);
+
         const supabase = createClient();
 
         // Try joining wishlists with products
@@ -108,13 +114,17 @@ export default function WishlistPage() {
     }
 
     fetchWishlist();
-  }, [user, authLoading]);
+  }, [user, authLoading, syncWithSupabase]);
 
   async function handleRemove(wishlistId: string) {
     if (!user) return;
     setRemovingId(wishlistId);
     try {
       const supabase = createClient();
+
+      // Find the product ID before deleting
+      const item = items.find((i) => i.wishlist_id === wishlistId);
+
       const { error: dbError } = await supabase
         .from("wishlists")
         .delete()
@@ -122,7 +132,13 @@ export default function WishlistPage() {
         .eq("user_id", user.id);
 
       if (dbError) throw dbError;
-      setItems((prev) => prev.filter((item) => item.wishlist_id !== wishlistId));
+      setItems((prev) => prev.filter((i) => i.wishlist_id !== wishlistId));
+
+      // Also remove from Zustand store to keep in sync
+      if (item) {
+        toggleItem(item.id);
+      }
+      toast.success("Removido da lista de desejos");
     } catch {
       setError("Erro ao remover produto da lista.");
     } finally {
@@ -139,6 +155,9 @@ export default function WishlistPage() {
       category: product.category,
       rating: product.rating,
       badge: product.badge,
+    });
+    toast.success(`${product.name} adicionado ao carrinho`, {
+      description: "Continuar a comprar ou finalizar compra",
     });
     setAddedToCart((prev) => new Set(prev).add(product.id));
     setTimeout(() => {

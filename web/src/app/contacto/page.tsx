@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import {
   Mail,
   Clock,
@@ -104,11 +103,35 @@ export default function ContactoPage() {
     },
   });
 
-  async function onSubmit(_data: ContactFormData) {
-    // Simulate API delay — visual only, no real backend
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-    setSubmitted(true);
-    reset();
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  async function onSubmit(data: ContactFormData) {
+    setSubmitError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result: { success: boolean; error?: string } = await res.json();
+
+      if (!res.ok || !result.success) {
+        throw new Error(
+          result.error ?? "Erro ao enviar mensagem. Tente novamente.",
+        );
+      }
+
+      setSubmitted(true);
+      reset();
+    } catch (err: unknown) {
+      const message =
+        err instanceof Error
+          ? err.message
+          : "Erro inesperado. Tente novamente mais tarde.";
+      setSubmitError(message);
+    }
   }
 
   return (
@@ -241,7 +264,7 @@ export default function ContactoPage() {
                     </p>
                     <button
                       type="button"
-                      onClick={() => setSubmitted(false)}
+                      onClick={() => { setSubmitted(false); setSubmitError(null); }}
                       className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-orange-400/70 hover:text-orange-400 hover:border-orange-500/30 transition-colors duration-200"
                     >
                       Enviar outra mensagem
@@ -331,6 +354,13 @@ export default function ContactoPage() {
                         <p className={errorBase}>{errors.mensagem.message}</p>
                       )}
                     </div>
+
+                    {/* Submit Error */}
+                    {submitError && (
+                      <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
+                        {submitError}
+                      </div>
+                    )}
 
                     {/* Submit */}
                     <button
