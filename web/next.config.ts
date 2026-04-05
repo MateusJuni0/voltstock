@@ -27,6 +27,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "resource.logitech.com" },
       { protocol: "https", hostname: "resource.logitechg.com" },
       { protocol: "https", hostname: "medias-p1.phoenix.razer.com" },
+      { protocol: "https", hostname: "assets2.razerzone.com" },
       { protocol: "https", hostname: "nex-img.dxracer.cc" },
       { protocol: "https", hostname: "cdn.autonomous.ai" },
       { protocol: "https", hostname: "cdn.sanity.io" },
@@ -47,6 +48,9 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.evga.com" },
       { protocol: "https", hostname: "www.nvidia.com" },
       { protocol: "https", hostname: "semiconductor.samsung.com" },
+      { protocol: "https", hostname: "images.steelcase.com" },
+      { protocol: "https", hostname: "secretlab.co" },
+      { protocol: "https", hostname: "www.ikea.com" },
       // Wildcard patterns
       { protocol: "https", hostname: "**.neweggimages.com" },
     ],

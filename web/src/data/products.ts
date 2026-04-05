@@ -2034,9 +2034,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/AKVHD21080615GNM1.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/AKVHD21080615GNM1.jpg"
     ],
     "description": "Monitor VA curvo de 27\" com 1440p e 165Hz. Curvatura 1500R imersiva com contraste nativo superior a 3000:1 e FreeSync Premium.",
     "badge": "Curvo Acessível",
@@ -2058,9 +2058,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-027-066-V15.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/24-027-066-V15.jpg"
     ],
     "description": "VA curvo 1000R de 32\" com QHD e 240Hz. QLED com cobertura de cor de 125% sRGB e DisplayHDR 600 para uma experiência de jogo envolvente.",
     "badge": "240Hz Curvo",
@@ -2129,9 +2129,9 @@ export const products: Product[] = [
     "price": "749,00 €",
     "oldPrice": "849,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg"
     ],
     "description": "OLED QHD 27\" com 240Hz e tempo de resposta de 0.03ms. Anti-glare low reflection coating e cobertura DCI-P3 98.5% para o gaming definitivo.",
     "badge": "OLED Gaming",
@@ -2153,9 +2153,9 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg"
     ],
     "description": "SS IPS 27\" QHD com 240Hz e KVM Switch integrado. Perfeito para quem alterna entre PC gaming e trabalho com um único monitor.",
     "badge": "KVM Switch",
@@ -2200,9 +2200,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "369,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-475-127-S05.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/24-475-127-S05.jpg"
     ],
     "description": "Rapid IPS com Quantum Dots para 27\" QHD e 170Hz. Cobertura DCI-P3 97% e sRGB 100% com Night Vision AI para visibilidade em cenários escuros.",
     "badge": "Quantum Dot",
@@ -2419,9 +2419,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg"
     ],
     "description": "Switches ópticos analógicos de 2ª geração com Rapid Trigger e atuação ajustável de 0.1mm a 4.0mm. Polling rate de 8000Hz para o teclado competitivo definitivo.",
     "badge": "Competitivo",
@@ -2443,9 +2443,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg"
     ],
     "description": "Ultra-leve com 74g e design honeycomb impermeável IP54. 9 botões programáveis incluindo joystick lateral, ideal para MMOs e MOBA.",
     "badge": "Multi-Género",
@@ -2568,9 +2568,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg"
     ],
     "description": "Drivers Razer TriForce de 40mm com iluminação Chroma RGB e THX Spatial Audio. Microfone HyperClear Cardioid destacável para voz cristalina.",
     "badge": "Chroma RGB",
@@ -2592,9 +2592,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/ARUXS22052606ACVA3A.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/ProductImageOriginal/ARUXS22052606ACVA3A.jpg"
     ],
     "description": "O melhor ANC do mercado com 8 microfones e processador V1. 30 horas de bateria, carga rápida de 3 min para 3 horas e multipoint Bluetooth 5.2.",
     "badge": "ANC Líder",
@@ -2664,9 +2664,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/APCPD2111150RQFOF3C.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/APCPD2111150RQFOF3C.jpg"
     ],
     "description": "Drivers Razer TriForce Titanium de 50mm com THX Spatial Audio. Microfone HyperClear Super Wideband para a voz mais natural em gaming wireless.",
     "badge": "Wireless Pro",
@@ -2687,9 +2687,9 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "139,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg"
     ],
     "description": "Os auscultadores de estúdio de referência da indústria. Drivers de 45mm com resposta plana para mixing, mastering e gaming audiófilo. Cabo destacável.",
     "badge": "Studio Reference",
@@ -2740,9 +2740,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop",
+    "img": "https://assets2.razerzone.com/images/pnx.assets/4bf75970ea0be7bddc04b98b7a39d1dd/razer-iskur-v2-hero-mobile.webp",
     "gallery": [
-      "https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop"
+      "https://assets2.razerzone.com/images/pnx.assets/4bf75970ea0be7bddc04b98b7a39d1dd/razer-iskur-v2-hero-mobile.webp"
     ],
     "description": "Suporte lombar adaptativo com zona lombar totalmente ajustável e espuma de memória de alta densidade. Apoios de braço 4D e couro sintético EPU premium.",
     "badge": "Lombar Adaptivo",
@@ -2883,9 +2883,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg"
     ],
     "description": "Construção premium com espuma de frio de alta densidade e couro PU durável. Mecanismo de reclinação 4D com apoios de braço metálicos ajustáveis.",
     "badge": "Pro Durável",
@@ -2959,7 +2959,7 @@ export const products: Product[] = [
     "oldPrice": "2.399,00 €",
     "rating": 4.9,
     "img": "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg"],
     "description": "A placa gráfica mais poderosa da nova geração NVIDIA. Arquitectura Blackwell com 32 GB GDDR7 para gaming 4K a mais de 120 FPS e workloads de IA local.",
     "badge": "Topo de Gama",
     "features": [
@@ -2980,7 +2980,7 @@ export const products: Product[] = [
     "price": "649,00 €",
     "rating": 4.5,
     "img": "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg"],
     "description": "Placa gráfica AMD RDNA 4 com excelente relação preço/desempenho. 16 GB GDDR6 para gaming 1440p de alta qualidade e ray tracing melhorado.",
     "features": [
       { "name": "GPU", "value": "Navi 48 RDNA 4" },
@@ -3001,7 +3001,7 @@ export const products: Product[] = [
     "oldPrice": "949,00 €",
     "rating": 4.7,
     "img": "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg"],
     "description": "Desempenho excepcional para gaming 4K com DLSS 4 e ray tracing de nova geração. 16 GB GDDR7 para os títulos mais exigentes.",
     "badge": "Melhor Valor 4K",
     "features": [
@@ -3022,7 +3022,7 @@ export const products: Product[] = [
     "price": "1.399,00 €",
     "rating": 4.8,
     "img": "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg"],
     "description": "Edição ROG Strix com overclock de fábrica e sistema de arrefecimento de 3 ventoinhas. Design premium com iluminação Aura Sync RGB.",
     "badge": "ROG Premium",
     "features": [
@@ -3044,7 +3044,7 @@ export const products: Product[] = [
     "oldPrice": "749,00 €",
     "rating": 4.5,
     "img": "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg"],
     "description": "RTX 5070 com arrefecimento tri-fan Torx 5.0 e backplate metálico. Ideal para gaming 1440p ultra com DLSS 4 e Frame Generation.",
     "features": [
       { "name": "GPU", "value": "Blackwell GB205" },
@@ -3064,7 +3064,7 @@ export const products: Product[] = [
     "price": "549,00 €",
     "rating": 4.4,
     "img": "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg"],
     "description": "A melhor placa AMD para gaming 1440p. Arrefecimento Nitro+ com heatpipes de cobre e ventoinha inteligente que para em idle.",
     "features": [
       { "name": "GPU", "value": "Navi 48 RDNA 4" },
@@ -3085,7 +3085,7 @@ export const products: Product[] = [
     "price": "279,00 €",
     "rating": 4.1,
     "img": "https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg"],
     "description": "GPU Intel Battlemage de gama média-baixa com 12 GB VRAM. Excelente opção económica para 1080p com ray tracing e XeSS upscaling.",
     "features": [
       { "name": "GPU", "value": "Battlemage BMG-G21" },
@@ -3109,7 +3109,7 @@ export const products: Product[] = [
     "oldPrice": "699,00 €",
     "rating": 4.9,
     "img": "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg"],
     "description": "O processador desktop mais rápido da AMD. 16 cores Zen 5 com boost até 5.7 GHz para produtividade e gaming sem compromissos.",
     "badge": "Flagship AMD",
     "features": [
@@ -3130,7 +3130,7 @@ export const products: Product[] = [
     "price": "599,00 €",
     "rating": 4.7,
     "img": "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg"],
     "description": "Processador Intel Arrow Lake com arquitectura híbrida de nova geração. 24 cores com NPU integrada para aceleração de IA local.",
     "features": [
       { "name": "Cores/Threads", "value": "24C (8P+16E) / 24T" },
@@ -3151,7 +3151,7 @@ export const products: Product[] = [
     "oldPrice": "399,00 €",
     "rating": 4.7,
     "img": "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg"],
     "description": "Processador Zen 5 de 8 cores com eficiência energética excepcional. TDP de apenas 65W com desempenho que rivaliza com chips de 170W.",
     "badge": "Eficiência Máxima",
     "features": [
@@ -3172,7 +3172,7 @@ export const products: Product[] = [
     "price": "419,00 €",
     "rating": 4.5,
     "img": "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg"],
     "description": "Processador Arrow Lake de gama alta com 20 cores híbridos. Excelente para gaming e multitasking pesado com DDR5 e PCIe 5.0.",
     "features": [
       { "name": "Cores/Threads", "value": "20C (8P+12E) / 20T" },
@@ -3193,7 +3193,7 @@ export const products: Product[] = [
     "oldPrice": "279,00 €",
     "rating": 4.6,
     "img": "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg"],
     "description": "O melhor processador gaming por menos de 300 euros. 6 cores Zen 5 com single-thread excepcional para os jogos mais exigentes.",
     "badge": "Gaming Value King",
     "features": [
@@ -3214,7 +3214,7 @@ export const products: Product[] = [
     "price": "479,00 €",
     "rating": 4.8,
     "img": "https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg"],
     "description": "12 cores Zen 5 com equilíbrio perfeito entre gaming e produtividade. Cache massiva de 76 MB para workloads profissionais.",
     "features": [
       { "name": "Cores/Threads", "value": "12C / 24T" },
@@ -3235,7 +3235,7 @@ export const products: Product[] = [
     "oldPrice": "329,00 €",
     "rating": 4.4,
     "img": "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg"],
     "description": "Processador Arrow Lake mainstream desbloqueado. 14 cores híbridos com NPU para IA e excelente desempenho gaming a preço acessível.",
     "badge": "Entrada Premium",
     "features": [
@@ -3256,7 +3256,7 @@ export const products: Product[] = [
     "price": "529,00 €",
     "rating": 4.9,
     "img": "https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg"],
     "description": "O melhor processador gaming do mundo com 3D V-Cache de 104 MB. Desempenho imbatível em jogos graças à cache L3 empilhada verticalmente.",
     "badge": "Rei do Gaming",
     "features": [
@@ -3281,7 +3281,7 @@ export const products: Product[] = [
     "oldPrice": "749,00 €",
     "rating": 4.8,
     "img": "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg"],
     "description": "Motherboard AM5 de topo com chipset X870E. VRM de 22+2 fases, Wi-Fi 7, Thunderbolt 4 e suporte DDR5-8000+ para overclock extremo.",
     "badge": "Enthusiast",
     "features": [
@@ -3302,7 +3302,7 @@ export const products: Product[] = [
     "price": "599,00 €",
     "rating": 4.7,
     "img": "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg"],
     "description": "Motherboard Intel Z890 premium para processadores Arrow Lake. 24+1+2 fases de VRM, PCIe 5.0 x16 e quatro slots M.2 para armazenamento massivo.",
     "features": [
       { "name": "Socket", "value": "LGA 1851" },
@@ -3323,7 +3323,7 @@ export const products: Product[] = [
     "oldPrice": "279,00 €",
     "rating": 4.5,
     "img": "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg",
-    "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg"],
     "description": "Motherboard AM5 de gama média com excelente relação preço/desempenho. VRM robusta de 16 fases, Wi-Fi 6E e suporte DDR5.",
     "badge": "Melhor Valor AM5",
     "features": [
@@ -3344,7 +3344,7 @@ export const products: Product[] = [
     "price": "499,00 €",
     "rating": 4.6,
     "img": "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png",
-    "gallery": ["https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png"],
     "description": "Motherboard flagship ASRock para Intel Arrow Lake. Design icónico de engrenagens com VRM de 26 fases e audio Nahimic premium.",
     "features": [
       { "name": "Socket", "value": "LGA 1851" },
@@ -3365,7 +3365,7 @@ export const products: Product[] = [
     "oldPrice": "329,00 €",
     "rating": 4.6,
     "img": "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png",
-    "gallery": ["https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"],
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png"],
     "description": "Motherboard AM5 gaming com VRM de 16+2 fases, USB4 e rede 2.5G LAN. Design ROG Strix com iluminação Aura Sync integrada.",
     "badge": "ROG Gaming",
     "features": [
@@ -3385,8 +3385,8 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "229,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-144-697-05.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-144-697-05.png"],
     "description": "A motherboard mais popular para builds AM5 de gama média. VRM sólida, design militar e todas as features essenciais sem luxos desnecessários.",
     "features": [
       { "name": "Socket", "value": "AM5" },
@@ -3406,8 +3406,8 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "599,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-145-523-05.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-145-523-05.jpg"],
     "description": "Motherboard Z890 premium com VRM de 22+1+2 fases e back-drilled PCB de 8 camadas. Arrefecimento passivo Fins-Array III para M.2.",
     "badge": "AORUS Master",
     "features": [
@@ -3427,8 +3427,8 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "149,00 €",
     "rating": 4.2,
-    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-162-195-11.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-162-195-11.jpg"],
     "description": "Motherboard Micro-ATX AM5 económica mas capaz. 10 fases de VRM, DDR5, PCIe 5.0 M.2 — tudo o essencial para builds budget.",
     "features": [
       { "name": "Socket", "value": "AM5" },
@@ -3451,8 +3451,8 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-435-10.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-374-435-10.png"],
     "description": "Kit dual-channel DDR5-7200 CL34 com iluminação RGB cristalina. ICs Samsung selecionados para overclock estável até DDR5-8000+.",
     "badge": "High-End DDR5",
     "features": [
@@ -3472,8 +3472,8 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "249,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-982-097-02.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-982-097-02.png"],
     "description": "Módulos DDR5 premium com dissipador de alumínio anodizado e LED bar Corsair DHX. Compatibilidade EXPO e XMP 3.0 para overclock one-click.",
     "features": [
       { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
@@ -3493,8 +3493,8 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-242-737-01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-242-737-01.jpg"],
     "description": "Memória DDR5 fiável e acessível com dissipador metálico compacto. Ideal para builds equilibrados com perfis EXPO certificados para AMD.",
     "badge": "Budget Champion",
     "features": [
@@ -3514,8 +3514,8 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "169,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-331-810-07.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-331-810-07.jpg"],
     "description": "Kit DDR5-7600 com difusor de luz RGB full-surface e ICs Hynix A-die para timings apertados. Excelente desempenho em 1:1 com IF da AMD.",
     "features": [
       { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
@@ -3535,8 +3535,8 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-419-07.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-374-419-07.png"],
     "description": "Memória optimizada para AMD com EXPO certificado. Design low-profile sem RGB para builds limpos e compatibilidade com coolers tower.",
     "badge": "AMD Optimized",
     "features": [
@@ -3556,8 +3556,8 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "79,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-236-828-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-236-828-V01.jpg"],
     "description": "Módulos DDR5 de entrada com compatibilidade universal. Perfil compacto, dissipador de alumínio e XMP 3.0 para overclock automático.",
     "features": [
       { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
@@ -3577,8 +3577,8 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-445-11.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-374-445-11.png"],
     "description": "Kit DDR5 optimizado para AMD AM5 com EXPO II. Timings CL30 ultra-apertados para desempenho máximo em Ryzen 9000 series.",
     "badge": "AMD EXPO II",
     "features": [
@@ -3598,8 +3598,8 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "329,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/AFYUD2402090ZFHPO84.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/AFYUD2402090ZFHPO84.jpg"],
     "description": "A memória DDR5 mais rápida do mercado. 8000 MT/s com ICs Hynix M-die selecionados para overclockers e benchmarkers profissionais.",
     "badge": "Velocidade Máxima",
     "features": [
@@ -3623,8 +3623,8 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-147-900-02.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-147-900-02.jpg"],
     "description": "SSD NVMe PCIe 5.0 com velocidades de leitura até 10.000 MB/s. V-NAND de 8ª geração com controlador Samsung proprietário.",
     "badge": "PCIe 5.0",
     "features": [
@@ -3644,8 +3644,8 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "149,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-250-247-02.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-250-247-02.jpg"],
     "description": "SSD NVMe PCIe 4.0 de referência para gaming. Até 7.300 MB/s de leitura com Game Mode 2.0 para carregamento preditivo de jogos.",
     "features": [
       { "name": "Capacidade", "value": "2 TB" },
@@ -3665,8 +3665,8 @@ export const products: Product[] = [
     "price": "219,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-156-329-19.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-156-329-19.jpg"],
     "description": "SSD PCIe 5.0 com dissipador de alumínio incluído. Velocidades até 12.400 MB/s com controlador Phison E26 e NAND Micron 232L.",
     "badge": "Ultra Rápido",
     "features": [
@@ -3686,8 +3686,8 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "199,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-248-242-01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-248-242-01.jpg"],
     "description": "SSD PCIe 5.0 gaming com 10.000 MB/s e 3 anos de Rescue Data Recovery Services incluídos. DirectStorage optimizado.",
     "features": [
       { "name": "Capacidade", "value": "2 TB" },
@@ -3707,8 +3707,8 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "349,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-242-661-S01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-242-661-S01.jpg"],
     "description": "SSD NVMe de alta capacidade para quem precisa de espaço sem comprometer velocidade. 4 TB com leitura até 7.000 MB/s e perfil low-profile.",
     "badge": "Alta Capacidade",
     "features": [
@@ -3728,8 +3728,8 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "249,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-147-795-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-147-795-V01.jpg"],
     "description": "SSD SATA III de referência com 4 TB para armazenamento massivo. Ideal como drive secundário com fiabilidade comprovada e 2.400 TBW.",
     "features": [
       { "name": "Capacidade", "value": "4 TB" },
@@ -3749,8 +3749,8 @@ export const products: Product[] = [
     "price": "239,00 €",
     "oldPrice": "269,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-982-117-01.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-982-117-01.png"],
     "description": "SSD PCIe 5.0 com dissipador opcional para PS5 ou PC. Até 12.400 MB/s com NAND 3D TLC de alta densidade e DRAM cache.",
     "badge": "PS5 Compatible",
     "features": [
@@ -3770,8 +3770,8 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "189,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/BK19D24031310CPTJ37.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/BK19D24031310CPTJ37.jpg"],
     "description": "SSD NVMe PCIe 5.0 acessível com controlador Phison E26. Dissipador de cobre incluído e firmware optimizado para baixas temperaturas.",
     "features": [
       { "name": "Capacidade", "value": "2 TB" },
@@ -3794,8 +3794,8 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-139-343-17.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-139-343-17.jpg"],
     "description": "Fonte de alimentação 80 PLUS Platinum de 1500W totalmente modular. Conector 12VHPWR nativo e iCUE para monitorização em tempo real.",
     "badge": "Platinum 1500W",
     "features": [
@@ -3815,8 +3815,8 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "349,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg"],
     "description": "Fonte 80 PLUS Titanium com 12 anos de garantia. A eficiência mais elevada do mercado com componentes japoneses de primeira qualidade.",
     "badge": "Titanium",
     "features": [
@@ -3837,8 +3837,8 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://www.bequiet.com/volumes/pim/powersupply/darkpower/darkpower13/360/850W/001.jpg",
+    "gallery": ["https://www.bequiet.com/volumes/pim/powersupply/darkpower/darkpower13/360/850W/001.jpg"],
     "description": "Fonte premium silenciosa com topologia full-bridge e LLC. Modo Overclocking Key para ajuste de tensões e ventoinha Silent Wings 4.",
     "features": [
       { "name": "Potência", "value": "850 W" },
@@ -3858,8 +3858,8 @@ export const products: Product[] = [
     "price": "139,00 €",
     "oldPrice": "159,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/base-rmx-2024-config/gallery/black/850/RM850x_2024_01.webp",
+    "gallery": ["https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/base-rmx-2024-config/gallery/black/850/RM850x_2024_01.webp"],
     "description": "A fonte mais popular para gaming. 80 PLUS Gold com ventoinha magnética de levitação que opera em modo Zero RPM a cargas baixas.",
     "badge": "Best Seller",
     "features": [
@@ -3879,8 +3879,8 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "329,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"],
     "description": "Fonte ATX 3.1 com 1300W e conector 12V-2x6 nativo. 80 PLUS Platinum com monitorização via app MSI Center para potência em tempo real.",
     "features": [
       { "name": "Potência", "value": "1300 W" },
@@ -3900,8 +3900,8 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.3,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"],
     "description": "Fonte ATX 3.0 acessível com conector 12VHPWR incluído. 80 PLUS Gold com ventoinha de 120mm hidráulica e cabos flat para gestão fácil.",
     "features": [
       { "name": "Potência", "value": "750 W" },
@@ -3920,8 +3920,8 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "149,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-065-167-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-065-167-V01.jpg"],
     "description": "Fonte 80 PLUS Platinum com UltraFlex cables e ventoinha FDB de 140mm. Design escandinavo minimalista com 10 anos de garantia.",
     "features": [
       { "name": "Potência", "value": "860 W" },
@@ -3944,8 +3944,8 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/2AM-000Z-000C0-01.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/2AM-000Z-000C0-01.png"],
     "description": "A caixa mais icónica para builds de showcase. Vidro temperado dual-chamber com suporte para radiadores de 360mm no topo e lateral.",
     "badge": "Showcase Icon",
     "features": [
@@ -3965,8 +3965,8 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "139,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-352-204-21.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-352-204-21.jpg"],
     "description": "Caixa com frente em madeira de nogueira real e mesh de aço. Design escandinavo elegante com fluxo de ar excepcional e filtros removíveis.",
     "badge": "Design Award",
     "features": [
@@ -3986,8 +3986,8 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "219,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Cases/CC-9011312-WW/Gallery/6500X_BLK_01.webp",
+    "gallery": ["https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Cases/CC-9011312-WW/Gallery/6500X_BLK_01.webp"],
     "description": "Caixa dual-chamber com vidro temperado em dois painéis para showcase total. Motherboard invertida e layout de cable management oculto.",
     "badge": "Dual Glass",
     "features": [
@@ -4008,8 +4008,8 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-854-136-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-854-136-V01.jpg"],
     "description": "Full-tower espaçosa com suporte para GPUs até 480mm e radiadores de 420mm. Painéis magnéticos de fácil remoção e amplo espaço interno.",
     "features": [
       { "name": "Formato", "value": "Full-Tower ATX" },
@@ -4028,8 +4028,8 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "189,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-734-019-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-734-019-V01.jpg"],
     "description": "Caixa modular com frente intercambiável entre mesh e painel sólido silencioso. 3 ventoinhas Silent Wings 4 e painéis com isolamento acústico.",
     "features": [
       { "name": "Formato", "value": "Mid-Tower ATX" },
@@ -4048,8 +4048,8 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "129,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/2AM-030R-00034-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/2AM-030R-00034-V01.jpg"],
     "description": "Caixa Mini-ITX compacta com mesh em todas as faces para airflow máximo. Apenas 14.7L de volume com suporte para GPU de 3 slots.",
     "features": [
       { "name": "Formato", "value": "Mini-ITX SFF (14.7L)" },
@@ -4071,8 +4071,8 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "329,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Liquid-Cooling/base-elite-lcd-xt-cooler-config/Gallery/mandatory-configuration/Cooling_Radiator_Size_420mm/H170i_ELITE_LCD_XT_01.webp",
+    "gallery": ["https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Liquid-Cooling/base-elite-lcd-xt-cooler-config/Gallery/mandatory-configuration/Cooling_Radiator_Size_420mm/H170i_ELITE_LCD_XT_01.webp"],
     "description": "AIO de 420mm com ecrã IPS no pump head e ventoinhas AF Elite RGB. Controlável via iCUE com widgets de temperatura em tempo real.",
     "features": [
       { "name": "Radiador", "value": "420 mm" },
@@ -4092,8 +4092,8 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/AADYS2407010JFQIKFA.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/AADYS2407010JFQIKFA.jpg"],
     "description": "O melhor air cooler do mundo, segunda geração. Dual-tower com 8 heatpipes e duas ventoinhas NF-A15 G2 PWM para silêncio absoluto.",
     "badge": "Rei do Air Cooling",
     "features": [
@@ -4113,8 +4113,8 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "99,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A623D2412180WPFL385.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A623D2412180WPFL385.jpg"],
     "description": "AIO 360mm com melhor relação preço/desempenho do mercado. VRM contact frame integrado no pump e ventoinhas P12 A-RGB PWM.",
     "badge": "Value King AIO",
     "features": [
@@ -4135,8 +4135,8 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-856-208-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/35-856-208-V01.jpg"],
     "description": "Air cooler dual-tower premium com 7 heatpipes e cobertura metálica elegante. Desempenho próximo de AIO 360mm a preço de air cooler.",
     "features": [
       { "name": "Tipo", "value": "Dual-tower air cooler" },
@@ -4155,8 +4155,8 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "179,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A2W0S2410090A4OTIF0.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A2W0S2410090A4OTIF0.jpg"],
     "description": "AIO 360mm da EK com design dark minimalista sem RGB. Pump de sexta geração e tubos de borracha premium anti-evaporação.",
     "features": [
       { "name": "Radiador", "value": "360 mm" },
@@ -4175,8 +4175,8 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "159,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/2YM-000Z-000A4-V01.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/2YM-000Z-000A4-V01.jpg"],
     "description": "AIO 360mm com pump Asetek de 8ª geração e ventoinhas Trinity Infinity Mirror RGB. Design minimalista com performance de topo.",
     "features": [
       { "name": "Radiador", "value": "360 mm" },
@@ -4199,8 +4199,8 @@ export const products: Product[] = [
     "price": "999,00 €",
     "oldPrice": "1.099,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-027-327-23.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-027-327-23.jpg"],
     "description": "Monitor OLED 4K 240Hz com 0.03ms de tempo de resposta. Samsung Gaming Hub integrado e DisplayHDR True Black 400 para pretos perfeitos.",
     "badge": "4K OLED 240Hz",
     "features": [
@@ -4220,8 +4220,8 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "799,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-026-405-08.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-026-405-08.jpg"],
     "description": "Monitor WOLED 1440p 240Hz com anti-glare coating e pixel refresh automático. Cores DCI-P3 98.5% para criadores e gamers exigentes.",
     "features": [
       { "name": "Painel", "value": "WOLED 27\" 1440p" },
@@ -4241,8 +4241,8 @@ export const products: Product[] = [
     "price": "999,00 €",
     "oldPrice": "1.099,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-281-235-29.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-281-235-29.png"],
     "description": "O monitor IPS mais rápido do mundo: 360Hz nativo a 1440p. Painel AU Optronics com NVIDIA Reflex Analyzer integrado para esports.",
     "badge": "360Hz Esports",
     "features": [
@@ -4262,8 +4262,8 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "1.099,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A8X5S2407090QW0JX8A.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A8X5S2407090QW0JX8A.jpg"],
     "description": "Monitor QD-OLED 4K 240Hz curvo com Infinity Edge. O melhor monitor gaming do mercado com Dolby Vision, HDR True Black 400 e HDMI 2.1.",
     "badge": "Best in Class",
     "features": [
@@ -4284,8 +4284,8 @@ export const products: Product[] = [
     "price": "699,00 €",
     "oldPrice": "799,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-014-880-10.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-014-880-10.jpg"],
     "description": "Monitor IPS 4K 144Hz com sistema de som treVolo integrado. HDRi automático e Light Tuner para ajuste preciso em jogos escuros.",
     "features": [
       { "name": "Painel", "value": "IPS 32\" 4K" },
@@ -4304,8 +4304,8 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "449,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-012-061-10.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-012-061-10.jpg"],
     "description": "Monitor 4K 160Hz com KVM switch integrado para alternar entre PC e consola. Painel SS IPS com 95% DCI-P3 e HDMI 2.1.",
     "badge": "KVM Integrado",
     "features": [
@@ -4326,8 +4326,8 @@ export const products: Product[] = [
     "price": "799,00 €",
     "oldPrice": "899,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/24-475-350-11.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-475-350-11.jpg"],
     "description": "Ultrawide OLED 34\" 3440x1440 a 175Hz curvo. Imersão cinematográfica com pretos perfeitos e campo de visão expandido para simuladores e RPGs.",
     "badge": "Ultrawide OLED",
     "features": [
@@ -4347,8 +4347,8 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "349,00 €",
     "rating": 4.3,
-    "img": "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/3D4-001B-00063-07.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/3D4-001B-00063-07.jpg"],
     "description": "Monitor gaming 1440p 170Hz com painel IPS de alta gama a preço acessível. G-Sync Compatible e sRGB 117% para cores vibrantes.",
     "features": [
       { "name": "Painel", "value": "IPS 27\" 1440p" },
@@ -4371,8 +4371,8 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/ProductImageOriginal/AZB2S2507310G9Q4VFD.jpg",
+    "gallery": ["https://c1.neweggimages.com/ProductImageOriginal/AZB2S2507310G9Q4VFD.jpg"],
     "description": "Teclado Hall Effect com Rapid Trigger e ponto de actuação ajustável de 0.1mm a 4.0mm. O standard de ouro para gaming competitivo.",
     "badge": "Esports Pro",
     "features": [
@@ -4392,8 +4392,8 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "179,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll60/23-937-168-01.jpg",
+    "gallery": ["https://c1.neweggimages.com/ProductImageCompressAll60/23-937-168-01.jpg"],
     "description": "Teclado mecânico Hall Effect com chassis de alumínio CNC. Rapid Trigger, gasket mount e compatível com QMK/VIA para personalização total.",
     "features": [
       { "name": "Switches", "value": "Hall Effect Gateron" },
@@ -4413,8 +4413,8 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/BTD4D24050514RTS408.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/BTD4D24050514RTS408.jpg"],
     "description": "Rato simétrico ultra-leve de 52g para mãos pequenas a médias. Sensor PAW3395 e switches ópticos Kailh para zero double-click.",
     "badge": "Ultra Light",
     "features": [
@@ -4434,8 +4434,8 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "189,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/23-239-062-04.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/23-239-062-04.jpg"],
     "description": "Teclado com switches OmniPoint 3.0 magnéticos e Rapid Trigger ajustável. Ecrã OLED integrado e chassis de alumínio premium.",
     "features": [
       { "name": "Switches", "value": "OmniPoint 3.0 magnéticos" },
@@ -4455,8 +4455,8 @@ export const products: Product[] = [
     "price": "79,00 €",
     "oldPrice": "89,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/ProductImage/BT8WS24030506GDP869.jpg",
+    "gallery": ["https://c1.neweggimages.com/ProductImage/BT8WS24030506GDP869.jpg"],
     "description": "Rato ergonómico wireless de 59g com sensor PixArt PAW3395 e switches Kailh GM 8.0. Shape inspirado no lendário Intellimouse.",
     "features": [
       { "name": "Sensor", "value": "PAW3395 (26K DPI)" },
@@ -4475,8 +4475,8 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "229,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/23-816-165-05.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/23-816-165-05.png"],
     "description": "Teclado full-size com switches magnéticos MGX e Rapid Trigger. Chassis de alumínio escovado, apoio de pulso em couro e iCUE RGB.",
     "features": [
       { "name": "Switches", "value": "Corsair MGX magnéticos" },
@@ -4498,8 +4498,8 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "299,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V788PC0.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A17PD2404010V788PC0.jpg"],
     "description": "Headset com drivers planares magnéticos de 90mm para fidelidade audiófila. DSP Waves NX para espacialização 3D e 80 horas de bateria.",
     "features": [
       { "name": "Drivers", "value": "Planares magnéticos 90mm" },
@@ -4518,8 +4518,8 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "179,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V71LCEF.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A17PD2404010V71LCEF.jpg"],
     "description": "Headset esports com drivers TriForce Titanium de 50mm e HyperSpeed wireless. Microfone removível com isolamento de câmara e THX Spatial Audio.",
     "features": [
       { "name": "Drivers", "value": "TriForce Titanium 50mm" },
@@ -4539,8 +4539,8 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-380-048-V05.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/26-380-048-V05.jpg"],
     "description": "Auscultadores abertos de estúdio com driver STELLAR.45 para monitoring e gaming imersivo. Impedância de 48 Ohm — funciona sem amp dedicado.",
     "badge": "Studio Grade",
     "features": [
@@ -4560,8 +4560,8 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "219,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-816-215-08.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/26-816-215-08.png"],
     "description": "Headset open-back para streaming e gaming com drivers de grafeno e microfone broadcast destacável. Qualidade de áudio comparável a headphones de estúdio.",
     "features": [
       { "name": "Drivers", "value": "Grafeno 50mm" },
@@ -4584,8 +4584,8 @@ export const products: Product[] = [
     "price": "519,00 €",
     "oldPrice": "569,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://secretlab.co/cdn/shop/products/SL_TitanEvoR_PU_Stealth0001_S_grande.jpg?v=1626023686",
+    "gallery": ["https://secretlab.co/cdn/shop/products/SL_TitanEvoR_PU_Stealth0001_S_grande.jpg?v=1626023686"],
     "description": "A cadeira gaming mais vendida do mundo, versão 2024. Suporte lombar L-ADAPT com 4 vias, espuma de frio e acabamento SoftWeave Plus.",
     "badge": "Best Seller Mundial",
     "features": [
@@ -4606,8 +4606,8 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A6ZPD2309280ZGX0D8A.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A6ZPD2309280ZGX0D8A.jpg"],
     "description": "Cadeira gaming com tecido respirável Soft Fabric e almofada lombar em espuma viscoelástica. Design compacto ideal para secretárias standard.",
     "features": [
       { "name": "Material", "value": "Soft Fabric respirável" },
@@ -4626,8 +4626,8 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "1.199,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://images.steelcase.com/image/upload/v1690833473/21-0163191-4-scaled.jpg",
+    "gallery": ["https://images.steelcase.com/image/upload/v1690833473/21-0163191-4-scaled.jpg"],
     "description": "Cadeira ergonómica ultra-leve com apenas 10 kg. Encosto em InterWoven Suspension para suporte e ventilação natural sem espuma tradicional.",
     "badge": "Ergonomia Next-Gen",
     "features": [
@@ -4647,8 +4647,8 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "199,00 €",
     "rating": 4.1,
-    "img": "https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://www.ikea.com/us/en/images/products/matchspel-gaming-chair-bomstad-black__0985645_pe816716_s5.jpg",
+    "gallery": ["https://www.ikea.com/us/en/images/products/matchspel-gaming-chair-bomstad-black__0985645_pe816716_s5.jpg"],
     "description": "Cadeira gaming budget da IKEA com encosto em rede respirável e apoio lombar ajustável. Mecanismo de báscula e altura ajustável a gás.",
     "features": [
       { "name": "Material", "value": "Rede respirável Vissle" },
@@ -4668,8 +4668,8 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "599,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop"],
+    "img": "https://www.andaseat.com/cdn/shop/files/AndaSeat-new-kaiser-4-series-gaming-chair-elegant-black-45.webp?v=1764403213",
+    "gallery": ["https://www.andaseat.com/cdn/shop/files/AndaSeat-new-kaiser-4-series-gaming-chair-elegant-black-45.webp?v=1764403213"],
     "description": "Cadeira gaming XL com MagClap magnetic lumbar para ajuste instantâneo. Espuma moldada a frio de alta resiliência e braços 4D magnéticos.",
     "badge": "XL MagClap",
     "features": [
