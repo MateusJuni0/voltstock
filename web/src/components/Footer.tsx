@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { TrustBadges } from "./TrustBadges";
+import { PaymentLogos } from "./PaymentLogos";
 
 // ── SVG icons (inline to avoid dependency on icon pack for brand logos) ──────
 
@@ -48,7 +50,8 @@ const footerLinks = {
     { label: "Pagamentos (MBWay)", href: "/envios" },
     { label: "Envios e Entregas", href: "/envios" },
     { label: "Garantias e Devoluções", href: "/devolucoes" },
-    { label: "Contactos", href: `https://wa.me/${WHATSAPP_NUMBER}` },
+    { label: "Contacte-nos", href: "/contacto" },
+    { label: "Sobre Nós", href: "/sobre" },
   ],
   Legal: [
     { label: "Termos e Condições", href: "/termos" },
@@ -195,12 +198,38 @@ export function Footer() {
           ))}
         </div>
 
-        {/* ── Bottom bar ── */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-orange-400/30">
-            &copy; {new Date().getFullYear()} VoltStock. Todos os direitos
-            reservados. Preços incluem IVA à taxa legal.
+        {/* ── Trust & Payment strip ── */}
+        <div className="mb-8">
+          <TrustBadges />
+        </div>
+
+        <div className="mb-8 flex justify-center">
+          <PaymentLogos size="md" />
+        </div>
+
+        {/* ── Legal info + Livro de Reclamações ── */}
+        <div className="pt-6 border-t border-white/5 flex flex-col items-center gap-5">
+          {/* Company legal info */}
+          <p className="text-[11px] text-orange-400/30 text-center">
+            CMTecnologia, Lda. | NIF: [A PREENCHER] | Portugal
           </p>
+
+          {/* Livro de Reclamações badge */}
+          <a
+            href="https://www.livroreclamacoes.pt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/[0.04] border border-accent/10 text-orange-400/50 hover:text-orange-400 hover:border-orange-500/30 transition-all duration-300"
+          >
+            <span className="text-base" role="img" aria-label="Livro de Reclamações">
+              {"\uD83D\uDCD5"}
+            </span>
+            <span className="text-xs font-semibold">
+              Livro de Reclamações Eletrónico
+            </span>
+          </a>
+
+          {/* Legal links row */}
           <div className="flex items-center gap-6 text-xs text-orange-400/30">
             <Link href="/termos" className="hover:text-orange-400 transition-colors">
               Termos
@@ -211,15 +240,16 @@ export function Footer() {
             <Link href="/devolucoes" className="hover:text-orange-400 transition-colors">
               Devoluções
             </Link>
-            <a
-              href="https://www.livroreclamacoes.pt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-orange-400 transition-colors"
-            >
-              Livro de Reclamações
-            </a>
+            <Link href="/envios" className="hover:text-orange-400 transition-colors">
+              Envios
+            </Link>
           </div>
+
+          {/* Copyright */}
+          <p className="text-xs text-orange-400/30 text-center">
+            &copy; {new Date().getFullYear()} VoltStock. Todos os direitos
+            reservados. Preços incluem IVA à taxa legal.
+          </p>
         </div>
       </div>
     </footer>

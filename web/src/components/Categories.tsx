@@ -6,49 +6,55 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { products } from "@/data/products";
 
-// Category definitions — counts derived from actual product data
+// Category definitions — mapped to real product categories
 const categoryDefs = [
   {
     name: "Placas Gráficas",
     icon: Cpu,
     image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
-    color: "from-blue-500/20 to-cyan-400/20"
+    color: "from-blue-500/20 to-cyan-400/20",
+    productCategories: ["Placas Gráficas"],
   },
   {
     name: "Processadores",
     icon: Cpu,
     image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
-    color: "from-purple-500/20 to-pink-400/20"
+    color: "from-purple-500/20 to-pink-400/20",
+    productCategories: ["Processadores"],
   },
   {
     name: "Monitores",
     icon: Monitor,
     image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop",
-    color: "from-orange-500/20 to-amber-400/20"
+    color: "from-orange-500/20 to-amber-400/20",
+    productCategories: ["Monitores"],
   },
   {
     name: "Periféricos",
     icon: Keyboard,
     image: "https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop",
-    color: "from-emerald-500/20 to-teal-400/20"
+    color: "from-emerald-500/20 to-teal-400/20",
+    productCategories: ["Teclados e Ratos", "Headsets e Áudio"],
   },
   {
-    name: "Setups",
+    name: "Componentes",
     icon: LayoutGrid,
     image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
-    color: "from-indigo-500/20 to-blue-400/20"
+    color: "from-indigo-500/20 to-blue-400/20",
+    productCategories: ["Motherboards", "Memória RAM", "Armazenamento", "Fontes de Alimentação"],
   },
   {
-    name: "Acessórios",
+    name: "Gaming",
     icon: Gamepad2,
     image: "https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop",
-    color: "from-rose-500/20 to-orange-400/20"
+    color: "from-rose-500/20 to-orange-400/20",
+    productCategories: ["Cadeiras Gaming", "Caixas", "Refrigeração"],
   },
 ];
 
 // Real counts from product catalog
 const categories = categoryDefs.map((cat) => {
-  const count = products.filter((p) => p.category === cat.name).length;
+  const count = products.filter((p) => cat.productCategories.includes(p.category)).length;
   return { ...cat, count: `${count} Produto${count !== 1 ? "s" : ""}` };
 });
 

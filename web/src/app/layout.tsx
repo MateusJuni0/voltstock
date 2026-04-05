@@ -6,8 +6,13 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingButtons } from "@/components/FloatingButtons";
 import { PromoBanner } from "@/components/PromoBanner";
-import { CustomCursor } from "@/components/CustomCursor";
 import { CartFlightProvider } from "@/components/CartFlight";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  organizationSchema,
+  websiteSchema,
+  localBusinessSchema,
+} from "@/lib/structured-data";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -24,10 +29,79 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "VoltStock | Hardware Premium Portugal",
+  metadataBase: new URL("https://voltstock.pt"),
+  title: {
+    default: "VoltStock | Hardware Premium Portugal",
+    template: "%s | VoltStock",
+  },
   description:
     "A referência em hardware premium e eletrónica profissional em Portugal. Componentes, periféricos e setups de elite. Pagamentos via MBWay e Stripe.",
-  keywords: ["hardware", "gaming", "portugal", "premium", "componentes", "periféricos", "voltstock"],
+  keywords: [
+    "hardware",
+    "gaming",
+    "portugal",
+    "premium",
+    "componentes",
+    "periféricos",
+    "voltstock",
+    "pc gaming",
+    "hardware portugal",
+    "loja hardware",
+  ],
+  authors: [{ name: "VoltStock" }],
+  creator: "VoltStock",
+  publisher: "CM Tecnologia",
+  other: {
+    "geo.region": "PT",
+    "geo.placename": "Portugal",
+    "geo.position": "38.7223;-9.1393",
+    ICBM: "38.7223, -9.1393",
+    "content-language": "pt-PT",
+  },
+  alternates: {
+    canonical: "https://voltstock.pt",
+    languages: {
+      "pt-PT": "https://voltstock.pt",
+    },
+  },
+  openGraph: {
+    title: "VoltStock | Hardware Premium Portugal",
+    description:
+      "A referência em hardware premium e eletrónica profissional em Portugal. Componentes, periféricos e setups de elite.",
+    url: "https://voltstock.pt",
+    siteName: "VoltStock",
+    locale: "pt_PT",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "VoltStock - Hardware Premium Portugal",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "VoltStock | Hardware Premium Portugal",
+    description:
+      "A referência em hardware premium e eletrónica profissional em Portugal. Componentes, periféricos e setups de elite.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+  },
 };
 
 export default function RootLayout({
@@ -55,7 +129,6 @@ export default function RootLayout({
           yGap={24}
           className="fixed inset-0 z-[1] opacity-60 pointer-events-none mix-blend-screen"
         />
-        <CustomCursor />
         <CartFlightProvider>
           <div className="relative z-[2] flex flex-col flex-1">
             <PromoBanner />
@@ -65,6 +138,9 @@ export default function RootLayout({
             <FloatingButtons />
           </div>
         </CartFlightProvider>
+        <JsonLd data={organizationSchema()} />
+        <JsonLd data={websiteSchema()} />
+        <JsonLd data={localBusinessSchema()} />
       </body>
     </html>
   );

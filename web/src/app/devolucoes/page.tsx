@@ -1,27 +1,43 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Politica de Devolucoes | VoltStock",
+  title: "Politica de Devolucoes",
   description:
-    "Politica de devolucoes da VoltStock. Informacoes sobre o direito de livre resolucao, processo de devolucao e reembolso.",
+    "Politica de devolucoes da VoltStock. Informacoes sobre o direito de livre resolucao de 14 dias, processo de devolucao e reembolso.",
+  openGraph: {
+    title: "Politica de Devolucoes | VoltStock",
+    description:
+      "Politica de devolucoes da VoltStock. Informacoes sobre o direito de livre resolucao, processo de devolucao e reembolso.",
+    url: "https://voltstock.pt/devolucoes",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "VoltStock - Politica de Devolucoes",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Politica de Devolucoes | VoltStock",
+    description:
+      "Politica de devolucoes da VoltStock. 14 dias para devolucao livre.",
+    images: ["/og-image.png"],
+  },
+  alternates: {
+    canonical: "https://voltstock.pt/devolucoes",
+  },
 };
 
 export default function DevolucoesPage() {
   return (
     <main className="min-h-screen pt-[120px] pb-20 px-4">
       <div className="max-w-[800px] mx-auto">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-orange-400/40 mb-8">
-          <Link
-            href="/"
-            className="hover:text-orange-400/70 transition-colors duration-200"
-          >
-            Inicio
-          </Link>
-          <span>/</span>
-          <span className="text-orange-400/70">Politica de Devolucoes</span>
-        </nav>
+        <Breadcrumbs items={[{ label: "Politica de Devolucoes" }]} />
 
         {/* Header */}
         <div className="mb-12">

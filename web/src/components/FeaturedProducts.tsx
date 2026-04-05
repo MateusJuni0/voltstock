@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronLeft,
@@ -258,6 +259,7 @@ function FeaturedProductCard({
 
   const cardRef = useRef<HTMLDivElement>(null);
   const imgElRef = useRef<HTMLImageElement>(null);
+  const imgContainerRef = useRef<HTMLDivElement>(null);
 
   // Merge tiltRef with cardRef
   const setCardRef = useCallback(
@@ -268,13 +270,20 @@ function FeaturedProductCard({
     [tiltRef]
   );
 
-  // Merge imgRef with imgElRef
-  const setImgRef = useCallback(
-    (el: HTMLImageElement | null) => {
-      imgElRef.current = el;
+  // Assign the image container to the tilt imgRef for GSAP translateZ transforms
+  const setImgContainerRef = useCallback(
+    (el: HTMLDivElement | null) => {
+      imgContainerRef.current = el;
       (imgRef as React.MutableRefObject<HTMLElement | null>).current = el;
     },
     [imgRef]
+  );
+
+  const handleImageLoad = useCallback(
+    (e: React.SyntheticEvent<HTMLImageElement>) => {
+      imgElRef.current = e.currentTarget;
+    },
+    []
   );
 
   // ── Scroll stagger entrance ──
@@ -304,8 +313,9 @@ function FeaturedProductCard({
     addItem(product);
     setIsAdded(true);
 
-    if (imgElRef.current) {
-      const rect = imgElRef.current.getBoundingClientRect();
+    const el = imgElRef.current ?? imgContainerRef.current;
+    if (el) {
+      const rect = el.getBoundingClientRect();
       fireCartFlight({
         imgSrc: product.img,
         startX: rect.left + rect.width / 2,
@@ -374,17 +384,24 @@ function FeaturedProductCard({
           />
 
           {/* The product image — springs to translateZ(75px) on hover */}
-          <img
-            ref={setImgRef}
-            src={product.img}
-            alt={product.name}
-            className="relative w-full max-w-[200px] h-[180px] object-contain z-20 pointer-events-none"
+          <div
+            ref={setImgContainerRef}
+            className="relative w-full max-w-[200px] h-[180px] z-20 pointer-events-none"
             style={{
               transform: "translateZ(0px)",
               willChange: "transform",
               filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.3))",
             }}
-          />
+          >
+            <Image
+              src={product.img}
+              alt={product.name}
+              fill
+              sizes="200px"
+              className="object-contain"
+              onLoad={handleImageLoad}
+            />
+          </div>
 
           {/* Wishlist button */}
           <button

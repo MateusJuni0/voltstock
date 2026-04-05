@@ -1,27 +1,43 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Politica de Envios | VoltStock",
+  title: "Politica de Envios",
   description:
-    "Politica de envios da VoltStock. Informacoes sobre metodos de envio, prazos de entrega, custos e rastreamento de encomendas.",
+    "Politica de envios da VoltStock. Informacoes sobre metodos de envio, prazos de entrega, custos e rastreamento de encomendas. Envio gratuito acima de 50 EUR.",
+  openGraph: {
+    title: "Politica de Envios | VoltStock",
+    description:
+      "Politica de envios da VoltStock. Informacoes sobre metodos de envio, prazos de entrega, custos e rastreamento de encomendas.",
+    url: "https://voltstock.pt/envios",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "VoltStock - Politica de Envios",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Politica de Envios | VoltStock",
+    description:
+      "Politica de envios da VoltStock. Envio gratuito acima de 50 EUR para Portugal Continental.",
+    images: ["/og-image.png"],
+  },
+  alternates: {
+    canonical: "https://voltstock.pt/envios",
+  },
 };
 
 export default function EnviosPage() {
   return (
     <main className="min-h-screen pt-[120px] pb-20 px-4">
       <div className="max-w-[800px] mx-auto">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-orange-400/40 mb-8">
-          <Link
-            href="/"
-            className="hover:text-orange-400/70 transition-colors duration-200"
-          >
-            Inicio
-          </Link>
-          <span>/</span>
-          <span className="text-orange-400/70">Politica de Envios</span>
-        </nav>
+        <Breadcrumbs items={[{ label: "Politica de Envios" }]} />
 
         {/* Header */}
         <div className="mb-12">

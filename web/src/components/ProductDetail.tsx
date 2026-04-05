@@ -1,12 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Product } from "@/data/products";
-import { Star, ChevronLeft, ShoppingCart, Heart, Shield, Truck, Package, Check } from "lucide-react";
+import { Star, ChevronLeft, ShoppingCart, Heart, Shield, Truck, Package, Check, X, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
+import { Breadcrumbs } from "./Breadcrumbs";
+import { RelatedProducts } from "./RelatedProducts";
 
 export function ProductDetail({ product }: { product: Product }) {
   const [selectedImage, setSelectedImage] = useState(product.img);
@@ -24,16 +27,12 @@ export function ProductDetail({ product }: { product: Product }) {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <div className="max-w-[1280px] mx-auto">
-        <Link href="/produtos">
-          <motion.button
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 text-orange-400/60 hover:text-orange-400 transition-colors mb-10 group"
-          >
-            <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-            Voltar ao Catálogo
-          </motion.button>
-        </Link>
+        <Breadcrumbs
+          items={[
+            { label: "Produtos", href: "/produtos" },
+            { label: product.name },
+          ]}
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left: Images */}
@@ -43,10 +42,13 @@ export function ProductDetail({ product }: { product: Product }) {
               animate={{ opacity: 1, scale: 1 }}
               className="relative aspect-square rounded-[2rem] bg-accent/[0.03] border border-accent/10 overflow-hidden shadow-2xl"
             >
-              <img
+              <Image
                 src={selectedImage}
                 alt={product.name}
-                className="w-full h-full object-contain p-8"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-contain p-8"
               />
               {product.badge && (
                 <span className="absolute top-6 left-6 px-4 py-2 rounded-full bg-accent text-[#0A0E1A] font-bold text-sm shadow-xl z-10">
@@ -68,7 +70,15 @@ export function ProductDetail({ product }: { product: Product }) {
                     selectedImage === img ? "border-accent ring-2 ring-accent/20" : "border-accent/10 opacity-60 hover:opacity-100"
                   )}
                 >
-                  <img src={img} alt="" className="w-full h-full object-contain" />
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={img}
+                      alt={`${product.name} - imagem ${idx + 1}`}
+                      fill
+                        sizes="(max-width: 768px) 25vw, 120px"
+                      className="object-contain"
+                    />
+                  </div>
                 </motion.button>
               ))}
             </div>
@@ -110,10 +120,33 @@ export function ProductDetail({ product }: { product: Product }) {
                 <span className="text-sm text-orange-400/40">128 avaliações</span>
               </div>
 
-              <div className="flex items-end gap-4 mb-10">
+              <div className="flex items-end gap-4 mb-4">
                 <span className="text-4xl font-black text-orange-400">{product.price}</span>
                 {product.oldPrice && (
                   <span className="text-xl text-orange-400/30 line-through mb-1">{product.oldPrice}</span>
+                )}
+              </div>
+
+              {/* Stock Status */}
+              <div className="flex items-center gap-3 mb-10">
+                {product.inStock !== false ? (
+                  <>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold">
+                      <Check size={14} className="shrink-0" />
+                      Em Stock
+                    </span>
+                    {product.stockCount != null && product.stockCount <= 5 && product.stockCount > 0 && (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-semibold">
+                        <AlertTriangle size={14} className="shrink-0" />
+                        Só restam {product.stockCount} em stock!
+                      </span>
+                    )}
+                  </>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-semibold">
+                    <X size={14} className="shrink-0" />
+                    Esgotado
+                  </span>
                 )}
               </div>
 
@@ -133,39 +166,49 @@ export function ProductDetail({ product }: { product: Product }) {
               )}
 
               <div className="flex gap-4">
-                <button
-                  onClick={handleAddToCart}
-                  className={cn(
-                    "flex-1 h-16 rounded-2xl font-bold text-lg transition-all duration-500 relative overflow-hidden flex items-center justify-center gap-3",
-                    isAdded ? "bg-emerald-500 text-white" : "bg-accent text-[#0A0E1A] hover:bg-accent/90 shadow-lg shadow-accent/10"
-                  )}
-                >
-                  <AnimatePresence mode="wait">
-                    {isAdded ? (
-                      <motion.div
-                        key="check"
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        className="flex items-center gap-2"
-                      >
-                        <Check size={22} />
-                        No Carrinho!
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="cart"
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        className="flex items-center gap-3"
-                      >
-                        <ShoppingCart size={22} />
-                        Adicionar ao Carrinho
-                      </motion.div>
+                {product.inStock === false ? (
+                  <button
+                    disabled
+                    className="flex-1 h-16 rounded-2xl font-bold text-lg bg-white/5 border border-white/10 text-white/30 cursor-not-allowed flex items-center justify-center gap-3"
+                  >
+                    <X size={22} />
+                    Esgotado
+                  </button>
+                ) : (
+                  <button
+                    onClick={handleAddToCart}
+                    className={cn(
+                      "flex-1 h-16 rounded-2xl font-bold text-lg transition-all duration-500 relative overflow-hidden flex items-center justify-center gap-3",
+                      isAdded ? "bg-emerald-500 text-white" : "bg-accent text-[#0A0E1A] hover:bg-accent/90 shadow-lg shadow-accent/10"
                     )}
-                  </AnimatePresence>
-                </button>
+                  >
+                    <AnimatePresence mode="wait">
+                      {isAdded ? (
+                        <motion.div
+                          key="check"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          className="flex items-center gap-2"
+                        >
+                          <Check size={22} />
+                          No Carrinho!
+                        </motion.div>
+                      ) : (
+                        <motion.div
+                          key="cart"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          className="flex items-center gap-3"
+                        >
+                          <ShoppingCart size={22} />
+                          Adicionar ao Carrinho
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </button>
+                )}
                 <button className="w-16 h-16 rounded-2xl bg-accent/5 border border-accent/10 flex items-center justify-center text-orange-400/60 hover:text-rose-400 hover:bg-rose-500/10 transition-all shadow-lg">
                   <Heart size={24} />
                 </button>
@@ -173,6 +216,9 @@ export function ProductDetail({ product }: { product: Product }) {
             </motion.div>
           </div>
         </div>
+
+        {/* Related Products */}
+        <RelatedProducts currentProduct={product} />
       </div>
     </div>
   );

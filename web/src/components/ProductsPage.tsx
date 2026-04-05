@@ -2,14 +2,16 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { products, categories, Product } from "@/data/products";
-import { Plus, Heart, Star, Search, SlidersHorizontal, Check } from "lucide-react";
+import { Plus, Heart, Star, Search, SlidersHorizontal, Check, X, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
 import { ProductModal } from "./ProductModal";
 import { use3DTilt } from "@/hooks/use3DTilt";
 import { useCartFlight } from "./CartFlight";
+import { Breadcrumbs } from "./Breadcrumbs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -46,6 +48,7 @@ export function ProductsPage() {
   }, [qParam]);
   const [sortOpen, setSortOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [showInStockOnly, setShowInStockOnly] = useState(false);
 
   const gridRef = useRef<HTMLDivElement>(null);
 
@@ -54,7 +57,8 @@ export function ProductsPage() {
     const matchSearch =
       p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       p.category.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchCat && matchSearch;
+    const matchStock = !showInStockOnly || p.inStock !== false;
+    return matchCat && matchSearch && matchStock;
   });
 
   const sorted = sortProducts(filtered, sort);
@@ -93,6 +97,8 @@ export function ProductsPage() {
   return (
     <div className="min-h-screen pt-[120px] pb-20 px-6">
       <div className="max-w-[1280px] mx-auto">
+        <Breadcrumbs items={[{ label: "Produtos" }]} />
+
         {/* ── Header & Search ── */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
           <motion.div
@@ -215,6 +221,39 @@ export function ProductsPage() {
                   </button>
                 ))}
               </div>
+
+              {/* Availability Filter */}
+              <div className="mt-8 pt-8 border-t border-white/[0.06]">
+                <h3 className="font-bold text-orange-400/80 mb-4 uppercase tracking-[0.2em] text-xs">
+                  Disponibilidade
+                </h3>
+                <button
+                  onClick={() => setShowInStockOnly((v) => !v)}
+                  className={cn(
+                    "w-full flex items-center justify-between px-5 py-3 rounded-2xl text-sm font-semibold transition-all duration-300 border",
+                    showInStockOnly
+                      ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/30"
+                      : "text-white/50 hover:text-white hover:bg-white/5 border-transparent"
+                  )}
+                >
+                  <span className="flex items-center gap-2">
+                    <span className={cn(
+                      "w-2.5 h-2.5 rounded-full",
+                      showInStockOnly ? "bg-emerald-400" : "bg-white/20"
+                    )} />
+                    Só em stock
+                  </span>
+                  <span className={cn(
+                    "w-10 h-5 rounded-full relative transition-colors duration-300",
+                    showInStockOnly ? "bg-emerald-500/40" : "bg-white/10"
+                  )}>
+                    <span className={cn(
+                      "absolute top-0.5 w-4 h-4 rounded-full transition-all duration-300",
+                      showInStockOnly ? "left-[22px] bg-emerald-400" : "left-0.5 bg-white/30"
+                    )} />
+                  </span>
+                </button>
+              </div>
             </div>
           </aside>
 
@@ -300,6 +339,7 @@ function ProductCard({
 
   const cardRef = useRef<HTMLDivElement>(null);
   const imgElRef = useRef<HTMLImageElement>(null);
+  const imgContainerRef = useRef<HTMLDivElement>(null);
 
   const setCardRef = useCallback(
     (el: HTMLDivElement | null) => {
@@ -309,12 +349,20 @@ function ProductCard({
     [tiltRef]
   );
 
-  const setImgRef = useCallback(
-    (el: HTMLImageElement | null) => {
-      imgElRef.current = el;
+  // Assign the image container to the tilt imgRef for GSAP translateZ transforms
+  const setImgContainerRef = useCallback(
+    (el: HTMLDivElement | null) => {
+      imgContainerRef.current = el;
       (imgRef as React.MutableRefObject<HTMLElement | null>).current = el;
     },
     [imgRef]
+  );
+
+  const handleImageLoad = useCallback(
+    (e: React.SyntheticEvent<HTMLImageElement>) => {
+      imgElRef.current = e.currentTarget;
+    },
+    []
   );
 
   const handleAddToCart = (e: React.MouseEvent) => {
@@ -323,8 +371,9 @@ function ProductCard({
     addItem(product);
     setIsAdded(true);
 
-    if (imgElRef.current) {
-      const rect = imgElRef.current.getBoundingClientRect();
+    const el = imgElRef.current ?? imgContainerRef.current;
+    if (el) {
+      const rect = el.getBoundingClientRect();
       fireCartFlight({
         imgSrc: product.img,
         startX: rect.left + rect.width / 2,
@@ -344,7 +393,10 @@ function ProductCard({
       <div
         ref={setCardRef}
         onClick={onOpen}
-        className="group relative flex flex-col rounded-[2rem] border border-white/[0.07] bg-gradient-to-b from-white/[0.05] to-white/[0.01] h-full cursor-pointer"
+        className={cn(
+          "group relative flex flex-col rounded-[2rem] border border-white/[0.07] bg-gradient-to-b from-white/[0.05] to-white/[0.01] h-full cursor-pointer",
+          product.inStock === false && "opacity-60"
+        )}
         style={{
           transformStyle: "preserve-3d",
           willChange: "transform",
@@ -394,17 +446,24 @@ function ProductCard({
           />
 
           {/* Product image — springs to Z+65 on hover */}
-          <img
-            ref={setImgRef}
-            src={product.img}
-            alt={product.name}
-            className="relative w-full max-w-[180px] h-[160px] object-contain z-20 pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+          <div
+            ref={setImgContainerRef}
+            className="relative w-full max-w-[180px] h-[160px] z-20 pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity duration-300"
             style={{
               transform: "translateZ(0px)",
               willChange: "transform",
               filter: "drop-shadow(0 15px 30px rgba(0,0,0,0.35))",
             }}
-          />
+          >
+            <Image
+              src={product.img}
+              alt={product.name}
+              fill
+              sizes="180px"
+              className="object-contain"
+              onLoad={handleImageLoad}
+            />
+          </div>
 
           {/* Wishlist */}
           <button
@@ -431,7 +490,7 @@ function ProductCard({
             {product.name}
           </h3>
 
-          <div className="flex items-center gap-1 mb-5">
+          <div className="flex items-center gap-1 mb-3">
             {Array.from({ length: 5 }).map((_, j) => (
               <Star
                 key={j}
@@ -446,6 +505,29 @@ function ProductCard({
             <span className="text-xs text-white/25 ml-1.5">{product.rating}</span>
           </div>
 
+          {/* Stock badge */}
+          <div className="mb-4">
+            {product.inStock !== false ? (
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-400">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+                  Em Stock
+                </span>
+                {product.stockCount != null && product.stockCount <= 5 && product.stockCount > 0 && (
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-amber-400">
+                    <AlertTriangle size={10} className="shrink-0" />
+                    Só restam {product.stockCount}!
+                  </span>
+                )}
+              </div>
+            ) : (
+              <span className="inline-flex items-center gap-1 text-[10px] font-bold text-red-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
+                Esgotado
+              </span>
+            )}
+          </div>
+
           <div className="mt-auto flex items-center justify-between gap-3">
             <div className="flex flex-col">
               {product.oldPrice && (
@@ -454,50 +536,59 @@ function ProductCard({
                 </span>
               )}
               <span
-                className="text-xl font-black text-orange-300"
-                style={{ textShadow: "0 0 16px rgba(251,146,60,0.25)" }}
+                className={cn(
+                  "text-xl font-black",
+                  product.inStock === false ? "text-white/20" : "text-orange-300"
+                )}
+                style={product.inStock !== false ? { textShadow: "0 0 16px rgba(251,146,60,0.25)" } : undefined}
               >
                 {product.price}
               </span>
             </div>
 
-            <button
-              onClick={handleAddToCart}
-              className={cn(
-                "relative flex items-center justify-center gap-2 h-12 rounded-xl transition-all duration-500 font-bold text-sm",
-                isAdded
-                  ? "w-full bg-emerald-500 text-white shadow-lg shadow-emerald-500/30"
-                  : "w-12 bg-orange-500/10 border border-orange-500/20 text-orange-300 hover:bg-orange-500 hover:text-white hover:w-full hover:shadow-lg hover:shadow-orange-500/30"
-              )}
-            >
-              <AnimatePresence mode="wait">
-                {isAdded ? (
-                  <motion.div
-                    key="success"
-                    initial={{ scale: 0, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    exit={{ scale: 0, opacity: 0 }}
-                    className="flex items-center gap-2 whitespace-nowrap"
-                  >
-                    <Check size={16} className="shrink-0" />
-                    <span>No Carrinho</span>
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="add"
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="flex items-center gap-2 whitespace-nowrap"
-                  >
-                    <Plus size={18} className="shrink-0" />
-                    <span className="max-w-0 overflow-hidden group-hover:max-w-[80px] transition-all duration-500">
-                      Adicionar
-                    </span>
-                  </motion.div>
+            {product.inStock === false ? (
+              <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-white/5 border border-white/10 text-white/20 cursor-not-allowed">
+                <X size={18} />
+              </div>
+            ) : (
+              <button
+                onClick={handleAddToCart}
+                className={cn(
+                  "relative flex items-center justify-center gap-2 h-12 rounded-xl transition-all duration-500 font-bold text-sm",
+                  isAdded
+                    ? "w-full bg-emerald-500 text-white shadow-lg shadow-emerald-500/30"
+                    : "w-12 bg-orange-500/10 border border-orange-500/20 text-orange-300 hover:bg-orange-500 hover:text-white hover:w-full hover:shadow-lg hover:shadow-orange-500/30"
                 )}
-              </AnimatePresence>
-            </button>
+              >
+                <AnimatePresence mode="wait">
+                  {isAdded ? (
+                    <motion.div
+                      key="success"
+                      initial={{ scale: 0, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      exit={{ scale: 0, opacity: 0 }}
+                      className="flex items-center gap-2 whitespace-nowrap"
+                    >
+                      <Check size={16} className="shrink-0" />
+                      <span>No Carrinho</span>
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="add"
+                      initial={{ opacity: 1 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="flex items-center gap-2 whitespace-nowrap"
+                    >
+                      <Plus size={18} className="shrink-0" />
+                      <span className="max-w-0 overflow-hidden group-hover:max-w-[80px] transition-all duration-500">
+                        Adicionar
+                      </span>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </button>
+            )}
           </div>
         </div>
       </div>

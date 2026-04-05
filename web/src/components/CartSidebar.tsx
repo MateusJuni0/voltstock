@@ -1,10 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useCart } from "@/store/useCart";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ShoppingBag, Plus, Minus, Trash2, ArrowRight, Truck, Check } from "lucide-react";
+import { X, ShoppingBag, Plus, Minus, Trash2, ArrowRight, Truck, Check, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
+import { PaymentLogos } from "./PaymentLogos";
 
 const FREE_SHIPPING_THRESHOLD = 50;
 
@@ -81,8 +83,14 @@ export function CartSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                     animate={{ opacity: 1, y: 0 }}
                     className="flex gap-4 p-4 rounded-2xl bg-accent/[0.03] border border-accent/5 group"
                   >
-                    <div className="w-20 h-20 rounded-xl overflow-hidden bg-black/40 shrink-0">
-                      <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
+                    <div className="relative w-20 h-20 rounded-xl overflow-hidden bg-black/40 shrink-0">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        fill
+                        sizes="80px"
+                        className="object-cover"
+                      />
                     </div>
                     <div className="flex-1 flex flex-col justify-between">
                       <div className="flex justify-between gap-2">
@@ -182,6 +190,18 @@ export function CartSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   Finalizar Compra
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </button>
+
+                {/* Trust signals */}
+                <div className="flex items-center justify-center gap-1.5 text-[11px] text-green-400/60 pt-1">
+                  <Lock size={11} />
+                  <span>Checkout Seguro</span>
+                </div>
+
+                <PaymentLogos size="sm" className="justify-center" />
+
+                <p className="text-center text-[10px] text-orange-400/30">
+                  Envio grátis a partir de 50€
+                </p>
               </div>
             )}
           </motion.aside>
