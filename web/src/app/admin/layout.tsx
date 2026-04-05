@@ -60,8 +60,8 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
 
         setIsAdmin(profile?.role === "admin");
       } catch {
-        // Supabase offline or profiles table missing — allow access as fallback for dev
-        setIsAdmin(true);
+        // Supabase offline or profiles table missing — deny access in production
+        setIsAdmin(false);
       } finally {
         setIsLoading(false);
       }

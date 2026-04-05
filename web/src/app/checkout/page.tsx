@@ -32,7 +32,7 @@ const shippingSchema = z.object({
   city: z.string().min(2, "Cidade obrigatória"),
   postalCode: z
     .string()
-    .regex(/^\d{4}-\d{3}$/, "Formato: XXXX-XXX"),
+    .regex(/^\d{4}-?\d{3}$/, "Formato: XXXX-XXX ou XXXXXXX"),
   district: z.string().min(2, "Distrito obrigatório"),
   phone: z
     .string()

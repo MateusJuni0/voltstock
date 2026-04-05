@@ -198,10 +198,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
       try {
         await persistOrder(session);
-      } catch {
-        // Log failed but still return 200 to Stripe to prevent
-        // retries that could create duplicate orders.
-        // The order can be reconciled manually from Stripe dashboard.
+      } catch (err: unknown) {
+        // Still return 200 to Stripe to prevent retries that could
+        // create duplicate orders. Log the error for manual reconciliation.
+        const msg = err instanceof Error ? err.message : "Unknown error";
+        console.error(`[stripe-webhook] persistOrder failed for session ${session.id}: ${msg}`);
       }
 
       break;

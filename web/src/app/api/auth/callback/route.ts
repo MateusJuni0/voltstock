@@ -39,7 +39,7 @@ export async function GET(request: NextRequest) {
   const { error } = await supabase.auth.exchangeCodeForSession(code);
 
   if (error) {
-    console.error("[auth/callback] exchangeCodeForSession error:", error.message);
+    // Auth exchange failed — redirect with error hint (server-side log only)
     return NextResponse.redirect(`${origin}/?error=oauth_failed`);
   }
 

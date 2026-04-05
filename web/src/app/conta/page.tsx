@@ -1,9 +1,11 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Package, Heart, MapPin, ArrowRight, ShoppingBag } from "lucide-react";
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
+import { createClient } from "@/lib/supabase/client";
 
 interface StatCardProps {
   label: string;
@@ -47,6 +49,31 @@ const itemVariants = {
 
 export default function ContaDashboardPage() {
   const { user, profile, loading } = useAuth();
+  const [stats, setStats] = useState({ orders: 0, wishlist: 0, addresses: 0 });
+
+  useEffect(() => {
+    if (!user) return;
+
+    async function fetchStats() {
+      const supabase = createClient();
+      const userId = user!.id;
+
+      // Fetch counts in parallel, gracefully fallback to 0 if tables don't exist
+      const [ordersRes, wishlistRes, addressesRes] = await Promise.allSettled([
+        supabase.from("orders").select("id", { count: "exact", head: true }).eq("user_id", userId),
+        supabase.from("wishlists").select("id", { count: "exact", head: true }).eq("user_id", userId),
+        supabase.from("addresses").select("id", { count: "exact", head: true }).eq("user_id", userId),
+      ]);
+
+      setStats({
+        orders: ordersRes.status === "fulfilled" ? (ordersRes.value.count ?? 0) : 0,
+        wishlist: wishlistRes.status === "fulfilled" ? (wishlistRes.value.count ?? 0) : 0,
+        addresses: addressesRes.status === "fulfilled" ? (addressesRes.value.count ?? 0) : 0,
+      });
+    }
+
+    fetchStats();
+  }, [user]);
 
   if (loading) {
     return <DashboardSkeleton />;
@@ -75,9 +102,9 @@ export default function ContaDashboardPage() {
         variants={itemVariants}
         className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10"
       >
-        <StatCard label="Total de encomendas" value={0} icon={Package} href="/conta/encomendas" />
-        <StatCard label="Produtos na wishlist" value={0} icon={Heart} href="/conta/wishlist" />
-        <StatCard label="Moradas guardadas" value={0} icon={MapPin} href="/conta/moradas" />
+        <StatCard label="Total de encomendas" value={stats.orders} icon={Package} href="/conta/encomendas" />
+        <StatCard label="Produtos na wishlist" value={stats.wishlist} icon={Heart} href="/conta/wishlist" />
+        <StatCard label="Moradas guardadas" value={stats.addresses} icon={MapPin} href="/conta/moradas" />
       </motion.div>
 
       {/* Quick links */}
