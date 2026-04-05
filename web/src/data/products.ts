@@ -11,6 +11,9 @@ export interface Product {
   badge?: string;
   features?: { name: string; value: string }[];
   supplier_url?: string;
+  brand?: string;
+  inStock?: boolean;
+  stockCount?: number;
 }
 
 export const categories = [
@@ -50,7 +53,11 @@ export const products: Product[] = [
       { "name": "Cores", "value": "24576 CUDA" },
       { "name": "Clock Boost", "value": "2950 MHz" },
       { "name": "Barramento", "value": "512-bit" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/MSI-RTX-5090-SUPRIM-X",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 5
   },
   {
     "id": 14,
@@ -71,7 +78,11 @@ export const products: Product[] = [
       { "name": "Boost Clock", "value": "2640 MHz OC" },
       { "name": "TDP", "value": "450W" },
       { "name": "Slots", "value": "3.5 (PCIE 5.0)" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/ASUS-ROG-Strix-RTX-4090-OC",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 45
   },
   {
     "id": 21,
@@ -80,9 +91,9 @@ export const products: Product[] = [
     "price": "829,00 €",
     "oldPrice": "899,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-137-855-04.png",
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-137-855-04.png"
+      "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A RTX 4070 Ti Super oferece desempenho excecional em 1440p e 4K com 16GB GDDR6X e arquitetura Ada Lovelace. DLSS 3 com Frame Generation para FPS extremos.",
     "badge": "1440p Beast",
@@ -92,7 +103,10 @@ export const products: Product[] = [
       { "name": "Boost Clock", "value": "2610 MHz" },
       { "name": "TDP", "value": "285W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RTX-4070-Ti-Super"
+    "supplier_url": "https://www.aliexpress.com/item/RTX-4070-Ti-Super",
+    "brand": "NVIDIA",
+    "inStock": true,
+    "stockCount": 15
   },
   {
     "id": 22,
@@ -101,9 +115,9 @@ export const products: Product[] = [
     "price": "429,00 €",
     "oldPrice": "479,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-137-797-01.jpg",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-137-797-01.jpg"
+      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Excelente desempenho 1080p e 1440p com suporte DLSS 3 e ray tracing. Eficiente em consumo energético com apenas 160W TDP, ideal para builds compactas.",
     "badge": "1080p King",
@@ -113,7 +127,10 @@ export const products: Product[] = [
       { "name": "Boost Clock", "value": "2535 MHz" },
       { "name": "TDP", "value": "160W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RTX-4060-Ti"
+    "supplier_url": "https://www.aliexpress.com/item/RTX-4060-Ti",
+    "brand": "NVIDIA",
+    "inStock": true,
+    "stockCount": 28
   },
   {
     "id": 23,
@@ -121,9 +138,9 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "309,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-932-628-16.jpg",
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-932-628-16.jpg"
+      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A placa gráfica mais acessível da série RTX 40 com 8GB GDDR6 e suporte completo a DLSS 3. Perfeita para gaming 1080p com ray tracing ativado.",
     "badge": "Melhor Custo-Benefício",
@@ -133,7 +150,10 @@ export const products: Product[] = [
       { "name": "Boost Clock", "value": "2460 MHz" },
       { "name": "TDP", "value": "115W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RTX-4060"
+    "supplier_url": "https://www.aliexpress.com/item/RTX-4060",
+    "brand": "NVIDIA",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 24,
@@ -142,9 +162,9 @@ export const products: Product[] = [
     "price": "899,00 €",
     "oldPrice": "1.049,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg",
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg"
+      "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A flagship da AMD com 24GB GDDR6 e arquitetura RDNA 3. Performance de topo em 4K com excelente rasterização e suporte FSR 3 com Frame Generation.",
     "badge": "AMD Flagship",
@@ -154,7 +174,10 @@ export const products: Product[] = [
       { "name": "Game Clock", "value": "2300 MHz" },
       { "name": "TDP", "value": "355W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RX-7900-XTX"
+    "supplier_url": "https://www.aliexpress.com/item/RX-7900-XTX",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 37
   },
   {
     "id": 25,
@@ -163,9 +186,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-434-11.jpg",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-202-434-11.jpg"
+      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "16GB de VRAM GDDR6 para gaming 1440p sem compromissos. Arquitetura RDNA 3 com excelente eficiência energética e suporte FSR 3.",
     "badge": "1440p AMD",
@@ -175,7 +198,10 @@ export const products: Product[] = [
       { "name": "Game Clock", "value": "2124 MHz" },
       { "name": "TDP", "value": "263W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RX-7800-XT"
+    "supplier_url": "https://www.aliexpress.com/item/RX-7800-XT",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 18
   },
   {
     "id": 26,
@@ -184,9 +210,9 @@ export const products: Product[] = [
     "price": "269,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-432-18.jpg",
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-202-432-18.jpg"
+      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Entrada no gaming 1080p com arquitetura RDNA 3. Suporte FSR 3 e excelente consumo energético com apenas 165W, perfeita para builds budget.",
     "badge": "Budget Pick",
@@ -196,7 +222,10 @@ export const products: Product[] = [
       { "name": "Game Clock", "value": "2250 MHz" },
       { "name": "TDP", "value": "165W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RX-7600"
+    "supplier_url": "https://www.aliexpress.com/item/RX-7600",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 7
   },
   {
     "id": 27,
@@ -205,9 +234,9 @@ export const products: Product[] = [
     "price": "619,00 €",
     "oldPrice": "679,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImage/14-932-681-11.jpg",
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/14-932-681-11.jpg"
+      "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "O sweet spot da geração Ada Lovelace com 12GB GDDR6X. Performance 1440p excecional com DLSS 3, ray tracing e eficiência de 220W TDP.",
     "badge": "Sweet Spot",
@@ -217,7 +246,10 @@ export const products: Product[] = [
       { "name": "Boost Clock", "value": "2475 MHz" },
       { "name": "TDP", "value": "220W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RTX-4070-Super"
+    "supplier_url": "https://www.aliexpress.com/item/RTX-4070-Super",
+    "brand": "NVIDIA",
+    "inStock": true,
+    "stockCount": 50
   },
   {
     "id": 28,
@@ -225,9 +257,9 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "239,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-932-402-V01.jpg",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-932-402-V01.jpg"
+      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "12GB de VRAM GDDR6 a um preço imbatível. Ainda relevante para gaming 1080p com ray tracing básico e DLSS 2. Excelente para builds económicas.",
     "badge": "Económica",
@@ -237,7 +269,10 @@ export const products: Product[] = [
       { "name": "Boost Clock", "value": "1777 MHz" },
       { "name": "TDP", "value": "170W" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/RTX-3060-12GB"
+    "supplier_url": "https://www.aliexpress.com/item/RTX-3060-12GB",
+    "brand": "NVIDIA",
+    "inStock": true,
+    "stockCount": 50
   },
 
   // =============================================
@@ -261,7 +296,11 @@ export const products: Product[] = [
       { "name": "Cores/Threads", "value": "8C / 16T" },
       { "name": "Clock Boost", "value": "5.0 GHz" },
       { "name": "Socket", "value": "AM5" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/AMD-Ryzen-7-7800X3D",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 13,
@@ -282,7 +321,11 @@ export const products: Product[] = [
       { "name": "Boost Clock", "value": "6.0 GHz" },
       { "name": "Socket", "value": "LGA1700" },
       { "name": "TDP", "value": "125W (Base)" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Intel-Core-i9-14900K",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 19
   },
   {
     "id": 29,
@@ -291,9 +334,9 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImage/19-113-770-02.jpg",
+    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-113-770-02.jpg"
+      "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "6 cores e 12 threads Zen 4 com boost até 5.3 GHz. Entrada na plataforma AM5 com suporte DDR5 e PCIe 5.0 a um preço acessível.",
     "badge": "Melhor Valor AM5",
@@ -303,7 +346,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "32MB" },
       { "name": "Socket", "value": "AM5" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Ryzen-5-7600X"
+    "supplier_url": "https://www.aliexpress.com/item/Ryzen-5-7600X",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 25
   },
   {
     "id": 30,
@@ -312,9 +358,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/ProductImage/19-113-791-03.png",
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-113-791-03.png"
+      "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "16 cores Zen 4 com 3D V-Cache de 128MB para o máximo em gaming e produtividade. O processador definitivo para quem não faz compromissos.",
     "badge": "Enthusiast",
@@ -324,7 +370,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "128MB 3D V-Cache" },
       { "name": "Socket", "value": "AM5" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Ryzen-9-7950X3D"
+    "supplier_url": "https://www.aliexpress.com/item/Ryzen-9-7950X3D",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 36
   },
   {
     "id": 31,
@@ -333,9 +382,9 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImage/19-118-470-07.jpg",
+    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-118-470-07.jpg"
+      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "14 cores (6P + 8E) e 20 threads com boost até 5.3 GHz. O mid-range da Intel com performance gaming excelente e overclocking desbloqueado.",
     "badge": "Mid-Range Intel",
@@ -345,7 +394,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "24MB" },
       { "name": "Socket", "value": "LGA1700" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/i5-14600K"
+    "supplier_url": "https://www.aliexpress.com/item/i5-14600K",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 21
   },
   {
     "id": 32,
@@ -354,9 +406,9 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImage/19-118-466-04.jpg",
+    "img": "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-118-466-04.jpg"
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "20 cores (8P + 12E) e 28 threads com boost até 5.6 GHz. Multitasking extremo para gaming, streaming e criação de conteúdo em simultâneo.",
     "badge": "Produtividade",
@@ -366,7 +418,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "33MB" },
       { "name": "Socket", "value": "LGA1700" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/i7-14700K"
+    "supplier_url": "https://www.aliexpress.com/item/i7-14700K",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 20
   },
   {
     "id": 33,
@@ -374,9 +429,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "129,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImage/19-113-670-V01.jpg",
+    "img": "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-113-670-V01.jpg"
+      "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "6 cores Zen 3 que ainda dão conta de qualquer jogo atual. Excelente custo-benefício para upgrades em plataforma AM4 já existente.",
     "badge": "Budget King",
@@ -386,7 +441,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "32MB" },
       { "name": "Socket", "value": "AM4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Ryzen-5-5600X"
+    "supplier_url": "https://www.aliexpress.com/item/Ryzen-5-5600X",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 33
   },
   {
     "id": 34,
@@ -395,9 +453,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "209,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/ProductImage/19-118-431-04.jpg",
+    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-118-431-04.jpg"
+      "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "10 cores (6P + 4E) sem gráficos integrados para quem usa placa gráfica dedicada. Excelente performance por euro na plataforma LGA1700.",
     "badge": "Valor Imbatível",
@@ -407,7 +465,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "20MB" },
       { "name": "Socket", "value": "LGA1700" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/i5-13400F"
+    "supplier_url": "https://www.aliexpress.com/item/i5-13400F",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 32
   },
   {
     "id": 35,
@@ -416,9 +477,9 @@ export const products: Product[] = [
     "price": "379,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImage/19-113-769-02.jpg",
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-113-769-02.jpg"
+      "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "12 cores Zen 4 com boost até 5.6 GHz. Potência bruta para renderização, compilação e gaming de alta performance na plataforma AM5.",
     "badge": "Workstation",
@@ -428,7 +489,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "64MB" },
       { "name": "Socket", "value": "AM5" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Ryzen-9-7900X"
+    "supplier_url": "https://www.aliexpress.com/item/Ryzen-9-7900X",
+    "brand": "AMD",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 36,
@@ -436,9 +500,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "89,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/ProductImage/19-118-357-03.jpg",
+    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/19-118-357-03.jpg"
+      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "4 cores e 8 threads Alder Lake a um preço de entrada. Surpreendente em gaming 1080p quando combinado com uma placa gráfica dedicada.",
     "badge": "Entry Level",
@@ -448,7 +512,10 @@ export const products: Product[] = [
       { "name": "Cache L3", "value": "12MB" },
       { "name": "Socket", "value": "LGA1700" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/i3-12100F"
+    "supplier_url": "https://www.aliexpress.com/item/i3-12100F",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 20
   },
 
   // =============================================
@@ -461,9 +528,9 @@ export const products: Product[] = [
     "price": "198,00 €",
     "oldPrice": "229,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg",
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb1280/13-144-557-01.jpg"
+      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A base sólida para o teu setup AM5. VRM robusto de 14+2+1 fases, suporte DDR5 até 6400MHz e WiFi 6E integrado para conectividade sem fios de próxima geração.",
     "badge": "Base Sólida",
@@ -472,7 +539,11 @@ export const products: Product[] = [
       { "name": "Fases VRM", "value": "14+2+1" },
       { "name": "WiFi", "value": "6E (2.4GHz/5GHz/6GHz)" },
       { "name": "PCIe", "value": "5.0 x16" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/MSI-MAG-B650-Tomahawk-WiFi",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 20
   },
   {
     "id": 15,
@@ -493,7 +564,11 @@ export const products: Product[] = [
       { "name": "Fases VRM", "value": "20+1+2" },
       { "name": "WiFi", "value": "6E Tri-Band" },
       { "name": "DDR5", "value": "Até 7800+ MHz OC" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/ASUS-ROG-Maximus-Z790-Hero",
+    "brand": "ASUS",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 37,
@@ -502,9 +577,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-648-10.png",
+    "img": "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-648-10.png"
+      "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Micro-ATX compacta para Intel 12ª/13ª/14ª geração com WiFi 6E e VRM de 12+1+1 fases. Ideal para builds compactas sem sacrificar funcionalidades.",
     "badge": "Compacta",
@@ -514,7 +589,10 @@ export const products: Product[] = [
       { "name": "WiFi", "value": "6E integrado" },
       { "name": "M.2", "value": "3 slots (1× PCIe 4.0)" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/MSI-MPG-B760M"
+    "supplier_url": "https://www.aliexpress.com/item/MSI-MPG-B760M",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 15
   },
   {
     "id": 38,
@@ -535,7 +613,10 @@ export const products: Product[] = [
       { "name": "WiFi", "value": "6 integrado" },
       { "name": "PCIe", "value": "5.0 x16" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/ASUS-TUF-B650-PLUS"
+    "supplier_url": "https://www.aliexpress.com/item/ASUS-TUF-B650-PLUS",
+    "brand": "ASUS",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 39,
@@ -543,9 +624,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "139,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-271-V07.jpg",
+    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-271-V07.jpg"
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Plataforma AM4 madura e estável com VRM digital de 12+2 fases. Suporte DDR4 até 5400MHz OC e PCIe 4.0 x16 para Ryzen 5000.",
     "badge": "AM4 Clássica",
@@ -555,7 +636,10 @@ export const products: Product[] = [
       { "name": "DDR4", "value": "Até 5400 MHz OC" },
       { "name": "PCIe", "value": "4.0 x16" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Gigabyte-B550-Aorus-Pro"
+    "supplier_url": "https://www.aliexpress.com/item/Gigabyte-B550-Aorus-Pro",
+    "brand": "Gigabyte",
+    "inStock": true,
+    "stockCount": 5
   },
   {
     "id": 40,
@@ -563,9 +647,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "119,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-047-V01.jpg",
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-047-V01.jpg"
+      "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Micro-ATX acessível para Intel 12ª/13ª geração com design Steel Legend icónico. VRM de 8 fases, 2 slots M.2 e saída HDMI 2.1.",
     "badge": "Budget Intel",
@@ -575,7 +659,10 @@ export const products: Product[] = [
       { "name": "DDR4", "value": "Até 4800 MHz OC" },
       { "name": "M.2", "value": "2 slots PCIe 4.0" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/ASRock-B660M"
+    "supplier_url": "https://www.aliexpress.com/item/ASRock-B660M",
+    "brand": "ASRock",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 41,
@@ -596,7 +683,10 @@ export const products: Product[] = [
       { "name": "PCIe 5.0", "value": "x16 + M.2" },
       { "name": "WiFi", "value": "6E + BT 5.2" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/ROG-Strix-X670E-E"
+    "supplier_url": "https://www.aliexpress.com/item/ROG-Strix-X670E-E",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 11
   },
   {
     "id": 42,
@@ -605,9 +695,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-562-10.jpg",
+    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-562-10.jpg"
+      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Motherboard de elite para Intel 14ª geração com VRM de 24+1+2 fases, DDR5-7800+ OC e design premium em preto e dourado. Feita para overclock extremo.",
     "badge": "OC Extreme",
@@ -617,7 +707,10 @@ export const products: Product[] = [
       { "name": "DDR5", "value": "Até 7800+ MHz" },
       { "name": "Thunderbolt", "value": "4 (40 Gbps)" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/MSI-MEG-Z790-ACE"
+    "supplier_url": "https://www.aliexpress.com/item/MSI-MEG-Z790-ACE",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 7
   },
   {
     "id": 43,
@@ -626,9 +719,9 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "459,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/BSTDD2312190WYIKA6A.jpg",
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/BSTDD2312190WYIKA6A.jpg"
+      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "16+2+2 fases VRM twinned com 4 slots M.2 Gen5 e conectividade completa. A Aorus Master para builds AM5 de referência com design térmico Fins-Array III.",
     "badge": "Aorus Master",
@@ -638,7 +731,10 @@ export const products: Product[] = [
       { "name": "M.2 Gen5", "value": "4 slots" },
       { "name": "Ethernet", "value": "10GbE + 2.5GbE" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/X670E-Aorus-Master"
+    "supplier_url": "https://www.aliexpress.com/item/X670E-Aorus-Master",
+    "brand": "Gigabyte",
+    "inStock": true,
+    "stockCount": 15
   },
   {
     "id": 44,
@@ -646,9 +742,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "129,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-228-04.png",
+    "img": "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageCompressAll1280/13-162-228-04.png"
+      "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Micro-ATX acessível com WiFi 6E para Intel 12ª/13ª/14ª geração. VRM de 8+1+1 fases, DDR5 e 2 slots M.2 a um preço competitivo.",
     "badge": "WiFi Budget",
@@ -658,7 +754,10 @@ export const products: Product[] = [
       { "name": "WiFi", "value": "6E integrado" },
       { "name": "DDR5", "value": "Até 6800 MHz OC" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/ASRock-B760M-Pro-RS"
+    "supplier_url": "https://www.aliexpress.com/item/ASRock-B760M-Pro-RS",
+    "brand": "ASRock",
+    "inStock": false,
+    "stockCount": 0
   },
 
   // =============================================
@@ -682,7 +781,11 @@ export const products: Product[] = [
       { "name": "Frequência", "value": "6000 MT/s" },
       { "name": "Latência", "value": "CL30" },
       { "name": "Kit", "value": "2 x 16GB" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-Vengeance-DDR5-32GB-6000MHz",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 23
   },
   {
     "id": 16,
@@ -703,7 +806,11 @@ export const products: Product[] = [
       { "name": "Frequência", "value": "DDR5-6000 CL36" },
       { "name": "Perfil", "value": "Intel XMP 3.0" },
       { "name": "Tensão", "value": "1.35V" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/G-Skill-Trident-Z5-RGB-DDR5-64GB",
+    "brand": "G.Skill",
+    "inStock": true,
+    "stockCount": 47
   },
   {
     "id": 45,
@@ -712,9 +819,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg",
+    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg"
+      "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Kit 2×16GB DDR5-5600 com dissipador de calor preto compacto. Compatível com Intel XMP 3.0 e AMD EXPO para facilidade de overclock.",
     "badge": "Preço/Performance",
@@ -724,7 +831,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL36" },
       { "name": "Kit", "value": "2 × 16GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Kingston-Fury-Beast-DDR5-32GB"
+    "supplier_url": "https://www.aliexpress.com/item/Kingston-Fury-Beast-DDR5-32GB",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 25
   },
   {
     "id": 46,
@@ -745,7 +855,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL32" },
       { "name": "Kit", "value": "2 × 16GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-Dominator-Platinum-DDR5"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-Dominator-Platinum-DDR5",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 5
   },
   {
     "id": 47,
@@ -754,9 +867,9 @@ export const products: Product[] = [
     "price": "145,00 €",
     "oldPrice": "175,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A4YUD23052206SYWO60.jpg",
+    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/A4YUD23052206SYWO60.jpg"
+      "https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A topo de gama da Kingston com DDR5-6400 CL32 e dissipador de calor agressivo. Otimizada para overclocking com chips Hynix A-Die selecionados.",
     "badge": "OC Ready",
@@ -766,7 +879,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL32" },
       { "name": "Kit", "value": "2 × 16GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Kingston-Fury-Renegade-DDR5"
+    "supplier_url": "https://www.aliexpress.com/item/Kingston-Fury-Renegade-DDR5",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 43
   },
   {
     "id": 48,
@@ -787,7 +903,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL38" },
       { "name": "Kit", "value": "2 × 16GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/TeamGroup-T-Force-Delta-DDR5"
+    "supplier_url": "https://www.aliexpress.com/item/TeamGroup-T-Force-Delta-DDR5",
+    "brand": "TeamGroup",
+    "inStock": true,
+    "stockCount": 26
   },
   {
     "id": 49,
@@ -807,7 +926,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL36" },
       { "name": "Kit", "value": "2 × 8GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-Vengeance-DDR5-16GB"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-Vengeance-DDR5-16GB",
+    "brand": "Corsair",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 50,
@@ -816,9 +938,9 @@ export const products: Product[] = [
     "price": "105,00 €",
     "oldPrice": "125,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-451-03.png",
+    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/20-374-451-03.png"
+      "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Design perfil baixo sem RGB para builds minimalistas. DDR5-6000 CL30 com excelente compatibilidade e estabilidade comprovada.",
     "badge": "Minimalista",
@@ -828,7 +950,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL30" },
       { "name": "Kit", "value": "2 × 16GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/G-Skill-Ripjaws-S5-DDR5"
+    "supplier_url": "https://www.aliexpress.com/item/G-Skill-Ripjaws-S5-DDR5",
+    "brand": "G.Skill",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 51,
@@ -836,9 +961,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "59,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/ProductImage/AFYUD210829238JE.jpg",
+    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/AFYUD210829238JE.jpg"
+      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Kit 2×16GB DDR4-3200 CL16 para upgrades em plataformas AM4 e LGA1700. Dissipador preto compacto com excelente compatibilidade.",
     "badge": "DDR4 Clássica",
@@ -848,7 +973,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL16" },
       { "name": "Kit", "value": "2 × 16GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Kingston-Fury-Beast-DDR4-32GB"
+    "supplier_url": "https://www.aliexpress.com/item/Kingston-Fury-Beast-DDR4-32GB",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 4
   },
   {
     "id": 52,
@@ -868,7 +996,10 @@ export const products: Product[] = [
       { "name": "Latência", "value": "CL40" },
       { "name": "Kit", "value": "2 × 16GB" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Crucial-DDR5-32GB"
+    "supplier_url": "https://www.aliexpress.com/item/Crucial-DDR5-32GB",
+    "brand": "Crucial",
+    "inStock": true,
+    "stockCount": 15
   },
 
   // =============================================
@@ -892,7 +1023,11 @@ export const products: Product[] = [
       { "name": "Escrita Seq.", "value": "6,900 MB/s" },
       { "name": "Garantia", "value": "5 Anos" },
       { "name": "Interface", "value": "PCIe 4.0 x4" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Samsung-990-Pro-2TB-NVMe",
+    "brand": "Samsung",
+    "inStock": true,
+    "stockCount": 30
   },
   {
     "id": 17,
@@ -913,7 +1048,11 @@ export const products: Product[] = [
       { "name": "Escrita Seq.", "value": "6,600 MB/s" },
       { "name": "Cache DRAM", "value": "4GB integrado" },
       { "name": "Interface", "value": "PCIe Gen4 x4 NVMe" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/WD-Black-SN850X-4TB-NVMe",
+    "brand": "WD",
+    "inStock": true,
+    "stockCount": 28
   },
   {
     "id": 53,
@@ -922,9 +1061,9 @@ export const products: Product[] = [
     "price": "59,00 €",
     "oldPrice": "79,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-250-254-01.jpg",
+    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageOriginal/20-250-254-01.jpg"
+      "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "NVMe Gen4 acessível com até 4,150 MB/s de leitura. Perfeita para armazenamento de jogos e sistema operativo com fiabilidade WD comprovada.",
     "badge": "Acessível",
@@ -934,7 +1073,10 @@ export const products: Product[] = [
       { "name": "Garantia", "value": "5 Anos" },
       { "name": "Interface", "value": "PCIe Gen4 x4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/WD-Blue-SN580-1TB"
+    "supplier_url": "https://www.aliexpress.com/item/WD-Blue-SN580-1TB",
+    "brand": "WD",
+    "inStock": true,
+    "stockCount": 43
   },
   {
     "id": 54,
@@ -943,9 +1085,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-242-731-06.jpg",
+    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageOriginal/20-242-731-06.jpg"
+      "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "2TB de armazenamento NVMe Gen4 ao melhor preço por gigabyte. Até 3,500 MB/s de leitura, ideal como drive secundário ou para bibliotecas de jogos grandes.",
     "badge": "Melhor €/GB",
@@ -955,7 +1097,10 @@ export const products: Product[] = [
       { "name": "Garantia", "value": "3 Anos" },
       { "name": "Interface", "value": "PCIe Gen4 x4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Kingston-NV2-2TB"
+    "supplier_url": "https://www.aliexpress.com/item/Kingston-NV2-2TB",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 8
   },
   {
     "id": 55,
@@ -964,9 +1109,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-156-299-01.jpg",
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageOriginal/20-156-299-01.jpg"
+      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "NVMe Gen4 da Micron com 5,000 MB/s de leitura. Excelente desempenho para o preço com 2TB de capacidade. Software Crucial Storage Executive incluído.",
     "badge": "Custo-Benefício",
@@ -976,7 +1121,10 @@ export const products: Product[] = [
       { "name": "Garantia", "value": "5 Anos" },
       { "name": "Interface", "value": "PCIe Gen4 x4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Crucial-P3-Plus-2TB"
+    "supplier_url": "https://www.aliexpress.com/item/Crucial-P3-Plus-2TB",
+    "brand": "Crucial",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 56,
@@ -984,9 +1132,9 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "79,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImage/20-147-792-V01.jpg",
+    "img": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImage/20-147-792-V01.jpg"
+      "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "O SSD SATA mais vendido do mundo com 560 MB/s de leitura. Perfeito para upgrade de portáteis e PCs mais antigos sem suporte NVMe.",
     "badge": "SATA Referência",
@@ -996,7 +1144,10 @@ export const products: Product[] = [
       { "name": "Garantia", "value": "5 Anos" },
       { "name": "Interface", "value": "SATA III 6 Gbps" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Samsung-870-EVO-1TB"
+    "supplier_url": "https://www.aliexpress.com/item/Samsung-870-EVO-1TB",
+    "brand": "Samsung",
+    "inStock": true,
+    "stockCount": 36
   },
   {
     "id": 57,
@@ -1005,9 +1156,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-248-194-06.png",
+    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageOriginal/20-248-194-06.png"
+      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "NVMe Gen4 de topo com 7,300 MB/s e durabilidade extrema de 2,550 TBW. Heatsink incluído para instalação em PS5 ou PC sem preocupações térmicas.",
     "badge": "Durável",
@@ -1017,7 +1168,10 @@ export const products: Product[] = [
       { "name": "TBW", "value": "2,550 TB" },
       { "name": "Interface", "value": "PCIe Gen4 x4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Seagate-FireCuda-530-2TB"
+    "supplier_url": "https://www.aliexpress.com/item/Seagate-FireCuda-530-2TB",
+    "brand": "Seagate",
+    "inStock": true,
+    "stockCount": 50
   },
   {
     "id": 58,
@@ -1026,9 +1180,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/20-156-387-01.png",
+    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageOriginal/20-156-387-01.png"
+      "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A NVMe mais rápida da Crucial com 7,400 MB/s de leitura graças ao controlador Phison E26. Microsoft DirectStorage ready para gaming de próxima geração.",
     "badge": "Gen4 Máximo",
@@ -1038,7 +1192,10 @@ export const products: Product[] = [
       { "name": "Garantia", "value": "5 Anos" },
       { "name": "Interface", "value": "PCIe Gen4 x4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Crucial-T500-2TB"
+    "supplier_url": "https://www.aliexpress.com/item/Crucial-T500-2TB",
+    "brand": "Crucial",
+    "inStock": true,
+    "stockCount": 34
   },
   {
     "id": 59,
@@ -1047,9 +1204,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "189,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/BU8YS2404160GLTKXE7.jpg",
+    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/ProductImageOriginal/BU8YS2404160GLTKXE7.jpg"
+      "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Controlador e NAND 176-layer da SK Hynix in-house. 7,000 MB/s com eficiência energética superior — ideal para portáteis e desktops.",
     "badge": "Eficiente",
@@ -1059,7 +1216,10 @@ export const products: Product[] = [
       { "name": "TBW", "value": "1,200 TB" },
       { "name": "Interface", "value": "PCIe Gen4 x4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/SK-Hynix-P41-2TB"
+    "supplier_url": "https://www.aliexpress.com/item/SK-Hynix-P41-2TB",
+    "brand": "SK Hynix",
+    "inStock": true,
+    "stockCount": 44
   },
   {
     "id": 60,
@@ -1080,7 +1240,10 @@ export const products: Product[] = [
       { "name": "Garantia", "value": "5 Anos" },
       { "name": "Interface", "value": "PCIe Gen4 x4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Kingston-KC3000-2TB"
+    "supplier_url": "https://www.aliexpress.com/item/Kingston-KC3000-2TB",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 21
   },
 
   // =============================================
@@ -1105,7 +1268,11 @@ export const products: Product[] = [
       { "name": "Eficiência", "value": "80+ Platinum" },
       { "name": "PCIe", "value": "ATX 3.0 / 12VHPWR" },
       { "name": "Ventilha", "value": "Zero-RPM Mode" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-HX1500i-Platinum",
+    "brand": "Corsair",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 61,
@@ -1114,9 +1281,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-139-333-04.png",
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-139-333-04.png"
+      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A fonte mais popular para builds gaming com 850W 80+ Gold e cabos totalmente modulares. Modo zero-RPM e ATX 3.0 com conector 12VHPWR nativo.",
     "badge": "Best Seller",
@@ -1126,7 +1293,10 @@ export const products: Product[] = [
       { "name": "Cabos", "value": "Full Modular ATX 3.0" },
       { "name": "Garantia", "value": "10 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-RM850x"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-RM850x",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 45
   },
   {
     "id": 62,
@@ -1135,9 +1305,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg",
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg"
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Qualidade Seasonic premium com 750W 80+ Gold e cabos modulares. Ventoinha FDB de 120mm com modo Hybrid Fan Control para funcionamento silencioso.",
     "badge": "Fiável",
@@ -1147,7 +1317,10 @@ export const products: Product[] = [
       { "name": "Cabos", "value": "Full Modular" },
       { "name": "Garantia", "value": "10 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Seasonic-Focus-GX-750"
+    "supplier_url": "https://www.aliexpress.com/item/Seasonic-Focus-GX-750",
+    "brand": "Seasonic",
+    "inStock": true,
+    "stockCount": 21
   },
   {
     "id": 63,
@@ -1156,9 +1329,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A68VS2306080ZMG2ED1.jpg",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/A68VS2306080ZMG2ED1.jpg"
+      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "ATX 3.0 com conector 12VHPWR nativo e 80+ Gold. Ventoinha be quiet! 120mm de alta qualidade com operação ultra-silenciosa.",
     "badge": "Silenciosa",
@@ -1168,7 +1341,10 @@ export const products: Product[] = [
       { "name": "PCIe", "value": "ATX 3.0 / 12VHPWR" },
       { "name": "Ruído", "value": "<15.5 dBA" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/be-quiet-Pure-Power-12-M"
+    "supplier_url": "https://www.aliexpress.com/item/be-quiet-Pure-Power-12-M",
+    "brand": "be quiet!",
+    "inStock": true,
+    "stockCount": 34
   },
   {
     "id": 64,
@@ -1177,9 +1353,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-438-238-V01.jpg",
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-438-238-V01.jpg"
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "1000W com certificação 80+ Gold e tamanho compacto de 150mm. Totalmente modular com proteções OVP, UVP, OCP, OPP, SCP e OTP.",
     "badge": "Compacta 1000W",
@@ -1189,7 +1365,10 @@ export const products: Product[] = [
       { "name": "Tamanho", "value": "150mm compacta" },
       { "name": "Garantia", "value": "10 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/EVGA-SuperNOVA-1000-G7"
+    "supplier_url": "https://www.aliexpress.com/item/EVGA-SuperNOVA-1000-G7",
+    "brand": "EVGA",
+    "inStock": true,
+    "stockCount": 44
   },
   {
     "id": 65,
@@ -1198,9 +1377,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-139-330-01.png",
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-139-330-01.png"
+      "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A melhor fonte SFX do mercado com 750W e 80+ Platinum em formato compacto. Perfeita para builds ITX e caixas pequenas sem comprometer potência.",
     "badge": "ITX Champion",
@@ -1210,7 +1389,10 @@ export const products: Product[] = [
       { "name": "Formato", "value": "SFX (100mm)" },
       { "name": "Garantia", "value": "7 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-SF750"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-SF750",
+    "brand": "Corsair",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 66,
@@ -1219,9 +1401,9 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "349,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"
+      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "1300W ATX 3.0 com conector 12VHPWR e monitorização inteligente via MSI Center. Preparada para as GPUs mais exigentes como a RTX 4090/5090.",
     "badge": "Powerhouse",
@@ -1231,7 +1413,10 @@ export const products: Product[] = [
       { "name": "PCIe", "value": "ATX 3.0 / 12VHPWR" },
       { "name": "Monitorização", "value": "MSI Center" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/MSI-MEG-Ai1300P"
+    "supplier_url": "https://www.aliexpress.com/item/MSI-MEG-Ai1300P",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 4
   },
   {
     "id": 67,
@@ -1240,9 +1425,9 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "359,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg"
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A eficiência máxima com certificação 80+ Titanium. 1000W de potência premium com 12 anos de garantia e componentes de grau industrial.",
     "badge": "Titanium",
@@ -1252,7 +1437,10 @@ export const products: Product[] = [
       { "name": "Cabos", "value": "Full Modular" },
       { "name": "Garantia", "value": "12 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Seasonic-Prime-TX-1000"
+    "supplier_url": "https://www.aliexpress.com/item/Seasonic-Prime-TX-1000",
+    "brand": "Seasonic",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 68,
@@ -1272,7 +1460,10 @@ export const products: Product[] = [
       { "name": "PCIe", "value": "ATX 3.0 / 12VHPWR" },
       { "name": "Garantia", "value": "10 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/NZXT-C850"
+    "supplier_url": "https://www.aliexpress.com/item/NZXT-C850",
+    "brand": "NZXT",
+    "inStock": true,
+    "stockCount": 38
   },
   {
     "id": 69,
@@ -1281,9 +1472,9 @@ export const products: Product[] = [
     "price": "115,00 €",
     "oldPrice": "135,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"
+      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "ATX 3.0 com conector PCIe 5.0 nativo e 80+ Gold. Ventoinha hidráulica de 120mm com Smart Zero Fan para operação silenciosa em cargas baixas.",
     "badge": "ATX 3.0",
@@ -1293,7 +1484,10 @@ export const products: Product[] = [
       { "name": "PCIe", "value": "ATX 3.0 / 12VHPWR" },
       { "name": "Garantia", "value": "10 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Thermaltake-Toughpower-GF3-850W"
+    "supplier_url": "https://www.aliexpress.com/item/Thermaltake-Toughpower-GF3-850W",
+    "brand": "Thermaltake",
+    "inStock": true,
+    "stockCount": 45
   },
 
   // =============================================
@@ -1306,9 +1500,9 @@ export const products: Product[] = [
     "price": "95,00 €",
     "oldPrice": "115,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg",
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb1280/AFSTS2211290JUTT4B6.jpg"
+      "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Fluxo de ar superior com dois ventoinhas frontais de 160mm PWM incluídos e painel lateral em vidro temperado de 4mm. Design modular e estética clean.",
     "badge": "Airflow King",
@@ -1317,7 +1511,11 @@ export const products: Product[] = [
       { "name": "Suporte", "value": "E-ATX" },
       { "name": "Vidro", "value": "Temperado 4mm" },
       { "name": "Cor", "value": "Branco" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Lian-Li-Lancool-216-RGB",
+    "brand": "Lian Li",
+    "inStock": true,
+    "stockCount": 37
   },
   {
     "id": 19,
@@ -1338,7 +1536,11 @@ export const products: Product[] = [
       { "name": "Bottom Fans", "value": "3 × 140mm RGB" },
       { "name": "Vidro", "value": "Temperado (2 painéis)" },
       { "name": "Suporte", "value": "ATX / E-ATX" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Fractal-Design-Torrent-RGB",
+    "brand": "Fractal Design",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 70,
@@ -1347,9 +1549,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-146-361-04.jpg",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/11-146-361-04.jpg"
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Design minimalista NZXT com painel frontal perfurado para airflow optimizado. 3 ventoinhas RGB incluídas e espaço para radiadores até 360mm.",
     "badge": "Clean Design",
@@ -1359,7 +1561,10 @@ export const products: Product[] = [
       { "name": "Radiador Top", "value": "360mm" },
       { "name": "Cable Management", "value": "25mm traseiro" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/NZXT-H7-Flow"
+    "supplier_url": "https://www.aliexpress.com/item/NZXT-H7-Flow",
+    "brand": "NZXT",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 71,
@@ -1368,9 +1573,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-139-231-12.png",
+    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/11-139-231-12.png"
+      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A caixa mid-tower mais popular da Corsair com frente mesh de alto fluxo. 2 ventoinhas 120mm incluídas e USB-C frontal. O clássico que nunca falha.",
     "badge": "Clássico",
@@ -1380,7 +1585,10 @@ export const products: Product[] = [
       { "name": "Radiador Front", "value": "360mm" },
       { "name": "USB-C", "value": "Frontal Type-C" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-4000D-Airflow"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-4000D-Airflow",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 72,
@@ -1388,9 +1596,9 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "79,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg",
+    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg"
+      "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Excelente airflow a preço budget com frente mesh ultra-fina e 3 ventoinhas D-RGB de 120mm incluídas. Vidro temperado e espaço generoso.",
     "badge": "Budget Airflow",
@@ -1400,7 +1608,10 @@ export const products: Product[] = [
       { "name": "GPU Máx.", "value": "400mm" },
       { "name": "Cooler CPU", "value": "Até 163mm" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Phanteks-Eclipse-G360A"
+    "supplier_url": "https://www.aliexpress.com/item/Phanteks-Eclipse-G360A",
+    "brand": "Phanteks",
+    "inStock": true,
+    "stockCount": 25
   },
   {
     "id": 73,
@@ -1409,9 +1620,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-734-018-01.jpg",
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/11-734-018-01.jpg"
+      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Equilíbrio perfeito entre silêncio e airflow com mesh frontal e 3 Pure Wings 2 de 140mm. Iluminação ARGB discreta no painel frontal.",
     "badge": "Silent Airflow",
@@ -1421,7 +1632,10 @@ export const products: Product[] = [
       { "name": "Radiador Top", "value": "360mm" },
       { "name": "Isolamento", "value": "Painéis absorventes" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/be-quiet-Pure-Base-500DX"
+    "supplier_url": "https://www.aliexpress.com/item/be-quiet-Pure-Base-500DX",
+    "brand": "be quiet!",
+    "inStock": true,
+    "stockCount": 38
   },
   {
     "id": 74,
@@ -1430,9 +1644,9 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg",
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
+      "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Full tower monstruosa com 200mm frontal e ecrã LCD integrado. Suporte para radiadores de 420mm e builds extremas com múltiplas GPUs.",
     "badge": "Enthusiast Tower",
@@ -1442,7 +1656,10 @@ export const products: Product[] = [
       { "name": "LCD Display", "value": "5.5\" integrado" },
       { "name": "GPU Máx.", "value": "490mm" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Cooler-Master-HAF-700"
+    "supplier_url": "https://www.aliexpress.com/item/Cooler-Master-HAF-700",
+    "brand": "Cooler Master",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 75,
@@ -1463,7 +1680,10 @@ export const products: Product[] = [
       { "name": "GPU Mount", "value": "Vertical incluído" },
       { "name": "Radiador", "value": "360mm top + 360mm lateral" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/HYTE-Y60"
+    "supplier_url": "https://www.aliexpress.com/item/HYTE-Y60",
+    "brand": "HYTE",
+    "inStock": true,
+    "stockCount": 41
   },
   {
     "id": 76,
@@ -1472,9 +1692,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-139-165-V21.jpg",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/11-139-165-V21.jpg"
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A irmã maior da 4000D com espaço para radiadores até 420mm. Painel frontal high-airflow, cable management RapidRoute e 2 ventoinhas 120mm incluídas.",
     "badge": "Big Brother",
@@ -1484,7 +1704,10 @@ export const products: Product[] = [
       { "name": "Radiador Front", "value": "420mm" },
       { "name": "SSD Slots", "value": "4 × 2.5\"" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-5000D-Airflow"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-5000D-Airflow",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 4
   },
   {
     "id": 77,
@@ -1493,9 +1716,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/AFSTS211210aAqTM.jpg",
+    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/AFSTS211210aAqTM.jpg"
+      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A icónica O11 reinventada com suporte reversível, mesh frontal opcional e espaço para 3 radiadores de 360mm. A favorita dos custom loops.",
     "badge": "Dual Chamber",
@@ -1505,7 +1728,10 @@ export const products: Product[] = [
       { "name": "Layout", "value": "Dual Chamber reversível" },
       { "name": "USB-C", "value": "Type-C 3.2 Gen2" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Lian-Li-O11-Dynamic-EVO"
+    "supplier_url": "https://www.aliexpress.com/item/Lian-Li-O11-Dynamic-EVO",
+    "brand": "Lian Li",
+    "inStock": true,
+    "stockCount": 25
   },
 
   // =============================================
@@ -1529,7 +1755,11 @@ export const products: Product[] = [
       { "name": "Ecrã LCD", "value": "640×640px circular" },
       { "name": "Fans", "value": "3 × F120 RGB" },
       { "name": "Compatível", "value": "Intel LGA1700 / AM5" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/NZXT-Kraken-Elite-360-RGB",
+    "brand": "NZXT",
+    "inStock": true,
+    "stockCount": 26
   },
   {
     "id": 20,
@@ -1550,7 +1780,11 @@ export const products: Product[] = [
       { "name": "Heatpipes", "value": "7 × 6mm" },
       { "name": "Fans incluídos", "value": "2 × Dark Wings 135mm" },
       { "name": "Compatível", "value": "Intel LGA1700 / AM5" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/be-quiet-Dark-Rock-Pro-5",
+    "brand": "be quiet!",
+    "inStock": true,
+    "stockCount": 20
   },
   {
     "id": 78,
@@ -1559,9 +1793,9 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "269,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png"
+      "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "AIO 360mm com ecrã IPS LCD de 2.1\" na bomba e 3 ventoinhas AF120 RGB Elite. Controlo total via iCUE com monitorização de temperaturas em tempo real.",
     "badge": "LCD Premium",
@@ -1571,7 +1805,10 @@ export const products: Product[] = [
       { "name": "Fans", "value": "3 × AF120 RGB Elite" },
       { "name": "Compatível", "value": "LGA1700 / AM5" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-H150i-Elite-LCD"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-H150i-Elite-LCD",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 12
   },
   {
     "id": 79,
@@ -1580,9 +1817,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/APGPS210616Ju0d9.jpg",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/APGPS210616Ju0d9.jpg"
+      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A melhor AIO em relação preço/performance com radiador de 360mm e bomba offset integrada. VRM cooling fan na bomba para refrigeração adicional da motherboard.",
     "badge": "Melhor Valor AIO",
@@ -1592,7 +1829,10 @@ export const products: Product[] = [
       { "name": "Bomba", "value": "Offset com VRM fan" },
       { "name": "Garantia", "value": "6 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Arctic-Liquid-Freezer-II-360"
+    "supplier_url": "https://www.aliexpress.com/item/Arctic-Liquid-Freezer-II-360",
+    "brand": "Arctic",
+    "inStock": true,
+    "stockCount": 18
   },
   {
     "id": 80,
@@ -1601,9 +1841,9 @@ export const products: Product[] = [
     "price": "69,00 €",
     "oldPrice": "85,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-856-229-01.jpg",
+    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/35-856-229-01.jpg"
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Dual tower air cooler com ecrã digital de temperatura integrado. 6 heatpipes de cobre e 2 ventoinhas de 120mm com 260W TDP máximo.",
     "badge": "Digital Air",
@@ -1613,7 +1853,10 @@ export const products: Product[] = [
       { "name": "Display", "value": "LED temperatura" },
       { "name": "Fans", "value": "2 × FK120 120mm" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/DeepCool-AK620"
+    "supplier_url": "https://www.aliexpress.com/item/DeepCool-AK620",
+    "brand": "DeepCool",
+    "inStock": true,
+    "stockCount": 30
   },
   {
     "id": 81,
@@ -1621,9 +1864,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "109,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/AADY_1321448318623154024hVzlOURbe.jpg",
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/AADY_1321448318623154024hVzlOURbe.jpg"
+      "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "A lenda do arrefecimento a ar em versão all-black. Dual tower com 2 NF-A15 PWM de 140mm, 6 heatpipes e 250W TDP. Silêncio e performance sem rival.",
     "badge": "Lenda Air Cool",
@@ -1633,7 +1876,10 @@ export const products: Product[] = [
       { "name": "Fans", "value": "2 × NF-A15 140mm" },
       { "name": "Garantia", "value": "6 Anos" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Noctua-NH-D15-chromax"
+    "supplier_url": "https://www.aliexpress.com/item/Noctua-NH-D15-chromax",
+    "brand": "Noctua",
+    "inStock": true,
+    "stockCount": 25
   },
   {
     "id": 82,
@@ -1642,9 +1888,9 @@ export const products: Product[] = [
     "price": "79,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
+      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "O novo air cooler premium da Corsair que rivaliza com AIOs de 240mm. Design de dupla torre com 2 ventoinhas NexFan de 140mm e 270W de capacidade.",
     "badge": "AIO Killer",
@@ -1654,7 +1900,10 @@ export const products: Product[] = [
       { "name": "Fans", "value": "2 × NexFan 140mm" },
       { "name": "Compatível", "value": "LGA1700 / AM5" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-A115"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-A115",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 83,
@@ -1663,9 +1912,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/2SA-000U-00007-01.jpg",
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/2SA-000U-00007-01.jpg"
+      "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "AIO 280mm da marca de referência em water cooling custom. Bomba EK de alto desempenho com 2 ventoinhas EK-Vardar de 140mm D-RGB.",
     "badge": "Custom DNA",
@@ -1675,7 +1924,10 @@ export const products: Product[] = [
       { "name": "Fans", "value": "2 × EK-Vardar 140mm" },
       { "name": "Compatível", "value": "LGA1700 / AM5" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/EK-AIO-280"
+    "supplier_url": "https://www.aliexpress.com/item/EK-AIO-280",
+    "brand": "EK",
+    "inStock": true,
+    "stockCount": 5
   },
   {
     "id": 84,
@@ -1683,9 +1935,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "39,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png"
+      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Single tower compacto com excelente custo-benefício. 4 heatpipes de contacto direto e ventoinha P12 A-RGB de 120mm. Ideal para Ryzen 5 e i5.",
     "badge": "Budget Air",
@@ -1695,7 +1947,10 @@ export const products: Product[] = [
       { "name": "Fan", "value": "P12 A-RGB 120mm" },
       { "name": "Compatível", "value": "LGA1700 / AM5" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Arctic-Freezer-36"
+    "supplier_url": "https://www.aliexpress.com/item/Arctic-Freezer-36",
+    "brand": "Arctic",
+    "inStock": true,
+    "stockCount": 5
   },
   {
     "id": 85,
@@ -1703,9 +1958,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "35,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A4RES21102597E29.jpg",
+    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/A4RES21102597E29.jpg"
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Dual tower budget que rivaliza com coolers 2× mais caros. 6 heatpipes e 2 ventoinhas TL-C12C de 120mm com 260W TDP. O segredo dos builds inteligentes.",
     "badge": "Hidden Gem",
@@ -1715,7 +1970,10 @@ export const products: Product[] = [
       { "name": "Fans", "value": "2 × TL-C12C 120mm" },
       { "name": "Compatível", "value": "LGA1700 / AM5 / AM4" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Thermalright-Peerless-Assassin-120-SE"
+    "supplier_url": "https://www.aliexpress.com/item/Thermalright-Peerless-Assassin-120-SE",
+    "brand": "Thermalright",
+    "inStock": true,
+    "stockCount": 28
   },
 
   // =============================================
@@ -1739,7 +1997,11 @@ export const products: Product[] = [
       { "name": "Resposta GTG", "value": "0.03ms" },
       { "name": "Painel", "value": "OLED QHD" },
       { "name": "HDR", "value": "True Black 400" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/ASUS-ROG-Swift-OLED-PG27AQDM",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 5
   },
   {
     "id": 86,
@@ -1760,7 +2022,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "1ms GtG" },
       { "name": "HDR", "value": "DisplayHDR 400" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/LG-27GP850-B"
+    "supplier_url": "https://www.aliexpress.com/item/LG-27GP850-B",
+    "brand": "LG",
+    "inStock": true,
+    "stockCount": 4
   },
   {
     "id": 87,
@@ -1769,9 +2034,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.5,
-    "img": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2722dgm/pdp/monitors-dell-gaming-27-s2722dgm-pdp-design-gallery504x350.jpg",
+    "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2722dgm/pdp/monitors-dell-gaming-27-s2722dgm-pdp-design-gallery504x350.jpg"
+      "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Monitor VA curvo de 27\" com 1440p e 165Hz. Curvatura 1500R imersiva com contraste nativo superior a 3000:1 e FreeSync Premium.",
     "badge": "Curvo Acessível",
@@ -1781,7 +2046,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "1ms MPRT" },
       { "name": "Resolução", "value": "2560×1440 QHD" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Dell-S2722DGM"
+    "supplier_url": "https://www.aliexpress.com/item/Dell-S2722DGM",
+    "brand": "Dell",
+    "inStock": true,
+    "stockCount": 37
   },
   {
     "id": 88,
@@ -1790,9 +2058,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-022-816-V01.jpg",
+    "img": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/24-022-816-V01.jpg"
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "VA curvo 1000R de 32\" com QHD e 240Hz. QLED com cobertura de cor de 125% sRGB e DisplayHDR 600 para uma experiência de jogo envolvente.",
     "badge": "240Hz Curvo",
@@ -1802,7 +2070,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "1ms GtG" },
       { "name": "HDR", "value": "DisplayHDR 600" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Samsung-Odyssey-G7-32"
+    "supplier_url": "https://www.aliexpress.com/item/Samsung-Odyssey-G7-32",
+    "brand": "Samsung",
+    "inStock": true,
+    "stockCount": 10
   },
   {
     "id": 89,
@@ -1822,7 +2093,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "1ms MPRT" },
       { "name": "Sync", "value": "G-SYNC Compatible" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/ASUS-TUF-VG27AQ1A"
+    "supplier_url": "https://www.aliexpress.com/item/ASUS-TUF-VG27AQ1A",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 39
   },
   {
     "id": 90,
@@ -1843,7 +2117,10 @@ export const products: Product[] = [
       { "name": "Áudio", "value": "treVolo 2.1 (5W sub)" },
       { "name": "HDR", "value": "DisplayHDR 400" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/BenQ-MOBIUZ-EX2710Q"
+    "supplier_url": "https://www.aliexpress.com/item/BenQ-MOBIUZ-EX2710Q",
+    "brand": "BenQ",
+    "inStock": true,
+    "stockCount": 41
   },
   {
     "id": 91,
@@ -1852,9 +2129,9 @@ export const products: Product[] = [
     "price": "749,00 €",
     "oldPrice": "849,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg",
+    "img": "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg"
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "OLED QHD 27\" com 240Hz e tempo de resposta de 0.03ms. Anti-glare low reflection coating e cobertura DCI-P3 98.5% para o gaming definitivo.",
     "badge": "OLED Gaming",
@@ -1864,7 +2141,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "0.03ms GtG" },
       { "name": "Cor", "value": "DCI-P3 98.5%" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/LG-27GR95QE-OLED"
+    "supplier_url": "https://www.aliexpress.com/item/LG-27GR95QE-OLED",
+    "brand": "LG",
+    "inStock": true,
+    "stockCount": 42
   },
   {
     "id": 92,
@@ -1873,9 +2153,9 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg",
+    "img": "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg"
+      "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "SS IPS 27\" QHD com 240Hz e KVM Switch integrado. Perfeito para quem alterna entre PC gaming e trabalho com um único monitor.",
     "badge": "KVM Switch",
@@ -1885,7 +2165,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "1ms GtG" },
       { "name": "KVM", "value": "Switch integrado" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Gigabyte-M27Q-X"
+    "supplier_url": "https://www.aliexpress.com/item/Gigabyte-M27Q-X",
+    "brand": "Gigabyte",
+    "inStock": true,
+    "stockCount": 13
   },
   {
     "id": 93,
@@ -1905,7 +2188,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "1ms MPRT" },
       { "name": "Sync", "value": "FreeSync Premium" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/AOC-24G2SP"
+    "supplier_url": "https://www.aliexpress.com/item/AOC-24G2SP",
+    "brand": "AOC",
+    "inStock": true,
+    "stockCount": 3
   },
   {
     "id": 94,
@@ -1914,9 +2200,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "369,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-475-096-01.jpg",
+    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/24-475-096-01.jpg"
+      "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Rapid IPS com Quantum Dots para 27\" QHD e 170Hz. Cobertura DCI-P3 97% e sRGB 100% com Night Vision AI para visibilidade em cenários escuros.",
     "badge": "Quantum Dot",
@@ -1926,7 +2212,10 @@ export const products: Product[] = [
       { "name": "Resposta", "value": "1ms GtG" },
       { "name": "Cor", "value": "DCI-P3 97%" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/MSI-MAG-274QRF-QD"
+    "supplier_url": "https://www.aliexpress.com/item/MSI-MAG-274QRF-QD",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 3
   },
 
   // =============================================
@@ -1950,7 +2239,11 @@ export const products: Product[] = [
       { "name": "Sensor", "value": "HERO 2 / 32K DPI" },
       { "name": "Polling Rate", "value": "2000 Hz" },
       { "name": "Switches", "value": "Lightforce" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Logitech-G-Pro-X-Superlight-2",
+    "brand": "Logitech",
+    "inStock": true,
+    "stockCount": 36
   },
   {
     "id": 7,
@@ -1970,7 +2263,11 @@ export const products: Product[] = [
       { "name": "Macros", "value": "8 Teclas Dedicadas" },
       { "name": "Dial", "value": "Command Dial" },
       { "name": "Conectividade", "value": "USB-A + Passthrough" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Razer-BlackWidow-V4-Pro",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 49
   },
   {
     "id": 95,
@@ -1991,7 +2288,10 @@ export const products: Product[] = [
       { "name": "Switches", "value": "Ópticos Gen 3" },
       { "name": "Cabo", "value": "Speedflex USB-C" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Razer-DeathAdder-V3"
+    "supplier_url": "https://www.aliexpress.com/item/Razer-DeathAdder-V3",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 4
   },
   {
     "id": 96,
@@ -2012,7 +2312,10 @@ export const products: Product[] = [
       { "name": "Display", "value": "OLED integrado" },
       { "name": "Formato", "value": "TKL compacto" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/SteelSeries-Apex-Pro-TKL"
+    "supplier_url": "https://www.aliexpress.com/item/SteelSeries-Apex-Pro-TKL",
+    "brand": "SteelSeries",
+    "inStock": true,
+    "stockCount": 18
   },
   {
     "id": 97,
@@ -2033,7 +2336,10 @@ export const products: Product[] = [
       { "name": "Chassis", "value": "Alumínio escovado" },
       { "name": "Formato", "value": "Full Size" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-K70-RGB-PRO"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-K70-RGB-PRO",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 30
   },
   {
     "id": 98,
@@ -2054,7 +2360,10 @@ export const products: Product[] = [
       { "name": "Polling Rate", "value": "4000 Hz wireless" },
       { "name": "Bateria", "value": "95 horas" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Razer-Viper-V3-Pro"
+    "supplier_url": "https://www.aliexpress.com/item/Razer-Viper-V3-Pro",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 48
   },
   {
     "id": 99,
@@ -2075,7 +2384,10 @@ export const products: Product[] = [
       { "name": "Multi-Device", "value": "3 dispositivos" },
       { "name": "Bateria", "value": "70 dias USB-C" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Logitech-MX-Master-3S"
+    "supplier_url": "https://www.aliexpress.com/item/Logitech-MX-Master-3S",
+    "brand": "Logitech",
+    "inStock": true,
+    "stockCount": 17
   },
   {
     "id": 100,
@@ -2095,7 +2407,10 @@ export const products: Product[] = [
       { "name": "Chassis", "value": "Alumínio full-body" },
       { "name": "Cabo", "value": "USB-C destacável" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/HyperX-Alloy-Origins-65"
+    "supplier_url": "https://www.aliexpress.com/item/HyperX-Alloy-Origins-65",
+    "brand": "HyperX",
+    "inStock": true,
+    "stockCount": 44
   },
   {
     "id": 101,
@@ -2104,9 +2419,9 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg",
+    "img": "https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg"
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Switches ópticos analógicos de 2ª geração com Rapid Trigger e atuação ajustável de 0.1mm a 4.0mm. Polling rate de 8000Hz para o teclado competitivo definitivo.",
     "badge": "Competitivo",
@@ -2116,7 +2431,10 @@ export const products: Product[] = [
       { "name": "Polling Rate", "value": "8000 Hz" },
       { "name": "Rapid Trigger", "value": "Sim (ajustável)" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Razer-Huntsman-V3-Pro"
+    "supplier_url": "https://www.aliexpress.com/item/Razer-Huntsman-V3-Pro",
+    "brand": "Razer",
+    "inStock": false,
+    "stockCount": 0
   },
   {
     "id": 102,
@@ -2125,9 +2443,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg",
+    "img": "https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg"
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Ultra-leve com 74g e design honeycomb impermeável IP54. 9 botões programáveis incluindo joystick lateral, ideal para MMOs e MOBA.",
     "badge": "Multi-Género",
@@ -2137,7 +2455,10 @@ export const products: Product[] = [
       { "name": "Botões", "value": "9 (com joystick)" },
       { "name": "Bateria", "value": "180h (Bluetooth)" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/SteelSeries-Aerox-5-Wireless"
+    "supplier_url": "https://www.aliexpress.com/item/SteelSeries-Aerox-5-Wireless",
+    "brand": "SteelSeries",
+    "inStock": true,
+    "stockCount": 36
   },
 
   // =============================================
@@ -2162,7 +2483,11 @@ export const products: Product[] = [
       { "name": "Bateria", "value": "Dupla intercambiável" },
       { "name": "Áudio", "value": "Hi-Res / 360° Espacial" },
       { "name": "Conectividade", "value": "2.4GHz + Bluetooth" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/SteelSeries-Arctis-Nova-Pro-Wireless",
+    "brand": "SteelSeries",
+    "inStock": true,
+    "stockCount": 42
   },
   {
     "id": 103,
@@ -2183,7 +2508,10 @@ export const products: Product[] = [
       { "name": "Conectividade", "value": "2.4GHz wireless" },
       { "name": "Microfone", "value": "Destacável com LED" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/HyperX-Cloud-III-Wireless"
+    "supplier_url": "https://www.aliexpress.com/item/HyperX-Cloud-III-Wireless",
+    "brand": "HyperX",
+    "inStock": true,
+    "stockCount": 28
   },
   {
     "id": 104,
@@ -2204,7 +2532,10 @@ export const products: Product[] = [
       { "name": "Conectividade", "value": "Lightspeed + BT + 3.5mm" },
       { "name": "Surround", "value": "DTS:X 2.0" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Logitech-G-Pro-X-2"
+    "supplier_url": "https://www.aliexpress.com/item/Logitech-G-Pro-X-2",
+    "brand": "Logitech",
+    "inStock": true,
+    "stockCount": 30
   },
   {
     "id": 105,
@@ -2225,7 +2556,10 @@ export const products: Product[] = [
       { "name": "Conectividade", "value": "Slipstream + BT + USB" },
       { "name": "Bateria", "value": "60 horas" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-Virtuoso-RGB-XT"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-Virtuoso-RGB-XT",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 30
   },
   {
     "id": 106,
@@ -2234,9 +2568,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg",
+    "img": "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg"
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Drivers Razer TriForce de 40mm com iluminação Chroma RGB e THX Spatial Audio. Microfone HyperClear Cardioid destacável para voz cristalina.",
     "badge": "Chroma RGB",
@@ -2246,7 +2580,10 @@ export const products: Product[] = [
       { "name": "RGB", "value": "Chroma per-ear" },
       { "name": "Conectividade", "value": "USB + 3.5mm" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Razer-Kraken-V4"
+    "supplier_url": "https://www.aliexpress.com/item/Razer-Kraken-V4",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 49
   },
   {
     "id": 107,
@@ -2255,9 +2592,9 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/ARUXS22052606ACVA3A.jpg",
+    "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/ARUXS22052606ACVA3A.jpg"
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "O melhor ANC do mercado com 8 microfones e processador V1. 30 horas de bateria, carga rápida de 3 min para 3 horas e multipoint Bluetooth 5.2.",
     "badge": "ANC Líder",
@@ -2267,7 +2604,10 @@ export const products: Product[] = [
       { "name": "Bateria", "value": "30 horas" },
       { "name": "Codec", "value": "LDAC / AAC" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Sony-WH-1000XM5"
+    "supplier_url": "https://www.aliexpress.com/item/Sony-WH-1000XM5",
+    "brand": "Sony",
+    "inStock": true,
+    "stockCount": 40
   },
   {
     "id": 108,
@@ -2288,7 +2628,10 @@ export const products: Product[] = [
       { "name": "ANC", "value": "Activo + Modo Ambiente" },
       { "name": "Bateria", "value": "39h (BT) / 37h (2.4GHz)" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/JBL-Quantum-910"
+    "supplier_url": "https://www.aliexpress.com/item/JBL-Quantum-910",
+    "brand": "JBL",
+    "inStock": true,
+    "stockCount": 34
   },
   {
     "id": 109,
@@ -2309,7 +2652,10 @@ export const products: Product[] = [
       { "name": "Bateria", "value": "65 horas" },
       { "name": "Personalização", "value": "SoundID" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-HS80-Max"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-HS80-Max",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 44
   },
   {
     "id": 110,
@@ -2318,9 +2664,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-371-07.jpg",
+    "img": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/26-153-371-07.jpg"
+      "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Drivers Razer TriForce Titanium de 50mm com THX Spatial Audio. Microfone HyperClear Super Wideband para a voz mais natural em gaming wireless.",
     "badge": "Wireless Pro",
@@ -2330,7 +2676,10 @@ export const products: Product[] = [
       { "name": "Bateria", "value": "70 horas" },
       { "name": "Microfone", "value": "HyperClear Wideband" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Razer-BlackShark-V2-Pro-2023"
+    "supplier_url": "https://www.aliexpress.com/item/Razer-BlackShark-V2-Pro-2023",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 45
   },
   {
     "id": 111,
@@ -2338,9 +2687,9 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "139,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg",
+    "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg"
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Os auscultadores de estúdio de referência da indústria. Drivers de 45mm com resposta plana para mixing, mastering e gaming audiófilo. Cabo destacável.",
     "badge": "Studio Reference",
@@ -2350,7 +2699,10 @@ export const products: Product[] = [
       { "name": "Resposta Freq.", "value": "15Hz – 28kHz" },
       { "name": "Cabos", "value": "3 incluídos (destacáveis)" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Audio-Technica-ATH-M50x"
+    "supplier_url": "https://www.aliexpress.com/item/Audio-Technica-ATH-M50x",
+    "brand": "Audio-Technica",
+    "inStock": true,
+    "stockCount": 45
   },
 
   // =============================================
@@ -2375,7 +2727,11 @@ export const products: Product[] = [
       { "name": "Reclinação", "value": "85° – 165°" },
       { "name": "Material", "value": "Neo Hybrid Leather" },
       { "name": "Carga Máx.", "value": "180 kg" }
-    ]
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Secretlab-TITAN-Evo-XL",
+    "brand": "Secretlab",
+    "inStock": true,
+    "stockCount": 21
   },
   {
     "id": 112,
@@ -2384,9 +2740,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-373-01.jpg",
+    "img": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/26-153-373-01.jpg"
+      "https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Suporte lombar adaptativo com zona lombar totalmente ajustável e espuma de memória de alta densidade. Apoios de braço 4D e couro sintético EPU premium.",
     "badge": "Lombar Adaptivo",
@@ -2396,7 +2752,10 @@ export const products: Product[] = [
       { "name": "Material", "value": "EPU Synthetic Leather" },
       { "name": "Carga Máx.", "value": "136 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Razer-Iskur-V2"
+    "supplier_url": "https://www.aliexpress.com/item/Razer-Iskur-V2",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 43
   },
   {
     "id": 113,
@@ -2417,7 +2776,10 @@ export const products: Product[] = [
       { "name": "Material", "value": "Leatherette premium" },
       { "name": "Carga Máx.", "value": "120 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-TC200"
+    "supplier_url": "https://www.aliexpress.com/item/Corsair-TC200",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 45
   },
   {
     "id": 114,
@@ -2438,7 +2800,10 @@ export const products: Product[] = [
       { "name": "Material", "value": "PU Leather premium" },
       { "name": "Carga Máx.", "value": "150 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/noblechairs-HERO"
+    "supplier_url": "https://www.aliexpress.com/item/noblechairs-HERO",
+    "brand": "noblechairs",
+    "inStock": true,
+    "stockCount": 12
   },
   {
     "id": 115,
@@ -2458,7 +2823,10 @@ export const products: Product[] = [
       { "name": "Estrutura", "value": "Aço tubular reforçado" },
       { "name": "Carga Máx.", "value": "136 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/DXRacer-Craft"
+    "supplier_url": "https://www.aliexpress.com/item/DXRacer-Craft",
+    "brand": "DXRacer",
+    "inStock": true,
+    "stockCount": 49
   },
   {
     "id": 116,
@@ -2479,7 +2847,10 @@ export const products: Product[] = [
       { "name": "Material", "value": "PVC Leather premium" },
       { "name": "Carga Máx.", "value": "200 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/AndaSeat-Kaiser-3"
+    "supplier_url": "https://www.aliexpress.com/item/AndaSeat-Kaiser-3",
+    "brand": "AndaSeat",
+    "inStock": true,
+    "stockCount": 18
   },
   {
     "id": 117,
@@ -2500,7 +2871,10 @@ export const products: Product[] = [
       { "name": "Almofadas", "value": "Lombar + cervical" },
       { "name": "Carga Máx.", "value": "120 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Cougar-Armor-Elite"
+    "supplier_url": "https://www.aliexpress.com/item/Cougar-Armor-Elite",
+    "brand": "Cougar",
+    "inStock": true,
+    "stockCount": 40
   },
   {
     "id": 118,
@@ -2509,9 +2883,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg",
+    "img": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop",
     "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg"
+      "https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop"
     ],
     "description": "Construção premium com espuma de frio de alta densidade e couro PU durável. Mecanismo de reclinação 4D com apoios de braço metálicos ajustáveis.",
     "badge": "Pro Durável",
@@ -2521,7 +2895,10 @@ export const products: Product[] = [
       { "name": "Material", "value": "PU Leather durável" },
       { "name": "Carga Máx.", "value": "150 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/AKRacing-Masters-Pro"
+    "supplier_url": "https://www.aliexpress.com/item/AKRacing-Masters-Pro",
+    "brand": "AKRacing",
+    "inStock": true,
+    "stockCount": 38
   },
   {
     "id": 119,
@@ -2541,7 +2918,10 @@ export const products: Product[] = [
       { "name": "Garantia", "value": "12 Anos" },
       { "name": "Carga Máx.", "value": "136 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Herman-Miller-Embody-Gaming"
+    "supplier_url": "https://www.aliexpress.com/item/Herman-Miller-Embody-Gaming",
+    "brand": "Herman Miller",
+    "inStock": true,
+    "stockCount": 5
   },
   {
     "id": 120,
@@ -2562,6 +2942,2065 @@ export const products: Product[] = [
       { "name": "Lombar", "value": "Adaptativo ajustável" },
       { "name": "Carga Máx.", "value": "136 kg" }
     ],
-    "supplier_url": "https://www.aliexpress.com/item/Autonomous-ErgoChair-Pro"
+    "supplier_url": "https://www.aliexpress.com/item/Autonomous-ErgoChair-Pro",
+    "brand": "Autonomous",
+    "inStock": true,
+    "stockCount": 30
   }
+,
+  // =============================================
+  // PLACAS GRÁFICAS (IDs 121-128)
+  // =============================================
+  {
+    "id": 121,
+    "name": "NVIDIA GeForce RTX 5090",
+    "category": "Placas Gráficas",
+    "price": "2.199,00 €",
+    "oldPrice": "2.399,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "A placa gráfica mais poderosa da nova geração NVIDIA. Arquitectura Blackwell com 32 GB GDDR7 para gaming 4K a mais de 120 FPS e workloads de IA local.",
+    "badge": "Topo de Gama",
+    "features": [
+      { "name": "GPU", "value": "Blackwell GB202" },
+      { "name": "VRAM", "value": "32 GB GDDR7" },
+      { "name": "CUDA Cores", "value": "21760" },
+      { "name": "TDP", "value": "575 W" }
+    ],
+    "supplier_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
+    "brand": "NVIDIA",
+    "inStock": true,
+    "stockCount": 50
+  },
+  {
+    "id": 122,
+    "name": "AMD Radeon RX 9070 XT",
+    "category": "Placas Gráficas",
+    "price": "649,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
+    "description": "Placa gráfica AMD RDNA 4 com excelente relação preço/desempenho. 16 GB GDDR6 para gaming 1440p de alta qualidade e ray tracing melhorado.",
+    "features": [
+      { "name": "GPU", "value": "Navi 48 RDNA 4" },
+      { "name": "VRAM", "value": "16 GB GDDR6" },
+      { "name": "Stream Processors", "value": "4096" },
+      { "name": "TDP", "value": "250 W" }
+    ],
+    "supplier_url": "https://www.amd.com/en/products/graphics/amd-radeon-rx-9070-xt",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 50
+  },
+  {
+    "id": 123,
+    "name": "NVIDIA GeForce RTX 5070 Ti",
+    "category": "Placas Gráficas",
+    "price": "899,00 €",
+    "oldPrice": "949,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "description": "Desempenho excepcional para gaming 4K com DLSS 4 e ray tracing de nova geração. 16 GB GDDR7 para os títulos mais exigentes.",
+    "badge": "Melhor Valor 4K",
+    "features": [
+      { "name": "GPU", "value": "Blackwell GB203" },
+      { "name": "VRAM", "value": "16 GB GDDR7" },
+      { "name": "CUDA Cores", "value": "8960" },
+      { "name": "TDP", "value": "300 W" }
+    ],
+    "supplier_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5070-ti/",
+    "brand": "NVIDIA",
+    "inStock": true,
+    "stockCount": 42
+  },
+  {
+    "id": 124,
+    "name": "ASUS ROG Strix RTX 5080 OC",
+    "category": "Placas Gráficas",
+    "price": "1.399,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Edição ROG Strix com overclock de fábrica e sistema de arrefecimento de 3 ventoinhas. Design premium com iluminação Aura Sync RGB.",
+    "badge": "ROG Premium",
+    "features": [
+      { "name": "GPU", "value": "Blackwell GB203" },
+      { "name": "VRAM", "value": "16 GB GDDR7" },
+      { "name": "Arrefecimento", "value": "3 ventoinhas Axial-tech" },
+      { "name": "TDP", "value": "360 W" }
+    ],
+    "supplier_url": "https://www.asus.com/motherboards-components/graphics-cards/rog-strix/",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 15
+  },
+  {
+    "id": 125,
+    "name": "MSI Gaming Trio RTX 5070",
+    "category": "Placas Gráficas",
+    "price": "699,00 €",
+    "oldPrice": "749,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
+    "description": "RTX 5070 com arrefecimento tri-fan Torx 5.0 e backplate metálico. Ideal para gaming 1440p ultra com DLSS 4 e Frame Generation.",
+    "features": [
+      { "name": "GPU", "value": "Blackwell GB205" },
+      { "name": "VRAM", "value": "12 GB GDDR7" },
+      { "name": "Arrefecimento", "value": "Tri Frozr 3S" },
+      { "name": "TDP", "value": "250 W" }
+    ],
+    "supplier_url": "https://www.msi.com/Graphics-Card",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 29
+  },
+  {
+    "id": 126,
+    "name": "Sapphire Nitro+ RX 9070",
+    "category": "Placas Gráficas",
+    "price": "549,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "description": "A melhor placa AMD para gaming 1440p. Arrefecimento Nitro+ com heatpipes de cobre e ventoinha inteligente que para em idle.",
+    "features": [
+      { "name": "GPU", "value": "Navi 48 RDNA 4" },
+      { "name": "VRAM", "value": "16 GB GDDR6" },
+      { "name": "Arrefecimento", "value": "Nitro+ Dual-X" },
+      { "name": "TDP", "value": "220 W" }
+    ],
+    "supplier_url": "https://www.sapphiretech.com/en/consumer/nitro-rx-9070",
+    "brand": "Sapphire",
+    "inStock": true,
+    "stockCount": 51
+  },
+  {
+    "id": 127,
+    "name": "EVGA GeForce RTX 5060 Ti SC",
+    "category": "Placas Gráficas",
+    "price": "449,00 €",
+    "oldPrice": "499,00 €",
+    "rating": 4.3,
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Placa gráfica de gama média com desempenho surpreendente. Perfeita para gaming 1080p ultra ou 1440p alto com 8 GB GDDR7.",
+    "badge": "Melhor Custo-Benefício",
+    "features": [
+      { "name": "GPU", "value": "Blackwell GB206" },
+      { "name": "VRAM", "value": "8 GB GDDR7" },
+      { "name": "CUDA Cores", "value": "4608" },
+      { "name": "TDP", "value": "180 W" }
+    ],
+    "supplier_url": "https://www.evga.com/products/productlist.aspx?type=0",
+    "brand": "EVGA",
+    "inStock": true,
+    "stockCount": 9
+  },
+  {
+    "id": 128,
+    "name": "Intel Arc B580",
+    "category": "Placas Gráficas",
+    "price": "279,00 €",
+    "rating": 4.1,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
+    "description": "GPU Intel Battlemage de gama média-baixa com 12 GB VRAM. Excelente opção económica para 1080p com ray tracing e XeSS upscaling.",
+    "features": [
+      { "name": "GPU", "value": "Battlemage BMG-G21" },
+      { "name": "VRAM", "value": "12 GB GDDR6" },
+      { "name": "Xe Cores", "value": "20" },
+      { "name": "TDP", "value": "150 W" }
+    ],
+    "supplier_url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/arc.html",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 11
+  },
+  // =============================================
+  // PROCESSADORES (IDs 129-136)
+  // =============================================
+  {
+    "id": 129,
+    "name": "AMD Ryzen 9 9950X",
+    "category": "Processadores",
+    "price": "649,00 €",
+    "oldPrice": "699,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "description": "O processador desktop mais rápido da AMD. 16 cores Zen 5 com boost até 5.7 GHz para produtividade e gaming sem compromissos.",
+    "badge": "Flagship AMD",
+    "features": [
+      { "name": "Cores/Threads", "value": "16C / 32T" },
+      { "name": "Clock Base/Boost", "value": "4.3 / 5.7 GHz" },
+      { "name": "Cache", "value": "80 MB (L2+L3)" },
+      { "name": "TDP", "value": "170 W" }
+    ],
+    "supplier_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 11
+  },
+  {
+    "id": 130,
+    "name": "Intel Core Ultra 9 285K",
+    "category": "Processadores",
+    "price": "599,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
+    "description": "Processador Intel Arrow Lake com arquitectura híbrida de nova geração. 24 cores com NPU integrada para aceleração de IA local.",
+    "features": [
+      { "name": "Cores/Threads", "value": "24C (8P+16E) / 24T" },
+      { "name": "Clock P-Core Boost", "value": "5.7 GHz" },
+      { "name": "Cache", "value": "36 MB L3" },
+      { "name": "TDP", "value": "125 W" }
+    ],
+    "supplier_url": "https://www.intel.com/content/www/us/en/products/sku/241046/intel-core-ultra-9-processor-285k/specifications.html",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 66
+  },
+  {
+    "id": 131,
+    "name": "AMD Ryzen 7 9700X",
+    "category": "Processadores",
+    "price": "359,00 €",
+    "oldPrice": "399,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Processador Zen 5 de 8 cores com eficiência energética excepcional. TDP de apenas 65W com desempenho que rivaliza com chips de 170W.",
+    "badge": "Eficiência Máxima",
+    "features": [
+      { "name": "Cores/Threads", "value": "8C / 16T" },
+      { "name": "Clock Base/Boost", "value": "3.8 / 5.5 GHz" },
+      { "name": "Cache", "value": "40 MB (L2+L3)" },
+      { "name": "TDP", "value": "65 W" }
+    ],
+    "supplier_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 16
+  },
+  {
+    "id": 132,
+    "name": "Intel Core Ultra 7 265K",
+    "category": "Processadores",
+    "price": "419,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop"],
+    "description": "Processador Arrow Lake de gama alta com 20 cores híbridos. Excelente para gaming e multitasking pesado com DDR5 e PCIe 5.0.",
+    "features": [
+      { "name": "Cores/Threads", "value": "20C (8P+12E) / 20T" },
+      { "name": "Clock P-Core Boost", "value": "5.5 GHz" },
+      { "name": "Cache", "value": "30 MB L3" },
+      { "name": "TDP", "value": "125 W" }
+    ],
+    "supplier_url": "https://www.intel.com/content/www/us/en/products/details/processors/core-ultra.html",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 71
+  },
+  {
+    "id": 133,
+    "name": "AMD Ryzen 5 9600X",
+    "category": "Processadores",
+    "price": "249,00 €",
+    "oldPrice": "279,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
+    "description": "O melhor processador gaming por menos de 300 euros. 6 cores Zen 5 com single-thread excepcional para os jogos mais exigentes.",
+    "badge": "Gaming Value King",
+    "features": [
+      { "name": "Cores/Threads", "value": "6C / 12T" },
+      { "name": "Clock Base/Boost", "value": "3.9 / 5.4 GHz" },
+      { "name": "Cache", "value": "38 MB (L2+L3)" },
+      { "name": "TDP", "value": "65 W" }
+    ],
+    "supplier_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 39
+  },
+  {
+    "id": 134,
+    "name": "AMD Ryzen 9 9900X",
+    "category": "Processadores",
+    "price": "479,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "description": "12 cores Zen 5 com equilíbrio perfeito entre gaming e produtividade. Cache massiva de 76 MB para workloads profissionais.",
+    "features": [
+      { "name": "Cores/Threads", "value": "12C / 24T" },
+      { "name": "Clock Base/Boost", "value": "4.4 / 5.6 GHz" },
+      { "name": "Cache", "value": "76 MB (L2+L3)" },
+      { "name": "TDP", "value": "120 W" }
+    ],
+    "supplier_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 23
+  },
+  {
+    "id": 135,
+    "name": "Intel Core Ultra 5 245K",
+    "category": "Processadores",
+    "price": "299,00 €",
+    "oldPrice": "329,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
+    "description": "Processador Arrow Lake mainstream desbloqueado. 14 cores híbridos com NPU para IA e excelente desempenho gaming a preço acessível.",
+    "badge": "Entrada Premium",
+    "features": [
+      { "name": "Cores/Threads", "value": "14C (6P+8E) / 14T" },
+      { "name": "Clock P-Core Boost", "value": "5.2 GHz" },
+      { "name": "Cache", "value": "24 MB L3" },
+      { "name": "TDP", "value": "125 W" }
+    ],
+    "supplier_url": "https://www.intel.com/content/www/us/en/products/details/processors/core-ultra.html",
+    "brand": "Intel",
+    "inStock": true,
+    "stockCount": 12
+  },
+  {
+    "id": 136,
+    "name": "AMD Ryzen 7 9800X3D",
+    "category": "Processadores",
+    "price": "529,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"],
+    "description": "O melhor processador gaming do mundo com 3D V-Cache de 104 MB. Desempenho imbatível em jogos graças à cache L3 empilhada verticalmente.",
+    "badge": "Rei do Gaming",
+    "features": [
+      { "name": "Cores/Threads", "value": "8C / 16T" },
+      { "name": "Clock Base/Boost", "value": "4.7 / 5.2 GHz" },
+      { "name": "Cache", "value": "104 MB 3D V-Cache" },
+      { "name": "TDP", "value": "120 W" }
+    ],
+    "supplier_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+    "brand": "AMD",
+    "inStock": true,
+    "stockCount": 50
+  },
+  // =============================================
+  // MOTHERBOARDS (IDs 137-144)
+  // =============================================
+  {
+    "id": 137,
+    "name": "ASUS ROG Crosshair X870E Hero",
+    "category": "Motherboards",
+    "price": "699,00 €",
+    "oldPrice": "749,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "description": "Motherboard AM5 de topo com chipset X870E. VRM de 22+2 fases, Wi-Fi 7, Thunderbolt 4 e suporte DDR5-8000+ para overclock extremo.",
+    "badge": "Enthusiast",
+    "features": [
+      { "name": "Socket", "value": "AM5" },
+      { "name": "Chipset", "value": "X870E" },
+      { "name": "VRM", "value": "22+2 fases" },
+      { "name": "Wi-Fi", "value": "Wi-Fi 7" }
+    ],
+    "supplier_url": "https://www.asus.com/motherboards-components/motherboards/rog-crosshair/",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 35
+  },
+  {
+    "id": 138,
+    "name": "MSI MEG Z890 ACE",
+    "category": "Motherboards",
+    "price": "599,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop"],
+    "description": "Motherboard Intel Z890 premium para processadores Arrow Lake. 24+1+2 fases de VRM, PCIe 5.0 x16 e quatro slots M.2 para armazenamento massivo.",
+    "features": [
+      { "name": "Socket", "value": "LGA 1851" },
+      { "name": "Chipset", "value": "Z890" },
+      { "name": "VRM", "value": "24+1+2 fases" },
+      { "name": "M.2 Slots", "value": "4x PCIe 5.0/4.0" }
+    ],
+    "supplier_url": "https://www.msi.com/Motherboard/MEG-Z890-ACE",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 41
+  },
+  {
+    "id": 139,
+    "name": "Gigabyte B850 AORUS Elite",
+    "category": "Motherboards",
+    "price": "249,00 €",
+    "oldPrice": "279,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
+    "description": "Motherboard AM5 de gama média com excelente relação preço/desempenho. VRM robusta de 16 fases, Wi-Fi 6E e suporte DDR5.",
+    "badge": "Melhor Valor AM5",
+    "features": [
+      { "name": "Socket", "value": "AM5" },
+      { "name": "Chipset", "value": "B850" },
+      { "name": "VRM", "value": "16 fases" },
+      { "name": "Wi-Fi", "value": "Wi-Fi 6E" }
+    ],
+    "supplier_url": "https://www.gigabyte.com/Motherboard/B850-AORUS-ELITE",
+    "brand": "Gigabyte",
+    "inStock": true,
+    "stockCount": 44
+  },
+  {
+    "id": 140,
+    "name": "ASRock Z890 Taichi",
+    "category": "Motherboards",
+    "price": "499,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"],
+    "description": "Motherboard flagship ASRock para Intel Arrow Lake. Design icónico de engrenagens com VRM de 26 fases e audio Nahimic premium.",
+    "features": [
+      { "name": "Socket", "value": "LGA 1851" },
+      { "name": "Chipset", "value": "Z890" },
+      { "name": "VRM", "value": "26 fases SPS" },
+      { "name": "Audio", "value": "Nahimic 7.1" }
+    ],
+    "supplier_url": "https://www.asrock.com/mb/Intel/Z890%20Taichi/",
+    "brand": "ASRock",
+    "inStock": true,
+    "stockCount": 45
+  },
+  {
+    "id": 141,
+    "name": "ASUS ROG Strix B850-F Gaming",
+    "category": "Motherboards",
+    "price": "299,00 €",
+    "oldPrice": "329,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"],
+    "description": "Motherboard AM5 gaming com VRM de 16+2 fases, USB4 e rede 2.5G LAN. Design ROG Strix com iluminação Aura Sync integrada.",
+    "badge": "ROG Gaming",
+    "features": [
+      { "name": "Socket", "value": "AM5" },
+      { "name": "Chipset", "value": "B850" },
+      { "name": "VRM", "value": "16+2 fases" },
+      { "name": "Rede", "value": "2.5G LAN + Wi-Fi 7" }
+    ],
+    "supplier_url": "https://www.asus.com/motherboards-components/motherboards/rog-strix/",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 50
+  },
+  {
+    "id": 142,
+    "name": "MSI MAG B850 Tomahawk",
+    "category": "Motherboards",
+    "price": "229,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "description": "A motherboard mais popular para builds AM5 de gama média. VRM sólida, design militar e todas as features essenciais sem luxos desnecessários.",
+    "features": [
+      { "name": "Socket", "value": "AM5" },
+      { "name": "Chipset", "value": "B850" },
+      { "name": "VRM", "value": "14 fases" },
+      { "name": "Rede", "value": "2.5G LAN" }
+    ],
+    "supplier_url": "https://www.msi.com/Motherboard/MAG-B850-TOMAHAWK",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 47
+  },
+  {
+    "id": 143,
+    "name": "Gigabyte Z890 AORUS Master",
+    "category": "Motherboards",
+    "price": "549,00 €",
+    "oldPrice": "599,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop"],
+    "description": "Motherboard Z890 premium com VRM de 22+1+2 fases e back-drilled PCB de 8 camadas. Arrefecimento passivo Fins-Array III para M.2.",
+    "badge": "AORUS Master",
+    "features": [
+      { "name": "Socket", "value": "LGA 1851" },
+      { "name": "Chipset", "value": "Z890" },
+      { "name": "VRM", "value": "22+1+2 fases" },
+      { "name": "PCB", "value": "8 camadas back-drilled" }
+    ],
+    "supplier_url": "https://www.gigabyte.com/Motherboard/Z890-AORUS-MASTER",
+    "brand": "Gigabyte",
+    "inStock": true,
+    "stockCount": 11
+  },
+  {
+    "id": 144,
+    "name": "ASRock B850M Pro RS",
+    "category": "Motherboards",
+    "price": "149,00 €",
+    "rating": 4.2,
+    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
+    "description": "Motherboard Micro-ATX AM5 económica mas capaz. 10 fases de VRM, DDR5, PCIe 5.0 M.2 — tudo o essencial para builds budget.",
+    "features": [
+      { "name": "Socket", "value": "AM5" },
+      { "name": "Chipset", "value": "B850" },
+      { "name": "Formato", "value": "Micro-ATX" },
+      { "name": "VRM", "value": "10 fases" }
+    ],
+    "supplier_url": "https://www.asrock.com/mb/AMD/B850M%20Pro%20RS/",
+    "brand": "ASRock",
+    "inStock": true,
+    "stockCount": 63
+  },
+  // =============================================
+  // MEMÓRIA RAM (IDs 145-152)
+  // =============================================
+  {
+    "id": 145,
+    "name": "G.Skill Trident Z5 RGB DDR5-7200",
+    "category": "Memória RAM",
+    "price": "189,00 €",
+    "oldPrice": "219,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"],
+    "description": "Kit dual-channel DDR5-7200 CL34 com iluminação RGB cristalina. ICs Samsung selecionados para overclock estável até DDR5-8000+.",
+    "badge": "High-End DDR5",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-7200 CL34" },
+      { "name": "Tensão", "value": "1.40V" },
+      { "name": "RGB", "value": "Trident Z5 RGB" }
+    ],
+    "supplier_url": "https://www.gskill.com/product/165/390/Trident-Z5-RGB-DDR5",
+    "brand": "G.Skill",
+    "inStock": true,
+    "stockCount": 29
+  },
+  {
+    "id": 146,
+    "name": "Corsair Dominator Titanium DDR5-6400",
+    "category": "Memória RAM",
+    "price": "249,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "description": "Módulos DDR5 premium com dissipador de alumínio anodizado e LED bar Corsair DHX. Compatibilidade EXPO e XMP 3.0 para overclock one-click.",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-6400 CL32" },
+      { "name": "Tensão", "value": "1.35V" },
+      { "name": "Perfis", "value": "XMP 3.0 / EXPO" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/memory/dominator-titanium",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 75
+  },
+  {
+    "id": 147,
+    "name": "Kingston Fury Beast DDR5-6000",
+    "category": "Memória RAM",
+    "price": "109,00 €",
+    "oldPrice": "129,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop"],
+    "description": "Memória DDR5 fiável e acessível com dissipador metálico compacto. Ideal para builds equilibrados com perfis EXPO certificados para AMD.",
+    "badge": "Budget Champion",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-6000 CL36" },
+      { "name": "Tensão", "value": "1.35V" },
+      { "name": "Perfil", "value": "EXPO / XMP 3.0" }
+    ],
+    "supplier_url": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 39
+  },
+  {
+    "id": 148,
+    "name": "TeamGroup T-Force Delta RGB DDR5-7600",
+    "category": "Memória RAM",
+    "price": "169,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"],
+    "description": "Kit DDR5-7600 com difusor de luz RGB full-surface e ICs Hynix A-die para timings apertados. Excelente desempenho em 1:1 com IF da AMD.",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-7600 CL36" },
+      { "name": "Tensão", "value": "1.40V" },
+      { "name": "ICs", "value": "Hynix A-die" }
+    ],
+    "supplier_url": "https://www.teamgroupinc.com/en/product/delta-rgb-ddr5",
+    "brand": "TeamGroup",
+    "inStock": true,
+    "stockCount": 36
+  },
+  {
+    "id": 149,
+    "name": "G.Skill Flare X5 DDR5-6000",
+    "category": "Memória RAM",
+    "price": "99,00 €",
+    "oldPrice": "119,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"],
+    "description": "Memória optimizada para AMD com EXPO certificado. Design low-profile sem RGB para builds limpos e compatibilidade com coolers tower.",
+    "badge": "AMD Optimized",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-6000 CL30" },
+      { "name": "Tensão", "value": "1.35V" },
+      { "name": "Design", "value": "Low-profile sem RGB" }
+    ],
+    "supplier_url": "https://www.gskill.com/product/165/401/Flare-X5-DDR5",
+    "brand": "G.Skill",
+    "inStock": true,
+    "stockCount": 12
+  },
+  {
+    "id": 150,
+    "name": "Corsair Vengeance DDR5-5600",
+    "category": "Memória RAM",
+    "price": "79,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"],
+    "description": "Módulos DDR5 de entrada com compatibilidade universal. Perfil compacto, dissipador de alumínio e XMP 3.0 para overclock automático.",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-5600 CL36" },
+      { "name": "Tensão", "value": "1.25V" },
+      { "name": "Perfil", "value": "XMP 3.0" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/memory/vengeance-ddr5",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 21
+  },
+  {
+    "id": 151,
+    "name": "G.Skill Trident Z5 Neo DDR5-6400",
+    "category": "Memória RAM",
+    "price": "159,00 €",
+    "oldPrice": "179,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "description": "Kit DDR5 optimizado para AMD AM5 com EXPO II. Timings CL30 ultra-apertados para desempenho máximo em Ryzen 9000 series.",
+    "badge": "AMD EXPO II",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-6400 CL30" },
+      { "name": "Tensão", "value": "1.35V" },
+      { "name": "Perfil", "value": "EXPO II certificado" }
+    ],
+    "supplier_url": "https://www.gskill.com/product/165/393/Trident-Z5-Neo-DDR5",
+    "brand": "G.Skill",
+    "inStock": true,
+    "stockCount": 52
+  },
+  {
+    "id": 152,
+    "name": "Kingston Fury Renegade DDR5-8000",
+    "category": "Memória RAM",
+    "price": "329,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop"],
+    "description": "A memória DDR5 mais rápida do mercado. 8000 MT/s com ICs Hynix M-die selecionados para overclockers e benchmarkers profissionais.",
+    "badge": "Velocidade Máxima",
+    "features": [
+      { "name": "Capacidade", "value": "32 GB (2x16 GB)" },
+      { "name": "Velocidade", "value": "DDR5-8000 CL38" },
+      { "name": "Tensão", "value": "1.45V" },
+      { "name": "ICs", "value": "Hynix M-die selecionados" }
+    ],
+    "supplier_url": "https://www.kingston.com/en/memory/gaming/kingston-fury-renegade-ddr5",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 30
+  },
+  // =============================================
+  // ARMAZENAMENTO (IDs 153-160)
+  // =============================================
+  {
+    "id": 153,
+    "name": "Samsung 990 EVO Plus 2TB",
+    "category": "Armazenamento",
+    "price": "179,00 €",
+    "oldPrice": "199,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD NVMe PCIe 5.0 com velocidades de leitura até 10.000 MB/s. V-NAND de 8ª geração com controlador Samsung proprietário.",
+    "badge": "PCIe 5.0",
+    "features": [
+      { "name": "Capacidade", "value": "2 TB" },
+      { "name": "Interface", "value": "PCIe 5.0 x4 NVMe 2.0" },
+      { "name": "Leitura/Escrita", "value": "10.000 / 9.000 MB/s" },
+      { "name": "TBW", "value": "1.200 TB" }
+    ],
+    "supplier_url": "https://www.samsung.com/semiconductor/minisite/ssd/product/portable/990-evo-plus/",
+    "brand": "Samsung",
+    "inStock": true,
+    "stockCount": 42
+  },
+  {
+    "id": 154,
+    "name": "WD Black SN850X 2TB",
+    "category": "Armazenamento",
+    "price": "149,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD NVMe PCIe 4.0 de referência para gaming. Até 7.300 MB/s de leitura com Game Mode 2.0 para carregamento preditivo de jogos.",
+    "features": [
+      { "name": "Capacidade", "value": "2 TB" },
+      { "name": "Interface", "value": "PCIe 4.0 x4 NVMe" },
+      { "name": "Leitura/Escrita", "value": "7.300 / 6.600 MB/s" },
+      { "name": "TBW", "value": "1.200 TB" }
+    ],
+    "supplier_url": "https://www.westerndigital.com/products/internal-drives/wd-black-sn850x-nvme-ssd",
+    "brand": "Western Digital",
+    "inStock": true,
+    "stockCount": 64
+  },
+  {
+    "id": 155,
+    "name": "Crucial T700 2TB",
+    "category": "Armazenamento",
+    "price": "219,00 €",
+    "oldPrice": "259,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD PCIe 5.0 com dissipador de alumínio incluído. Velocidades até 12.400 MB/s com controlador Phison E26 e NAND Micron 232L.",
+    "badge": "Ultra Rápido",
+    "features": [
+      { "name": "Capacidade", "value": "2 TB" },
+      { "name": "Interface", "value": "PCIe 5.0 x4 NVMe 2.0" },
+      { "name": "Leitura/Escrita", "value": "12.400 / 11.800 MB/s" },
+      { "name": "TBW", "value": "1.200 TB" }
+    ],
+    "supplier_url": "https://www.crucial.com/ssd/t700/CT2000T700SSD3",
+    "brand": "Crucial",
+    "inStock": true,
+    "stockCount": 10
+  },
+  {
+    "id": 156,
+    "name": "Seagate FireCuda 540 2TB",
+    "category": "Armazenamento",
+    "price": "199,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD PCIe 5.0 gaming com 10.000 MB/s e 3 anos de Rescue Data Recovery Services incluídos. DirectStorage optimizado.",
+    "features": [
+      { "name": "Capacidade", "value": "2 TB" },
+      { "name": "Interface", "value": "PCIe 5.0 x4 NVMe 2.0" },
+      { "name": "Leitura/Escrita", "value": "10.000 / 10.000 MB/s" },
+      { "name": "Garantia", "value": "5 anos + Rescue" }
+    ],
+    "supplier_url": "https://www.seagate.com/products/gaming-drives/firecuda-540-ssd/",
+    "brand": "Seagate",
+    "inStock": true,
+    "stockCount": 45
+  },
+  {
+    "id": 157,
+    "name": "Kingston KC3000 4TB",
+    "category": "Armazenamento",
+    "price": "299,00 €",
+    "oldPrice": "349,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD NVMe de alta capacidade para quem precisa de espaço sem comprometer velocidade. 4 TB com leitura até 7.000 MB/s e perfil low-profile.",
+    "badge": "Alta Capacidade",
+    "features": [
+      { "name": "Capacidade", "value": "4 TB" },
+      { "name": "Interface", "value": "PCIe 4.0 x4 NVMe" },
+      { "name": "Leitura/Escrita", "value": "7.000 / 7.000 MB/s" },
+      { "name": "TBW", "value": "3.200 TB" }
+    ],
+    "supplier_url": "https://www.kingston.com/en/ssd/kc3000-nvme-m2-solid-state-drive",
+    "brand": "Kingston",
+    "inStock": true,
+    "stockCount": 16
+  },
+  {
+    "id": 158,
+    "name": "Samsung 870 EVO 4TB",
+    "category": "Armazenamento",
+    "price": "249,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD SATA III de referência com 4 TB para armazenamento massivo. Ideal como drive secundário com fiabilidade comprovada e 2.400 TBW.",
+    "features": [
+      { "name": "Capacidade", "value": "4 TB" },
+      { "name": "Interface", "value": "SATA III 6Gb/s" },
+      { "name": "Leitura/Escrita", "value": "560 / 530 MB/s" },
+      { "name": "TBW", "value": "2.400 TB" }
+    ],
+    "supplier_url": "https://www.samsung.com/semiconductor/minisite/ssd/product/portable/870-evo/",
+    "brand": "Samsung",
+    "inStock": true,
+    "stockCount": 55
+  },
+  {
+    "id": 159,
+    "name": "Corsair MP700 PRO 2TB",
+    "category": "Armazenamento",
+    "price": "239,00 €",
+    "oldPrice": "269,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD PCIe 5.0 com dissipador opcional para PS5 ou PC. Até 12.400 MB/s com NAND 3D TLC de alta densidade e DRAM cache.",
+    "badge": "PS5 Compatible",
+    "features": [
+      { "name": "Capacidade", "value": "2 TB" },
+      { "name": "Interface", "value": "PCIe 5.0 x4 NVMe 2.0" },
+      { "name": "Leitura/Escrita", "value": "12.400 / 11.800 MB/s" },
+      { "name": "TBW", "value": "1.400 TB" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/data-storage/mp700-pro",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 57
+  },
+  {
+    "id": 160,
+    "name": "Sabrent Rocket 5 2TB",
+    "category": "Armazenamento",
+    "price": "189,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "SSD NVMe PCIe 5.0 acessível com controlador Phison E26. Dissipador de cobre incluído e firmware optimizado para baixas temperaturas.",
+    "features": [
+      { "name": "Capacidade", "value": "2 TB" },
+      { "name": "Interface", "value": "PCIe 5.0 x4 NVMe 2.0" },
+      { "name": "Leitura/Escrita", "value": "14.000 / 12.000 MB/s" },
+      { "name": "Dissipador", "value": "Cobre incluído" }
+    ],
+    "supplier_url": "https://www.sabrent.com/products/rocket-5",
+    "brand": "Sabrent",
+    "inStock": true,
+    "stockCount": 33
+  },
+  // =============================================
+  // FONTES DE ALIMENTAÇÃO (IDs 161-168)
+  // =============================================
+  {
+    "id": 161,
+    "name": "Corsair HX1500i",
+    "category": "Fontes de Alimentação",
+    "price": "399,00 €",
+    "oldPrice": "449,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "description": "Fonte de alimentação 80 PLUS Platinum de 1500W totalmente modular. Conector 12VHPWR nativo e iCUE para monitorização em tempo real.",
+    "badge": "Platinum 1500W",
+    "features": [
+      { "name": "Potência", "value": "1500 W" },
+      { "name": "Eficiência", "value": "80+ Platinum" },
+      { "name": "Modular", "value": "Totalmente modular" },
+      { "name": "Conector GPU", "value": "12VHPWR nativo" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/psu/hx1500i",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 29
+  },
+  {
+    "id": 162,
+    "name": "Seasonic PRIME TX-1000",
+    "category": "Fontes de Alimentação",
+    "price": "349,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "description": "Fonte 80 PLUS Titanium com 12 anos de garantia. A eficiência mais elevada do mercado com componentes japoneses de primeira qualidade.",
+    "badge": "Titanium",
+    "features": [
+      { "name": "Potência", "value": "1000 W" },
+      { "name": "Eficiência", "value": "80+ Titanium" },
+      { "name": "Garantia", "value": "12 anos" },
+      { "name": "Ventilação", "value": "Hybrid Fan Control" }
+    ],
+    "supplier_url": "https://seasonic.com/prime-tx",
+    "brand": "Seasonic",
+    "inStock": true,
+    "stockCount": 34
+  },
+  {
+    "id": 163,
+    "name": "be quiet! Dark Power 13 850W",
+    "category": "Fontes de Alimentação",
+    "price": "229,00 €",
+    "oldPrice": "259,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Fonte premium silenciosa com topologia full-bridge e LLC. Modo Overclocking Key para ajuste de tensões e ventoinha Silent Wings 4.",
+    "features": [
+      { "name": "Potência", "value": "850 W" },
+      { "name": "Eficiência", "value": "80+ Titanium" },
+      { "name": "Ventilação", "value": "Silent Wings 4 135mm" },
+      { "name": "Conector GPU", "value": "12VHPWR nativo" }
+    ],
+    "supplier_url": "https://www.bequiet.com/en/powersupply/dark-power-13",
+    "brand": "be quiet!",
+    "inStock": true,
+    "stockCount": 34
+  },
+  {
+    "id": 164,
+    "name": "EVGA SuperNOVA 1000 G7",
+    "category": "Fontes de Alimentação",
+    "price": "189,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"],
+    "description": "Fonte 80 PLUS Gold totalmente modular com design compacto de 150mm. Protecções OVP, UVP, OCP, OPP, SCP e OTP completas.",
+    "badge": "Compacta 1000W",
+    "features": [
+      { "name": "Potência", "value": "1000 W" },
+      { "name": "Eficiência", "value": "80+ Gold" },
+      { "name": "Comprimento", "value": "150 mm (compacta)" },
+      { "name": "Garantia", "value": "10 anos" }
+    ],
+    "supplier_url": "https://www.evga.com/products/productlist.aspx?type=10",
+    "brand": "EVGA",
+    "inStock": true,
+    "stockCount": 19
+  },
+  {
+    "id": 165,
+    "name": "Corsair RM850x 2024",
+    "category": "Fontes de Alimentação",
+    "price": "139,00 €",
+    "oldPrice": "159,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"],
+    "description": "A fonte mais popular para gaming. 80 PLUS Gold com ventoinha magnética de levitação que opera em modo Zero RPM a cargas baixas.",
+    "badge": "Best Seller",
+    "features": [
+      { "name": "Potência", "value": "850 W" },
+      { "name": "Eficiência", "value": "80+ Gold" },
+      { "name": "Modular", "value": "Totalmente modular" },
+      { "name": "Ventilação", "value": "Zero RPM Mode" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/psu/rm850x",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 52
+  },
+  {
+    "id": 166,
+    "name": "MSI MEG Ai1300P PCIE5",
+    "category": "Fontes de Alimentação",
+    "price": "329,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
+    "description": "Fonte ATX 3.1 com 1300W e conector 12V-2x6 nativo. 80 PLUS Platinum com monitorização via app MSI Center para potência em tempo real.",
+    "features": [
+      { "name": "Potência", "value": "1300 W" },
+      { "name": "Eficiência", "value": "80+ Platinum" },
+      { "name": "Standard", "value": "ATX 3.1" },
+      { "name": "Conector GPU", "value": "12V-2x6 nativo" }
+    ],
+    "supplier_url": "https://www.msi.com/Power-Supply/MEG-Ai1300P-PCIE5",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 80
+  },
+  {
+    "id": 167,
+    "name": "Thermaltake Toughpower GF3 750W",
+    "category": "Fontes de Alimentação",
+    "price": "109,00 €",
+    "oldPrice": "129,00 €",
+    "rating": 4.3,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "description": "Fonte ATX 3.0 acessível com conector 12VHPWR incluído. 80 PLUS Gold com ventoinha de 120mm hidráulica e cabos flat para gestão fácil.",
+    "features": [
+      { "name": "Potência", "value": "750 W" },
+      { "name": "Eficiência", "value": "80+ Gold" },
+      { "name": "Standard", "value": "ATX 3.0" },
+      { "name": "Cabos", "value": "Flat modulares" }
+    ],
+    "supplier_url": "https://www.thermaltake.com/toughpower-gf3-750w.html",
+    "brand": "Thermaltake",
+    "inStock": true,
+    "stockCount": 36
+  },
+  {
+    "id": 168,
+    "name": "Fractal Design Ion+ 2 860W",
+    "category": "Fontes de Alimentação",
+    "price": "149,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Fonte 80 PLUS Platinum com UltraFlex cables e ventoinha FDB de 140mm. Design escandinavo minimalista com 10 anos de garantia.",
+    "features": [
+      { "name": "Potência", "value": "860 W" },
+      { "name": "Eficiência", "value": "80+ Platinum" },
+      { "name": "Ventilação", "value": "FDB 140mm" },
+      { "name": "Garantia", "value": "10 anos" }
+    ],
+    "supplier_url": "https://www.fractal-design.com/products/power-supplies/ion/",
+    "brand": "Fractal Design",
+    "inStock": true,
+    "stockCount": 65
+  },
+  // =============================================
+  // CAIXAS (IDs 169-176)
+  // =============================================
+  {
+    "id": 169,
+    "name": "Lian Li O11 Dynamic EVO 2",
+    "category": "Caixas",
+    "price": "179,00 €",
+    "oldPrice": "199,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "description": "A caixa mais icónica para builds de showcase. Vidro temperado dual-chamber com suporte para radiadores de 360mm no topo e lateral.",
+    "badge": "Showcase Icon",
+    "features": [
+      { "name": "Formato", "value": "Mid-Tower dual-chamber" },
+      { "name": "Radiadores", "value": "360mm top + 360mm side" },
+      { "name": "GPU Máx.", "value": "422 mm" },
+      { "name": "Material", "value": "Alumínio + vidro temperado" }
+    ],
+    "supplier_url": "https://lian-li.com/product/o11-dynamic-evo-2/",
+    "brand": "Lian Li",
+    "inStock": true,
+    "stockCount": 7
+  },
+  {
+    "id": 170,
+    "name": "Fractal Design North",
+    "category": "Caixas",
+    "price": "139,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "description": "Caixa com frente em madeira de nogueira real e mesh de aço. Design escandinavo elegante com fluxo de ar excepcional e filtros removíveis.",
+    "badge": "Design Award",
+    "features": [
+      { "name": "Formato", "value": "Mid-Tower ATX" },
+      { "name": "Frente", "value": "Madeira nogueira + mesh" },
+      { "name": "Ventoinhas", "value": "2x 140mm incluídas" },
+      { "name": "GPU Máx.", "value": "355 mm" }
+    ],
+    "supplier_url": "https://www.fractal-design.com/products/cases/north/",
+    "brand": "Fractal Design",
+    "inStock": true,
+    "stockCount": 19
+  },
+  {
+    "id": 171,
+    "name": "NZXT H7 Flow RGB",
+    "category": "Caixas",
+    "price": "149,00 €",
+    "oldPrice": "169,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
+    "description": "Caixa airflow com frente perfurada e 4 ventoinhas RGB F-Series incluídas. Painel lateral em vidro temperado e cable management excepcional.",
+    "features": [
+      { "name": "Formato", "value": "Mid-Tower ATX" },
+      { "name": "Ventoinhas", "value": "4x 120mm RGB incluídas" },
+      { "name": "Radiadores", "value": "360mm top + 360mm front" },
+      { "name": "GPU Máx.", "value": "400 mm" }
+    ],
+    "supplier_url": "https://nzxt.com/product/h7-flow-rgb",
+    "brand": "NZXT",
+    "inStock": true,
+    "stockCount": 10
+  },
+  {
+    "id": 172,
+    "name": "Corsair 6500X",
+    "category": "Caixas",
+    "price": "219,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"],
+    "description": "Caixa dual-chamber com vidro temperado em dois painéis para showcase total. Motherboard invertida e layout de cable management oculto.",
+    "badge": "Dual Glass",
+    "features": [
+      { "name": "Formato", "value": "Mid-Tower dual-chamber" },
+      { "name": "Vidro", "value": "Duplo painel temperado" },
+      { "name": "Radiadores", "value": "360mm top + 360mm bottom" },
+      { "name": "GPU Máx.", "value": "400 mm" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/pc-cases/6500x",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 60
+  },
+  {
+    "id": 173,
+    "name": "Phanteks NV7",
+    "category": "Caixas",
+    "price": "159,00 €",
+    "oldPrice": "179,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"],
+    "description": "Full-tower espaçosa com suporte para GPUs até 480mm e radiadores de 420mm. Painéis magnéticos de fácil remoção e amplo espaço interno.",
+    "features": [
+      { "name": "Formato", "value": "Full-Tower ATX" },
+      { "name": "GPU Máx.", "value": "480 mm" },
+      { "name": "Radiadores", "value": "420mm top + 360mm front" },
+      { "name": "Ventoinhas", "value": "3x 140mm incluídas" }
+    ],
+    "supplier_url": "https://www.phanteks.com/nv7.html",
+    "brand": "Phanteks",
+    "inStock": true,
+    "stockCount": 6
+  },
+  {
+    "id": 174,
+    "name": "be quiet! Dark Base 802",
+    "category": "Caixas",
+    "price": "189,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "description": "Caixa modular com frente intercambiável entre mesh e painel sólido silencioso. 3 ventoinhas Silent Wings 4 e painéis com isolamento acústico.",
+    "features": [
+      { "name": "Formato", "value": "Mid-Tower ATX" },
+      { "name": "Ventoinhas", "value": "3x Silent Wings 4" },
+      { "name": "Frente", "value": "Intercambiável mesh/sólida" },
+      { "name": "Isolamento", "value": "Painéis acústicos" }
+    ],
+    "supplier_url": "https://www.bequiet.com/en/case/dark-base-802",
+    "brand": "be quiet!",
+    "inStock": true,
+    "stockCount": 25
+  },
+  {
+    "id": 175,
+    "name": "Cooler Master HAF 700 EVO",
+    "category": "Caixas",
+    "price": "299,00 €",
+    "oldPrice": "349,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "description": "Caixa High Air Flow de dimensões generosas com ecrã Edge Lit de 200mm integrado. Suporte para E-ATX e GPU vertical com riser incluído.",
+    "badge": "Airflow Extremo",
+    "features": [
+      { "name": "Formato", "value": "Full-Tower E-ATX" },
+      { "name": "Display", "value": "Edge Lit 200mm" },
+      { "name": "GPU Vertical", "value": "Riser PCIe 4.0 incluído" },
+      { "name": "Ventoinhas", "value": "6x incluídas" }
+    ],
+    "supplier_url": "https://www.coolermaster.com/catalog/cases/full-tower/haf-700-evo/",
+    "brand": "Cooler Master",
+    "inStock": true,
+    "stockCount": 6
+  },
+  {
+    "id": 176,
+    "name": "SSUPD Meshroom S",
+    "category": "Caixas",
+    "price": "129,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
+    "description": "Caixa Mini-ITX compacta com mesh em todas as faces para airflow máximo. Apenas 14.7L de volume com suporte para GPU de 3 slots.",
+    "features": [
+      { "name": "Formato", "value": "Mini-ITX SFF (14.7L)" },
+      { "name": "GPU Máx.", "value": "336 mm (3 slots)" },
+      { "name": "Cooler Máx.", "value": "70 mm" },
+      { "name": "Material", "value": "Mesh total em aço" }
+    ],
+    "supplier_url": "https://www.ssupd.co/products/meshroom-s",
+    "brand": "SSUPD",
+    "inStock": true,
+    "stockCount": 49
+  },
+  // =============================================
+  // REFRIGERAÇÃO (IDs 177-184)
+  // =============================================
+  {
+    "id": 177,
+    "name": "NZXT Kraken Elite 360 RGB",
+    "category": "Refrigeração",
+    "price": "299,00 €",
+    "oldPrice": "329,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "description": "AIO premium com ecrã LCD de 2.36'' customizável no pump head. Ventoinhas F120 RGB Core e compatibilidade LGA 1851 / AM5 nativa.",
+    "badge": "LCD Display",
+    "features": [
+      { "name": "Radiador", "value": "360 mm" },
+      { "name": "Display", "value": "LCD 2.36'' no pump" },
+      { "name": "Ventoinhas", "value": "3x F120 RGB Core" },
+      { "name": "Socket", "value": "LGA 1851 / AM5 / AM4" }
+    ],
+    "supplier_url": "https://nzxt.com/product/kraken-elite-360-rgb",
+    "brand": "NZXT",
+    "inStock": true,
+    "stockCount": 30
+  },
+  {
+    "id": 178,
+    "name": "Corsair iCUE H170i Elite LCD XT",
+    "category": "Refrigeração",
+    "price": "329,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "description": "AIO de 420mm com ecrã IPS no pump head e ventoinhas AF Elite RGB. Controlável via iCUE com widgets de temperatura em tempo real.",
+    "features": [
+      { "name": "Radiador", "value": "420 mm" },
+      { "name": "Display", "value": "IPS LCD no pump" },
+      { "name": "Ventoinhas", "value": "3x 140mm AF Elite RGB" },
+      { "name": "Software", "value": "iCUE integrado" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/cooling/h170i-elite-lcd-xt",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 14
+  },
+  {
+    "id": 179,
+    "name": "Noctua NH-D15 G2",
+    "category": "Refrigeração",
+    "price": "119,00 €",
+    "oldPrice": "129,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"],
+    "description": "O melhor air cooler do mundo, segunda geração. Dual-tower com 8 heatpipes e duas ventoinhas NF-A15 G2 PWM para silêncio absoluto.",
+    "badge": "Rei do Air Cooling",
+    "features": [
+      { "name": "Tipo", "value": "Dual-tower air cooler" },
+      { "name": "Heatpipes", "value": "8x cobre niquelado" },
+      { "name": "Ventoinhas", "value": "2x NF-A15 G2 PWM" },
+      { "name": "TDP", "value": "Até 300W+" }
+    ],
+    "supplier_url": "https://noctua.at/en/nh-d15-g2",
+    "brand": "Noctua",
+    "inStock": true,
+    "stockCount": 11
+  },
+  {
+    "id": 180,
+    "name": "Arctic Liquid Freezer III 360 A-RGB",
+    "category": "Refrigeração",
+    "price": "99,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
+    "description": "AIO 360mm com melhor relação preço/desempenho do mercado. VRM contact frame integrado no pump e ventoinhas P12 A-RGB PWM.",
+    "badge": "Value King AIO",
+    "features": [
+      { "name": "Radiador", "value": "360 mm" },
+      { "name": "Ventoinhas", "value": "3x P12 A-RGB PWM" },
+      { "name": "Pump", "value": "Com VRM contact frame" },
+      { "name": "Garantia", "value": "6 anos" }
+    ],
+    "supplier_url": "https://www.arctic.de/en/Liquid-Freezer-III-360-A-RGB",
+    "brand": "Arctic",
+    "inStock": true,
+    "stockCount": 38
+  },
+  {
+    "id": 181,
+    "name": "Deepcool Assassin IV",
+    "category": "Refrigeração",
+    "price": "89,00 €",
+    "oldPrice": "99,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"],
+    "description": "Air cooler dual-tower premium com 7 heatpipes e cobertura metálica elegante. Desempenho próximo de AIO 360mm a preço de air cooler.",
+    "features": [
+      { "name": "Tipo", "value": "Dual-tower air cooler" },
+      { "name": "Heatpipes", "value": "7x cobre niquelado" },
+      { "name": "Ventoinhas", "value": "1x 120mm + 1x 140mm" },
+      { "name": "TDP", "value": "Até 280W" }
+    ],
+    "supplier_url": "https://www.deepcool.com/products/Cooling/cpuaircoolers/Assassin-IV",
+    "brand": "Deepcool",
+    "inStock": true,
+    "stockCount": 45
+  },
+  {
+    "id": 182,
+    "name": "EK-Nucleus AIO CR360 Dark",
+    "category": "Refrigeração",
+    "price": "179,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
+    "description": "AIO 360mm da EK com design dark minimalista sem RGB. Pump de sexta geração e tubos de borracha premium anti-evaporação.",
+    "features": [
+      { "name": "Radiador", "value": "360 mm" },
+      { "name": "Pump", "value": "EK 6ª geração" },
+      { "name": "Design", "value": "Dark sem RGB" },
+      { "name": "Tubos", "value": "Premium anti-evaporação" }
+    ],
+    "supplier_url": "https://www.ekwb.com/shop/ek-nucleus-aio-cr360-dark",
+    "brand": "EKWB",
+    "inStock": true,
+    "stockCount": 41
+  },
+  {
+    "id": 183,
+    "name": "Thermalright Peerless Assassin 120 SE",
+    "category": "Refrigeração",
+    "price": "39,00 €",
+    "oldPrice": "49,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
+    "description": "O air cooler budget imbatível. Dual-tower com 6 heatpipes que desafia coolers 3x mais caros em desempenho térmico.",
+    "badge": "Budget King",
+    "features": [
+      { "name": "Tipo", "value": "Dual-tower air cooler" },
+      { "name": "Heatpipes", "value": "6x cobre" },
+      { "name": "Ventoinhas", "value": "2x TL-C12C PWM" },
+      { "name": "TDP", "value": "Até 240W" }
+    ],
+    "supplier_url": "https://www.thermalright.com/product/peerless-assassin-120-se/",
+    "brand": "Thermalright",
+    "inStock": true,
+    "stockCount": 55
+  },
+  {
+    "id": 184,
+    "name": "Lian Li Galahad II Trinity 360",
+    "category": "Refrigeração",
+    "price": "159,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"],
+    "description": "AIO 360mm com pump Asetek de 8ª geração e ventoinhas Trinity Infinity Mirror RGB. Design minimalista com performance de topo.",
+    "features": [
+      { "name": "Radiador", "value": "360 mm" },
+      { "name": "Pump", "value": "Asetek 8ª geração" },
+      { "name": "Ventoinhas", "value": "3x Trinity Infinity RGB" },
+      { "name": "Socket", "value": "LGA 1851 / AM5 / AM4" }
+    ],
+    "supplier_url": "https://lian-li.com/product/galahad-ii-trinity-360/",
+    "brand": "Lian Li",
+    "inStock": true,
+    "stockCount": 23
+  },
+  // =============================================
+  // MONITORES (IDs 185-192)
+  // =============================================
+  {
+    "id": 185,
+    "name": "Samsung Odyssey OLED G8 32\"",
+    "category": "Monitores",
+    "price": "999,00 €",
+    "oldPrice": "1.099,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop"],
+    "description": "Monitor OLED 4K 240Hz com 0.03ms de tempo de resposta. Samsung Gaming Hub integrado e DisplayHDR True Black 400 para pretos perfeitos.",
+    "badge": "4K OLED 240Hz",
+    "features": [
+      { "name": "Painel", "value": "QD-OLED 32\" 4K" },
+      { "name": "Refresh", "value": "240 Hz" },
+      { "name": "Resposta", "value": "0.03 ms GtG" },
+      { "name": "HDR", "value": "DisplayHDR True Black 400" }
+    ],
+    "supplier_url": "https://www.samsung.com/us/monitors/gaming/odyssey-oled-g8/",
+    "brand": "Samsung",
+    "inStock": true,
+    "stockCount": 77
+  },
+  {
+    "id": 186,
+    "name": "LG UltraGear 27GS95QE 27\" OLED",
+    "category": "Monitores",
+    "price": "799,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop"],
+    "description": "Monitor WOLED 1440p 240Hz com anti-glare coating e pixel refresh automático. Cores DCI-P3 98.5% para criadores e gamers exigentes.",
+    "features": [
+      { "name": "Painel", "value": "WOLED 27\" 1440p" },
+      { "name": "Refresh", "value": "240 Hz" },
+      { "name": "Cor", "value": "DCI-P3 98.5%" },
+      { "name": "Resposta", "value": "0.03 ms GtG" }
+    ],
+    "supplier_url": "https://www.lg.com/us/monitors/gaming-monitors/27gs95qe-b/",
+    "brand": "LG",
+    "inStock": true,
+    "stockCount": 15
+  },
+  {
+    "id": 187,
+    "name": "ASUS ROG Swift PG27AQN 27\"",
+    "category": "Monitores",
+    "price": "999,00 €",
+    "oldPrice": "1.099,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop"],
+    "description": "O monitor IPS mais rápido do mundo: 360Hz nativo a 1440p. Painel AU Optronics com NVIDIA Reflex Analyzer integrado para esports.",
+    "badge": "360Hz Esports",
+    "features": [
+      { "name": "Painel", "value": "IPS 27\" 1440p" },
+      { "name": "Refresh", "value": "360 Hz" },
+      { "name": "Resposta", "value": "1 ms GtG" },
+      { "name": "G-Sync", "value": "NVIDIA G-Sync Ultimate" }
+    ],
+    "supplier_url": "https://www.asus.com/displays-desktops/monitors/rog/rog-swift-pg27aqn/",
+    "brand": "ASUS",
+    "inStock": true,
+    "stockCount": 50
+  },
+  {
+    "id": 188,
+    "name": "Dell Alienware AW3225QF 32\" 4K",
+    "category": "Monitores",
+    "price": "1.099,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop"],
+    "description": "Monitor QD-OLED 4K 240Hz curvo com Infinity Edge. O melhor monitor gaming do mercado com Dolby Vision, HDR True Black 400 e HDMI 2.1.",
+    "badge": "Best in Class",
+    "features": [
+      { "name": "Painel", "value": "QD-OLED 32\" 4K curvo" },
+      { "name": "Refresh", "value": "240 Hz" },
+      { "name": "HDR", "value": "Dolby Vision + True Black 400" },
+      { "name": "Conectividade", "value": "HDMI 2.1 + DP 2.1" }
+    ],
+    "supplier_url": "https://www.dell.com/en-us/shop/alienware-32-4k-qd-oled-gaming-monitor-aw3225qf/apd/210-blmq/",
+    "brand": "Dell",
+    "inStock": true,
+    "stockCount": 63
+  },
+  {
+    "id": 189,
+    "name": "BenQ MOBIUZ EX3210U 32\" 4K",
+    "category": "Monitores",
+    "price": "699,00 €",
+    "oldPrice": "799,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop"],
+    "description": "Monitor IPS 4K 144Hz com sistema de som treVolo integrado. HDRi automático e Light Tuner para ajuste preciso em jogos escuros.",
+    "features": [
+      { "name": "Painel", "value": "IPS 32\" 4K" },
+      { "name": "Refresh", "value": "144 Hz" },
+      { "name": "Som", "value": "treVolo 2.1ch integrado" },
+      { "name": "HDR", "value": "DisplayHDR 600" }
+    ],
+    "supplier_url": "https://www.benq.com/en-us/monitor/gaming/ex3210u.html",
+    "brand": "BenQ",
+    "inStock": true,
+    "stockCount": 73
+  },
+  {
+    "id": 190,
+    "name": "Gigabyte M27U 27\" 4K",
+    "category": "Monitores",
+    "price": "449,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1585792180666-f7347c490ee2?q=80&w=800&auto=format&fit=crop"],
+    "description": "Monitor 4K 160Hz com KVM switch integrado para alternar entre PC e consola. Painel SS IPS com 95% DCI-P3 e HDMI 2.1.",
+    "badge": "KVM Integrado",
+    "features": [
+      { "name": "Painel", "value": "SS IPS 27\" 4K" },
+      { "name": "Refresh", "value": "160 Hz" },
+      { "name": "KVM", "value": "Switch integrado" },
+      { "name": "Cor", "value": "DCI-P3 95%" }
+    ],
+    "supplier_url": "https://www.gigabyte.com/Monitor/M27U",
+    "brand": "Gigabyte",
+    "inStock": true,
+    "stockCount": 48
+  },
+  {
+    "id": 191,
+    "name": "MSI MAG 341CQP 34\" OLED",
+    "category": "Monitores",
+    "price": "799,00 €",
+    "oldPrice": "899,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop"],
+    "description": "Ultrawide OLED 34\" 3440x1440 a 175Hz curvo. Imersão cinematográfica com pretos perfeitos e campo de visão expandido para simuladores e RPGs.",
+    "badge": "Ultrawide OLED",
+    "features": [
+      { "name": "Painel", "value": "OLED 34\" UWQHD curvo" },
+      { "name": "Refresh", "value": "175 Hz" },
+      { "name": "Resposta", "value": "0.03 ms GtG" },
+      { "name": "Curvatura", "value": "1800R" }
+    ],
+    "supplier_url": "https://www.msi.com/Monitor/MAG-341CQP-QD-OLED",
+    "brand": "MSI",
+    "inStock": true,
+    "stockCount": 80
+  },
+  {
+    "id": 192,
+    "name": "AOC AGON AG275QXL 27\"",
+    "category": "Monitores",
+    "price": "349,00 €",
+    "rating": 4.3,
+    "img": "https://images.unsplash.com/photo-1616763355548-1b11cea702ae?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop"],
+    "description": "Monitor gaming 1440p 170Hz com painel IPS de alta gama a preço acessível. G-Sync Compatible e sRGB 117% para cores vibrantes.",
+    "features": [
+      { "name": "Painel", "value": "IPS 27\" 1440p" },
+      { "name": "Refresh", "value": "170 Hz" },
+      { "name": "Resposta", "value": "1 ms GtG" },
+      { "name": "Sync", "value": "G-Sync Compatible" }
+    ],
+    "supplier_url": "https://eu.aoc.com/en/gaming-monitors/ag275qxl",
+    "brand": "AOC",
+    "inStock": true,
+    "stockCount": 33
+  },
+  // =============================================
+  // TECLADOS E RATOS (IDs 193-200)
+  // =============================================
+  {
+    "id": 193,
+    "name": "Wooting 80HE",
+    "category": "Teclados e Ratos",
+    "price": "199,00 €",
+    "oldPrice": "219,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop"],
+    "description": "Teclado Hall Effect com Rapid Trigger e ponto de actuação ajustável de 0.1mm a 4.0mm. O standard de ouro para gaming competitivo.",
+    "badge": "Esports Pro",
+    "features": [
+      { "name": "Switches", "value": "Hall Effect analógicos" },
+      { "name": "Rapid Trigger", "value": "0.1mm - 4.0mm" },
+      { "name": "Layout", "value": "TKL (80%)" },
+      { "name": "Conexão", "value": "USB-C / Wireless" }
+    ],
+    "supplier_url": "https://wooting.io/wooting-80he",
+    "brand": "Wooting",
+    "inStock": true,
+    "stockCount": 42
+  },
+  {
+    "id": 194,
+    "name": "Logitech G Pro X Superlight 2",
+    "category": "Teclados e Ratos",
+    "price": "149,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Rato wireless de apenas 60g com sensor HERO 2 de 44K DPI. Skates PTFE puro e bateria de 95 horas para gaming sem fios sem compromissos.",
+    "features": [
+      { "name": "Sensor", "value": "HERO 2 (44K DPI)" },
+      { "name": "Peso", "value": "60 g" },
+      { "name": "Bateria", "value": "95 horas" },
+      { "name": "Polling", "value": "2000 Hz wireless" }
+    ],
+    "supplier_url": "https://www.logitechg.com/en-us/products/gaming-mice/pro-x2-superlight-wireless-mouse.html",
+    "brand": "Logitech",
+    "inStock": true,
+    "stockCount": 16
+  },
+  {
+    "id": 195,
+    "name": "Razer Viper V3 Pro",
+    "category": "Teclados e Ratos",
+    "price": "169,00 €",
+    "oldPrice": "189,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop"],
+    "description": "Rato esports ultra-leve de 54g com sensor Focus Pro 35K Gen-2 e polling rate de 8000Hz via dongle incluído. O mais rápido do mercado.",
+    "badge": "8000Hz Wireless",
+    "features": [
+      { "name": "Sensor", "value": "Focus Pro 35K Gen-2" },
+      { "name": "Peso", "value": "54 g" },
+      { "name": "Polling", "value": "8000 Hz (dongle)" },
+      { "name": "Bateria", "value": "95 horas" }
+    ],
+    "supplier_url": "https://www.razer.com/gaming-mice/razer-viper-v3-pro/",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 20
+  },
+  {
+    "id": 196,
+    "name": "Keychron Q1 HE",
+    "category": "Teclados e Ratos",
+    "price": "179,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop"],
+    "description": "Teclado mecânico Hall Effect com chassis de alumínio CNC. Rapid Trigger, gasket mount e compatível com QMK/VIA para personalização total.",
+    "features": [
+      { "name": "Switches", "value": "Hall Effect Gateron" },
+      { "name": "Chassis", "value": "Alumínio CNC 6063" },
+      { "name": "Layout", "value": "75%" },
+      { "name": "Firmware", "value": "QMK / VIA" }
+    ],
+    "supplier_url": "https://www.keychron.com/products/keychron-q1-he",
+    "brand": "Keychron",
+    "inStock": true,
+    "stockCount": 56
+  },
+  {
+    "id": 197,
+    "name": "Pulsar X2V2 Mini Wireless",
+    "category": "Teclados e Ratos",
+    "price": "99,00 €",
+    "oldPrice": "119,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Rato simétrico ultra-leve de 52g para mãos pequenas a médias. Sensor PAW3395 e switches ópticos Kailh para zero double-click.",
+    "badge": "Ultra Light",
+    "features": [
+      { "name": "Sensor", "value": "PAW3395 (26K DPI)" },
+      { "name": "Peso", "value": "52 g" },
+      { "name": "Switches", "value": "Kailh ópticos" },
+      { "name": "Bateria", "value": "120 horas" }
+    ],
+    "supplier_url": "https://www.pulsar.gg/x2v2-mini-wireless",
+    "brand": "Pulsar",
+    "inStock": true,
+    "stockCount": 15
+  },
+  {
+    "id": 198,
+    "name": "SteelSeries Apex Pro TKL 2024",
+    "category": "Teclados e Ratos",
+    "price": "189,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop"],
+    "description": "Teclado com switches OmniPoint 3.0 magnéticos e Rapid Trigger ajustável. Ecrã OLED integrado e chassis de alumínio premium.",
+    "features": [
+      { "name": "Switches", "value": "OmniPoint 3.0 magnéticos" },
+      { "name": "Rapid Trigger", "value": "0.1mm - 4.0mm" },
+      { "name": "Display", "value": "OLED integrado" },
+      { "name": "Layout", "value": "TKL" }
+    ],
+    "supplier_url": "https://steelseries.com/gaming-keyboards/apex-pro-tkl-2024",
+    "brand": "SteelSeries",
+    "inStock": true,
+    "stockCount": 64
+  },
+  {
+    "id": 199,
+    "name": "Endgame Gear OP1we",
+    "category": "Teclados e Ratos",
+    "price": "79,00 €",
+    "oldPrice": "89,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop"],
+    "description": "Rato ergonómico wireless de 59g com sensor PixArt PAW3395 e switches Kailh GM 8.0. Shape inspirado no lendário Intellimouse.",
+    "features": [
+      { "name": "Sensor", "value": "PAW3395 (26K DPI)" },
+      { "name": "Peso", "value": "59 g" },
+      { "name": "Switches", "value": "Kailh GM 8.0" },
+      { "name": "Conexão", "value": "2.4GHz + Bluetooth" }
+    ],
+    "supplier_url": "https://www.endgamegear.com/op1we",
+    "brand": "Endgame Gear",
+    "inStock": true,
+    "stockCount": 9
+  },
+  {
+    "id": 200,
+    "name": "Corsair K70 MAX",
+    "category": "Teclados e Ratos",
+    "price": "229,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop"],
+    "description": "Teclado full-size com switches magnéticos MGX e Rapid Trigger. Chassis de alumínio escovado, apoio de pulso em couro e iCUE RGB.",
+    "features": [
+      { "name": "Switches", "value": "Corsair MGX magnéticos" },
+      { "name": "Rapid Trigger", "value": "Ajustável" },
+      { "name": "Layout", "value": "Full-size" },
+      { "name": "Extra", "value": "Apoio pulso em couro" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/keyboards/k70-max",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 53
+  },
+  // =============================================
+  // HEADSETS E ÁUDIO (IDs 201-208)
+  // =============================================
+  {
+    "id": 201,
+    "name": "SteelSeries Arctis Nova Pro Wireless",
+    "category": "Headsets e Áudio",
+    "price": "349,00 €",
+    "oldPrice": "379,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop"],
+    "description": "Headset premium com base DAC e sistema de bateria dupla hot-swap. ANC activo, drivers de alta fidelidade e microfone retrátil ClearCast Gen 2.",
+    "badge": "Flagship Audio",
+    "features": [
+      { "name": "Drivers", "value": "Neodímio 40mm Hi-Fi" },
+      { "name": "ANC", "value": "Activo 4-mic" },
+      { "name": "Bateria", "value": "Dual hot-swap (44h total)" },
+      { "name": "DAC", "value": "Base DAC + GameDAC Gen 2" }
+    ],
+    "supplier_url": "https://steelseries.com/gaming-headsets/arctis-nova-pro-wireless",
+    "brand": "SteelSeries",
+    "inStock": true,
+    "stockCount": 73
+  },
+  {
+    "id": 202,
+    "name": "Audeze Maxwell Wireless",
+    "category": "Headsets e Áudio",
+    "price": "299,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"],
+    "description": "Headset com drivers planares magnéticos de 90mm para fidelidade audiófila. DSP Waves NX para espacialização 3D e 80 horas de bateria.",
+    "features": [
+      { "name": "Drivers", "value": "Planares magnéticos 90mm" },
+      { "name": "DSP", "value": "Waves NX 3D" },
+      { "name": "Bateria", "value": "80 horas" },
+      { "name": "Conexão", "value": "2.4GHz + Bluetooth 5.3" }
+    ],
+    "supplier_url": "https://www.audeze.com/products/maxwell-wireless",
+    "brand": "Audeze",
+    "inStock": true,
+    "stockCount": 25
+  },
+  {
+    "id": 203,
+    "name": "HyperX Cloud III Wireless",
+    "category": "Headsets e Áudio",
+    "price": "149,00 €",
+    "oldPrice": "169,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop"],
+    "description": "Headset wireless de referência para gaming com drivers de 53mm. Microfone destacável com cancelamento de ruído e até 120h de bateria.",
+    "badge": "Duração Máxima",
+    "features": [
+      { "name": "Drivers", "value": "53mm com ímanes de neodímio" },
+      { "name": "Bateria", "value": "120 horas" },
+      { "name": "Microfone", "value": "Destacável com noise cancelling" },
+      { "name": "Peso", "value": "330 g" }
+    ],
+    "supplier_url": "https://www.hyperxgaming.com/en/headsets/cloud-iii-wireless",
+    "brand": "HyperX",
+    "inStock": true,
+    "stockCount": 11
+  },
+  {
+    "id": 204,
+    "name": "Razer BlackShark V2 Pro 2024",
+    "category": "Headsets e Áudio",
+    "price": "179,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop"],
+    "description": "Headset esports com drivers TriForce Titanium de 50mm e HyperSpeed wireless. Microfone removível com isolamento de câmara e THX Spatial Audio.",
+    "features": [
+      { "name": "Drivers", "value": "TriForce Titanium 50mm" },
+      { "name": "Wireless", "value": "HyperSpeed 2.4GHz" },
+      { "name": "Audio", "value": "THX Spatial Audio" },
+      { "name": "Bateria", "value": "70 horas" }
+    ],
+    "supplier_url": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-pro-2024",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 11
+  },
+  {
+    "id": 205,
+    "name": "Beyerdynamic DT 900 PRO X",
+    "category": "Headsets e Áudio",
+    "price": "249,00 €",
+    "oldPrice": "279,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop"],
+    "description": "Auscultadores abertos de estúdio com driver STELLAR.45 para monitoring e gaming imersivo. Impedância de 48 Ohm — funciona sem amp dedicado.",
+    "badge": "Studio Grade",
+    "features": [
+      { "name": "Drivers", "value": "STELLAR.45 (45mm)" },
+      { "name": "Impedância", "value": "48 Ohm" },
+      { "name": "Design", "value": "Open-back circum-aural" },
+      { "name": "Cabo", "value": "Mini-XLR destacável" }
+    ],
+    "supplier_url": "https://www.beyerdynamic.com/dt-900-pro-x.html",
+    "brand": "Beyerdynamic",
+    "inStock": true,
+    "stockCount": 20
+  },
+  {
+    "id": 206,
+    "name": "Corsair Virtuoso Pro",
+    "category": "Headsets e Áudio",
+    "price": "219,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop"],
+    "description": "Headset open-back para streaming e gaming com drivers de grafeno e microfone broadcast destacável. Qualidade de áudio comparável a headphones de estúdio.",
+    "features": [
+      { "name": "Drivers", "value": "Grafeno 50mm" },
+      { "name": "Design", "value": "Open-back circum-aural" },
+      { "name": "Microfone", "value": "Broadcast omnidirecional" },
+      { "name": "Conexão", "value": "USB-C / 3.5mm" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/gaming-headsets/virtuoso-pro",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 17
+  },
+  {
+    "id": 207,
+    "name": "Logitech G PRO X 2 Lightspeed",
+    "category": "Headsets e Áudio",
+    "price": "199,00 €",
+    "oldPrice": "229,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"],
+    "description": "Headset pro-grade com drivers de grafeno de 50mm e DTS Headphone:X 2.0. Ligação Lightspeed wireless, Bluetooth 5.3 e cabo USB-C.",
+    "features": [
+      { "name": "Drivers", "value": "Grafeno PRO-G 50mm" },
+      { "name": "Wireless", "value": "Lightspeed + BT 5.3" },
+      { "name": "Audio", "value": "DTS Headphone:X 2.0" },
+      { "name": "Bateria", "value": "50 horas" }
+    ],
+    "supplier_url": "https://www.logitechg.com/en-us/products/gaming-audio/pro-x-2-lightspeed-wireless-headset.html",
+    "brand": "Logitech",
+    "inStock": true,
+    "stockCount": 68
+  },
+  {
+    "id": 208,
+    "name": "JBL Quantum 910 Wireless",
+    "category": "Headsets e Áudio",
+    "price": "249,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop"],
+    "description": "Headset com head tracking JBL QuantumSPHERE 360 para áudio espacial adaptativo. ANC activo e Dual Wireless para 2 fontes simultâneas.",
+    "features": [
+      { "name": "Drivers", "value": "50mm JBL Quantum" },
+      { "name": "Espacialização", "value": "QuantumSPHERE 360 head tracking" },
+      { "name": "ANC", "value": "Activo com TalkThru" },
+      { "name": "Wireless", "value": "Dual: 2.4GHz + BT 5.2" }
+    ],
+    "supplier_url": "https://www.jbl.com/gaming-headsets/QUANTUM-910-WIRELESS.html",
+    "brand": "JBL",
+    "inStock": true,
+    "stockCount": 41
+  },
+  // =============================================
+  // CADEIRAS GAMING (IDs 209-216)
+  // =============================================
+  {
+    "id": 209,
+    "name": "Secretlab Titan Evo 2024",
+    "category": "Cadeiras Gaming",
+    "price": "519,00 €",
+    "oldPrice": "569,00 €",
+    "rating": 4.8,
+    "img": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop"],
+    "description": "A cadeira gaming mais vendida do mundo, versão 2024. Suporte lombar L-ADAPT com 4 vias, espuma de frio e acabamento SoftWeave Plus.",
+    "badge": "Best Seller Mundial",
+    "features": [
+      { "name": "Material", "value": "SoftWeave Plus" },
+      { "name": "Lombar", "value": "L-ADAPT 4 vias integrado" },
+      { "name": "Reclinação", "value": "85° - 165°" },
+      { "name": "Carga Máx.", "value": "130 kg" }
+    ],
+    "supplier_url": "https://secretlab.co/collections/titan-evo",
+    "brand": "Secretlab",
+    "inStock": true,
+    "stockCount": 44
+  },
+  {
+    "id": 210,
+    "name": "Herman Miller x Logitech Embody",
+    "category": "Cadeiras Gaming",
+    "price": "1.649,00 €",
+    "rating": 4.9,
+    "img": "https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop"],
+    "description": "Colaboração entre Herman Miller e Logitech G. Espuma de arrefecimento de cobre, PostureFit e 12 anos de garantia. A cadeira definitiva para gamers profissionais.",
+    "badge": "Ultra Premium",
+    "features": [
+      { "name": "Ergonomia", "value": "PostureFit SL" },
+      { "name": "Espuma", "value": "Arrefecimento cobre" },
+      { "name": "Garantia", "value": "12 anos" },
+      { "name": "Carga Máx.", "value": "136 kg" }
+    ],
+    "supplier_url": "https://www.hermanmiller.com/products/gaming/embody-gaming-chair/",
+    "brand": "Logitech",
+    "inStock": true,
+    "stockCount": 55
+  },
+  {
+    "id": 211,
+    "name": "Razer Iskur V2",
+    "category": "Cadeiras Gaming",
+    "price": "499,00 €",
+    "oldPrice": "549,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop"],
+    "description": "Cadeira gaming com suporte lombar adaptativo exclusivo Razer. Couro sintético EPU e espuma de alta densidade moldada para sessões marathon.",
+    "features": [
+      { "name": "Material", "value": "Couro sintético EPU" },
+      { "name": "Lombar", "value": "Adaptativo 6 pontos" },
+      { "name": "Reclinação", "value": "90° - 152°" },
+      { "name": "Carga Máx.", "value": "136 kg" }
+    ],
+    "supplier_url": "https://www.razer.com/gaming-chairs/razer-iskur-v2",
+    "brand": "Razer",
+    "inStock": true,
+    "stockCount": 47
+  },
+  {
+    "id": 212,
+    "name": "noblechairs HERO ST",
+    "category": "Cadeiras Gaming",
+    "price": "449,00 €",
+    "rating": 4.5,
+    "img": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop"],
+    "description": "Cadeira gaming alemã premium com acabamento híbrido couro/tecido. Sistema lombar integrado de 4 vias e mecanismo de inclinação suave.",
+    "badge": "Made in Germany",
+    "features": [
+      { "name": "Material", "value": "Couro PU híbrido" },
+      { "name": "Lombar", "value": "Integrado 4 vias" },
+      { "name": "Chassis", "value": "Aço reforçado" },
+      { "name": "Carga Máx.", "value": "150 kg" }
+    ],
+    "supplier_url": "https://www.noblechairs.com/hero-st",
+    "brand": "noblechairs",
+    "inStock": true,
+    "stockCount": 76
+  },
+  {
+    "id": 213,
+    "name": "Corsair TC200 Fabric",
+    "category": "Cadeiras Gaming",
+    "price": "349,00 €",
+    "oldPrice": "399,00 €",
+    "rating": 4.4,
+    "img": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop"],
+    "description": "Cadeira gaming com tecido respirável Soft Fabric e almofada lombar em espuma viscoelástica. Design compacto ideal para secretárias standard.",
+    "features": [
+      { "name": "Material", "value": "Soft Fabric respirável" },
+      { "name": "Almofada", "value": "Lombar viscoelástica" },
+      { "name": "Reclinação", "value": "90° - 160°" },
+      { "name": "Carga Máx.", "value": "120 kg" }
+    ],
+    "supplier_url": "https://www.corsair.com/us/en/p/gaming-chairs/tc200-fabric",
+    "brand": "Corsair",
+    "inStock": true,
+    "stockCount": 65
+  },
+  {
+    "id": 214,
+    "name": "Steelcase Karman",
+    "category": "Cadeiras Gaming",
+    "price": "1.199,00 €",
+    "rating": 4.7,
+    "img": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop"],
+    "description": "Cadeira ergonómica ultra-leve com apenas 10 kg. Encosto em InterWoven Suspension para suporte e ventilação natural sem espuma tradicional.",
+    "badge": "Ergonomia Next-Gen",
+    "features": [
+      { "name": "Material", "value": "InterWoven Suspension" },
+      { "name": "Peso Cadeira", "value": "Apenas 10 kg" },
+      { "name": "Ajustes", "value": "FlexFrame adaptativo" },
+      { "name": "Garantia", "value": "12 anos" }
+    ],
+    "supplier_url": "https://www.steelcase.com/products/office-chairs/steelcase-karman/",
+    "brand": "Steelcase",
+    "inStock": true,
+    "stockCount": 29
+  },
+  {
+    "id": 215,
+    "name": "IKEA MATCHSPEL",
+    "category": "Cadeiras Gaming",
+    "price": "199,00 €",
+    "rating": 4.1,
+    "img": "https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop"],
+    "description": "Cadeira gaming budget da IKEA com encosto em rede respirável e apoio lombar ajustável. Mecanismo de báscula e altura ajustável a gás.",
+    "features": [
+      { "name": "Material", "value": "Rede respirável Vissle" },
+      { "name": "Lombar", "value": "Ajustável em altura" },
+      { "name": "Báscula", "value": "Mecanismo integrado" },
+      { "name": "Carga Máx.", "value": "110 kg" }
+    ],
+    "supplier_url": "https://www.ikea.com/us/en/p/matchspel-gaming-chair/",
+    "brand": "IKEA",
+    "inStock": true,
+    "stockCount": 13
+  },
+  {
+    "id": 216,
+    "name": "AndaSeat Kaiser 4",
+    "category": "Cadeiras Gaming",
+    "price": "549,00 €",
+    "oldPrice": "599,00 €",
+    "rating": 4.6,
+    "img": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop"],
+    "description": "Cadeira gaming XL com MagClap magnetic lumbar para ajuste instantâneo. Espuma moldada a frio de alta resiliência e braços 4D magnéticos.",
+    "badge": "XL MagClap",
+    "features": [
+      { "name": "Lombar", "value": "MagClap magnético" },
+      { "name": "Espuma", "value": "Moldada a frio HR" },
+      { "name": "Braços", "value": "4D magnéticos" },
+      { "name": "Carga Máx.", "value": "180 kg" }
+    ],
+    "supplier_url": "https://www.andaseat.com/products/kaiser-4",
+    "brand": "AndaSeat",
+    "inStock": true,
+    "stockCount": 79
+  }
+
 ];
