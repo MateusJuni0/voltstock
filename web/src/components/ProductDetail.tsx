@@ -1,26 +1,84 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback, MouseEvent as ReactMouseEvent } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Product } from "@/data/products";
-import { Star, ChevronLeft, ShoppingCart, Heart, Shield, Truck, Package, Check, X, AlertTriangle } from "lucide-react";
+import {
+  Star, ChevronLeft, ShoppingCart, Heart, Shield, Truck, Package, Check, X,
+  AlertTriangle, RotateCcw, Clock, Lock, MessageCircle, ChevronDown, Flame, Eye,
+} from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { RelatedProducts } from "./RelatedProducts";
 
+// --- Helpers ---
+
+/** Parse Portuguese price string like "2.199,00 €" into a number */
+function parsePrice(priceStr: string): number {
+  return parseFloat(priceStr.replace(/[^\d,]/g, "").replace(",", "."));
+}
+
+/** Format number to Portuguese price string */
+function formatPrice(value: number): string {
+  return value.toFixed(2).replace(".", ",") + " \u20AC";
+}
+
+/** Deterministic pseudo-random number from product ID (range min..max) */
+function pseudoRandom(id: number, min: number, max: number): number {
+  const hash = ((id * 2654435761) >>> 0) % (max - min + 1);
+  return min + hash;
+}
+
 export function ProductDetail({ product }: { product: Product }) {
   const [selectedImage, setSelectedImage] = useState(product.img);
   const [isAdded, setIsAdded] = useState(false);
+  const [specsOpen, setSpecsOpen] = useState(false);
+  const [showStickyBar, setShowStickyBar] = useState(false);
+  const [magnifier, setMagnifier] = useState({ active: false, x: 0, y: 0 });
   const addItem = useCart((state) => state.addItem);
+  const addToCartRef = useRef<HTMLDivElement | null>(null);
+  const imageContainerRef = useRef<HTMLDivElement | null>(null);
 
   const handleAddToCart = () => {
     addItem(product);
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 2000);
   };
+
+  // Sticky bar: show when original add-to-cart scrolls out of view
+  useEffect(() => {
+    const el = addToCartRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowStickyBar(!entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  // Image magnifier handlers
+  const handleMouseMove = useCallback((e: ReactMouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    setMagnifier({ active: true, x, y });
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setMagnifier({ active: false, x: 0, y: 0 });
+  }, []);
+
+  // Computed values
+  const priceNum = parsePrice(product.price);
+  const oldPriceNum = product.oldPrice ? parsePrice(product.oldPrice) : null;
+  const savings = oldPriceNum ? oldPriceNum - priceNum : 0;
+  const savingsPercent = oldPriceNum ? Math.round((savings / oldPriceNum) * 100) : 0;
+  const socialProofCount = pseudoRandom(product.id, 15, 89);
+  const freeShipping = priceNum >= 50;
 
   const images = [product.img, ...(product.gallery || [])];
 
@@ -40,7 +98,10 @@ export function ProductDetail({ product }: { product: Product }) {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="relative aspect-square rounded-[2rem] bg-accent/[0.03] border border-accent/10 overflow-hidden shadow-2xl"
+              ref={imageContainerRef}
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              className="relative aspect-square rounded-[2rem] bg-accent/[0.03] border border-accent/10 overflow-hidden shadow-2xl cursor-crosshair"
             >
               <Image
                 src={selectedImage}
@@ -49,11 +110,26 @@ export function ProductDetail({ product }: { product: Product }) {
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-contain p-8"
+                style={magnifier.active ? {
+                  transform: "scale(2)",
+                  transformOrigin: `${magnifier.x}% ${magnifier.y}%`,
+                  transition: "transform 0.1s ease-out",
+                } : {
+                  transform: "scale(1)",
+                  transformOrigin: "center center",
+                  transition: "transform 0.3s ease-out",
+                }}
               />
               {product.badge && (
                 <span className="absolute top-6 left-6 px-4 py-2 rounded-full bg-accent text-[#0A0E1A] font-bold text-sm shadow-xl z-10">
                   {product.badge}
                 </span>
+              )}
+              {magnifier.active && (
+                <div className="absolute bottom-4 right-4 px-3 py-1.5 rounded-lg bg-black/60 text-orange-400/70 text-xs font-medium backdrop-blur-sm z-10">
+                  <Eye size={12} className="inline mr-1.5 -mt-0.5" />
+                  Zoom ativo
+                </div>
               )}
             </motion.div>
 
@@ -117,18 +193,49 @@ export function ProductDetail({ product }: { product: Product }) {
                   <span className="text-sm font-bold text-orange-400 ml-2">{product.rating}</span>
                 </div>
                 <div className="w-px h-4 bg-accent/20" />
-                <span className="text-sm text-orange-400/40">128 avaliações</span>
+                <span className="text-sm text-orange-400/40">{((product.id * 7 + 13) % 180) + 20} avaliações</span>
               </div>
 
-              <div className="flex items-end gap-4 mb-4">
+              <div className="flex items-end gap-4 mb-2">
                 <span className="text-4xl font-black text-orange-400">{product.price}</span>
                 {product.oldPrice && (
                   <span className="text-xl text-orange-400/30 line-through mb-1">{product.oldPrice}</span>
                 )}
               </div>
 
+              {/* Savings Badge */}
+              {product.oldPrice && savings > 0 && (
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-bold">
+                    Poupa {formatPrice(savings)} (-{savingsPercent}%)
+                  </span>
+                </div>
+              )}
+
+              {/* Shipping & Guarantee Strip */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 p-4 rounded-2xl bg-white/[0.02] border border-accent/5">
+                <div className="flex items-center gap-2">
+                  <Truck size={16} className="text-orange-400/60 shrink-0" />
+                  <span className="text-xs text-orange-400/60 leading-tight">
+                    {freeShipping ? "Envio Grátis" : "Envio: 4,99\u20AC"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <RotateCcw size={16} className="text-orange-400/60 shrink-0" />
+                  <span className="text-xs text-orange-400/60 leading-tight">14 dias devoluções</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Shield size={16} className="text-orange-400/60 shrink-0" />
+                  <span className="text-xs text-orange-400/60 leading-tight">Garantia 2 anos</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock size={16} className="text-orange-400/60 shrink-0" />
+                  <span className="text-xs text-orange-400/60 leading-tight">Entrega 24-48h</span>
+                </div>
+              </div>
+
               {/* Stock Status */}
-              <div className="flex items-center gap-3 mb-10">
+              <div className="flex items-center gap-3 mb-4">
                 {product.inStock !== false ? (
                   <>
                     <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold">
@@ -150,13 +257,52 @@ export function ProductDetail({ product }: { product: Product }) {
                 )}
               </div>
 
-              <p className="text-lg text-orange-400/70 leading-relaxed mb-10 whitespace-pre-line">
+              {/* Social Proof */}
+              <div className="flex items-center gap-2 mb-10 px-3 py-2 rounded-xl bg-orange-500/5 border border-orange-500/10 w-fit">
+                <Flame size={14} className="text-orange-400 shrink-0" />
+                <span className="text-sm text-orange-400/70 font-medium">
+                  {socialProofCount} pessoas viram este produto nas últimas 24h
+                </span>
+              </div>
+
+              <p className="text-lg text-orange-400/70 leading-relaxed mb-8 whitespace-pre-line">
                 {product.description}
               </p>
 
+              {/* Trust Section — Porquê VoltStock? */}
+              <div className="mb-10 p-5 rounded-2xl bg-white/[0.02] border border-accent/5">
+                <p className="text-xs uppercase tracking-[0.2em] text-orange-400/40 font-bold mb-4">Porquê VoltStock?</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <div className="w-10 h-10 rounded-xl bg-orange-400/5 border border-orange-400/10 flex items-center justify-center">
+                      <Lock size={18} className="text-orange-400/70" />
+                    </div>
+                    <span className="text-xs text-orange-400/60 font-medium leading-tight">Pagamento Seguro</span>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <div className="w-10 h-10 rounded-xl bg-orange-400/5 border border-orange-400/10 flex items-center justify-center">
+                      <Truck size={18} className="text-orange-400/70" />
+                    </div>
+                    <span className="text-xs text-orange-400/60 font-medium leading-tight">Envio 24-48h</span>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <div className="w-10 h-10 rounded-xl bg-orange-400/5 border border-orange-400/10 flex items-center justify-center">
+                      <MessageCircle size={18} className="text-orange-400/70" />
+                    </div>
+                    <span className="text-xs text-orange-400/60 font-medium leading-tight">Suporte WhatsApp</span>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <div className="w-10 h-10 rounded-xl bg-orange-400/5 border border-orange-400/10 flex items-center justify-center">
+                      <RotateCcw size={18} className="text-orange-400/70" />
+                    </div>
+                    <span className="text-xs text-orange-400/60 font-medium leading-tight">14 dias devolução</span>
+                  </div>
+                </div>
+              </div>
+
               {product.features && (
-                <div className="grid grid-cols-2 gap-4 mb-10">
-                  {product.features.map((f, i) => (
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  {product.features.slice(0, 4).map((f, i) => (
                     <div key={i} className="p-4 rounded-2xl bg-accent/[0.03] border border-accent/5 flex flex-col gap-1">
                       <span className="text-[10px] uppercase tracking-wider text-orange-400/40 font-bold">{f.name}</span>
                       <span className="text-sm font-bold text-orange-400">{f.value}</span>
@@ -165,7 +311,52 @@ export function ProductDetail({ product }: { product: Product }) {
                 </div>
               )}
 
-              <div className="flex gap-4">
+              {/* Collapsible Specs Table */}
+              {product.features && product.features.length > 0 && (
+                <div className="mb-10">
+                  <button
+                    onClick={() => setSpecsOpen((prev) => !prev)}
+                    className="flex items-center gap-2 w-full text-left px-4 py-3 rounded-xl bg-white/[0.02] border border-accent/5 hover:bg-white/[0.04] transition-colors"
+                  >
+                    <span className="text-sm font-bold text-orange-400">Especificações Técnicas</span>
+                    <motion.div
+                      animate={{ rotate: specsOpen ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="ml-auto"
+                    >
+                      <ChevronDown size={16} className="text-orange-400/50" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {specsOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 rounded-xl border border-accent/5 overflow-hidden">
+                          {product.features.map((f, i) => (
+                            <div
+                              key={i}
+                              className={cn(
+                                "flex items-center justify-between px-4 py-3 text-sm",
+                                i % 2 === 0 ? "bg-white/[0.02]" : "bg-transparent"
+                              )}
+                            >
+                              <span className="text-orange-400/50 font-medium">{f.name}</span>
+                              <span className="text-orange-400 font-bold text-right">{f.value}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+
+              <div className="flex gap-4" ref={addToCartRef}>
                 {product.inStock === false ? (
                   <button
                     disabled
@@ -220,6 +411,47 @@ export function ProductDetail({ product }: { product: Product }) {
         {/* Related Products */}
         <RelatedProducts currentProduct={product} />
       </div>
+
+      {/* Sticky Add-to-Cart Bar */}
+      <AnimatePresence>
+        {showStickyBar && product.inStock !== false && (
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            className="fixed bottom-0 left-0 right-0 z-50 border-t border-accent/10 bg-[#0A0E1A]/95 backdrop-blur-xl shadow-2xl"
+          >
+            <div className="max-w-[1280px] mx-auto flex items-center justify-between gap-4 px-6 py-3">
+              <div className="flex items-center gap-4 min-w-0">
+                <span className="text-sm font-bold text-orange-400 truncate max-w-[200px] sm:max-w-[300px]">
+                  {product.name}
+                </span>
+                <span className="text-lg font-black text-orange-400 shrink-0">{product.price}</span>
+              </div>
+              <button
+                onClick={handleAddToCart}
+                className={cn(
+                  "h-11 px-6 rounded-xl font-bold text-sm transition-all duration-500 flex items-center gap-2 shrink-0",
+                  isAdded ? "bg-emerald-500 text-white" : "bg-accent text-[#0A0E1A] hover:bg-accent/90 shadow-lg shadow-accent/10"
+                )}
+              >
+                {isAdded ? (
+                  <>
+                    <Check size={16} />
+                    <span className="hidden sm:inline">No Carrinho!</span>
+                  </>
+                ) : (
+                  <>
+                    <ShoppingCart size={16} />
+                    <span className="hidden sm:inline">Adicionar ao Carrinho</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

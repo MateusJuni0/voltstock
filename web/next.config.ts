@@ -37,6 +37,18 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "www.lg.com" },
       { protocol: "https", hostname: "www.razer.com" },
       { protocol: "https", hostname: "www.andaseat.com" },
+      // Newegg CDN
+      { protocol: "https", hostname: "c1.neweggimages.com" },
+      // Additional manufacturer CDNs
+      { protocol: "https", hostname: "www.bequiet.com" },
+      { protocol: "https", hostname: "cdn.deepcool.com" },
+      { protocol: "https", hostname: "lian-li.com" },
+      { protocol: "https", hostname: "www.gskill.com" },
+      { protocol: "https", hostname: "images.evga.com" },
+      { protocol: "https", hostname: "www.nvidia.com" },
+      { protocol: "https", hostname: "semiconductor.samsung.com" },
+      // Wildcard patterns
+      { protocol: "https", hostname: "**.neweggimages.com" },
     ],
   },
   async headers() {

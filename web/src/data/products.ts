@@ -91,9 +91,9 @@ export const products: Product[] = [
     "price": "829,00 €",
     "oldPrice": "899,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S050adaac6c4f4d98a19028b2fba8cba8j.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S050adaac6c4f4d98a19028b2fba8cba8j.jpg"
     ],
     "description": "A RTX 4070 Ti Super oferece desempenho excecional em 1440p e 4K com 16GB GDDR6X e arquitetura Ada Lovelace. DLSS 3 com Frame Generation para FPS extremos.",
     "badge": "1440p Beast",
@@ -115,9 +115,9 @@ export const products: Product[] = [
     "price": "429,00 €",
     "oldPrice": "479,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Cases/base-4000d-airflow-config/Gallery/4000D_AF_BLACK_01.webp"
     ],
     "description": "Excelente desempenho 1080p e 1440p com suporte DLSS 3 e ray tracing. Eficiente em consumo energético com apenas 160W TDP, ideal para builds compactas.",
     "badge": "1080p King",
@@ -138,9 +138,9 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "309,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Acd527f24f32f45158de3350843064971J.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
+      "https://assets.micron.com/adobe/assets/urn:aaid:aem:7f5fc122-7774-417e-9806-59baf7d2569f/renditions/transformpng-1024-1024.png/as/crucial-p3-plus-ssd-flat-front-image.png"
     ],
     "description": "A placa gráfica mais acessível da série RTX 40 com 8GB GDDR6 e suporte completo a DLSS 3. Perfeita para gaming 1080p com ray tracing ativado.",
     "badge": "Melhor Custo-Benefício",
@@ -162,9 +162,9 @@ export const products: Product[] = [
     "price": "899,00 €",
     "oldPrice": "1.049,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sd85ec321ac7c4487a5b0249035d7de13y.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Sd85ec321ac7c4487a5b0249035d7de13y.jpg"
     ],
     "description": "A flagship da AMD com 24GB GDDR6 e arquitetura RDNA 3. Performance de topo em 4K com excelente rasterização e suporte FSR 3 com Frame Generation.",
     "badge": "AMD Flagship",
@@ -186,9 +186,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S85beb4c564e84bddac8f92d2d3c6f3bab.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
+      "https://lian-li.com/wp-content/uploads/2021/12/evo-600-000.jpg"
     ],
     "description": "16GB de VRAM GDDR6 para gaming 1440p sem compromissos. Arquitetura RDNA 3 com excelente eficiência energética e suporte FSR 3.",
     "badge": "1440p AMD",
@@ -210,9 +210,9 @@ export const products: Product[] = [
     "price": "269,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S17e109f2c90c4c9cbdadc4abb65c690cb.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
+      "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_1.png"
     ],
     "description": "Entrada no gaming 1080p com arquitetura RDNA 3. Suporte FSR 3 e excelente consumo energético com apenas 165W, perfeita para builds budget.",
     "badge": "Budget Pick",
@@ -234,9 +234,9 @@ export const products: Product[] = [
     "price": "619,00 €",
     "oldPrice": "679,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S71f1adb929f84a86bf0542f410f3bcd25.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S71f1adb929f84a86bf0542f410f3bcd25.jpg"
     ],
     "description": "O sweet spot da geração Ada Lovelace com 12GB GDDR6X. Performance 1440p excecional com DLSS 3, ray tracing e eficiência de 220W TDP.",
     "badge": "Sweet Spot",
@@ -257,9 +257,9 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "239,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S1b0db5f2eb5d4e47851a3b8e71eaf63eq.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
+      "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPUAirCoolers/AK620_DIGITAL/Gallery/800X800/01.jpg"
     ],
     "description": "12GB de VRAM GDDR6 a um preço imbatível. Ainda relevante para gaming 1080p com ray tracing básico e DLSS 2. Excelente para builds económicas.",
     "badge": "Económica",
@@ -306,8 +306,8 @@ export const products: Product[] = [
     "id": 13,
     "name": "Intel Core i9-14900K",
     "category": "Processadores",
-    "price": "549,00 €",
-    "oldPrice": "629,00 €",
+    "price": "489,00 €",
+    "oldPrice": "549,00 €",
     "rating": 4.8,
     "img": "https://ae01.alicdn.com/kf/S27b0d840e3984c95946b64e2931f3d13w.jpg",
     "gallery": [
@@ -334,9 +334,9 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sae8958cccc4b48cba872f2083c9ead22L.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S0d0fcd8520494a3181d55edadb8a7b6at.jpg"
     ],
     "description": "6 cores e 12 threads Zen 4 com boost até 5.3 GHz. Entrada na plataforma AM5 com suporte DDR5 e PCIe 5.0 a um preço acessível.",
     "badge": "Melhor Valor AM5",
@@ -358,9 +358,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S700c05dab59c420788fa3279e4e82ab5n.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S3192ed52f44347d28b7c8b8178aa1535G.jpg"
     ],
     "description": "16 cores Zen 4 com 3D V-Cache de 128MB para o máximo em gaming e produtividade. O processador definitivo para quem não faz compromissos.",
     "badge": "Enthusiast",
@@ -382,9 +382,9 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S93a4ebb0e0cb4f5cb24d3e64ef84a53db.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S398166ad88d748beb18c9699e1993bb7w.jpg"
     ],
     "description": "14 cores (6P + 8E) e 20 threads com boost até 5.3 GHz. O mid-range da Intel com performance gaming excelente e overclocking desbloqueado.",
     "badge": "Mid-Range Intel",
@@ -406,9 +406,9 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S321c130788b14a53ac8610e9a7553954a.jpg"
     ],
     "description": "20 cores (8P + 12E) e 28 threads com boost até 5.6 GHz. Multitasking extremo para gaming, streaming e criação de conteúdo em simultâneo.",
     "badge": "Produtividade",
@@ -429,9 +429,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "129,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Sc72cbc783ef1437ba8d8853d23d01a31k.jpg"
     ],
     "description": "6 cores Zen 3 que ainda dão conta de qualquer jogo atual. Excelente custo-benefício para upgrades em plataforma AM4 já existente.",
     "badge": "Budget King",
@@ -453,9 +453,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "209,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg"
     ],
     "description": "10 cores (6P + 4E) sem gráficos integrados para quem usa placa gráfica dedicada. Excelente performance por euro na plataforma LGA1700.",
     "badge": "Valor Imbatível",
@@ -477,9 +477,9 @@ export const products: Product[] = [
     "price": "379,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg"
     ],
     "description": "12 cores Zen 4 com boost até 5.6 GHz. Potência bruta para renderização, compilação e gaming de alta performance na plataforma AM5.",
     "badge": "Workstation",
@@ -500,9 +500,9 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "89,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg"
     ],
     "description": "4 cores e 8 threads Alder Lake a um preço de entrada. Surpreendente em gaming 1080p quando combinado com uma placa gráfica dedicada.",
     "badge": "Entry Level",
@@ -528,9 +528,9 @@ export const products: Product[] = [
     "price": "198,00 €",
     "oldPrice": "229,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
+      "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/base-rmx-2024-config/gallery/black/850/RM850x_2024_01.webp"
     ],
     "description": "A base sólida para o teu setup AM5. VRM robusto de 14+2+1 fases, suporte DDR5 até 6400MHz e WiFi 6E integrado para conectividade sem fios de próxima geração.",
     "badge": "Base Sólida",
@@ -577,9 +577,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-144-648-10.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg"
     ],
     "description": "Micro-ATX compacta para Intel 12ª/13ª/14ª geração com WiFi 6E e VRM de 12+1+1 fases. Ideal para builds compactas sem sacrificar funcionalidades.",
     "badge": "Compacta",
@@ -624,9 +624,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "139,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-145-271-V01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg"
     ],
     "description": "Plataforma AM4 madura e estável com VRM digital de 12+2 fases. Suporte DDR4 até 5400MHz OC e PCIe 4.0 x16 para Ryzen 5000.",
     "badge": "AM4 Clássica",
@@ -647,9 +647,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "119,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/13-162-228-04.png"
     ],
     "description": "Micro-ATX acessível para Intel 12ª/13ª geração com design Steel Legend icónico. VRM de 8 fases, 2 slots M.2 e saída HDMI 2.1.",
     "badge": "Budget Intel",
@@ -695,9 +695,9 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-144-562-10.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg"
     ],
     "description": "Motherboard de elite para Intel 14ª geração com VRM de 24+1+2 fases, DDR5-7800+ OC e design premium em preto e dourado. Feita para overclock extremo.",
     "badge": "OC Extreme",
@@ -719,9 +719,9 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "459,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/BSTDD2312190WYIKA6A.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg"
     ],
     "description": "16+2+2 fases VRM twinned com 4 slots M.2 Gen5 e conectividade completa. A Aorus Master para builds AM5 de referência com design térmico Fins-Array III.",
     "badge": "Aorus Master",
@@ -742,9 +742,9 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "129,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg"
     ],
     "description": "Micro-ATX acessível com WiFi 6E para Intel 12ª/13ª/14ª geração. VRM de 8+1+1 fases, DDR5 e 2 slots M.2 a um preço competitivo.",
     "badge": "WiFi Budget",
@@ -819,9 +819,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Sc454a756e56b4b308618b620b068cf5cN.png"
     ],
     "description": "Kit 2×16GB DDR5-5600 com dissipador de calor preto compacto. Compatível com Intel XMP 3.0 e AMD EXPO para facilidade de overclock.",
     "badge": "Preço/Performance",
@@ -867,9 +867,9 @@ export const products: Product[] = [
     "price": "145,00 €",
     "oldPrice": "175,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S4ffe778a265a4e9da5f6fa192ae6cf4bV.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1592664474505-51c549ad15c0?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S4ffe778a265a4e9da5f6fa192ae6cf4bV.png"
     ],
     "description": "A topo de gama da Kingston com DDR5-6400 CL32 e dissipador de calor agressivo. Otimizada para overclocking com chips Hynix A-Die selecionados.",
     "badge": "OC Ready",
@@ -938,9 +938,9 @@ export const products: Product[] = [
     "price": "105,00 €",
     "oldPrice": "125,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
+    "img": "https://www.gskill.com/_upload/images/168428819510.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"
+      "https://www.gskill.com/_upload/images/168428819510.png"
     ],
     "description": "Design perfil baixo sem RGB para builds minimalistas. DDR5-6000 CL30 com excelente compatibilidade e estabilidade comprovada.",
     "badge": "Minimalista",
@@ -961,9 +961,9 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "59,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/H3cd821a404864cb287d5959bf547144cT.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Scd2b7aa9ea424d82a5c12bc4e61b4843s.jpg"
     ],
     "description": "Kit 2×16GB DDR4-3200 CL16 para upgrades em plataformas AM4 e LGA1700. Dissipador preto compacto com excelente compatibilidade.",
     "badge": "DDR4 Clássica",
@@ -1061,9 +1061,9 @@ export const products: Product[] = [
     "price": "59,00 €",
     "oldPrice": "79,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
+    "img": "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop"
+      "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$"
     ],
     "description": "NVMe Gen4 acessível com até 4,150 MB/s de leitura. Perfeita para armazenamento de jogos e sistema operativo com fiabilidade WD comprovada.",
     "badge": "Acessível",
@@ -1085,9 +1085,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg"
     ],
     "description": "2TB de armazenamento NVMe Gen4 ao melhor preço por gigabyte. Até 3,500 MB/s de leitura, ideal como drive secundário ou para bibliotecas de jogos grandes.",
     "badge": "Melhor €/GB",
@@ -1109,9 +1109,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
     ],
     "description": "NVMe Gen4 da Micron com 5,000 MB/s de leitura. Excelente desempenho para o preço com 2TB de capacidade. Software Crucial Storage Executive incluído.",
     "badge": "Custo-Benefício",
@@ -1132,9 +1132,9 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "79,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop",
+    "img": "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$",
     "gallery": [
-      "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop"
+      "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$"
     ],
     "description": "O SSD SATA mais vendido do mundo com 560 MB/s de leitura. Perfeito para upgrade de portáteis e PCs mais antigos sem suporte NVMe.",
     "badge": "SATA Referência",
@@ -1156,9 +1156,9 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg"
     ],
     "description": "NVMe Gen4 de topo com 7,300 MB/s e durabilidade extrema de 2,550 TBW. Heatsink incluído para instalação em PS5 ou PC sem preocupações térmicas.",
     "badge": "Durável",
@@ -1180,9 +1180,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
+    "img": "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?q=80&w=800&auto=format&fit=crop"
+      "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png"
     ],
     "description": "A NVMe mais rápida da Crucial com 7,400 MB/s de leitura graças ao controlador Phison E26. Microsoft DirectStorage ready para gaming de próxima geração.",
     "badge": "Gen4 Máximo",
@@ -1204,9 +1204,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "189,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg"
     ],
     "description": "Controlador e NAND 176-layer da SK Hynix in-house. 7,000 MB/s com eficiência energética superior — ideal para portáteis e desktops.",
     "badge": "Eficiente",
@@ -1281,9 +1281,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg"
     ],
     "description": "A fonte mais popular para builds gaming com 850W 80+ Gold e cabos totalmente modulares. Modo zero-RPM e ATX 3.0 com conector 12VHPWR nativo.",
     "badge": "Best Seller",
@@ -1305,9 +1305,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg"
     ],
     "description": "Qualidade Seasonic premium com 750W 80+ Gold e cabos modulares. Ventoinha FDB de 120mm com modo Hybrid Fan Control para funcionamento silencioso.",
     "badge": "Fiável",
@@ -1329,9 +1329,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
     ],
     "description": "ATX 3.0 com conector 12VHPWR nativo e 80+ Gold. Ventoinha be quiet! 120mm de alta qualidade com operação ultra-silenciosa.",
     "badge": "Silenciosa",
@@ -1353,9 +1353,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "img": "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_1.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
+      "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_1.png"
     ],
     "description": "1000W com certificação 80+ Gold e tamanho compacto de 150mm. Totalmente modular com proteções OVP, UVP, OCP, OPP, SCP e OTP.",
     "badge": "Compacta 1000W",
@@ -1377,9 +1377,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg"
     ],
     "description": "A melhor fonte SFX do mercado com 750W e 80+ Platinum em formato compacto. Perfeita para builds ITX e caixas pequenas sem comprometer potência.",
     "badge": "ITX Champion",
@@ -1401,9 +1401,9 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "349,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"
     ],
     "description": "1300W ATX 3.0 com conector 12VHPWR e monitorização inteligente via MSI Center. Preparada para as GPUs mais exigentes como a RTX 4090/5090.",
     "badge": "Powerhouse",
@@ -1425,9 +1425,9 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "359,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg"
     ],
     "description": "A eficiência máxima com certificação 80+ Titanium. 1000W de potência premium com 12 anos de garantia e componentes de grau industrial.",
     "badge": "Titanium",
@@ -1472,9 +1472,9 @@ export const products: Product[] = [
     "price": "115,00 €",
     "oldPrice": "135,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"
     ],
     "description": "ATX 3.0 com conector PCIe 5.0 nativo e 80+ Gold. Ventoinha hidráulica de 120mm com Smart Zero Fan para operação silenciosa em cargas baixas.",
     "badge": "ATX 3.0",
@@ -1500,9 +1500,9 @@ export const products: Product[] = [
     "price": "95,00 €",
     "oldPrice": "115,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg"
     ],
     "description": "Fluxo de ar superior com dois ventoinhas frontais de 160mm PWM incluídos e painel lateral em vidro temperado de 4mm. Design modular e estética clean.",
     "badge": "Airflow King",
@@ -1549,9 +1549,9 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-146-364-01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/11-734-018-01.jpg"
     ],
     "description": "Design minimalista NZXT com painel frontal perfurado para airflow optimizado. 3 ventoinhas RGB incluídas e espaço para radiadores até 360mm.",
     "badge": "Clean Design",
@@ -1573,9 +1573,9 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg"
     ],
     "description": "A caixa mid-tower mais popular da Corsair com frente mesh de alto fluxo. 2 ventoinhas 120mm incluídas e USB-C frontal. O clássico que nunca falha.",
     "badge": "Clássico",
@@ -1596,9 +1596,9 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "79,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"
+      "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Cases/base-5000d-airflow/Gallery/5000D_AF_WHITE_001.webp"
     ],
     "description": "Excelente airflow a preço budget com frente mesh ultra-fina e 3 ventoinhas D-RGB de 120mm incluídas. Vidro temperado e espaço generoso.",
     "badge": "Budget Airflow",
@@ -1620,9 +1620,9 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png"
     ],
     "description": "Equilíbrio perfeito entre silêncio e airflow com mesh frontal e 3 Pure Wings 2 de 140mm. Iluminação ARGB discreta no painel frontal.",
     "badge": "Silent Airflow",
@@ -1644,9 +1644,9 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
     ],
     "description": "Full tower monstruosa com 200mm frontal e ecrã LCD integrado. Suporte para radiadores de 420mm e builds extremas com múltiplas GPUs.",
     "badge": "Enthusiast Tower",
@@ -1692,9 +1692,9 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/AJ7WD2106261ZYD4.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/37B-000B-00421-01.jpg"
     ],
     "description": "A irmã maior da 4000D com espaço para radiadores até 420mm. Painel frontal high-airflow, cable management RapidRoute e 2 ventoinhas 120mm incluídas.",
     "badge": "Big Brother",
@@ -1716,9 +1716,9 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
+    "img": "https://lian-li.com/wp-content/uploads/2021/12/evo-600-000.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"
+      "https://lian-li.com/wp-content/uploads/2021/12/evo-600-000.jpg"
     ],
     "description": "A icónica O11 reinventada com suporte reversível, mesh frontal opcional e espaço para 3 radiadores de 360mm. A favorita dos custom loops.",
     "badge": "Dual Chamber",
@@ -1793,9 +1793,9 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "269,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg"
     ],
     "description": "AIO 360mm com ecrã IPS LCD de 2.1\" na bomba e 3 ventoinhas AF120 RGB Elite. Controlo total via iCUE com monitorização de temperaturas em tempo real.",
     "badge": "LCD Premium",
@@ -1817,9 +1817,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png"
     ],
     "description": "A melhor AIO em relação preço/performance com radiador de 360mm e bomba offset integrada. VRM cooling fan na bomba para refrigeração adicional da motherboard.",
     "badge": "Melhor Valor AIO",
@@ -1841,9 +1841,9 @@ export const products: Product[] = [
     "price": "69,00 €",
     "oldPrice": "85,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
+    "img": "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPUAirCoolers/AK620_DIGITAL/Gallery/800X800/01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
+      "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPUAirCoolers/AK620_DIGITAL/Gallery/800X800/01.jpg"
     ],
     "description": "Dual tower air cooler com ecrã digital de temperatura integrado. 6 heatpipes de cobre e 2 ventoinhas de 120mm com 260W TDP máximo.",
     "badge": "Digital Air",
@@ -1864,9 +1864,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "109,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg"
     ],
     "description": "A lenda do arrefecimento a ar em versão all-black. Dual tower com 2 NF-A15 PWM de 140mm, 6 heatpipes e 250W TDP. Silêncio e performance sem rival.",
     "badge": "Lenda Air Cool",
@@ -1888,9 +1888,9 @@ export const products: Product[] = [
     "price": "79,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
     ],
     "description": "O novo air cooler premium da Corsair que rivaliza com AIOs de 240mm. Design de dupla torre com 2 ventoinhas NexFan de 140mm e 270W de capacidade.",
     "badge": "AIO Killer",
@@ -1912,9 +1912,9 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/37B-000B-00421-01.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop"
+      "https://ae01.alicdn.com/kf/S607f2ce7e4854d8ebb8264178a43da61K.jpg"
     ],
     "description": "AIO 280mm da marca de referência em water cooling custom. Bomba EK de alto desempenho com 2 ventoinhas EK-Vardar de 140mm D-RGB.",
     "badge": "Custom DNA",
@@ -1935,9 +1935,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "39,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png"
     ],
     "description": "Single tower compacto com excelente custo-benefício. 4 heatpipes de contacto direto e ventoinha P12 A-RGB de 120mm. Ideal para Ryzen 5 e i5.",
     "badge": "Budget Air",
@@ -1958,9 +1958,9 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "35,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"
+      "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg"
     ],
     "description": "Dual tower budget que rivaliza com coolers 2× mais caros. 6 heatpipes e 2 ventoinhas TL-C12C de 120mm com 260W TDP. O segredo dos builds inteligentes.",
     "badge": "Hidden Gem",
@@ -2958,7 +2958,7 @@ export const products: Product[] = [
     "price": "2.199,00 €",
     "oldPrice": "2.399,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg",
     "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
     "description": "A placa gráfica mais poderosa da nova geração NVIDIA. Arquitectura Blackwell com 32 GB GDDR7 para gaming 4K a mais de 120 FPS e workloads de IA local.",
     "badge": "Topo de Gama",
@@ -2979,7 +2979,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "649,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg",
     "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
     "description": "Placa gráfica AMD RDNA 4 com excelente relação preço/desempenho. 16 GB GDDR6 para gaming 1440p de alta qualidade e ray tracing melhorado.",
     "features": [
@@ -3000,7 +3000,7 @@ export const products: Product[] = [
     "price": "899,00 €",
     "oldPrice": "949,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg",
     "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
     "description": "Desempenho excepcional para gaming 4K com DLSS 4 e ray tracing de nova geração. 16 GB GDDR7 para os títulos mais exigentes.",
     "badge": "Melhor Valor 4K",
@@ -3021,7 +3021,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "1.399,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg",
     "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
     "description": "Edição ROG Strix com overclock de fábrica e sistema de arrefecimento de 3 ventoinhas. Design premium com iluminação Aura Sync RGB.",
     "badge": "ROG Premium",
@@ -3043,7 +3043,7 @@ export const products: Product[] = [
     "price": "699,00 €",
     "oldPrice": "749,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg",
     "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
     "description": "RTX 5070 com arrefecimento tri-fan Torx 5.0 e backplate metálico. Ideal para gaming 1440p ultra com DLSS 4 e Frame Generation.",
     "features": [
@@ -3063,7 +3063,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "549,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg",
     "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
     "description": "A melhor placa AMD para gaming 1440p. Arrefecimento Nitro+ com heatpipes de cobre e ventoinha inteligente que para em idle.",
     "features": [
@@ -3077,35 +3077,14 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 51
   },
-  {
-    "id": 127,
-    "name": "EVGA GeForce RTX 5060 Ti SC",
-    "category": "Placas Gráficas",
-    "price": "449,00 €",
-    "oldPrice": "499,00 €",
-    "rating": 4.3,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop"],
-    "description": "Placa gráfica de gama média com desempenho surpreendente. Perfeita para gaming 1080p ultra ou 1440p alto com 8 GB GDDR7.",
-    "badge": "Melhor Custo-Benefício",
-    "features": [
-      { "name": "GPU", "value": "Blackwell GB206" },
-      { "name": "VRAM", "value": "8 GB GDDR7" },
-      { "name": "CUDA Cores", "value": "4608" },
-      { "name": "TDP", "value": "180 W" }
-    ],
-    "supplier_url": "https://www.evga.com/products/productlist.aspx?type=0",
-    "brand": "EVGA",
-    "inStock": true,
-    "stockCount": 9
-  },
+  
   {
     "id": 128,
     "name": "Intel Arc B580",
     "category": "Placas Gráficas",
     "price": "279,00 €",
     "rating": 4.1,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg",
     "gallery": ["https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=800&auto=format&fit=crop"],
     "description": "GPU Intel Battlemage de gama média-baixa com 12 GB VRAM. Excelente opção económica para 1080p com ray tracing e XeSS upscaling.",
     "features": [
@@ -3129,7 +3108,7 @@ export const products: Product[] = [
     "price": "649,00 €",
     "oldPrice": "699,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg",
     "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
     "description": "O processador desktop mais rápido da AMD. 16 cores Zen 5 com boost até 5.7 GHz para produtividade e gaming sem compromissos.",
     "badge": "Flagship AMD",
@@ -3150,7 +3129,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "599,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg",
     "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
     "description": "Processador Intel Arrow Lake com arquitectura híbrida de nova geração. 24 cores com NPU integrada para aceleração de IA local.",
     "features": [
@@ -3171,7 +3150,7 @@ export const products: Product[] = [
     "price": "359,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg",
     "gallery": ["https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"],
     "description": "Processador Zen 5 de 8 cores com eficiência energética excepcional. TDP de apenas 65W com desempenho que rivaliza com chips de 170W.",
     "badge": "Eficiência Máxima",
@@ -3192,7 +3171,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "419,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg",
     "gallery": ["https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop"],
     "description": "Processador Arrow Lake de gama alta com 20 cores híbridos. Excelente para gaming e multitasking pesado com DDR5 e PCIe 5.0.",
     "features": [
@@ -3213,7 +3192,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg",
     "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
     "description": "O melhor processador gaming por menos de 300 euros. 6 cores Zen 5 com single-thread excepcional para os jogos mais exigentes.",
     "badge": "Gaming Value King",
@@ -3234,7 +3213,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "479,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg",
     "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
     "description": "12 cores Zen 5 com equilíbrio perfeito entre gaming e produtividade. Cache massiva de 76 MB para workloads profissionais.",
     "features": [
@@ -3255,7 +3234,7 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1563170351-be82bc888ae4?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg",
     "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
     "description": "Processador Arrow Lake mainstream desbloqueado. 14 cores híbridos com NPU para IA e excelente desempenho gaming a preço acessível.",
     "badge": "Entrada Premium",
@@ -3276,7 +3255,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "529,00 €",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg",
     "gallery": ["https://images.unsplash.com/photo-1555618254-5e7e3a96dbf7?q=80&w=800&auto=format&fit=crop"],
     "description": "O melhor processador gaming do mundo com 3D V-Cache de 104 MB. Desempenho imbatível em jogos graças à cache L3 empilhada verticalmente.",
     "badge": "Rei do Gaming",
@@ -3301,7 +3280,7 @@ export const products: Product[] = [
     "price": "699,00 €",
     "oldPrice": "749,00 €",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg",
     "gallery": ["https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"],
     "description": "Motherboard AM5 de topo com chipset X870E. VRM de 22+2 fases, Wi-Fi 7, Thunderbolt 4 e suporte DDR5-8000+ para overclock extremo.",
     "badge": "Enthusiast",
@@ -3322,7 +3301,7 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "599,00 €",
     "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
+    "img": "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg",
     "gallery": ["https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop"],
     "description": "Motherboard Intel Z890 premium para processadores Arrow Lake. 24+1+2 fases de VRM, PCIe 5.0 x16 e quatro slots M.2 para armazenamento massivo.",
     "features": [
@@ -3343,7 +3322,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg",
     "gallery": ["https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=800&auto=format&fit=crop"],
     "description": "Motherboard AM5 de gama média com excelente relação preço/desempenho. VRM robusta de 16 fases, Wi-Fi 6E e suporte DDR5.",
     "badge": "Melhor Valor AM5",
@@ -3364,7 +3343,7 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "499,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png",
     "gallery": ["https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop"],
     "description": "Motherboard flagship ASRock para Intel Arrow Lake. Design icónico de engrenagens com VRM de 26 fases e audio Nahimic premium.",
     "features": [
@@ -3385,7 +3364,7 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1601737487795-dab272f52420?q=80&w=800&auto=format&fit=crop",
+    "img": "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png",
     "gallery": ["https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=800&auto=format&fit=crop"],
     "description": "Motherboard AM5 gaming com VRM de 16+2 fases, USB4 e rede 2.5G LAN. Design ROG Strix com iluminação Aura Sync integrada.",
     "badge": "ROG Gaming",

@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Product } from "@/data/products";
-import { Star, X, ShoppingCart, Heart, Shield, Truck, Package, Check } from "lucide-react";
+import { Star, X, ShoppingCart, Heart, Shield, Truck, Package, Check, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/store/useCart";
+import { TRUST } from "@/lib/trust-constants";
 
 interface ProductModalProps {
   product: Product;
@@ -16,6 +18,10 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   const [selectedImage, setSelectedImage] = useState(product.img);
   const [isAdded, setIsAdded] = useState(false);
   const addItem = useCart((s) => s.addItem);
+  const router = useRouter();
+
+  // Deterministic pseudo-random review count from product ID (3-182 range)
+  const reviewCount = ((product.id * 7 + 13) % 180) + 3;
   const images = [product.img, ...(product.gallery || [])].filter(
     (img, idx, arr) => arr.indexOf(img) === idx
   );
@@ -41,6 +47,12 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
     addItem(product);
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 2000);
+  };
+
+  const handleBuyNow = () => {
+    addItem(product);
+    onClose();
+    router.push("/checkout");
   };
 
   return (
@@ -145,7 +157,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                   <span className="text-sm font-bold text-orange-400 ml-2">{product.rating}</span>
                 </div>
                 <div className="w-px h-4 bg-accent/20" />
-                <span className="text-sm text-orange-400/40">128 avaliações</span>
+                <span className="text-sm text-orange-400/40">{reviewCount} avaliações</span>
               </div>
 
               {/* Pricing */}
@@ -182,9 +194,9 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               {/* Trust badges */}
               <div className="flex flex-wrap gap-5 mb-6">
                 {[
-                  { Icon: Shield, label: "Garantia 3 Anos" },
-                  { Icon: Truck, label: "Envio Grátis" },
-                  { Icon: Package, label: "Devolução 30 dias" },
+                  { Icon: Shield, label: TRUST.warranty },
+                  { Icon: Truck, label: TRUST.shippingFree },
+                  { Icon: Package, label: TRUST.returns },
                 ].map(({ Icon, label }) => (
                   <div key={label} className="flex items-center gap-2 text-orange-400/40">
                     <Icon size={15} />
@@ -194,46 +206,56 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               </div>
 
               {/* CTA */}
-              <div className="flex gap-3 mt-auto">
+              <div className="flex flex-col gap-3 mt-auto">
+                <div className="flex gap-3">
+                  <motion.button
+                    whileTap={{ scale: 0.97 }}
+                    onClick={handleAddToCart}
+                    className={cn(
+                      "flex-1 h-14 rounded-2xl font-bold text-base transition-all duration-400 flex items-center justify-center gap-3",
+                      isAdded
+                        ? "bg-emerald-500 text-white"
+                        : "bg-accent text-[#0A0E1A] hover:brightness-110 shadow-lg shadow-accent/15"
+                    )}
+                  >
+                    <AnimatePresence mode="wait">
+                      {isAdded ? (
+                        <motion.span
+                          key="ok"
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="flex items-center gap-2"
+                        >
+                          <Check size={20} />
+                          No Carrinho!
+                        </motion.span>
+                      ) : (
+                        <motion.span
+                          key="add"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="flex items-center gap-2"
+                        >
+                          <ShoppingCart size={20} />
+                          Adicionar ao Carrinho
+                        </motion.span>
+                      )}
+                    </AnimatePresence>
+                  </motion.button>
+                  <button className="w-14 h-14 rounded-2xl bg-accent/5 border border-accent/10 flex items-center justify-center text-orange-400/50 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
+                    <Heart size={22} />
+                  </button>
+                </div>
                 <motion.button
                   whileTap={{ scale: 0.97 }}
-                  onClick={handleAddToCart}
-                  className={cn(
-                    "flex-1 h-14 rounded-2xl font-bold text-base transition-all duration-400 flex items-center justify-center gap-3",
-                    isAdded
-                      ? "bg-emerald-500 text-white"
-                      : "bg-accent text-[#0A0E1A] hover:brightness-110 shadow-lg shadow-accent/15"
-                  )}
+                  onClick={handleBuyNow}
+                  className="w-full h-12 rounded-2xl font-bold text-sm bg-emerald-600 text-white hover:bg-emerald-500 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20"
                 >
-                  <AnimatePresence mode="wait">
-                    {isAdded ? (
-                      <motion.span
-                        key="ok"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="flex items-center gap-2"
-                      >
-                        <Check size={20} />
-                        No Carrinho!
-                      </motion.span>
-                    ) : (
-                      <motion.span
-                        key="add"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="flex items-center gap-2"
-                      >
-                        <ShoppingCart size={20} />
-                        Adicionar ao Carrinho
-                      </motion.span>
-                    )}
-                  </AnimatePresence>
+                  <Zap size={18} />
+                  Comprar Agora
                 </motion.button>
-                <button className="w-14 h-14 rounded-2xl bg-accent/5 border border-accent/10 flex items-center justify-center text-orange-400/50 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-                  <Heart size={22} />
-                </button>
               </div>
             </div>
           </div>
