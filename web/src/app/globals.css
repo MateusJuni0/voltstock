@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@source "../components";
-@source "../app";
+@source "../";
 
 @theme {
   --color-foreground: #FED7AA;

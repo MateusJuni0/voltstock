@@ -130,11 +130,13 @@ const Waves: React.FC<WavesProps> = ({
   const linesRef = useRef<any[]>([]);
   const mouseRef = useRef({ x: -1000, y: -1000, lx: -1000, ly: -1000, sx: 0, sy: 0, v: 0, vs: 0, a: 0, r: 0 });
 
+  const isVisibleRef = useRef(true);
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     ctxRef.current = canvas.getContext('2d');
-    
+
     const handleResize = () => {
       if (!containerRef.current) return;
       const { width, height, left, top } = containerRef.current.getBoundingClientRect();
@@ -153,10 +155,24 @@ const Waves: React.FC<WavesProps> = ({
     };
     window.addEventListener('mousemove', handleMouseMove);
 
+    // Pause animation when not visible to save CPU/GPU
+    let observer: IntersectionObserver | undefined;
+    if (containerRef.current) {
+      observer = new IntersectionObserver(
+        ([entry]) => { isVisibleRef.current = entry.isIntersecting; },
+        { threshold: 0 }
+      );
+      observer.observe(containerRef.current);
+    }
+
     let animationId: number;
     let time = 0;
 
     const render = () => {
+      animationId = requestAnimationFrame(render);
+
+      if (!isVisibleRef.current) return;
+
       const ctx = ctxRef.current;
       if (!ctx) return;
       const { width, height } = boundingRef.current;
@@ -178,7 +194,7 @@ const Waves: React.FC<WavesProps> = ({
         for (let j = 0; j < yCount; j++) {
           const x = i * xGap;
           const y = j * yGap;
-          
+
           const noiseValue = noiseRef.current.perlin2(i * 0.1 + time * waveSpeedX, j * 0.1 + time * waveSpeedY);
           const offsetX = noiseValue * waveAmpX;
           const offsetY = noiseValue * waveAmpY;
@@ -204,7 +220,6 @@ const Waves: React.FC<WavesProps> = ({
       }
 
       time++;
-      animationId = requestAnimationFrame(render);
     };
 
     render();
@@ -213,6 +228,7 @@ const Waves: React.FC<WavesProps> = ({
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(animationId);
+      observer?.disconnect();
     };
   }, [lineColor, backgroundColor, waveSpeedX, waveSpeedY, waveAmpX, waveAmpY, xGap, yGap, maxCursorMove]);
 
