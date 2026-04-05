@@ -2971,7 +2971,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
     "brand": "NVIDIA",
     "inStock": true,
-    "stockCount": 50
+    "stockCount": 2
   },
   {
     "id": 122,
@@ -2991,7 +2991,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.amd.com/en/products/graphics/amd-radeon-rx-9070-xt",
     "brand": "AMD",
     "inStock": true,
-    "stockCount": 50
+    "stockCount": 4
   },
   {
     "id": 123,
@@ -3013,7 +3013,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5070-ti/",
     "brand": "NVIDIA",
     "inStock": true,
-    "stockCount": 42
+    "stockCount": 5
   },
   {
     "id": 124,
@@ -3034,7 +3034,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.asus.com/motherboards-components/graphics-cards/rog-strix/",
     "brand": "ASUS",
     "inStock": true,
-    "stockCount": 15
+    "stockCount": 3
   },
   {
     "id": 125,
@@ -3055,7 +3055,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.msi.com/Graphics-Card",
     "brand": "MSI",
     "inStock": true,
-    "stockCount": 29
+    "stockCount": 7
   },
   {
     "id": 126,
@@ -3075,7 +3075,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.sapphiretech.com/en/consumer/nitro-rx-9070",
     "brand": "Sapphire",
     "inStock": true,
-    "stockCount": 51
+    "stockCount": 6
   },
   
   {
@@ -3121,7 +3121,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
     "brand": "AMD",
     "inStock": true,
-    "stockCount": 11
+    "stockCount": 8
   },
   {
     "id": 130,
@@ -3141,7 +3141,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.intel.com/content/www/us/en/products/sku/241046/intel-core-ultra-9-processor-285k/specifications.html",
     "brand": "Intel",
     "inStock": true,
-    "stockCount": 66
+    "stockCount": 6
   },
   {
     "id": 131,
@@ -3268,7 +3268,7 @@ export const products: Product[] = [
     "supplier_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
     "brand": "AMD",
     "inStock": true,
-    "stockCount": 50
+    "stockCount": 4
   },
   // =============================================
   // MOTHERBOARDS (IDs 137-144)
@@ -3852,27 +3852,6 @@ export const products: Product[] = [
     "stockCount": 34
   },
   {
-    "id": 164,
-    "name": "EVGA SuperNOVA 1000 G7",
-    "category": "Fontes de Alimentação",
-    "price": "189,00 €",
-    "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop"],
-    "description": "Fonte 80 PLUS Gold totalmente modular com design compacto de 150mm. Protecções OVP, UVP, OCP, OPP, SCP e OTP completas.",
-    "badge": "Compacta 1000W",
-    "features": [
-      { "name": "Potência", "value": "1000 W" },
-      { "name": "Eficiência", "value": "80+ Gold" },
-      { "name": "Comprimento", "value": "150 mm (compacta)" },
-      { "name": "Garantia", "value": "10 anos" }
-    ],
-    "supplier_url": "https://www.evga.com/products/productlist.aspx?type=10",
-    "brand": "EVGA",
-    "inStock": true,
-    "stockCount": 19
-  },
-  {
     "id": 165,
     "name": "Corsair RM850x 2024",
     "category": "Fontes de Alimentação",
@@ -4002,27 +3981,6 @@ export const products: Product[] = [
     "stockCount": 19
   },
   {
-    "id": 171,
-    "name": "NZXT H7 Flow RGB",
-    "category": "Caixas",
-    "price": "149,00 €",
-    "oldPrice": "169,00 €",
-    "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1600348759986-976292d76fcc?q=80&w=800&auto=format&fit=crop"],
-    "description": "Caixa airflow com frente perfurada e 4 ventoinhas RGB F-Series incluídas. Painel lateral em vidro temperado e cable management excepcional.",
-    "features": [
-      { "name": "Formato", "value": "Mid-Tower ATX" },
-      { "name": "Ventoinhas", "value": "4x 120mm RGB incluídas" },
-      { "name": "Radiadores", "value": "360mm top + 360mm front" },
-      { "name": "GPU Máx.", "value": "400 mm" }
-    ],
-    "supplier_url": "https://nzxt.com/product/h7-flow-rgb",
-    "brand": "NZXT",
-    "inStock": true,
-    "stockCount": 10
-  },
-  {
     "id": 172,
     "name": "Corsair 6500X",
     "category": "Caixas",
@@ -4085,28 +4043,6 @@ export const products: Product[] = [
     "stockCount": 25
   },
   {
-    "id": 175,
-    "name": "Cooler Master HAF 700 EVO",
-    "category": "Caixas",
-    "price": "299,00 €",
-    "oldPrice": "349,00 €",
-    "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
-    "description": "Caixa High Air Flow de dimensões generosas com ecrã Edge Lit de 200mm integrado. Suporte para E-ATX e GPU vertical com riser incluído.",
-    "badge": "Airflow Extremo",
-    "features": [
-      { "name": "Formato", "value": "Full-Tower E-ATX" },
-      { "name": "Display", "value": "Edge Lit 200mm" },
-      { "name": "GPU Vertical", "value": "Riser PCIe 4.0 incluído" },
-      { "name": "Ventoinhas", "value": "6x incluídas" }
-    ],
-    "supplier_url": "https://www.coolermaster.com/catalog/cases/full-tower/haf-700-evo/",
-    "brand": "Cooler Master",
-    "inStock": true,
-    "stockCount": 6
-  },
-  {
     "id": 176,
     "name": "SSUPD Meshroom S",
     "category": "Caixas",
@@ -4129,28 +4065,6 @@ export const products: Product[] = [
   // =============================================
   // REFRIGERAÇÃO (IDs 177-184)
   // =============================================
-  {
-    "id": 177,
-    "name": "NZXT Kraken Elite 360 RGB",
-    "category": "Refrigeração",
-    "price": "299,00 €",
-    "oldPrice": "329,00 €",
-    "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1587202372583-49330a15584d?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1555618568-bfb3ed893e04?q=80&w=800&auto=format&fit=crop"],
-    "description": "AIO premium com ecrã LCD de 2.36'' customizável no pump head. Ventoinhas F120 RGB Core e compatibilidade LGA 1851 / AM5 nativa.",
-    "badge": "LCD Display",
-    "features": [
-      { "name": "Radiador", "value": "360 mm" },
-      { "name": "Display", "value": "LCD 2.36'' no pump" },
-      { "name": "Ventoinhas", "value": "3x F120 RGB Core" },
-      { "name": "Socket", "value": "LGA 1851 / AM5 / AM4" }
-    ],
-    "supplier_url": "https://nzxt.com/product/kraken-elite-360-rgb",
-    "brand": "NZXT",
-    "inStock": true,
-    "stockCount": 30
-  },
   {
     "id": 178,
     "name": "Corsair iCUE H170i Elite LCD XT",
@@ -4254,28 +4168,6 @@ export const products: Product[] = [
     "brand": "EKWB",
     "inStock": true,
     "stockCount": 41
-  },
-  {
-    "id": 183,
-    "name": "Thermalright Peerless Assassin 120 SE",
-    "category": "Refrigeração",
-    "price": "39,00 €",
-    "oldPrice": "49,00 €",
-    "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1600348712270-5af87f58a5b7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1622957461037-f35987cfc91a?q=80&w=800&auto=format&fit=crop"],
-    "description": "O air cooler budget imbatível. Dual-tower com 6 heatpipes que desafia coolers 3x mais caros em desempenho térmico.",
-    "badge": "Budget King",
-    "features": [
-      { "name": "Tipo", "value": "Dual-tower air cooler" },
-      { "name": "Heatpipes", "value": "6x cobre" },
-      { "name": "Ventoinhas", "value": "2x TL-C12C PWM" },
-      { "name": "TDP", "value": "Até 240W" }
-    ],
-    "supplier_url": "https://www.thermalright.com/product/peerless-assassin-120-se/",
-    "brand": "Thermalright",
-    "inStock": true,
-    "stockCount": 55
   },
   {
     "id": 184,
@@ -4495,48 +4387,6 @@ export const products: Product[] = [
     "stockCount": 42
   },
   {
-    "id": 194,
-    "name": "Logitech G Pro X Superlight 2",
-    "category": "Teclados e Ratos",
-    "price": "149,00 €",
-    "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=800&auto=format&fit=crop"],
-    "description": "Rato wireless de apenas 60g com sensor HERO 2 de 44K DPI. Skates PTFE puro e bateria de 95 horas para gaming sem fios sem compromissos.",
-    "features": [
-      { "name": "Sensor", "value": "HERO 2 (44K DPI)" },
-      { "name": "Peso", "value": "60 g" },
-      { "name": "Bateria", "value": "95 horas" },
-      { "name": "Polling", "value": "2000 Hz wireless" }
-    ],
-    "supplier_url": "https://www.logitechg.com/en-us/products/gaming-mice/pro-x2-superlight-wireless-mouse.html",
-    "brand": "Logitech",
-    "inStock": true,
-    "stockCount": 16
-  },
-  {
-    "id": 195,
-    "name": "Razer Viper V3 Pro",
-    "category": "Teclados e Ratos",
-    "price": "169,00 €",
-    "oldPrice": "189,00 €",
-    "rating": 4.7,
-    "img": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop"],
-    "description": "Rato esports ultra-leve de 54g com sensor Focus Pro 35K Gen-2 e polling rate de 8000Hz via dongle incluído. O mais rápido do mercado.",
-    "badge": "8000Hz Wireless",
-    "features": [
-      { "name": "Sensor", "value": "Focus Pro 35K Gen-2" },
-      { "name": "Peso", "value": "54 g" },
-      { "name": "Polling", "value": "8000 Hz (dongle)" },
-      { "name": "Bateria", "value": "95 horas" }
-    ],
-    "supplier_url": "https://www.razer.com/gaming-mice/razer-viper-v3-pro/",
-    "brand": "Razer",
-    "inStock": true,
-    "stockCount": 20
-  },
-  {
     "id": 196,
     "name": "Keychron Q1 HE",
     "category": "Teclados e Ratos",
@@ -4643,28 +4493,6 @@ export const products: Product[] = [
   // HEADSETS E ÁUDIO (IDs 201-208)
   // =============================================
   {
-    "id": 201,
-    "name": "SteelSeries Arctis Nova Pro Wireless",
-    "category": "Headsets e Áudio",
-    "price": "349,00 €",
-    "oldPrice": "379,00 €",
-    "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop"],
-    "description": "Headset premium com base DAC e sistema de bateria dupla hot-swap. ANC activo, drivers de alta fidelidade e microfone retrátil ClearCast Gen 2.",
-    "badge": "Flagship Audio",
-    "features": [
-      { "name": "Drivers", "value": "Neodímio 40mm Hi-Fi" },
-      { "name": "ANC", "value": "Activo 4-mic" },
-      { "name": "Bateria", "value": "Dual hot-swap (44h total)" },
-      { "name": "DAC", "value": "Base DAC + GameDAC Gen 2" }
-    ],
-    "supplier_url": "https://steelseries.com/gaming-headsets/arctis-nova-pro-wireless",
-    "brand": "SteelSeries",
-    "inStock": true,
-    "stockCount": 73
-  },
-  {
     "id": 202,
     "name": "Audeze Maxwell Wireless",
     "category": "Headsets e Áudio",
@@ -4683,28 +4511,6 @@ export const products: Product[] = [
     "brand": "Audeze",
     "inStock": true,
     "stockCount": 25
-  },
-  {
-    "id": 203,
-    "name": "HyperX Cloud III Wireless",
-    "category": "Headsets e Áudio",
-    "price": "149,00 €",
-    "oldPrice": "169,00 €",
-    "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop"],
-    "description": "Headset wireless de referência para gaming com drivers de 53mm. Microfone destacável com cancelamento de ruído e até 120h de bateria.",
-    "badge": "Duração Máxima",
-    "features": [
-      { "name": "Drivers", "value": "53mm com ímanes de neodímio" },
-      { "name": "Bateria", "value": "120 horas" },
-      { "name": "Microfone", "value": "Destacável com noise cancelling" },
-      { "name": "Peso", "value": "330 g" }
-    ],
-    "supplier_url": "https://www.hyperxgaming.com/en/headsets/cloud-iii-wireless",
-    "brand": "HyperX",
-    "inStock": true,
-    "stockCount": 11
   },
   {
     "id": 204,
@@ -4768,47 +4574,6 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 17
   },
-  {
-    "id": 207,
-    "name": "Logitech G PRO X 2 Lightspeed",
-    "category": "Headsets e Áudio",
-    "price": "199,00 €",
-    "oldPrice": "229,00 €",
-    "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"],
-    "description": "Headset pro-grade com drivers de grafeno de 50mm e DTS Headphone:X 2.0. Ligação Lightspeed wireless, Bluetooth 5.3 e cabo USB-C.",
-    "features": [
-      { "name": "Drivers", "value": "Grafeno PRO-G 50mm" },
-      { "name": "Wireless", "value": "Lightspeed + BT 5.3" },
-      { "name": "Audio", "value": "DTS Headphone:X 2.0" },
-      { "name": "Bateria", "value": "50 horas" }
-    ],
-    "supplier_url": "https://www.logitechg.com/en-us/products/gaming-audio/pro-x-2-lightspeed-wireless-headset.html",
-    "brand": "Logitech",
-    "inStock": true,
-    "stockCount": 68
-  },
-  {
-    "id": 208,
-    "name": "JBL Quantum 910 Wireless",
-    "category": "Headsets e Áudio",
-    "price": "249,00 €",
-    "rating": 4.4,
-    "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop"],
-    "description": "Headset com head tracking JBL QuantumSPHERE 360 para áudio espacial adaptativo. ANC activo e Dual Wireless para 2 fontes simultâneas.",
-    "features": [
-      { "name": "Drivers", "value": "50mm JBL Quantum" },
-      { "name": "Espacialização", "value": "QuantumSPHERE 360 head tracking" },
-      { "name": "ANC", "value": "Activo com TalkThru" },
-      { "name": "Wireless", "value": "Dual: 2.4GHz + BT 5.2" }
-    ],
-    "supplier_url": "https://www.jbl.com/gaming-headsets/QUANTUM-910-WIRELESS.html",
-    "brand": "JBL",
-    "inStock": true,
-    "stockCount": 41
-  },
   // =============================================
   // CADEIRAS GAMING (IDs 209-216)
   // =============================================
@@ -4833,69 +4598,6 @@ export const products: Product[] = [
     "brand": "Secretlab",
     "inStock": true,
     "stockCount": 44
-  },
-  {
-    "id": 210,
-    "name": "Herman Miller x Logitech Embody",
-    "category": "Cadeiras Gaming",
-    "price": "1.649,00 €",
-    "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop"],
-    "description": "Colaboração entre Herman Miller e Logitech G. Espuma de arrefecimento de cobre, PostureFit e 12 anos de garantia. A cadeira definitiva para gamers profissionais.",
-    "badge": "Ultra Premium",
-    "features": [
-      { "name": "Ergonomia", "value": "PostureFit SL" },
-      { "name": "Espuma", "value": "Arrefecimento cobre" },
-      { "name": "Garantia", "value": "12 anos" },
-      { "name": "Carga Máx.", "value": "136 kg" }
-    ],
-    "supplier_url": "https://www.hermanmiller.com/products/gaming/embody-gaming-chair/",
-    "brand": "Logitech",
-    "inStock": true,
-    "stockCount": 55
-  },
-  {
-    "id": 211,
-    "name": "Razer Iskur V2",
-    "category": "Cadeiras Gaming",
-    "price": "499,00 €",
-    "oldPrice": "549,00 €",
-    "rating": 4.6,
-    "img": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=800&auto=format&fit=crop"],
-    "description": "Cadeira gaming com suporte lombar adaptativo exclusivo Razer. Couro sintético EPU e espuma de alta densidade moldada para sessões marathon.",
-    "features": [
-      { "name": "Material", "value": "Couro sintético EPU" },
-      { "name": "Lombar", "value": "Adaptativo 6 pontos" },
-      { "name": "Reclinação", "value": "90° - 152°" },
-      { "name": "Carga Máx.", "value": "136 kg" }
-    ],
-    "supplier_url": "https://www.razer.com/gaming-chairs/razer-iskur-v2",
-    "brand": "Razer",
-    "inStock": true,
-    "stockCount": 47
-  },
-  {
-    "id": 212,
-    "name": "noblechairs HERO ST",
-    "category": "Cadeiras Gaming",
-    "price": "449,00 €",
-    "rating": 4.5,
-    "img": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=800&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1616627052149-22c4580c3ad4?q=80&w=800&auto=format&fit=crop"],
-    "description": "Cadeira gaming alemã premium com acabamento híbrido couro/tecido. Sistema lombar integrado de 4 vias e mecanismo de inclinação suave.",
-    "badge": "Made in Germany",
-    "features": [
-      { "name": "Material", "value": "Couro PU híbrido" },
-      { "name": "Lombar", "value": "Integrado 4 vias" },
-      { "name": "Chassis", "value": "Aço reforçado" },
-      { "name": "Carga Máx.", "value": "150 kg" }
-    ],
-    "supplier_url": "https://www.noblechairs.com/hero-st",
-    "brand": "noblechairs",
-    "inStock": true,
-    "stockCount": 76
   },
   {
     "id": 213,
