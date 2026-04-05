@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { persist, createJSONStorage } from 'zustand/middleware';
 import { Product } from '@/data/products';
 
 interface CartItem extends Product {
@@ -8,9 +8,6 @@ interface CartItem extends Product {
 
 interface CartStore {
   items: CartItem[];
-  /** True once Zustand has rehydrated from localStorage. */
-  _hasHydrated: boolean;
-  setHasHydrated: (state: boolean) => void;
   addItem: (product: Product) => void;
   removeItem: (productId: number) => void;
   updateQuantity: (productId: number, quantity: number) => void;
@@ -22,8 +19,6 @@ export const useCart = create<CartStore>()(
   persist(
     (set, get) => ({
       items: [],
-      _hasHydrated: false,
-      setHasHydrated: (state) => set({ _hasHydrated: state }),
 
       addItem: (product) => {
         const currentItems = get().items;
@@ -67,9 +62,8 @@ export const useCart = create<CartStore>()(
     }),
     {
       name: 'voltstock-cart',
-      onRehydrateStorage: () => (state) => {
-        state?.setHasHydrated(true);
-      },
+      storage: createJSONStorage(() => localStorage),
+      partialize: (state) => ({ items: state.items }),
     }
   )
 );

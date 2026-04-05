@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,8 +15,11 @@ import {
   Truck,
   ShieldCheck,
   Loader2,
+  Lock,
 } from "lucide-react";
 import Image from "next/image";
+import { PaymentLogos } from "@/components/PaymentLogos";
+import { SecurityBadge } from "@/components/SecurityBadge";
 
 // ---------------------------------------------------------------------------
 // Schema
@@ -298,8 +301,10 @@ function StepPayment({ shippingData, onBack }: Step2Props) {
         window.location.href = data.url;
       }
     } catch (err: unknown) {
-      const message =
-        err instanceof Error ? err.message : "Erro inesperado";
+      const raw = err instanceof Error ? err.message : "Erro inesperado";
+      const message = raw.includes("API Key") || raw.includes("Stripe") || raw.includes("startsWith")
+        ? "Pagamentos online temporariamente indisponíveis. Contacte-nos via WhatsApp para finalizar a sua encomenda."
+        : raw;
       setError(message);
     } finally {
       setLoading(false);
@@ -406,6 +411,14 @@ function StepPayment({ shippingData, onBack }: Step2Props) {
           {loading ? "A processar..." : "Pagar com Stripe"}
         </button>
 
+        {/* Trust strip below submit */}
+        <div className="flex items-center justify-center gap-2 text-accent/30 text-xs py-2">
+          <Lock size={12} className="text-green-400/60" />
+          <span>
+            Pagamento 100% Seguro | SSL Encriptado | Dados Protegidos
+          </span>
+        </div>
+
         <button
           onClick={onBack}
           disabled={loading}
@@ -414,6 +427,14 @@ function StepPayment({ shippingData, onBack }: Step2Props) {
           <ChevronLeft size={16} />
           Voltar
         </button>
+      </div>
+
+      {/* Payment logos + satisfaction guarantee */}
+      <div className="pt-4 space-y-3">
+        <PaymentLogos size="sm" className="justify-center" />
+        <p className="text-center text-[11px] text-accent/25">
+          Satisfação Garantida — 14 dias para devoluções sem perguntas
+        </p>
       </div>
     </div>
   );
@@ -473,10 +494,7 @@ function OrderSidebar() {
         </div>
       </div>
 
-      <div className="flex items-center gap-2 text-xs text-accent/30 pt-2">
-        <ShieldCheck size={14} />
-        <span>Pagamento seguro via Stripe</span>
-      </div>
+      <SecurityBadge className="w-full" />
     </div>
   );
 }
@@ -487,11 +505,18 @@ function OrderSidebar() {
 
 export default function CheckoutPage() {
   const router = useRouter();
-  const { items, _hasHydrated } = useCart();
+  const { items } = useCart();
   const [step, setStep] = useState(1);
+  const [hydrated, setHydrated] = useState(false);
   const [shippingData, setShippingData] = useState<ShippingFormData | null>(
     null,
   );
+
+  useEffect(() => {
+    // Manually trigger Zustand rehydration and mark as ready.
+    useCart.persist.rehydrate();
+    setHydrated(true);
+  }, []);
 
   const form = useForm<ShippingFormData>({
     resolver: zodResolver(shippingSchema),
@@ -507,11 +532,7 @@ export default function CheckoutPage() {
     },
   });
 
-  // Wait for Zustand to rehydrate from localStorage before checking cart.
-  // Without this guard, the checkout page sees an empty cart on the first
-  // client render (before persist middleware restores the items) and
-  // incorrectly redirects the user to /produtos.
-  if (!_hasHydrated) {
+  if (!hydrated) {
     return (
       <main className="flex-1 flex items-center justify-center min-h-[60vh]">
         <div className="flex flex-col items-center gap-4 text-accent/40">
