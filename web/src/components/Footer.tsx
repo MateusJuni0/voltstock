@@ -211,7 +211,7 @@ export function Footer() {
         <div className="pt-6 border-t border-white/5 flex flex-col items-center gap-5">
           {/* Company legal info */}
           <p className="text-[11px] text-orange-400/30 text-center">
-            CMTecnologia, Lda. | NIF: [A PREENCHER] | Portugal
+            CMTecnologia, Lda. | NIF: 311848710 | Portugal
           </p>
 
           {/* Livro de Reclamações badge */}

@@ -2740,9 +2740,9 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.8,
-    "img": "https://assets2.razerzone.com/images/pnx.assets/4bf75970ea0be7bddc04b98b7a39d1dd/razer-iskur-v2-hero-mobile.webp",
+    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-375-01.jpg",
     "gallery": [
-      "https://assets2.razerzone.com/images/pnx.assets/4bf75970ea0be7bddc04b98b7a39d1dd/razer-iskur-v2-hero-mobile.webp"
+      "https://c1.neweggimages.com/productimage/nb640/26-153-375-01.jpg"
     ],
     "description": "Suporte lombar adaptativo com zona lombar totalmente ajustável e espuma de memória de alta densidade. Apoios de braço 4D e couro sintético EPU premium.",
     "badge": "Lombar Adaptivo",
@@ -3837,8 +3837,8 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.7,
-    "img": "https://www.bequiet.com/volumes/pim/powersupply/darkpower/darkpower13/360/850W/001.jpg",
-    "gallery": ["https://www.bequiet.com/volumes/pim/powersupply/darkpower/darkpower13/360/850W/001.jpg"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A68VS23012716ZPU29A.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A68VS23012716ZPU29A.jpg"],
     "description": "Fonte premium silenciosa com topologia full-bridge e LLC. Modo Overclocking Key para ajuste de tensões e ventoinha Silent Wings 4.",
     "features": [
       { "name": "Potência", "value": "850 W" },
@@ -3920,8 +3920,8 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "149,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-065-167-V01.jpg",
-    "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-065-167-V01.jpg"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/17-580-034-V17.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-580-034-V17.jpg"],
     "description": "Fonte 80 PLUS Platinum com UltraFlex cables e ventoinha FDB de 140mm. Design escandinavo minimalista com 10 anos de garantia.",
     "features": [
       { "name": "Potência", "value": "860 W" },
@@ -3986,8 +3986,8 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "219,00 €",
     "rating": 4.7,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Cases/CC-9011312-WW/Gallery/6500X_BLK_01.webp",
-    "gallery": ["https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Cases/CC-9011312-WW/Gallery/6500X_BLK_01.webp"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/11-139-219-01.png",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-139-219-01.png"],
     "description": "Caixa dual-chamber com vidro temperado em dois painéis para showcase total. Motherboard invertida e layout de cable management oculto.",
     "badge": "Dual Glass",
     "features": [
@@ -4008,8 +4008,8 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-854-136-V01.jpg",
-    "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-854-136-V01.jpg"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A4RES2303280LL2R2D9.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A4RES2303280LL2R2D9.jpg"],
     "description": "Full-tower espaçosa com suporte para GPUs até 480mm e radiadores de 420mm. Painéis magnéticos de fácil remoção e amplo espaço interno.",
     "features": [
       { "name": "Formato", "value": "Full-Tower ATX" },
@@ -4028,8 +4028,8 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "189,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-734-019-V01.jpg",
-    "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-734-019-V01.jpg"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/A68VS201113y09Tq.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/A68VS201113y09Tq.jpg"],
     "description": "Caixa modular com frente intercambiável entre mesh e painel sólido silencioso. 3 ventoinhas Silent Wings 4 e painéis com isolamento acústico.",
     "features": [
       { "name": "Formato", "value": "Mid-Tower ATX" },
@@ -4048,8 +4048,8 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "129,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/2AM-030R-00034-V01.jpg",
-    "gallery": ["https://c1.neweggimages.com/productimage/nb640/2AM-030R-00034-V01.jpg"],
+    "img": "https://ssupd.co/cdn/shop/files/BK-5_13c43442-3cb4-435e-9f85-2675974facc3.png?v=1684638001",
+    "gallery": ["https://ssupd.co/cdn/shop/files/BK-5_13c43442-3cb4-435e-9f85-2675974facc3.png?v=1684638001"],
     "description": "Caixa Mini-ITX compacta com mesh em todas as faces para airflow máximo. Apenas 14.7L de volume com suporte para GPU de 3 slots.",
     "features": [
       { "name": "Formato", "value": "Mini-ITX SFF (14.7L)" },
@@ -4175,8 +4175,8 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "159,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/2YM-000Z-000A4-V01.jpg",
-    "gallery": ["https://c1.neweggimages.com/productimage/nb640/2YM-000Z-000A4-V01.jpg"],
+    "img": "https://c1.neweggimages.com/productimage/nb640/AFSTS230713zSCOJ.jpg",
+    "gallery": ["https://c1.neweggimages.com/productimage/nb640/AFSTS230713zSCOJ.jpg"],
     "description": "AIO 360mm com pump Asetek de 8ª geração e ventoinhas Trinity Infinity Mirror RGB. Design minimalista com performance de topo.",
     "features": [
       { "name": "Radiador", "value": "360 mm" },

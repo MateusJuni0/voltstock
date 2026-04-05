@@ -51,6 +51,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.steelcase.com" },
       { protocol: "https", hostname: "secretlab.co" },
       { protocol: "https", hostname: "www.ikea.com" },
+      // SFF cases
+      { protocol: "https", hostname: "ssupd.co" },
       // Wildcard patterns
       { protocol: "https", hostname: "**.neweggimages.com" },
     ],
