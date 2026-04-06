@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStripe, formatAmountForStripe } from "@/lib/stripe";
+import { products } from "@/data/products";
 
 interface CartItemPayload {
   id: number;
@@ -28,6 +29,10 @@ interface CheckoutBody {
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
 
+function parseProductPrice(priceStr: string): number {
+  return parseFloat(priceStr.replace(/[^\d,]/g, "").replace(",", "."));
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body: CheckoutBody = await request.json();
@@ -39,21 +44,51 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Map cart items to Stripe line items
-    const lineItems = body.items.map((item) => ({
-      price_data: {
-        currency: "eur",
-        product_data: {
-          name: item.name,
-          images: item.img.startsWith("http") ? [item.img] : [],
+    // Validate each item against the real product catalog (server-side price check)
+    const lineItems = body.items.map((item) => {
+      const catalogProduct = products.find((p) => p.id === item.id);
+
+      if (!catalogProduct) {
+        throw new Error(`Produto com ID ${item.id} não encontrado no catálogo.`);
+      }
+
+      if (catalogProduct.inStock === false) {
+        throw new Error(`Produto "${catalogProduct.name}" está esgotado.`);
+      }
+
+      if (item.quantity < 1 || item.quantity > 10) {
+        throw new Error(`Quantidade inválida para "${catalogProduct.name}". Máximo: 10 unidades.`);
+      }
+
+      // Use the SERVER-SIDE price from the catalog, NEVER the client-sent price
+      const serverPrice = parseProductPrice(catalogProduct.price);
+
+      return {
+        price_data: {
+          currency: "eur",
+          product_data: {
+            name: catalogProduct.name,
+            images: catalogProduct.img.startsWith("http") ? [catalogProduct.img] : [],
+          },
+          unit_amount: formatAmountForStripe(serverPrice),
         },
-        unit_amount: formatAmountForStripe(item.price),
-      },
-      quantity: item.quantity,
-    }));
+        quantity: item.quantity,
+      };
+    });
+
+    // Calculate shipping server-side based on actual subtotal
+    const subtotal = lineItems.reduce(
+      (acc, item) => acc + (item.price_data.unit_amount / 100) * item.quantity,
+      0,
+    );
+    const postalCode = body.shippingAddress.postalCode || "";
+    const isIslands = postalCode.startsWith("9");
+    const shippingCost = isIslands
+      ? (subtotal >= 100 ? 0 : 9.99)
+      : (subtotal >= 50 ? 0 : 4.99);
 
     // Add shipping as a separate line item if > 0
-    if (body.shippingCost > 0) {
+    if (shippingCost > 0) {
       lineItems.push({
         price_data: {
           currency: "eur",
@@ -61,7 +96,7 @@ export async function POST(request: NextRequest) {
             name: "Envio",
             images: [],
           },
-          unit_amount: formatAmountForStripe(body.shippingCost),
+          unit_amount: formatAmountForStripe(shippingCost),
         },
         quantity: 1,
       });
