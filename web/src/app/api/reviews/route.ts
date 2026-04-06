@@ -96,7 +96,7 @@ export async function GET(request: NextRequest): Promise<NextResponse<ApiRespons
     const supabase = await createRouteSupabase();
 
     const { data, error } = await supabase
-      .from("reviews")
+      .from("product_reviews")
       .select("id, product_id, author_name, rating, title, body, is_verified_purchase, created_at")
       .eq("product_id", productId)
       .eq("is_approved", true)
@@ -172,7 +172,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
 
     // Check if user already reviewed this product
     const { data: existingReview } = await supabase
-      .from("reviews")
+      .from("product_reviews")
       .select("id")
       .eq("product_id", product_id)
       .eq("user_id", user.id)
@@ -184,7 +184,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
 
     // Insert review
     const { data: newReview, error: insertError } = await supabase
-      .from("reviews")
+      .from("product_reviews")
       .insert({
         product_id,
         user_id: user.id,
