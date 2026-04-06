@@ -47,6 +47,7 @@ const footerLinks = {
     { label: "Ver Tudo", href: "/produtos" },
   ],
   Suporte: [
+    { label: "Perguntas Frequentes", href: "/faq" },
     { label: "Pagamentos (MBWay)", href: "/envios" },
     { label: "Envios e Entregas", href: "/envios" },
     { label: "Garantias e Devoluções", href: "/devolucoes" },

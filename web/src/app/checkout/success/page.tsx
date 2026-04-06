@@ -10,6 +10,7 @@ import {
   ClipboardList,
   Loader2,
   AlertTriangle,
+  FileText,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -232,6 +233,15 @@ export default function CheckoutSuccessPage() {
           >
             <ClipboardList size={16} />
             Ver Encomendas
+          </Link>
+
+          <Link
+            href={`/api/invoice?session_id=${sessionId}`}
+            target="_blank"
+            className="w-full h-12 rounded-2xl bg-accent/5 border border-accent/10 text-accent/60 font-medium text-sm flex items-center justify-center gap-2 hover:bg-accent/10 transition-colors"
+          >
+            <FileText size={16} />
+            Descarregar Factura
           </Link>
         </motion.div>
       </div>
