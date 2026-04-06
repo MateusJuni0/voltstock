@@ -138,9 +138,9 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "309,00 €",
     "rating": 4.5,
-    "img": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-hero-100vp-d.jpg",
+    "img": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg",
     "gallery": [
-      "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-hero-100vp-d.jpg"
+      "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg"
     ],
     "description": "A placa gráfica mais acessível da série RTX 40 com 8GB GDDR6 e suporte completo a DLSS 3. Perfeita para gaming 1080p com ray tracing ativado.",
     "badge": "Melhor Custo-Benefício",
@@ -1352,9 +1352,9 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_1.png",
+    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
     "gallery": [
-      "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_1.png"
+      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
     ],
     "description": "1000W com certificação 80+ Gold e tamanho compacto de 150mm. Totalmente modular com proteções OVP, UVP, OCP, OPP, SCP e OTP.",
     "badge": "Compacta 1000W",
