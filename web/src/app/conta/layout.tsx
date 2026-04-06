@@ -9,6 +9,7 @@ import {
   MapPin,
   Heart,
   User,
+  RotateCcw,
   LogOut,
   Menu,
   X,
@@ -26,6 +27,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { label: "Painel", href: "/conta", icon: LayoutDashboard },
   { label: "Encomendas", href: "/conta/encomendas", icon: Package },
+  { label: "Devolucoes", href: "/conta/devolucoes", icon: RotateCcw },
   { label: "Moradas", href: "/conta/moradas", icon: MapPin },
   { label: "Lista de Desejos", href: "/conta/wishlist", icon: Heart },
   { label: "Perfil", href: "/conta/perfil", icon: User },

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Package, Heart, MapPin, ArrowRight, ShoppingBag } from "lucide-react";
+import { Package, Heart, MapPin, RotateCcw, ArrowRight, ShoppingBag } from "lucide-react";
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 import { createClient } from "@/lib/supabase/client";
@@ -49,7 +49,7 @@ const itemVariants = {
 
 export default function ContaDashboardPage() {
   const { user, profile, loading } = useAuth();
-  const [stats, setStats] = useState({ orders: 0, wishlist: 0, addresses: 0 });
+  const [stats, setStats] = useState({ orders: 0, wishlist: 0, addresses: 0, returns: 0 });
 
   useEffect(() => {
     if (!user) return;
@@ -59,16 +59,18 @@ export default function ContaDashboardPage() {
       const userId = user!.id;
 
       // Fetch counts in parallel, gracefully fallback to 0 if tables don't exist
-      const [ordersRes, wishlistRes, addressesRes] = await Promise.allSettled([
+      const [ordersRes, wishlistRes, addressesRes, returnsRes] = await Promise.allSettled([
         supabase.from("orders").select("id", { count: "exact", head: true }).eq("user_id", userId),
         supabase.from("wishlists").select("id", { count: "exact", head: true }).eq("user_id", userId),
         supabase.from("addresses").select("id", { count: "exact", head: true }).eq("user_id", userId),
+        supabase.from("return_requests").select("id", { count: "exact", head: true }).eq("user_id", userId),
       ]);
 
       setStats({
         orders: ordersRes.status === "fulfilled" ? (ordersRes.value.count ?? 0) : 0,
         wishlist: wishlistRes.status === "fulfilled" ? (wishlistRes.value.count ?? 0) : 0,
         addresses: addressesRes.status === "fulfilled" ? (addressesRes.value.count ?? 0) : 0,
+        returns: returnsRes.status === "fulfilled" ? (returnsRes.value.count ?? 0) : 0,
       });
     }
 
@@ -100,9 +102,10 @@ export default function ContaDashboardPage() {
       {/* Stats */}
       <motion.div
         variants={itemVariants}
-        className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10"
       >
         <StatCard label="Total de encomendas" value={stats.orders} icon={Package} href="/conta/encomendas" />
+        <StatCard label="Devolucoes" value={stats.returns} icon={RotateCcw} href="/conta/devolucoes" />
         <StatCard label="Produtos na wishlist" value={stats.wishlist} icon={Heart} href="/conta/wishlist" />
         <StatCard label="Moradas guardadas" value={stats.addresses} icon={MapPin} href="/conta/moradas" />
       </motion.div>
@@ -110,9 +113,10 @@ export default function ContaDashboardPage() {
       {/* Quick links */}
       <motion.div variants={itemVariants} className="mb-10">
         <h2 className="text-lg font-semibold text-accent/80 mb-4">Acesso rapido</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
           {[
             { label: "Ver Encomendas", href: "/conta/encomendas", icon: Package },
+            { label: "Devolucoes", href: "/conta/devolucoes", icon: RotateCcw },
             { label: "Lista de Desejos", href: "/conta/wishlist", icon: Heart },
             { label: "As Minhas Moradas", href: "/conta/moradas", icon: MapPin },
             { label: "Explorar Loja", href: "/produtos", icon: ShoppingBag },

@@ -9,11 +9,35 @@ export function Newsletter() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
+    if (!email || isSubmitting) return;
+
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Erro ao subscrever");
+      }
+
       setSubscribed(true);
-      setTimeout(() => setSubscribed(false), 3000);
+      setEmail("");
+      setTimeout(() => setSubscribed(false), 4000);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Erro ao subscrever");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -68,10 +92,13 @@ export function Newsletter() {
                 type="submit"
                 className="absolute top-2 right-2 bottom-2 px-6 bg-orange-500 text-white font-bold rounded-xl hover:bg-orange-600 transition-all flex items-center justify-center"
               >
-                {subscribed ? "Subscrito!" : <Send size={20} />}
+                {subscribed ? "Subscrito!" : isSubmitting ? "..." : <Send size={20} />}
               </button>
             </form>
             
+            {error && (
+              <p className="mt-4 text-red-400 text-sm">{error}</p>
+            )}
             <p className="mt-6 text-[11px] text-orange-400/30 uppercase tracking-widest font-bold">
               Sem spam. Apenas hardware de elite diretamente no seu e-mail.
             </p>

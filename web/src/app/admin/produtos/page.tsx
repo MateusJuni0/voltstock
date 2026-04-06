@@ -24,6 +24,7 @@ interface ProductOverride {
   ad_spend: number;
   api_overhead: number;
   in_stock: boolean;
+  stock_quantity: number;
 }
 
 interface AdminProduct {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { ProductDetail } from "@/components/ProductDetail";
+import { ProductReviews } from "@/components/ProductReviews";
 import { JsonLd } from "@/components/JsonLd";
 import { productSchema } from "@/lib/structured-data";
 import { notFound } from "next/navigation";
@@ -78,6 +79,9 @@ export default async function Page({
     <>
       <JsonLd data={productSchema(product)} />
       <ProductDetail product={product} />
+      <div className="max-w-[1280px] mx-auto px-6 pb-20">
+        <ProductReviews productId={product.id} />
+      </div>
     </>
   );
 }

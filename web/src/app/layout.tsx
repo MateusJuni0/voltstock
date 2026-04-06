@@ -15,6 +15,7 @@ import {
 } from "@/lib/structured-data";
 import { Toaster } from "sonner";
 import { CookieConsent } from "@/components/CookieConsent";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -116,6 +117,7 @@ export default function RootLayout({
       lang="pt-PT"
       className={`${outfit.variable} ${inter.variable} h-full antialiased`}
     >
+      <GoogleAnalytics />
       <body className="min-h-full flex flex-col bg-[#0A0E1A] text-[#FED7AA] font-sans overflow-x-hidden relative selection:bg-orange-500/30">
         <Waves
           lineColor="rgba(134, 184, 190, 0.45)"
