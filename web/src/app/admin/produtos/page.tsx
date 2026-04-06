@@ -11,10 +11,20 @@ import {
   AlertTriangle,
   CheckCircle2,
   XCircle,
+  Loader2,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // ---------- Types ----------
+
+interface ProductOverride {
+  local_id: number;
+  cost_price: number;
+  selling_price: number;
+  ad_spend: number;
+  api_overhead: number;
+  in_stock: boolean;
+}
 
 interface AdminProduct {
   id: number;
@@ -65,28 +75,28 @@ function getMarginColor(margin: number): string {
   return "text-red-400";
 }
 
-function buildFromLocal(products: Product[]): AdminProduct[] {
-  return products.map((p) => {
-    const sellingPrice = parseEuroPrice(p.price);
-    const costPrice = sellingPrice / 2;
-    const marginPercentage =
-      sellingPrice > 0
-        ? ((sellingPrice - costPrice) / sellingPrice) * 100
-        : 0;
+function computeMargin(selling: number, cost: number): number {
+  return selling > 0 ? ((selling - cost) / selling) * 100 : 0;
+}
 
-    return {
-      id: p.id,
-      name: p.name,
-      category: p.category,
-      img: p.img,
-      costPrice,
-      sellingPrice,
-      marginPercentage,
-      adSpend: 0,
-      apiOverhead: 0,
-      inStock: true,
-    };
-  });
+function buildAdminProduct(
+  p: Product,
+  override?: ProductOverride
+): AdminProduct {
+  const sellingPrice = override?.selling_price ?? parseEuroPrice(p.price);
+  const costPrice = override?.cost_price ?? sellingPrice / 2;
+  return {
+    id: p.id,
+    name: p.name,
+    category: p.category,
+    img: p.img,
+    costPrice,
+    sellingPrice,
+    marginPercentage: computeMargin(sellingPrice, costPrice),
+    adSpend: override?.ad_spend ?? 0,
+    apiOverhead: override?.api_overhead ?? 0,
+    inStock: override?.in_stock ?? true,
+  };
 }
 
 // ---------- Main Page ----------
@@ -94,6 +104,7 @@ function buildFromLocal(products: Product[]): AdminProduct[] {
 export default function AdminProdutosPage() {
   const [products, setProducts] = useState<AdminProduct[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [saving, setSaving] = useState<number | null>(null);
   const [editingId, setEditingId] = useState<number | null>(null);
   const [editForm, setEditForm] = useState<EditFormData>({
     costPrice: "",
@@ -102,38 +113,42 @@ export default function AdminProdutosPage() {
     apiOverhead: "",
   });
   const [dataSource, setDataSource] = useState<"supabase" | "local">("local");
+  const [toast, setToast] = useState<{
+    msg: string;
+    type: "success" | "error";
+  } | null>(null);
+
+  const showToast = useCallback(
+    (msg: string, type: "success" | "error") => {
+      setToast({ msg, type });
+      setTimeout(() => setToast(null), 3000);
+    },
+    []
+  );
 
   useEffect(() => {
     async function loadProducts() {
       try {
         const supabase = createClient();
-        const { data, error } = await supabase
-          .from("products")
-          .select(
-            "id, name, category, image_url, cost_price, selling_price, margin_percentage, ad_spend, api_overhead, in_stock"
-          );
+        const { data: overrides } = await supabase
+          .from("product_overrides")
+          .select("*");
 
-        if (error || !data || data.length === 0) {
-          throw new Error("No data");
+        const overrideMap = new Map<number, ProductOverride>();
+        if (overrides) {
+          for (const o of overrides) {
+            overrideMap.set(o.local_id, o);
+          }
+          setDataSource("supabase");
         }
 
-        const mapped: AdminProduct[] = data.map((p) => ({
-          id: p.id,
-          name: p.name,
-          category: p.category,
-          img: p.image_url ?? "",
-          costPrice: p.cost_price ?? 0,
-          sellingPrice: p.selling_price ?? 0,
-          marginPercentage: p.margin_percentage ?? 0,
-          adSpend: p.ad_spend ?? 0,
-          apiOverhead: p.api_overhead ?? 0,
-          inStock: p.in_stock ?? true,
-        }));
-
+        const mapped = localProducts.map((p) =>
+          buildAdminProduct(p, overrideMap.get(p.id))
+        );
         setProducts(mapped);
-        setDataSource("supabase");
       } catch {
-        setProducts(buildFromLocal(localProducts));
+        const mapped = localProducts.map((p) => buildAdminProduct(p));
+        setProducts(mapped);
         setDataSource("local");
       } finally {
         setIsLoading(false);
@@ -158,40 +173,105 @@ export default function AdminProdutosPage() {
   }, []);
 
   const saveEditing = useCallback(
-    (productId: number) => {
+    async (productId: number) => {
       const cost = parseFloat(editForm.costPrice) || 0;
       const selling = parseFloat(editForm.sellingPrice) || 0;
       const ad = parseFloat(editForm.adSpend) || 0;
       const overhead = parseFloat(editForm.apiOverhead) || 0;
-      const margin =
-        selling > 0 ? ((selling - cost) / selling) * 100 : 0;
+      const margin = computeMargin(selling, cost);
 
-      setProducts((prev) =>
-        prev.map((p) =>
-          p.id === productId
-            ? {
-                ...p,
-                costPrice: cost,
-                sellingPrice: selling,
-                adSpend: ad,
-                apiOverhead: overhead,
-                marginPercentage: margin,
-              }
-            : p
-        )
-      );
-      setEditingId(null);
+      setSaving(productId);
+      try {
+        const supabase = createClient();
+        const { error } = await supabase.from("product_overrides").upsert(
+          {
+            local_id: productId,
+            cost_price: cost,
+            selling_price: selling,
+            ad_spend: ad,
+            api_overhead: overhead,
+            in_stock:
+              products.find((p) => p.id === productId)?.inStock ?? true,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "local_id" }
+        );
+
+        if (error) throw error;
+
+        setProducts((prev) =>
+          prev.map((p) =>
+            p.id === productId
+              ? {
+                  ...p,
+                  costPrice: cost,
+                  sellingPrice: selling,
+                  adSpend: ad,
+                  apiOverhead: overhead,
+                  marginPercentage: margin,
+                }
+              : p
+          )
+        );
+        setEditingId(null);
+        showToast("Alteracoes guardadas com sucesso", "success");
+      } catch (err) {
+        console.error("Failed to save:", err);
+        showToast("Erro ao guardar. Verifica a ligacao.", "error");
+      } finally {
+        setSaving(null);
+      }
     },
-    [editForm]
+    [editForm, products, showToast]
   );
 
-  const toggleStock = useCallback((productId: number) => {
-    setProducts((prev) =>
-      prev.map((p) =>
-        p.id === productId ? { ...p, inStock: !p.inStock } : p
-      )
-    );
-  }, []);
+  const toggleStock = useCallback(
+    async (productId: number) => {
+      const product = products.find((p) => p.id === productId);
+      if (!product) return;
+
+      const newStock = !product.inStock;
+
+      // Optimistic update
+      setProducts((prev) =>
+        prev.map((p) =>
+          p.id === productId ? { ...p, inStock: newStock } : p
+        )
+      );
+
+      try {
+        const supabase = createClient();
+        const { error } = await supabase.from("product_overrides").upsert(
+          {
+            local_id: productId,
+            cost_price: product.costPrice,
+            selling_price: product.sellingPrice,
+            ad_spend: product.adSpend,
+            api_overhead: product.apiOverhead,
+            in_stock: newStock,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "local_id" }
+        );
+
+        if (error) throw error;
+        showToast(
+          newStock ? "Produto em stock" : "Produto marcado esgotado",
+          "success"
+        );
+      } catch (err) {
+        console.error("Failed to toggle stock:", err);
+        // Revert optimistic update
+        setProducts((prev) =>
+          prev.map((p) =>
+            p.id === productId ? { ...p, inStock: !newStock } : p
+          )
+        );
+        showToast("Erro ao atualizar stock", "error");
+      }
+    },
+    [products, showToast]
+  );
 
   if (isLoading) {
     return (
@@ -203,6 +283,24 @@ export default function AdminProdutosPage() {
 
   return (
     <div className="max-w-7xl mx-auto space-y-8">
+      {/* Toast notification */}
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className={`fixed top-6 right-6 z-50 px-4 py-3 rounded-xl text-sm font-medium shadow-lg ${
+              toast.type === "success"
+                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                : "bg-red-500/20 text-red-300 border border-red-500/30"
+            }`}
+          >
+            {toast.msg}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
@@ -269,6 +367,7 @@ export default function AdminProdutosPage() {
               <AnimatePresence>
                 {products.map((product, index) => {
                   const isEditing = editingId === product.id;
+                  const isSaving = saving === product.id;
                   return (
                     <motion.tr
                       key={product.id}
@@ -399,13 +498,19 @@ export default function AdminProdutosPage() {
                           <div className="flex items-center justify-center gap-2">
                             <button
                               onClick={() => saveEditing(product.id)}
-                              className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 hover:bg-emerald-500/20 transition-colors"
+                              disabled={isSaving}
+                              className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 hover:bg-emerald-500/20 transition-colors disabled:opacity-50"
                             >
-                              <Check className="w-4 h-4" />
+                              {isSaving ? (
+                                <Loader2 className="w-4 h-4 animate-spin" />
+                              ) : (
+                                <Check className="w-4 h-4" />
+                              )}
                             </button>
                             <button
                               onClick={cancelEditing}
-                              className="w-8 h-8 rounded-lg bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 hover:bg-red-500/20 transition-colors"
+                              disabled={isSaving}
+                              className="w-8 h-8 rounded-lg bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 hover:bg-red-500/20 transition-colors disabled:opacity-50"
                             >
                               <X className="w-4 h-4" />
                             </button>
@@ -419,13 +524,6 @@ export default function AdminProdutosPage() {
                           </button>
                         )}
                       </td>
-
-                      {/* Inline edit row for ad_spend and api_overhead */}
-                      {isEditing && (
-                        <td colSpan={7} className="px-6 py-0">
-                          {/* Rendered as a nested visual element */}
-                        </td>
-                      )}
                     </motion.tr>
                   );
                 })}
@@ -486,8 +584,12 @@ export default function AdminProdutosPage() {
                   <div className="ml-auto flex items-center gap-3">
                     <button
                       onClick={() => saveEditing(editingId)}
-                      className="px-4 py-2 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors"
+                      disabled={saving === editingId}
+                      className="px-4 py-2 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors disabled:opacity-50 flex items-center gap-2"
                     >
+                      {saving === editingId && (
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                      )}
                       Guardar Alteracoes
                     </button>
                     <button
