@@ -34,6 +34,13 @@ function parseProductPrice(priceStr: string): number {
 }
 
 export async function POST(request: NextRequest) {
+  // CSRF: verify Origin header
+  const origin = request.headers.get("origin");
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+  if (!origin || !appUrl.startsWith(origin)) {
+    return NextResponse.json({ error: "Origem não autorizada." }, { status: 403 });
+  }
+
   try {
     const body: CheckoutBody = await request.json();
 

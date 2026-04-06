@@ -5,11 +5,32 @@ import { getSupabaseAdmin } from "@/lib/supabase/admin";
 // ── Schema ──────────────────────────────────────────────────────────────────
 
 const contactSchema = z.object({
-  nome: z.string().min(2, "Nome e obrigatorio (min. 2 caracteres)"),
-  email: z.string().email("Email invalido"),
-  assunto: z.string().min(1, "Selecione um assunto"),
-  mensagem: z.string().min(10, "Mensagem deve ter pelo menos 10 caracteres"),
+  nome: z.string().min(2, "Nome e obrigatorio (min. 2 caracteres)").max(100),
+  email: z.string().email("Email invalido").max(254),
+  assunto: z.enum(["suporte", "encomendas", "devolucoes", "parcerias", "outro"], {
+    error: "Selecione um assunto valido",
+  }),
+  mensagem: z.string().min(10, "Mensagem deve ter pelo menos 10 caracteres").max(2000, "Mensagem demasiado longa (max. 2000 caracteres)"),
 });
+
+// ── Simple in-memory rate limiter ──────────────────────────────────────────
+
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_WINDOW = 3600_000; // 1 hour
+const RATE_LIMIT_MAX = 5; // 5 submissions per hour per IP
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW });
+    return false;
+  }
+
+  entry.count++;
+  return entry.count > RATE_LIMIT_MAX;
+}
 
 // ── Response helpers ────────────────────────────────────────────────────────
 
@@ -29,6 +50,19 @@ function errorResponse(message: string, status: number): NextResponse<ApiRespons
 // ── Route Handler ───────────────────────────────────────────────────────────
 
 export async function POST(request: NextRequest): Promise<NextResponse<ApiResponse>> {
+  // CSRF: verify Origin header
+  const origin = request.headers.get("origin");
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+  if (!origin || !appUrl.startsWith(origin)) {
+    return errorResponse("Origem nao autorizada.", 403);
+  }
+
+  // Rate limiting by IP
+  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+  if (isRateLimited(ip)) {
+    return errorResponse("Demasiados pedidos. Tente novamente mais tarde.", 429);
+  }
+
   let body: unknown;
 
   try {
