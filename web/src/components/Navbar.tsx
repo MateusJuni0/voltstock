@@ -239,7 +239,11 @@ export function Navbar() {
         </div>
         <div className="relative z-10 w-full h-full flex items-center justify-between px-6">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link
+            href="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="flex items-center gap-3 group"
+          >
             <div className="relative w-12 h-12 flex items-center justify-center mix-blend-screen overflow-hidden">
               <video
                 src="/logo/voltstock.mp4"
@@ -279,12 +283,9 @@ export function Navbar() {
               aria-label="Pesquisar (Ctrl+K)"
               data-magnetic
               onClick={() => setIsSearchOpen(true)}
-              className="p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400 relative group"
+              className="p-2.5 rounded-xl hover:bg-orange-500/10 transition-colors text-orange-400/80 hover:text-orange-400"
             >
               <Search size={18} />
-              <span className="hidden md:flex absolute -bottom-1 -right-1 items-center justify-center px-1 py-0.5 rounded text-[9px] font-medium leading-none text-white/30 bg-white/[0.06] border border-white/[0.08] group-hover:text-white/50 transition-colors">
-                ⌘K
-              </span>
             </button>
             <button
               aria-label="Carrinho"
