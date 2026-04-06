@@ -2009,9 +2009,9 @@ export const products: Product[] = [
     "price": "329,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.7,
-    "img": "https://www.lg.com/content/dam/channel/wcms/ca_en/images/desktop-monitors/27gp850-b_aus_enci_ca_en_c/gallery/DZ_01.jpg",
+    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/24-026-195-V01.jpg",
     "gallery": [
-      "https://www.lg.com/content/dam/channel/wcms/ca_en/images/desktop-monitors/27gp850-b_aus_enci_ca_en_c/gallery/DZ_01.jpg"
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/24-026-195-V01.jpg"
     ],
     "description": "Monitor IPS QHD de 27\" com 165Hz (OC 180Hz) e 1ms GtG. Cobertura DCI-P3 98% e VESA DisplayHDR 400 para cores vivas e gaming responsivo.",
     "badge": "IPS Gaming",
@@ -2371,9 +2371,9 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2025-update/mx-master-3s-bluetooth-edition-top-view-black-new-1.png",
+    "img": "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg",
     "gallery": [
-      "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2025-update/mx-master-3s-bluetooth-edition-top-view-black-new-1.png"
+      "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg"
     ],
     "description": "O rato de produtividade mais popular do mundo. Scroll MagSpeed electromagnético, sensor 8K DPI em vidro e ligação a 3 dispositivos em simultâneo.",
     "badge": "Produtividade",
@@ -2519,9 +2519,9 @@ export const products: Product[] = [
     "price": "219,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.8,
-    "img": "https://resource.logitechg.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png",
+    "img": "https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png",
     "gallery": [
-      "https://resource.logitechg.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png"
+      "https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png"
     ],
     "description": "Drivers de grafeno PRO-G de 50mm com DTS Headphone:X 2.0. Usado por profissionais de eSports com microfone com Blue VO!CE technology.",
     "badge": "eSports Choice",
