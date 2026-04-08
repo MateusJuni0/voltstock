@@ -111,7 +111,6 @@ export async function POST(request: NextRequest) {
 
     const session = await getStripe().checkout.sessions.create({
       mode: "payment",
-      payment_method_types: ["card"],
       locale: "pt",
       line_items: lineItems,
       success_url: `${APP_URL}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
