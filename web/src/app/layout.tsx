@@ -16,6 +16,7 @@ import {
 import { Toaster } from "sonner";
 import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { MetaPixel } from "@/components/MetaPixel";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -136,6 +137,7 @@ export default function RootLayout({
         <JsonLd data={websiteSchema()} />
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics />
+        <MetaPixel />
         <CookieConsent />
         <Toaster
           position="bottom-right"

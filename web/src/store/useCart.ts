@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { Product } from '@/data/products';
+import { trackAddToCart, fbTrackAddToCart } from '@/lib/analytics';
 
 interface CartItem extends Product {
   quantity: number;
@@ -23,6 +24,11 @@ export const useCart = create<CartStore>()(
       addItem: (product) => {
         const currentItems = get().items;
         const existingItem = currentItems.find((item) => item.id === product.id);
+        const price = parseFloat(product.price.replace(/[^\d,]/g, '').replace(',', '.'));
+        const newQty = existingItem ? existingItem.quantity + 1 : 1;
+
+        trackAddToCart({ id: product.id, name: product.name, price, category: product.category, quantity: newQty });
+        fbTrackAddToCart({ id: product.id, name: product.name, price, quantity: newQty });
 
         if (existingItem) {
           set({

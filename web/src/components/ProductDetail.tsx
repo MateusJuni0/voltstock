@@ -15,6 +15,7 @@ import { useWishlist } from "@/store/useWishlist";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { RelatedProducts } from "./RelatedProducts";
 import { toast } from "sonner";
+import { trackViewItem, trackAddToCart, fbTrackViewContent, fbTrackAddToCart } from "@/lib/analytics";
 
 // --- Helpers ---
 
@@ -46,9 +47,19 @@ export function ProductDetail({ product }: { product: Product }) {
   const addToCartRef = useRef<HTMLDivElement | null>(null);
   const imageContainerRef = useRef<HTMLDivElement | null>(null);
 
+  // Track view_item + ViewContent on mount
+  useEffect(() => {
+    const price = parsePrice(product.price);
+    trackViewItem({ id: product.id, name: product.name, price, category: product.category });
+    fbTrackViewContent({ id: product.id, name: product.name, price, category: product.category });
+  }, [product.id, product.name, product.price, product.category]);
+
   const handleAddToCart = () => {
     addItem(product);
     setIsAdded(true);
+    const price = parsePrice(product.price);
+    trackAddToCart({ id: product.id, name: product.name, price, category: product.category, quantity: 1 });
+    fbTrackAddToCart({ id: product.id, name: product.name, price, quantity: 1 });
     toast.success(`${product.name} adicionado ao carrinho`, {
       description: "Continuar a comprar ou finalizar compra",
     });
@@ -244,7 +255,7 @@ export function ProductDetail({ product }: { product: Product }) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock size={16} className="text-orange-400/60 shrink-0" />
-                  <span className="text-xs text-orange-400/60 leading-tight">Entrega 24-48h</span>
+                  <span className="text-xs text-orange-400/60 leading-tight">Entrega 2-3 dias úteis</span>
                 </div>
               </div>
 
@@ -297,7 +308,7 @@ export function ProductDetail({ product }: { product: Product }) {
                     <div className="w-10 h-10 rounded-xl bg-orange-400/5 border border-orange-400/10 flex items-center justify-center">
                       <Truck size={18} className="text-orange-400/70" />
                     </div>
-                    <span className="text-xs text-orange-400/60 font-medium leading-tight">Envio 24-48h</span>
+                    <span className="text-xs text-orange-400/60 font-medium leading-tight">Entrega 2-3 dias úteis</span>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <div className="w-10 h-10 rounded-xl bg-orange-400/5 border border-orange-400/10 flex items-center justify-center">

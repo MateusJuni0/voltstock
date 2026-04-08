@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useCart } from "@/store/useCart";
+import { trackPurchase, fbTrackPurchase } from "@/lib/analytics";
 import { motion } from "framer-motion";
 import {
   CheckCircle,
@@ -53,6 +54,11 @@ export default function CheckoutSuccessPage() {
         });
         return;
       }
+
+      // Fire purchase tracking events before clearing cart
+      const amountEur = (data.amount_total ?? 0) / 100;
+      trackPurchase(id, amountEur, []);
+      fbTrackPurchase(amountEur, id);
 
       clearCart();
       setState({

@@ -20,6 +20,8 @@ import {
 import Image from "next/image";
 import { PaymentLogos } from "@/components/PaymentLogos";
 import { SecurityBadge } from "@/components/SecurityBadge";
+import { getDeliveryEstimate } from "@/lib/delivery";
+import { trackBeginCheckout, fbTrackInitiateCheckout } from "@/lib/analytics";
 
 // ---------------------------------------------------------------------------
 // Schema
@@ -273,6 +275,7 @@ function StepPayment({ shippingData, onBack }: Step2Props) {
   );
   const shipping = calculateShipping(subtotal, shippingData.postalCode);
   const total = subtotal + shipping;
+  const deliveryEstimate = getDeliveryEstimate(shippingData.postalCode);
 
   async function handlePayment() {
     setLoading(true);
@@ -366,6 +369,15 @@ function StepPayment({ shippingData, onBack }: Step2Props) {
             ) : (
               formatEUR(shipping)
             )}
+          </span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-accent/50 flex items-center gap-1.5">
+            <Truck size={14} className="text-orange-400/60" />
+            Entrega estimada
+          </span>
+          <span className="text-orange-400 font-medium">
+            {deliveryEstimate.label}
           </span>
         </div>
         <div className="flex justify-between text-lg font-bold pt-3 border-t border-accent/10">
@@ -567,6 +579,15 @@ export default function CheckoutPage() {
   function handleStepOneComplete(data: ShippingFormData) {
     setShippingData(data);
     setStep(2);
+
+    const checkoutItems = items.map((item) => ({
+      name: item.name,
+      price: parsePrice(item.price),
+      quantity: item.quantity,
+    }));
+    const total = checkoutItems.reduce((acc, i) => acc + i.price * i.quantity, 0);
+    trackBeginCheckout(checkoutItems, total);
+    fbTrackInitiateCheckout(total, items.length);
   }
 
   return (

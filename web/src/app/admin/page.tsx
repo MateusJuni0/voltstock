@@ -12,6 +12,15 @@ import {
   AlertTriangle,
   Wallet,
   PieChart,
+  CalendarDays,
+  CalendarRange,
+  CreditCard,
+  Package,
+  Truck,
+  CheckCircle2,
+  Clock,
+  XCircle,
+  RefreshCw,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -29,14 +38,80 @@ interface ProductProfit {
   realProfit: number;
 }
 
+interface OrderRow {
+  id: string;
+  total: number;
+  shipping_cost: number;
+  status: string;
+  created_at: string;
+}
+
+interface OrderStatusCount {
+  status: string;
+  count: number;
+}
+
 interface KpiData {
   receitaTotal: number;
+  receitaHoje: number;
+  receitaMes: number;
   custoTotal: number;
   lucroLiquido: number;
   margemMedia: number;
   encomendasTotal: number;
   aov: number;
+  ordersByStatus: OrderStatusCount[];
 }
+
+// ---------- Status Config (matches encomendas page) ----------
+
+const STATUS_CONFIG: Record<
+  string,
+  { label: string; color: string; bg: string; icon: React.ElementType }
+> = {
+  pending: {
+    label: "Pendente",
+    color: "text-yellow-400",
+    bg: "bg-yellow-500/10 border-yellow-500/20",
+    icon: Clock,
+  },
+  paid: {
+    label: "Pago",
+    color: "text-blue-400",
+    bg: "bg-blue-500/10 border-blue-500/20",
+    icon: CreditCard,
+  },
+  processing: {
+    label: "Em Preparacao",
+    color: "text-orange-400",
+    bg: "bg-orange-500/10 border-orange-500/20",
+    icon: Package,
+  },
+  shipped: {
+    label: "Enviado",
+    color: "text-purple-400",
+    bg: "bg-purple-500/10 border-purple-500/20",
+    icon: Truck,
+  },
+  delivered: {
+    label: "Entregue",
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10 border-emerald-500/20",
+    icon: CheckCircle2,
+  },
+  cancelled: {
+    label: "Cancelado",
+    color: "text-red-400",
+    bg: "bg-red-500/10 border-red-500/20",
+    icon: XCircle,
+  },
+  refunded: {
+    label: "Reembolsado",
+    color: "text-gray-400",
+    bg: "bg-gray-500/10 border-gray-500/20",
+    icon: RefreshCw,
+  },
+};
 
 // ---------- Helpers ----------
 
@@ -181,6 +256,7 @@ export default function AdminDashboardPage() {
   const [productsProfitData, setProductsProfitData] = useState<ProductProfit[]>(
     []
   );
+  const [orders, setOrders] = useState<OrderRow[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [dataSource, setDataSource] = useState<"supabase" | "local">("local");
 
@@ -188,6 +264,17 @@ export default function AdminDashboardPage() {
     async function loadData() {
       try {
         const supabase = createClient();
+
+        // Fetch real orders from Supabase
+        const { data: ordersData } = await supabase
+          .from("orders")
+          .select("id, total, shipping_cost, status, created_at");
+
+        if (ordersData && ordersData.length > 0) {
+          setOrders(ordersData);
+        }
+
+        // Fetch product catalog for profitability table
         const { data, error } = await supabase
           .from("products")
           .select(
@@ -222,7 +309,7 @@ export default function AdminDashboardPage() {
         );
         setDataSource("supabase");
       } catch {
-        // Supabase offline — use fallback
+        // Supabase offline — use fallback for products only
         const fallback = buildFallbackProducts().sort(
           (a, b) => b.realProfit - a.realProfit
         );
@@ -237,42 +324,69 @@ export default function AdminDashboardPage() {
   }, []);
 
   const kpis: KpiData = useMemo(() => {
-    if (productsProfitData.length === 0) {
-      return {
-        receitaTotal: 0,
-        custoTotal: 0,
-        lucroLiquido: 0,
-        margemMedia: 0,
-        encomendasTotal: 0,
-        aov: 0,
-      };
-    }
-
-    const receitaTotal = productsProfitData.reduce(
-      (sum, p) => sum + p.sellingPrice,
-      0
+    // Filter out cancelled/refunded orders for revenue calculations
+    const activeOrders = orders.filter(
+      (o) => o.status !== "cancelled" && o.status !== "refunded"
     );
+
+    const now = new Date();
+    const todayStart = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate()
+    );
+    const monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
+
+    const receitaTotal = activeOrders.reduce((sum, o) => sum + (o.total ?? 0), 0);
+
+    const receitaHoje = activeOrders
+      .filter((o) => new Date(o.created_at) >= todayStart)
+      .reduce((sum, o) => sum + (o.total ?? 0), 0);
+
+    const receitaMes = activeOrders
+      .filter((o) => new Date(o.created_at) >= monthStart)
+      .reduce((sum, o) => sum + (o.total ?? 0), 0);
+
+    const encomendasTotal = activeOrders.length;
+    const aov = encomendasTotal > 0 ? receitaTotal / encomendasTotal : 0;
+
+    // Product profitability metrics (from catalog)
     const custoTotal = productsProfitData.reduce(
       (sum, p) => sum + p.costPrice,
       0
     );
-    const lucroLiquido = receitaTotal - custoTotal;
+    const catalogReceita = productsProfitData.reduce(
+      (sum, p) => sum + p.sellingPrice,
+      0
+    );
+    const lucroLiquido = catalogReceita - custoTotal;
     const margemMedia =
-      productsProfitData.reduce((sum, p) => sum + p.marginPercentage, 0) /
-      productsProfitData.length;
-    // Simulated order count based on product count
-    const encomendasTotal = productsProfitData.length;
-    const aov = encomendasTotal > 0 ? receitaTotal / encomendasTotal : 0;
+      productsProfitData.length > 0
+        ? productsProfitData.reduce((sum, p) => sum + p.marginPercentage, 0) /
+          productsProfitData.length
+        : 0;
+
+    // Count orders by status (including cancelled/refunded)
+    const statusMap = new Map<string, number>();
+    for (const o of orders) {
+      statusMap.set(o.status, (statusMap.get(o.status) ?? 0) + 1);
+    }
+    const ordersByStatus: OrderStatusCount[] = Array.from(statusMap.entries())
+      .map(([status, count]) => ({ status, count }))
+      .sort((a, b) => b.count - a.count);
 
     return {
       receitaTotal,
+      receitaHoje,
+      receitaMes,
       custoTotal,
       lucroLiquido,
       margemMedia,
       encomendasTotal,
       aov,
+      ordersByStatus,
     };
-  }, [productsProfitData]);
+  }, [orders, productsProfitData]);
 
   if (isLoading) {
     return (
@@ -314,50 +428,124 @@ export default function AdminDashboardPage() {
         </div>
       </div>
 
-      {/* KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+      {/* KPI Cards — Real Order Data */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <KpiCard
           title="Receita Total"
           value={formatEuro(kpis.receitaTotal)}
           icon={<DollarSign className="w-5 h-5" />}
-          trend="up"
+          trend={kpis.receitaTotal > 0 ? "up" : "neutral"}
           accent
           delay={0}
         />
         <KpiCard
-          title="Custo Total"
-          value={formatEuro(kpis.custoTotal)}
-          icon={<Wallet className="w-5 h-5" />}
+          title="Hoje"
+          value={formatEuro(kpis.receitaHoje)}
+          icon={<CalendarDays className="w-5 h-5" />}
+          trend={kpis.receitaHoje > 0 ? "up" : "neutral"}
+          accent
           delay={0.05}
         />
         <KpiCard
-          title="Lucro Liquido"
+          title="Este Mes"
+          value={formatEuro(kpis.receitaMes)}
+          icon={<CalendarRange className="w-5 h-5" />}
+          trend={kpis.receitaMes > 0 ? "up" : "neutral"}
+          delay={0.1}
+        />
+        <KpiCard
+          title="Encomendas"
+          value={String(kpis.encomendasTotal)}
+          icon={<ShoppingCart className="w-5 h-5" />}
+          delay={0.15}
+        />
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <KpiCard
+          title="AOV (Ticket Medio)"
+          value={formatEuro(kpis.aov)}
+          icon={<BarChart3 className="w-5 h-5" />}
+          delay={0.2}
+        />
+        <KpiCard
+          title="Custo Catalogo"
+          value={formatEuro(kpis.custoTotal)}
+          icon={<Wallet className="w-5 h-5" />}
+          delay={0.25}
+        />
+        <KpiCard
+          title="Lucro Catalogo"
           value={formatEuro(kpis.lucroLiquido)}
           icon={<TrendingUp className="w-5 h-5" />}
           trend={kpis.lucroLiquido > 0 ? "up" : "down"}
-          accent
-          delay={0.1}
+          delay={0.3}
         />
         <KpiCard
           title="Margem Media"
           value={formatPercent(kpis.margemMedia)}
           icon={<PieChart className="w-5 h-5" />}
           trend={kpis.margemMedia >= 30 ? "up" : "down"}
-          delay={0.15}
-        />
-        <KpiCard
-          title="Encomendas Total"
-          value={String(kpis.encomendasTotal)}
-          icon={<ShoppingCart className="w-5 h-5" />}
-          delay={0.2}
-        />
-        <KpiCard
-          title="AOV"
-          value={formatEuro(kpis.aov)}
-          icon={<BarChart3 className="w-5 h-5" />}
-          delay={0.25}
+          delay={0.35}
         />
       </div>
+
+      {/* Orders by Status Summary */}
+      {kpis.ordersByStatus.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.25 }}
+          className="glass-sidebar rounded-2xl p-6"
+        >
+          <h2 className="text-lg font-heading font-bold text-white mb-4">
+            Resumo de Encomendas por Estado
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {kpis.ordersByStatus.map(({ status, count }) => {
+              const config = STATUS_CONFIG[status] ?? STATUS_CONFIG.pending;
+              const StatusIcon = config.icon;
+              return (
+                <div
+                  key={status}
+                  className={`flex items-center gap-2.5 px-4 py-3 rounded-xl border ${config.bg} transition-colors`}
+                >
+                  <div
+                    className={`w-8 h-8 rounded-lg flex items-center justify-center ${config.bg}`}
+                  >
+                    <StatusIcon className={`w-4 h-4 ${config.color}`} />
+                  </div>
+                  <div>
+                    <p className={`text-lg font-bold font-mono ${config.color}`}>
+                      {count}
+                    </p>
+                    <p className="text-[10px] uppercase tracking-wider text-[#A5D6E1]/40 font-semibold">
+                      {config.label}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </motion.div>
+      )}
+
+      {orders.length === 0 && dataSource === "supabase" && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.25 }}
+          className="glass-sidebar rounded-2xl p-8 text-center"
+        >
+          <ShoppingCart className="w-12 h-12 text-[#A5D6E1]/20 mx-auto mb-3" />
+          <p className="text-white font-heading font-bold text-lg mb-1">
+            Sem encomendas ainda
+          </p>
+          <p className="text-[#A5D6E1]/40 text-sm">
+            Quando um cliente fizer uma compra, os KPIs reais aparecem aqui automaticamente.
+          </p>
+        </motion.div>
+      )}
 
       {/* Products Profitability Table */}
       <motion.div
