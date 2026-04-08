@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStripe } from "@/lib/stripe";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
-import { sendOrderConfirmation } from "@/lib/email";
+import { sendOrderConfirmation, sendSellerNotification } from "@/lib/email";
 import { products as catalogProducts } from "@/data/products";
 import type Stripe from "stripe";
 
@@ -180,31 +180,38 @@ async function persistOrder(session: Stripe.Checkout.Session): Promise<void> {
     }
   }
 
-  // Send order confirmation email
+  // Send order confirmation email to customer + notification to seller
   const customerEmail = session.customer_details?.email;
   if (customerEmail && shipping) {
-    try {
-      await sendOrderConfirmation({
-        orderId: insertedOrder.id,
-        customerEmail,
-        customerName: shipping.fullName,
-        items: productItems,
-        subtotal: finalOrder.total - shippingCost,
-        shippingCost,
-        total: finalOrder.total,
-        shippingAddress: {
-          line1: shipping.line1,
-          line2: shipping.line2,
-          city: shipping.city,
-          postalCode: shipping.postalCode,
-          district: shipping.district,
-        },
-        nif: shipping.nif,
-      });
-    } catch (emailErr: unknown) {
-      // Don't fail the order if email fails — log for manual follow-up
-      const msg = emailErr instanceof Error ? emailErr.message : "Unknown email error";
-      console.error(`[stripe-webhook] Email failed for order ${insertedOrder.id}: ${msg}`);
+    const emailData = {
+      orderId: insertedOrder.id,
+      customerEmail,
+      customerName: shipping.fullName,
+      items: productItems,
+      subtotal: finalOrder.total - shippingCost,
+      shippingCost,
+      total: finalOrder.total,
+      shippingAddress: {
+        line1: shipping.line1,
+        line2: shipping.line2,
+        city: shipping.city,
+        postalCode: shipping.postalCode,
+        district: shipping.district,
+      },
+      nif: shipping.nif,
+    };
+
+    // Send both emails in parallel — don't fail the order if either fails
+    const results = await Promise.allSettled([
+      sendOrderConfirmation(emailData),
+      sendSellerNotification(emailData),
+    ]);
+
+    for (const result of results) {
+      if (result.status === "rejected") {
+        const msg = result.reason instanceof Error ? result.reason.message : "Unknown email error";
+        console.error(`[stripe-webhook] Email failed for order ${insertedOrder.id}: ${msg}`);
+      }
     }
   }
 }

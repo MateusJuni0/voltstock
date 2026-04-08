@@ -7,6 +7,7 @@ import { createClient } from "@/lib/supabase/client";
 import {
   LayoutDashboard,
   Package,
+  ShoppingBag,
   ShieldAlert,
   Loader2,
   LogOut,
@@ -24,6 +25,12 @@ const NAV_ITEMS = [
     label: "Dashboard",
     icon: LayoutDashboard,
     exact: true,
+  },
+  {
+    href: "/admin/encomendas",
+    label: "Encomendas",
+    icon: ShoppingBag,
+    exact: false,
   },
   {
     href: "/admin/produtos",

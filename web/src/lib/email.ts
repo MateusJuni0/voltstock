@@ -158,6 +158,79 @@ export async function sendOrderConfirmation(data: OrderEmailData): Promise<void>
   });
 }
 
+// ── Seller Notification ────────────────────────────────────────────────────
+
+const SELLER_EMAIL = "v0ltst0ck22@gmail.com";
+
+export async function sendSellerNotification(data: OrderEmailData): Promise<void> {
+  const resend = getResend();
+
+  const itemList = data.items
+    .map((i) => `• ${i.product_name} x${i.quantity} — ${i.total_price.toFixed(2)} €`)
+    .join("\n");
+
+  const address = [
+    data.shippingAddress.line1,
+    data.shippingAddress.line2,
+    `${data.shippingAddress.postalCode} ${data.shippingAddress.city}`,
+    data.shippingAddress.district,
+  ]
+    .filter(Boolean)
+    .join(", ");
+
+  await resend.emails.send({
+    from: FROM_EMAIL,
+    to: SELLER_EMAIL,
+    subject: `💰 NOVA VENDA #${data.orderId.slice(0, 8).toUpperCase()} — ${data.total.toFixed(2)} €`,
+    html: `
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/></head>
+<body style="margin:0;padding:0;background:#0a0e1a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">
+<div style="max-width:600px;margin:0 auto;padding:32px 16px">
+  <div style="text-align:center;padding:24px 0;border-bottom:2px solid #22c55e">
+    <h1 style="color:#22c55e;font-size:28px;margin:0;font-weight:700">💰 NOVA VENDA!</h1>
+    <p style="color:#94a3b8;margin:8px 0 0;font-size:14px">VoltStock — Painel do Vendedor</p>
+  </div>
+
+  <div style="padding:24px 0">
+    <h2 style="color:#f8fafc;font-size:20px;margin:0 0 8px">Encomenda #${data.orderId.slice(0, 8).toUpperCase()}</h2>
+    <p style="color:#22c55e;font-size:32px;font-weight:700;margin:8px 0">${data.total.toFixed(2)} €</p>
+  </div>
+
+  <div style="background:#0f1424;border-radius:12px;padding:20px;margin-bottom:16px">
+    <h3 style="color:#f97316;font-size:14px;margin:0 0 12px;text-transform:uppercase">Cliente</h3>
+    <p style="color:#e2e8f0;font-size:14px;line-height:1.6;margin:0">
+      <strong>${data.customerName}</strong><br/>
+      ${data.customerEmail}<br/>
+      ${address}
+      ${data.nif ? `<br/>NIF: ${data.nif}` : ""}
+    </p>
+  </div>
+
+  <div style="background:#0f1424;border-radius:12px;padding:20px;margin-bottom:16px">
+    <h3 style="color:#f97316;font-size:14px;margin:0 0 12px;text-transform:uppercase">Produtos</h3>
+    <pre style="color:#e2e8f0;font-size:13px;line-height:1.8;margin:0;white-space:pre-wrap">${itemList}</pre>
+    <p style="color:#94a3b8;font-size:13px;margin:12px 0 0">
+      Subtotal: ${(data.total - data.shippingCost).toFixed(2)} € | Envio: ${data.shippingCost === 0 ? "Grátis" : `${data.shippingCost.toFixed(2)} €`}
+    </p>
+  </div>
+
+  <div style="text-align:center;padding:20px 0">
+    <a href="https://voltstock.pt/admin" style="display:inline-block;background:#f97316;color:#fff;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:600;font-size:15px">
+      Gerir Encomenda →
+    </a>
+  </div>
+
+  <div style="text-align:center;padding:16px 0;border-top:1px solid #1a1f2e">
+    <p style="color:#475569;font-size:12px">Este email foi enviado automaticamente pelo sistema VoltStock.</p>
+  </div>
+</div>
+</body>
+</html>`,
+  });
+}
+
 export async function sendShippingNotification(
   email: string,
   name: string,
