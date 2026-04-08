@@ -41,10 +41,10 @@ export async function GET(request: NextRequest) {
   const { error } = await supabase.auth.exchangeCodeForSession(code);
 
   if (error) {
-    // Auth exchange failed — redirect with error hint (server-side log only)
-    return NextResponse.redirect(`${origin}/?error=oauth_failed`);
+    return NextResponse.redirect(`${origin}/?error=oauth_failed&msg=${encodeURIComponent(error.message)}`);
   }
 
-  // Successful auth — redirect to intended destination
-  return NextResponse.redirect(`${origin}${next}`);
+  // Successful auth — redirect to account page (or intended destination)
+  const destination = next === "/" ? "/conta" : next;
+  return NextResponse.redirect(`${origin}${destination}`);
 }

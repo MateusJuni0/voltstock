@@ -245,13 +245,10 @@ export function Navbar() {
             className="flex items-center gap-3 group"
           >
             <div className="relative w-12 h-12 flex items-center justify-center mix-blend-screen overflow-hidden">
-              <video
-                src="/logo/voltstock.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-[120%] h-[120%] object-contain"
+              <img
+                src="/logo/voltstock-icon.png"
+                alt="VoltStock"
+                className="w-[120%] h-[120%] object-contain drop-shadow-[0_0_8px_rgba(255,101,0,0.6)] group-hover:drop-shadow-[0_0_14px_rgba(255,101,0,0.9)] transition-all duration-300"
               />
             </div>
             <span

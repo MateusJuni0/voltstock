@@ -1,5 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0A0E1A"/>
-  <path d="M8 8L16 24L24 8" stroke="#F97316" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="16" cy="14" r="2" fill="#F97316"/>
+  <rect width="32" height="32" rx="6" fill="#000000"/>
+  <!-- V chevron arms -->
+  <path d="M4 4 L13 20 L16 26 L19 20 L28 4 L23 4 L16 18 L9 4 Z" fill="#FF6500"/>
+  <!-- Lightning bolt cross-cut -->
+  <path d="M15 4 L11.5 13 L15.5 13 L12.5 22 L20.5 11 L16.5 11 L20 4 Z" fill="#FF6500"/>
+  <!-- Subtle inner facet shading (darker orange) to suggest depth -->
+  <path d="M16 18 L13 11 L15.5 13 L16 18Z" fill="#CC5200" opacity="0.6"/>
+  <path d="M16 18 L19 11 L16.5 13 L16 18Z" fill="#CC5200" opacity="0.4"/>
+  <!-- Hidden geometry: barely visible golden triangle outline in center -->
+  <path d="M12 19 L16 26 L20 19 Z" fill="none" stroke="#C9A84C" stroke-width="0.3" opacity="0.15"/>
 </svg>
