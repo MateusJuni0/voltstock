@@ -70,19 +70,22 @@ export function useAuth(): UseAuthReturn {
     initSession();
 
     // Listen for auth state changes
+    // IMPORTANT: Do NOT await Supabase queries inside this callback.
+    // The callback runs while the auth lock is held, so any query that
+    // needs the session token would deadlock waiting for the same lock.
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event, session) => {
+    } = supabase.auth.onAuthStateChange((event, session) => {
       const currentUser = session?.user ?? null;
       setUser(currentUser);
+      setLoading(false);
 
       if (currentUser) {
-        await fetchProfile(currentUser.id);
+        // Fire profile fetch without blocking the callback
+        fetchProfile(currentUser.id);
       } else {
         setProfile(null);
       }
-
-      setLoading(false);
     });
 
     return () => {
