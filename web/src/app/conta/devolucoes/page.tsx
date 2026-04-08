@@ -2,11 +2,9 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { RotateCcw, Package, X, ChevronDown, Loader2 } from "lucide-react";
+import { RotateCcw, X, ChevronDown, Loader2, Clock } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { createClient } from "@/lib/supabase/client";
-
-// ── Types ──────────────────────────────────────────────────────────────────
 
 interface ReturnRequest {
   id: string;
@@ -26,38 +24,22 @@ interface EligibleOrder {
   total: number;
 }
 
-// ── Status config ──────────────────────────────────────────────────────────
-
-const returnStatusConfig: Record<string, { label: string; className: string }> = {
-  pending: {
-    label: "Pendente",
-    className: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-  },
-  approved: {
-    label: "Aprovada",
-    className: "bg-green-500/20 text-green-400 border-green-500/30",
-  },
-  rejected: {
-    label: "Rejeitada",
-    className: "bg-red-500/20 text-red-400 border-red-500/30",
-  },
-  completed: {
-    label: "Concluida",
-    className: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  },
+const returnStatusConfig: Record<string, { label: string; className: string; dotColor: string }> = {
+  pending: { label: "Pendente", className: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20", dotColor: "bg-yellow-400" },
+  approved: { label: "Aprovada", className: "bg-green-500/10 text-green-400 border-green-500/20", dotColor: "bg-green-400" },
+  rejected: { label: "Rejeitada", className: "bg-red-500/10 text-red-400 border-red-500/20", dotColor: "bg-red-400" },
+  completed: { label: "Concluída", className: "bg-blue-500/10 text-blue-400 border-blue-500/20", dotColor: "bg-blue-400" },
 };
-
-// ── Helpers ────────────────────────────────────────────────────────────────
 
 function StatusBadge({ status }: { status: string }) {
   const config = returnStatusConfig[status] ?? {
     label: status,
     className: "bg-accent/10 text-accent/60 border-accent/20",
+    dotColor: "bg-accent/40",
   };
   return (
-    <span
-      className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${config.className}`}
-    >
+    <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold border ${config.className}`}>
+      <span className={`w-1.5 h-1.5 rounded-full ${config.dotColor}`} />
       {config.label}
     </span>
   );
@@ -65,24 +47,15 @@ function StatusBadge({ status }: { status: string }) {
 
 function formatDate(dateStr: string): string {
   try {
-    return new Intl.DateTimeFormat("pt-PT", {
-      day: "2-digit",
-      month: "short",
-      year: "numeric",
-    }).format(new Date(dateStr));
+    return new Intl.DateTimeFormat("pt-PT", { day: "2-digit", month: "short", year: "numeric" }).format(new Date(dateStr));
   } catch {
     return dateStr;
   }
 }
 
 function formatCurrency(value: number): string {
-  return new Intl.NumberFormat("pt-PT", {
-    style: "currency",
-    currency: "EUR",
-  }).format(value);
+  return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR" }).format(value);
 }
-
-// ── Animation variants ─────────────────────────────────────────────────────
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -91,21 +64,8 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 12 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: [0.4, 0, 0.2, 1] as const } },
 };
-
-const overlayVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-};
-
-const modalVariants = {
-  hidden: { opacity: 0, scale: 0.95, y: 20 },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.25 } },
-  exit: { opacity: 0, scale: 0.95, y: 20, transition: { duration: 0.2 } },
-};
-
-// ── Main component ─────────────────────────────────────────────────────────
 
 export default function DevolucoesPage() {
   const { user, loading: authLoading } = useAuth();
@@ -120,13 +80,12 @@ export default function DevolucoesPage() {
       const json = await res.json();
 
       if (!res.ok || !json.success) {
-        setError(json.error ?? "Erro ao carregar pedidos de devolucao.");
+        setError(json.error ?? "Erro ao carregar pedidos de devolução.");
         return;
       }
-
       setReturns(json.data ?? []);
     } catch {
-      setError("Erro de ligacao. Tente novamente mais tarde.");
+      setError("Erro de ligação. Tente novamente mais tarde.");
     } finally {
       setLoading(false);
     }
@@ -137,7 +96,6 @@ export default function DevolucoesPage() {
     fetchReturns();
   }, [user, authLoading, fetchReturns]);
 
-  // Redirect if not authenticated
   useEffect(() => {
     if (!authLoading && !user) {
       window.location.href = "/login?redirect=/conta/devolucoes";
@@ -148,35 +106,28 @@ export default function DevolucoesPage() {
     return <ReturnsSkeleton />;
   }
 
-  if (!user) {
-    return null;
-  }
+  if (!user) return null;
 
   return (
     <div>
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1
-            className="text-2xl md:text-3xl font-bold text-accent"
-            style={{ fontFamily: "var(--font-outfit)" }}
-          >
-            Devolucoes
+          <h1 className="text-2xl md:text-3xl font-bold text-accent" style={{ fontFamily: "var(--font-outfit)" }}>
+            Devoluções
           </h1>
-          <p className="text-sm text-accent/50 mt-1">
-            Gerencie os seus pedidos de devolucao
-          </p>
+          <p className="text-sm text-accent/40 mt-1">Gerencie os seus pedidos de devolução</p>
         </div>
         <button
           onClick={() => setModalOpen(true)}
-          className="inline-flex items-center gap-2 px-5 py-2.5 bg-orange-500/80 hover:bg-orange-500 text-white text-sm font-semibold rounded-full transition-all duration-200 shadow-lg shadow-orange-500/20"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-sm font-semibold rounded-full transition-all duration-300 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/35 hover:scale-[1.02]"
         >
-          <RotateCcw size={16} />
-          Pedir Devolucao
+          <RotateCcw size={15} />
+          Pedir Devolução
         </button>
       </div>
 
       {error && (
-        <div className="glass-sidebar rounded-2xl p-6 mb-6 border-red-500/20">
+        <div className="glass-card-immersive rounded-2xl p-5 mb-5 border-red-500/15">
           <p className="text-red-400 text-sm">{error}</p>
         </div>
       )}
@@ -184,48 +135,39 @@ export default function DevolucoesPage() {
       {returns.length === 0 && !error ? (
         <EmptyReturns />
       ) : (
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="show"
-          className="space-y-4"
-        >
+        <motion.div variants={containerVariants} initial="hidden" animate="show" className="space-y-3">
           {returns.map((r) => (
             <motion.div key={r.id} variants={itemVariants}>
-              <div className="glass-sidebar rounded-2xl p-5 md:p-6 transition-all duration-200 hover:border-orange-500/20 hover:shadow-orange-500/5 hover:shadow-lg">
+              <div className="glass-card-immersive rounded-2xl p-5 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-orange-500/0 to-transparent" />
+
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-                      <RotateCcw size={20} className="text-accent/40" />
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500/15 to-pink-500/5 border border-purple-500/10 flex items-center justify-center shrink-0">
+                      <RotateCcw size={18} className="text-purple-400/60" />
                     </div>
                     <div>
                       <p className="font-semibold text-accent text-sm">
                         Encomenda #{r.order_number ?? "—"}
                       </p>
-                      <p className="text-xs text-accent/40 mt-0.5">
+                      <p className="text-xs text-accent/30 mt-0.5 flex items-center gap-1.5">
+                        <Clock size={11} />
                         Pedido em {formatDate(r.created_at)}
                       </p>
                     </div>
                   </div>
-
-                  <div className="flex items-center gap-4">
-                    <StatusBadge status={r.status} />
-                  </div>
+                  <StatusBadge status={r.status} />
                 </div>
 
-                {/* Reason */}
                 <div className="mt-4 pl-14">
-                  <p className="text-xs text-accent/30 mb-1">Motivo</p>
-                  <p className="text-sm text-accent/60 leading-relaxed">{r.reason}</p>
+                  <p className="text-[11px] text-accent/25 uppercase tracking-wider font-medium mb-1">Motivo</p>
+                  <p className="text-sm text-accent/50 leading-relaxed">{r.reason}</p>
                 </div>
 
-                {/* Admin notes */}
                 {r.admin_notes && (
                   <div className="mt-3 pl-14">
-                    <p className="text-xs text-accent/30 mb-1">Nota da equipa</p>
-                    <p className="text-sm text-accent/60 leading-relaxed italic">
-                      {r.admin_notes}
-                    </p>
+                    <p className="text-[11px] text-accent/25 uppercase tracking-wider font-medium mb-1">Nota da equipa</p>
+                    <p className="text-sm text-accent/50 leading-relaxed italic">{r.admin_notes}</p>
                   </div>
                 )}
               </div>
@@ -234,7 +176,6 @@ export default function DevolucoesPage() {
         </motion.div>
       )}
 
-      {/* Modal */}
       <AnimatePresence>
         {modalOpen && (
           <ReturnModal
@@ -251,8 +192,6 @@ export default function DevolucoesPage() {
     </div>
   );
 }
-
-// ── Return Modal ───────────────────────────────────────────────────────────
 
 interface ReturnModalProps {
   userId: string;
@@ -286,7 +225,6 @@ function ReturnModal({ userId, onClose, onSuccess }: ReturnModalProps) {
           setOrders([]);
           return;
         }
-
         setOrders(data ?? []);
       } catch {
         setOrders([]);
@@ -294,7 +232,6 @@ function ReturnModal({ userId, onClose, onSuccess }: ReturnModalProps) {
         setLoadingOrders(false);
       }
     }
-
     fetchEligibleOrders();
   }, [userId]);
 
@@ -306,7 +243,6 @@ function ReturnModal({ userId, onClose, onSuccess }: ReturnModalProps) {
       setFormError("Selecione uma encomenda.");
       return;
     }
-
     if (reason.trim().length < 10) {
       setFormError("O motivo deve ter pelo menos 10 caracteres.");
       return;
@@ -327,10 +263,9 @@ function ReturnModal({ userId, onClose, onSuccess }: ReturnModalProps) {
         setFormError(json.error ?? "Erro ao submeter pedido.");
         return;
       }
-
       onSuccess();
     } catch {
-      setFormError("Erro de ligacao. Tente novamente.");
+      setFormError("Erro de ligação. Tente novamente.");
     } finally {
       setSubmitting(false);
     }
@@ -338,35 +273,27 @@ function ReturnModal({ userId, onClose, onSuccess }: ReturnModalProps) {
 
   return (
     <>
-      {/* Overlay */}
       <motion.div
-        variants={overlayVariants}
-        initial="hidden"
-        animate="visible"
-        exit="hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         onClick={onClose}
-        className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
+        className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm"
       />
-
-      {/* Modal */}
       <motion.div
-        variants={modalVariants}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
+        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.95, y: 20 }}
+        transition={{ duration: 0.25 }}
         className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
       >
         <div
-          className="pointer-events-auto w-full max-w-lg glass-sidebar rounded-2xl p-6 md:p-8 border border-white/10 shadow-2xl"
+          className="pointer-events-auto w-full max-w-lg glass-card-immersive rounded-2xl p-6 md:p-8 shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Header */}
           <div className="flex items-center justify-between mb-6">
-            <h2
-              className="text-xl font-bold text-accent"
-              style={{ fontFamily: "var(--font-outfit)" }}
-            >
-              Pedir Devolucao
+            <h2 className="text-xl font-bold text-accent" style={{ fontFamily: "var(--font-outfit)" }}>
+              Pedir Devolução
             </h2>
             <button
               onClick={onClose}
@@ -377,75 +304,63 @@ function ReturnModal({ userId, onClose, onSuccess }: ReturnModalProps) {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Order select */}
             <div>
-              <label className="block text-sm font-medium text-accent/70 mb-2">
+              <label className="block text-[11px] font-medium text-accent/40 uppercase tracking-wider mb-2">
                 Encomenda
               </label>
               {loadingOrders ? (
-                <div className="flex items-center gap-2 text-accent/40 text-sm py-3">
+                <div className="flex items-center gap-2 text-accent/30 text-sm py-3">
                   <Loader2 size={16} className="animate-spin" />
                   A carregar encomendas...
                 </div>
               ) : orders.length === 0 ? (
-                <p className="text-sm text-accent/40 py-3">
-                  Nao tem encomendas elegiveis para devolucao (ultimos 14 dias).
+                <p className="text-sm text-accent/30 py-3">
+                  Não tem encomendas elegíveis para devolução (últimos 14 dias).
                 </p>
               ) : (
                 <div className="relative">
                   <select
                     value={selectedOrder}
                     onChange={(e) => setSelectedOrder(e.target.value)}
-                    className="w-full appearance-none bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-accent focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/30 transition-all cursor-pointer"
+                    className="w-full appearance-none bg-white/[0.03] border border-white/[0.07] rounded-xl px-4 py-3 text-sm text-accent focus:outline-none focus:border-orange-500/30 focus:ring-1 focus:ring-orange-500/15 transition-all cursor-pointer"
                   >
-                    <option value="" className="bg-[#0A0E1A]">
-                      Selecione uma encomenda...
-                    </option>
+                    <option value="" className="bg-[#0A0E1A]">Selecione uma encomenda...</option>
                     {orders.map((o) => (
                       <option key={o.id} value={o.id} className="bg-[#0A0E1A]">
-                        #{o.order_number} — {formatDate(o.created_at)} —{" "}
-                        {formatCurrency(o.total)}
+                        #{o.order_number} — {formatDate(o.created_at)} — {formatCurrency(o.total)}
                       </option>
                     ))}
                   </select>
-                  <ChevronDown
-                    size={16}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-accent/30 pointer-events-none"
-                  />
+                  <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-accent/25 pointer-events-none" />
                 </div>
               )}
             </div>
 
-            {/* Reason */}
             <div>
-              <label className="block text-sm font-medium text-accent/70 mb-2">
-                Motivo da devolucao
+              <label className="block text-[11px] font-medium text-accent/40 uppercase tracking-wider mb-2">
+                Motivo da devolução
               </label>
               <textarea
                 value={reason}
                 onChange={(e) => setReason(e.target.value)}
-                placeholder="Descreva o motivo da devolucao..."
+                placeholder="Descreva o motivo da devolução..."
                 rows={4}
                 maxLength={1000}
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-accent placeholder:text-accent/25 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/30 transition-all resize-none"
+                className="w-full bg-white/[0.03] border border-white/[0.07] rounded-xl px-4 py-3 text-sm text-accent placeholder:text-accent/20 focus:outline-none focus:border-orange-500/30 focus:ring-1 focus:ring-orange-500/15 transition-all resize-none"
               />
-              <p className="text-xs text-accent/30 mt-1 text-right">
-                {reason.length}/1000
-              </p>
+              <p className="text-[11px] text-accent/20 mt-1 text-right">{reason.length}/1000</p>
             </div>
 
-            {/* Error */}
             {formError && (
-              <div className="rounded-xl bg-red-500/10 border border-red-500/20 px-4 py-3">
+              <div className="rounded-xl bg-red-500/10 border border-red-500/15 px-4 py-3">
                 <p className="text-red-400 text-sm">{formError}</p>
               </div>
             )}
 
-            {/* Submit */}
             <button
               type="submit"
               disabled={submitting || orders.length === 0}
-              className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-orange-500/80 hover:bg-orange-500 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-semibold rounded-full transition-all duration-200 shadow-lg shadow-orange-500/20"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-semibold rounded-full transition-all duration-300 shadow-lg shadow-orange-500/20"
             >
               {submitting ? (
                 <>
@@ -466,34 +381,40 @@ function ReturnModal({ userId, onClose, onSuccess }: ReturnModalProps) {
   );
 }
 
-// ── Empty state ────────────────────────────────────────────────────────────
-
 function EmptyReturns() {
   return (
-    <div className="glass-sidebar rounded-2xl p-12 text-center">
-      <RotateCcw size={48} className="mx-auto text-accent/15 mb-5" />
-      <h3 className="text-lg font-semibold text-accent/70 mb-2">
-        Ainda nao tens pedidos de devolucao
-      </h3>
-      <p className="text-sm text-accent/40 mb-2 max-w-md mx-auto">
-        Se precisar devolver algum artigo, pode iniciar o processo aqui.
-      </p>
+    <div className="glass-card-immersive rounded-2xl p-12 text-center relative overflow-hidden">
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 blur-[60px]" />
+      </div>
+      <div className="relative z-10">
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/15 to-pink-500/5 border border-purple-500/10 flex items-center justify-center mx-auto mb-5">
+          <RotateCcw size={28} className="text-purple-400/40" />
+        </div>
+        <h3 className="text-lg font-semibold text-accent/60 mb-2">
+          Sem pedidos de devolução
+        </h3>
+        <p className="text-sm text-accent/30 max-w-md mx-auto">
+          Se precisar devolver algum artigo, pode iniciar o processo aqui.
+        </p>
+      </div>
     </div>
   );
 }
 
-// ── Skeleton ───────────────────────────────────────────────────────────────
-
 function ReturnsSkeleton() {
   return (
-    <div className="animate-pulse space-y-6">
-      <div>
-        <div className="h-8 w-48 bg-accent/10 rounded-lg mb-2" />
-        <div className="h-4 w-72 bg-accent/5 rounded-lg" />
+    <div className="space-y-6">
+      <div className="flex justify-between">
+        <div>
+          <div className="h-8 w-48 skeleton-shimmer rounded-lg mb-2" />
+          <div className="h-4 w-72 skeleton-shimmer rounded-lg" />
+        </div>
+        <div className="h-10 w-40 skeleton-shimmer rounded-full" />
       </div>
-      <div className="space-y-4">
+      <div className="space-y-3">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="glass-sidebar rounded-2xl p-6 h-24" />
+          <div key={i} className="glass-card-immersive rounded-2xl p-5 h-28 skeleton-shimmer" />
         ))}
       </div>
     </div>

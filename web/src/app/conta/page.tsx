@@ -2,7 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Package, Heart, MapPin, RotateCcw, ArrowRight, ShoppingBag } from "lucide-react";
+import {
+  Package,
+  Heart,
+  MapPin,
+  RotateCcw,
+  ArrowRight,
+  ShoppingBag,
+  TrendingUp,
+  Clock,
+} from "lucide-react";
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 import { createClient } from "@/lib/supabase/client";
@@ -12,24 +21,41 @@ interface StatCardProps {
   value: number;
   icon: React.ComponentType<{ size?: number; className?: string }>;
   href: string;
+  gradient: string;
+  delay?: number;
 }
 
-function StatCard({ label, value, icon: Icon, href }: StatCardProps) {
+function StatCard({ label, value, icon: Icon, href, gradient, delay = 0 }: StatCardProps) {
   return (
-    <Link href={href} className="group">
-      <div className="glass-sidebar rounded-2xl p-6 transition-all duration-300 hover:border-orange-500/30 hover:shadow-orange-500/5 hover:shadow-lg">
-        <div className="flex items-center justify-between mb-4">
-          <div className="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center">
-            <Icon size={20} className="text-orange-400" />
+    <Link href={href} className="group block">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay, ease: [0.4, 0, 0.2, 1] as const }}
+        className="relative glass-card-immersive rounded-2xl p-5 overflow-hidden pulse-glow-hover"
+      >
+        {/* Animated floating halo */}
+        <div className="stat-halo top-2 right-2" style={{ animationDelay: `${delay * 2}s` }} />
+
+        {/* Gradient accent line at top */}
+        <div className={`absolute top-0 left-0 right-0 h-[2px] ${gradient} opacity-60`} />
+
+        <div className="relative z-10">
+          <div className="flex items-start justify-between mb-4">
+            <div className={`w-10 h-10 rounded-xl ${gradient} p-[1px]`}>
+              <div className="w-full h-full rounded-[11px] bg-background/80 flex items-center justify-center">
+                <Icon size={18} className="text-orange-400" />
+              </div>
+            </div>
+            <ArrowRight
+              size={14}
+              className="text-accent/15 group-hover:text-orange-400 group-hover:translate-x-1 transition-all duration-300 mt-1"
+            />
           </div>
-          <ArrowRight
-            size={16}
-            className="text-accent/20 group-hover:text-orange-400 group-hover:translate-x-1 transition-all duration-200"
-          />
+          <p className="text-3xl font-bold text-accent mb-1 tabular-nums">{value}</p>
+          <p className="text-xs text-accent/40 font-medium">{label}</p>
         </div>
-        <p className="text-2xl font-bold text-accent mb-1">{value}</p>
-        <p className="text-sm text-accent/50">{label}</p>
-      </div>
+      </motion.div>
     </Link>
   );
 }
@@ -38,13 +64,13 @@ const containerVariants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.08 },
+    transition: { staggerChildren: 0.1 },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.35 } },
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.4, 0, 0.2, 1] as const } },
 };
 
 export default function ContaDashboardPage() {
@@ -58,7 +84,6 @@ export default function ContaDashboardPage() {
       const supabase = createClient();
       const userId = user!.id;
 
-      // Fetch counts in parallel, gracefully fallback to 0 if tables don't exist
       const [ordersRes, wishlistRes, addressesRes, returnsRes] = await Promise.allSettled([
         supabase.from("orders").select("id", { count: "exact", head: true }).eq("user_id", userId),
         supabase.from("wishlists").select("id", { count: "exact", head: true }).eq("user_id", userId),
@@ -84,87 +109,147 @@ export default function ContaDashboardPage() {
   const displayName =
     profile?.full_name || user?.user_metadata?.full_name || user?.email?.split("@")[0] || "Utilizador";
 
+  const greeting = getGreeting();
+
   return (
     <motion.div variants={containerVariants} initial="hidden" animate="show">
-      {/* Welcome */}
-      <motion.div variants={itemVariants} className="mb-8">
+      {/* Welcome Section */}
+      <motion.div variants={itemVariants} className="mb-10">
+        <div className="flex items-center gap-2 mb-2">
+          <Clock size={14} className="text-accent/30" />
+          <span className="text-xs text-accent/30 font-medium uppercase tracking-wider">{greeting}</span>
+        </div>
         <h1
-          className="text-3xl md:text-4xl font-bold text-accent mb-2"
+          className="text-3xl md:text-4xl font-bold mb-2"
           style={{ fontFamily: "var(--font-outfit)" }}
         >
-          Ola, {displayName}!
+          <span className="text-accent">Olá, </span>
+          <span className="bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500 bg-clip-text text-transparent">
+            {displayName}
+          </span>
         </h1>
-        <p className="text-accent/50">
-          Bem-vindo ao seu painel. Gerencie as suas encomendas, moradas e preferencias.
+        <p className="text-sm text-accent/40 max-w-lg">
+          Gerencie as suas encomendas, moradas e preferências a partir do seu painel pessoal.
         </p>
       </motion.div>
 
-      {/* Stats */}
-      <motion.div
-        variants={itemVariants}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10"
-      >
-        <StatCard label="Total de encomendas" value={stats.orders} icon={Package} href="/conta/encomendas" />
-        <StatCard label="Devolucoes" value={stats.returns} icon={RotateCcw} href="/conta/devolucoes" />
-        <StatCard label="Produtos na wishlist" value={stats.wishlist} icon={Heart} href="/conta/wishlist" />
-        <StatCard label="Moradas guardadas" value={stats.addresses} icon={MapPin} href="/conta/moradas" />
-      </motion.div>
+      {/* Stats Grid */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-10">
+        <StatCard
+          label="Total de encomendas"
+          value={stats.orders}
+          icon={Package}
+          href="/conta/encomendas"
+          gradient="bg-gradient-to-r from-orange-500 to-amber-500"
+          delay={0.1}
+        />
+        <StatCard
+          label="Devoluções"
+          value={stats.returns}
+          icon={RotateCcw}
+          href="/conta/devolucoes"
+          gradient="bg-gradient-to-r from-purple-500 to-pink-500"
+          delay={0.15}
+        />
+        <StatCard
+          label="Na wishlist"
+          value={stats.wishlist}
+          icon={Heart}
+          href="/conta/wishlist"
+          gradient="bg-gradient-to-r from-rose-500 to-orange-500"
+          delay={0.2}
+        />
+        <StatCard
+          label="Moradas guardadas"
+          value={stats.addresses}
+          icon={MapPin}
+          href="/conta/moradas"
+          gradient="bg-gradient-to-r from-cyan-500 to-blue-500"
+          delay={0.25}
+        />
+      </div>
 
-      {/* Quick links */}
+      {/* Quick Access */}
       <motion.div variants={itemVariants} className="mb-10">
-        <h2 className="text-lg font-semibold text-accent/80 mb-4">Acesso rapido</h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+        <div className="flex items-center gap-2 mb-4">
+          <TrendingUp size={14} className="text-accent/30" />
+          <h2 className="text-sm font-semibold text-accent/50 uppercase tracking-wider">Acesso rápido</h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-2.5">
           {[
-            { label: "Ver Encomendas", href: "/conta/encomendas", icon: Package },
-            { label: "Devolucoes", href: "/conta/devolucoes", icon: RotateCcw },
-            { label: "Lista de Desejos", href: "/conta/wishlist", icon: Heart },
-            { label: "As Minhas Moradas", href: "/conta/moradas", icon: MapPin },
+            { label: "Encomendas", href: "/conta/encomendas", icon: Package },
+            { label: "Devoluções", href: "/conta/devolucoes", icon: RotateCcw },
+            { label: "Wishlist", href: "/conta/wishlist", icon: Heart },
+            { label: "Moradas", href: "/conta/moradas", icon: MapPin },
             { label: "Explorar Loja", href: "/produtos", icon: ShoppingBag },
           ].map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="flex items-center gap-2 px-4 py-3 rounded-xl glass text-sm text-accent/70 hover:text-orange-400 hover:border-orange-500/20 transition-all duration-200"
+              className="flex items-center gap-2.5 px-4 py-3 rounded-xl glass-card-immersive text-sm text-accent/55 hover:text-orange-400 transition-all duration-300 group"
             >
-              <link.icon size={16} />
-              {link.label}
+              <link.icon size={15} className="text-accent/30 group-hover:text-orange-400 transition-colors" />
+              <span className="font-medium">{link.label}</span>
             </Link>
           ))}
         </div>
       </motion.div>
 
-      {/* Recent orders — empty state */}
+      {/* Recent Orders — empty state */}
       <motion.div variants={itemVariants}>
-        <h2 className="text-lg font-semibold text-accent/80 mb-4">Encomendas recentes</h2>
-        <div className="glass-sidebar rounded-2xl p-10 text-center">
-          <Package size={40} className="mx-auto text-accent/20 mb-4" />
-          <p className="text-accent/50 mb-4">Ainda nao fez nenhuma encomenda</p>
-          <Link
-            href="/produtos"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500/80 hover:bg-orange-500 text-white text-sm font-semibold rounded-full transition-all duration-200 shadow-lg shadow-orange-500/20"
-          >
-            <ShoppingBag size={16} />
-            Explorar Produtos
-          </Link>
+        <div className="flex items-center gap-2 mb-4">
+          <Package size={14} className="text-accent/30" />
+          <h2 className="text-sm font-semibold text-accent/50 uppercase tracking-wider">Encomendas recentes</h2>
+        </div>
+        <div className="glass-card-immersive rounded-2xl p-12 text-center relative overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 blur-[80px]" />
+          </div>
+
+          <div className="relative z-10">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500/15 to-amber-500/5 border border-orange-500/10 flex items-center justify-center mx-auto mb-5">
+              <Package size={28} className="text-orange-400/40" />
+            </div>
+            <h3 className="text-lg font-semibold text-accent/60 mb-2">Ainda não fez nenhuma encomenda</h3>
+            <p className="text-sm text-accent/30 mb-6 max-w-sm mx-auto">
+              Explore a nossa loja e descubra produtos incríveis.
+            </p>
+            <Link
+              href="/produtos"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-sm font-semibold rounded-full transition-all duration-300 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02]"
+            >
+              <ShoppingBag size={16} />
+              Explorar Produtos
+            </Link>
+          </div>
         </div>
       </motion.div>
     </motion.div>
   );
 }
 
+function getGreeting(): string {
+  const hour = new Date().getHours();
+  if (hour < 12) return "Bom dia";
+  if (hour < 18) return "Boa tarde";
+  return "Boa noite";
+}
+
 function DashboardSkeleton() {
   return (
-    <div className="animate-pulse space-y-8">
+    <div className="space-y-10">
       <div>
-        <div className="h-9 w-64 bg-accent/10 rounded-lg mb-2" />
-        <div className="h-5 w-96 bg-accent/5 rounded-lg" />
+        <div className="h-4 w-20 skeleton-shimmer rounded mb-3" />
+        <div className="h-10 w-72 skeleton-shimmer rounded-lg mb-2" />
+        <div className="h-5 w-96 skeleton-shimmer rounded-lg" />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {[1, 2, 3].map((i) => (
-          <div key={i} className="glass-sidebar rounded-2xl p-6 h-32" />
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        {[1, 2, 3, 4].map((i) => (
+          <div key={i} className="glass-card-immersive rounded-2xl p-5 h-[130px] skeleton-shimmer" />
         ))}
       </div>
-      <div className="glass-sidebar rounded-2xl p-10 h-48" />
+      <div className="glass-card-immersive rounded-2xl p-12 h-52 skeleton-shimmer" />
     </div>
   );
 }

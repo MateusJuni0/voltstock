@@ -37,7 +37,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, scale: 0.95 },
-  show: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  show: { opacity: 1, scale: 1, transition: { duration: 0.35, ease: [0.4, 0, 0.2, 1] as const } },
 };
 
 function formatRating(rating: number | string): string {
@@ -60,12 +60,9 @@ export default function WishlistPage() {
 
     async function fetchWishlist() {
       try {
-        // Sync Zustand store with Supabase on page load
         await syncWithSupabase(user!.id);
 
         const supabase = createClient();
-
-        // Try joining wishlists with products
         const { data, error: dbError } = await supabase
           .from("wishlists")
           .select(
@@ -74,7 +71,6 @@ export default function WishlistPage() {
           .eq("user_id", user!.id);
 
         if (dbError) {
-          // Tables may not exist yet
           if (
             dbError.code === "42P01" ||
             dbError.message?.includes("does not exist") ||
@@ -82,7 +78,7 @@ export default function WishlistPage() {
           ) {
             setItems([]);
           } else {
-            setError("Nao foi possivel carregar a lista de desejos.");
+            setError("Não foi possível carregar a lista de desejos.");
           }
           setLoading(false);
           return;
@@ -107,7 +103,7 @@ export default function WishlistPage() {
 
         setItems(mapped);
       } catch {
-        setError("Erro de ligacao. Tente novamente mais tarde.");
+        setError("Erro de ligação. Tente novamente mais tarde.");
       } finally {
         setLoading(false);
       }
@@ -121,8 +117,6 @@ export default function WishlistPage() {
     setRemovingId(wishlistId);
     try {
       const supabase = createClient();
-
-      // Find the product ID before deleting
       const item = items.find((i) => i.wishlist_id === wishlistId);
 
       const { error: dbError } = await supabase
@@ -130,14 +124,10 @@ export default function WishlistPage() {
         .delete()
         .eq("id", wishlistId)
         .eq("user_id", user.id);
-
       if (dbError) throw dbError;
-      setItems((prev) => prev.filter((i) => i.wishlist_id !== wishlistId));
 
-      // Also remove from Zustand store to keep in sync
-      if (item) {
-        toggleItem(item.id);
-      }
+      setItems((prev) => prev.filter((i) => i.wishlist_id !== wishlistId));
+      if (item) toggleItem(item.id);
       toast.success("Removido da lista de desejos");
     } catch {
       setError("Erro ao remover produto da lista.");
@@ -176,13 +166,10 @@ export default function WishlistPage() {
   return (
     <div>
       <div className="mb-8">
-        <h1
-          className="text-2xl md:text-3xl font-bold text-accent"
-          style={{ fontFamily: "var(--font-outfit)" }}
-        >
+        <h1 className="text-2xl md:text-3xl font-bold text-accent" style={{ fontFamily: "var(--font-outfit)" }}>
           Lista de Desejos
         </h1>
-        <p className="text-sm text-accent/50 mt-1">
+        <p className="text-sm text-accent/40 mt-1">
           {items.length > 0
             ? `${items.length} ${items.length === 1 ? "produto" : "produtos"} guardados`
             : "Guarde os seus produtos favoritos"}
@@ -190,49 +177,54 @@ export default function WishlistPage() {
       </div>
 
       {error && (
-        <div className="glass-sidebar rounded-2xl p-4 mb-6 border-red-500/20">
+        <div className="glass-card-immersive rounded-2xl p-4 mb-5 border-red-500/15">
           <p className="text-red-400 text-sm">{error}</p>
-          <button onClick={() => setError(null)} className="text-red-400/50 text-xs mt-1 hover:text-red-400">
-            Fechar
-          </button>
+          <button onClick={() => setError(null)} className="text-red-400/40 text-xs mt-1 hover:text-red-400">Fechar</button>
         </div>
       )}
 
       {items.length === 0 ? (
-        <div className="glass-sidebar rounded-2xl p-12 text-center">
-          <Heart size={48} className="mx-auto text-accent/15 mb-5" />
-          <h3 className="text-lg font-semibold text-accent/70 mb-2">
-            A sua lista de desejos esta vazia
-          </h3>
-          <p className="text-sm text-accent/40 mb-6 max-w-md mx-auto">
-            Explore a loja e adicione os produtos que mais gosta.
-          </p>
-          <Link
-            href="/produtos"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500/80 hover:bg-orange-500 text-white text-sm font-semibold rounded-full transition-all duration-200 shadow-lg shadow-orange-500/20"
-          >
-            <ShoppingBag size={16} />
-            Explorar Loja
-          </Link>
+        <div className="glass-card-immersive rounded-2xl p-12 text-center relative overflow-hidden">
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 blur-[60px]" />
+          </div>
+          <div className="relative z-10">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-rose-500/15 to-orange-500/5 border border-rose-500/10 flex items-center justify-center mx-auto mb-5">
+              <Heart size={28} className="text-rose-400/40" />
+            </div>
+            <h3 className="text-lg font-semibold text-accent/60 mb-2">
+              A sua lista de desejos está vazia
+            </h3>
+            <p className="text-sm text-accent/30 mb-6 max-w-md mx-auto">
+              Explore a loja e adicione os produtos que mais gosta.
+            </p>
+            <Link
+              href="/produtos"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-sm font-semibold rounded-full transition-all duration-300 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02]"
+            >
+              <ShoppingBag size={16} />
+              Explorar Loja
+            </Link>
+          </div>
         </div>
       ) : (
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3"
         >
           {items.map((product) => (
             <motion.div
               key={product.wishlist_id}
               variants={itemVariants}
               layout
-              className="glass-sidebar rounded-2xl overflow-hidden group"
+              className="glass-card-immersive rounded-2xl overflow-hidden group"
             >
               {/* Image */}
-              <div className="relative h-48 bg-accent/5 flex items-center justify-center p-4">
+              <div className="relative h-48 bg-gradient-to-b from-white/[0.03] to-transparent flex items-center justify-center p-4">
                 {product.badge && (
-                  <span className="absolute top-3 left-3 px-2.5 py-1 bg-orange-500/90 text-white text-xs font-bold rounded-full z-10">
+                  <span className="absolute top-3 left-3 px-2.5 py-1 bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[11px] font-bold rounded-full z-10 shadow-sm shadow-orange-500/20">
                     {product.badge}
                   </span>
                 )}
@@ -241,20 +233,20 @@ export default function WishlistPage() {
                   alt={product.name}
                   width={180}
                   height={180}
-                  className="object-contain max-h-full group-hover:scale-105 transition-transform duration-300"
+                  className="object-contain max-h-full group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
               </div>
 
               {/* Info */}
               <div className="p-4">
-                <p className="text-xs text-accent/40 mb-1">{product.category}</p>
-                <h3 className="text-sm font-semibold text-accent line-clamp-2 mb-2 min-h-[2.5rem]">
+                <p className="text-[11px] text-accent/30 mb-1 uppercase tracking-wider">{product.category}</p>
+                <h3 className="text-sm font-semibold text-accent line-clamp-2 mb-2 min-h-[2.5rem] group-hover:text-orange-400 transition-colors">
                   {product.name}
                 </h3>
 
                 <div className="flex items-center gap-2 mb-3">
-                  <div className="flex items-center gap-1 text-xs text-orange-400">
-                    <Star size={12} className="fill-orange-400" />
+                  <div className="flex items-center gap-1 text-[11px] text-orange-400">
+                    <Star size={11} className="fill-orange-400" />
                     {formatRating(product.rating)}
                   </div>
                 </div>
@@ -262,14 +254,14 @@ export default function WishlistPage() {
                 <div className="flex items-baseline gap-2 mb-4">
                   <span className="text-lg font-bold text-accent">{product.price}</span>
                   {product.oldPrice && (
-                    <span className="text-xs text-accent/30 line-through">{product.oldPrice}</span>
+                    <span className="text-xs text-accent/25 line-through">{product.oldPrice}</span>
                   )}
                 </div>
 
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => handleAddToCart(product)}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-orange-500/80 hover:bg-orange-500 text-white text-xs font-semibold rounded-xl transition-all duration-200"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-orange-500/80 to-amber-500/80 hover:from-orange-500 hover:to-amber-500 text-white text-xs font-semibold rounded-xl transition-all duration-300 shadow-sm shadow-orange-500/10"
                   >
                     {addedToCart.has(product.id) ? (
                       <>
@@ -286,7 +278,7 @@ export default function WishlistPage() {
                   <button
                     onClick={() => handleRemove(product.wishlist_id)}
                     disabled={removingId === product.wishlist_id}
-                    className="flex items-center justify-center w-10 h-10 rounded-xl border border-white/10 text-red-400/50 hover:text-red-400 hover:border-red-500/20 transition-all disabled:opacity-50"
+                    className="flex items-center justify-center w-10 h-10 rounded-xl border border-white/[0.06] text-red-400/40 hover:text-red-400 hover:border-red-500/15 hover:bg-red-500/[0.06] transition-all duration-300 disabled:opacity-50"
                     aria-label="Remover da lista de desejos"
                   >
                     {removingId === product.wishlist_id ? (
@@ -307,14 +299,14 @@ export default function WishlistPage() {
 
 function WishlistSkeleton() {
   return (
-    <div className="animate-pulse space-y-6">
+    <div className="space-y-6">
       <div>
-        <div className="h-8 w-48 bg-accent/10 rounded-lg mb-2" />
-        <div className="h-4 w-56 bg-accent/5 rounded-lg" />
+        <div className="h-8 w-48 skeleton-shimmer rounded-lg mb-2" />
+        <div className="h-4 w-56 skeleton-shimmer rounded-lg" />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="glass-sidebar rounded-2xl h-80" />
+          <div key={i} className="glass-card-immersive rounded-2xl h-80 skeleton-shimmer" />
         ))}
       </div>
     </div>

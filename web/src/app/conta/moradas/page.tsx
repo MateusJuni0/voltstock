@@ -49,7 +49,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 12 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: [0.4, 0, 0.2, 1] as const } },
 };
 
 export default function MoradasPage() {
@@ -78,13 +78,13 @@ export default function MoradasPage() {
         if (dbError.code === "42P01" || dbError.message?.includes("does not exist")) {
           setAddresses([]);
         } else {
-          setError("Nao foi possivel carregar as moradas.");
+          setError("Não foi possível carregar as moradas.");
         }
         return;
       }
       setAddresses(data ?? []);
     } catch {
-      setError("Erro de ligacao. Tente novamente mais tarde.");
+      setError("Erro de ligação. Tente novamente mais tarde.");
     } finally {
       setLoading(false);
     }
@@ -143,13 +143,11 @@ export default function MoradasPage() {
           .update(payload)
           .eq("id", editingId)
           .eq("user_id", user.id);
-
         if (dbError) throw dbError;
       } else {
         const { error: dbError } = await supabase
           .from("addresses")
           .insert(payload);
-
         if (dbError) throw dbError;
       }
 
@@ -172,7 +170,6 @@ export default function MoradasPage() {
         .delete()
         .eq("id", id)
         .eq("user_id", user.id);
-
       if (dbError) throw dbError;
       setAddresses((prev) => prev.filter((a) => a.id !== id));
     } catch {
@@ -186,18 +183,8 @@ export default function MoradasPage() {
     if (!user) return;
     try {
       const supabase = createClient();
-      // Clear all defaults first
-      await supabase
-        .from("addresses")
-        .update({ is_default: false })
-        .eq("user_id", user.id);
-
-      await supabase
-        .from("addresses")
-        .update({ is_default: true })
-        .eq("id", id)
-        .eq("user_id", user.id);
-
+      await supabase.from("addresses").update({ is_default: false }).eq("user_id", user.id);
+      await supabase.from("addresses").update({ is_default: true }).eq("id", id).eq("user_id", user.id);
       await fetchAddresses();
     } catch {
       setError("Erro ao definir morada predefinida.");
@@ -216,19 +203,14 @@ export default function MoradasPage() {
     <div>
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1
-            className="text-2xl md:text-3xl font-bold text-accent"
-            style={{ fontFamily: "var(--font-outfit)" }}
-          >
+          <h1 className="text-2xl md:text-3xl font-bold text-accent" style={{ fontFamily: "var(--font-outfit)" }}>
             As Minhas Moradas
           </h1>
-          <p className="text-sm text-accent/50 mt-1">
-            Gerencie as moradas de envio
-          </p>
+          <p className="text-sm text-accent/40 mt-1">Gerencie as moradas de envio</p>
         </div>
         <button
           onClick={openAddForm}
-          className="flex items-center gap-2 px-4 py-2.5 bg-orange-500/80 hover:bg-orange-500 text-white text-sm font-semibold rounded-full transition-all duration-200 shadow-lg shadow-orange-500/20"
+          className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-sm font-semibold rounded-full transition-all duration-300 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/35 hover:scale-[1.02]"
         >
           <Plus size={16} />
           <span className="hidden sm:inline">Adicionar Morada</span>
@@ -236,11 +218,9 @@ export default function MoradasPage() {
       </div>
 
       {error && (
-        <div className="glass-sidebar rounded-2xl p-4 mb-6 border-red-500/20">
+        <div className="glass-card-immersive rounded-2xl p-4 mb-5 border-red-500/15">
           <p className="text-red-400 text-sm">{error}</p>
-          <button onClick={() => setError(null)} className="text-red-400/50 text-xs mt-1 hover:text-red-400">
-            Fechar
-          </button>
+          <button onClick={() => setError(null)} className="text-red-400/40 text-xs mt-1 hover:text-red-400">Fechar</button>
         </div>
       )}
 
@@ -251,15 +231,15 @@ export default function MoradasPage() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden mb-6"
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden mb-5"
           >
-            <div className="glass-sidebar rounded-2xl p-6">
+            <div className="glass-card-immersive rounded-2xl p-6">
               <div className="flex items-center justify-between mb-5">
                 <h3 className="text-sm font-semibold text-accent">
                   {editingId ? "Editar Morada" : "Nova Morada"}
                 </h3>
-                <button onClick={closeForm} className="text-accent/40 hover:text-accent transition-colors">
+                <button onClick={closeForm} className="text-accent/30 hover:text-accent transition-colors">
                   <X size={18} />
                 </button>
               </div>
@@ -267,10 +247,10 @@ export default function MoradasPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <FormField label="Etiqueta" placeholder="Ex: Casa, Trabalho" value={formData.label} onChange={(v) => updateField("label", v)} required />
                 <FormField label="Nome completo" placeholder="Nome e apelido" value={formData.full_name} onChange={(v) => updateField("full_name", v)} required />
-                <FormField label="Morada (linha 1)" placeholder="Rua, numero, andar" value={formData.line1} onChange={(v) => updateField("line1", v)} required className="md:col-span-2" />
+                <FormField label="Morada (linha 1)" placeholder="Rua, número, andar" value={formData.line1} onChange={(v) => updateField("line1", v)} required className="md:col-span-2" />
                 <FormField label="Morada (linha 2)" placeholder="Complemento (opcional)" value={formData.line2 ?? ""} onChange={(v) => updateField("line2", v)} className="md:col-span-2" />
                 <FormField label="Cidade" placeholder="Cidade" value={formData.city} onChange={(v) => updateField("city", v)} required />
-                <FormField label="Codigo postal" placeholder="1000-001" value={formData.postal_code} onChange={(v) => updateField("postal_code", v)} required />
+                <FormField label="Código postal" placeholder="1000-001" value={formData.postal_code} onChange={(v) => updateField("postal_code", v)} required />
                 <FormField label="Distrito" placeholder="Lisboa" value={formData.district} onChange={(v) => updateField("district", v)} required />
                 <FormField label="Telefone" placeholder="+351 900 000 000" value={formData.phone ?? ""} onChange={(v) => updateField("phone", v)} />
               </div>
@@ -278,14 +258,14 @@ export default function MoradasPage() {
               <div className="flex justify-end gap-3 mt-6">
                 <button
                   onClick={closeForm}
-                  className="px-5 py-2.5 text-sm text-accent/60 hover:text-accent border border-white/10 rounded-full transition-colors"
+                  className="px-5 py-2.5 text-sm text-accent/50 hover:text-accent border border-white/8 hover:border-white/15 rounded-full transition-all duration-300"
                 >
                   Cancelar
                 </button>
                 <button
                   onClick={handleSave}
                   disabled={saving}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-orange-500/80 hover:bg-orange-500 disabled:opacity-50 text-white text-sm font-semibold rounded-full transition-all duration-200"
+                  className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 disabled:opacity-50 text-white text-sm font-semibold rounded-full transition-all duration-300"
                 >
                   {saving ? <Loader2 size={16} className="animate-spin" /> : <Check size={16} />}
                   {editingId ? "Guardar" : "Adicionar"}
@@ -298,57 +278,61 @@ export default function MoradasPage() {
 
       {/* Addresses list */}
       {addresses.length === 0 && !showForm ? (
-        <div className="glass-sidebar rounded-2xl p-12 text-center">
-          <MapPin size={48} className="mx-auto text-accent/15 mb-5" />
-          <h3 className="text-lg font-semibold text-accent/70 mb-2">
-            Sem moradas guardadas
-          </h3>
-          <p className="text-sm text-accent/40 mb-6">
-            Adicione uma morada para agilizar as suas compras.
-          </p>
-          <button
-            onClick={openAddForm}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500/80 hover:bg-orange-500 text-white text-sm font-semibold rounded-full transition-all duration-200 shadow-lg shadow-orange-500/20"
-          >
-            <Plus size={16} />
-            Adicionar Morada
-          </button>
+        <div className="glass-card-immersive rounded-2xl p-12 text-center relative overflow-hidden">
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 blur-[60px]" />
+          </div>
+          <div className="relative z-10">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/15 to-blue-500/5 border border-cyan-500/10 flex items-center justify-center mx-auto mb-5">
+              <MapPin size={28} className="text-cyan-400/40" />
+            </div>
+            <h3 className="text-lg font-semibold text-accent/60 mb-2">Sem moradas guardadas</h3>
+            <p className="text-sm text-accent/30 mb-6">Adicione uma morada para agilizar as suas compras.</p>
+            <button
+              onClick={openAddForm}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-sm font-semibold rounded-full transition-all duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <Plus size={16} />
+              Adicionar Morada
+            </button>
+          </div>
         </div>
       ) : (
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 md:grid-cols-2 gap-4"
+          className="grid grid-cols-1 md:grid-cols-2 gap-3"
         >
           {addresses.map((address) => (
             <motion.div
               key={address.id}
               variants={itemVariants}
               className={cn(
-                "glass-sidebar rounded-2xl p-5 relative transition-all duration-200",
-                address.is_default && "border-orange-500/30 shadow-orange-500/5 shadow-lg"
+                "glass-card-immersive rounded-2xl p-5 relative overflow-hidden",
+                address.is_default && "border-orange-500/20"
               )}
             >
+              {/* Default gradient accent */}
               {address.is_default && (
-                <span className="absolute top-4 right-4 flex items-center gap-1 text-xs font-semibold text-orange-400">
-                  <Star size={12} className="fill-orange-400" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-orange-500 to-amber-500 opacity-60" />
+              )}
+
+              {address.is_default && (
+                <span className="absolute top-4 right-4 flex items-center gap-1 text-[11px] font-semibold text-orange-400">
+                  <Star size={11} className="fill-orange-400" />
                   Predefinida
                 </span>
               )}
 
-              <p className="text-xs text-accent/40 uppercase tracking-wider font-semibold mb-2">
+              <p className="text-[11px] text-accent/30 uppercase tracking-wider font-semibold mb-2">
                 {address.label}
               </p>
-              <p className="text-sm font-semibold text-accent mb-1">
-                {address.full_name}
-              </p>
-              <div className="text-sm text-accent/60 space-y-0.5 mb-4">
+              <p className="text-sm font-semibold text-accent mb-1">{address.full_name}</p>
+              <div className="text-sm text-accent/45 space-y-0.5 mb-4">
                 <p>{address.line1}</p>
                 {address.line2 && <p>{address.line2}</p>}
-                <p>
-                  {address.postal_code} {address.city}
-                </p>
+                <p>{address.postal_code} {address.city}</p>
                 <p>{address.district}</p>
                 {address.phone && <p>{address.phone}</p>}
               </div>
@@ -356,7 +340,7 @@ export default function MoradasPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => openEditForm(address)}
-                  className="flex items-center gap-1 px-3 py-1.5 text-xs text-accent/50 hover:text-accent border border-white/10 hover:border-white/20 rounded-lg transition-colors"
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs text-accent/40 hover:text-accent border border-white/[0.06] hover:border-white/15 rounded-lg transition-all duration-300"
                 >
                   <Pencil size={12} />
                   Editar
@@ -364,19 +348,15 @@ export default function MoradasPage() {
                 <button
                   onClick={() => handleDelete(address.id)}
                   disabled={deletingId === address.id}
-                  className="flex items-center gap-1 px-3 py-1.5 text-xs text-red-400/60 hover:text-red-400 border border-white/10 hover:border-red-500/20 rounded-lg transition-colors disabled:opacity-50"
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs text-red-400/50 hover:text-red-400 border border-white/[0.06] hover:border-red-500/15 rounded-lg transition-all duration-300 disabled:opacity-50"
                 >
-                  {deletingId === address.id ? (
-                    <Loader2 size={12} className="animate-spin" />
-                  ) : (
-                    <Trash2 size={12} />
-                  )}
+                  {deletingId === address.id ? <Loader2 size={12} className="animate-spin" /> : <Trash2 size={12} />}
                   Eliminar
                 </button>
                 {!address.is_default && (
                   <button
                     onClick={() => handleSetDefault(address.id)}
-                    className="flex items-center gap-1 px-3 py-1.5 text-xs text-orange-400/60 hover:text-orange-400 border border-white/10 hover:border-orange-500/20 rounded-lg transition-colors"
+                    className="flex items-center gap-1 px-3 py-1.5 text-xs text-orange-400/50 hover:text-orange-400 border border-white/[0.06] hover:border-orange-500/15 rounded-lg transition-all duration-300"
                   >
                     <Star size={12} />
                     Predefinir
@@ -402,8 +382,8 @@ interface FormFieldProps {
 
 function FormField({ label, placeholder, value, onChange, required, className }: FormFieldProps) {
   return (
-    <label className={cn("block", className)}>
-      <span className="text-xs text-accent/50 mb-1 block">
+    <label className={cn("block group", className)}>
+      <span className="text-[11px] text-accent/35 mb-1.5 block font-medium uppercase tracking-wider">
         {label}
         {required && <span className="text-orange-400 ml-0.5">*</span>}
       </span>
@@ -413,7 +393,7 @@ function FormField({ label, placeholder, value, onChange, required, className }:
         value={value}
         onChange={(e) => onChange(e.target.value)}
         required={required}
-        className="w-full bg-accent/5 border border-accent/10 rounded-xl py-2.5 px-4 text-sm text-accent placeholder:text-accent/25 focus:outline-none focus:border-orange-500/40 focus:bg-accent/10 transition-all"
+        className="w-full bg-white/[0.03] border border-white/[0.07] rounded-xl py-2.5 px-4 text-sm text-accent placeholder:text-accent/20 focus:outline-none focus:border-orange-500/30 focus:ring-1 focus:ring-orange-500/15 transition-all duration-300"
       />
     </label>
   );
@@ -421,17 +401,17 @@ function FormField({ label, placeholder, value, onChange, required, className }:
 
 function MoradasSkeleton() {
   return (
-    <div className="animate-pulse space-y-6">
+    <div className="space-y-6">
       <div className="flex justify-between">
         <div>
-          <div className="h-8 w-48 bg-accent/10 rounded-lg mb-2" />
-          <div className="h-4 w-56 bg-accent/5 rounded-lg" />
+          <div className="h-8 w-48 skeleton-shimmer rounded-lg mb-2" />
+          <div className="h-4 w-56 skeleton-shimmer rounded-lg" />
         </div>
-        <div className="h-10 w-40 bg-accent/10 rounded-full" />
+        <div className="h-10 w-40 skeleton-shimmer rounded-full" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {[1, 2].map((i) => (
-          <div key={i} className="glass-sidebar rounded-2xl p-5 h-48" />
+          <div key={i} className="glass-card-immersive rounded-2xl p-5 h-48 skeleton-shimmer" />
         ))}
       </div>
     </div>
