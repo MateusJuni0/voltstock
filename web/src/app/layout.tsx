@@ -75,21 +75,12 @@ export const metadata: Metadata = {
     siteName: "VoltStock",
     locale: "pt_PT",
     type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "VoltStock - Hardware Premium Portugal",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "VoltStock | Hardware Premium Portugal",
     description:
       "A referência em hardware premium e eletrónica profissional em Portugal. Componentes, periféricos e setups de elite.",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -117,7 +108,6 @@ export default function RootLayout({
       lang="pt-PT"
       className={`${outfit.variable} ${inter.variable} h-full antialiased`}
     >
-      <GoogleAnalytics />
       <body className="min-h-full flex flex-col bg-[#0A0E1A] text-[#FED7AA] font-sans overflow-x-hidden relative selection:bg-orange-500/30">
         <Waves
           lineColor="rgba(134, 184, 190, 0.45)"
@@ -145,6 +135,7 @@ export default function RootLayout({
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
         <JsonLd data={localBusinessSchema()} />
+        <GoogleAnalytics />
         <CookieConsent />
         <Toaster
           position="bottom-right"
