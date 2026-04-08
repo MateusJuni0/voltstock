@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 /**
  * OAuth callback handler — Supabase redirects here after Google sign-in.
  * Exchanges the one-time `code` for a session and redirects the user back
- * to where they came from (or to the homepage if no `next` param is set).
+ * to where they came from (or to /conta if no `next` param is set).
  */
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
@@ -15,11 +15,14 @@ export async function GET(request: NextRequest) {
   const next = rawNext.startsWith("/") && !rawNext.startsWith("//") ? rawNext : "/";
 
   if (!code) {
-    // No code param — redirect to home with an error hint
     return NextResponse.redirect(`${origin}/?error=oauth_no_code`);
   }
 
   const cookieStore = await cookies();
+  const destination = next === "/" ? "/conta" : next;
+
+  // Pre-build the success redirect so we can attach session cookies to it
+  const successRedirect = NextResponse.redirect(`${origin}${destination}`);
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -31,7 +34,10 @@ export async function GET(request: NextRequest) {
         },
         setAll(cookiesToSet) {
           for (const { name, value, options } of cookiesToSet) {
+            // Write to the cookie store (internal Next.js tracking)
             cookieStore.set(name, value, options);
+            // Also write directly to the redirect response (belt-and-suspenders)
+            successRedirect.cookies.set(name, value, options);
           }
         },
       },
@@ -41,10 +47,10 @@ export async function GET(request: NextRequest) {
   const { error } = await supabase.auth.exchangeCodeForSession(code);
 
   if (error) {
-    return NextResponse.redirect(`${origin}/?error=oauth_failed&msg=${encodeURIComponent(error.message)}`);
+    return NextResponse.redirect(
+      `${origin}/?error=oauth_failed&msg=${encodeURIComponent(error.message)}`
+    );
   }
 
-  // Successful auth — redirect to account page (or intended destination)
-  const destination = next === "/" ? "/conta" : next;
-  return NextResponse.redirect(`${origin}${destination}`);
+  return successRedirect;
 }
