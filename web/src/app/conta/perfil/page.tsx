@@ -180,44 +180,61 @@ export default function PerfilPage() {
       </motion.div>
 
       {/* Profile form */}
-      <motion.div variants={itemVariants} className="glass-card-immersive rounded-2xl p-6 mb-5">
-        <div className="flex items-center gap-2 mb-6">
-          <User size={15} className="text-accent/30" />
-          <h2 className="text-xs font-semibold text-accent/40 uppercase tracking-widest">
-            Dados pessoais
-          </h2>
+      <motion.div variants={itemVariants} className="glass-card-immersive rounded-2xl overflow-hidden mb-5">
+        {/* Section header with gradient */}
+        <div className="relative px-6 py-4 border-b border-white/[0.05] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-500/[0.06] to-transparent" />
+          <div className="relative flex items-center gap-3">
+            <div className="w-7 h-7 rounded-lg bg-orange-500/15 border border-orange-500/20 flex items-center justify-center">
+              <User size={14} className="text-orange-400" />
+            </div>
+            <div>
+              <h2 className="text-sm font-semibold text-accent/80">Dados pessoais</h2>
+              <p className="text-[11px] text-accent/30">Informações da sua conta</p>
+            </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <ProfileField
-            label="Nome completo"
-            icon={User}
-            value={formData.full_name}
-            onChange={(v) => updateField("full_name", v)}
-            placeholder="O seu nome"
-          />
-          <ProfileField
-            label="Email"
-            icon={Mail}
-            value={email}
-            onChange={() => {}}
-            placeholder=""
-            disabled
-          />
-          <ProfileField
-            label="Telefone"
-            icon={Phone}
-            value={formData.phone}
-            onChange={(v) => updateField("phone", v)}
-            placeholder="+351 900 000 000"
-          />
-          <ProfileField
-            label="NIF"
-            icon={FileText}
-            value={formData.nif}
-            onChange={(v) => updateField("nif", v)}
-            placeholder="123456789"
-          />
+        <div className="p-6">
+          {/* Fields: full-width name, then 2-col grid */}
+          <div className="space-y-4">
+            <ProfileField
+              label="Nome completo"
+              icon={User}
+              value={formData.full_name}
+              onChange={(v) => updateField("full_name", v)}
+              placeholder="O seu nome completo"
+              accent="orange"
+            />
+            <ProfileField
+              label="Email"
+              icon={Mail}
+              value={email}
+              onChange={() => {}}
+              placeholder=""
+              disabled
+              hint="O email não pode ser alterado"
+              accent="gray"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <ProfileField
+                label="Telefone"
+                icon={Phone}
+                value={formData.phone}
+                onChange={(v) => updateField("phone", v)}
+                placeholder="+351 900 000 000"
+                accent="orange"
+              />
+              <ProfileField
+                label="NIF"
+                icon={FileText}
+                value={formData.nif}
+                onChange={(v) => updateField("nif", v)}
+                placeholder="123456789"
+                accent="orange"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Message */}
@@ -359,28 +376,94 @@ interface ProfileFieldProps {
   placeholder: string;
   disabled?: boolean;
   type?: string;
+  hint?: string;
+  accent?: "orange" | "gray";
 }
 
-function ProfileField({ label, icon: Icon, value, onChange, placeholder, disabled, type = "text" }: ProfileFieldProps) {
+function ProfileField({ label, icon: Icon, value, onChange, placeholder, disabled, type = "text", hint, accent = "orange" }: ProfileFieldProps) {
+  const [focused, setFocused] = useState(false);
+  const hasValue = value.length > 0;
+
   return (
-    <label className="block group">
-      <span className="text-[11px] text-accent/35 mb-1.5 block font-medium uppercase tracking-wider">{label}</span>
-      <div className="relative">
-        <Icon size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-accent/20 group-focus-within:text-orange-400/50 transition-colors" />
-        <input
-          type={type}
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          placeholder={placeholder}
-          disabled={disabled}
-          className={cn(
-            "w-full bg-white/[0.03] border border-white/[0.07] rounded-xl py-3 pl-10 pr-4 text-sm text-accent placeholder:text-accent/20",
-            "focus:outline-none focus:border-orange-500/30 focus:bg-white/[0.05] focus:ring-1 focus:ring-orange-500/15 transition-all duration-300",
-            disabled && "opacity-40 cursor-not-allowed"
-          )}
-        />
+    <div className="group">
+      {/* Label row */}
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-1.5">
+          <Icon
+            size={12}
+            className={cn(
+              "transition-colors duration-300",
+              focused ? "text-orange-400" : "text-accent/25"
+            )}
+          />
+          <span className={cn(
+            "text-[11px] font-semibold uppercase tracking-widest transition-colors duration-300",
+            focused ? "text-orange-400/80" : "text-accent/35"
+          )}>
+            {label}
+          </span>
+        </div>
+        {hint && (
+          <span className="text-[10px] text-accent/20 italic">{hint}</span>
+        )}
       </div>
-    </label>
+
+      {/* Input wrapper with animated gradient border */}
+      <div className={cn(
+        "relative rounded-xl transition-all duration-300",
+        focused && accent === "orange" && "shadow-[0_0_0_1px_rgba(249,115,22,0.3),0_0_20px_rgba(249,115,22,0.06)]"
+      )}>
+        {/* Gradient border overlay */}
+        {focused && accent === "orange" && (
+          <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/40 via-amber-400/20 to-orange-500/40 opacity-60 pointer-events-none" />
+        )}
+
+        <div className={cn(
+          "relative flex items-center gap-3 rounded-xl border transition-all duration-300 overflow-hidden",
+          focused
+            ? "bg-white/[0.06] border-transparent"
+            : hasValue && !disabled
+            ? "bg-white/[0.04] border-white/[0.08]"
+            : "bg-white/[0.02] border-white/[0.05]",
+          disabled && "opacity-40 cursor-not-allowed"
+        )}>
+          {/* Left icon area with subtle bg */}
+          <div className={cn(
+            "flex items-center justify-center w-11 h-12 shrink-0 border-r transition-all duration-300",
+            focused
+              ? "border-orange-500/20 bg-orange-500/[0.08]"
+              : "border-white/[0.05] bg-transparent"
+          )}>
+            <Icon
+              size={15}
+              className={cn(
+                "transition-all duration-300",
+                focused ? "text-orange-400" : "text-accent/25"
+              )}
+            />
+          </div>
+
+          <input
+            type={type}
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            placeholder={placeholder}
+            disabled={disabled}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            className={cn(
+              "flex-1 bg-transparent py-3 pr-4 text-sm text-accent placeholder:text-accent/20 focus:outline-none",
+              disabled && "cursor-not-allowed"
+            )}
+          />
+
+          {/* Value indicator dot */}
+          {hasValue && !disabled && !focused && (
+            <div className="w-1.5 h-1.5 rounded-full bg-orange-500/50 shrink-0 mr-3" />
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 
