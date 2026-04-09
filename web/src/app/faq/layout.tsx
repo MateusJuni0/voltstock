@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
+import { faqSchema } from "@/lib/structured-data";
+import { faqItems } from "@/data/faq-items";
 
 export const metadata: Metadata = {
   title: "Perguntas Frequentes (FAQ)",
@@ -36,5 +39,10 @@ export default function FaqLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      {children}
+      <JsonLd data={faqSchema(faqItems)} />
+    </>
+  );
 }

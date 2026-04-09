@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { FlashSaleBanner } from "@/components/FlashSaleBanner";
 import { BrandsStrip } from "@/components/BrandsStrip";
@@ -11,6 +12,19 @@ import { Testimonials } from "@/components/Testimonials";
 import { CTABanner } from "@/components/CTABanner";
 import { Newsletter } from "@/components/Newsletter";
 import { FAQ } from "@/components/FAQ";
+
+export const metadata: Metadata = {
+  title: "Loja de Hardware e Componentes Gaming | VoltStock Portugal",
+  description:
+    "Compre hardware premium, placas gráficas, processadores, monitores gaming e periféricos ao melhor preço em Portugal. Envio rápido, MBWay, Multibanco. Garantia incluída.",
+  alternates: { canonical: "https://voltstock.pt" },
+  openGraph: {
+    title: "VoltStock — Hardware Premium & Gaming Portugal",
+    description:
+      "A loja portuguesa de hardware e gaming. Componentes PC, setups completos, preços competitivos. Pagamento MBWay e cartão.",
+    url: "https://voltstock.pt",
+  },
+};
 
 export default function Home() {
   return (

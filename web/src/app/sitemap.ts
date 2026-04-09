@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { products } from '@/data/products'
 import { guides } from '@/data/guides'
+import { seoCategories } from '@/data/seo-categories'
+import { seoBrands } from '@/data/seo-brands'
 
 const BASE_URL = 'https://voltstock.pt'
 
@@ -17,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/comparar`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/sobre`,
@@ -77,6 +85,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ]
 
+  const categoryPages: MetadataRoute.Sitemap = seoCategories.map((cat) => ({
+    url: `${BASE_URL}/categoria/${cat.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }))
+
+  const brandPages: MetadataRoute.Sitemap = seoBrands.map((brand) => ({
+    url: `${BASE_URL}/marca/${brand.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }))
+
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({
     url: `${BASE_URL}/produtos/${product.id}`,
     lastModified: new Date(),
@@ -84,5 +106,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...guidePages, ...productPages]
+  return [
+    ...staticPages,
+    ...guidePages,
+    ...categoryPages,
+    ...brandPages,
+    ...productPages,
+  ]
 }

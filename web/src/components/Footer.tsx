@@ -38,13 +38,25 @@ const WHATSAPP_NUMBER = "351961227666";
 const EMAIL = "V0ltSt0ck22@gmail.com";
 
 const footerLinks = {
-  Produtos: [
-    { label: "Processadores", href: "/produtos?categoria=Processadores" },
-    { label: "Placas Gráficas", href: "/produtos?categoria=Placas+Gr%C3%A1ficas" },
-    { label: "Armazenamento", href: "/produtos?categoria=Armazenamento" },
-    { label: "Monitores", href: "/produtos?categoria=Monitores" },
-    { label: "Periféricos", href: "/produtos?categoria=Perif%C3%A9ricos" },
+  Categorias: [
+    { label: "Processadores", href: "/categoria/processadores" },
+    { label: "Placas Graficas", href: "/categoria/placas-graficas" },
+    { label: "Monitores", href: "/categoria/monitores" },
+    { label: "Memoria RAM", href: "/categoria/memoria-ram" },
+    { label: "Armazenamento", href: "/categoria/armazenamento" },
+    { label: "Teclados e Ratos", href: "/categoria/teclados-ratos" },
+    { label: "Comparar Produtos", href: "/comparar" },
     { label: "Ver Tudo", href: "/produtos" },
+  ],
+  Marcas: [
+    { label: "Corsair", href: "/marca/corsair" },
+    { label: "AMD", href: "/marca/amd" },
+    { label: "MSI", href: "/marca/msi" },
+    { label: "ASUS", href: "/marca/asus" },
+    { label: "Intel", href: "/marca/intel" },
+    { label: "Razer", href: "/marca/razer" },
+    { label: "NVIDIA", href: "/marca/nvidia" },
+    { label: "Samsung", href: "/marca/samsung" },
   ],
   Suporte: [
     { label: "Perguntas Frequentes", href: "/faq" },
@@ -52,7 +64,7 @@ const footerLinks = {
     { label: "Envios e Entregas", href: "/envios" },
     { label: "Garantias e Devoluções", href: "/devolucoes" },
     { label: "Contacte-nos", href: "/contacto" },
-    { label: "Sobre Nós", href: "/sobre" },
+    { label: "Sobre Nos", href: "/sobre" },
     { label: "Guias de Compra", href: "/guias" },
   ],
   Legal: [
@@ -70,7 +82,7 @@ export function Footer() {
   return (
     <footer className="bg-transparent border-t border-white/5 pt-20 pb-10 px-6">
       <div className="max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-16">
           {/* ── Brand column ── */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
