@@ -135,22 +135,6 @@ export default function ContactoPage() {
   }
 
   return (
-    <>
-      <head>
-        <title>Contacto | VoltStock</title>
-        <meta
-          name="description"
-          content="Entre em contacto com a equipa VoltStock. Suporte técnico, informações sobre encomendas, devoluções e parcerias. Resposta em até 24 horas úteis."
-        />
-        <meta property="og:title" content="Contacto | VoltStock" />
-        <meta
-          property="og:description"
-          content="Entre em contacto com a equipa VoltStock. Suporte técnico, informações sobre encomendas e parcerias."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="pt_PT" />
-      </head>
-
       <main className="min-h-screen pt-[120px] pb-20 px-4">
         <div className="max-w-[1100px] mx-auto">
           <Breadcrumbs items={[{ label: "Contacto" }]} />
@@ -424,6 +408,5 @@ export default function ContactoPage() {
           </motion.section>
         </div>
       </main>
-    </>
   );
 }

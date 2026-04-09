@@ -5,12 +5,6 @@ import Link from "next/link";
 import { Award, BadgeEuro, Truck, Headset, ArrowRight } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
-// ── Metadata (exported via head) ─────────────────────────────────────────────
-// Next.js 16: metadata in "use client" pages must use <head> or a parent layout.
-// We export a generateMetadata-like object through a sibling layout or head.tsx,
-// but for simplicity the parent layout already has site-wide metadata.
-// OG tags are set below via the <head> element.
-
 // ── Animation variants ───────────────────────────────────────────────────────
 
 const fadeUp = {
@@ -67,22 +61,6 @@ const stats = [
 
 export default function SobrePage() {
   return (
-    <>
-      <head>
-        <title>Sobre a VoltStock | Hardware Premium Portugal</title>
-        <meta
-          name="description"
-          content="Conheça a VoltStock — a referência em hardware premium em Portugal. A nossa missão é democratizar o acesso a componentes de topo com preços justos e envio rápido."
-        />
-        <meta property="og:title" content="Sobre a VoltStock | Hardware Premium Portugal" />
-        <meta
-          property="og:description"
-          content="Conheça a VoltStock — a referência em hardware premium em Portugal. A nossa missão é democratizar o acesso a componentes de topo."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="pt_PT" />
-      </head>
-
       <main className="min-h-screen pt-[120px] pb-20 px-4">
         <div className="max-w-[1100px] mx-auto">
           <Breadcrumbs items={[{ label: "Sobre Nos" }]} />
@@ -301,6 +279,5 @@ export default function SobrePage() {
           </motion.section>
         </div>
       </main>
-    </>
   );
 }

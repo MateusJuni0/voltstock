@@ -138,6 +138,7 @@ export function productSchema(
       product.description ??
       `${product.name} - Hardware Premium disponível na VoltStock`,
     image: product.img,
+    sku: `VOLT-${product.id}`,
     brand: {
       "@type": "Brand",
       name: brand,

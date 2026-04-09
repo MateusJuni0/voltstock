@@ -94,9 +94,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // verification: {
-  //   google: "TODO: Add Google Search Console verification code after deploy",
-  // },
+  verification: {
+    google: "googlecf57564f968c0e71",
+  },
 };
 
 export default function RootLayout({
