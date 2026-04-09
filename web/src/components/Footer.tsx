@@ -53,6 +53,7 @@ const footerLinks = {
     { label: "Garantias e Devoluções", href: "/devolucoes" },
     { label: "Contacte-nos", href: "/contacto" },
     { label: "Sobre Nós", href: "/sobre" },
+    { label: "Guias de Compra", href: "/guias" },
   ],
   Legal: [
     { label: "Termos e Condições", href: "/termos" },

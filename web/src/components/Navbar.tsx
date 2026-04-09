@@ -41,6 +41,7 @@ const navLinks = [
   { label: "Periféricos", href: "/produtos?categoria=Periféricos" },
   { label: "Monitores", href: "/produtos?categoria=Monitores" },
   { label: "Setups", href: "/produtos?categoria=Setups" },
+  { label: "Guias", href: "/guias" },
 ];
 
 function getUserInitials(
