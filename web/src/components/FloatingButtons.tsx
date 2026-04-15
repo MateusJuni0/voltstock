@@ -27,13 +27,12 @@ export function FloatingButtons() {
             whileHover={{ scale: 1.1 }}
             className="w-14 h-14 rounded-2xl overflow-hidden border border-accent/15 shadow-2xl shadow-black/50 bg-[#0A0E1A]/80 backdrop-blur-xl flex items-center justify-center"
           >
-            <video
-              src="/logo/voltstock.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-[160%] h-[160%] object-contain mix-blend-screen"
+            <img
+              src="/logo/voltstock-icon.png"
+              alt="VoltStock"
+              width={40}
+              height={40}
+              className="w-10 h-10 object-contain"
             />
           </motion.div>
         </Link>

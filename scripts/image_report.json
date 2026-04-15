@@ -1,0 +1,1610 @@
+[
+  {
+    "id": 1,
+    "name": "MSI GeForce RTX 5090 SUPRIM X 32G",
+    "url": "https://asset.msi.com/resize/image/global/product/product_1665543166b2a4d38c6bf8dc8e7751ea87d19c30f4.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\1.png",
+    "size_kb": 1
+  },
+  {
+    "id": 14,
+    "name": "ASUS ROG Strix RTX 4090 OC 24GB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/14-126-593-V01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\14.png",
+    "size_kb": 218
+  },
+  {
+    "id": 21,
+    "name": "NVIDIA GeForce RTX 4070 Ti Super 16GB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/14-932-676-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\21.png",
+    "size_kb": 198
+  },
+  {
+    "id": 22,
+    "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+    "url": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\22.png",
+    "size_kb": 91
+  },
+  {
+    "id": 23,
+    "name": "NVIDIA GeForce RTX 4060 8GB",
+    "url": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\23.png",
+    "size_kb": 91
+  },
+  {
+    "id": 24,
+    "name": "AMD Radeon RX 7900 XTX 24GB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\24.png",
+    "size_kb": 168
+  },
+  {
+    "id": 25,
+    "name": "AMD Radeon RX 7800 XT 16GB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/14-202-428-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\25.png",
+    "size_kb": 199
+  },
+  {
+    "id": 26,
+    "name": "AMD Radeon RX 7600 8GB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/14-202-428-02.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\26.png",
+    "size_kb": 272
+  },
+  {
+    "id": 27,
+    "name": "NVIDIA GeForce RTX 4070 Super 12GB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/14-932-676-03.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\27.png",
+    "size_kb": 203
+  },
+  {
+    "id": 28,
+    "name": "NVIDIA GeForce RTX 3060 12GB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/14-932-676-05.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\28.png",
+    "size_kb": 363
+  },
+  {
+    "id": 2,
+    "name": "AMD Ryzen 7 7800X3D",
+    "url": "https://c1.neweggimages.com/productimage/nb640/19-113-793-03.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\2.png",
+    "size_kb": 254
+  },
+  {
+    "id": 13,
+    "name": "Intel Core i9-14900K",
+    "url": "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\13.png",
+    "size_kb": 218
+  },
+  {
+    "id": 29,
+    "name": "AMD Ryzen 5 7600X",
+    "url": "https://c1.neweggimages.com/productimage/nb640/19-113-793-02.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\29.png",
+    "size_kb": 207
+  },
+  {
+    "id": 30,
+    "name": "AMD Ryzen 9 7950X3D",
+    "url": "https://c1.neweggimages.com/productimage/nb640/19-113-793-04.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\30.png",
+    "size_kb": 261
+  },
+  {
+    "id": 31,
+    "name": "Intel Core i5-14600K",
+    "url": "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\31.png",
+    "size_kb": 218
+  },
+  {
+    "id": 32,
+    "name": "Intel Core i7-14700K",
+    "url": "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\32.png",
+    "size_kb": 293
+  },
+  {
+    "id": 33,
+    "name": "AMD Ryzen 5 5600X",
+    "url": "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\33.png",
+    "size_kb": 196
+  },
+  {
+    "id": 34,
+    "name": "Intel Core i5-13400F",
+    "url": "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\34.png",
+    "size_kb": 621
+  },
+  {
+    "id": 35,
+    "name": "AMD Ryzen 9 7900X",
+    "url": "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\35.png",
+    "size_kb": 104
+  },
+  {
+    "id": 36,
+    "name": "Intel Core i3-12100F",
+    "url": "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\36.png",
+    "size_kb": 353
+  },
+  {
+    "id": 9,
+    "name": "MSI MAG B650 Tomahawk WiFi",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\9.png",
+    "size_kb": 433
+  },
+  {
+    "id": 15,
+    "name": "ASUS ROG Maximus Z790 Hero",
+    "url": "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\15.png",
+    "size_kb": 437
+  },
+  {
+    "id": 37,
+    "name": "MSI MPG B760M Edge WiFi",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-144-648-10.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\37.png",
+    "size_kb": 54
+  },
+  {
+    "id": 38,
+    "name": "ASUS TUF Gaming B650-PLUS WiFi",
+    "url": "https://dlcdnwebimgs.asus.com/gain/d52e1dd0-6b0b-4c62-a625-01c5e41a8b07/w800",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\38.png",
+    "size_kb": 860
+  },
+  {
+    "id": 39,
+    "name": "Gigabyte B550 Aorus Pro V2",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-145-271-V01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\39.png",
+    "size_kb": 539
+  },
+  {
+    "id": 40,
+    "name": "ASRock B660M Steel Legend",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\40.png",
+    "size_kb": 272
+  },
+  {
+    "id": 41,
+    "name": "ASUS ROG Strix X670E-E Gaming WiFi",
+    "url": "https://dlcdnwebimgs.asus.com/gain/BADFA920-702B-451B-9592-8279ACD6857B/w800",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\41.png",
+    "size_kb": 417
+  },
+  {
+    "id": 42,
+    "name": "MSI MEG Z790 ACE",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-144-562-10.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\42.png",
+    "size_kb": 339
+  },
+  {
+    "id": 43,
+    "name": "Gigabyte X670E Aorus Master",
+    "url": "https://c1.neweggimages.com/productimage/nb640/BSTDD2312190WYIKA6A.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\43.png",
+    "size_kb": 358
+  },
+  {
+    "id": 44,
+    "name": "ASRock B760M Pro RS WiFi",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\44.png",
+    "size_kb": 373
+  },
+  {
+    "id": 4,
+    "name": "Corsair Vengeance DDR5 32GB 6000MHz",
+    "url": "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\4.png",
+    "size_kb": 178
+  },
+  {
+    "id": 16,
+    "name": "G.Skill Trident Z5 RGB DDR5 64GB",
+    "url": "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\16.png",
+    "size_kb": 273
+  },
+  {
+    "id": 45,
+    "name": "Kingston Fury Beast DDR5 32GB 5600MHz",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\45.png",
+    "size_kb": 167
+  },
+  {
+    "id": 46,
+    "name": "Corsair Dominator Platinum RGB DDR5 32GB 6200MHz",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/CMT32GX5M2C4800C34/Gallery/DOMINATOR_RGB_PLATINUM_BLACK_DDR5_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\46.png",
+    "size_kb": 436
+  },
+  {
+    "id": 47,
+    "name": "Kingston Fury Renegade DDR5 32GB 6400MHz",
+    "url": "https://ae01.alicdn.com/kf/S4ffe778a265a4e9da5f6fa192ae6cf4bV.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\47.png",
+    "size_kb": 149
+  },
+  {
+    "id": 48,
+    "name": "TeamGroup T-Force Delta RGB DDR5 32GB 6000MHz",
+    "url": "https://images.teamgroupinc.com/products/memory/u-dimm/ddr5/delta-rgb/black/dual_01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\48.png",
+    "size_kb": 651
+  },
+  {
+    "id": 49,
+    "name": "Corsair Vengeance DDR5 16GB 5600MHz",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/vengeance-ddr5-blk-config/Gallery/Vengeance-DDR5-1UP-16GB-BLACK_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\49.png",
+    "size_kb": 255
+  },
+  {
+    "id": 50,
+    "name": "G.Skill Ripjaws S5 DDR5 32GB 6000MHz",
+    "url": "https://www.gskill.com/_upload/images/168428819510.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\50.png",
+    "size_kb": 569
+  },
+  {
+    "id": 51,
+    "name": "Kingston Fury Beast DDR4 32GB 3200MHz",
+    "url": "https://ae01.alicdn.com/kf/H3cd821a404864cb287d5959bf547144cT.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\51.png",
+    "size_kb": 184
+  },
+  {
+    "id": 52,
+    "name": "Crucial DDR5 32GB 4800MHz",
+    "url": "https://assets.micron.com/adobe/assets/urn:aaid:aem:10781863-41f2-495a-9613-96e8f995614f/renditions/transformpng-640-640.png/as/crucial-ddr5-UDIMM-iso-3.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\52.png",
+    "size_kb": 22
+  },
+  {
+    "id": 3,
+    "name": "Samsung 990 Pro 2TB NVMe Gen4",
+    "url": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\3.png",
+    "size_kb": 309
+  },
+  {
+    "id": 17,
+    "name": "WD Black SN850X 4TB NVMe Gen4",
+    "url": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\17.png",
+    "size_kb": 293
+  },
+  {
+    "id": 53,
+    "name": "WD Blue SN580 1TB NVMe Gen4",
+    "url": "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\53.png",
+    "size_kb": 171
+  },
+  {
+    "id": 54,
+    "name": "Kingston NV2 2TB NVMe Gen4",
+    "url": "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\54.png",
+    "size_kb": 400
+  },
+  {
+    "id": 55,
+    "name": "Crucial P3 Plus 2TB NVMe Gen4",
+    "url": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\55.png",
+    "size_kb": 198
+  },
+  {
+    "id": 56,
+    "name": "Samsung 870 EVO 1TB SATA SSD",
+    "url": "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\56.png",
+    "size_kb": 10
+  },
+  {
+    "id": 57,
+    "name": "Seagate FireCuda 530 2TB NVMe Gen4",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\57.png",
+    "size_kb": 109
+  },
+  {
+    "id": 58,
+    "name": "Crucial T500 2TB NVMe Gen4",
+    "url": "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\58.png",
+    "size_kb": 171
+  },
+  {
+    "id": 59,
+    "name": "SK Hynix Platinum P41 2TB NVMe Gen4",
+    "url": "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\59.png",
+    "size_kb": 400
+  },
+  {
+    "id": 60,
+    "name": "Kingston KC3000 2TB NVMe Gen4",
+    "url": "https://cdn.shopify.com/s/files/1/0518/5073/9904/files/KTC-KC3000-KF3.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\60.png",
+    "size_kb": 41
+  },
+  {
+    "id": 18,
+    "name": "Corsair HX1500i 80+ Platinum",
+    "url": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\18.png",
+    "size_kb": 308
+  },
+  {
+    "id": 61,
+    "name": "Corsair RM850x 80+ Gold (2024)",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\61.png",
+    "size_kb": 690
+  },
+  {
+    "id": 62,
+    "name": "Seasonic Focus GX-750 80+ Gold",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\62.png",
+    "size_kb": 406
+  },
+  {
+    "id": 63,
+    "name": "be quiet! Pure Power 12 M 850W",
+    "url": "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\63.png",
+    "size_kb": 463
+  },
+  {
+    "id": 64,
+    "name": "EVGA SuperNOVA 1000 G7 80+ Gold",
+    "url": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\64.png",
+    "size_kb": 308
+  },
+  {
+    "id": 65,
+    "name": "Corsair SF750 80+ Platinum SFX",
+    "url": "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\65.png",
+    "size_kb": 397
+  },
+  {
+    "id": 66,
+    "name": "MSI MEG Ai1300P PCIE5 80+ Platinum",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\66.png",
+    "size_kb": 272
+  },
+  {
+    "id": 67,
+    "name": "Seasonic Prime TX-1000 80+ Titanium",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\67.png",
+    "size_kb": 173
+  },
+  {
+    "id": 68,
+    "name": "NZXT C850 80+ Gold (2024)",
+    "url": "https://nzxt.com/cdn/shop/files/power_c_series_gold_c850-vents-up-right.png?v=1762528174",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\68.png",
+    "size_kb": 567
+  },
+  {
+    "id": 69,
+    "name": "Thermaltake Toughpower GF3 850W",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\69.png",
+    "size_kb": 463
+  },
+  {
+    "id": 8,
+    "name": "Lian Li Lancool 216 RGB White",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\8.png",
+    "size_kb": 690
+  },
+  {
+    "id": 19,
+    "name": "Fractal Design Torrent RGB Black",
+    "url": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\19.png",
+    "size_kb": 213
+  },
+  {
+    "id": 70,
+    "name": "NZXT H7 Flow RGB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/11-146-364-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\70.png",
+    "size_kb": 845
+  },
+  {
+    "id": 71,
+    "name": "Corsair 4000D Airflow",
+    "url": "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\71.png",
+    "size_kb": 503
+  },
+  {
+    "id": 72,
+    "name": "Phanteks Eclipse G360A",
+    "url": "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\72.png",
+    "size_kb": 660
+  },
+  {
+    "id": 73,
+    "name": "be quiet! Pure Base 500DX",
+    "url": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\73.png",
+    "size_kb": 211
+  },
+  {
+    "id": 74,
+    "name": "Cooler Master HAF 700 EVO",
+    "url": "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\74.png",
+    "size_kb": 631
+  },
+  {
+    "id": 75,
+    "name": "HYTE Y60",
+    "url": "https://cdn.sanity.io/images/mqc7p4g4/production/82d0db796ef76ffa52ade9761ca1bee0b4b9a9ec-3480x2460.jpg?w=3840&q=75&fit=clip&auto=format",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\75.png",
+    "size_kb": 191
+  },
+  {
+    "id": 76,
+    "name": "Corsair 5000D Airflow",
+    "url": "https://c1.neweggimages.com/productimage/nb640/AJ7WD2106261ZYD4.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\76.png",
+    "size_kb": 249
+  },
+  {
+    "id": 77,
+    "name": "Lian Li O11 Dynamic EVO",
+    "url": "https://lian-li.com/wp-content/uploads/2021/12/evo-600-000.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\77.png",
+    "size_kb": 269
+  },
+  {
+    "id": 10,
+    "name": "NZXT Kraken Elite 360 RGB",
+    "url": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\10.png",
+    "size_kb": 302
+  },
+  {
+    "id": 20,
+    "name": "be quiet! Dark Rock Pro 5",
+    "url": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\20.png",
+    "size_kb": 540
+  },
+  {
+    "id": 78,
+    "name": "Corsair iCUE H150i Elite LCD XT",
+    "url": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\78.png",
+    "size_kb": 211
+  },
+  {
+    "id": 79,
+    "name": "Arctic Liquid Freezer II 360 A-RGB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\79.png",
+    "size_kb": 260
+  },
+  {
+    "id": 80,
+    "name": "DeepCool AK620 Digital",
+    "url": "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPUAirCoolers/AK620_DIGITAL/Gallery/800X800/01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\80.png",
+    "size_kb": 239
+  },
+  {
+    "id": 81,
+    "name": "Noctua NH-D15 chromax.black",
+    "url": "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\81.png",
+    "size_kb": 371
+  },
+  {
+    "id": 82,
+    "name": "Corsair A115 Air Cooler",
+    "url": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\82.png",
+    "size_kb": 198
+  },
+  {
+    "id": 83,
+    "name": "EK-AIO 280 D-RGB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/37B-000B-00421-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\83.png",
+    "size_kb": 254
+  },
+  {
+    "id": 84,
+    "name": "Arctic Freezer 36 A-RGB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\84.png",
+    "size_kb": 260
+  },
+  {
+    "id": 85,
+    "name": "Thermalright Peerless Assassin 120 SE",
+    "url": "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\85.png",
+    "size_kb": 503
+  },
+  {
+    "id": 5,
+    "name": "ASUS ROG Swift OLED PG27AQDM",
+    "url": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\5.png",
+    "size_kb": 300
+  },
+  {
+    "id": 86,
+    "name": "LG 27GP850-B UltraGear 165Hz",
+    "url": "https://c1.neweggimages.com/ProductImageCompressAll1280/24-026-195-V01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\86.png",
+    "size_kb": 514
+  },
+  {
+    "id": 87,
+    "name": "Dell S2722DGM 165Hz Curved",
+    "url": "https://c1.neweggimages.com/productimage/nb640/AKVHD21080615GNM1.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\87.png",
+    "size_kb": 88
+  },
+  {
+    "id": 88,
+    "name": "Samsung Odyssey G7 32\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-027-066-V15.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\88.png",
+    "size_kb": 475
+  },
+  {
+    "id": 89,
+    "name": "ASUS TUF Gaming VG27AQ1A",
+    "url": "https://dlcdnwebimgs.asus.com/gain/d452f143-b494-41d0-9e4b-6d7ae0ff6291/w692",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\89.png",
+    "size_kb": 243
+  },
+  {
+    "id": 90,
+    "name": "BenQ MOBIUZ EX2710Q 165Hz",
+    "url": "https://image.benq.com/is/image/benqco/ex2710q-2product?$ResponsivePreset$",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\90.png",
+    "size_kb": 476
+  },
+  {
+    "id": 91,
+    "name": "LG UltraGear 27GR95QE OLED 240Hz",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\91.png",
+    "size_kb": 43
+  },
+  {
+    "id": 92,
+    "name": "Gigabyte M27Q X 240Hz",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\92.png",
+    "size_kb": 344
+  },
+  {
+    "id": 93,
+    "name": "AOC 24G2SP 165Hz",
+    "url": "https://cdn.sanity.io/images/hf5b3axp/production/d711ca9aaf71f961f8ab64eff8d6624d4d532839-3840x3840.png?w=1920&fit=max&auto=format",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\93.png",
+    "size_kb": 920
+  },
+  {
+    "id": 94,
+    "name": "MSI MAG 274QRF-QD 170Hz",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-475-127-S05.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\94.png",
+    "size_kb": 101
+  },
+  {
+    "id": 6,
+    "name": "Logitech G Pro X Superlight 2",
+    "url": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\6.png",
+    "size_kb": 141
+  },
+  {
+    "id": 7,
+    "name": "Razer BlackWidow V4 Pro",
+    "url": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\7.png",
+    "size_kb": 510
+  },
+  {
+    "id": 95,
+    "name": "Razer DeathAdder V3",
+    "url": "https://www.razer.com/newsroom/wp-content/uploads/2023/02/daV3-pressrelease-img.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\95.png",
+    "size_kb": 68
+  },
+  {
+    "id": 96,
+    "name": "SteelSeries Apex Pro TKL (2023)",
+    "url": "https://images.ctfassets.net/hmm5mo4qf4mf/5T6OTTzl1B5zaX1nILPFw4/186d8f786745424cdd8770cda23623af/apex_pro_tkl_wl_img_buy_01.png?fm=webp&q=90&fit=scale&w=1920",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\96.png",
+    "size_kb": 607
+  },
+  {
+    "id": 97,
+    "name": "Corsair K70 RGB PRO",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Keyboards/CH-9109410-NA/Gallery/K70_RGB_PRO_PBT_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\97.png",
+    "size_kb": 483
+  },
+  {
+    "id": 98,
+    "name": "Razer Viper V3 Pro",
+    "url": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h08/h61/9765618188318/viper-v3-pro-black-500x500.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\98.png",
+    "size_kb": 76
+  },
+  {
+    "id": 99,
+    "name": "Logitech MX Master 3S",
+    "url": "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\99.png",
+    "size_kb": 333
+  },
+  {
+    "id": 100,
+    "name": "HyperX Alloy Origins 65",
+    "url": "https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_65_english_us_1_top_down.jpg?v=1763563176",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\100.png",
+    "size_kb": 304
+  },
+  {
+    "id": 101,
+    "name": "Razer Huntsman V3 Pro",
+    "url": "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\101.png",
+    "size_kb": 296
+  },
+  {
+    "id": 102,
+    "name": "SteelSeries Aerox 5 Wireless",
+    "url": "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\102.png",
+    "size_kb": 387
+  },
+  {
+    "id": 11,
+    "name": "SteelSeries Arctis Nova Pro Wireless",
+    "url": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\11.png",
+    "size_kb": 531
+  },
+  {
+    "id": 103,
+    "name": "HyperX Cloud III Wireless",
+    "url": "https://row.hyperx.com/cdn/shop/files/hyperx_cloud_iii_wireless_black_77z45aa_main_1.jpg?v=1764893494",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\103.png",
+    "size_kb": 392
+  },
+  {
+    "id": 104,
+    "name": "Logitech G Pro X 2 Lightspeed",
+    "url": "https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\104.png",
+    "size_kb": 210
+  },
+  {
+    "id": 105,
+    "name": "Corsair Virtuoso RGB XT Wireless",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/CA-9011188-NA/Gallery/VIRTUOSO_XT_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\105.png",
+    "size_kb": 338
+  },
+  {
+    "id": 106,
+    "name": "Razer Kraken V4",
+    "url": "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\106.png",
+    "size_kb": 369
+  },
+  {
+    "id": 107,
+    "name": "Sony WH-1000XM5",
+    "url": "https://c1.neweggimages.com/ProductImageOriginal/ARUXS22052606ACVA3A.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\107.png",
+    "size_kb": 294
+  },
+  {
+    "id": 108,
+    "name": "JBL Quantum 910 Wireless",
+    "url": "https://images.samsung.com/is/image/samsung/p6pim/us/jblq910wlblkam/gallery/us-jbl-quantum910-wireless-jblq910wlblkam-551554636",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\108.png",
+    "size_kb": 149
+  },
+  {
+    "id": 109,
+    "name": "Corsair HS80 Max Wireless",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/hs80-max-wireless/steel-grey/HS80_MAX_WIRELESS_STEEL_GRAY_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\109.png",
+    "size_kb": 379
+  },
+  {
+    "id": 110,
+    "name": "Razer BlackShark V2 Pro (2023)",
+    "url": "https://c1.neweggimages.com/productimage/nb640/APCPD2111150RQFOF3C.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\110.png",
+    "size_kb": 252
+  },
+  {
+    "id": 111,
+    "name": "Audio-Technica ATH-M50x",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\111.png",
+    "size_kb": 218
+  },
+  {
+    "id": 12,
+    "name": "Secretlab TITAN Evo 2022 XL",
+    "url": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\12.png",
+    "size_kb": 362
+  },
+  {
+    "id": 112,
+    "name": "Razer Iskur V2",
+    "url": "https://c1.neweggimages.com/productimage/nb640/26-153-375-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\112.png",
+    "size_kb": 412
+  },
+  {
+    "id": 113,
+    "name": "Corsair TC200 Leatherette",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Chairs/CF-9010043-WW/Gallery/CF-9010043-WW_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\113.png",
+    "size_kb": 327
+  },
+  {
+    "id": 114,
+    "name": "noblechairs HERO ST",
+    "url": "https://img.noblechairs.com/images/GAGC-255/167c6091e83aee48b4a95a42f9a765ab.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\114.png",
+    "size_kb": 324
+  },
+  {
+    "id": 115,
+    "name": "DXRacer Craft Series",
+    "url": "https://nex-img.dxracer.cc/20001/fcda253d-9214-405e-9b6d-b7a1dc5cdbaf-1.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\115.png",
+    "size_kb": 8
+  },
+  {
+    "id": 116,
+    "name": "AndaSeat Kaiser 3 XL",
+    "url": "https://www.andaseat.com/cdn/shop/files/andaseat-kasier-3-series-gaming-chair-carbon-black-ign_grande.webp?v=1757903020",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\116.png",
+    "size_kb": 120
+  },
+  {
+    "id": 117,
+    "name": "Cougar Armor Elite",
+    "url": "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\117.png",
+    "size_kb": 251
+  },
+  {
+    "id": 118,
+    "name": "AKRacing Masters Pro",
+    "url": "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\118.png",
+    "size_kb": 251
+  },
+  {
+    "id": 119,
+    "name": "Herman Miller x Logitech Embody Gaming",
+    "url": "https://images.hermanmiller.group/asset/521e115b-9214-402a-92d2-2b8529a5a228/W/HMG_2517590_100698359_Embody_Gaming_Ignite_OnBlkF34R_68477_PDP_v7.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\119.png",
+    "size_kb": 152
+  },
+  {
+    "id": 120,
+    "name": "Autonomous ErgoChair Pro",
+    "url": "https://cdn.autonomous.ai/production/ecm/240715/1(1).jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\120.png",
+    "size_kb": 119
+  },
+  {
+    "id": 121,
+    "name": "NVIDIA GeForce RTX 5090",
+    "url": "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\121.png",
+    "size_kb": 442
+  },
+  {
+    "id": 122,
+    "name": "AMD Radeon RX 9070 XT",
+    "url": "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\122.png",
+    "size_kb": 254
+  },
+  {
+    "id": 123,
+    "name": "NVIDIA GeForce RTX 5070 Ti",
+    "url": "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\123.png",
+    "size_kb": 463
+  },
+  {
+    "id": 124,
+    "name": "ASUS ROG Strix RTX 5080 OC",
+    "url": "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\124.png",
+    "size_kb": 371
+  },
+  {
+    "id": 125,
+    "name": "MSI Gaming Trio RTX 5070",
+    "url": "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\125.png",
+    "size_kb": 397
+  },
+  {
+    "id": 126,
+    "name": "Sapphire Nitro+ RX 9070",
+    "url": "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\126.png",
+    "size_kb": 223
+  },
+  {
+    "id": 128,
+    "name": "Intel Arc B580",
+    "url": "https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\128.png",
+    "size_kb": 214
+  },
+  {
+    "id": 129,
+    "name": "AMD Ryzen 9 9950X",
+    "url": "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\129.png",
+    "size_kb": 293
+  },
+  {
+    "id": 130,
+    "name": "Intel Core Ultra 9 285K",
+    "url": "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\130.png",
+    "size_kb": 196
+  },
+  {
+    "id": 131,
+    "name": "AMD Ryzen 7 9700X",
+    "url": "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\131.png",
+    "size_kb": 621
+  },
+  {
+    "id": 132,
+    "name": "Intel Core Ultra 7 265K",
+    "url": "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\132.png",
+    "size_kb": 104
+  },
+  {
+    "id": 133,
+    "name": "AMD Ryzen 5 9600X",
+    "url": "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\133.png",
+    "size_kb": 353
+  },
+  {
+    "id": 134,
+    "name": "AMD Ryzen 9 9900X",
+    "url": "https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\134.png",
+    "size_kb": 366
+  },
+  {
+    "id": 135,
+    "name": "Intel Core Ultra 5 245K",
+    "url": "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\135.png",
+    "size_kb": 106
+  },
+  {
+    "id": 136,
+    "name": "AMD Ryzen 7 9800X3D",
+    "url": "https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\136.png",
+    "size_kb": 675
+  },
+  {
+    "id": 137,
+    "name": "ASUS ROG Crosshair X870E Hero",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\137.png",
+    "size_kb": 321
+  },
+  {
+    "id": 138,
+    "name": "MSI MEG Z890 ACE",
+    "url": "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\138.png",
+    "size_kb": 965
+  },
+  {
+    "id": 139,
+    "name": "Gigabyte B850 AORUS Elite",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\139.png",
+    "size_kb": 349
+  },
+  {
+    "id": 140,
+    "name": "ASRock Z890 Taichi",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\140.png",
+    "size_kb": 406
+  },
+  {
+    "id": 141,
+    "name": "ASUS ROG Strix B850-F Gaming",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\141.png",
+    "size_kb": 373
+  },
+  {
+    "id": 142,
+    "name": "MSI MAG B850 Tomahawk",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-144-697-05.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\142.png",
+    "size_kb": 333
+  },
+  {
+    "id": 143,
+    "name": "Gigabyte Z890 AORUS Master",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-145-523-05.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\143.png",
+    "size_kb": 340
+  },
+  {
+    "id": 144,
+    "name": "ASRock B850M Pro RS",
+    "url": "https://c1.neweggimages.com/productimage/nb640/13-162-195-11.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\144.png",
+    "size_kb": 274
+  },
+  {
+    "id": 145,
+    "name": "G.Skill Trident Z5 RGB DDR5-7200",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-374-435-10.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\145.png",
+    "size_kb": 375
+  },
+  {
+    "id": 146,
+    "name": "Corsair Dominator Titanium DDR5-6400",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-982-097-02.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\146.png",
+    "size_kb": 93
+  },
+  {
+    "id": 147,
+    "name": "Kingston Fury Beast DDR5-6000",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-242-737-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\147.png",
+    "size_kb": 239
+  },
+  {
+    "id": 148,
+    "name": "TeamGroup T-Force Delta RGB DDR5-7600",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-331-810-07.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\148.png",
+    "size_kb": 319
+  },
+  {
+    "id": 149,
+    "name": "G.Skill Flare X5 DDR5-6000",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-374-419-07.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\149.png",
+    "size_kb": 291
+  },
+  {
+    "id": 150,
+    "name": "Corsair Vengeance DDR5-5600",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-236-828-V01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\150.png",
+    "size_kb": 181
+  },
+  {
+    "id": 151,
+    "name": "G.Skill Trident Z5 Neo DDR5-6400",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-374-445-11.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\151.png",
+    "size_kb": 284
+  },
+  {
+    "id": 152,
+    "name": "Kingston Fury Renegade DDR5-8000",
+    "url": "https://c1.neweggimages.com/productimage/nb640/AFYUD2402090ZFHPO84.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\152.png",
+    "size_kb": 286
+  },
+  {
+    "id": 153,
+    "name": "Samsung 990 EVO Plus 2TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-147-900-02.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\153.png",
+    "size_kb": 141
+  },
+  {
+    "id": 154,
+    "name": "WD Black SN850X 2TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-250-247-02.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\154.png",
+    "size_kb": 97
+  },
+  {
+    "id": 155,
+    "name": "Crucial T700 2TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-156-329-19.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\155.png",
+    "size_kb": 105
+  },
+  {
+    "id": 156,
+    "name": "Seagate FireCuda 540 2TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-248-242-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\156.png",
+    "size_kb": 133
+  },
+  {
+    "id": 157,
+    "name": "Kingston KC3000 4TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-242-661-S01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\157.png",
+    "size_kb": 109
+  },
+  {
+    "id": 158,
+    "name": "Samsung 870 EVO 4TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-147-795-V01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\158.png",
+    "size_kb": 35
+  },
+  {
+    "id": 159,
+    "name": "Corsair MP700 PRO 2TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/20-982-117-01.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\159.png",
+    "size_kb": 126
+  },
+  {
+    "id": 160,
+    "name": "Sabrent Rocket 5 2TB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/BK19D24031310CPTJ37.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\160.png",
+    "size_kb": 97
+  },
+  {
+    "id": 161,
+    "name": "Corsair HX1500i",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-139-343-17.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\161.png",
+    "size_kb": 306
+  },
+  {
+    "id": 162,
+    "name": "Seasonic PRIME TX-1000",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\162.png",
+    "size_kb": 173
+  },
+  {
+    "id": 163,
+    "name": "be quiet! Dark Power 13 850W",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A68VS23012716ZPU29A.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\163.png",
+    "size_kb": 386
+  },
+  {
+    "id": 165,
+    "name": "Corsair RM850x 2024",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/base-rmx-2024-config/gallery/black/850/RM850x_2024_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\165.png",
+    "size_kb": 519
+  },
+  {
+    "id": 166,
+    "name": "MSI MEG Ai1300P PCIE5",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\166.png",
+    "size_kb": 272
+  },
+  {
+    "id": 167,
+    "name": "Thermaltake Toughpower GF3 750W",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\167.png",
+    "size_kb": 463
+  },
+  {
+    "id": 168,
+    "name": "Fractal Design Ion+ 2 860W",
+    "url": "https://c1.neweggimages.com/productimage/nb640/17-580-034-V17.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\168.png",
+    "size_kb": 159
+  },
+  {
+    "id": 169,
+    "name": "Lian Li O11 Dynamic EVO 2",
+    "url": "https://c1.neweggimages.com/productimage/nb640/2AM-000Z-000C0-01.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\169.png",
+    "size_kb": 588
+  },
+  {
+    "id": 170,
+    "name": "Fractal Design North",
+    "url": "https://c1.neweggimages.com/productimage/nb640/11-352-204-21.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\170.png",
+    "size_kb": 300
+  },
+  {
+    "id": 172,
+    "name": "Corsair 6500X",
+    "url": "https://c1.neweggimages.com/productimage/nb640/11-139-219-01.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\172.png",
+    "size_kb": 197
+  },
+  {
+    "id": 173,
+    "name": "Phanteks NV7",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A4RES2303280LL2R2D9.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\173.png",
+    "size_kb": 586
+  },
+  {
+    "id": 174,
+    "name": "be quiet! Dark Base 802",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A68VS201113y09Tq.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\174.png",
+    "size_kb": 209
+  },
+  {
+    "id": 176,
+    "name": "SSUPD Meshroom S",
+    "url": "https://ssupd.co/cdn/shop/files/BK-5_13c43442-3cb4-435e-9f85-2675974facc3.png?v=1684638001",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\176.png",
+    "size_kb": 844
+  },
+  {
+    "id": 178,
+    "name": "Corsair iCUE H170i Elite LCD XT",
+    "url": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Liquid-Cooling/base-elite-lcd-xt-cooler-config/Gallery/mandatory-configuration/Cooling_Radiator_Size_420mm/H170i_ELITE_LCD_XT_01.webp",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\178.png",
+    "size_kb": 423
+  },
+  {
+    "id": 179,
+    "name": "Noctua NH-D15 G2",
+    "url": "https://c1.neweggimages.com/productimage/nb640/AADYS2407010JFQIKFA.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\179.png",
+    "size_kb": 535
+  },
+  {
+    "id": 180,
+    "name": "Arctic Liquid Freezer III 360 A-RGB",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A623D2412180WPFL385.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\180.png",
+    "size_kb": 166
+  },
+  {
+    "id": 181,
+    "name": "Deepcool Assassin IV",
+    "url": "https://c1.neweggimages.com/productimage/nb640/35-856-208-V01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\181.png",
+    "size_kb": 33
+  },
+  {
+    "id": 182,
+    "name": "EK-Nucleus AIO CR360 Dark",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A2W0S2410090A4OTIF0.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\182.png",
+    "size_kb": 165
+  },
+  {
+    "id": 184,
+    "name": "Lian Li Galahad II Trinity 360",
+    "url": "https://c1.neweggimages.com/productimage/nb640/AFSTS230713zSCOJ.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\184.png",
+    "size_kb": 201
+  },
+  {
+    "id": 185,
+    "name": "Samsung Odyssey OLED G8 32\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-027-327-23.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\185.png",
+    "size_kb": 322
+  },
+  {
+    "id": 186,
+    "name": "LG UltraGear 27GS95QE 27\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-026-405-08.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\186.png",
+    "size_kb": 105
+  },
+  {
+    "id": 187,
+    "name": "ASUS ROG Swift PG27AQN 27\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-281-235-29.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\187.png",
+    "size_kb": 354
+  },
+  {
+    "id": 188,
+    "name": "Dell Alienware AW3225QF 32\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A8X5S2407090QW0JX8A.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\188.png",
+    "size_kb": 130
+  },
+  {
+    "id": 189,
+    "name": "BenQ MOBIUZ EX3210U 32\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-014-880-10.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\189.png",
+    "size_kb": 372
+  },
+  {
+    "id": 190,
+    "name": "Gigabyte M27U 27\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-012-061-10.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\190.png",
+    "size_kb": 240
+  },
+  {
+    "id": 191,
+    "name": "MSI MAG 341CQP 34\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/24-475-350-11.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\191.png",
+    "size_kb": 376
+  },
+  {
+    "id": 192,
+    "name": "AOC AGON AG275QXL 27\\",
+    "url": "https://c1.neweggimages.com/productimage/nb640/3D4-001B-00063-07.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\192.png",
+    "size_kb": 416
+  },
+  {
+    "id": 193,
+    "name": "Wooting 80HE",
+    "url": "https://c1.neweggimages.com/ProductImageOriginal/AZB2S2507310G9Q4VFD.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\193.png",
+    "size_kb": 418
+  },
+  {
+    "id": 196,
+    "name": "Keychron Q1 HE",
+    "url": "https://c1.neweggimages.com/ProductImageCompressAll60/23-937-168-01.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\196.png",
+    "size_kb": 3
+  },
+  {
+    "id": 197,
+    "name": "Pulsar X2V2 Mini Wireless",
+    "url": "https://c1.neweggimages.com/productimage/nb640/BTD4D24050514RTS408.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\197.png",
+    "size_kb": 149
+  },
+  {
+    "id": 198,
+    "name": "SteelSeries Apex Pro TKL 2024",
+    "url": "https://c1.neweggimages.com/productimage/nb640/23-239-062-04.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\198.png",
+    "size_kb": 367
+  },
+  {
+    "id": 199,
+    "name": "Endgame Gear OP1we",
+    "url": "https://c1.neweggimages.com/ProductImage/BT8WS24030506GDP869.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\199.png",
+    "size_kb": 46
+  },
+  {
+    "id": 200,
+    "name": "Corsair K70 MAX",
+    "url": "https://c1.neweggimages.com/productimage/nb640/23-816-165-05.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\200.png",
+    "size_kb": 200
+  },
+  {
+    "id": 202,
+    "name": "Audeze Maxwell Wireless",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V788PC0.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\202.png",
+    "size_kb": 338
+  },
+  {
+    "id": 204,
+    "name": "Razer BlackShark V2 Pro 2024",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V71LCEF.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\204.png",
+    "size_kb": 309
+  },
+  {
+    "id": 205,
+    "name": "Beyerdynamic DT 900 PRO X",
+    "url": "https://c1.neweggimages.com/productimage/nb640/26-380-048-V05.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\205.png",
+    "size_kb": 576
+  },
+  {
+    "id": 206,
+    "name": "Corsair Virtuoso Pro",
+    "url": "https://c1.neweggimages.com/productimage/nb640/26-816-215-08.png",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\206.png",
+    "size_kb": 390
+  },
+  {
+    "id": 209,
+    "name": "Secretlab Titan Evo 2024",
+    "url": "https://secretlab.co/cdn/shop/products/SL_TitanEvoR_PU_Stealth0001_S_grande.jpg?v=1626023686",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\209.png",
+    "size_kb": 99
+  },
+  {
+    "id": 213,
+    "name": "Corsair TC200 Fabric",
+    "url": "https://c1.neweggimages.com/productimage/nb640/A6ZPD2309280ZGX0D8A.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\213.png",
+    "size_kb": 235
+  },
+  {
+    "id": 214,
+    "name": "Steelcase Karman",
+    "url": "https://images.steelcase.com/image/upload/v1690833473/21-0163191-4-scaled.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\214.png",
+    "size_kb": 363
+  },
+  {
+    "id": 215,
+    "name": "IKEA MATCHSPEL",
+    "url": "https://www.ikea.com/us/en/images/products/matchspel-gaming-chair-bomstad-black__0985645_pe816716_s5.jpg",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\215.png",
+    "size_kb": 586
+  },
+  {
+    "id": 216,
+    "name": "AndaSeat Kaiser 4",
+    "url": "https://www.andaseat.com/cdn/shop/files/AndaSeat-new-kaiser-4-series-gaming-chair-elegant-black-45.webp?v=1764403213",
+    "status": "success",
+    "path": "C:\\Users\\mjnol\\.openclaw\\workspace\\projects\\cm-ecommerce-tech\\web\\public\\products\\216.png",
+    "size_kb": 334
+  }
+]

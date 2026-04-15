@@ -28,7 +28,8 @@ export const categories = [
   "Monitores",
   "Teclados e Ratos",
   "Headsets e Áudio",
-  "Cadeiras Gaming"
+  "Cadeiras Gaming",
+  "Mouse Pads"
 ];
 
 export const products: Product[] = [
@@ -42,7 +43,7 @@ export const products: Product[] = [
     "price": "2.199,00 €",
     "oldPrice": "2.350,00 €",
     "rating": 4.9,
-    "img": "https://asset.msi.com/resize/image/global/product/product_1665543166b2a4d38c6bf8dc8e7751ea87d19c30f4.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+    "img": "/products/1.png",
     "gallery": [
       "https://asset.msi.com/resize/image/global/product/product_16655431665a8ea2dc3d7c588a44d8cd3ff2d6da61.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"
     ],
@@ -66,7 +67,7 @@ export const products: Product[] = [
     "price": "1.749,00 €",
     "oldPrice": "1.999,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-126-593-V01.jpg",
+    "img": "/products/14.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/14-126-593-V01.jpg",
       "https://c1.neweggimages.com/productimage/nb640/14-126-593-V02.jpg"
@@ -91,7 +92,7 @@ export const products: Product[] = [
     "price": "829,00 €",
     "oldPrice": "899,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-932-676-01.jpg",
+    "img": "/products/21.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/14-932-676-01.jpg"
     ],
@@ -115,7 +116,7 @@ export const products: Product[] = [
     "price": "429,00 €",
     "oldPrice": "479,00 €",
     "rating": 4.6,
-    "img": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg",
+    "img": "/products/22.png",
     "gallery": [
       "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg"
     ],
@@ -138,7 +139,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "309,00 €",
     "rating": 4.5,
-    "img": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg",
+    "img": "/products/23.png",
     "gallery": [
       "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg"
     ],
@@ -162,7 +163,7 @@ export const products: Product[] = [
     "price": "899,00 €",
     "oldPrice": "1.049,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg",
+    "img": "/products/24.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg"
     ],
@@ -186,7 +187,7 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-428-01.jpg",
+    "img": "/products/25.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/14-202-428-01.jpg"
     ],
@@ -210,7 +211,7 @@ export const products: Product[] = [
     "price": "269,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-202-428-02.jpg",
+    "img": "/products/26.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/14-202-428-02.jpg"
     ],
@@ -234,7 +235,7 @@ export const products: Product[] = [
     "price": "619,00 €",
     "oldPrice": "679,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-932-676-03.jpg",
+    "img": "/products/27.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/14-932-676-03.jpg"
     ],
@@ -251,30 +252,6 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 50
   },
-  {
-    "id": 28,
-    "name": "NVIDIA GeForce RTX 3060 12GB",
-    "category": "Placas Gráficas",
-    "price": "239,00 €",
-    "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/14-932-676-05.jpg",
-    "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-932-676-05.jpg"
-    ],
-    "description": "12GB de VRAM GDDR6 a um preço imbatível. Ainda relevante para gaming 1080p com ray tracing básico e DLSS 2. Excelente para builds económicas.",
-    "badge": "Económica",
-    "features": [
-      { "name": "VRAM", "value": "12GB GDDR6" },
-      { "name": "Cores CUDA", "value": "3584" },
-      { "name": "Boost Clock", "value": "1777 MHz" },
-      { "name": "TDP", "value": "170W" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/RTX-3060-12GB",
-    "brand": "NVIDIA",
-    "inStock": true,
-    "stockCount": 50
-  },
-
   // =============================================
   // PROCESSADORES (IDs 2, 13, 29-36)
   // =============================================
@@ -285,7 +262,7 @@ export const products: Product[] = [
     "price": "338,45 €",
     "oldPrice": "399,00 €",
     "rating": 5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/19-113-793-03.png",
+    "img": "/products/2.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/19-113-793-03.png"
     ],
@@ -309,7 +286,7 @@ export const products: Product[] = [
     "price": "489,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg",
+    "img": "/products/13.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg"
     ],
@@ -333,7 +310,7 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/19-113-793-02.png",
+    "img": "/products/29.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/19-113-793-02.png"
     ],
@@ -357,7 +334,7 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/19-113-793-04.png",
+    "img": "/products/30.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/19-113-793-04.png"
     ],
@@ -381,7 +358,7 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg",
+    "img": "/products/31.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg"
     ],
@@ -405,7 +382,7 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg",
+    "img": "/products/32.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S321c130788b14a53ac8610e9a7553954a.jpg"
     ],
@@ -423,60 +400,13 @@ export const products: Product[] = [
     "stockCount": 20
   },
   {
-    "id": 33,
-    "name": "AMD Ryzen 5 5600X",
-    "category": "Processadores",
-    "price": "129,00 €",
-    "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/Sc72cbc783ef1437ba8d8853d23d01a31k.jpg"
-    ],
-    "description": "6 cores Zen 3 que ainda dão conta de qualquer jogo atual. Excelente custo-benefício para upgrades em plataforma AM4 já existente.",
-    "badge": "Budget King",
-    "features": [
-      { "name": "Cores/Threads", "value": "6C / 12T" },
-      { "name": "Boost Clock", "value": "4.6 GHz" },
-      { "name": "Cache L3", "value": "32MB" },
-      { "name": "Socket", "value": "AM4" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Ryzen-5-5600X",
-    "brand": "AMD",
-    "inStock": true,
-    "stockCount": 33
-  },
-  {
-    "id": 34,
-    "name": "Intel Core i5-13400F",
-    "category": "Processadores",
-    "price": "179,00 €",
-    "oldPrice": "209,00 €",
-    "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg"
-    ],
-    "description": "10 cores (6P + 4E) sem gráficos integrados para quem usa placa gráfica dedicada. Excelente performance por euro na plataforma LGA1700.",
-    "badge": "Valor Imbatível",
-    "features": [
-      { "name": "Núcleos", "value": "10 (6P + 4E)" },
-      { "name": "Boost Clock", "value": "4.6 GHz" },
-      { "name": "Cache L3", "value": "20MB" },
-      { "name": "Socket", "value": "LGA1700" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/i5-13400F",
-    "brand": "Intel",
-    "inStock": true,
-    "stockCount": 32
-  },
-  {
     "id": 35,
     "name": "AMD Ryzen 9 7900X",
     "category": "Processadores",
     "price": "379,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg",
+    "img": "/products/35.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg"
     ],
@@ -493,30 +423,6 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
-    "id": 36,
-    "name": "Intel Core i3-12100F",
-    "category": "Processadores",
-    "price": "89,00 €",
-    "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg"
-    ],
-    "description": "4 cores e 8 threads Alder Lake a um preço de entrada. Surpreendente em gaming 1080p quando combinado com uma placa gráfica dedicada.",
-    "badge": "Entry Level",
-    "features": [
-      { "name": "Cores/Threads", "value": "4C / 8T" },
-      { "name": "Boost Clock", "value": "4.3 GHz" },
-      { "name": "Cache L3", "value": "12MB" },
-      { "name": "Socket", "value": "LGA1700" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/i3-12100F",
-    "brand": "Intel",
-    "inStock": true,
-    "stockCount": 20
-  },
-
   // =============================================
   // MOTHERBOARDS (IDs 9, 15, 37-44)
   // =============================================
@@ -527,7 +433,7 @@ export const products: Product[] = [
     "price": "198,00 €",
     "oldPrice": "229,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg",
+    "img": "/products/9.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg"
     ],
@@ -551,7 +457,7 @@ export const products: Product[] = [
     "price": "599,00 €",
     "oldPrice": "699,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sb5c2924e298342ef975884d1a10a6961x.jpg",
+    "img": "/products/15.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg",
       "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg"
@@ -576,7 +482,7 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-144-648-10.png",
+    "img": "/products/37.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg"
     ],
@@ -600,7 +506,7 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://dlcdnwebimgs.asus.com/gain/d52e1dd0-6b0b-4c62-a625-01c5e41a8b07/w800",
+    "img": "/products/38.png",
     "gallery": [
       "https://dlcdnwebimgs.asus.com/gain/d52e1dd0-6b0b-4c62-a625-01c5e41a8b07/w800"
     ],
@@ -618,59 +524,13 @@ export const products: Product[] = [
     "stockCount": 0
   },
   {
-    "id": 39,
-    "name": "Gigabyte B550 Aorus Pro V2",
-    "category": "Motherboards",
-    "price": "139,00 €",
-    "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-145-271-V01.jpg",
-    "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg"
-    ],
-    "description": "Plataforma AM4 madura e estável com VRM digital de 12+2 fases. Suporte DDR4 até 5400MHz OC e PCIe 4.0 x16 para Ryzen 5000.",
-    "badge": "AM4 Clássica",
-    "features": [
-      { "name": "Socket", "value": "AM4" },
-      { "name": "Fases VRM", "value": "12+2 digital" },
-      { "name": "DDR4", "value": "Até 5400 MHz OC" },
-      { "name": "PCIe", "value": "4.0 x16" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Gigabyte-B550-Aorus-Pro",
-    "brand": "Gigabyte",
-    "inStock": true,
-    "stockCount": 5
-  },
-  {
-    "id": 40,
-    "name": "ASRock B660M Steel Legend",
-    "category": "Motherboards",
-    "price": "119,00 €",
-    "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
-    "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/13-162-228-04.png"
-    ],
-    "description": "Micro-ATX acessível para Intel 12ª/13ª geração com design Steel Legend icónico. VRM de 8 fases, 2 slots M.2 e saída HDMI 2.1.",
-    "badge": "Budget Intel",
-    "features": [
-      { "name": "Socket", "value": "LGA1700" },
-      { "name": "Formato", "value": "Micro-ATX" },
-      { "name": "DDR4", "value": "Até 4800 MHz OC" },
-      { "name": "M.2", "value": "2 slots PCIe 4.0" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/ASRock-B660M",
-    "brand": "ASRock",
-    "inStock": false,
-    "stockCount": 0
-  },
-  {
     "id": 41,
     "name": "ASUS ROG Strix X670E-E Gaming WiFi",
     "category": "Motherboards",
     "price": "429,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.8,
-    "img": "https://dlcdnwebimgs.asus.com/gain/BADFA920-702B-451B-9592-8279ACD6857B/w800",
+    "img": "/products/41.png",
     "gallery": [
       "https://dlcdnwebimgs.asus.com/gain/BADFA920-702B-451B-9592-8279ACD6857B/w800"
     ],
@@ -694,7 +554,7 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-144-562-10.jpg",
+    "img": "/products/42.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg"
     ],
@@ -718,7 +578,7 @@ export const products: Product[] = [
     "price": "389,00 €",
     "oldPrice": "459,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/BSTDD2312190WYIKA6A.jpg",
+    "img": "/products/43.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg"
     ],
@@ -741,7 +601,7 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "129,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png",
+    "img": "/products/44.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg"
     ],
@@ -769,7 +629,7 @@ export const products: Product[] = [
     "price": "115,20 €",
     "oldPrice": "135,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg",
+    "img": "/products/4.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg"
     ],
@@ -793,7 +653,7 @@ export const products: Product[] = [
     "price": "219,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S862dad4860de4ae58ad3cadc6d41ca77u.jpg",
+    "img": "/products/16.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Sa582dda67b914af2ad781dc78e7fbdf1o.jpg",
       "https://ae01.alicdn.com/kf/S00234a54a8254d8f8f2dcd96116ff363Y.jpg"
@@ -818,7 +678,7 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg",
+    "img": "/products/45.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Sc454a756e56b4b308618b620b068cf5cN.png"
     ],
@@ -842,7 +702,7 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.8,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/CMT32GX5M2C4800C34/Gallery/DOMINATOR_RGB_PLATINUM_BLACK_DDR5_01.webp",
+    "img": "/products/46.png",
     "gallery": [
       "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/CMT32GX5M2C4800C34/Gallery/DOMINATOR_RGB_PLATINUM_BLACK_DDR5_01.webp"
     ],
@@ -866,7 +726,7 @@ export const products: Product[] = [
     "price": "145,00 €",
     "oldPrice": "175,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S4ffe778a265a4e9da5f6fa192ae6cf4bV.png",
+    "img": "/products/47.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S4ffe778a265a4e9da5f6fa192ae6cf4bV.png"
     ],
@@ -890,7 +750,7 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.5,
-    "img": "https://images.teamgroupinc.com/products/memory/u-dimm/ddr5/delta-rgb/black/dual_01.jpg",
+    "img": "/products/48.png",
     "gallery": [
       "https://images.teamgroupinc.com/products/memory/u-dimm/ddr5/delta-rgb/black/dual_01.jpg"
     ],
@@ -913,7 +773,7 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "49,00 €",
     "rating": 4.5,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/vengeance-ddr5-blk-config/Gallery/Vengeance-DDR5-1UP-16GB-BLACK_01.webp",
+    "img": "/products/49.png",
     "gallery": [
       "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/vengeance-ddr5-blk-config/Gallery/Vengeance-DDR5-1UP-16GB-BLACK_01.webp"
     ],
@@ -937,7 +797,7 @@ export const products: Product[] = [
     "price": "105,00 €",
     "oldPrice": "125,00 €",
     "rating": 4.6,
-    "img": "https://www.gskill.com/_upload/images/168428819510.png",
+    "img": "/products/50.png",
     "gallery": [
       "https://www.gskill.com/_upload/images/168428819510.png"
     ],
@@ -955,35 +815,12 @@ export const products: Product[] = [
     "stockCount": 0
   },
   {
-    "id": 51,
-    "name": "Kingston Fury Beast DDR4 32GB 3200MHz",
-    "category": "Memória RAM",
-    "price": "59,00 €",
-    "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/H3cd821a404864cb287d5959bf547144cT.jpg",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/Scd2b7aa9ea424d82a5c12bc4e61b4843s.jpg"
-    ],
-    "description": "Kit 2×16GB DDR4-3200 CL16 para upgrades em plataformas AM4 e LGA1700. Dissipador preto compacto com excelente compatibilidade.",
-    "badge": "DDR4 Clássica",
-    "features": [
-      { "name": "Tipo", "value": "DDR4" },
-      { "name": "Frequência", "value": "3200 MT/s" },
-      { "name": "Latência", "value": "CL16" },
-      { "name": "Kit", "value": "2 × 16GB" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Kingston-Fury-Beast-DDR4-32GB",
-    "brand": "Kingston",
-    "inStock": true,
-    "stockCount": 4
-  },
-  {
     "id": 52,
     "name": "Crucial DDR5 32GB 4800MHz",
     "category": "Memória RAM",
     "price": "69,00 €",
     "rating": 4.4,
-    "img": "https://assets.micron.com/adobe/assets/urn:aaid:aem:10781863-41f2-495a-9613-96e8f995614f/renditions/transformpng-640-640.png/as/crucial-ddr5-UDIMM-iso-3.png",
+    "img": "/products/52.png",
     "gallery": [
       "https://assets.micron.com/adobe/assets/urn:aaid:aem:10781863-41f2-495a-9613-96e8f995614f/renditions/transformpng-640-640.png/as/crucial-ddr5-UDIMM-iso-3.png"
     ],
@@ -1011,7 +848,7 @@ export const products: Product[] = [
     "price": "165,00 €",
     "oldPrice": "199,90 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg",
+    "img": "/products/3.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
     ],
@@ -1035,7 +872,7 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "419,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S8b13fe517f9646ed8bddb567708b95d8Y.jpg",
+    "img": "/products/17.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Se03e609d6a26460696997a8f3c6f8796Z.jpg",
       "https://ae01.alicdn.com/kf/S8d0093f445e2412baea99a9b456591f7R.jpg"
@@ -1060,7 +897,7 @@ export const products: Product[] = [
     "price": "59,00 €",
     "oldPrice": "79,00 €",
     "rating": 4.5,
-    "img": "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png",
+    "img": "/products/53.png",
     "gallery": [
       "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$"
     ],
@@ -1084,7 +921,7 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg",
+    "img": "/products/54.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg"
     ],
@@ -1108,7 +945,7 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
+    "img": "/products/55.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
     ],
@@ -1126,36 +963,13 @@ export const products: Product[] = [
     "stockCount": 3
   },
   {
-    "id": 56,
-    "name": "Samsung 870 EVO 1TB SATA SSD",
-    "category": "Armazenamento",
-    "price": "79,00 €",
-    "rating": 4.7,
-    "img": "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$",
-    "gallery": [
-      "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$"
-    ],
-    "description": "O SSD SATA mais vendido do mundo com 560 MB/s de leitura. Perfeito para upgrade de portáteis e PCs mais antigos sem suporte NVMe.",
-    "badge": "SATA Referência",
-    "features": [
-      { "name": "Leitura Seq.", "value": "560 MB/s" },
-      { "name": "Escrita Seq.", "value": "530 MB/s" },
-      { "name": "Garantia", "value": "5 Anos" },
-      { "name": "Interface", "value": "SATA III 6 Gbps" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Samsung-870-EVO-1TB",
-    "brand": "Samsung",
-    "inStock": true,
-    "stockCount": 36
-  },
-  {
     "id": 57,
     "name": "Seagate FireCuda 530 2TB NVMe Gen4",
     "category": "Armazenamento",
     "price": "179,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg",
+    "img": "/products/57.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg"
     ],
@@ -1179,7 +993,7 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png",
+    "img": "/products/58.png",
     "gallery": [
       "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png"
     ],
@@ -1203,7 +1017,7 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "189,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg",
+    "img": "/products/59.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg"
     ],
@@ -1227,7 +1041,7 @@ export const products: Product[] = [
     "price": "139,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.6,
-    "img": "https://cdn.shopify.com/s/files/1/0518/5073/9904/files/KTC-KC3000-KF3.jpg",
+    "img": "/products/60.png",
     "gallery": [
       "https://cdn.shopify.com/s/files/1/0518/5073/9904/files/KTC-KC3000-KF3.jpg"
     ],
@@ -1249,62 +1063,13 @@ export const products: Product[] = [
   // FONTES DE ALIMENTAÇÃO (IDs 18, 61-69)
   // =============================================
   {
-    "id": 18,
-    "name": "Corsair HX1500i 80+ Platinum",
-    "category": "Fontes de Alimentação",
-    "price": "319,00 €",
-    "oldPrice": "379,00 €",
-    "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/S83b2e9db8dd14a8eac33b3bd51f32046t.jpg",
-      "https://ae01.alicdn.com/kf/Se1558c7c6cbe49aba0a3b3d825e2e422t.jpg"
-    ],
-    "description": "PSU modular ATX 3.0 com conector PCIe 5.0 nativo para RTX 40/50 Series. Controlo e monitorização completa via iCUE. Ventilha zero-RPM abaixo de 30% de carga.",
-    "badge": "Future Ready",
-    "features": [
-      { "name": "Potência", "value": "1500W contínuos" },
-      { "name": "Eficiência", "value": "80+ Platinum" },
-      { "name": "PCIe", "value": "ATX 3.0 / 12VHPWR" },
-      { "name": "Ventilha", "value": "Zero-RPM Mode" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-HX1500i-Platinum",
-    "brand": "Corsair",
-    "inStock": false,
-    "stockCount": 0
-  },
-  {
-    "id": 61,
-    "name": "Corsair RM850x 80+ Gold (2024)",
-    "category": "Fontes de Alimentação",
-    "price": "129,00 €",
-    "oldPrice": "149,00 €",
-    "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg",
-    "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg"
-    ],
-    "description": "A fonte mais popular para builds gaming com 850W 80+ Gold e cabos totalmente modulares. Modo zero-RPM e ATX 3.0 com conector 12VHPWR nativo.",
-    "badge": "Best Seller",
-    "features": [
-      { "name": "Potência", "value": "850W contínuos" },
-      { "name": "Eficiência", "value": "80+ Gold" },
-      { "name": "Cabos", "value": "Full Modular ATX 3.0" },
-      { "name": "Garantia", "value": "10 Anos" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Corsair-RM850x",
-    "brand": "Corsair",
-    "inStock": true,
-    "stockCount": 45
-  },
-  {
     "id": 62,
     "name": "Seasonic Focus GX-750 80+ Gold",
     "category": "Fontes de Alimentação",
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png",
+    "img": "/products/62.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg"
     ],
@@ -1328,7 +1093,7 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg",
+    "img": "/products/63.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
     ],
@@ -1352,7 +1117,7 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
+    "img": "/products/64.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
     ],
@@ -1376,7 +1141,7 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg",
+    "img": "/products/65.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg"
     ],
@@ -1400,7 +1165,7 @@ export const products: Product[] = [
     "price": "289,00 €",
     "oldPrice": "349,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
+    "img": "/products/66.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"
     ],
@@ -1418,36 +1183,12 @@ export const products: Product[] = [
     "stockCount": 4
   },
   {
-    "id": 67,
-    "name": "Seasonic Prime TX-1000 80+ Titanium",
-    "category": "Fontes de Alimentação",
-    "price": "299,00 €",
-    "oldPrice": "359,00 €",
-    "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg"
-    ],
-    "description": "A eficiência máxima com certificação 80+ Titanium. 1000W de potência premium com 12 anos de garantia e componentes de grau industrial.",
-    "badge": "Titanium",
-    "features": [
-      { "name": "Potência", "value": "1000W contínuos" },
-      { "name": "Eficiência", "value": "80+ Titanium" },
-      { "name": "Cabos", "value": "Full Modular" },
-      { "name": "Garantia", "value": "12 Anos" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Seasonic-Prime-TX-1000",
-    "brand": "Seasonic",
-    "inStock": true,
-    "stockCount": 3
-  },
-  {
     "id": 68,
     "name": "NZXT C850 80+ Gold (2024)",
     "category": "Fontes de Alimentação",
     "price": "109,00 €",
     "rating": 4.6,
-    "img": "https://nzxt.com/cdn/shop/files/power_c_series_gold_c850-vents-up-right.png?v=1762528174",
+    "img": "/products/68.png",
     "gallery": [
       "https://nzxt.com/cdn/shop/files/power_c_series_gold_c850-vents-up-right.png?v=1762528174"
     ],
@@ -1471,7 +1212,7 @@ export const products: Product[] = [
     "price": "115,00 €",
     "oldPrice": "135,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
+    "img": "/products/69.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"
     ],
@@ -1499,7 +1240,7 @@ export const products: Product[] = [
     "price": "95,00 €",
     "oldPrice": "115,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A1K6S2304080POVO5F7.jpg",
+    "img": "/products/8.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg"
     ],
@@ -1523,7 +1264,7 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "239,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S2ad7bbe195ee438aad9e2b416ba90feaF.jpg",
+    "img": "/products/19.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S97f72261851940c4a52aa6dc6211a7f3Q.jpg",
       "https://ae01.alicdn.com/kf/Sb483268d8c0a4a8999bd1b0b2365cd36r.jpg"
@@ -1548,7 +1289,7 @@ export const products: Product[] = [
     "price": "129,00 €",
     "oldPrice": "149,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-146-364-01.jpg",
+    "img": "/products/70.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/11-734-018-01.jpg"
     ],
@@ -1572,7 +1313,7 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "109,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg",
+    "img": "/products/71.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg"
     ],
@@ -1595,7 +1336,7 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "79,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg",
+    "img": "/products/72.png",
     "gallery": [
       "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Cases/base-5000d-airflow/Gallery/5000D_AF_WHITE_001.webp"
     ],
@@ -1619,7 +1360,7 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
+    "img": "/products/73.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png"
     ],
@@ -1643,7 +1384,7 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg",
+    "img": "/products/74.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
     ],
@@ -1667,7 +1408,7 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://cdn.sanity.io/images/mqc7p4g4/production/82d0db796ef76ffa52ade9761ca1bee0b4b9a9ec-3480x2460.jpg?w=3840&q=75&fit=clip&auto=format",
+    "img": "/products/75.png",
     "gallery": [
       "https://cdn.sanity.io/images/mqc7p4g4/production/82d0db796ef76ffa52ade9761ca1bee0b4b9a9ec-3480x2460.jpg?w=3840&q=75&fit=clip&auto=format"
     ],
@@ -1691,7 +1432,7 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/AJ7WD2106261ZYD4.jpg",
+    "img": "/products/76.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/37B-000B-00421-01.jpg"
     ],
@@ -1708,31 +1449,6 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 4
   },
-  {
-    "id": 77,
-    "name": "Lian Li O11 Dynamic EVO",
-    "category": "Caixas",
-    "price": "159,00 €",
-    "oldPrice": "179,00 €",
-    "rating": 4.9,
-    "img": "https://lian-li.com/wp-content/uploads/2021/12/evo-600-000.jpg",
-    "gallery": [
-      "https://lian-li.com/wp-content/uploads/2021/12/evo-600-000.jpg"
-    ],
-    "description": "A icónica O11 reinventada com suporte reversível, mesh frontal opcional e espaço para 3 radiadores de 360mm. A favorita dos custom loops.",
-    "badge": "Dual Chamber",
-    "features": [
-      { "name": "Radiadores", "value": "3 × 360mm" },
-      { "name": "Suporte", "value": "ATX / E-ATX" },
-      { "name": "Layout", "value": "Dual Chamber reversível" },
-      { "name": "USB-C", "value": "Type-C 3.2 Gen2" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Lian-Li-O11-Dynamic-EVO",
-    "brand": "Lian Li",
-    "inStock": true,
-    "stockCount": 25
-  },
-
   // =============================================
   // REFRIGERAÇÃO (IDs 10, 20, 78-85)
   // =============================================
@@ -1743,7 +1459,7 @@ export const products: Product[] = [
     "price": "245,00 €",
     "oldPrice": "289,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg",
+    "img": "/products/10.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
     ],
@@ -1767,7 +1483,7 @@ export const products: Product[] = [
     "price": "89,90 €",
     "oldPrice": "109,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/E2166ca745c034c41be6f60c1dff8945cE.jpg",
+    "img": "/products/20.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/E0f6b29f2fd08438cb282908523ea8ad18.jpg",
       "https://ae01.alicdn.com/kf/E23440969ef5c40508546688af4fcc43c3.jpg"
@@ -1792,7 +1508,7 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "269,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png",
+    "img": "/products/78.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg"
     ],
@@ -1810,37 +1526,13 @@ export const products: Product[] = [
     "stockCount": 12
   },
   {
-    "id": 79,
-    "name": "Arctic Liquid Freezer II 360 A-RGB",
-    "category": "Refrigeração",
-    "price": "99,00 €",
-    "oldPrice": "119,00 €",
-    "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
-    "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png"
-    ],
-    "description": "A melhor AIO em relação preço/performance com radiador de 360mm e bomba offset integrada. VRM cooling fan na bomba para refrigeração adicional da motherboard.",
-    "badge": "Melhor Valor AIO",
-    "features": [
-      { "name": "Radiador", "value": "360mm (38mm espessura)" },
-      { "name": "Fans", "value": "3 × P12 A-RGB" },
-      { "name": "Bomba", "value": "Offset com VRM fan" },
-      { "name": "Garantia", "value": "6 Anos" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Arctic-Liquid-Freezer-II-360",
-    "brand": "Arctic",
-    "inStock": true,
-    "stockCount": 18
-  },
-  {
     "id": 80,
     "name": "DeepCool AK620 Digital",
     "category": "Refrigeração",
     "price": "69,00 €",
     "oldPrice": "85,00 €",
     "rating": 4.7,
-    "img": "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPUAirCoolers/AK620_DIGITAL/Gallery/800X800/01.jpg",
+    "img": "/products/80.png",
     "gallery": [
       "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPUAirCoolers/AK620_DIGITAL/Gallery/800X800/01.jpg"
     ],
@@ -1858,36 +1550,13 @@ export const products: Product[] = [
     "stockCount": 30
   },
   {
-    "id": 81,
-    "name": "Noctua NH-D15 chromax.black",
-    "category": "Refrigeração",
-    "price": "109,00 €",
-    "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg"
-    ],
-    "description": "A lenda do arrefecimento a ar em versão all-black. Dual tower com 2 NF-A15 PWM de 140mm, 6 heatpipes e 250W TDP. Silêncio e performance sem rival.",
-    "badge": "Lenda Air Cool",
-    "features": [
-      { "name": "Capacidade TDP", "value": "250W" },
-      { "name": "Heatpipes", "value": "6 × 6mm niquelados" },
-      { "name": "Fans", "value": "2 × NF-A15 140mm" },
-      { "name": "Garantia", "value": "6 Anos" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Noctua-NH-D15-chromax",
-    "brand": "Noctua",
-    "inStock": true,
-    "stockCount": 25
-  },
-  {
     "id": 82,
     "name": "Corsair A115 Air Cooler",
     "category": "Refrigeração",
     "price": "79,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png",
+    "img": "/products/82.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
     ],
@@ -1911,7 +1580,7 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "139,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/37B-000B-00421-01.jpg",
+    "img": "/products/83.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S607f2ce7e4854d8ebb8264178a43da61K.jpg"
     ],
@@ -1934,7 +1603,7 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "39,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png",
+    "img": "/products/84.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png"
     ],
@@ -1957,7 +1626,7 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "35,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg",
+    "img": "/products/85.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg"
     ],
@@ -1985,7 +1654,7 @@ export const products: Product[] = [
     "price": "799,00 €",
     "oldPrice": "899,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg",
+    "img": "/products/5.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
     ],
@@ -2009,7 +1678,7 @@ export const products: Product[] = [
     "price": "329,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll1280/24-026-195-V01.jpg",
+    "img": "/products/86.png",
     "gallery": [
       "https://c1.neweggimages.com/ProductImageCompressAll1280/24-026-195-V01.jpg"
     ],
@@ -2033,7 +1702,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/AKVHD21080615GNM1.jpg",
+    "img": "/products/87.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/AKVHD21080615GNM1.jpg"
     ],
@@ -2057,7 +1726,7 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "649,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-027-066-V15.jpg",
+    "img": "/products/88.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/24-027-066-V15.jpg"
     ],
@@ -2080,7 +1749,7 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "289,00 €",
     "rating": 4.6,
-    "img": "https://dlcdnwebimgs.asus.com/gain/d452f143-b494-41d0-9e4b-6d7ae0ff6291/w692",
+    "img": "/products/89.png",
     "gallery": [
       "https://dlcdnwebimgs.asus.com/gain/d452f143-b494-41d0-9e4b-6d7ae0ff6291/w692"
     ],
@@ -2104,7 +1773,7 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.7,
-    "img": "https://image.benq.com/is/image/benqco/ex2710q-2product?$ResponsivePreset$",
+    "img": "/products/90.png",
     "gallery": [
       "https://image.benq.com/is/image/benqco/ex2710q-2product?$ResponsivePreset$"
     ],
@@ -2128,7 +1797,7 @@ export const products: Product[] = [
     "price": "749,00 €",
     "oldPrice": "849,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg",
+    "img": "/products/91.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg"
     ],
@@ -2152,7 +1821,7 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg",
+    "img": "/products/92.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg"
     ],
@@ -2175,7 +1844,7 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "139,00 €",
     "rating": 4.5,
-    "img": "https://cdn.sanity.io/images/hf5b3axp/production/d711ca9aaf71f961f8ab64eff8d6624d4d532839-3840x3840.png?w=1920&fit=max&auto=format",
+    "img": "/products/93.png",
     "gallery": [
       "https://cdn.sanity.io/images/hf5b3axp/production/d711ca9aaf71f961f8ab64eff8d6624d4d532839-3840x3840.png?w=1920&fit=max&auto=format"
     ],
@@ -2199,7 +1868,7 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "369,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-475-127-S05.jpg",
+    "img": "/products/94.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/24-475-127-S05.jpg"
     ],
@@ -2227,7 +1896,7 @@ export const products: Product[] = [
     "price": "135,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg",
+    "img": "/products/6.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
     ],
@@ -2251,7 +1920,7 @@ export const products: Product[] = [
     "price": "189,50 €",
     "oldPrice": "249,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg",
+    "img": "/products/7.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
     ],
@@ -2275,7 +1944,7 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.8,
-    "img": "https://www.razer.com/newsroom/wp-content/uploads/2023/02/daV3-pressrelease-img.png",
+    "img": "/products/95.png",
     "gallery": [
       "https://www.razer.com/newsroom/wp-content/uploads/2023/02/daV3-pressrelease-img.png"
     ],
@@ -2299,7 +1968,7 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://images.ctfassets.net/hmm5mo4qf4mf/5T6OTTzl1B5zaX1nILPFw4/186d8f786745424cdd8770cda23623af/apex_pro_tkl_wl_img_buy_01.png?fm=webp&q=90&fit=scale&w=1920",
+    "img": "/products/96.png",
     "gallery": [
       "https://images.ctfassets.net/hmm5mo4qf4mf/5T6OTTzl1B5zaX1nILPFw4/186d8f786745424cdd8770cda23623af/apex_pro_tkl_wl_img_buy_01.png?fm=webp&q=90&fit=scale&w=1920"
     ],
@@ -2323,7 +1992,7 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Keyboards/CH-9109410-NA/Gallery/K70_RGB_PRO_PBT_01.webp",
+    "img": "/products/97.png",
     "gallery": [
       "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Keyboards/CH-9109410-NA/Gallery/K70_RGB_PRO_PBT_01.webp"
     ],
@@ -2347,7 +2016,7 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.9,
-    "img": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h08/h61/9765618188318/viper-v3-pro-black-500x500.png",
+    "img": "/products/98.png",
     "gallery": [
       "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h08/h61/9765618188318/viper-v3-pro-black-500x500.png"
     ],
@@ -2371,7 +2040,7 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.8,
-    "img": "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg",
+    "img": "/products/99.png",
     "gallery": [
       "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg"
     ],
@@ -2394,7 +2063,7 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "89,00 €",
     "rating": 4.6,
-    "img": "https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_65_english_us_1_top_down.jpg?v=1763563176",
+    "img": "/products/100.png",
     "gallery": [
       "https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_65_english_us_1_top_down.jpg?v=1763563176"
     ],
@@ -2418,7 +2087,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg",
+    "img": "/products/101.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg"
     ],
@@ -2442,7 +2111,7 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg",
+    "img": "/products/102.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg"
     ],
@@ -2470,7 +2139,7 @@ export const products: Product[] = [
     "price": "349,99 €",
     "oldPrice": "399,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/S03b22e370c504978b55a77c1ed0b5704Z.jpg",
+    "img": "/products/11.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Sd91129082d03435daf68807c240d1503J.jpg",
       "https://ae01.alicdn.com/kf/S25680262993543adb19dc88e7bdf4145k.jpg"
@@ -2495,7 +2164,7 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "169,00 €",
     "rating": 4.7,
-    "img": "https://row.hyperx.com/cdn/shop/files/hyperx_cloud_iii_wireless_black_77z45aa_main_1.jpg?v=1764893494",
+    "img": "/products/103.png",
     "gallery": [
       "https://row.hyperx.com/cdn/shop/files/hyperx_cloud_iii_wireless_black_77z45aa_main_1.jpg?v=1764893494"
     ],
@@ -2519,7 +2188,7 @@ export const products: Product[] = [
     "price": "219,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.8,
-    "img": "https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png",
+    "img": "/products/104.png",
     "gallery": [
       "https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png"
     ],
@@ -2543,7 +2212,7 @@ export const products: Product[] = [
     "price": "239,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.7,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/CA-9011188-NA/Gallery/VIRTUOSO_XT_01.webp",
+    "img": "/products/105.png",
     "gallery": [
       "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/CA-9011188-NA/Gallery/VIRTUOSO_XT_01.webp"
     ],
@@ -2567,7 +2236,7 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg",
+    "img": "/products/106.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg"
     ],
@@ -2591,7 +2260,7 @@ export const products: Product[] = [
     "price": "319,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/ARUXS22052606ACVA3A.jpg",
+    "img": "/products/107.png",
     "gallery": [
       "https://c1.neweggimages.com/ProductImageOriginal/ARUXS22052606ACVA3A.jpg"
     ],
@@ -2615,7 +2284,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "299,00 €",
     "rating": 4.6,
-    "img": "https://images.samsung.com/is/image/samsung/p6pim/us/jblq910wlblkam/gallery/us-jbl-quantum910-wireless-jblq910wlblkam-551554636",
+    "img": "/products/108.png",
     "gallery": [
       "https://images.samsung.com/is/image/samsung/p6pim/us/jblq910wlblkam/gallery/us-jbl-quantum910-wireless-jblq910wlblkam-551554636"
     ],
@@ -2639,7 +2308,7 @@ export const products: Product[] = [
     "price": "149,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/hs80-max-wireless/steel-grey/HS80_MAX_WIRELESS_STEEL_GRAY_01.webp",
+    "img": "/products/109.png",
     "gallery": [
       "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/hs80-max-wireless/steel-grey/HS80_MAX_WIRELESS_STEEL_GRAY_01.webp"
     ],
@@ -2663,7 +2332,7 @@ export const products: Product[] = [
     "price": "169,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/APCPD2111150RQFOF3C.jpg",
+    "img": "/products/110.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/APCPD2111150RQFOF3C.jpg"
     ],
@@ -2686,7 +2355,7 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "139,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg",
+    "img": "/products/111.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg"
     ],
@@ -2714,7 +2383,7 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "599,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sd430c2081eaf4f1fa3afd1e70b0d1f71H.jpg",
+    "img": "/products/12.png",
     "gallery": [
       "https://ae01.alicdn.com/kf/Hd947c23e50a045f8be0ce6da7a33143dM.jpg",
       "https://ae01.alicdn.com/kf/Sfb15ddafcbb84d828666aecc26ff70ae5.jpg"
@@ -2739,7 +2408,7 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-153-375-01.jpg",
+    "img": "/products/112.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/26-153-375-01.jpg"
     ],
@@ -2763,7 +2432,7 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.6,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Chairs/CF-9010043-WW/Gallery/CF-9010043-WW_01.webp",
+    "img": "/products/113.png",
     "gallery": [
       "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Chairs/CF-9010043-WW/Gallery/CF-9010043-WW_01.webp"
     ],
@@ -2787,7 +2456,7 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.7,
-    "img": "https://img.noblechairs.com/images/GAGC-255/167c6091e83aee48b4a95a42f9a765ab.jpg",
+    "img": "/products/114.png",
     "gallery": [
       "https://img.noblechairs.com/images/GAGC-255/167c6091e83aee48b4a95a42f9a765ab.jpg"
     ],
@@ -2810,7 +2479,7 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "399,00 €",
     "rating": 4.5,
-    "img": "https://nex-img.dxracer.cc/20001/fcda253d-9214-405e-9b6d-b7a1dc5cdbaf-1.png",
+    "img": "/products/115.png",
     "gallery": [
       "https://nex-img.dxracer.cc/20001/fcda253d-9214-405e-9b6d-b7a1dc5cdbaf-1.png"
     ],
@@ -2834,7 +2503,7 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "529,00 €",
     "rating": 4.7,
-    "img": "https://www.andaseat.com/cdn/shop/files/andaseat-kasier-3-series-gaming-chair-carbon-black-ign_grande.webp?v=1757903020",
+    "img": "/products/116.png",
     "gallery": [
       "https://www.andaseat.com/cdn/shop/files/andaseat-kasier-3-series-gaming-chair-carbon-black-ign_grande.webp?v=1757903020"
     ],
@@ -2858,7 +2527,7 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "249,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg",
+    "img": "/products/117.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg"
     ],
@@ -2882,7 +2551,7 @@ export const products: Product[] = [
     "price": "499,00 €",
     "oldPrice": "549,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg",
+    "img": "/products/118.png",
     "gallery": [
       "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg"
     ],
@@ -2905,7 +2574,7 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "1.595,00 €",
     "rating": 5.0,
-    "img": "https://images.hermanmiller.group/asset/521e115b-9214-402a-92d2-2b8529a5a228/W/HMG_2517590_100698359_Embody_Gaming_Ignite_OnBlkF34R_68477_PDP_v7.png",
+    "img": "/products/119.png",
     "gallery": [
       "https://images.hermanmiller.group/asset/521e115b-9214-402a-92d2-2b8529a5a228/W/HMG_2517590_100698359_Embody_Gaming_Ignite_OnBlkF34R_68477_PDP_v7.png"
     ],
@@ -2929,7 +2598,7 @@ export const products: Product[] = [
     "price": "449,00 €",
     "oldPrice": "499,00 €",
     "rating": 4.6,
-    "img": "https://cdn.autonomous.ai/production/ecm/240715/1(1).jpg",
+    "img": "/products/120.png",
     "gallery": [
       "https://cdn.autonomous.ai/production/ecm/240715/1(1).jpg"
     ],
@@ -2957,7 +2626,7 @@ export const products: Product[] = [
     "price": "2.199,00 €",
     "oldPrice": "2.399,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg",
+    "img": "/products/121.png",
     "gallery": ["https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg"],
     "description": "A placa gráfica mais poderosa da nova geração NVIDIA. Arquitectura Blackwell com 32 GB GDDR7 para gaming 4K a mais de 120 FPS e workloads de IA local.",
     "badge": "Topo de Gama",
@@ -2978,7 +2647,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "649,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg",
+    "img": "/products/122.png",
     "gallery": ["https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg"],
     "description": "Placa gráfica AMD RDNA 4 com excelente relação preço/desempenho. 16 GB GDDR6 para gaming 1440p de alta qualidade e ray tracing melhorado.",
     "badge": "Novo",
@@ -3000,7 +2669,7 @@ export const products: Product[] = [
     "price": "899,00 €",
     "oldPrice": "949,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg",
+    "img": "/products/123.png",
     "gallery": ["https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg"],
     "description": "Desempenho excepcional para gaming 4K com DLSS 4 e ray tracing de nova geração. 16 GB GDDR7 para os títulos mais exigentes.",
     "badge": "Melhor Valor 4K",
@@ -3021,7 +2690,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "1.399,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg",
+    "img": "/products/124.png",
     "gallery": ["https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg"],
     "description": "Edição ROG Strix com overclock de fábrica e sistema de arrefecimento de 3 ventoinhas. Design premium com iluminação Aura Sync RGB.",
     "badge": "ROG Premium",
@@ -3043,7 +2712,7 @@ export const products: Product[] = [
     "price": "699,00 €",
     "oldPrice": "749,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg",
+    "img": "/products/125.png",
     "gallery": ["https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg"],
     "description": "RTX 5070 com arrefecimento tri-fan Torx 5.0 e backplate metálico. Ideal para gaming 1440p ultra com DLSS 4 e Frame Generation.",
     "badge": "Novo",
@@ -3064,7 +2733,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "549,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg",
+    "img": "/products/126.png",
     "gallery": ["https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg"],
     "description": "A melhor placa AMD para gaming 1440p. Arrefecimento Nitro+ com heatpipes de cobre e ventoinha inteligente que para em idle.",
     "badge": "Escolha VoltStock",
@@ -3086,7 +2755,7 @@ export const products: Product[] = [
     "category": "Placas Gráficas",
     "price": "279,00 €",
     "rating": 4.1,
-    "img": "https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg",
+    "img": "/products/128.png",
     "gallery": ["https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg"],
     "description": "GPU Intel Battlemage de gama média-baixa com 12 GB VRAM. Excelente opção económica para 1080p com ray tracing e XeSS upscaling.",
     "badge": "Melhor Preço",
@@ -3111,7 +2780,7 @@ export const products: Product[] = [
     "price": "649,00 €",
     "oldPrice": "699,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg",
+    "img": "/products/129.png",
     "gallery": ["https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg"],
     "description": "O processador desktop mais rápido da AMD. 16 cores Zen 5 com boost até 5.7 GHz para produtividade e gaming sem compromissos.",
     "badge": "Flagship AMD",
@@ -3132,7 +2801,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "599,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg",
+    "img": "/products/130.png",
     "gallery": ["https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg"],
     "description": "Processador Intel Arrow Lake com arquitectura híbrida de nova geração. 24 cores com NPU integrada para aceleração de IA local.",
     "badge": "Premium",
@@ -3154,7 +2823,7 @@ export const products: Product[] = [
     "price": "359,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg",
+    "img": "/products/131.png",
     "gallery": ["https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg"],
     "description": "Processador Zen 5 de 8 cores com eficiência energética excepcional. TDP de apenas 65W com desempenho que rivaliza com chips de 170W.",
     "badge": "Eficiência Máxima",
@@ -3175,7 +2844,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "419,00 €",
     "rating": 4.5,
-    "img": "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg",
+    "img": "/products/132.png",
     "gallery": ["https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg"],
     "description": "Processador Arrow Lake de gama alta com 20 cores híbridos. Excelente para gaming e multitasking pesado com DDR5 e PCIe 5.0.",
     "badge": "Novo",
@@ -3197,7 +2866,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.6,
-    "img": "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg",
+    "img": "/products/133.png",
     "gallery": ["https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg"],
     "description": "O melhor processador gaming por menos de 300 euros. 6 cores Zen 5 com single-thread excepcional para os jogos mais exigentes.",
     "badge": "Gaming Value King",
@@ -3218,7 +2887,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "479,00 €",
     "rating": 4.8,
-    "img": "https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg",
+    "img": "/products/134.png",
     "gallery": ["https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg"],
     "description": "12 cores Zen 5 com equilíbrio perfeito entre gaming e produtividade. Cache massiva de 76 MB para workloads profissionais.",
     "badge": "Premium",
@@ -3240,7 +2909,7 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.4,
-    "img": "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg",
+    "img": "/products/135.png",
     "gallery": ["https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg"],
     "description": "Processador Arrow Lake mainstream desbloqueado. 14 cores híbridos com NPU para IA e excelente desempenho gaming a preço acessível.",
     "badge": "Entrada Premium",
@@ -3261,7 +2930,7 @@ export const products: Product[] = [
     "category": "Processadores",
     "price": "529,00 €",
     "rating": 4.9,
-    "img": "https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg",
+    "img": "/products/136.png",
     "gallery": ["https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg"],
     "description": "O melhor processador gaming do mundo com 3D V-Cache de 104 MB. Desempenho imbatível em jogos graças à cache L3 empilhada verticalmente.",
     "badge": "Rei do Gaming",
@@ -3286,7 +2955,7 @@ export const products: Product[] = [
     "price": "699,00 €",
     "oldPrice": "749,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg",
+    "img": "/products/137.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg"],
     "description": "Motherboard AM5 de topo com chipset X870E. VRM de 22+2 fases, Wi-Fi 7, Thunderbolt 4 e suporte DDR5-8000+ para overclock extremo.",
     "badge": "Enthusiast",
@@ -3307,7 +2976,7 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "599,00 €",
     "rating": 4.7,
-    "img": "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg",
+    "img": "/products/138.png",
     "gallery": ["https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg"],
     "description": "Motherboard Intel Z890 premium para processadores Arrow Lake. 24+1+2 fases de VRM, PCIe 5.0 x16 e quatro slots M.2 para armazenamento massivo.",
     "badge": "Premium",
@@ -3329,7 +2998,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg",
+    "img": "/products/139.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg"],
     "description": "Motherboard AM5 de gama média com excelente relação preço/desempenho. VRM robusta de 16 fases, Wi-Fi 6E e suporte DDR5.",
     "badge": "Melhor Valor AM5",
@@ -3350,7 +3019,7 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "499,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png",
+    "img": "/products/140.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png"],
     "description": "Motherboard flagship ASRock para Intel Arrow Lake. Design icónico de engrenagens com VRM de 26 fases e audio Nahimic premium.",
     "badge": "Premium",
@@ -3372,7 +3041,7 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "329,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png",
+    "img": "/products/141.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png"],
     "description": "Motherboard AM5 gaming com VRM de 16+2 fases, USB4 e rede 2.5G LAN. Design ROG Strix com iluminação Aura Sync integrada.",
     "badge": "ROG Gaming",
@@ -3393,7 +3062,7 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "229,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-144-697-05.png",
+    "img": "/products/142.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-144-697-05.png"],
     "description": "A motherboard mais popular para builds AM5 de gama média. VRM sólida, design militar e todas as features essenciais sem luxos desnecessários.",
     "badge": "Popular",
@@ -3415,7 +3084,7 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "599,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-145-523-05.jpg",
+    "img": "/products/143.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-145-523-05.jpg"],
     "description": "Motherboard Z890 premium com VRM de 22+1+2 fases e back-drilled PCB de 8 camadas. Arrefecimento passivo Fins-Array III para M.2.",
     "badge": "AORUS Master",
@@ -3436,7 +3105,7 @@ export const products: Product[] = [
     "category": "Motherboards",
     "price": "149,00 €",
     "rating": 4.2,
-    "img": "https://c1.neweggimages.com/productimage/nb640/13-162-195-11.jpg",
+    "img": "/products/144.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/13-162-195-11.jpg"],
     "description": "Motherboard Micro-ATX AM5 económica mas capaz. 10 fases de VRM, DDR5, PCIe 5.0 M.2 — tudo o essencial para builds budget.",
     "badge": "Melhor Preço",
@@ -3461,7 +3130,7 @@ export const products: Product[] = [
     "price": "189,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-435-10.png",
+    "img": "/products/145.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-374-435-10.png"],
     "description": "Kit dual-channel DDR5-7200 CL34 com iluminação RGB cristalina. ICs Samsung selecionados para overclock estável até DDR5-8000+.",
     "badge": "High-End DDR5",
@@ -3482,7 +3151,7 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "249,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-982-097-02.png",
+    "img": "/products/146.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-982-097-02.png"],
     "description": "Módulos DDR5 premium com dissipador de alumínio anodizado e LED bar Corsair DHX. Compatibilidade EXPO e XMP 3.0 para overclock one-click.",
     "badge": "Premium",
@@ -3504,7 +3173,7 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-242-737-01.jpg",
+    "img": "/products/147.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-242-737-01.jpg"],
     "description": "Memória DDR5 fiável e acessível com dissipador metálico compacto. Ideal para builds equilibrados com perfis EXPO certificados para AMD.",
     "badge": "Budget Champion",
@@ -3525,7 +3194,7 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "169,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-331-810-07.jpg",
+    "img": "/products/148.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-331-810-07.jpg"],
     "description": "Kit DDR5-7600 com difusor de luz RGB full-surface e ICs Hynix A-die para timings apertados. Excelente desempenho em 1:1 com IF da AMD.",
     "badge": "Escolha VoltStock",
@@ -3547,7 +3216,7 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-419-07.png",
+    "img": "/products/149.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-374-419-07.png"],
     "description": "Memória optimizada para AMD com EXPO certificado. Design low-profile sem RGB para builds limpos e compatibilidade com coolers tower.",
     "badge": "AMD Optimized",
@@ -3568,7 +3237,7 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "79,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-236-828-V01.jpg",
+    "img": "/products/150.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-236-828-V01.jpg"],
     "description": "Módulos DDR5 de entrada com compatibilidade universal. Perfil compacto, dissipador de alumínio e XMP 3.0 para overclock automático.",
     "badge": "Melhor Preço",
@@ -3590,7 +3259,7 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-374-445-11.png",
+    "img": "/products/151.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-374-445-11.png"],
     "description": "Kit DDR5 optimizado para AMD AM5 com EXPO II. Timings CL30 ultra-apertados para desempenho máximo em Ryzen 9000 series.",
     "badge": "AMD EXPO II",
@@ -3611,7 +3280,7 @@ export const products: Product[] = [
     "category": "Memória RAM",
     "price": "329,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/AFYUD2402090ZFHPO84.jpg",
+    "img": "/products/152.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/AFYUD2402090ZFHPO84.jpg"],
     "description": "A memória DDR5 mais rápida do mercado. 8000 MT/s com ICs Hynix M-die selecionados para overclockers e benchmarkers profissionais.",
     "badge": "Velocidade Máxima",
@@ -3636,7 +3305,7 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-147-900-02.jpg",
+    "img": "/products/153.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-147-900-02.jpg"],
     "description": "SSD NVMe PCIe 5.0 com velocidades de leitura até 10.000 MB/s. V-NAND de 8ª geração com controlador Samsung proprietário.",
     "badge": "PCIe 5.0",
@@ -3657,7 +3326,7 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "149,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-250-247-02.jpg",
+    "img": "/products/154.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-250-247-02.jpg"],
     "description": "SSD NVMe PCIe 4.0 de referência para gaming. Até 7.300 MB/s de leitura com Game Mode 2.0 para carregamento preditivo de jogos.",
     "badge": "Top Seller",
@@ -3679,7 +3348,7 @@ export const products: Product[] = [
     "price": "219,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-156-329-19.jpg",
+    "img": "/products/155.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-156-329-19.jpg"],
     "description": "SSD PCIe 5.0 com dissipador de alumínio incluído. Velocidades até 12.400 MB/s com controlador Phison E26 e NAND Micron 232L.",
     "badge": "Ultra Rápido",
@@ -3700,7 +3369,7 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "199,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-248-242-01.jpg",
+    "img": "/products/156.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-248-242-01.jpg"],
     "description": "SSD PCIe 5.0 gaming com 10.000 MB/s e 3 anos de Rescue Data Recovery Services incluídos. DirectStorage optimizado.",
     "badge": "Popular",
@@ -3722,7 +3391,7 @@ export const products: Product[] = [
     "price": "299,00 €",
     "oldPrice": "349,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-242-661-S01.jpg",
+    "img": "/products/157.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-242-661-S01.jpg"],
     "description": "SSD NVMe de alta capacidade para quem precisa de espaço sem comprometer velocidade. 4 TB com leitura até 7.000 MB/s e perfil low-profile.",
     "badge": "Alta Capacidade",
@@ -3743,7 +3412,7 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "249,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-147-795-V01.jpg",
+    "img": "/products/158.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-147-795-V01.jpg"],
     "description": "SSD SATA III de referência com 4 TB para armazenamento massivo. Ideal como drive secundário com fiabilidade comprovada e 2.400 TBW.",
     "badge": "Top Seller",
@@ -3765,7 +3434,7 @@ export const products: Product[] = [
     "price": "239,00 €",
     "oldPrice": "269,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/20-982-117-01.png",
+    "img": "/products/159.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/20-982-117-01.png"],
     "description": "SSD PCIe 5.0 com dissipador opcional para PS5 ou PC. Até 12.400 MB/s com NAND 3D TLC de alta densidade e DRAM cache.",
     "badge": "PS5 Compatible",
@@ -3786,7 +3455,7 @@ export const products: Product[] = [
     "category": "Armazenamento",
     "price": "189,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/BK19D24031310CPTJ37.jpg",
+    "img": "/products/160.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/BK19D24031310CPTJ37.jpg"],
     "description": "SSD NVMe PCIe 5.0 acessível com controlador Phison E26. Dissipador de cobre incluído e firmware optimizado para baixas temperaturas.",
     "badge": "Escolha VoltStock",
@@ -3811,7 +3480,7 @@ export const products: Product[] = [
     "price": "399,00 €",
     "oldPrice": "449,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-139-343-17.jpg",
+    "img": "/products/161.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-139-343-17.jpg"],
     "description": "Fonte de alimentação 80 PLUS Platinum de 1500W totalmente modular. Conector 12VHPWR nativo e iCUE para monitorização em tempo real.",
     "badge": "Platinum 1500W",
@@ -3832,7 +3501,7 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "349,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg",
+    "img": "/products/162.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg"],
     "description": "Fonte 80 PLUS Titanium com 12 anos de garantia. A eficiência mais elevada do mercado com componentes japoneses de primeira qualidade.",
     "badge": "Titanium",
@@ -3854,7 +3523,7 @@ export const products: Product[] = [
     "price": "229,00 €",
     "oldPrice": "259,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A68VS23012716ZPU29A.jpg",
+    "img": "/products/163.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A68VS23012716ZPU29A.jpg"],
     "description": "Fonte premium silenciosa com topologia full-bridge e LLC. Modo Overclocking Key para ajuste de tensões e ventoinha Silent Wings 4.",
     "badge": "Oferta Limitada",
@@ -3876,7 +3545,7 @@ export const products: Product[] = [
     "price": "139,00 €",
     "oldPrice": "159,00 €",
     "rating": 4.6,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/base-rmx-2024-config/gallery/black/850/RM850x_2024_01.webp",
+    "img": "/products/165.png",
     "gallery": ["https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/base-rmx-2024-config/gallery/black/850/RM850x_2024_01.webp"],
     "description": "A fonte mais popular para gaming. 80 PLUS Gold com ventoinha magnética de levitação que opera em modo Zero RPM a cargas baixas.",
     "badge": "Best Seller",
@@ -3897,7 +3566,7 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "329,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
+    "img": "/products/166.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"],
     "description": "Fonte ATX 3.1 com 1300W e conector 12V-2x6 nativo. 80 PLUS Platinum com monitorização via app MSI Center para potência em tempo real.",
     "badge": "Premium",
@@ -3919,7 +3588,7 @@ export const products: Product[] = [
     "price": "109,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.3,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png",
+    "img": "/products/167.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"],
     "description": "Fonte ATX 3.0 acessível com conector 12VHPWR incluído. 80 PLUS Gold com ventoinha de 120mm hidráulica e cabos flat para gestão fácil.",
     "badge": "Melhor Preço",
@@ -3940,7 +3609,7 @@ export const products: Product[] = [
     "category": "Fontes de Alimentação",
     "price": "149,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/17-580-034-V17.jpg",
+    "img": "/products/168.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/17-580-034-V17.jpg"],
     "description": "Fonte 80 PLUS Platinum com UltraFlex cables e ventoinha FDB de 140mm. Design escandinavo minimalista com 10 anos de garantia.",
     "badge": "Escolha VoltStock",
@@ -3965,7 +3634,7 @@ export const products: Product[] = [
     "price": "179,00 €",
     "oldPrice": "199,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/2AM-000Z-000C0-01.png",
+    "img": "/products/169.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/2AM-000Z-000C0-01.png"],
     "description": "A caixa mais icónica para builds de showcase. Vidro temperado dual-chamber com suporte para radiadores de 360mm no topo e lateral.",
     "badge": "Showcase Icon",
@@ -3986,7 +3655,7 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "139,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-352-204-21.jpg",
+    "img": "/products/170.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-352-204-21.jpg"],
     "description": "Caixa com frente em madeira de nogueira real e mesh de aço. Design escandinavo elegante com fluxo de ar excepcional e filtros removíveis.",
     "badge": "Design Award",
@@ -4007,7 +3676,7 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "219,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/11-139-219-01.png",
+    "img": "/products/172.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/11-139-219-01.png"],
     "description": "Caixa dual-chamber com vidro temperado em dois painéis para showcase total. Motherboard invertida e layout de cable management oculto.",
     "badge": "Dual Glass",
@@ -4029,7 +3698,7 @@ export const products: Product[] = [
     "price": "159,00 €",
     "oldPrice": "179,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A4RES2303280LL2R2D9.jpg",
+    "img": "/products/173.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A4RES2303280LL2R2D9.jpg"],
     "description": "Full-tower espaçosa com suporte para GPUs até 480mm e radiadores de 420mm. Painéis magnéticos de fácil remoção e amplo espaço interno.",
     "badge": "Oferta Limitada",
@@ -4050,7 +3719,7 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "189,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A68VS201113y09Tq.jpg",
+    "img": "/products/174.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A68VS201113y09Tq.jpg"],
     "description": "Caixa modular com frente intercambiável entre mesh e painel sólido silencioso. 3 ventoinhas Silent Wings 4 e painéis com isolamento acústico.",
     "badge": "Popular",
@@ -4071,7 +3740,7 @@ export const products: Product[] = [
     "category": "Caixas",
     "price": "129,00 €",
     "rating": 4.4,
-    "img": "https://ssupd.co/cdn/shop/files/BK-5_13c43442-3cb4-435e-9f85-2675974facc3.png?v=1684638001",
+    "img": "/products/176.png",
     "gallery": ["https://ssupd.co/cdn/shop/files/BK-5_13c43442-3cb4-435e-9f85-2675974facc3.png?v=1684638001"],
     "description": "Caixa Mini-ITX compacta com mesh em todas as faces para airflow máximo. Apenas 14.7L de volume com suporte para GPU de 3 slots.",
     "badge": "Novo",
@@ -4095,7 +3764,7 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "329,00 €",
     "rating": 4.7,
-    "img": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Liquid-Cooling/base-elite-lcd-xt-cooler-config/Gallery/mandatory-configuration/Cooling_Radiator_Size_420mm/H170i_ELITE_LCD_XT_01.webp",
+    "img": "/products/178.png",
     "gallery": ["https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Liquid-Cooling/base-elite-lcd-xt-cooler-config/Gallery/mandatory-configuration/Cooling_Radiator_Size_420mm/H170i_ELITE_LCD_XT_01.webp"],
     "description": "AIO de 420mm com ecrã IPS no pump head e ventoinhas AF Elite RGB. Controlável via iCUE com widgets de temperatura em tempo real.",
     "badge": "Premium",
@@ -4117,7 +3786,7 @@ export const products: Product[] = [
     "price": "119,00 €",
     "oldPrice": "129,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/AADYS2407010JFQIKFA.jpg",
+    "img": "/products/179.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/AADYS2407010JFQIKFA.jpg"],
     "description": "O melhor air cooler do mundo, segunda geração. Dual-tower com 8 heatpipes e duas ventoinhas NF-A15 G2 PWM para silêncio absoluto.",
     "badge": "Rei do Air Cooling",
@@ -4138,7 +3807,7 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "99,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A623D2412180WPFL385.jpg",
+    "img": "/products/180.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A623D2412180WPFL385.jpg"],
     "description": "AIO 360mm com melhor relação preço/desempenho do mercado. VRM contact frame integrado no pump e ventoinhas P12 A-RGB PWM.",
     "badge": "Value King AIO",
@@ -4160,7 +3829,7 @@ export const products: Product[] = [
     "price": "89,00 €",
     "oldPrice": "99,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/35-856-208-V01.jpg",
+    "img": "/products/181.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/35-856-208-V01.jpg"],
     "description": "Air cooler dual-tower premium com 7 heatpipes e cobertura metálica elegante. Desempenho próximo de AIO 360mm a preço de air cooler.",
     "badge": "Escolha VoltStock",
@@ -4181,7 +3850,7 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "179,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A2W0S2410090A4OTIF0.jpg",
+    "img": "/products/182.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A2W0S2410090A4OTIF0.jpg"],
     "description": "AIO 360mm da EK com design dark minimalista sem RGB. Pump de sexta geração e tubos de borracha premium anti-evaporação.",
     "badge": "Novo",
@@ -4202,7 +3871,7 @@ export const products: Product[] = [
     "category": "Refrigeração",
     "price": "159,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/AFSTS230713zSCOJ.jpg",
+    "img": "/products/184.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/AFSTS230713zSCOJ.jpg"],
     "description": "AIO 360mm com pump Asetek de 8ª geração e ventoinhas Trinity Infinity Mirror RGB. Design minimalista com performance de topo.",
     "badge": "Popular",
@@ -4227,7 +3896,7 @@ export const products: Product[] = [
     "price": "999,00 €",
     "oldPrice": "1.099,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-027-327-23.jpg",
+    "img": "/products/185.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-027-327-23.jpg"],
     "description": "Monitor OLED 4K 240Hz com 0.03ms de tempo de resposta. Samsung Gaming Hub integrado e DisplayHDR True Black 400 para pretos perfeitos.",
     "badge": "4K OLED 240Hz",
@@ -4248,7 +3917,7 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "799,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-026-405-08.jpg",
+    "img": "/products/186.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-026-405-08.jpg"],
     "description": "Monitor WOLED 1440p 240Hz com anti-glare coating e pixel refresh automático. Cores DCI-P3 98.5% para criadores e gamers exigentes.",
     "badge": "Top Seller",
@@ -4270,7 +3939,7 @@ export const products: Product[] = [
     "price": "999,00 €",
     "oldPrice": "1.099,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-281-235-29.png",
+    "img": "/products/187.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-281-235-29.png"],
     "description": "O monitor IPS mais rápido do mundo: 360Hz nativo a 1440p. Painel AU Optronics com NVIDIA Reflex Analyzer integrado para esports.",
     "badge": "360Hz Esports",
@@ -4291,7 +3960,7 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "1.099,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A8X5S2407090QW0JX8A.jpg",
+    "img": "/products/188.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A8X5S2407090QW0JX8A.jpg"],
     "description": "Monitor QD-OLED 4K 240Hz curvo com Infinity Edge. O melhor monitor gaming do mercado com Dolby Vision, HDR True Black 400 e HDMI 2.1.",
     "badge": "Best in Class",
@@ -4313,7 +3982,7 @@ export const products: Product[] = [
     "price": "699,00 €",
     "oldPrice": "799,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-014-880-10.jpg",
+    "img": "/products/189.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-014-880-10.jpg"],
     "description": "Monitor IPS 4K 144Hz com sistema de som treVolo integrado. HDRi automático e Light Tuner para ajuste preciso em jogos escuros.",
     "badge": "Oferta Limitada",
@@ -4334,7 +4003,7 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "449,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-012-061-10.jpg",
+    "img": "/products/190.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-012-061-10.jpg"],
     "description": "Monitor 4K 160Hz com KVM switch integrado para alternar entre PC e consola. Painel SS IPS com 95% DCI-P3 e HDMI 2.1.",
     "badge": "KVM Integrado",
@@ -4356,7 +4025,7 @@ export const products: Product[] = [
     "price": "799,00 €",
     "oldPrice": "899,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/24-475-350-11.jpg",
+    "img": "/products/191.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/24-475-350-11.jpg"],
     "description": "Ultrawide OLED 34\" 3440x1440 a 175Hz curvo. Imersão cinematográfica com pretos perfeitos e campo de visão expandido para simuladores e RPGs.",
     "badge": "Ultrawide OLED",
@@ -4377,7 +4046,7 @@ export const products: Product[] = [
     "category": "Monitores",
     "price": "349,00 €",
     "rating": 4.3,
-    "img": "https://c1.neweggimages.com/productimage/nb640/3D4-001B-00063-07.jpg",
+    "img": "/products/192.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/3D4-001B-00063-07.jpg"],
     "description": "Monitor gaming 1440p 170Hz com painel IPS de alta gama a preço acessível. G-Sync Compatible e sRGB 117% para cores vibrantes.",
     "badge": "Melhor Preço",
@@ -4402,7 +4071,7 @@ export const products: Product[] = [
     "price": "199,00 €",
     "oldPrice": "219,00 €",
     "rating": 4.9,
-    "img": "https://c1.neweggimages.com/ProductImageOriginal/AZB2S2507310G9Q4VFD.jpg",
+    "img": "/products/193.png",
     "gallery": ["https://c1.neweggimages.com/ProductImageOriginal/AZB2S2507310G9Q4VFD.jpg"],
     "description": "Teclado Hall Effect com Rapid Trigger e ponto de actuação ajustável de 0.1mm a 4.0mm. O standard de ouro para gaming competitivo.",
     "badge": "Esports Pro",
@@ -4423,7 +4092,7 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "179,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/ProductImageCompressAll60/23-937-168-01.jpg",
+    "img": "/products/196.png",
     "gallery": ["https://c1.neweggimages.com/ProductImageCompressAll60/23-937-168-01.jpg"],
     "description": "Teclado mecânico Hall Effect com chassis de alumínio CNC. Rapid Trigger, gasket mount e compatível com QMK/VIA para personalização total.",
     "badge": "Popular",
@@ -4445,7 +4114,7 @@ export const products: Product[] = [
     "price": "99,00 €",
     "oldPrice": "119,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/BTD4D24050514RTS408.jpg",
+    "img": "/products/197.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/BTD4D24050514RTS408.jpg"],
     "description": "Rato simétrico ultra-leve de 52g para mãos pequenas a médias. Sensor PAW3395 e switches ópticos Kailh para zero double-click.",
     "badge": "Ultra Light",
@@ -4466,7 +4135,7 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "189,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/23-239-062-04.jpg",
+    "img": "/products/198.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/23-239-062-04.jpg"],
     "description": "Teclado com switches OmniPoint 3.0 magnéticos e Rapid Trigger ajustável. Ecrã OLED integrado e chassis de alumínio premium.",
     "badge": "Top Seller",
@@ -4488,7 +4157,7 @@ export const products: Product[] = [
     "price": "79,00 €",
     "oldPrice": "89,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/ProductImage/BT8WS24030506GDP869.jpg",
+    "img": "/products/199.png",
     "gallery": ["https://c1.neweggimages.com/ProductImage/BT8WS24030506GDP869.jpg"],
     "description": "Rato ergonómico wireless de 59g com sensor PixArt PAW3395 e switches Kailh GM 8.0. Shape inspirado no lendário Intellimouse.",
     "badge": "Escolha VoltStock",
@@ -4509,7 +4178,7 @@ export const products: Product[] = [
     "category": "Teclados e Ratos",
     "price": "229,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/23-816-165-05.png",
+    "img": "/products/200.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/23-816-165-05.png"],
     "description": "Teclado full-size com switches magnéticos MGX e Rapid Trigger. Chassis de alumínio escovado, apoio de pulso em couro e iCUE RGB.",
     "badge": "Premium",
@@ -4533,7 +4202,7 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "299,00 €",
     "rating": 4.7,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V788PC0.jpg",
+    "img": "/products/202.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A17PD2404010V788PC0.jpg"],
     "description": "Headset com drivers planares magnéticos de 90mm para fidelidade audiófila. DSP Waves NX para espacialização 3D e 80 horas de bateria.",
     "badge": "Premium",
@@ -4554,7 +4223,7 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "179,00 €",
     "rating": 4.6,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V71LCEF.jpg",
+    "img": "/products/204.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A17PD2404010V71LCEF.jpg"],
     "description": "Headset esports com drivers TriForce Titanium de 50mm e HyperSpeed wireless. Microfone removível com isolamento de câmara e THX Spatial Audio.",
     "badge": "Top Seller",
@@ -4576,7 +4245,7 @@ export const products: Product[] = [
     "price": "249,00 €",
     "oldPrice": "279,00 €",
     "rating": 4.8,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-380-048-V05.jpg",
+    "img": "/products/205.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/26-380-048-V05.jpg"],
     "description": "Auscultadores abertos de estúdio com driver STELLAR.45 para monitoring e gaming imersivo. Impedância de 48 Ohm — funciona sem amp dedicado.",
     "badge": "Studio Grade",
@@ -4597,7 +4266,7 @@ export const products: Product[] = [
     "category": "Headsets e Áudio",
     "price": "219,00 €",
     "rating": 4.5,
-    "img": "https://c1.neweggimages.com/productimage/nb640/26-816-215-08.png",
+    "img": "/products/206.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/26-816-215-08.png"],
     "description": "Headset open-back para streaming e gaming com drivers de grafeno e microfone broadcast destacável. Qualidade de áudio comparável a headphones de estúdio.",
     "badge": "Novo",
@@ -4622,7 +4291,7 @@ export const products: Product[] = [
     "price": "519,00 €",
     "oldPrice": "569,00 €",
     "rating": 4.8,
-    "img": "https://secretlab.co/cdn/shop/products/SL_TitanEvoR_PU_Stealth0001_S_grande.jpg?v=1626023686",
+    "img": "/products/209.png",
     "gallery": ["https://secretlab.co/cdn/shop/products/SL_TitanEvoR_PU_Stealth0001_S_grande.jpg?v=1626023686"],
     "description": "A cadeira gaming mais vendida do mundo, versão 2024. Suporte lombar L-ADAPT com 4 vias, espuma de frio e acabamento SoftWeave Plus.",
     "badge": "Best Seller Mundial",
@@ -4644,7 +4313,7 @@ export const products: Product[] = [
     "price": "349,00 €",
     "oldPrice": "399,00 €",
     "rating": 4.4,
-    "img": "https://c1.neweggimages.com/productimage/nb640/A6ZPD2309280ZGX0D8A.jpg",
+    "img": "/products/213.png",
     "gallery": ["https://c1.neweggimages.com/productimage/nb640/A6ZPD2309280ZGX0D8A.jpg"],
     "description": "Cadeira gaming com tecido respirável Soft Fabric e almofada lombar em espuma viscoelástica. Design compacto ideal para secretárias standard.",
     "badge": "Oferta Limitada",
@@ -4665,7 +4334,7 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "1.199,00 €",
     "rating": 4.7,
-    "img": "https://images.steelcase.com/image/upload/v1690833473/21-0163191-4-scaled.jpg",
+    "img": "/products/214.png",
     "gallery": ["https://images.steelcase.com/image/upload/v1690833473/21-0163191-4-scaled.jpg"],
     "description": "Cadeira ergonómica ultra-leve com apenas 10 kg. Encosto em InterWoven Suspension para suporte e ventilação natural sem espuma tradicional.",
     "badge": "Ergonomia Next-Gen",
@@ -4686,7 +4355,7 @@ export const products: Product[] = [
     "category": "Cadeiras Gaming",
     "price": "199,00 €",
     "rating": 4.1,
-    "img": "https://www.ikea.com/us/en/images/products/matchspel-gaming-chair-bomstad-black__0985645_pe816716_s5.jpg",
+    "img": "/products/215.png",
     "gallery": ["https://www.ikea.com/us/en/images/products/matchspel-gaming-chair-bomstad-black__0985645_pe816716_s5.jpg"],
     "description": "Cadeira gaming budget da IKEA com encosto em rede respirável e apoio lombar ajustável. Mecanismo de báscula e altura ajustável a gás.",
     "badge": "Melhor Preço",
@@ -4708,7 +4377,7 @@ export const products: Product[] = [
     "price": "549,00 €",
     "oldPrice": "599,00 €",
     "rating": 4.6,
-    "img": "https://www.andaseat.com/cdn/shop/files/AndaSeat-new-kaiser-4-series-gaming-chair-elegant-black-45.webp?v=1764403213",
+    "img": "/products/216.png",
     "gallery": ["https://www.andaseat.com/cdn/shop/files/AndaSeat-new-kaiser-4-series-gaming-chair-elegant-black-45.webp?v=1764403213"],
     "description": "Cadeira gaming XL com MagClap magnetic lumbar para ajuste instantâneo. Espuma moldada a frio de alta resiliência e braços 4D magnéticos.",
     "badge": "XL MagClap",
@@ -4722,6 +4391,678 @@ export const products: Product[] = [
     "brand": "AndaSeat",
     "inStock": true,
     "stockCount": 79
-  }
+  },
 
+  // =============================================
+  // PERIFÉRICOS BUDGET (IDs 220-252)
+  // =============================================
+  {
+    "id": 220,
+    "name": "Redragon Shark M688 RGB",
+    "category": "Teclados e Ratos",
+    "price": "18,99 €",
+    "oldPrice": "29,99 €",
+    "rating": 4.5,
+    "img": "/products/220.png",
+    "gallery": [
+      "https://redragonadria.com/wp-content/uploads/2021/03/M688-1.jpg"
+    ],
+    "description": "Rato gaming com sensor óptico de 12400 DPI, 8 botões programáveis, iluminação RGB e design ergonómico para gaming prolongado.",
+    "badge": "Mais Vendido",
+    "features": [
+      {
+        "name": "DPI",
+        "value": "12400 DPI"
+      },
+      {
+        "name": "Botões",
+        "value": "8 Programáveis"
+      },
+      {
+        "name": "Iluminação",
+        "value": "RGB Chroma"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB Com Fio"
+      },
+      {
+        "name": "Peso",
+        "value": "85g"
+      },
+      {
+        "name": "Sensor",
+        "value": "PAW3212"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Redragon-M688-Shark",
+    "brand": "Redragon",
+    "inStock": true,
+    "stockCount": 100
+  },
+
+  {
+    "id": 221,
+    "name": "Attack Shark R1 Pro Wireless",
+    "category": "Teclados e Ratos",
+    "price": "22,99 €",
+    "oldPrice": "34,99 €",
+    "rating": 4.6,
+    "img": "/products/221.png",
+    "gallery": [
+      "https://attackshark.com/cdn/shop/files/R1_8747f811-5ede-47a6-8b88-4b992277d196.jpg"
+    ],
+    "description": "Rato gaming wireless tri-mode (2.4G/Bluetooth/USB-C) com sensor PAW3311, design ultra-leve de 55g e bateria de longa duração.",
+    "badge": "Wireless",
+    "features": [
+      {
+        "name": "DPI",
+        "value": "26000 DPI"
+      },
+      {
+        "name": "Conexão",
+        "value": "Tri-Mode 2.4G/BT/USB-C"
+      },
+      {
+        "name": "Peso",
+        "value": "55g Ultra-Leve"
+      },
+      {
+        "name": "Sensor",
+        "value": "PAW3311"
+      },
+      {
+        "name": "Bateria",
+        "value": "60h"
+      },
+      {
+        "name": "Polling Rate",
+        "value": "1000Hz"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Attack-Shark-R1-Pro",
+    "brand": "Attack Shark",
+    "inStock": true,
+    "stockCount": 80
+  },
+
+  {
+    "id": 222,
+    "name": "HAVIT MS1006 Gaming Mouse",
+    "category": "Teclados e Ratos",
+    "price": "12,99 €",
+    "oldPrice": "19,99 €",
+    "rating": 4.3,
+    "img": "/products/222.png",
+    "gallery": [
+      "https://havitsmart.com/cdn/shop/files/havit-gaming-mouse-ms1006havit-business-762678.jpg"
+    ],
+    "description": "Rato gaming acessível com iluminação RGB, 6 botões programáveis e sensor de 6400 DPI ajustável.",
+    "features": [
+      {
+        "name": "DPI",
+        "value": "6400 DPI"
+      },
+      {
+        "name": "Botões",
+        "value": "6 Programáveis"
+      },
+      {
+        "name": "Iluminação",
+        "value": "RGB"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB Com Fio"
+      },
+      {
+        "name": "Peso",
+        "value": "95g"
+      },
+      {
+        "name": "Cabo",
+        "value": "1.5m Nylon"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/HAVIT-MS1006",
+    "brand": "HAVIT",
+    "inStock": true,
+    "stockCount": 120
+  },
+
+  {
+    "id": 223,
+    "name": "Redragon Cobra M711 RGB",
+    "category": "Teclados e Ratos",
+    "price": "19,99 €",
+    "oldPrice": "27,99 €",
+    "rating": 4.7,
+    "img": "/products/223.png",
+    "gallery": [
+      "https://redragonshop.com/cdn/shop/files/M711wiredgamingmouse.png"
+    ],
+    "description": "Rato gaming FPS com sensor Pixart 3325, 10000 DPI, switches Huano de 10M de cliques e peso ajustável.",
+    "badge": "Best Seller",
+    "features": [
+      {
+        "name": "DPI",
+        "value": "10000 DPI"
+      },
+      {
+        "name": "Sensor",
+        "value": "Pixart PMW3325"
+      },
+      {
+        "name": "Switches",
+        "value": "Huano 10M"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB Com Fio"
+      },
+      {
+        "name": "Peso",
+        "value": "Ajustável 85-115g"
+      },
+      {
+        "name": "Polling Rate",
+        "value": "1000Hz"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Redragon-Cobra-M711",
+    "brand": "Redragon",
+    "inStock": true,
+    "stockCount": 90
+  },
+
+  {
+    "id": 224,
+    "name": "Attack Shark X3 Wireless",
+    "category": "Teclados e Ratos",
+    "price": "24,99 €",
+    "oldPrice": "39,99 €",
+    "rating": 4.5,
+    "img": "/products/224.png",
+    "gallery": [
+      "https://attackshark.com/cdn/shop/files/attackshark_x3_gaming_mouse_0055.jpg"
+    ],
+    "description": "Rato gaming wireless ergonómico com sensor PAW3395, 26000 DPI, design de 49g ultra-leve e switch magnético.",
+    "badge": "Ultra-Leve",
+    "features": [
+      {
+        "name": "DPI",
+        "value": "26000 DPI"
+      },
+      {
+        "name": "Sensor",
+        "value": "PAW3395"
+      },
+      {
+        "name": "Peso",
+        "value": "49g Ultra-Leve"
+      },
+      {
+        "name": "Conexão",
+        "value": "Tri-Mode 2.4G/BT/USB-C"
+      },
+      {
+        "name": "Bateria",
+        "value": "70h"
+      },
+      {
+        "name": "Switch",
+        "value": "Magnético"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Attack-Shark-X3",
+    "brand": "Attack Shark",
+    "inStock": true,
+    "stockCount": 70
+  },
+
+  {
+    "id": 230,
+    "name": "Large RGB Gaming Mouse Pad 90x40cm",
+    "category": "Mouse Pads",
+    "price": "14,99 €",
+    "oldPrice": "24,99 €",
+    "rating": 4.4,
+    "img": "/products/230.png",
+    "gallery": [
+      "https://tiltednation.com/cdn/shop/products/tnfireblackrgbmousepad.jpg"
+    ],
+    "description": "Tapete gaming XXL 900x400mm com iluminação LED RGB perimetral, 14 modos de cor, base antiderrapante e superfície de micro-textura.",
+    "badge": "Popular",
+    "features": [
+      {
+        "name": "Tamanho",
+        "value": "900 x 400 x 4mm"
+      },
+      {
+        "name": "Iluminação",
+        "value": "RGB LED 14 Modos"
+      },
+      {
+        "name": "Base",
+        "value": "Borracha Antiderrapante"
+      },
+      {
+        "name": "Superfície",
+        "value": "Micro-Textura Speed"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB"
+      },
+      {
+        "name": "Material",
+        "value": "Tecido + Borracha"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/RGB-Gaming-Mouse-Pad-90x40",
+    "brand": "Genérico",
+    "inStock": true,
+    "stockCount": 150
+  },
+
+  {
+    "id": 231,
+    "name": "Redragon P027 RGB Mouse Pad XL",
+    "category": "Mouse Pads",
+    "price": "17,99 €",
+    "oldPrice": "27,99 €",
+    "rating": 4.6,
+    "img": "/products/231.png",
+    "gallery": [
+      "https://redragonadria.com/wp-content/uploads/2021/03/P027RGB-1.jpg"
+    ],
+    "description": "Tapete gaming Redragon com iluminação RGB, tamanho XL 800x300mm, superfície otimizada para speed e control.",
+    "badge": "Marca Premium",
+    "features": [
+      {
+        "name": "Tamanho",
+        "value": "800 x 300 x 3mm"
+      },
+      {
+        "name": "Iluminação",
+        "value": "RGB LED"
+      },
+      {
+        "name": "Base",
+        "value": "Borracha Natural"
+      },
+      {
+        "name": "Superfície",
+        "value": "Speed/Control Dual"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB"
+      },
+      {
+        "name": "Borda",
+        "value": "Costurada Anti-Desgaste"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Redragon-P027-RGB",
+    "brand": "Redragon",
+    "inStock": true,
+    "stockCount": 100
+  },
+
+  {
+    "id": 232,
+    "name": "Black XXL Mouse Pad 90x40cm",
+    "category": "Mouse Pads",
+    "price": "9,99 €",
+    "oldPrice": "14,99 €",
+    "rating": 4.3,
+    "img": "/products/232.png",
+    "gallery": [
+      "https://ultimatecustommousepads.com/cdn/shop/files/xl-large-all-black-blackout-gaming-mousepad-deskmat-5.jpg"
+    ],
+    "description": "Tapete de mesa XXL todo preto 900x400mm, minimalista, com base antiderrapante e bordas costuradas. Ideal para setup clean.",
+    "features": [
+      {
+        "name": "Tamanho",
+        "value": "900 x 400 x 3mm"
+      },
+      {
+        "name": "Cor",
+        "value": "Preto Total"
+      },
+      {
+        "name": "Base",
+        "value": "Borracha Antiderrapante"
+      },
+      {
+        "name": "Borda",
+        "value": "Costurada"
+      },
+      {
+        "name": "Superfície",
+        "value": "Speed Cloth"
+      },
+      {
+        "name": "Peso",
+        "value": "350g"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Black-XXL-Mouse-Pad",
+    "brand": "Genérico",
+    "inStock": true,
+    "stockCount": 200
+  },
+
+  {
+    "id": 240,
+    "name": "Aula F75 Mechanical Keyboard 75%",
+    "category": "Teclados e Ratos",
+    "price": "34,99 €",
+    "oldPrice": "49,99 €",
+    "rating": 4.7,
+    "img": "/products/240.png",
+    "gallery": [
+      "https://cdn.shopify.com/s/files/1/0280/3931/5529/files/1_9d9bc2f1-6106-4a74-9396-9086cd5edffc.jpg"
+    ],
+    "description": "Teclado mecânico 75% com switches Gateron, hot-swappable, gasket mount, iluminação RGB per-key e conexão tri-mode.",
+    "badge": "Top Value",
+    "features": [
+      {
+        "name": "Layout",
+        "value": "75% (82 teclas)"
+      },
+      {
+        "name": "Switches",
+        "value": "Gateron Hot-Swap"
+      },
+      {
+        "name": "Conexão",
+        "value": "Tri-Mode 2.4G/BT/USB-C"
+      },
+      {
+        "name": "Bateria",
+        "value": "4000mAh"
+      },
+      {
+        "name": "RGB",
+        "value": "Per-Key Backlight"
+      },
+      {
+        "name": "Montagem",
+        "value": "Gasket Mount"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Aula-F75",
+    "brand": "Aula",
+    "inStock": true,
+    "stockCount": 60
+  },
+
+  {
+    "id": 241,
+    "name": "Royal Kludge RK84 Wireless",
+    "category": "Teclados e Ratos",
+    "price": "39,99 €",
+    "oldPrice": "54,99 €",
+    "rating": 4.6,
+    "img": "/products/241.png",
+    "gallery": [
+      "https://rkgamingstore.com/cdn/shop/files/RK8475_WirelessMechanicalKeyboard_2_grande.png"
+    ],
+    "description": "Teclado mecânico 75% com hot-swap, bateria de 3750mAh, Bluetooth 5.0, 2.4G e USB-C. Perfeito para produtividade e gaming.",
+    "features": [
+      {
+        "name": "Layout",
+        "value": "75% (84 teclas)"
+      },
+      {
+        "name": "Switches",
+        "value": "Hot-Swappable"
+      },
+      {
+        "name": "Conexão",
+        "value": "Tri-Mode BT/2.4G/USB-C"
+      },
+      {
+        "name": "Bateria",
+        "value": "3750mAh"
+      },
+      {
+        "name": "RGB",
+        "value": "South-Facing LEDs"
+      },
+      {
+        "name": "Compatibilidade",
+        "value": "Win/Mac/Linux"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Royal-Kludge-RK84",
+    "brand": "Royal Kludge",
+    "inStock": true,
+    "stockCount": 50
+  },
+
+  {
+    "id": 242,
+    "name": "Redragon K630 Dragonborn 60%",
+    "category": "Teclados e Ratos",
+    "price": "29,99 €",
+    "oldPrice": "39,99 €",
+    "rating": 4.5,
+    "img": "/products/242.png",
+    "gallery": [
+      "https://redragonshop.com/cdn/shop/products/redragon60keyboard.png"
+    ],
+    "description": "Teclado mecânico compacto 60% com switches Redragon Brown, iluminação RGB e construção em alumínio.",
+    "badge": "Compacto",
+    "features": [
+      {
+        "name": "Layout",
+        "value": "60% (61 teclas)"
+      },
+      {
+        "name": "Switches",
+        "value": "Redragon Brown"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB-C"
+      },
+      {
+        "name": "Corpo",
+        "value": "Alumínio + ABS"
+      },
+      {
+        "name": "RGB",
+        "value": "Per-Key Backlight"
+      },
+      {
+        "name": "Anti-Ghost",
+        "value": "N-Key Rollover"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Redragon-K630",
+    "brand": "Redragon",
+    "inStock": true,
+    "stockCount": 70
+  },
+
+  {
+    "id": 243,
+    "name": "VGN Neon 75 HE Magnetic",
+    "category": "Teclados e Ratos",
+    "price": "49,99 €",
+    "oldPrice": "69,99 €",
+    "rating": 4.8,
+    "img": "/products/243.png",
+    "gallery": [
+      "https://vgnlab.com/cdn/shop/files/VGN-Neon-he-Elven-White.jpg"
+    ],
+    "description": "Teclado mecânico com switches magnéticos Hall Effect, actuation ajustável 0.1-4mm, rapid trigger e gasket mount premium.",
+    "badge": "Hall Effect",
+    "features": [
+      {
+        "name": "Layout",
+        "value": "75% (82 teclas)"
+      },
+      {
+        "name": "Switches",
+        "value": "Hall Effect Magnético"
+      },
+      {
+        "name": "Actuation",
+        "value": "Ajustável 0.1-4mm"
+      },
+      {
+        "name": "Rapid Trigger",
+        "value": "Sim"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB-C"
+      },
+      {
+        "name": "Montagem",
+        "value": "Gasket Mount"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/VGN-Neon-75-HE",
+    "brand": "VGN",
+    "inStock": true,
+    "stockCount": 40
+  },
+
+  {
+    "id": 250,
+    "name": "Redragon H510 Zeus Pro 7.1",
+    "category": "Headsets e Áudio",
+    "price": "29,99 €",
+    "oldPrice": "44,99 €",
+    "rating": 4.6,
+    "img": "/products/250.png",
+    "gallery": [
+      "https://redragonshop.com/cdn/shop/products/h510.png"
+    ],
+    "description": "Headset gaming com drivers de 53mm, som surround 7.1 virtual, microfone destacavel com cancelamento de ruído e almofadas de memória.",
+    "badge": "Best Seller",
+    "features": [
+      {
+        "name": "Drivers",
+        "value": "53mm Neodymium"
+      },
+      {
+        "name": "Áudio",
+        "value": "7.1 Surround Virtual"
+      },
+      {
+        "name": "Microfone",
+        "value": "Destacável Noise Cancel"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB + 3.5mm"
+      },
+      {
+        "name": "Almofadas",
+        "value": "Memory Foam"
+      },
+      {
+        "name": "Peso",
+        "value": "310g"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Redragon-H510-Zeus",
+    "brand": "Redragon",
+    "inStock": true,
+    "stockCount": 80
+  },
+
+  {
+    "id": 251,
+    "name": "HAVIT H2002d Gaming Headset",
+    "category": "Headsets e Áudio",
+    "price": "19,99 €",
+    "oldPrice": "29,99 €",
+    "rating": 4.4,
+    "img": "/products/251.png",
+    "gallery": [
+      "https://www.compume.jo/cdn/shop/files/Havit-H2002D-BO-_3_-1200x1200-1200x1200.jpg"
+    ],
+    "description": "Headset gaming com drivers de 50mm, microfone omnidirecional, almofadas de proteína e iluminação LED.",
+    "features": [
+      {
+        "name": "Drivers",
+        "value": "50mm"
+      },
+      {
+        "name": "Microfone",
+        "value": "Omnidirecional"
+      },
+      {
+        "name": "Conexão",
+        "value": "USB + 3.5mm"
+      },
+      {
+        "name": "Almofadas",
+        "value": "Proteína Leather"
+      },
+      {
+        "name": "LED",
+        "value": "Iluminação Ambiente"
+      },
+      {
+        "name": "Cabo",
+        "value": "2.2m Nylon"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/HAVIT-H2002d",
+    "brand": "HAVIT",
+    "inStock": true,
+    "stockCount": 100
+  },
+
+  {
+    "id": 252,
+    "name": "Onikuma K5 Pro Gaming Headset",
+    "category": "Headsets e Áudio",
+    "price": "15,99 €",
+    "oldPrice": "22,99 €",
+    "rating": 4.3,
+    "img": "/products/252.png",
+    "gallery": [
+      "https://gamerheadphone.myshopify.com/cdn/shop/products/product-image-782156677.jpg"
+    ],
+    "description": "Headset gaming over-ear com microfone retráctil, drivers de 50mm, LED RGB e compatibilidade universal PS4/PS5/Xbox/PC.",
+    "features": [
+      {
+        "name": "Drivers",
+        "value": "50mm"
+      },
+      {
+        "name": "Microfone",
+        "value": "Retráctil Flexível"
+      },
+      {
+        "name": "Conexão",
+        "value": "3.5mm Universal"
+      },
+      {
+        "name": "Compat.",
+        "value": "PS4/PS5/Xbox/PC/Mobile"
+      },
+      {
+        "name": "LED",
+        "value": "RGB (via USB)"
+      },
+      {
+        "name": "Peso",
+        "value": "280g"
+      }
+    ],
+    "supplier_url": "https://www.aliexpress.com/item/Onikuma-K5-Pro",
+    "brand": "Onikuma",
+    "inStock": true,
+    "stockCount": 130
+  }
 ];
