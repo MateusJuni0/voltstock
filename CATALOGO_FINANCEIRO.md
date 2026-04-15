@@ -8,20 +8,20 @@
 
 | Categoria | Qtd | Preço Médio | Margem Média | Lucro Total Estimado/mês* |
 |-----------|-----|-------------|--------------|--------------------------|
-| Armazenamento | 17 | 183 € | -2.1% | -25 € |
+| Armazenamento | 17 | 207 € | 10.0% | 50 € |
 | Cadeiras Gaming | 15 | 550 € | 16.4% | 219 € |
 | Caixas | 15 | 163 € | 7.8% | 82 € |
-| Fontes de Alimentação | 14 | 197 € | 4.1% | 52 € |
-| Headsets e Áudio | 17 | 183 € | 10.7% | 161 € |
-| Memória RAM | 17 | 144 € | -4.5% | -42 € |
-| Monitores | 18 | 576 € | 1.6% | 22 € |
-| Motherboards | 16 | 370 € | -0.9% | -8 € |
-| Mouse Pads | 3 | 14 € | -9.9% | -15 € |
-| Placas Gráficas | 16 | 905 € | -8.2% | -182 € |
-| Processadores | 15 | 414 € | -7.0% | -71 € |
-| Refrigeração | 14 | 134 € | 4.1% | 35 € |
-| Teclados e Ratos | 25 | 107 € | -1.8% | 52 € |
-| **TOTAL** | **202** | | | **282 €** |
+| Fontes de Alimentação | 14 | 211 € | 10.6% | 52 € |
+| Headsets e Áudio | 17 | 185 € | 17.5% | 175 € |
+| Memória RAM | 17 | 169 € | 11.5% | 121 € |
+| Monitores | 18 | 634 € | 10.3% | 166 € |
+| Motherboards | 16 | 423 € | 11.2% | 121 € |
+| Mouse Pads | 3 | 23 € | 31.3% | 87 € |
+| Placas Gráficas | 16 | 1086 € | 10.2% | 260 € |
+| Processadores | 15 | 496 € | 10.3% | 128 € |
+| Refrigeração | 14 | 144 € | 11.5% | 99 € |
+| Teclados e Ratos | 25 | 116 € | 19.2% | 114 € |
+| **TOTAL** | **202** | | | **1675 €** |
 
 *\*Estimativa conservadora baseada em 3-15 vendas/mês por categoria*
 
@@ -31,26 +31,26 @@
 
 | # | ID | Produto | Preço Venda | Custo | Frete | Lucro | Margem | Fonte |
 |---|----|---------|-----------:|------:|------:|------:|-------:|-------|
-| 1 | 12 | Secretlab TITAN Evo 2022 XL | 549 € | 373 € | 0 € | **73 €** | **16%** | Distribuidor EU |
-| 2 | 112 | Razer Iskur V2 | 499 € | 339 € | 0 € | **66 €** | **16%** | Distribuidor EU |
-| 3 | 113 | Corsair TC200 Leatherette | 349 € | 237 € | 0 € | **46 €** | **16%** | Distribuidor EU |
-| 4 | 114 | noblechairs HERO ST | 449 € | 305 € | 0 € | **60 €** | **16%** | Distribuidor EU |
-| 5 | 115 | DXRacer Craft Series | 399 € | 271 € | 0 € | **53 €** | **16%** | Distribuidor EU |
-| 6 | 116 | AndaSeat Kaiser 3 XL | 449 € | 305 € | 0 € | **60 €** | **16%** | Distribuidor EU |
-| 7 | 117 | Cougar Armor Elite | 199 € | 135 € | 0 € | **26 €** | **16%** | Distribuidor EU |
-| 8 | 118 | AKRacing Masters Pro | 499 € | 339 € | 0 € | **66 €** | **16%** | Distribuidor EU |
-| 9 | 119 | Herman Miller x Logitech Embody Gaming | 1595 € | 1085 € | 0 € | **212 €** | **16%** | Distribuidor EU |
-| 10 | 120 | Autonomous ErgoChair Pro | 449 € | 305 € | 0 € | **60 €** | **16%** | Distribuidor EU |
-| 11 | 209 | Secretlab Titan Evo 2024 | 519 € | 353 € | 0 € | **69 €** | **16%** | Distribuidor EU |
-| 12 | 213 | Corsair TC200 Fabric | 349 € | 237 € | 0 € | **46 €** | **16%** | Distribuidor EU |
-| 13 | 214 | Steelcase Karman | 1199 € | 815 € | 0 € | **159 €** | **16%** | Distribuidor EU |
-| 14 | 215 | IKEA MATCHSPEL | 199 € | 135 € | 0 € | **26 €** | **16%** | Distribuidor EU |
-| 15 | 216 | AndaSeat Kaiser 4 | 549 € | 373 € | 0 € | **73 €** | **16%** | Distribuidor EU |
-| 16 | 11 | SteelSeries Arctis Nova Pro Wireless | 350 € | 245 € | 0 € | **40 €** | **14%** | Distribuidor EU |
-| 17 | 103 | HyperX Cloud III Wireless | 149 € | 104 € | 0 € | **17 €** | **14%** | Distribuidor EU |
-| 18 | 104 | Logitech G Pro X 2 Lightspeed | 219 € | 153 € | 0 € | **25 €** | **14%** | Distribuidor EU |
-| 19 | 105 | Corsair Virtuoso RGB XT Wireless | 239 € | 167 € | 0 € | **27 €** | **14%** | Distribuidor EU |
-| 20 | 106 | Razer Kraken V4 | 109 € | 76 € | 0 € | **12 €** | **14%** | Distribuidor EU |
+| 1 | 220 | Redragon Shark M688 RGB | 35 € | 14 € | 4 € | **11 €** | **39%** | AliExpress |
+| 2 | 251 | HAVIT H2002d Gaming Headset | 35 € | 14 € | 4 € | **11 €** | **37%** | AliExpress |
+| 3 | 221 | Attack Shark R1 Pro Wireless | 45 € | 20 € | 4 € | **13 €** | **35%** | AliExpress |
+| 4 | 224 | Attack Shark X3 Wireless | 50 € | 23 € | 4 € | **14 €** | **34%** | AliExpress |
+| 5 | 242 | Redragon K630 Dragonborn 60% | 55 € | 26 € | 4 € | **15 €** | **34%** | AliExpress |
+| 6 | 250 | Redragon H510 Zeus Pro 7.1 | 45 € | 20 € | 4 € | **12 €** | **33%** | AliExpress |
+| 7 | 243 | VGN Neon 75 HE Magnetic | 100 € | 51 € | 4 € | **27 €** | **33%** | AliExpress |
+| 8 | 230 | Large RGB Gaming Mouse Pad 90x40cm | 24 € | 9 € | 4 € | **6 €** | **32%** | AliExpress |
+| 9 | 252 | Onikuma K5 Pro Gaming Headset | 24 € | 9 € | 4 € | **6 €** | **32%** | AliExpress |
+| 10 | 231 | Redragon P027 RGB Mouse Pad XL | 27 € | 11 € | 4 € | **7 €** | **31%** | AliExpress |
+| 11 | 223 | Redragon Cobra M711 RGB | 26 € | 11 € | 4 € | **7 €** | **31%** | AliExpress |
+| 12 | 232 | Black XXL Mouse Pad 90x40cm | 17 € | 6 € | 4 € | **4 €** | **31%** | AliExpress |
+| 13 | 222 | HAVIT MS1006 Gaming Mouse | 21 € | 8 € | 4 € | **5 €** | **31%** | AliExpress |
+| 14 | 240 | Aula F75 Mechanical Keyboard 75% | 85 € | 44 € | 4 € | **21 €** | **31%** | AliExpress |
+| 15 | 241 | Royal Kludge RK84 Wireless | 75 € | 39 € | 4 € | **19 €** | **30%** | AliExpress |
+| 16 | 84 | Arctic Freezer 36 A-RGB | 45 € | 30 € | 0 € | **6 €** | **17%** | Distribuidor EU |
+| 17 | 12 | Secretlab TITAN Evo 2022 XL | 549 € | 373 € | 0 € | **73 €** | **16%** | Distribuidor EU |
+| 18 | 112 | Razer Iskur V2 | 499 € | 339 € | 0 € | **66 €** | **16%** | Distribuidor EU |
+| 19 | 113 | Corsair TC200 Leatherette | 349 € | 237 € | 0 € | **46 €** | **16%** | Distribuidor EU |
+| 20 | 114 | noblechairs HERO ST | 449 € | 305 € | 0 € | **60 €** | **16%** | Distribuidor EU |
 
 ---
 
@@ -60,23 +60,23 @@
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 3 | Samsung 990 Pro 2TB NVMe Gen4 | Samsung | 165 € | 17% | 137 € | 0 € | -3 € | -2% | Distribuidor EU |
-| 17 | WD Black SN850X 4TB NVMe Gen4 | WD | 349 € | 17% | 290 € | 0 € | -6 € | -2% | Distribuidor EU |
-| 53 | WD Blue SN580 1TB NVMe Gen4 | WD | 59 € | 25% | 49 € | 0 € | -1 € | -2% | Distribuidor EU |
-| 54 | Kingston NV2 2TB NVMe Gen4 | Kingston | 89 € | 18% | 74 € | 0 € | -2 € | -2% | Distribuidor EU |
-| 55 | Crucial P3 Plus 2TB NVMe Gen4 | Crucial | 99 € | 23% | 82 € | 0 € | -2 € | -2% | Distribuidor EU |
-| 57 | Seagate FireCuda 530 2TB NVMe Gen4 | Seagate | 179 € | 18% | 149 € | 0 € | -3 € | -2% | Distribuidor EU |
-| 58 | Crucial T500 2TB NVMe Gen4 | Crucial | 149 € | 17% | 124 € | 0 € | -3 € | -2% | Distribuidor EU |
-| 59 | SK Hynix Platinum P41 2TB NVMe Gen4 | SK Hynix | 159 € | 16% | 132 € | 0 € | -3 € | -2% | Distribuidor EU |
-| 60 | Kingston KC3000 2TB NVMe Gen4 | Kingston | 139 € | 18% | 115 € | 0 € | -2 € | -2% | Distribuidor EU |
-| 153 | Samsung 990 EVO Plus 2TB | Samsung | 179 € | 10% | 149 € | 0 € | -3 € | -2% | Distribuidor EU |
-| 154 | WD Black SN850X 2TB | Western Digital | 149 € | - | 124 € | 0 € | -3 € | -2% | Distribuidor EU |
-| 155 | Crucial T700 2TB | Crucial | 219 € | 15% | 182 € | 0 € | -4 € | -2% | Distribuidor EU |
-| 156 | Seagate FireCuda 540 2TB | Seagate | 199 € | - | 165 € | 0 € | -3 € | -2% | Distribuidor EU |
-| 157 | Kingston KC3000 4TB | Kingston | 299 € | 14% | 248 € | 0 € | -5 € | -2% | Distribuidor EU |
-| 158 | Samsung 870 EVO 4TB | Samsung | 249 € | - | 207 € | 0 € | -4 € | -2% | Distribuidor EU |
-| 159 | Corsair MP700 PRO 2TB | Corsair | 239 € | 11% | 198 € | 0 € | -4 € | -2% | Distribuidor EU |
-| 160 | Sabrent Rocket 5 2TB | Sabrent | 189 € | - | 157 € | 0 € | -3 € | -2% | Distribuidor EU |
+| 53 | WD Blue SN580 1TB NVMe Gen4 | WD | 70 € | 18% | 49 € | 0 € | 8 € | 14% | Distribuidor EU |
+| 156 | Seagate FireCuda 540 2TB | Seagate | 230 € | - | 165 € | 0 € | 22 € | 12% | Distribuidor EU |
+| 3 | Samsung 990 Pro 2TB NVMe Gen4 | Samsung | 190 € | 17% | 137 € | 0 € | 18 € | 11% | Distribuidor EU |
+| 60 | Kingston KC3000 2TB NVMe Gen4 | Kingston | 160 € | 16% | 115 € | 0 € | 15 € | 11% | Distribuidor EU |
+| 155 | Crucial T700 2TB | Crucial | 250 € | 17% | 182 € | 0 € | 21 € | 11% | Distribuidor EU |
+| 58 | Crucial T500 2TB NVMe Gen4 | Crucial | 170 € | 19% | 124 € | 0 € | 15 € | 10% | Distribuidor EU |
+| 154 | WD Black SN850X 2TB | Western Digital | 170 € | - | 124 € | 0 € | 15 € | 10% | Distribuidor EU |
+| 157 | Kingston KC3000 4TB | Kingston | 340 € | 17% | 248 € | 0 € | 28 € | 10% | Distribuidor EU |
+| 59 | SK Hynix Platinum P41 2TB NVMe Gen4 | SK Hynix | 180 € | 18% | 132 € | 0 € | 14 € | 10% | Distribuidor EU |
+| 159 | Corsair MP700 PRO 2TB | Corsair | 270 € | 16% | 198 € | 0 € | 21 € | 10% | Distribuidor EU |
+| 158 | Samsung 870 EVO 4TB | Samsung | 280 € | - | 207 € | 0 € | 21 € | 9% | Distribuidor EU |
+| 54 | Kingston NV2 2TB NVMe Gen4 | Kingston | 100 € | 17% | 74 € | 0 € | 7 € | 9% | Distribuidor EU |
+| 17 | WD Black SN850X 4TB NVMe Gen4 | WD | 390 € | 17% | 290 € | 0 € | 27 € | 9% | Distribuidor EU |
+| 57 | Seagate FireCuda 530 2TB NVMe Gen4 | Seagate | 200 € | 17% | 149 € | 0 € | 14 € | 9% | Distribuidor EU |
+| 153 | Samsung 990 EVO Plus 2TB | Samsung | 200 € | 17% | 149 € | 0 € | 14 € | 9% | Distribuidor EU |
+| 55 | Crucial P3 Plus 2TB NVMe Gen4 | Crucial | 110 € | 15% | 82 € | 0 € | 7 € | 8% | Distribuidor EU |
+| 160 | Sabrent Rocket 5 2TB | Sabrent | 210 € | - | 157 € | 0 € | 14 € | 8% | Distribuidor EU |
 
 ### Cadeiras Gaming (15 produtos)
 
@@ -122,25 +122,28 @@
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 62 | Seasonic Focus GX-750 80+ Gold | Seasonic | 99 € | 17% | 77 € | 0 € | 3 € | 4% | Distribuidor EU |
-| 63 | be quiet! Pure Power 12 M 850W | be quiet! | 119 € | 14% | 93 € | 0 € | 4 € | 4% | Distribuidor EU |
-| 64 | EVGA SuperNOVA 1000 G7 80+ Gold | EVGA | 169 € | 15% | 132 € | 0 € | 6 € | 4% | Distribuidor EU |
-| 65 | Corsair SF750 80+ Platinum SFX | Corsair | 159 € | 11% | 124 € | 0 € | 5 € | 4% | Distribuidor EU |
-| 66 | MSI MEG Ai1300P PCIE5 80+ Platinum | MSI | 289 € | 17% | 225 € | 0 € | 10 € | 4% | Distribuidor EU |
-| 68 | NZXT C850 80+ Gold (2024) | NZXT | 109 € | - | 85 € | 0 € | 4 € | 4% | Distribuidor EU |
-| 69 | Thermaltake Toughpower GF3 850W | Thermaltake | 115 € | 15% | 90 € | 0 € | 4 € | 4% | Distribuidor EU |
-| 161 | Corsair HX1500i | Corsair | 399 € | 11% | 311 € | 0 € | 13 € | 4% | Distribuidor EU |
-| 162 | Seasonic PRIME TX-1000 | Seasonic | 349 € | - | 272 € | 0 € | 12 € | 4% | Distribuidor EU |
-| 163 | be quiet! Dark Power 13 850W | be quiet! | 229 € | 12% | 179 € | 0 € | 8 € | 4% | Distribuidor EU |
-| 165 | Corsair RM850x 2024 | Corsair | 139 € | 13% | 108 € | 0 € | 5 € | 4% | Distribuidor EU |
-| 166 | MSI MEG Ai1300P PCIE5 | MSI | 329 € | - | 257 € | 0 € | 11 € | 4% | Distribuidor EU |
-| 167 | Thermaltake Toughpower GF3 750W | Thermaltake | 109 € | 16% | 85 € | 0 € | 4 € | 4% | Distribuidor EU |
-| 168 | Fractal Design Ion+ 2 860W | Fractal Design | 149 € | - | 116 € | 0 € | 5 € | 4% | Distribuidor EU |
+| 62 | Seasonic Focus GX-750 80+ Gold | Seasonic | 110 € | 15% | 77 € | 0 € | 12 € | 14% | Distribuidor EU |
+| 68 | NZXT C850 80+ Gold (2024) | NZXT | 120 € | - | 85 € | 0 € | 13 € | 13% | Distribuidor EU |
+| 167 | Thermaltake Toughpower GF3 750W | Thermaltake | 120 € | 20% | 85 € | 0 € | 13 € | 13% | Distribuidor EU |
+| 63 | be quiet! Pure Power 12 M 850W | be quiet! | 130 € | 19% | 93 € | 0 € | 13 € | 12% | Distribuidor EU |
+| 165 | Corsair RM850x 2024 | Corsair | 150 € | 17% | 108 € | 0 € | 14 € | 11% | Distribuidor EU |
+| 168 | Fractal Design Ion+ 2 860W | Fractal Design | 160 € | - | 116 € | 0 € | 14 € | 11% | Distribuidor EU |
+| 66 | MSI MEG Ai1300P PCIE5 80+ Platinum | MSI | 310 € | 16% | 225 € | 0 € | 27 € | 11% | Distribuidor EU |
+| 65 | Corsair SF750 80+ Platinum SFX | Corsair | 170 € | 19% | 124 € | 0 € | 14 € | 10% | Distribuidor EU |
+| 64 | EVGA SuperNOVA 1000 G7 80+ Gold | EVGA | 180 € | 18% | 132 € | 0 € | 15 € | 10% | Distribuidor EU |
+| 166 | MSI MEG Ai1300P PCIE5 | MSI | 350 € | - | 257 € | 0 € | 28 € | 10% | Distribuidor EU |
+| 162 | Seasonic PRIME TX-1000 | Seasonic | 370 € | - | 272 € | 0 € | 29 € | 10% | Distribuidor EU |
+| 161 | Corsair HX1500i | Corsair | 420 € | 16% | 311 € | 0 € | 30 € | 9% | Distribuidor EU |
+| 163 | be quiet! Dark Power 13 850W | be quiet! | 240 € | 17% | 179 € | 0 € | 16 € | 8% | Distribuidor EU |
+| 69 | Thermaltake Toughpower GF3 850W | Thermaltake | 120 € | 20% | 90 € | 0 € | 8 € | 8% | Distribuidor EU |
 
 ### Headsets e Áudio (17 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
+| 251 | HAVIT H2002d Gaming Headset | HAVIT | 35 € | 22% | 14 € | 4 € | 11 € | 37% | AliExpress |
+| 250 | Redragon H510 Zeus Pro 7.1 | Redragon | 45 € | 18% | 20 € | 4 € | 12 € | 33% | AliExpress |
+| 252 | Onikuma K5 Pro Gaming Headset | Onikuma | 24 € | 17% | 9 € | 4 € | 6 € | 32% | AliExpress |
 | 11 | SteelSeries Arctis Nova Pro Wireless | SteelSeries | 350 € | 12% | 245 € | 0 € | 40 € | 14% | Distribuidor EU |
 | 103 | HyperX Cloud III Wireless | HyperX | 149 € | 12% | 104 € | 0 € | 17 € | 14% | Distribuidor EU |
 | 104 | Logitech G Pro X 2 Lightspeed | Logitech | 219 € | 15% | 153 € | 0 € | 25 € | 14% | Distribuidor EU |
@@ -155,148 +158,154 @@
 | 204 | Razer BlackShark V2 Pro 2024 | Razer | 179 € | - | 125 € | 0 € | 20 € | 14% | Distribuidor EU |
 | 205 | Beyerdynamic DT 900 PRO X | Beyerdynamic | 249 € | 11% | 174 € | 0 € | 28 € | 14% | Distribuidor EU |
 | 206 | Corsair Virtuoso Pro | Corsair | 219 € | - | 153 € | 0 € | 25 € | 14% | Distribuidor EU |
-| 250 | Redragon H510 Zeus Pro 7.1 | Redragon | 30 € | 33% | 20 € | 4 € | 0 € | 0% | AliExpress |
-| 252 | Onikuma K5 Pro Gaming Headset | Onikuma | 16 € | 30% | 9 € | 4 € | -0 € | -2% | AliExpress |
-| 251 | HAVIT H2002d Gaming Headset | HAVIT | 20 € | 33% | 14 € | 4 € | -2 € | -10% | AliExpress |
 
 ### Memória RAM (17 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 16 | G.Skill Trident Z5 RGB DDR5 64GB | G.Skill | 219 € | 22% | 186 € | 0 € | -8 € | -4% | Distribuidor EU |
-| 45 | Kingston Fury Beast DDR5 32GB 5600MHz | Kingston | 89 € | 18% | 76 € | 0 € | -3 € | -4% | Distribuidor EU |
-| 46 | Corsair Dominator Platinum RGB DDR5 32GB | Corsair | 169 € | 15% | 144 € | 0 € | -6 € | -4% | Distribuidor EU |
-| 47 | Kingston Fury Renegade DDR5 32GB 6400MHz | Kingston | 145 € | 17% | 123 € | 0 € | -5 € | -4% | Distribuidor EU |
-| 48 | TeamGroup T-Force Delta RGB DDR5 32GB 60 | TeamGroup | 99 € | 17% | 84 € | 0 € | -4 € | -4% | Distribuidor EU |
-| 49 | Corsair Vengeance DDR5 16GB 5600MHz | Corsair | 49 € | - | 42 € | 0 € | -2 € | -4% | Distribuidor EU |
-| 50 | G.Skill Ripjaws S5 DDR5 32GB 6000MHz | G.Skill | 105 € | 16% | 89 € | 0 € | -4 € | -4% | Distribuidor EU |
-| 52 | Crucial DDR5 32GB 4800MHz | Crucial | 69 € | - | 59 € | 0 € | -3 € | -4% | Distribuidor EU |
-| 147 | Kingston Fury Beast DDR5-6000 | Kingston | 109 € | 16% | 93 € | 0 € | -4 € | -4% | Distribuidor EU |
-| 148 | TeamGroup T-Force Delta RGB DDR5-7600 | TeamGroup | 169 € | - | 144 € | 0 € | -6 € | -4% | Distribuidor EU |
-| 149 | G.Skill Flare X5 DDR5-6000 | G.Skill | 99 € | 17% | 84 € | 0 € | -4 € | -4% | Distribuidor EU |
-| 150 | Corsair Vengeance DDR5-5600 | Corsair | 79 € | - | 67 € | 0 € | -3 € | -4% | Distribuidor EU |
-| 151 | G.Skill Trident Z5 Neo DDR5-6400 | G.Skill | 159 € | 11% | 135 € | 0 € | -6 € | -4% | Distribuidor EU |
-| 152 | Kingston Fury Renegade DDR5-8000 | Kingston | 329 € | - | 280 € | 0 € | -12 € | -4% | Distribuidor EU |
-| 4 | Corsair Vengeance DDR5 32GB 6000MHz | Corsair | 115 € | 15% | 98 € | 0 € | -4 € | -5% | Distribuidor EU |
-| 145 | G.Skill Trident Z5 RGB DDR5-7200 | G.Skill | 189 € | 14% | 161 € | 0 € | -7 € | -5% | Distribuidor EU |
-| 146 | Corsair Dominator Titanium DDR5-6400 | Corsair | 249 € | - | 212 € | 0 € | -9 € | -5% | Distribuidor EU |
+| 45 | Kingston Fury Beast DDR5 32GB 5600MHz | Kingston | 110 € | 15% | 76 € | 0 € | 14 € | 15% | Distribuidor EU |
+| 49 | Corsair Vengeance DDR5 16GB 5600MHz | Corsair | 60 € | - | 42 € | 0 € | 7 € | 15% | Distribuidor EU |
+| 4 | Corsair Vengeance DDR5 32GB 6000MHz | Corsair | 140 € | 18% | 98 € | 0 € | 16 € | 14% | Distribuidor EU |
+| 48 | TeamGroup T-Force Delta RGB DDR5 32GB 60 | TeamGroup | 120 € | 20% | 84 € | 0 € | 13 € | 14% | Distribuidor EU |
+| 149 | G.Skill Flare X5 DDR5-6000 | G.Skill | 120 € | 20% | 84 € | 0 € | 13 € | 14% | Distribuidor EU |
+| 151 | G.Skill Trident Z5 Neo DDR5-6400 | G.Skill | 190 € | 17% | 135 € | 0 € | 19 € | 12% | Distribuidor EU |
+| 147 | Kingston Fury Beast DDR5-6000 | Kingston | 130 € | 19% | 93 € | 0 € | 13 € | 12% | Distribuidor EU |
+| 46 | Corsair Dominator Platinum RGB DDR5 32GB | Corsair | 200 € | 17% | 144 € | 0 € | 19 € | 12% | Distribuidor EU |
+| 148 | TeamGroup T-Force Delta RGB DDR5-7600 | TeamGroup | 200 € | - | 144 € | 0 € | 19 € | 12% | Distribuidor EU |
+| 47 | Kingston Fury Renegade DDR5 32GB 6400MHz | Kingston | 170 € | 19% | 123 € | 0 € | 15 € | 11% | Distribuidor EU |
+| 145 | G.Skill Trident Z5 RGB DDR5-7200 | G.Skill | 220 € | 15% | 161 € | 0 € | 18 € | 10% | Distribuidor EU |
+| 146 | Corsair Dominator Titanium DDR5-6400 | Corsair | 290 € | - | 212 € | 0 € | 24 € | 10% | Distribuidor EU |
+| 52 | Crucial DDR5 32GB 4800MHz | Crucial | 80 € | - | 59 € | 0 € | 6 € | 10% | Distribuidor EU |
+| 152 | Kingston Fury Renegade DDR5-8000 | Kingston | 380 € | - | 280 € | 0 € | 29 € | 10% | Distribuidor EU |
+| 50 | G.Skill Ripjaws S5 DDR5 32GB 6000MHz | G.Skill | 120 € | 20% | 89 € | 0 € | 8 € | 8% | Distribuidor EU |
+| 16 | G.Skill Trident Z5 RGB DDR5 64GB | G.Skill | 250 € | 17% | 186 € | 0 € | 17 € | 8% | Distribuidor EU |
+| 150 | Corsair Vengeance DDR5-5600 | Corsair | 90 € | - | 67 € | 0 € | 6 € | 8% | Distribuidor EU |
 
 ### Monitores (18 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 5 | ASUS ROG Swift OLED PG27AQDM | ASUS | 799 € | 11% | 639 € | 0 € | 10 € | 2% | Distribuidor EU |
-| 86 | LG 27GP850-B UltraGear 165Hz | LG | 329 € | 18% | 263 € | 0 € | 4 € | 2% | Distribuidor EU |
-| 87 | Dell S2722DGM 165Hz Curved | Dell | 249 € | 17% | 199 € | 0 € | 3 € | 2% | Distribuidor EU |
-| 88 | Samsung Odyssey G7 32\ | Samsung | 549 € | 15% | 439 € | 0 € | 7 € | 2% | Distribuidor EU |
-| 89 | ASUS TUF Gaming VG27AQ1A | ASUS | 289 € | - | 231 € | 0 € | 4 € | 2% | Distribuidor EU |
-| 90 | BenQ MOBIUZ EX2710Q 165Hz | BenQ | 399 € | 11% | 319 € | 0 € | 5 € | 2% | Distribuidor EU |
-| 91 | LG UltraGear 27GR95QE OLED 240Hz | LG | 749 € | 12% | 599 € | 0 € | 10 € | 2% | Distribuidor EU |
-| 92 | Gigabyte M27Q X 240Hz | Gigabyte | 349 € | 13% | 279 € | 0 € | 5 € | 2% | Distribuidor EU |
-| 93 | AOC 24G2SP 165Hz | AOC | 139 € | - | 111 € | 0 € | 2 € | 2% | Distribuidor EU |
-| 94 | MSI MAG 274QRF-QD 170Hz | MSI | 319 € | 14% | 255 € | 0 € | 4 € | 2% | Distribuidor EU |
-| 185 | Samsung Odyssey OLED G8 32\ | Samsung | 999 € | 9% | 799 € | 0 € | 13 € | 2% | Distribuidor EU |
-| 186 | LG UltraGear 27GS95QE 27\ | LG | 799 € | - | 639 € | 0 € | 10 € | 2% | Distribuidor EU |
-| 187 | ASUS ROG Swift PG27AQN 27\ | ASUS | 999 € | 9% | 799 € | 0 € | 13 € | 2% | Distribuidor EU |
-| 188 | Dell Alienware AW3225QF 32\ | Dell | 1099 € | - | 879 € | 0 € | 14 € | 2% | Distribuidor EU |
-| 189 | BenQ MOBIUZ EX3210U 32\ | BenQ | 699 € | 13% | 559 € | 0 € | 9 € | 2% | Distribuidor EU |
-| 190 | Gigabyte M27U 27\ | Gigabyte | 449 € | - | 359 € | 0 € | 6 € | 2% | Distribuidor EU |
-| 191 | MSI MAG 341CQP 34\ | MSI | 799 € | 11% | 639 € | 0 € | 10 € | 2% | Distribuidor EU |
-| 192 | AOC AGON AG275QXL 27\ | AOC | 349 € | - | 279 € | 0 € | 5 € | 2% | Distribuidor EU |
+| 91 | LG UltraGear 27GR95QE OLED 240Hz | LG | 850 € | 19% | 599 € | 0 € | 92 € | 13% | Distribuidor EU |
+| 5 | ASUS ROG Swift OLED PG27AQDM | ASUS | 900 € | 18% | 639 € | 0 € | 92 € | 13% | Distribuidor EU |
+| 186 | LG UltraGear 27GS95QE 27\ | LG | 900 € | - | 639 € | 0 € | 92 € | 13% | Distribuidor EU |
+| 191 | MSI MAG 341CQP 34\ | MSI | 900 € | 18% | 639 € | 0 € | 92 € | 13% | Distribuidor EU |
+| 185 | Samsung Odyssey OLED G8 32\ | Samsung | 1100 € | 15% | 799 € | 0 € | 95 € | 11% | Distribuidor EU |
+| 187 | ASUS ROG Swift PG27AQN 27\ | ASUS | 1100 € | 15% | 799 € | 0 € | 95 € | 11% | Distribuidor EU |
+| 94 | MSI MAG 274QRF-QD 170Hz | MSI | 350 € | 17% | 255 € | 0 € | 29 € | 10% | Distribuidor EU |
+| 86 | LG 27GP850-B UltraGear 165Hz | LG | 360 € | 16% | 263 € | 0 € | 29 € | 10% | Distribuidor EU |
+| 88 | Samsung Odyssey G7 32\ | Samsung | 600 € | 20% | 439 € | 0 € | 49 € | 10% | Distribuidor EU |
+| 188 | Dell Alienware AW3225QF 32\ | Dell | 1200 € | - | 879 € | 0 € | 96 € | 10% | Distribuidor EU |
+| 190 | Gigabyte M27U 27\ | Gigabyte | 490 € | - | 359 € | 0 € | 39 € | 10% | Distribuidor EU |
+| 92 | Gigabyte M27Q X 240Hz | Gigabyte | 380 € | 16% | 279 € | 0 € | 30 € | 10% | Distribuidor EU |
+| 192 | AOC AGON AG275QXL 27\ | AOC | 380 € | - | 279 € | 0 € | 30 € | 10% | Distribuidor EU |
+| 87 | Dell S2722DGM 165Hz Curved | Dell | 270 € | 16% | 199 € | 0 € | 20 € | 9% | Distribuidor EU |
+| 93 | AOC 24G2SP 165Hz | AOC | 150 € | - | 111 € | 0 € | 11 € | 9% | Distribuidor EU |
+| 90 | BenQ MOBIUZ EX2710Q 165Hz | BenQ | 430 € | 22% | 319 € | 0 € | 30 € | 9% | Distribuidor EU |
+| 89 | ASUS TUF Gaming VG27AQ1A | ASUS | 310 € | - | 231 € | 0 € | 21 € | 8% | Distribuidor EU |
+| 189 | BenQ MOBIUZ EX3210U 32\ | BenQ | 750 € | 17% | 559 € | 0 € | 51 € | 8% | Distribuidor EU |
 
 ### Motherboards (16 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 9 | MSI MAG B650 Tomahawk WiFi | MSI | 198 € | 14% | 162 € | 0 € | -1 € | -1% | Distribuidor EU |
-| 15 | ASUS ROG Maximus Z790 Hero | ASUS | 599 € | 14% | 491 € | 0 € | -4 € | -1% | Distribuidor EU |
-| 37 | MSI MPG B760M Edge WiFi | MSI | 169 € | 15% | 139 € | 0 € | -1 € | -1% | Distribuidor EU |
-| 38 | ASUS TUF Gaming B650-PLUS WiFi | ASUS | 189 € | 14% | 155 € | 0 € | -1 € | -1% | Distribuidor EU |
-| 41 | ASUS ROG Strix X670E-E Gaming WiFi | ASUS | 429 € | 14% | 352 € | 0 € | -3 € | -1% | Distribuidor EU |
-| 42 | MSI MEG Z790 ACE | MSI | 549 € | 15% | 450 € | 0 € | -4 € | -1% | Distribuidor EU |
-| 43 | Gigabyte X670E Aorus Master | Gigabyte | 389 € | 15% | 319 € | 0 € | -3 € | -1% | Distribuidor EU |
-| 44 | ASRock B760M Pro RS WiFi | ASRock | 129 € | - | 106 € | 0 € | -1 € | -1% | Distribuidor EU |
-| 137 | ASUS ROG Crosshair X870E Hero | ASUS | 699 € | 7% | 573 € | 0 € | -5 € | -1% | Distribuidor EU |
-| 138 | MSI MEG Z890 ACE | MSI | 599 € | - | 491 € | 0 € | -4 € | -1% | Distribuidor EU |
-| 139 | Gigabyte B850 AORUS Elite | Gigabyte | 249 € | 11% | 204 € | 0 € | -2 € | -1% | Distribuidor EU |
-| 140 | ASRock Z890 Taichi | ASRock | 499 € | - | 409 € | 0 € | -3 € | -1% | Distribuidor EU |
-| 141 | ASUS ROG Strix B850-F Gaming | ASUS | 299 € | 9% | 245 € | 0 € | -2 € | -1% | Distribuidor EU |
-| 142 | MSI MAG B850 Tomahawk | MSI | 229 € | - | 188 € | 0 € | -2 € | -1% | Distribuidor EU |
-| 143 | Gigabyte Z890 AORUS Master | Gigabyte | 549 € | 8% | 450 € | 0 € | -4 € | -1% | Distribuidor EU |
-| 144 | ASRock B850M Pro RS | ASRock | 149 € | - | 122 € | 0 € | -1 € | -1% | Distribuidor EU |
+| 42 | MSI MEG Z790 ACE | MSI | 650 € | 19% | 450 € | 0 € | 78 € | 15% | Distribuidor EU |
+| 143 | Gigabyte Z890 AORUS Master | Gigabyte | 650 € | 19% | 450 € | 0 € | 78 € | 15% | Distribuidor EU |
+| 15 | ASUS ROG Maximus Z790 Hero | ASUS | 700 € | 18% | 491 € | 0 € | 78 € | 14% | Distribuidor EU |
+| 138 | MSI MEG Z890 ACE | MSI | 700 € | - | 491 € | 0 € | 78 € | 14% | Distribuidor EU |
+| 44 | ASRock B760M Pro RS WiFi | ASRock | 150 € | - | 106 € | 0 € | 16 € | 13% | Distribuidor EU |
+| 137 | ASUS ROG Crosshair X870E Hero | ASUS | 800 € | 16% | 573 € | 0 € | 77 € | 12% | Distribuidor EU |
+| 144 | ASRock B850M Pro RS | ASRock | 170 € | - | 122 € | 0 € | 16 € | 12% | Distribuidor EU |
+| 142 | MSI MAG B850 Tomahawk | MSI | 260 € | - | 188 € | 0 € | 24 € | 11% | Distribuidor EU |
+| 37 | MSI MPG B760M Edge WiFi | MSI | 190 € | 17% | 139 € | 0 € | 16 € | 10% | Distribuidor EU |
+| 139 | Gigabyte B850 AORUS Elite | Gigabyte | 280 € | 18% | 204 € | 0 € | 23 € | 10% | Distribuidor EU |
+| 41 | ASUS ROG Strix X670E-E Gaming WiFi | ASUS | 480 € | 20% | 352 € | 0 € | 38 € | 10% | Distribuidor EU |
+| 9 | MSI MAG B650 Tomahawk WiFi | MSI | 220 € | 15% | 162 € | 0 € | 16 € | 9% | Distribuidor EU |
+| 38 | ASUS TUF Gaming B650-PLUS WiFi | ASUS | 210 € | 16% | 155 € | 0 € | 16 € | 9% | Distribuidor EU |
+| 43 | Gigabyte X670E Aorus Master | Gigabyte | 430 € | 22% | 319 € | 0 € | 31 € | 9% | Distribuidor EU |
+| 141 | ASUS ROG Strix B850-F Gaming | ASUS | 330 € | 15% | 245 € | 0 € | 23 € | 9% | Distribuidor EU |
+| 140 | ASRock Z890 Taichi | ASRock | 550 € | - | 409 € | 0 € | 38 € | 8% | Distribuidor EU |
 
 ### Mouse Pads (3 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 231 | Redragon P027 RGB Mouse Pad XL | Redragon | 18 € | 36% | 11 € | 4 € | -0 € | -3% | AliExpress |
-| 230 | Large RGB Gaming Mouse Pad 90x40cm | Genérico | 15 € | 40% | 9 € | 4 € | -1 € | -9% | AliExpress |
-| 232 | Black XXL Mouse Pad 90x40cm | Genérico | 10 € | 33% | 6 € | 4 € | -1 € | -18% | AliExpress |
+| 230 | Large RGB Gaming Mouse Pad 90x40cm | Genérico | 24 € | 17% | 9 € | 4 € | 6 € | 32% | AliExpress |
+| 231 | Redragon P027 RGB Mouse Pad XL | Redragon | 27 € | 23% | 11 € | 4 € | 7 € | 31% | AliExpress |
+| 232 | Black XXL Mouse Pad 90x40cm | Genérico | 17 € | 19% | 6 € | 4 € | 4 € | 31% | AliExpress |
 
 ### Placas Gráficas (16 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 1 | MSI GeForce RTX 5090 SUPRIM X 32G | MSI | 2199 € | 6% | 1935 € | 0 € | -147 € | -8% | Distribuidor EU |
-| 14 | ASUS ROG Strix RTX 4090 OC 24GB | ASUS | 1749 € | 13% | 1539 € | 0 € | -117 € | -8% | Distribuidor EU |
-| 21 | NVIDIA GeForce RTX 4070 Ti Super 16GB | NVIDIA | 829 € | 8% | 730 € | 0 € | -56 € | -8% | Distribuidor EU |
-| 22 | NVIDIA GeForce RTX 4060 Ti 8GB | NVIDIA | 429 € | 10% | 378 € | 0 € | -29 € | -8% | Distribuidor EU |
-| 23 | NVIDIA GeForce RTX 4060 8GB | NVIDIA | 309 € | - | 272 € | 0 € | -21 € | -8% | Distribuidor EU |
-| 24 | AMD Radeon RX 7900 XTX 24GB | AMD | 899 € | 14% | 791 € | 0 € | -60 € | -8% | Distribuidor EU |
-| 25 | AMD Radeon RX 7800 XT 16GB | AMD | 499 € | 9% | 439 € | 0 € | -33 € | -8% | Distribuidor EU |
-| 26 | AMD Radeon RX 7600 8GB | AMD | 269 € | 10% | 237 € | 0 € | -18 € | -8% | Distribuidor EU |
-| 27 | NVIDIA GeForce RTX 4070 Super 12GB | NVIDIA | 619 € | 9% | 545 € | 0 € | -41 € | -8% | Distribuidor EU |
-| 121 | NVIDIA GeForce RTX 5090 | NVIDIA | 2199 € | 8% | 1935 € | 0 € | -147 € | -8% | Distribuidor EU |
-| 122 | AMD Radeon RX 9070 XT | AMD | 649 € | - | 571 € | 0 € | -43 € | -8% | Distribuidor EU |
-| 123 | NVIDIA GeForce RTX 5070 Ti | NVIDIA | 899 € | 5% | 791 € | 0 € | -60 € | -8% | Distribuidor EU |
-| 124 | ASUS ROG Strix RTX 5080 OC | ASUS | 1399 € | - | 1231 € | 0 € | -94 € | -8% | Distribuidor EU |
-| 125 | MSI Gaming Trio RTX 5070 | MSI | 699 € | 7% | 615 € | 0 € | -47 € | -8% | Distribuidor EU |
-| 126 | Sapphire Nitro+ RX 9070 | Sapphire | 549 € | - | 483 € | 0 € | -37 € | -8% | Distribuidor EU |
-| 128 | Intel Arc B580 | Intel | 279 € | - | 246 € | 0 € | -19 € | -8% | Distribuidor EU |
+| 22 | NVIDIA GeForce RTX 4060 Ti 8GB | NVIDIA | 550 € | 15% | 378 € | 0 € | 70 € | 16% | Distribuidor EU |
+| 122 | AMD Radeon RX 9070 XT | AMD | 800 € | - | 571 € | 0 € | 79 € | 12% | Distribuidor EU |
+| 24 | AMD Radeon RX 7900 XTX 24GB | AMD | 1100 € | 15% | 791 € | 0 € | 103 € | 12% | Distribuidor EU |
+| 123 | NVIDIA GeForce RTX 5070 Ti | NVIDIA | 1100 € | 15% | 791 € | 0 € | 103 € | 12% | Distribuidor EU |
+| 125 | MSI Gaming Trio RTX 5070 | MSI | 850 € | 19% | 615 € | 0 € | 76 € | 11% | Distribuidor EU |
+| 27 | NVIDIA GeForce RTX 4070 Super 12GB | NVIDIA | 750 € | 17% | 545 € | 0 € | 65 € | 11% | Distribuidor EU |
+| 21 | NVIDIA GeForce RTX 4070 Ti Super 16GB | NVIDIA | 1000 € | 17% | 730 € | 0 € | 83 € | 10% | Distribuidor EU |
+| 25 | AMD Radeon RX 7800 XT 16GB | AMD | 600 € | 20% | 439 € | 0 € | 49 € | 10% | Distribuidor EU |
+| 14 | ASUS ROG Strix RTX 4090 OC 24GB | ASUS | 2100 € | 16% | 1539 € | 0 € | 168 € | 10% | Distribuidor EU |
+| 23 | NVIDIA GeForce RTX 4060 8GB | NVIDIA | 370 € | - | 272 € | 0 € | 29 € | 10% | Distribuidor EU |
+| 26 | AMD Radeon RX 7600 8GB | AMD | 320 € | 16% | 237 € | 0 € | 23 € | 9% | Distribuidor EU |
+| 126 | Sapphire Nitro+ RX 9070 | Sapphire | 650 € | - | 483 € | 0 € | 45 € | 9% | Distribuidor EU |
+| 1 | MSI GeForce RTX 5090 SUPRIM X 32G | MSI | 2600 € | 16% | 1935 € | 0 € | 179 € | 8% | Distribuidor EU |
+| 121 | NVIDIA GeForce RTX 5090 | NVIDIA | 2600 € | 16% | 1935 € | 0 € | 179 € | 8% | Distribuidor EU |
+| 128 | Intel Arc B580 | Intel | 330 € | - | 246 € | 0 € | 23 € | 8% | Distribuidor EU |
+| 124 | ASUS ROG Strix RTX 5080 OC | ASUS | 1650 € | - | 1231 € | 0 € | 110 € | 8% | Distribuidor EU |
 
 ### Processadores (15 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 2 | AMD Ryzen 7 7800X3D | AMD | 338 € | 15% | 294 € | 0 € | -19 € | -7% | Distribuidor EU |
-| 13 | Intel Core i9-14900K | Intel | 489 € | 11% | 425 € | 0 € | -28 € | -7% | Distribuidor EU |
-| 29 | AMD Ryzen 5 7600X | AMD | 199 € | 20% | 173 € | 0 € | -11 € | -7% | Distribuidor EU |
-| 30 | AMD Ryzen 9 7950X3D | AMD | 549 € | 15% | 478 € | 0 € | -31 € | -7% | Distribuidor EU |
-| 31 | Intel Core i5-14600K | Intel | 289 € | 12% | 251 € | 0 € | -16 € | -7% | Distribuidor EU |
-| 32 | Intel Core i7-14700K | Intel | 389 € | 13% | 338 € | 0 € | -22 € | -7% | Distribuidor EU |
-| 35 | AMD Ryzen 9 7900X | AMD | 379 € | 16% | 330 € | 0 € | -22 € | -7% | Distribuidor EU |
-| 129 | AMD Ryzen 9 9950X | AMD | 649 € | 7% | 565 € | 0 € | -37 € | -7% | Distribuidor EU |
-| 130 | Intel Core Ultra 9 285K | Intel | 599 € | - | 521 € | 0 € | -34 € | -7% | Distribuidor EU |
-| 131 | AMD Ryzen 7 9700X | AMD | 359 € | 10% | 312 € | 0 € | -20 € | -7% | Distribuidor EU |
-| 132 | Intel Core Ultra 7 265K | Intel | 419 € | - | 365 € | 0 € | -24 € | -7% | Distribuidor EU |
-| 133 | AMD Ryzen 5 9600X | AMD | 249 € | 11% | 217 € | 0 € | -14 € | -7% | Distribuidor EU |
-| 134 | AMD Ryzen 9 9900X | AMD | 479 € | - | 417 € | 0 € | -27 € | -7% | Distribuidor EU |
-| 135 | Intel Core Ultra 5 245K | Intel | 299 € | 9% | 260 € | 0 € | -17 € | -7% | Distribuidor EU |
-| 136 | AMD Ryzen 7 9800X3D | AMD | 529 € | - | 460 € | 0 € | -30 € | -7% | Distribuidor EU |
+| 134 | AMD Ryzen 9 9900X | AMD | 600 € | - | 417 € | 0 € | 71 € | 15% | Distribuidor EU |
+| 129 | AMD Ryzen 9 9950X | AMD | 800 € | 16% | 565 € | 0 € | 86 € | 13% | Distribuidor EU |
+| 136 | AMD Ryzen 7 9800X3D | AMD | 650 € | - | 460 € | 0 € | 68 € | 13% | Distribuidor EU |
+| 13 | Intel Core i9-14900K | Intel | 600 € | 20% | 425 € | 0 € | 62 € | 13% | Distribuidor EU |
+| 29 | AMD Ryzen 5 7600X | AMD | 240 € | 17% | 173 € | 0 € | 22 € | 11% | Distribuidor EU |
+| 35 | AMD Ryzen 9 7900X | AMD | 450 € | 18% | 330 € | 0 € | 36 € | 10% | Distribuidor EU |
+| 30 | AMD Ryzen 9 7950X3D | AMD | 650 € | 19% | 478 € | 0 € | 51 € | 10% | Distribuidor EU |
+| 2 | AMD Ryzen 7 7800X3D | AMD | 400 € | 17% | 294 € | 0 € | 31 € | 10% | Distribuidor EU |
+| 32 | Intel Core i7-14700K | Intel | 460 € | 16% | 338 € | 0 € | 36 € | 10% | Distribuidor EU |
+| 31 | Intel Core i5-14600K | Intel | 340 € | 17% | 251 € | 0 € | 25 € | 9% | Distribuidor EU |
+| 135 | Intel Core Ultra 5 245K | Intel | 350 € | 17% | 260 € | 0 € | 24 € | 9% | Distribuidor EU |
+| 131 | AMD Ryzen 7 9700X | AMD | 420 € | 16% | 312 € | 0 € | 29 € | 8% | Distribuidor EU |
+| 132 | Intel Core Ultra 7 265K | Intel | 490 € | - | 365 € | 0 € | 34 € | 8% | Distribuidor EU |
+| 130 | Intel Core Ultra 9 285K | Intel | 700 € | - | 521 € | 0 € | 48 € | 8% | Distribuidor EU |
+| 133 | AMD Ryzen 5 9600X | AMD | 290 € | 17% | 217 € | 0 € | 19 € | 8% | Distribuidor EU |
 
 ### Refrigeração (14 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
-| 10 | NZXT Kraken Elite 360 RGB | NZXT | 245 € | 15% | 191 € | 0 € | 8 € | 4% | Distribuidor EU |
-| 20 | be quiet! Dark Rock Pro 5 | be quiet! | 90 € | 18% | 70 € | 0 € | 3 € | 4% | Distribuidor EU |
-| 78 | Corsair iCUE H150i Elite LCD XT | Corsair | 229 € | 15% | 179 € | 0 € | 8 € | 4% | Distribuidor EU |
-| 80 | DeepCool AK620 Digital | DeepCool | 69 € | 19% | 54 € | 0 € | 2 € | 4% | Distribuidor EU |
-| 82 | Corsair A115 Air Cooler | Corsair | 79 € | 20% | 62 € | 0 € | 3 € | 4% | Distribuidor EU |
-| 83 | EK-AIO 280 D-RGB | EK | 119 € | 14% | 93 € | 0 € | 4 € | 4% | Distribuidor EU |
-| 84 | Arctic Freezer 36 A-RGB | Arctic | 39 € | - | 30 € | 0 € | 1 € | 4% | Distribuidor EU |
-| 85 | Thermalright Peerless Assassin 120 SE | Thermalright | 35 € | - | 27 € | 0 € | 1 € | 4% | Distribuidor EU |
-| 178 | Corsair iCUE H170i Elite LCD XT | Corsair | 329 € | - | 257 € | 0 € | 11 € | 4% | Distribuidor EU |
-| 179 | Noctua NH-D15 G2 | Noctua | 119 € | 8% | 93 € | 0 € | 4 € | 4% | Distribuidor EU |
-| 180 | Arctic Liquid Freezer III 360 A-RGB | Arctic | 99 € | - | 77 € | 0 € | 3 € | 4% | Distribuidor EU |
-| 181 | Deepcool Assassin IV | Deepcool | 89 € | 10% | 69 € | 0 € | 3 € | 4% | Distribuidor EU |
-| 182 | EK-Nucleus AIO CR360 Dark | EKWB | 179 € | - | 140 € | 0 € | 6 € | 4% | Distribuidor EU |
-| 184 | Lian Li Galahad II Trinity 360 | Lian Li | 159 € | - | 124 € | 0 € | 5 € | 4% | Distribuidor EU |
+| 84 | Arctic Freezer 36 A-RGB | Arctic | 45 € | - | 30 € | 0 € | 6 € | 17% | Distribuidor EU |
+| 85 | Thermalright Peerless Assassin 120 SE | Thermalright | 40 € | - | 27 € | 0 € | 5 € | 16% | Distribuidor EU |
+| 180 | Arctic Liquid Freezer III 360 A-RGB | Arctic | 110 € | - | 77 € | 0 € | 12 € | 14% | Distribuidor EU |
+| 83 | EK-AIO 280 D-RGB | EK | 130 € | 19% | 93 € | 0 € | 13 € | 12% | Distribuidor EU |
+| 179 | Noctua NH-D15 G2 | Noctua | 130 € | 19% | 93 € | 0 € | 13 € | 12% | Distribuidor EU |
+| 80 | DeepCool AK620 Digital | DeepCool | 75 € | 17% | 54 € | 0 € | 7 € | 12% | Distribuidor EU |
+| 82 | Corsair A115 Air Cooler | Corsair | 85 € | 23% | 62 € | 0 € | 7 € | 11% | Distribuidor EU |
+| 184 | Lian Li Galahad II Trinity 360 | Lian Li | 170 € | - | 124 € | 0 € | 14 € | 10% | Distribuidor EU |
+| 181 | Deepcool Assassin IV | Deepcool | 95 € | 21% | 69 € | 0 € | 8 € | 10% | Distribuidor EU |
+| 178 | Corsair iCUE H170i Elite LCD XT | Corsair | 350 € | - | 257 € | 0 € | 28 € | 10% | Distribuidor EU |
+| 10 | NZXT Kraken Elite 360 RGB | NZXT | 260 € | 16% | 191 € | 0 € | 20 € | 10% | Distribuidor EU |
+| 182 | EK-Nucleus AIO CR360 Dark | EKWB | 190 € | - | 140 € | 0 € | 15 € | 10% | Distribuidor EU |
+| 20 | be quiet! Dark Rock Pro 5 | be quiet! | 95 € | 21% | 70 € | 0 € | 7 € | 9% | Distribuidor EU |
+| 78 | Corsair iCUE H150i Elite LCD XT | Corsair | 240 € | 17% | 179 € | 0 € | 16 € | 8% | Distribuidor EU |
 
 ### Teclados e Ratos (25 produtos)
 
 | ID | Produto | Marca | Preço | Desconto | Custo | Frete | Lucro Bruto | Margem | Fonte |
 |----|---------|-------|------:|---------:|------:|------:|------------:|-------:|-------|
+| 220 | Redragon Shark M688 RGB | Redragon | 35 € | 22% | 14 € | 4 € | 11 € | 39% | AliExpress |
+| 221 | Attack Shark R1 Pro Wireless | Attack Shark | 45 € | 18% | 20 € | 4 € | 13 € | 35% | AliExpress |
+| 224 | Attack Shark X3 Wireless | Attack Shark | 50 € | 17% | 23 € | 4 € | 14 € | 34% | AliExpress |
+| 242 | Redragon K630 Dragonborn 60% | Redragon | 55 € | 15% | 26 € | 4 € | 15 € | 34% | AliExpress |
+| 243 | VGN Neon 75 HE Magnetic | VGN | 100 € | 17% | 51 € | 4 € | 27 € | 33% | AliExpress |
+| 223 | Redragon Cobra M711 RGB | Redragon | 26 € | 26% | 11 € | 4 € | 7 € | 31% | AliExpress |
+| 222 | HAVIT MS1006 Gaming Mouse | HAVIT | 21 € | 16% | 8 € | 4 € | 5 € | 31% | AliExpress |
+| 240 | Aula F75 Mechanical Keyboard 75% | Aula | 85 € | 23% | 44 € | 4 € | 21 € | 31% | AliExpress |
+| 241 | Royal Kludge RK84 Wireless | Royal Kludge | 75 € | 17% | 39 € | 4 € | 19 € | 30% | AliExpress |
 | 6 | Logitech G Pro X Superlight 2 | Logitech | 135 € | 20% | 97 € | 0 € | 13 € | 11% | Distribuidor EU |
 | 7 | Razer BlackWidow V4 Pro | Razer | 190 € | 24% | 136 € | 0 € | 18 € | 11% | Distribuidor EU |
 | 95 | Razer DeathAdder V3 | Razer | 89 € | 10% | 64 € | 0 € | 8 € | 11% | Distribuidor EU |
@@ -313,15 +322,6 @@
 | 198 | SteelSeries Apex Pro TKL 2024 | SteelSeries | 189 € | - | 136 € | 0 € | 18 € | 11% | Distribuidor EU |
 | 199 | Endgame Gear OP1we | Endgame Gear | 79 € | 11% | 57 € | 0 € | 7 € | 11% | Distribuidor EU |
 | 200 | Corsair K70 MAX | Corsair | 229 € | - | 165 € | 0 € | 21 € | 11% | Distribuidor EU |
-| 223 | Redragon Cobra M711 RGB | Redragon | 20 € | 29% | 11 € | 4 € | 2 € | 10% | AliExpress |
-| 222 | HAVIT MS1006 Gaming Mouse | HAVIT | 13 € | 35% | 8 € | 4 € | -1 € | -12% | AliExpress |
-| 220 | Redragon Shark M688 RGB | Redragon | 19 € | 37% | 14 € | 4 € | -2 € | -13% | AliExpress |
-| 242 | Redragon K630 Dragonborn 60% | Redragon | 30 € | 25% | 26 € | 4 € | -5 € | -21% | AliExpress |
-| 221 | Attack Shark R1 Pro Wireless | Attack Shark | 23 € | 34% | 20 € | 4 € | -5 € | -28% | AliExpress |
-| 241 | Royal Kludge RK84 Wireless | Royal Kludge | 40 € | 27% | 39 € | 4 € | -10 € | -30% | AliExpress |
-| 224 | Attack Shark X3 Wireless | Attack Shark | 25 € | 38% | 23 € | 4 € | -6 € | -31% | AliExpress |
-| 243 | VGN Neon 75 HE Magnetic | VGN | 50 € | 29% | 51 € | 4 € | -14 € | -34% | AliExpress |
-| 240 | Aula F75 Mechanical Keyboard 75% | Aula | 35 € | 30% | 44 € | 4 € | -20 € | -68% | AliExpress |
 
 ---
 
@@ -360,16 +360,16 @@
 ### Produtos a Manter (alta margem, boa rotação)
 
 ### Produtos a Considerar Remover (margem < 10%)
-- **ID 240** Aula F75 Mechanical Keyboard 75% — Margem -68%, Lucro -20€/unidade
-- **ID 243** VGN Neon 75 HE Magnetic — Margem -34%, Lucro -14€/unidade
-- **ID 224** Attack Shark X3 Wireless — Margem -31%, Lucro -6€/unidade
-- **ID 241** Royal Kludge RK84 Wireless — Margem -30%, Lucro -10€/unidade
-- **ID 221** Attack Shark R1 Pro Wireless — Margem -28%, Lucro -5€/unidade
-- **ID 242** Redragon K630 Dragonborn 60% — Margem -21%, Lucro -5€/unidade
-- **ID 232** Black XXL Mouse Pad 90x40cm — Margem -18%, Lucro -1€/unidade
-- **ID 220** Redragon Shark M688 RGB — Margem -13%, Lucro -2€/unidade
-- **ID 222** HAVIT MS1006 Gaming Mouse — Margem -12%, Lucro -1€/unidade
-- **ID 251** HAVIT H2002d Gaming Headset — Margem -10%, Lucro -2€/unidade
+- **ID 8** Lian Li Lancool 216 RGB White — Margem 8%, Lucro 6€/unidade
+- **ID 19** Fractal Design Torrent RGB Black — Margem 8%, Lucro 13€/unidade
+- **ID 70** NZXT H7 Flow RGB — Margem 8%, Lucro 8€/unidade
+- **ID 74** Cooler Master HAF 700 EVO — Margem 8%, Lucro 25€/unidade
+- **ID 75** HYTE Y60 — Margem 8%, Lucro 12€/unidade
+- **ID 174** be quiet! Dark Base 802 — Margem 8%, Lucro 12€/unidade
+- **ID 176** SSUPD Meshroom S — Margem 8%, Lucro 8€/unidade
+- **ID 71** Corsair 4000D Airflow — Margem 8%, Lucro 6€/unidade
+- **ID 72** Phanteks Eclipse G360A — Margem 8%, Lucro 5€/unidade
+- **ID 73** be quiet! Pure Base 500DX — Margem 8%, Lucro 7€/unidade
 
 ### Estratégia de Descontos Recomendada
 | Tipo | Desconto | Quando | Porquê |

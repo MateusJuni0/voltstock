@@ -1,0 +1,1199 @@
+{
+  "1": {
+    "cost_eur": 1935.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "14": {
+    "cost_eur": 1539.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "21": {
+    "cost_eur": 729.52,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "22": {
+    "cost_eur": 377.52,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "23": {
+    "cost_eur": 271.92,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "24": {
+    "cost_eur": 791.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "25": {
+    "cost_eur": 439.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "26": {
+    "cost_eur": 236.72,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "27": {
+    "cost_eur": 544.72,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "2": {
+    "cost_eur": 294.45,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "13": {
+    "cost_eur": 425.43,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "29": {
+    "cost_eur": 173.13,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "30": {
+    "cost_eur": 477.63,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "31": {
+    "cost_eur": 251.43,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "32": {
+    "cost_eur": 338.43,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "35": {
+    "cost_eur": 329.73,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "9": {
+    "cost_eur": 162.36,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "15": {
+    "cost_eur": 491.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "37": {
+    "cost_eur": 138.58,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "38": {
+    "cost_eur": 154.98,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "41": {
+    "cost_eur": 351.78,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "42": {
+    "cost_eur": 450.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "43": {
+    "cost_eur": 318.98,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "44": {
+    "cost_eur": 105.78,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "4": {
+    "cost_eur": 97.92,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "16": {
+    "cost_eur": 186.15,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "45": {
+    "cost_eur": 75.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "46": {
+    "cost_eur": 143.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "47": {
+    "cost_eur": 123.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "48": {
+    "cost_eur": 84.15,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "49": {
+    "cost_eur": 41.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "50": {
+    "cost_eur": 89.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "52": {
+    "cost_eur": 58.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "3": {
+    "cost_eur": 136.95,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "17": {
+    "cost_eur": 289.67,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "53": {
+    "cost_eur": 48.97,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "54": {
+    "cost_eur": 73.87,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "55": {
+    "cost_eur": 82.17,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "57": {
+    "cost_eur": 148.57,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "58": {
+    "cost_eur": 123.67,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "59": {
+    "cost_eur": 131.97,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "60": {
+    "cost_eur": 115.37,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "62": {
+    "cost_eur": 77.22,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "63": {
+    "cost_eur": 92.82,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "64": {
+    "cost_eur": 131.82,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "65": {
+    "cost_eur": 124.02,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "66": {
+    "cost_eur": 225.42,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "68": {
+    "cost_eur": 85.02,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "69": {
+    "cost_eur": 89.7,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "8": {
+    "cost_eur": 71.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "19": {
+    "cost_eur": 149.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "70": {
+    "cost_eur": 96.75,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "71": {
+    "cost_eur": 66.75,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "72": {
+    "cost_eur": 59.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "73": {
+    "cost_eur": 81.75,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "74": {
+    "cost_eur": 299.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "75": {
+    "cost_eur": 141.75,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "76": {
+    "cost_eur": 111.75,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "10": {
+    "cost_eur": 191.1,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "20": {
+    "cost_eur": 70.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "78": {
+    "cost_eur": 178.62,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "80": {
+    "cost_eur": 53.82,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "82": {
+    "cost_eur": 61.62,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "83": {
+    "cost_eur": 92.82,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "84": {
+    "cost_eur": 30.42,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "85": {
+    "cost_eur": 27.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "5": {
+    "cost_eur": 639.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "86": {
+    "cost_eur": 263.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "87": {
+    "cost_eur": 199.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "88": {
+    "cost_eur": 439.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "89": {
+    "cost_eur": 231.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "90": {
+    "cost_eur": 319.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "91": {
+    "cost_eur": 599.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "92": {
+    "cost_eur": 279.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "93": {
+    "cost_eur": 111.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "94": {
+    "cost_eur": 255.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "6": {
+    "cost_eur": 97.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "7": {
+    "cost_eur": 136.44,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "95": {
+    "cost_eur": 64.08,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "96": {
+    "cost_eur": 136.08,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "97": {
+    "cost_eur": 107.28,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "98": {
+    "cost_eur": 114.48,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "99": {
+    "cost_eur": 71.28,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "100": {
+    "cost_eur": 64.08,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "101": {
+    "cost_eur": 179.28,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "102": {
+    "cost_eur": 71.28,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "11": {
+    "cost_eur": 244.99,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "103": {
+    "cost_eur": 104.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "104": {
+    "cost_eur": 153.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "105": {
+    "cost_eur": 167.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "106": {
+    "cost_eur": 76.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "107": {
+    "cost_eur": 223.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "108": {
+    "cost_eur": 174.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "109": {
+    "cost_eur": 104.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "110": {
+    "cost_eur": 118.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "111": {
+    "cost_eur": 97.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "12": {
+    "cost_eur": 373.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "112": {
+    "cost_eur": 339.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "113": {
+    "cost_eur": 237.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "114": {
+    "cost_eur": 305.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "115": {
+    "cost_eur": 271.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "116": {
+    "cost_eur": 305.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "117": {
+    "cost_eur": 135.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "118": {
+    "cost_eur": 339.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "119": {
+    "cost_eur": 1084.6,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "120": {
+    "cost_eur": 305.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "121": {
+    "cost_eur": 1935.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "122": {
+    "cost_eur": 571.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "123": {
+    "cost_eur": 791.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "124": {
+    "cost_eur": 1231.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "125": {
+    "cost_eur": 615.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "126": {
+    "cost_eur": 483.12,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "128": {
+    "cost_eur": 245.52,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.88
+  },
+  "129": {
+    "cost_eur": 564.63,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "130": {
+    "cost_eur": 521.13,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "131": {
+    "cost_eur": 312.33,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "132": {
+    "cost_eur": 364.53,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "133": {
+    "cost_eur": 216.63,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "134": {
+    "cost_eur": 416.73,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "135": {
+    "cost_eur": 260.13,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "136": {
+    "cost_eur": 460.23,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.87
+  },
+  "137": {
+    "cost_eur": 573.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "138": {
+    "cost_eur": 491.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "139": {
+    "cost_eur": 204.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "140": {
+    "cost_eur": 409.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "141": {
+    "cost_eur": 245.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "142": {
+    "cost_eur": 187.78,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "143": {
+    "cost_eur": 450.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "144": {
+    "cost_eur": 122.18,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.82
+  },
+  "145": {
+    "cost_eur": 160.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "146": {
+    "cost_eur": 211.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "147": {
+    "cost_eur": 92.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "148": {
+    "cost_eur": 143.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "149": {
+    "cost_eur": 84.15,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "150": {
+    "cost_eur": 67.15,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "151": {
+    "cost_eur": 135.15,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "152": {
+    "cost_eur": 279.65,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.85
+  },
+  "153": {
+    "cost_eur": 148.57,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "154": {
+    "cost_eur": 123.67,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "155": {
+    "cost_eur": 181.77,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "156": {
+    "cost_eur": 165.17,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "157": {
+    "cost_eur": 248.17,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "158": {
+    "cost_eur": 206.67,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "159": {
+    "cost_eur": 198.37,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "160": {
+    "cost_eur": 156.87,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.83
+  },
+  "161": {
+    "cost_eur": 311.22,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "162": {
+    "cost_eur": 272.22,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "163": {
+    "cost_eur": 178.62,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "165": {
+    "cost_eur": 108.42,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "166": {
+    "cost_eur": 256.62,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "167": {
+    "cost_eur": 85.02,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "168": {
+    "cost_eur": 116.22,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "169": {
+    "cost_eur": 134.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "170": {
+    "cost_eur": 104.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "172": {
+    "cost_eur": 164.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "173": {
+    "cost_eur": 119.25,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "174": {
+    "cost_eur": 141.75,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "176": {
+    "cost_eur": 96.75,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.75
+  },
+  "178": {
+    "cost_eur": 256.62,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "179": {
+    "cost_eur": 92.82,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "180": {
+    "cost_eur": 77.22,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "181": {
+    "cost_eur": 69.42,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "182": {
+    "cost_eur": 139.62,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "184": {
+    "cost_eur": 124.02,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.78
+  },
+  "185": {
+    "cost_eur": 799.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "186": {
+    "cost_eur": 639.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "187": {
+    "cost_eur": 799.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "188": {
+    "cost_eur": 879.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "189": {
+    "cost_eur": 559.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "190": {
+    "cost_eur": 359.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "191": {
+    "cost_eur": 639.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "192": {
+    "cost_eur": 279.2,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.8
+  },
+  "193": {
+    "cost_eur": 143.28,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "196": {
+    "cost_eur": 128.88,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "197": {
+    "cost_eur": 71.28,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "198": {
+    "cost_eur": 136.08,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "199": {
+    "cost_eur": 56.88,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "200": {
+    "cost_eur": 164.88,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.72
+  },
+  "202": {
+    "cost_eur": 209.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "204": {
+    "cost_eur": 125.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "205": {
+    "cost_eur": 174.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "206": {
+    "cost_eur": 153.3,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.7
+  },
+  "209": {
+    "cost_eur": 352.92,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "213": {
+    "cost_eur": 237.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "214": {
+    "cost_eur": 815.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "215": {
+    "cost_eur": 135.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "216": {
+    "cost_eur": 373.32,
+    "shipping": 0,
+    "source": "Distribuidor EU",
+    "ratio": 0.68
+  },
+  "220": {
+    "cost_eur": 13.89,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "221": {
+    "cost_eur": 20.37,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "222": {
+    "cost_eur": 8.33,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "223": {
+    "cost_eur": 11.11,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "224": {
+    "cost_eur": 23.15,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "230": {
+    "cost_eur": 9.26,
+    "shipping": 4.0,
+    "source": "AliExpress"
+  },
+  "231": {
+    "cost_eur": 11.11,
+    "shipping": 4.0,
+    "source": "AliExpress"
+  },
+  "232": {
+    "cost_eur": 5.56,
+    "shipping": 4.0,
+    "source": "AliExpress"
+  },
+  "240": {
+    "cost_eur": 44.44,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "241": {
+    "cost_eur": 38.89,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "242": {
+    "cost_eur": 25.93,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "243": {
+    "cost_eur": 50.93,
+    "shipping": 3.5,
+    "source": "AliExpress"
+  },
+  "250": {
+    "cost_eur": 20.37,
+    "shipping": 4.0,
+    "source": "AliExpress"
+  },
+  "251": {
+    "cost_eur": 13.89,
+    "shipping": 4.0,
+    "source": "AliExpress"
+  },
+  "252": {
+    "cost_eur": 9.26,
+    "shipping": 4.0,
+    "source": "AliExpress"
+  }
+}

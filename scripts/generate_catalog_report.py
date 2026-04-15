@@ -136,6 +136,19 @@ def extract_products(ts_path: Path) -> list[dict]:
     return products
 
 
+def load_fixed_costs() -> dict:
+    """Load fixed product costs from JSON (anchored to original market prices)."""
+    costs_file = SCRIPT_DIR / "product_costs.json"
+    if costs_file.exists():
+        import json
+        data = json.loads(costs_file.read_text(encoding="utf-8"))
+        return {int(k): v for k, v in data.items()}
+    return {}
+
+
+FIXED_COSTS = load_fixed_costs()
+
+
 def calculate_financials(product: dict) -> dict:
     """Calculate cost, margin, shipping, profit for a product."""
     pid = product["id"]
@@ -143,8 +156,13 @@ def calculate_financials(product: dict) -> dict:
     sale_price = parse_price(product["price"])
     old_price = parse_price(product["oldPrice"]) if product["oldPrice"] else None
 
-    # Determine cost
-    if pid in ALIEXPRESS_COSTS_USD:
+    # Determine cost — use FIXED costs if available (anchored to original market prices)
+    if pid in FIXED_COSTS:
+        fc = FIXED_COSTS[pid]
+        cost_eur = fc["cost_eur"]
+        shipping = fc["shipping"]
+        source = fc["source"]
+    elif pid in ALIEXPRESS_COSTS_USD:
         cost_usd = ALIEXPRESS_COSTS_USD[pid]
         cost_eur = cost_usd / EUR_USD
         source = "AliExpress"
@@ -154,7 +172,7 @@ def calculate_financials(product: dict) -> dict:
         ratio = COMPONENT_COST_RATIO.get(cat, 0.80)
         cost_eur = sale_price * ratio
         source = "Distribuidor EU"
-        shipping = 0  # included in distributor price
+        shipping = 0
 
     # IVA (already included in sale price in Portugal)
     sale_without_vat = sale_price / (1 + PT_VAT)
