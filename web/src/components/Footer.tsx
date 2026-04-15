@@ -93,13 +93,12 @@ export function Footer() {
           >
             <Link href="/" className="flex items-center gap-3 mb-5">
               <div className="relative w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center">
-                <video
-                  src="/logo/voltstock.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-full h-full object-cover scale-150"
+                <img
+                  src="/logo/voltstock-icon.png"
+                  alt="VoltStock"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
                 />
               </div>
               <span

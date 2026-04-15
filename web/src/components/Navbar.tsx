@@ -245,7 +245,7 @@ export function Navbar() {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-3 group"
           >
-            <div className="relative w-12 h-12 flex items-center justify-center mix-blend-screen overflow-hidden">
+            <div className="relative w-12 h-12 flex items-center justify-center overflow-hidden">
               <img
                 src="/logo/voltstock-icon.png"
                 alt="VoltStock"
