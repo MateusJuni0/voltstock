@@ -17,6 +17,7 @@ import { Toaster } from "sonner";
 import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { MetaPixel } from "@/components/MetaPixel";
+import { TikTokPixel } from "@/components/TikTokPixel";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -61,6 +62,7 @@ export const metadata: Metadata = {
     "geo.position": "38.7223;-9.1393",
     ICBM: "38.7223, -9.1393",
     "content-language": "pt-PT",
+    "facebook-domain-verification": "i2834d3czbot97pqf3ys4din421ofn",
   },
   alternates: {
     canonical: "https://voltstock.pt",
@@ -138,6 +140,7 @@ export default function RootLayout({
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics />
         <MetaPixel />
+        <TikTokPixel />
         <CookieConsent />
         <Toaster
           position="bottom-right"
