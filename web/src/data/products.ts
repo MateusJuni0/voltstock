@@ -33,10 +33,7 @@ export const categories = [
 ];
 
 export const products: Product[] = [
-  // =============================================
-  // PLACAS GRÁFICAS (IDs 1, 14, 21-28)
-  // =============================================
-  {
+{
     "id": 1,
     "name": "MSI GeForce RTX 5090 SUPRIM X 32G",
     "category": "Placas Gráficas",
@@ -63,33 +60,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 5
   },
-  {
-    "id": 14,
-    "name": "ASUS ROG Strix RTX 4090 OC 24GB",
-    "category": "Placas Gráficas",
-    "price": "2.099,99 €",
-    "oldPrice": "2.499,99 €",
-    "rating": 4.9,
-    "img": "/products/14.png",
-    "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/14-126-593-V01.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/14-126-593-V02.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/14-126-593-V03.jpg"
-    ],
-    "description": "A flagship da geração Ada Lovelace com 24GB GDDR6X e triplo ventilador ROG. Desempenho 4K sem compromissos para jogos, renderização 3D e criação de conteúdo.",
-    "badge": "4K Champion",
-    "features": [
-      { "name": "VRAM", "value": "24GB GDDR6X" },
-      { "name": "Boost Clock", "value": "2640 MHz OC" },
-      { "name": "TDP", "value": "450W" },
-      { "name": "Slots", "value": "3.5 (PCIE 5.0)" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/ASUS-ROG-Strix-RTX-4090-OC",
-    "brand": "ASUS",
-    "inStock": true,
-    "stockCount": 45
-  },
-  {
+{
     "id": 21,
     "name": "NVIDIA GeForce RTX 4070 Ti Super 16GB",
     "category": "Placas Gráficas",
@@ -116,7 +87,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 15
   },
-  {
+{
     "id": 22,
     "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
     "category": "Placas Gráficas",
@@ -143,7 +114,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 28
   },
-  {
+{
     "id": 23,
     "name": "NVIDIA GeForce RTX 4060 8GB",
     "category": "Placas Gráficas",
@@ -169,7 +140,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 24,
     "name": "AMD Radeon RX 7900 XTX 24GB",
     "category": "Placas Gráficas",
@@ -196,7 +167,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 37
   },
-  {
+{
     "id": 25,
     "name": "AMD Radeon RX 7800 XT 16GB",
     "category": "Placas Gráficas",
@@ -223,7 +194,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 18
   },
-  {
+{
     "id": 26,
     "name": "AMD Radeon RX 7600 8GB",
     "category": "Placas Gráficas",
@@ -250,7 +221,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 7
   },
-  {
+{
     "id": 27,
     "name": "NVIDIA GeForce RTX 4070 Super 12GB",
     "category": "Placas Gráficas",
@@ -277,10 +248,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 50
   },
-  // =============================================
-  // PROCESSADORES (IDs 2, 13, 29-36)
-  // =============================================
-  {
+{
     "id": 2,
     "name": "AMD Ryzen 7 7800X3D",
     "category": "Processadores",
@@ -306,7 +274,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 13,
     "name": "Intel Core i9-14900K",
     "category": "Processadores",
@@ -332,7 +300,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 19
   },
-  {
+{
     "id": 29,
     "name": "AMD Ryzen 5 7600X",
     "category": "Processadores",
@@ -359,7 +327,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 25
   },
-  {
+{
     "id": 30,
     "name": "AMD Ryzen 9 7950X3D",
     "category": "Processadores",
@@ -386,7 +354,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 36
   },
-  {
+{
     "id": 31,
     "name": "Intel Core i5-14600K",
     "category": "Processadores",
@@ -413,7 +381,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 21
   },
-  {
+{
     "id": 32,
     "name": "Intel Core i7-14700K",
     "category": "Processadores",
@@ -440,7 +408,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 20
   },
-  {
+{
     "id": 35,
     "name": "AMD Ryzen 9 7900X",
     "category": "Processadores",
@@ -467,10 +435,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  // =============================================
-  // MOTHERBOARDS (IDs 9, 15, 37-44)
-  // =============================================
-  {
+{
     "id": 9,
     "name": "MSI MAG B650 Tomahawk WiFi",
     "category": "Motherboards",
@@ -497,7 +462,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 20
   },
-  {
+{
     "id": 15,
     "name": "ASUS ROG Maximus Z790 Hero",
     "category": "Motherboards",
@@ -525,7 +490,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
+{
     "id": 37,
     "name": "MSI MPG B760M Edge WiFi",
     "category": "Motherboards",
@@ -552,7 +517,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 15
   },
-  {
+{
     "id": 38,
     "name": "ASUS TUF Gaming B650-PLUS WiFi",
     "category": "Motherboards",
@@ -579,7 +544,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
+{
     "id": 41,
     "name": "ASUS ROG Strix X670E-E Gaming WiFi",
     "category": "Motherboards",
@@ -606,7 +571,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 11
   },
-  {
+{
     "id": 42,
     "name": "MSI MEG Z790 ACE",
     "category": "Motherboards",
@@ -633,7 +598,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 7
   },
-  {
+{
     "id": 43,
     "name": "Gigabyte X670E Aorus Master",
     "category": "Motherboards",
@@ -660,7 +625,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 15
   },
-  {
+{
     "id": 44,
     "name": "ASRock B760M Pro RS WiFi",
     "category": "Motherboards",
@@ -686,11 +651,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-
-  // =============================================
-  // MEMÓRIA RAM (IDs 4, 16, 45-52)
-  // =============================================
-  {
+{
     "id": 4,
     "name": "Corsair Vengeance DDR5 32GB 6000MHz",
     "category": "Memória RAM",
@@ -717,7 +678,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 23
   },
-  {
+{
     "id": 16,
     "name": "G.Skill Trident Z5 RGB DDR5 64GB",
     "category": "Memória RAM",
@@ -745,7 +706,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 47
   },
-  {
+{
     "id": 45,
     "name": "Kingston Fury Beast DDR5 32GB 5600MHz",
     "category": "Memória RAM",
@@ -772,7 +733,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 25
   },
-  {
+{
     "id": 46,
     "name": "Corsair Dominator Platinum RGB DDR5 32GB 6200MHz",
     "category": "Memória RAM",
@@ -799,7 +760,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 5
   },
-  {
+{
     "id": 47,
     "name": "Kingston Fury Renegade DDR5 32GB 6400MHz",
     "category": "Memória RAM",
@@ -826,7 +787,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 43
   },
-  {
+{
     "id": 48,
     "name": "TeamGroup T-Force Delta RGB DDR5 32GB 6000MHz",
     "category": "Memória RAM",
@@ -853,7 +814,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 26
   },
-  {
+{
     "id": 49,
     "name": "Corsair Vengeance DDR5 16GB 5600MHz",
     "category": "Memória RAM",
@@ -879,7 +840,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
+{
     "id": 50,
     "name": "G.Skill Ripjaws S5 DDR5 32GB 6000MHz",
     "category": "Memória RAM",
@@ -906,7 +867,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
+{
     "id": 52,
     "name": "Crucial DDR5 32GB 4800MHz",
     "category": "Memória RAM",
@@ -932,11 +893,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 15
   },
-
-  // =============================================
-  // ARMAZENAMENTO (IDs 3, 17, 53-60)
-  // =============================================
-  {
+{
     "id": 3,
     "name": "Samsung 990 Pro 2TB NVMe Gen4",
     "category": "Armazenamento",
@@ -963,35 +920,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 30
   },
-  {
-    "id": 17,
-    "name": "WD Black SN850X 4TB NVMe Gen4",
-    "category": "Armazenamento",
-    "price": "389,99 €",
-    "oldPrice": "469,99 €",
-    "rating": 4.8,
-    "img": "/products/17.png",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/Se03e609d6a26460696997a8f3c6f8796Z.jpg",
-      "https://ae01.alicdn.com/kf/S8d0093f445e2412baea99a9b456591f7R.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/20-250-244-16.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/20-250-244-20.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/20-250-244-17.jpg"
-    ],
-    "description": "A NVMe PCIe Gen4 mais rápida do mercado consumer com 7,300 MB/s de leitura. Otimizada para PS5 e PC gaming com GameMode integrado e 4GB de cache DRAM dedicado.",
-    "badge": "PS5 Ready",
-    "features": [
-      { "name": "Leitura Seq.", "value": "7,300 MB/s" },
-      { "name": "Escrita Seq.", "value": "6,600 MB/s" },
-      { "name": "Cache DRAM", "value": "4GB integrado" },
-      { "name": "Interface", "value": "PCIe Gen4 x4 NVMe" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/WD-Black-SN850X-4TB-NVMe",
-    "brand": "WD",
-    "inStock": true,
-    "stockCount": 28
-  },
-  {
+{
     "id": 53,
     "name": "WD Blue SN580 1TB NVMe Gen4",
     "category": "Armazenamento",
@@ -1018,7 +947,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 43
   },
-  {
+{
     "id": 54,
     "name": "Kingston NV2 2TB NVMe Gen4",
     "category": "Armazenamento",
@@ -1045,7 +974,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 8
   },
-  {
+{
     "id": 55,
     "name": "Crucial P3 Plus 2TB NVMe Gen4",
     "category": "Armazenamento",
@@ -1072,7 +1001,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 57,
     "name": "Seagate FireCuda 530 2TB NVMe Gen4",
     "category": "Armazenamento",
@@ -1099,7 +1028,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 50
   },
-  {
+{
     "id": 58,
     "name": "Crucial T500 2TB NVMe Gen4",
     "category": "Armazenamento",
@@ -1126,7 +1055,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 34
   },
-  {
+{
     "id": 59,
     "name": "SK Hynix Platinum P41 2TB NVMe Gen4",
     "category": "Armazenamento",
@@ -1153,7 +1082,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 44
   },
-  {
+{
     "id": 60,
     "name": "Kingston KC3000 2TB NVMe Gen4",
     "category": "Armazenamento",
@@ -1180,11 +1109,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 21
   },
-
-  // =============================================
-  // FONTES DE ALIMENTAÇÃO (IDs 18, 61-69)
-  // =============================================
-  {
+{
     "id": 62,
     "name": "Seasonic Focus GX-750 80+ Gold",
     "category": "Fontes de Alimentação",
@@ -1211,7 +1136,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 21
   },
-  {
+{
     "id": 63,
     "name": "be quiet! Pure Power 12 M 850W",
     "category": "Fontes de Alimentação",
@@ -1238,34 +1163,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 34
   },
-  {
-    "id": 64,
-    "name": "EVGA SuperNOVA 1000 G7 80+ Gold",
-    "category": "Fontes de Alimentação",
-    "price": "179,99 €",
-    "oldPrice": "219,99 €",
-    "rating": 4.7,
-    "img": "/products/64.png",
-    "gallery": [
-      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg",
-      "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_1.png",
-      "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_2.png",
-      "https://images.evga.com/products/gallery/png/220-G7-1000-X1_XL_3.png"
-    ],
-    "description": "1000W com certificação 80+ Gold e tamanho compacto de 150mm. Totalmente modular com proteções OVP, UVP, OCP, OPP, SCP e OTP.",
-    "badge": "Compacta 1000W",
-    "features": [
-      { "name": "Potência", "value": "1000W contínuos" },
-      { "name": "Eficiência", "value": "80+ Gold" },
-      { "name": "Tamanho", "value": "150mm compacta" },
-      { "name": "Garantia", "value": "10 Anos" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/EVGA-SuperNOVA-1000-G7",
-    "brand": "EVGA",
-    "inStock": true,
-    "stockCount": 44
-  },
-  {
+{
     "id": 65,
     "name": "Corsair SF750 80+ Platinum SFX",
     "category": "Fontes de Alimentação",
@@ -1292,34 +1190,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
-    "id": 66,
-    "name": "MSI MEG Ai1300P PCIE5 80+ Platinum",
-    "category": "Fontes de Alimentação",
-    "price": "309,99 €",
-    "oldPrice": "369,99 €",
-    "rating": 4.8,
-    "img": "/products/66.png",
-    "gallery": [
-      "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/17-701-018-V01.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/17-701-018-V02.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/17-701-018-V03.jpg"
-    ],
-    "description": "1300W ATX 3.0 com conector 12VHPWR e monitorização inteligente via MSI Center. Preparada para as GPUs mais exigentes como a RTX 4090/5090.",
-    "badge": "Powerhouse",
-    "features": [
-      { "name": "Potência", "value": "1300W contínuos" },
-      { "name": "Eficiência", "value": "80+ Platinum" },
-      { "name": "PCIe", "value": "ATX 3.0 / 12VHPWR" },
-      { "name": "Monitorização", "value": "MSI Center" }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/MSI-MEG-Ai1300P",
-    "brand": "MSI",
-    "inStock": true,
-    "stockCount": 4
-  },
-  {
+{
     "id": 68,
     "name": "NZXT C850 80+ Gold (2024)",
     "category": "Fontes de Alimentação",
@@ -1345,7 +1216,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 38
   },
-  {
+{
     "id": 69,
     "name": "Thermaltake Toughpower GF3 850W",
     "category": "Fontes de Alimentação",
@@ -1371,11 +1242,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 45
   },
-
-  // =============================================
-  // CAIXAS (IDs 8, 19, 70-77)
-  // =============================================
-  {
+{
     "id": 8,
     "name": "Lian Li Lancool 216 RGB White",
     "category": "Caixas",
@@ -1402,7 +1269,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 37
   },
-  {
+{
     "id": 19,
     "name": "Fractal Design Torrent RGB Black",
     "category": "Caixas",
@@ -1430,7 +1297,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
+{
     "id": 70,
     "name": "NZXT H7 Flow RGB",
     "category": "Caixas",
@@ -1457,7 +1324,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 71,
     "name": "Corsair 4000D Airflow",
     "category": "Caixas",
@@ -1484,7 +1351,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 72,
     "name": "Phanteks Eclipse G360A",
     "category": "Caixas",
@@ -1510,7 +1377,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 25
   },
-  {
+{
     "id": 73,
     "name": "be quiet! Pure Base 500DX",
     "category": "Caixas",
@@ -1537,7 +1404,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 38
   },
-  {
+{
     "id": 74,
     "name": "Cooler Master HAF 700 EVO",
     "category": "Caixas",
@@ -1564,7 +1431,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
+{
     "id": 75,
     "name": "HYTE Y60",
     "category": "Caixas",
@@ -1591,7 +1458,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 41
   },
-  {
+{
     "id": 76,
     "name": "Corsair 5000D Airflow",
     "category": "Caixas",
@@ -1618,10 +1485,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 4
   },
-  // =============================================
-  // REFRIGERAÇÃO (IDs 10, 20, 78-85)
-  // =============================================
-  {
+{
     "id": 10,
     "name": "NZXT Kraken Elite 360 RGB",
     "category": "Refrigeração",
@@ -1648,7 +1512,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 26
   },
-  {
+{
     "id": 20,
     "name": "be quiet! Dark Rock Pro 5",
     "category": "Refrigeração",
@@ -1676,7 +1540,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 20
   },
-  {
+{
     "id": 78,
     "name": "Corsair iCUE H150i Elite LCD XT",
     "category": "Refrigeração",
@@ -1703,7 +1567,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 12
   },
-  {
+{
     "id": 80,
     "name": "DeepCool AK620 Digital",
     "category": "Refrigeração",
@@ -1730,7 +1594,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 30
   },
-  {
+{
     "id": 82,
     "name": "Corsair A115 Air Cooler",
     "category": "Refrigeração",
@@ -1757,7 +1621,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 83,
     "name": "EK-AIO 280 D-RGB",
     "category": "Refrigeração",
@@ -1784,7 +1648,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 5
   },
-  {
+{
     "id": 84,
     "name": "Arctic Freezer 36 A-RGB",
     "category": "Refrigeração",
@@ -1809,7 +1673,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 5
   },
-  {
+{
     "id": 85,
     "name": "Thermalright Peerless Assassin 120 SE",
     "category": "Refrigeração",
@@ -1835,11 +1699,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 28
   },
-
-  // =============================================
-  // MONITORES (IDs 5, 86-94)
-  // =============================================
-  {
+{
     "id": 5,
     "name": "ASUS ROG Swift OLED PG27AQDM",
     "category": "Monitores",
@@ -1866,7 +1726,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 5
   },
-  {
+{
     "id": 86,
     "name": "LG 27GP850-B UltraGear 165Hz",
     "category": "Monitores",
@@ -1893,7 +1753,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 4
   },
-  {
+{
     "id": 87,
     "name": "Dell S2722DGM 165Hz Curved",
     "category": "Monitores",
@@ -1920,7 +1780,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 37
   },
-  {
+{
     "id": 88,
     "name": "Samsung Odyssey G7 32\" 240Hz",
     "category": "Monitores",
@@ -1947,7 +1807,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 10
   },
-  {
+{
     "id": 89,
     "name": "ASUS TUF Gaming VG27AQ1A",
     "category": "Monitores",
@@ -1973,7 +1833,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 39
   },
-  {
+{
     "id": 90,
     "name": "BenQ MOBIUZ EX2710Q 165Hz",
     "category": "Monitores",
@@ -2000,7 +1860,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 41
   },
-  {
+{
     "id": 91,
     "name": "LG UltraGear 27GR95QE OLED 240Hz",
     "category": "Monitores",
@@ -2027,7 +1887,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 42
   },
-  {
+{
     "id": 92,
     "name": "Gigabyte M27Q X 240Hz",
     "category": "Monitores",
@@ -2053,7 +1913,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 13
   },
-  {
+{
     "id": 93,
     "name": "AOC 24G2SP 165Hz",
     "category": "Monitores",
@@ -2079,7 +1939,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 94,
     "name": "MSI MAG 274QRF-QD 170Hz",
     "category": "Monitores",
@@ -2106,11 +1966,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-
-  // =============================================
-  // TECLADOS E RATOS (IDs 6, 7, 95-102)
-  // =============================================
-  {
+{
     "id": 6,
     "name": "Logitech G Pro X Superlight 2",
     "category": "Teclados e Ratos",
@@ -2137,7 +1993,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 36
   },
-  {
+{
     "id": 7,
     "name": "Razer BlackWidow V4 Pro",
     "category": "Teclados e Ratos",
@@ -2164,7 +2020,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 49
   },
-  {
+{
     "id": 95,
     "name": "Razer DeathAdder V3",
     "category": "Teclados e Ratos",
@@ -2191,7 +2047,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 4
   },
-  {
+{
     "id": 96,
     "name": "SteelSeries Apex Pro TKL (2023)",
     "category": "Teclados e Ratos",
@@ -2218,7 +2074,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 18
   },
-  {
+{
     "id": 97,
     "name": "Corsair K70 RGB PRO",
     "category": "Teclados e Ratos",
@@ -2245,7 +2101,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 30
   },
-  {
+{
     "id": 98,
     "name": "Razer Viper V3 Pro",
     "category": "Teclados e Ratos",
@@ -2272,7 +2128,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 48
   },
-  {
+{
     "id": 99,
     "name": "Logitech MX Master 3S",
     "category": "Teclados e Ratos",
@@ -2299,7 +2155,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 17
   },
-  {
+{
     "id": 100,
     "name": "HyperX Alloy Origins 65",
     "category": "Teclados e Ratos",
@@ -2325,7 +2181,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 44
   },
-  {
+{
     "id": 101,
     "name": "Razer Huntsman V3 Pro",
     "category": "Teclados e Ratos",
@@ -2351,7 +2207,7 @@ export const products: Product[] = [
     "inStock": false,
     "stockCount": 0
   },
-  {
+{
     "id": 102,
     "name": "SteelSeries Aerox 5 Wireless",
     "category": "Teclados e Ratos",
@@ -2377,11 +2233,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 36
   },
-
-  // =============================================
-  // HEADSETS E ÁUDIO (IDs 11, 103-111)
-  // =============================================
-  {
+{
     "id": 11,
     "name": "SteelSeries Arctis Nova Pro Wireless",
     "category": "Headsets e Áudio",
@@ -2409,7 +2261,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 42
   },
-  {
+{
     "id": 103,
     "name": "HyperX Cloud III Wireless",
     "category": "Headsets e Áudio",
@@ -2436,7 +2288,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 28
   },
-  {
+{
     "id": 104,
     "name": "Logitech G Pro X 2 Lightspeed",
     "category": "Headsets e Áudio",
@@ -2463,7 +2315,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 30
   },
-  {
+{
     "id": 105,
     "name": "Corsair Virtuoso RGB XT Wireless",
     "category": "Headsets e Áudio",
@@ -2490,7 +2342,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 30
   },
-  {
+{
     "id": 106,
     "name": "Razer Kraken V4",
     "category": "Headsets e Áudio",
@@ -2516,7 +2368,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 49
   },
-  {
+{
     "id": 107,
     "name": "Sony WH-1000XM5",
     "category": "Headsets e Áudio",
@@ -2543,7 +2395,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 40
   },
-  {
+{
     "id": 108,
     "name": "JBL Quantum 910 Wireless",
     "category": "Headsets e Áudio",
@@ -2570,7 +2422,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 34
   },
-  {
+{
     "id": 109,
     "name": "Corsair HS80 Max Wireless",
     "category": "Headsets e Áudio",
@@ -2597,7 +2449,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 44
   },
-  {
+{
     "id": 110,
     "name": "Razer BlackShark V2 Pro (2023)",
     "category": "Headsets e Áudio",
@@ -2624,7 +2476,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 45
   },
-  {
+{
     "id": 111,
     "name": "Audio-Technica ATH-M50x",
     "category": "Headsets e Áudio",
@@ -2649,11 +2501,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 45
   },
-
-  // =============================================
-  // CADEIRAS GAMING (IDs 12, 112-120)
-  // =============================================
-  {
+{
     "id": 12,
     "name": "Secretlab TITAN Evo 2022 XL",
     "category": "Cadeiras Gaming",
@@ -2681,7 +2529,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 21
   },
-  {
+{
     "id": 112,
     "name": "Razer Iskur V2",
     "category": "Cadeiras Gaming",
@@ -2707,7 +2555,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 43
   },
-  {
+{
     "id": 113,
     "name": "Corsair TC200 Leatherette",
     "category": "Cadeiras Gaming",
@@ -2734,7 +2582,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 45
   },
-  {
+{
     "id": 114,
     "name": "noblechairs HERO ST",
     "category": "Cadeiras Gaming",
@@ -2760,7 +2608,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 12
   },
-  {
+{
     "id": 115,
     "name": "DXRacer Craft Series",
     "category": "Cadeiras Gaming",
@@ -2786,7 +2634,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 49
   },
-  {
+{
     "id": 116,
     "name": "AndaSeat Kaiser 3 XL",
     "category": "Cadeiras Gaming",
@@ -2813,7 +2661,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 18
   },
-  {
+{
     "id": 117,
     "name": "Cougar Armor Elite",
     "category": "Cadeiras Gaming",
@@ -2840,7 +2688,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 40
   },
-  {
+{
     "id": 118,
     "name": "AKRacing Masters Pro",
     "category": "Cadeiras Gaming",
@@ -2866,7 +2714,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 38
   },
-  {
+{
     "id": 119,
     "name": "Herman Miller x Logitech Embody Gaming",
     "category": "Cadeiras Gaming",
@@ -2892,7 +2740,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 5
   },
-  {
+{
     "id": 120,
     "name": "Autonomous ErgoChair Pro",
     "category": "Cadeiras Gaming",
@@ -2918,12 +2766,8 @@ export const products: Product[] = [
     "brand": "Autonomous",
     "inStock": true,
     "stockCount": 30
-  }
-,
-  // =============================================
-  // PLACAS GRÁFICAS (IDs 121-128)
-  // =============================================
-  {
+  },
+{
     "id": 121,
     "name": "NVIDIA GeForce RTX 5090",
     "category": "Placas Gráficas",
@@ -2950,7 +2794,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 2
   },
-  {
+{
     "id": 122,
     "name": "AMD Radeon RX 9070 XT",
     "category": "Placas Gráficas",
@@ -2976,7 +2820,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 4
   },
-  {
+{
     "id": 123,
     "name": "NVIDIA GeForce RTX 5070 Ti",
     "category": "Placas Gráficas",
@@ -3003,7 +2847,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 5
   },
-  {
+{
     "id": 124,
     "name": "ASUS ROG Strix RTX 5080 OC",
     "category": "Placas Gráficas",
@@ -3029,7 +2873,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 3
   },
-  {
+{
     "id": 125,
     "name": "MSI Gaming Trio RTX 5070",
     "category": "Placas Gráficas",
@@ -3056,7 +2900,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 7
   },
-  {
+{
     "id": 126,
     "name": "Sapphire Nitro+ RX 9070",
     "category": "Placas Gráficas",
@@ -3082,8 +2926,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 6
   },
-  
-  {
+{
     "id": 128,
     "name": "Intel Arc B580",
     "category": "Placas Gráficas",
@@ -3109,10 +2952,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 11
   },
-  // =============================================
-  // PROCESSADORES (IDs 129-136)
-  // =============================================
-  {
+{
     "id": 129,
     "name": "AMD Ryzen 9 9950X",
     "category": "Processadores",
@@ -3139,7 +2979,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 8
   },
-  {
+{
     "id": 130,
     "name": "Intel Core Ultra 9 285K",
     "category": "Processadores",
@@ -3165,7 +3005,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 6
   },
-  {
+{
     "id": 131,
     "name": "AMD Ryzen 7 9700X",
     "category": "Processadores",
@@ -3192,7 +3032,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 16
   },
-  {
+{
     "id": 132,
     "name": "Intel Core Ultra 7 265K",
     "category": "Processadores",
@@ -3218,7 +3058,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 71
   },
-  {
+{
     "id": 133,
     "name": "AMD Ryzen 5 9600X",
     "category": "Processadores",
@@ -3245,7 +3085,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 39
   },
-  {
+{
     "id": 134,
     "name": "AMD Ryzen 9 9900X",
     "category": "Processadores",
@@ -3271,7 +3111,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 23
   },
-  {
+{
     "id": 135,
     "name": "Intel Core Ultra 5 245K",
     "category": "Processadores",
@@ -3298,7 +3138,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 12
   },
-  {
+{
     "id": 136,
     "name": "AMD Ryzen 7 9800X3D",
     "category": "Processadores",
@@ -3324,10 +3164,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 4
   },
-  // =============================================
-  // MOTHERBOARDS (IDs 137-144)
-  // =============================================
-  {
+{
     "id": 137,
     "name": "ASUS ROG Crosshair X870E Hero",
     "category": "Motherboards",
@@ -3353,7 +3190,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 35
   },
-  {
+{
     "id": 138,
     "name": "MSI MEG Z890 ACE",
     "category": "Motherboards",
@@ -3379,7 +3216,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 41
   },
-  {
+{
     "id": 139,
     "name": "Gigabyte B850 AORUS Elite",
     "category": "Motherboards",
@@ -3405,7 +3242,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 44
   },
-  {
+{
     "id": 140,
     "name": "ASRock Z890 Taichi",
     "category": "Motherboards",
@@ -3430,7 +3267,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 45
   },
-  {
+{
     "id": 141,
     "name": "ASUS ROG Strix B850-F Gaming",
     "category": "Motherboards",
@@ -3456,7 +3293,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 50
   },
-  {
+{
     "id": 142,
     "name": "MSI MAG B850 Tomahawk",
     "category": "Motherboards",
@@ -3481,7 +3318,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 47
   },
-  {
+{
     "id": 143,
     "name": "Gigabyte Z890 AORUS Master",
     "category": "Motherboards",
@@ -3507,7 +3344,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 11
   },
-  {
+{
     "id": 144,
     "name": "ASRock B850M Pro RS",
     "category": "Motherboards",
@@ -3533,10 +3370,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 63
   },
-  // =============================================
-  // MEMÓRIA RAM (IDs 145-152)
-  // =============================================
-  {
+{
     "id": 145,
     "name": "G.Skill Trident Z5 RGB DDR5-7200",
     "category": "Memória RAM",
@@ -3562,7 +3396,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 29
   },
-  {
+{
     "id": 146,
     "name": "Corsair Dominator Titanium DDR5-6400",
     "category": "Memória RAM",
@@ -3587,7 +3421,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 75
   },
-  {
+{
     "id": 147,
     "name": "Kingston Fury Beast DDR5-6000",
     "category": "Memória RAM",
@@ -3613,7 +3447,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 39
   },
-  {
+{
     "id": 148,
     "name": "TeamGroup T-Force Delta RGB DDR5-7600",
     "category": "Memória RAM",
@@ -3639,7 +3473,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 36
   },
-  {
+{
     "id": 149,
     "name": "G.Skill Flare X5 DDR5-6000",
     "category": "Memória RAM",
@@ -3665,7 +3499,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 12
   },
-  {
+{
     "id": 150,
     "name": "Corsair Vengeance DDR5-5600",
     "category": "Memória RAM",
@@ -3691,7 +3525,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 21
   },
-  {
+{
     "id": 151,
     "name": "G.Skill Trident Z5 Neo DDR5-6400",
     "category": "Memória RAM",
@@ -3717,7 +3551,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 52
   },
-  {
+{
     "id": 152,
     "name": "Kingston Fury Renegade DDR5-8000",
     "category": "Memória RAM",
@@ -3742,10 +3576,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 30
   },
-  // =============================================
-  // ARMAZENAMENTO (IDs 153-160)
-  // =============================================
-  {
+{
     "id": 153,
     "name": "Samsung 990 EVO Plus 2TB",
     "category": "Armazenamento",
@@ -3771,7 +3602,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 42
   },
-  {
+{
     "id": 154,
     "name": "WD Black SN850X 2TB",
     "category": "Armazenamento",
@@ -3796,7 +3627,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 64
   },
-  {
+{
     "id": 155,
     "name": "Crucial T700 2TB",
     "category": "Armazenamento",
@@ -3822,7 +3653,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 10
   },
-  {
+{
     "id": 156,
     "name": "Seagate FireCuda 540 2TB",
     "category": "Armazenamento",
@@ -3847,7 +3678,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 45
   },
-  {
+{
     "id": 157,
     "name": "Kingston KC3000 4TB",
     "category": "Armazenamento",
@@ -3873,7 +3704,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 16
   },
-  {
+{
     "id": 158,
     "name": "Samsung 870 EVO 4TB",
     "category": "Armazenamento",
@@ -3898,7 +3729,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 55
   },
-  {
+{
     "id": 159,
     "name": "Corsair MP700 PRO 2TB",
     "category": "Armazenamento",
@@ -3924,7 +3755,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 57
   },
-  {
+{
     "id": 160,
     "name": "Sabrent Rocket 5 2TB",
     "category": "Armazenamento",
@@ -3949,10 +3780,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 33
   },
-  // =============================================
-  // FONTES DE ALIMENTAÇÃO (IDs 161-168)
-  // =============================================
-  {
+{
     "id": 161,
     "name": "Corsair HX1500i",
     "category": "Fontes de Alimentação",
@@ -3979,7 +3807,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 29
   },
-  {
+{
     "id": 162,
     "name": "Seasonic PRIME TX-1000",
     "category": "Fontes de Alimentação",
@@ -4004,7 +3832,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 34
   },
-  {
+{
     "id": 163,
     "name": "be quiet! Dark Power 13 850W",
     "category": "Fontes de Alimentação",
@@ -4030,7 +3858,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 34
   },
-  {
+{
     "id": 165,
     "name": "Corsair RM850x 2024",
     "category": "Fontes de Alimentação",
@@ -4057,7 +3885,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 52
   },
-  {
+{
     "id": 166,
     "name": "MSI MEG Ai1300P PCIE5",
     "category": "Fontes de Alimentação",
@@ -4083,7 +3911,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 80
   },
-  {
+{
     "id": 167,
     "name": "Thermaltake Toughpower GF3 750W",
     "category": "Fontes de Alimentação",
@@ -4110,7 +3938,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 36
   },
-  {
+{
     "id": 168,
     "name": "Fractal Design Ion+ 2 860W",
     "category": "Fontes de Alimentação",
@@ -4136,10 +3964,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 65
   },
-  // =============================================
-  // CAIXAS (IDs 169-176)
-  // =============================================
-  {
+{
     "id": 169,
     "name": "Lian Li O11 Dynamic EVO 2",
     "category": "Caixas",
@@ -4166,7 +3991,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 7
   },
-  {
+{
     "id": 170,
     "name": "Fractal Design North",
     "category": "Caixas",
@@ -4192,7 +4017,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 19
   },
-  {
+{
     "id": 172,
     "name": "Corsair 6500X",
     "category": "Caixas",
@@ -4218,7 +4043,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 60
   },
-  {
+{
     "id": 173,
     "name": "Phanteks NV7",
     "category": "Caixas",
@@ -4245,7 +4070,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 6
   },
-  {
+{
     "id": 174,
     "name": "be quiet! Dark Base 802",
     "category": "Caixas",
@@ -4270,7 +4095,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 25
   },
-  {
+{
     "id": 176,
     "name": "SSUPD Meshroom S",
     "category": "Caixas",
@@ -4295,10 +4120,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 49
   },
-  // =============================================
-  // REFRIGERAÇÃO (IDs 177-184)
-  // =============================================
-  {
+{
     "id": 178,
     "name": "Corsair iCUE H170i Elite LCD XT",
     "category": "Refrigeração",
@@ -4324,7 +4146,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 14
   },
-  {
+{
     "id": 179,
     "name": "Noctua NH-D15 G2",
     "category": "Refrigeração",
@@ -4350,7 +4172,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 11
   },
-  {
+{
     "id": 180,
     "name": "Arctic Liquid Freezer III 360 A-RGB",
     "category": "Refrigeração",
@@ -4376,7 +4198,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 38
   },
-  {
+{
     "id": 181,
     "name": "Deepcool Assassin IV",
     "category": "Refrigeração",
@@ -4403,7 +4225,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 45
   },
-  {
+{
     "id": 182,
     "name": "EK-Nucleus AIO CR360 Dark",
     "category": "Refrigeração",
@@ -4428,7 +4250,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 41
   },
-  {
+{
     "id": 184,
     "name": "Lian Li Galahad II Trinity 360",
     "category": "Refrigeração",
@@ -4453,10 +4275,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 23
   },
-  // =============================================
-  // MONITORES (IDs 185-192)
-  // =============================================
-  {
+{
     "id": 185,
     "name": "Samsung Odyssey OLED G8 32\"",
     "category": "Monitores",
@@ -4483,7 +4302,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 77
   },
-  {
+{
     "id": 186,
     "name": "LG UltraGear 27GS95QE 27\" OLED",
     "category": "Monitores",
@@ -4509,7 +4328,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 15
   },
-  {
+{
     "id": 187,
     "name": "ASUS ROG Swift PG27AQN 27\"",
     "category": "Monitores",
@@ -4535,7 +4354,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 50
   },
-  {
+{
     "id": 188,
     "name": "Dell Alienware AW3225QF 32\" 4K",
     "category": "Monitores",
@@ -4561,7 +4380,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 63
   },
-  {
+{
     "id": 189,
     "name": "BenQ MOBIUZ EX3210U 32\" 4K",
     "category": "Monitores",
@@ -4588,7 +4407,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 73
   },
-  {
+{
     "id": 190,
     "name": "Gigabyte M27U 27\" 4K",
     "category": "Monitores",
@@ -4613,7 +4432,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 48
   },
-  {
+{
     "id": 191,
     "name": "MSI MAG 341CQP 34\" OLED",
     "category": "Monitores",
@@ -4639,7 +4458,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 80
   },
-  {
+{
     "id": 192,
     "name": "AOC AGON AG275QXL 27\"",
     "category": "Monitores",
@@ -4664,10 +4483,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 33
   },
-  // =============================================
-  // TECLADOS E RATOS (IDs 193-200)
-  // =============================================
-  {
+{
     "id": 193,
     "name": "Wooting 80HE",
     "category": "Teclados e Ratos",
@@ -4694,7 +4510,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 42
   },
-  {
+{
     "id": 196,
     "name": "Keychron Q1 HE",
     "category": "Teclados e Ratos",
@@ -4720,7 +4536,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 56
   },
-  {
+{
     "id": 197,
     "name": "Pulsar X2V2 Mini Wireless",
     "category": "Teclados e Ratos",
@@ -4747,7 +4563,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 15
   },
-  {
+{
     "id": 198,
     "name": "SteelSeries Apex Pro TKL 2024",
     "category": "Teclados e Ratos",
@@ -4772,7 +4588,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 64
   },
-  {
+{
     "id": 199,
     "name": "Endgame Gear OP1we",
     "category": "Teclados e Ratos",
@@ -4799,7 +4615,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 9
   },
-  {
+{
     "id": 200,
     "name": "Corsair K70 MAX",
     "category": "Teclados e Ratos",
@@ -4824,10 +4640,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 53
   },
-  // =============================================
-  // HEADSETS E ÁUDIO (IDs 201-208)
-  // =============================================
-  {
+{
     "id": 202,
     "name": "Audeze Maxwell Wireless",
     "category": "Headsets e Áudio",
@@ -4852,7 +4665,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 25
   },
-  {
+{
     "id": 204,
     "name": "Razer BlackShark V2 Pro 2024",
     "category": "Headsets e Áudio",
@@ -4878,7 +4691,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 11
   },
-  {
+{
     "id": 205,
     "name": "Beyerdynamic DT 900 PRO X",
     "category": "Headsets e Áudio",
@@ -4904,7 +4717,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 20
   },
-  {
+{
     "id": 206,
     "name": "Corsair Virtuoso Pro",
     "category": "Headsets e Áudio",
@@ -4929,10 +4742,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 17
   },
-  // =============================================
-  // CADEIRAS GAMING (IDs 209-216)
-  // =============================================
-  {
+{
     "id": 209,
     "name": "Secretlab Titan Evo 2024",
     "category": "Cadeiras Gaming",
@@ -4958,7 +4768,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 44
   },
-  {
+{
     "id": 213,
     "name": "Corsair TC200 Fabric",
     "category": "Cadeiras Gaming",
@@ -4985,7 +4795,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 65
   },
-  {
+{
     "id": 214,
     "name": "Steelcase Karman",
     "category": "Cadeiras Gaming",
@@ -5010,7 +4820,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 29
   },
-  {
+{
     "id": 215,
     "name": "IKEA MATCHSPEL",
     "category": "Cadeiras Gaming",
@@ -5035,7 +4845,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 13
   },
-  {
+{
     "id": 216,
     "name": "AndaSeat Kaiser 4",
     "category": "Cadeiras Gaming",
@@ -5061,11 +4871,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 79
   },
-
-  // =============================================
-  // PERIFÉRICOS BUDGET (IDs 220-252)
-  // =============================================
-  {
+{
     "id": 220,
     "name": "Redragon Shark M688 RGB",
     "category": "Teclados e Ratos",
@@ -5112,8 +4918,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 100
   },
-
-  {
+{
     "id": 221,
     "name": "Attack Shark R1 Pro Wireless",
     "category": "Teclados e Ratos",
@@ -5160,8 +4965,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 80
   },
-
-  {
+{
     "id": 222,
     "name": "HAVIT MS1006 Gaming Mouse",
     "category": "Teclados e Ratos",
@@ -5207,8 +5011,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 120
   },
-
-  {
+{
     "id": 223,
     "name": "Redragon Cobra M711 RGB",
     "category": "Teclados e Ratos",
@@ -5255,8 +5058,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 90
   },
-
-  {
+{
     "id": 224,
     "name": "Attack Shark X3 Wireless",
     "category": "Teclados e Ratos",
@@ -5303,8 +5105,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 70
   },
-
-  {
+{
     "id": 230,
     "name": "Large RGB Gaming Mouse Pad 90x40cm",
     "category": "Mouse Pads",
@@ -5351,8 +5152,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 150
   },
-
-  {
+{
     "id": 231,
     "name": "Redragon P027 RGB Mouse Pad XL",
     "category": "Mouse Pads",
@@ -5399,8 +5199,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 100
   },
-
-  {
+{
     "id": 232,
     "name": "Black XXL Mouse Pad 90x40cm",
     "category": "Mouse Pads",
@@ -5446,8 +5245,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 200
   },
-
-  {
+{
     "id": 240,
     "name": "Aula F75 Mechanical Keyboard 75%",
     "category": "Teclados e Ratos",
@@ -5494,8 +5292,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 60
   },
-
-  {
+{
     "id": 241,
     "name": "Royal Kludge RK84 Wireless",
     "category": "Teclados e Ratos",
@@ -5541,56 +5338,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 50
   },
-
-  {
-    "id": 242,
-    "name": "Redragon K630 Dragonborn 60%",
-    "category": "Teclados e Ratos",
-    "price": "54,99 €",
-    "oldPrice": "64,99 €",
-    "rating": 4.5,
-    "img": "/products/242.png",
-    "gallery": [
-      "https://redragonshop.com/cdn/shop/products/redragon60keyboard.png",
-      "https://c1.neweggimages.com/productimage/nb640/AWATS2206270HUAL2E8.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/AWATS2206270HUCKV0D.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/AWATS2206270HUD827B.jpg"
-    ],
-    "description": "Teclado mecânico compacto 60% com switches Redragon Brown, iluminação RGB e construção em alumínio.",
-    "badge": "Compacto",
-    "features": [
-      {
-        "name": "Layout",
-        "value": "60% (61 teclas)"
-      },
-      {
-        "name": "Switches",
-        "value": "Redragon Brown"
-      },
-      {
-        "name": "Conexão",
-        "value": "USB-C"
-      },
-      {
-        "name": "Corpo",
-        "value": "Alumínio + ABS"
-      },
-      {
-        "name": "RGB",
-        "value": "Per-Key Backlight"
-      },
-      {
-        "name": "Anti-Ghost",
-        "value": "N-Key Rollover"
-      }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Redragon-K630",
-    "brand": "Redragon",
-    "inStock": true,
-    "stockCount": 70
-  },
-
-  {
+{
     "id": 243,
     "name": "VGN Neon 75 HE Magnetic",
     "category": "Teclados e Ratos",
@@ -5637,8 +5385,7 @@ export const products: Product[] = [
     "inStock": true,
     "stockCount": 40
   },
-
-  {
+{
     "id": 250,
     "name": "Redragon H510 Zeus Pro 7.1",
     "category": "Headsets e Áudio",
@@ -5684,99 +5431,5 @@ export const products: Product[] = [
     "brand": "Redragon",
     "inStock": true,
     "stockCount": 80
-  },
-
-  {
-    "id": 251,
-    "name": "HAVIT H2002d Gaming Headset",
-    "category": "Headsets e Áudio",
-    "price": "34,99 €",
-    "oldPrice": "44,99 €",
-    "rating": 4.4,
-    "img": "/products/251.png",
-    "gallery": [
-      "https://www.compume.jo/cdn/shop/files/Havit-H2002D-BO-_3_-1200x1200-1200x1200.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/C57ZD2603020LAV63A3.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/C57ZD2603020LAV7H3C.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/C57ZD2603020LAVB1CF.jpg"
-    ],
-    "description": "Headset gaming com drivers de 50mm, microfone omnidirecional, almofadas de proteína e iluminação LED.",
-    "features": [
-      {
-        "name": "Drivers",
-        "value": "50mm"
-      },
-      {
-        "name": "Microfone",
-        "value": "Omnidirecional"
-      },
-      {
-        "name": "Conexão",
-        "value": "USB + 3.5mm"
-      },
-      {
-        "name": "Almofadas",
-        "value": "Proteína Leather"
-      },
-      {
-        "name": "LED",
-        "value": "Iluminação Ambiente"
-      },
-      {
-        "name": "Cabo",
-        "value": "2.2m Nylon"
-      }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/HAVIT-H2002d",
-    "brand": "HAVIT",
-    "inStock": true,
-    "stockCount": 100
-  },
-
-  {
-    "id": 252,
-    "name": "Onikuma K5 Pro Gaming Headset",
-    "category": "Headsets e Áudio",
-    "price": "23,99 €",
-    "oldPrice": "28,99 €",
-    "rating": 4.3,
-    "img": "/products/252.png",
-    "gallery": [
-      "https://gamerheadphone.myshopify.com/cdn/shop/products/product-image-782156677.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/C3GJD2510280ERUKW75.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/C3GJD2510280ES4OWD9.jpg",
-      "https://c1.neweggimages.com/productimage/nb640/C3GJD2510280ES4RWF9.jpg"
-    ],
-    "description": "Headset gaming over-ear com microfone retráctil, drivers de 50mm, LED RGB e compatibilidade universal PS4/PS5/Xbox/PC.",
-    "features": [
-      {
-        "name": "Drivers",
-        "value": "50mm"
-      },
-      {
-        "name": "Microfone",
-        "value": "Retráctil Flexível"
-      },
-      {
-        "name": "Conexão",
-        "value": "3.5mm Universal"
-      },
-      {
-        "name": "Compat.",
-        "value": "PS4/PS5/Xbox/PC/Mobile"
-      },
-      {
-        "name": "LED",
-        "value": "RGB (via USB)"
-      },
-      {
-        "name": "Peso",
-        "value": "280g"
-      }
-    ],
-    "supplier_url": "https://www.aliexpress.com/item/Onikuma-K5-Pro",
-    "brand": "Onikuma",
-    "inStock": true,
-    "stockCount": 130
   }
 ];

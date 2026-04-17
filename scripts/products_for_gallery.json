@@ -1,0 +1,2030 @@
+[
+  {
+    "id": 1,
+    "name": "MSI GeForce RTX 5090 SUPRIM X 32G",
+    "category": "Placas Gráficas",
+    "brand": "MSI",
+    "gallery": [
+      "https://asset.msi.com/resize/image/global/product/product_16655431665a8ea2dc3d7c588a44d8cd3ff2d6da61.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 14,
+    "name": "ASUS ROG Strix RTX 4090 OC 24GB",
+    "category": "Placas Gráficas",
+    "brand": "ASUS",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/14-126-593-V01.jpg",
+      "https://c1.neweggimages.com/productimage/nb640/14-126-593-V02.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 21,
+    "name": "NVIDIA GeForce RTX 4070 Ti Super 16GB",
+    "category": "Placas Gráficas",
+    "brand": "NVIDIA",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/14-932-676-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 22,
+    "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+    "category": "Placas Gráficas",
+    "brand": "NVIDIA",
+    "gallery": [
+      "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 23,
+    "name": "NVIDIA GeForce RTX 4060 8GB",
+    "category": "Placas Gráficas",
+    "brand": "NVIDIA",
+    "gallery": [
+      "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-hero-100vp-d.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 24,
+    "name": "AMD Radeon RX 7900 XTX 24GB",
+    "category": "Placas Gráficas",
+    "brand": "AMD",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/14-202-428-V02.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 25,
+    "name": "AMD Radeon RX 7800 XT 16GB",
+    "category": "Placas Gráficas",
+    "brand": "AMD",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/14-202-428-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 26,
+    "name": "AMD Radeon RX 7600 8GB",
+    "category": "Placas Gráficas",
+    "brand": "AMD",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/14-202-428-02.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 27,
+    "name": "NVIDIA GeForce RTX 4070 Super 12GB",
+    "category": "Placas Gráficas",
+    "brand": "NVIDIA",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/14-932-676-03.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 2,
+    "name": "AMD Ryzen 7 7800X3D",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/19-113-793-03.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 13,
+    "name": "Intel Core i9-14900K",
+    "category": "Processadores",
+    "brand": "Intel",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 29,
+    "name": "AMD Ryzen 5 7600X",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/19-113-793-02.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 30,
+    "name": "AMD Ryzen 9 7950X3D",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/19-113-793-04.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 31,
+    "name": "Intel Core i5-14600K",
+    "category": "Processadores",
+    "brand": "Intel",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/19-118-462-03.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 32,
+    "name": "Intel Core i7-14700K",
+    "category": "Processadores",
+    "brand": "Intel",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S321c130788b14a53ac8610e9a7553954a.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 35,
+    "name": "AMD Ryzen 9 7900X",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 9,
+    "name": "MSI MAG B650 Tomahawk WiFi",
+    "category": "Motherboards",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-151-272-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 15,
+    "name": "ASUS ROG Maximus Z790 Hero",
+    "category": "Motherboards",
+    "brand": "ASUS",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S28f88bd5d5674915bfeac029a00ae1f8i.jpg",
+      "https://ae01.alicdn.com/kf/S789fcc4bdb894d63846a089ee8751b30S.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 37,
+    "name": "MSI MPG B760M Edge WiFi",
+    "category": "Motherboards",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A4YUD2202020IF4KT28.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 38,
+    "name": "ASUS TUF Gaming B650-PLUS WiFi",
+    "category": "Motherboards",
+    "brand": "ASUS",
+    "gallery": [
+      "https://dlcdnwebimgs.asus.com/gain/d52e1dd0-6b0b-4c62-a625-01c5e41a8b07/w800"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 41,
+    "name": "ASUS ROG Strix X670E-E Gaming WiFi",
+    "category": "Motherboards",
+    "brand": "ASUS",
+    "gallery": [
+      "https://dlcdnwebimgs.asus.com/gain/BADFA920-702B-451B-9592-8279ACD6857B/w800"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 42,
+    "name": "MSI MEG Z790 ACE",
+    "category": "Motherboards",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 43,
+    "name": "Gigabyte X670E Aorus Master",
+    "category": "Motherboards",
+    "brand": "Gigabyte",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 44,
+    "name": "ASRock B760M Pro RS WiFi",
+    "category": "Motherboards",
+    "brand": "ASRock",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 4,
+    "name": "Corsair Vengeance DDR5 32GB 6000MHz",
+    "category": "Memória RAM",
+    "brand": "Corsair",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S169ee96d265d42e6b601ede75abad71cR.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 16,
+    "name": "G.Skill Trident Z5 RGB DDR5 64GB",
+    "category": "Memória RAM",
+    "brand": "G.Skill",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sa582dda67b914af2ad781dc78e7fbdf1o.jpg",
+      "https://ae01.alicdn.com/kf/S00234a54a8254d8f8f2dcd96116ff363Y.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 45,
+    "name": "Kingston Fury Beast DDR5 32GB 5600MHz",
+    "category": "Memória RAM",
+    "brand": "Kingston",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sc454a756e56b4b308618b620b068cf5cN.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 46,
+    "name": "Corsair Dominator Platinum RGB DDR5 32GB 6200MHz",
+    "category": "Memória RAM",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/CMT32GX5M2C4800C34/Gallery/DOMINATOR_RGB_PLATINUM_BLACK_DDR5_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 47,
+    "name": "Kingston Fury Renegade DDR5 32GB 6400MHz",
+    "category": "Memória RAM",
+    "brand": "Kingston",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S4ffe778a265a4e9da5f6fa192ae6cf4bV.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 48,
+    "name": "TeamGroup T-Force Delta RGB DDR5 32GB 6000MHz",
+    "category": "Memória RAM",
+    "brand": "TeamGroup",
+    "gallery": [
+      "https://images.teamgroupinc.com/products/memory/u-dimm/ddr5/delta-rgb/black/dual_01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 49,
+    "name": "Corsair Vengeance DDR5 16GB 5600MHz",
+    "category": "Memória RAM",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Memory/vengeance-ddr5-blk-config/Gallery/Vengeance-DDR5-1UP-16GB-BLACK_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 50,
+    "name": "G.Skill Ripjaws S5 DDR5 32GB 6000MHz",
+    "category": "Memória RAM",
+    "brand": "G.Skill",
+    "gallery": [
+      "https://www.gskill.com/_upload/images/168428819510.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 52,
+    "name": "Crucial DDR5 32GB 4800MHz",
+    "category": "Memória RAM",
+    "brand": "Crucial",
+    "gallery": [
+      "https://assets.micron.com/adobe/assets/urn:aaid:aem:10781863-41f2-495a-9613-96e8f995614f/renditions/transformpng-640-640.png/as/crucial-ddr5-UDIMM-iso-3.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 3,
+    "name": "Samsung 990 Pro 2TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "Samsung",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S4974b91fcb304aa49a3fb76113fe8881C.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 17,
+    "name": "WD Black SN850X 4TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "WD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Se03e609d6a26460696997a8f3c6f8796Z.jpg",
+      "https://ae01.alicdn.com/kf/S8d0093f445e2412baea99a9b456591f7R.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 53,
+    "name": "WD Blue SN580 1TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "WD",
+    "gallery": [
+      "https://images.samsung.com/is/image/samsung/p6pim/us/mz-77e1t0b-am/gallery/us-sata-ssd-mz-77e1t0b-am-----evo-sata-iii-----inch-ssd-black-551115818?$172_172_PNG$"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 54,
+    "name": "Kingston NV2 2TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "Kingston",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 55,
+    "name": "Crucial P3 Plus 2TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "Crucial",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 57,
+    "name": "Seagate FireCuda 530 2TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "Seagate",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-248-193-S01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 58,
+    "name": "Crucial T500 2TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "Crucial",
+    "gallery": [
+      "https://assets.micron.com/adobe/assets/urn:aaid:aem:d7a2c5ff-b9ff-4a6a-b511-4481a20ebddc/renditions/transformpng-1024-1024.png/as/crucial-ssd-t500-topdown.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 59,
+    "name": "SK Hynix Platinum P41 2TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "SK Hynix",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S57f0ef96f6114e69b46daf8756ced039M.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 60,
+    "name": "Kingston KC3000 2TB NVMe Gen4",
+    "category": "Armazenamento",
+    "brand": "Kingston",
+    "gallery": [
+      "https://cdn.shopify.com/s/files/1/0518/5073/9904/files/KTC-KC3000-KF3.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 62,
+    "name": "Seasonic Focus GX-750 80+ Gold",
+    "category": "Fontes de Alimentação",
+    "brand": "Seasonic",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 63,
+    "name": "be quiet! Pure Power 12 M 850W",
+    "category": "Fontes de Alimentação",
+    "brand": "be quiet!",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 64,
+    "name": "EVGA SuperNOVA 1000 G7 80+ Gold",
+    "category": "Fontes de Alimentação",
+    "brand": "EVGA",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S08b632a4ee074f00bb9a778e111ea92dg.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 65,
+    "name": "Corsair SF750 80+ Platinum SFX",
+    "category": "Fontes de Alimentação",
+    "brand": "Corsair",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 66,
+    "name": "MSI MEG Ai1300P PCIE5 80+ Platinum",
+    "category": "Fontes de Alimentação",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 68,
+    "name": "NZXT C850 80+ Gold (2024)",
+    "category": "Fontes de Alimentação",
+    "brand": "NZXT",
+    "gallery": [
+      "https://nzxt.com/cdn/shop/files/power_c_series_gold_c850-vents-up-right.png?v=1762528174"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 69,
+    "name": "Thermaltake Toughpower GF3 850W",
+    "category": "Fontes de Alimentação",
+    "brand": "Thermaltake",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 8,
+    "name": "Lian Li Lancool 216 RGB White",
+    "category": "Caixas",
+    "brand": "Lian Li",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/11-854-117-10.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 19,
+    "name": "Fractal Design Torrent RGB Black",
+    "category": "Caixas",
+    "brand": "Fractal Design",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S97f72261851940c4a52aa6dc6211a7f3Q.jpg",
+      "https://ae01.alicdn.com/kf/Sb483268d8c0a4a8999bd1b0b2365cd36r.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 70,
+    "name": "NZXT H7 Flow RGB",
+    "category": "Caixas",
+    "brand": "NZXT",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/11-734-018-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 71,
+    "name": "Corsair 4000D Airflow",
+    "category": "Caixas",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 72,
+    "name": "Phanteks Eclipse G360A",
+    "category": "Caixas",
+    "brand": "Phanteks",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Cases/base-5000d-airflow/Gallery/5000D_AF_WHITE_001.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 73,
+    "name": "be quiet! Pure Base 500DX",
+    "category": "Caixas",
+    "brand": "be quiet!",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/35-181-337-01.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 74,
+    "name": "Cooler Master HAF 700 EVO",
+    "category": "Caixas",
+    "brand": "Cooler Master",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/11-119-433-V01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 75,
+    "name": "HYTE Y60",
+    "category": "Caixas",
+    "brand": "HYTE",
+    "gallery": [
+      "https://cdn.sanity.io/images/mqc7p4g4/production/82d0db796ef76ffa52ade9761ca1bee0b4b9a9ec-3480x2460.jpg?w=3840&q=75&fit=clip&auto=format"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 76,
+    "name": "Corsair 5000D Airflow",
+    "category": "Caixas",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/37B-000B-00421-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 10,
+    "name": "NZXT Kraken Elite 360 RGB",
+    "category": "Refrigeração",
+    "brand": "NZXT",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S1a9a9ce546ed4393b39c310f2e8966724.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 20,
+    "name": "be quiet! Dark Rock Pro 5",
+    "category": "Refrigeração",
+    "brand": "be quiet!",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/E0f6b29f2fd08438cb282908523ea8ad18.jpg",
+      "https://ae01.alicdn.com/kf/E23440969ef5c40508546688af4fcc43c3.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 78,
+    "name": "Corsair iCUE H150i Elite LCD XT",
+    "category": "Refrigeração",
+    "brand": "Corsair",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 80,
+    "name": "DeepCool AK620 Digital",
+    "category": "Refrigeração",
+    "brand": "DeepCool",
+    "gallery": [
+      "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPUAirCoolers/AK620_DIGITAL/Gallery/800X800/01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 82,
+    "name": "Corsair A115 Air Cooler",
+    "category": "Refrigeração",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/35-181-400-24.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 83,
+    "name": "EK-AIO 280 D-RGB",
+    "category": "Refrigeração",
+    "brand": "EK",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S607f2ce7e4854d8ebb8264178a43da61K.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 84,
+    "name": "Arctic Freezer 36 A-RGB",
+    "category": "Refrigeração",
+    "brand": "Arctic",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/35-186-285-02.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 85,
+    "name": "Thermalright Peerless Assassin 120 SE",
+    "category": "Refrigeração",
+    "brand": "Thermalright",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/BCKGS23071212TI5LE2.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 5,
+    "name": "ASUS ROG Swift OLED PG27AQDM",
+    "category": "Monitores",
+    "brand": "ASUS",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Ae24c120588024014ab47a23ecef94a13e.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 86,
+    "name": "LG 27GP850-B UltraGear 165Hz",
+    "category": "Monitores",
+    "brand": "LG",
+    "gallery": [
+      "https://c1.neweggimages.com/ProductImageCompressAll1280/24-026-195-V01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 87,
+    "name": "Dell S2722DGM 165Hz Curved",
+    "category": "Monitores",
+    "brand": "Dell",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/AKVHD21080615GNM1.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 88,
+    "name": "Samsung Odyssey G7 32\\",
+    "category": "Monitores",
+    "brand": "Samsung",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-027-066-V15.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 89,
+    "name": "ASUS TUF Gaming VG27AQ1A",
+    "category": "Monitores",
+    "brand": "ASUS",
+    "gallery": [
+      "https://dlcdnwebimgs.asus.com/gain/d452f143-b494-41d0-9e4b-6d7ae0ff6291/w692"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 90,
+    "name": "BenQ MOBIUZ EX2710Q 165Hz",
+    "category": "Monitores",
+    "brand": "BenQ",
+    "gallery": [
+      "https://image.benq.com/is/image/benqco/ex2710q-2product?$ResponsivePreset$"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 91,
+    "name": "LG UltraGear 27GR95QE OLED 240Hz",
+    "category": "Monitores",
+    "brand": "LG",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-026-351-18.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 92,
+    "name": "Gigabyte M27Q X 240Hz",
+    "category": "Monitores",
+    "brand": "Gigabyte",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-012-048-13.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 93,
+    "name": "AOC 24G2SP 165Hz",
+    "category": "Monitores",
+    "brand": "AOC",
+    "gallery": [
+      "https://cdn.sanity.io/images/hf5b3axp/production/d711ca9aaf71f961f8ab64eff8d6624d4d532839-3840x3840.png?w=1920&fit=max&auto=format"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 94,
+    "name": "MSI MAG 274QRF-QD 170Hz",
+    "category": "Monitores",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-475-127-S05.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 6,
+    "name": "Logitech G Pro X Superlight 2",
+    "category": "Teclados e Ratos",
+    "brand": "Logitech",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S2f75fdf5c23b433d935978e4a4cbed2dD.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 7,
+    "name": "Razer BlackWidow V4 Pro",
+    "category": "Teclados e Ratos",
+    "brand": "Razer",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S9cc51db9672f46c18a51e324a2cbb70dT.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 95,
+    "name": "Razer DeathAdder V3",
+    "category": "Teclados e Ratos",
+    "brand": "Razer",
+    "gallery": [
+      "https://www.razer.com/newsroom/wp-content/uploads/2023/02/daV3-pressrelease-img.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 96,
+    "name": "SteelSeries Apex Pro TKL (2023)",
+    "category": "Teclados e Ratos",
+    "brand": "SteelSeries",
+    "gallery": [
+      "https://images.ctfassets.net/hmm5mo4qf4mf/5T6OTTzl1B5zaX1nILPFw4/186d8f786745424cdd8770cda23623af/apex_pro_tkl_wl_img_buy_01.png?fm=webp&q=90&fit=scale&w=1920"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 97,
+    "name": "Corsair K70 RGB PRO",
+    "category": "Teclados e Ratos",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Keyboards/CH-9109410-NA/Gallery/K70_RGB_PRO_PBT_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 98,
+    "name": "Razer Viper V3 Pro",
+    "category": "Teclados e Ratos",
+    "brand": "Razer",
+    "gallery": [
+      "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h08/h61/9765618188318/viper-v3-pro-black-500x500.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 99,
+    "name": "Logitech MX Master 3S",
+    "category": "Teclados e Ratos",
+    "brand": "Logitech",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 100,
+    "name": "HyperX Alloy Origins 65",
+    "category": "Teclados e Ratos",
+    "brand": "HyperX",
+    "gallery": [
+      "https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_65_english_us_1_top_down.jpg?v=1763563176"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 101,
+    "name": "Razer Huntsman V3 Pro",
+    "category": "Teclados e Ratos",
+    "brand": "Razer",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/23-114-132-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 102,
+    "name": "SteelSeries Aerox 5 Wireless",
+    "category": "Teclados e Ratos",
+    "brand": "SteelSeries",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/V18MD2204270ZODGDCA.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 11,
+    "name": "SteelSeries Arctis Nova Pro Wireless",
+    "category": "Headsets e Áudio",
+    "brand": "SteelSeries",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sd91129082d03435daf68807c240d1503J.jpg",
+      "https://ae01.alicdn.com/kf/S25680262993543adb19dc88e7bdf4145k.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 103,
+    "name": "HyperX Cloud III Wireless",
+    "category": "Headsets e Áudio",
+    "brand": "HyperX",
+    "gallery": [
+      "https://row.hyperx.com/cdn/shop/files/hyperx_cloud_iii_wireless_black_77z45aa_main_1.jpg?v=1764893494"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 104,
+    "name": "Logitech G Pro X 2 Lightspeed",
+    "category": "Headsets e Áudio",
+    "brand": "Logitech",
+    "gallery": [
+      "https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 105,
+    "name": "Corsair Virtuoso RGB XT Wireless",
+    "category": "Headsets e Áudio",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/CA-9011188-NA/Gallery/VIRTUOSO_XT_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 106,
+    "name": "Razer Kraken V4",
+    "category": "Headsets e Áudio",
+    "brand": "Razer",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/26-153-367-02.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 107,
+    "name": "Sony WH-1000XM5",
+    "category": "Headsets e Áudio",
+    "brand": "Sony",
+    "gallery": [
+      "https://c1.neweggimages.com/ProductImageOriginal/ARUXS22052606ACVA3A.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 108,
+    "name": "JBL Quantum 910 Wireless",
+    "category": "Headsets e Áudio",
+    "brand": "JBL",
+    "gallery": [
+      "https://images.samsung.com/is/image/samsung/p6pim/us/jblq910wlblkam/gallery/us-jbl-quantum910-wireless-jblq910wlblkam-551554636"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 109,
+    "name": "Corsair HS80 Max Wireless",
+    "category": "Headsets e Áudio",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Headsets/hs80-max-wireless/steel-grey/HS80_MAX_WIRELESS_STEEL_GRAY_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 110,
+    "name": "Razer BlackShark V2 Pro (2023)",
+    "category": "Headsets e Áudio",
+    "brand": "Razer",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/APCPD2111150RQFOF3C.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 111,
+    "name": "Audio-Technica ATH-M50x",
+    "category": "Headsets e Áudio",
+    "brand": "Audio-Technica",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A544_1_20190423911868284.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 12,
+    "name": "Secretlab TITAN Evo 2022 XL",
+    "category": "Cadeiras Gaming",
+    "brand": "Secretlab",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Hd947c23e50a045f8be0ce6da7a33143dM.jpg",
+      "https://ae01.alicdn.com/kf/Sfb15ddafcbb84d828666aecc26ff70ae5.jpg"
+    ],
+    "gallery_count": 2
+  },
+  {
+    "id": 112,
+    "name": "Razer Iskur V2",
+    "category": "Cadeiras Gaming",
+    "brand": "Razer",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/26-153-375-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 113,
+    "name": "Corsair TC200 Leatherette",
+    "category": "Cadeiras Gaming",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Chairs/CF-9010043-WW/Gallery/CF-9010043-WW_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 114,
+    "name": "noblechairs HERO ST",
+    "category": "Cadeiras Gaming",
+    "brand": "noblechairs",
+    "gallery": [
+      "https://img.noblechairs.com/images/GAGC-255/167c6091e83aee48b4a95a42f9a765ab.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 115,
+    "name": "DXRacer Craft Series",
+    "category": "Cadeiras Gaming",
+    "brand": "DXRacer",
+    "gallery": [
+      "https://nex-img.dxracer.cc/20001/fcda253d-9214-405e-9b6d-b7a1dc5cdbaf-1.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 116,
+    "name": "AndaSeat Kaiser 3 XL",
+    "category": "Cadeiras Gaming",
+    "brand": "AndaSeat",
+    "gallery": [
+      "https://www.andaseat.com/cdn/shop/files/andaseat-kasier-3-series-gaming-chair-carbon-black-ign_grande.webp?v=1757903020"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 117,
+    "name": "Cougar Armor Elite",
+    "category": "Cadeiras Gaming",
+    "brand": "Cougar",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 118,
+    "name": "AKRacing Masters Pro",
+    "category": "Cadeiras Gaming",
+    "brand": "AKRacing",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/26-930-047-S01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 119,
+    "name": "Herman Miller x Logitech Embody Gaming",
+    "category": "Cadeiras Gaming",
+    "brand": "Herman Miller",
+    "gallery": [
+      "https://images.hermanmiller.group/asset/521e115b-9214-402a-92d2-2b8529a5a228/W/HMG_2517590_100698359_Embody_Gaming_Ignite_OnBlkF34R_68477_PDP_v7.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 120,
+    "name": "Autonomous ErgoChair Pro",
+    "category": "Cadeiras Gaming",
+    "brand": "Autonomous",
+    "gallery": [
+      "https://cdn.autonomous.ai/production/ecm/240715/1(1).jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 121,
+    "name": "NVIDIA GeForce RTX 5090",
+    "category": "Placas Gráficas",
+    "brand": "NVIDIA",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sa74c4fee91aa4ce1a4c0254f600b1b94o.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 122,
+    "name": "AMD Radeon RX 9070 XT",
+    "category": "Placas Gráficas",
+    "brand": "AMD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sdef16c880ddc48d8a41ca0f183c12d8ao.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 123,
+    "name": "NVIDIA GeForce RTX 5070 Ti",
+    "category": "Placas Gráficas",
+    "brand": "NVIDIA",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S1326e3dd137648c7b7b03f33869ec973H.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 124,
+    "name": "ASUS ROG Strix RTX 5080 OC",
+    "category": "Placas Gráficas",
+    "brand": "ASUS",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/A6f880ada71fd4e4aa5405d160678b418I.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 125,
+    "name": "MSI Gaming Trio RTX 5070",
+    "category": "Placas Gráficas",
+    "brand": "MSI",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S101011f7f6df4006ba69af896e76f2f8W.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 126,
+    "name": "Sapphire Nitro+ RX 9070",
+    "category": "Placas Gráficas",
+    "brand": "Sapphire",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sa48e99245ac043b7963e6e9caf20f8f6B.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 128,
+    "name": "Intel Arc B580",
+    "category": "Placas Gráficas",
+    "brand": "Intel",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S40a685b2772445f28dda7ccfe37a9fa2j.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 129,
+    "name": "AMD Ryzen 9 9950X",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sc9ee44bfbe2e44d38e925d948916ec84o.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 130,
+    "name": "Intel Core Ultra 9 285K",
+    "category": "Processadores",
+    "brand": "Intel",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sfc4d0ac50cd540b6a3bd02032ac6c4f7f.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 131,
+    "name": "AMD Ryzen 7 9700X",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S5adb6bdfc0894c36a5c7214a0cbbb4f9I.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 132,
+    "name": "Intel Core Ultra 7 265K",
+    "category": "Processadores",
+    "brand": "Intel",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S3136044a78284c93b35cc362fec337b3R.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 133,
+    "name": "AMD Ryzen 5 9600X",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S199979d21ef54b629421756c4c89dfb8n.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 134,
+    "name": "AMD Ryzen 9 9900X",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/Sa52788b9d42746ecaffa2e6f5641045fm.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 135,
+    "name": "Intel Core Ultra 5 245K",
+    "category": "Processadores",
+    "brand": "Intel",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S88bfcfb244414f2ea70967f3add907d8l.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 136,
+    "name": "AMD Ryzen 7 9800X3D",
+    "category": "Processadores",
+    "brand": "AMD",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S981e6f47735746d39bc5a13f30eb3368J.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 137,
+    "name": "ASUS ROG Crosshair X870E Hero",
+    "category": "Motherboards",
+    "brand": "ASUS",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-119-681-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 138,
+    "name": "MSI MEG Z890 ACE",
+    "category": "Motherboards",
+    "brand": "MSI",
+    "gallery": [
+      "https://ae01.alicdn.com/kf/S8817ee5c0aaa450d987cb99c8d098f4ez.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 139,
+    "name": "Gigabyte B850 AORUS Elite",
+    "category": "Motherboards",
+    "brand": "Gigabyte",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-145-545-05.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 140,
+    "name": "ASRock Z890 Taichi",
+    "category": "Motherboards",
+    "brand": "ASRock",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-162-169-05.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 141,
+    "name": "ASUS ROG Strix B850-F Gaming",
+    "category": "Motherboards",
+    "brand": "ASUS",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-119-702-09.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 142,
+    "name": "MSI MAG B850 Tomahawk",
+    "category": "Motherboards",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-144-697-05.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 143,
+    "name": "Gigabyte Z890 AORUS Master",
+    "category": "Motherboards",
+    "brand": "Gigabyte",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-145-523-05.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 144,
+    "name": "ASRock B850M Pro RS",
+    "category": "Motherboards",
+    "brand": "ASRock",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/13-162-195-11.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 145,
+    "name": "G.Skill Trident Z5 RGB DDR5-7200",
+    "category": "Memória RAM",
+    "brand": "G.Skill",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-374-435-10.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 146,
+    "name": "Corsair Dominator Titanium DDR5-6400",
+    "category": "Memória RAM",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-982-097-02.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 147,
+    "name": "Kingston Fury Beast DDR5-6000",
+    "category": "Memória RAM",
+    "brand": "Kingston",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-242-737-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 148,
+    "name": "TeamGroup T-Force Delta RGB DDR5-7600",
+    "category": "Memória RAM",
+    "brand": "TeamGroup",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-331-810-07.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 149,
+    "name": "G.Skill Flare X5 DDR5-6000",
+    "category": "Memória RAM",
+    "brand": "G.Skill",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-374-419-07.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 150,
+    "name": "Corsair Vengeance DDR5-5600",
+    "category": "Memória RAM",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-236-828-V01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 151,
+    "name": "G.Skill Trident Z5 Neo DDR5-6400",
+    "category": "Memória RAM",
+    "brand": "G.Skill",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-374-445-11.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 152,
+    "name": "Kingston Fury Renegade DDR5-8000",
+    "category": "Memória RAM",
+    "brand": "Kingston",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/AFYUD2402090ZFHPO84.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 153,
+    "name": "Samsung 990 EVO Plus 2TB",
+    "category": "Armazenamento",
+    "brand": "Samsung",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-147-900-02.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 154,
+    "name": "WD Black SN850X 2TB",
+    "category": "Armazenamento",
+    "brand": "Western Digital",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-250-247-02.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 155,
+    "name": "Crucial T700 2TB",
+    "category": "Armazenamento",
+    "brand": "Crucial",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-156-329-19.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 156,
+    "name": "Seagate FireCuda 540 2TB",
+    "category": "Armazenamento",
+    "brand": "Seagate",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-248-242-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 157,
+    "name": "Kingston KC3000 4TB",
+    "category": "Armazenamento",
+    "brand": "Kingston",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-242-661-S01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 158,
+    "name": "Samsung 870 EVO 4TB",
+    "category": "Armazenamento",
+    "brand": "Samsung",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-147-795-V01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 159,
+    "name": "Corsair MP700 PRO 2TB",
+    "category": "Armazenamento",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/20-982-117-01.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 160,
+    "name": "Sabrent Rocket 5 2TB",
+    "category": "Armazenamento",
+    "brand": "Sabrent",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/BK19D24031310CPTJ37.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 161,
+    "name": "Corsair HX1500i",
+    "category": "Fontes de Alimentação",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-139-343-17.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 162,
+    "name": "Seasonic PRIME TX-1000",
+    "category": "Fontes de Alimentação",
+    "brand": "Seasonic",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-151-195-S09.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 163,
+    "name": "be quiet! Dark Power 13 850W",
+    "category": "Fontes de Alimentação",
+    "brand": "be quiet!",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A68VS23012716ZPU29A.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 165,
+    "name": "Corsair RM850x 2024",
+    "category": "Fontes de Alimentação",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Power-Supply-Units/base-rmx-2024-config/gallery/black/850/RM850x_2024_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 166,
+    "name": "MSI MEG Ai1300P PCIE5",
+    "category": "Fontes de Alimentação",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-701-018-04.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 167,
+    "name": "Thermaltake Toughpower GF3 750W",
+    "category": "Fontes de Alimentação",
+    "brand": "Thermaltake",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-153-438-13.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 168,
+    "name": "Fractal Design Ion+ 2 860W",
+    "category": "Fontes de Alimentação",
+    "brand": "Fractal Design",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/17-580-034-V17.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 169,
+    "name": "Lian Li O11 Dynamic EVO 2",
+    "category": "Caixas",
+    "brand": "Lian Li",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/2AM-000Z-000C0-01.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 170,
+    "name": "Fractal Design North",
+    "category": "Caixas",
+    "brand": "Fractal Design",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/11-352-204-21.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 172,
+    "name": "Corsair 6500X",
+    "category": "Caixas",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/11-139-219-01.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 173,
+    "name": "Phanteks NV7",
+    "category": "Caixas",
+    "brand": "Phanteks",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A4RES2303280LL2R2D9.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 174,
+    "name": "be quiet! Dark Base 802",
+    "category": "Caixas",
+    "brand": "be quiet!",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A68VS201113y09Tq.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 176,
+    "name": "SSUPD Meshroom S",
+    "category": "Caixas",
+    "brand": "SSUPD",
+    "gallery": [
+      "https://ssupd.co/cdn/shop/files/BK-5_13c43442-3cb4-435e-9f85-2675974facc3.png?v=1684638001"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 178,
+    "name": "Corsair iCUE H170i Elite LCD XT",
+    "category": "Refrigeração",
+    "brand": "Corsair",
+    "gallery": [
+      "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Liquid-Cooling/base-elite-lcd-xt-cooler-config/Gallery/mandatory-configuration/Cooling_Radiator_Size_420mm/H170i_ELITE_LCD_XT_01.webp"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 179,
+    "name": "Noctua NH-D15 G2",
+    "category": "Refrigeração",
+    "brand": "Noctua",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/AADYS2407010JFQIKFA.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 180,
+    "name": "Arctic Liquid Freezer III 360 A-RGB",
+    "category": "Refrigeração",
+    "brand": "Arctic",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A623D2412180WPFL385.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 181,
+    "name": "Deepcool Assassin IV",
+    "category": "Refrigeração",
+    "brand": "Deepcool",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/35-856-208-V01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 182,
+    "name": "EK-Nucleus AIO CR360 Dark",
+    "category": "Refrigeração",
+    "brand": "EKWB",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A2W0S2410090A4OTIF0.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 184,
+    "name": "Lian Li Galahad II Trinity 360",
+    "category": "Refrigeração",
+    "brand": "Lian Li",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/AFSTS230713zSCOJ.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 185,
+    "name": "Samsung Odyssey OLED G8 32\\",
+    "category": "Monitores",
+    "brand": "Samsung",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-027-327-23.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 186,
+    "name": "LG UltraGear 27GS95QE 27\\",
+    "category": "Monitores",
+    "brand": "LG",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-026-405-08.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 187,
+    "name": "ASUS ROG Swift PG27AQN 27\\",
+    "category": "Monitores",
+    "brand": "ASUS",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-281-235-29.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 188,
+    "name": "Dell Alienware AW3225QF 32\\",
+    "category": "Monitores",
+    "brand": "Dell",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A8X5S2407090QW0JX8A.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 189,
+    "name": "BenQ MOBIUZ EX3210U 32\\",
+    "category": "Monitores",
+    "brand": "BenQ",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-014-880-10.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 190,
+    "name": "Gigabyte M27U 27\\",
+    "category": "Monitores",
+    "brand": "Gigabyte",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-012-061-10.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 191,
+    "name": "MSI MAG 341CQP 34\\",
+    "category": "Monitores",
+    "brand": "MSI",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/24-475-350-11.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 192,
+    "name": "AOC AGON AG275QXL 27\\",
+    "category": "Monitores",
+    "brand": "AOC",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/3D4-001B-00063-07.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 193,
+    "name": "Wooting 80HE",
+    "category": "Teclados e Ratos",
+    "brand": "Wooting",
+    "gallery": [
+      "https://c1.neweggimages.com/ProductImageOriginal/AZB2S2507310G9Q4VFD.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 196,
+    "name": "Keychron Q1 HE",
+    "category": "Teclados e Ratos",
+    "brand": "Keychron",
+    "gallery": [
+      "https://c1.neweggimages.com/ProductImageCompressAll60/23-937-168-01.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 197,
+    "name": "Pulsar X2V2 Mini Wireless",
+    "category": "Teclados e Ratos",
+    "brand": "Pulsar",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/BTD4D24050514RTS408.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 198,
+    "name": "SteelSeries Apex Pro TKL 2024",
+    "category": "Teclados e Ratos",
+    "brand": "SteelSeries",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/23-239-062-04.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 199,
+    "name": "Endgame Gear OP1we",
+    "category": "Teclados e Ratos",
+    "brand": "Endgame Gear",
+    "gallery": [
+      "https://c1.neweggimages.com/ProductImage/BT8WS24030506GDP869.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 200,
+    "name": "Corsair K70 MAX",
+    "category": "Teclados e Ratos",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/23-816-165-05.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 202,
+    "name": "Audeze Maxwell Wireless",
+    "category": "Headsets e Áudio",
+    "brand": "Audeze",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V788PC0.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 204,
+    "name": "Razer BlackShark V2 Pro 2024",
+    "category": "Headsets e Áudio",
+    "brand": "Razer",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A17PD2404010V71LCEF.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 205,
+    "name": "Beyerdynamic DT 900 PRO X",
+    "category": "Headsets e Áudio",
+    "brand": "Beyerdynamic",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/26-380-048-V05.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 206,
+    "name": "Corsair Virtuoso Pro",
+    "category": "Headsets e Áudio",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/26-816-215-08.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 209,
+    "name": "Secretlab Titan Evo 2024",
+    "category": "Cadeiras Gaming",
+    "brand": "Secretlab",
+    "gallery": [
+      "https://secretlab.co/cdn/shop/products/SL_TitanEvoR_PU_Stealth0001_S_grande.jpg?v=1626023686"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 213,
+    "name": "Corsair TC200 Fabric",
+    "category": "Cadeiras Gaming",
+    "brand": "Corsair",
+    "gallery": [
+      "https://c1.neweggimages.com/productimage/nb640/A6ZPD2309280ZGX0D8A.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 214,
+    "name": "Steelcase Karman",
+    "category": "Cadeiras Gaming",
+    "brand": "Steelcase",
+    "gallery": [
+      "https://images.steelcase.com/image/upload/v1690833473/21-0163191-4-scaled.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 215,
+    "name": "IKEA MATCHSPEL",
+    "category": "Cadeiras Gaming",
+    "brand": "IKEA",
+    "gallery": [
+      "https://www.ikea.com/us/en/images/products/matchspel-gaming-chair-bomstad-black__0985645_pe816716_s5.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 216,
+    "name": "AndaSeat Kaiser 4",
+    "category": "Cadeiras Gaming",
+    "brand": "AndaSeat",
+    "gallery": [
+      "https://www.andaseat.com/cdn/shop/files/AndaSeat-new-kaiser-4-series-gaming-chair-elegant-black-45.webp?v=1764403213"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 220,
+    "name": "Redragon Shark M688 RGB",
+    "category": "Teclados e Ratos",
+    "brand": "Redragon",
+    "gallery": [
+      "https://redragonadria.com/wp-content/uploads/2021/03/M688-1.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 221,
+    "name": "Attack Shark R1 Pro Wireless",
+    "category": "Teclados e Ratos",
+    "brand": "Attack Shark",
+    "gallery": [
+      "https://attackshark.com/cdn/shop/files/R1_8747f811-5ede-47a6-8b88-4b992277d196.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 222,
+    "name": "HAVIT MS1006 Gaming Mouse",
+    "category": "Teclados e Ratos",
+    "brand": "HAVIT",
+    "gallery": [
+      "https://havitsmart.com/cdn/shop/files/havit-gaming-mouse-ms1006havit-business-762678.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 223,
+    "name": "Redragon Cobra M711 RGB",
+    "category": "Teclados e Ratos",
+    "brand": "Redragon",
+    "gallery": [
+      "https://redragonshop.com/cdn/shop/files/M711wiredgamingmouse.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 224,
+    "name": "Attack Shark X3 Wireless",
+    "category": "Teclados e Ratos",
+    "brand": "Attack Shark",
+    "gallery": [
+      "https://attackshark.com/cdn/shop/files/attackshark_x3_gaming_mouse_0055.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 230,
+    "name": "Large RGB Gaming Mouse Pad 90x40cm",
+    "category": "Mouse Pads",
+    "brand": "Genérico",
+    "gallery": [
+      "https://tiltednation.com/cdn/shop/products/tnfireblackrgbmousepad.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 231,
+    "name": "Redragon P027 RGB Mouse Pad XL",
+    "category": "Mouse Pads",
+    "brand": "Redragon",
+    "gallery": [
+      "https://redragonadria.com/wp-content/uploads/2021/03/P027RGB-1.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 232,
+    "name": "Black XXL Mouse Pad 90x40cm",
+    "category": "Mouse Pads",
+    "brand": "Genérico",
+    "gallery": [
+      "https://ultimatecustommousepads.com/cdn/shop/files/xl-large-all-black-blackout-gaming-mousepad-deskmat-5.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 240,
+    "name": "Aula F75 Mechanical Keyboard 75%",
+    "category": "Teclados e Ratos",
+    "brand": "Aula",
+    "gallery": [
+      "https://cdn.shopify.com/s/files/1/0280/3931/5529/files/1_9d9bc2f1-6106-4a74-9396-9086cd5edffc.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 241,
+    "name": "Royal Kludge RK84 Wireless",
+    "category": "Teclados e Ratos",
+    "brand": "Royal Kludge",
+    "gallery": [
+      "https://rkgamingstore.com/cdn/shop/files/RK8475_WirelessMechanicalKeyboard_2_grande.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 242,
+    "name": "Redragon K630 Dragonborn 60%",
+    "category": "Teclados e Ratos",
+    "brand": "Redragon",
+    "gallery": [
+      "https://redragonshop.com/cdn/shop/products/redragon60keyboard.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 243,
+    "name": "VGN Neon 75 HE Magnetic",
+    "category": "Teclados e Ratos",
+    "brand": "VGN",
+    "gallery": [
+      "https://vgnlab.com/cdn/shop/files/VGN-Neon-he-Elven-White.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 250,
+    "name": "Redragon H510 Zeus Pro 7.1",
+    "category": "Headsets e Áudio",
+    "brand": "Redragon",
+    "gallery": [
+      "https://redragonshop.com/cdn/shop/products/h510.png"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 251,
+    "name": "HAVIT H2002d Gaming Headset",
+    "category": "Headsets e Áudio",
+    "brand": "HAVIT",
+    "gallery": [
+      "https://www.compume.jo/cdn/shop/files/Havit-H2002D-BO-_3_-1200x1200-1200x1200.jpg"
+    ],
+    "gallery_count": 1
+  },
+  {
+    "id": 252,
+    "name": "Onikuma K5 Pro Gaming Headset",
+    "category": "Headsets e Áudio",
+    "brand": "Onikuma",
+    "gallery": [
+      "https://gamerheadphone.myshopify.com/cdn/shop/products/product-image-782156677.jpg"
+    ],
+    "gallery_count": 1
+  }
+]

@@ -1,0 +1,274 @@
+{
+  "generated_at": "2026-04-17T00:00:00Z",
+  "slice": "cases+cooling",
+  "product_count": 28,
+  "summary": {
+    "keep": 26,
+    "price_drift": 2,
+    "obsolete": 0,
+    "missing": 0
+  },
+  "products": [
+    {
+      "id": 8,
+      "name": "Lian Li Lancool 216 RGB White",
+      "category": "Caixas",
+      "catalog_price_eur": 95.00,
+      "verdict": "KEEP",
+      "market_price_eur": 99.00,
+      "notes": "Current Lian Li airflow case, 2x160mm PWM. Widely available PT (PcComponentes, KuantoKusta). Price aligned."
+    },
+    {
+      "id": 19,
+      "name": "Fractal Design Torrent RGB Black",
+      "category": "Caixas",
+      "catalog_price_eur": 199.00,
+      "verdict": "KEEP",
+      "market_price_eur": 210.00,
+      "notes": "Airflow flagship Fractal, 2x180mm + 3x140mm. inStock:false no catálogo - rever. Handles RTX 5090 easily."
+    },
+    {
+      "id": 70,
+      "name": "NZXT H7 Flow RGB",
+      "category": "Caixas",
+      "catalog_price_eur": 129.00,
+      "verdict": "KEEP",
+      "market_price_eur": 139.00,
+      "notes": "Current NZXT SKU 2024/2025 refresh, airflow mesh frontal, 3x RGB incl."
+    },
+    {
+      "id": 71,
+      "name": "Corsair 4000D Airflow",
+      "category": "Caixas",
+      "catalog_price_eur": 89.00,
+      "verdict": "KEEP",
+      "market_price_eur": 95.00,
+      "notes": "Clássico best-seller. Disponível Worten, PcComponentes, Chip7, GlobalData. Preço correto."
+    },
+    {
+      "id": 72,
+      "name": "Phanteks Eclipse G360A",
+      "category": "Caixas",
+      "catalog_price_eur": 79.00,
+      "verdict": "KEEP",
+      "market_price_eur": 85.00,
+      "notes": "Budget airflow sólido, 3x120 D-RGB. Modelo atual Phanteks."
+    },
+    {
+      "id": 73,
+      "name": "be quiet! Pure Base 500DX",
+      "category": "Caixas",
+      "catalog_price_eur": 109.00,
+      "verdict": "KEEP",
+      "market_price_eur": 115.00,
+      "notes": "Silent+airflow. Modelo maduro mas ainda vendido amplamente em 2026."
+    },
+    {
+      "id": 74,
+      "name": "Cooler Master HAF 700 EVO",
+      "category": "Caixas",
+      "catalog_price_eur": 399.00,
+      "verdict": "KEEP",
+      "market_price_eur": 420.00,
+      "notes": "Full-tower enthusiast com LCD. Nicho mas procurado. inStock:false - considerar restock ou remover."
+    },
+    {
+      "id": 75,
+      "name": "HYTE Y60",
+      "category": "Caixas",
+      "catalog_price_eur": 189.00,
+      "verdict": "KEEP",
+      "market_price_eur": 199.00,
+      "notes": "Showcase panorâmica. HYTE tem distribuição limitada em PT mas disponível via Amazon.es/KuantoKusta."
+    },
+    {
+      "id": 76,
+      "name": "Corsair 5000D Airflow",
+      "category": "Caixas",
+      "catalog_price_eur": 149.00,
+      "verdict": "KEEP",
+      "market_price_eur": 159.00,
+      "notes": "Big brother do 4000D. Modelo atual, amplamente disponível PT."
+    },
+    {
+      "id": 169,
+      "name": "Lian Li O11 Dynamic EVO 2",
+      "category": "Caixas",
+      "catalog_price_eur": 179.00,
+      "verdict": "KEEP",
+      "market_price_eur": 189.00,
+      "notes": "EVO 2 é o refresh atual da icónica O11. Confirmado disponível PT via KuantoKusta."
+    },
+    {
+      "id": 170,
+      "name": "Fractal Design North",
+      "category": "Caixas",
+      "catalog_price_eur": 139.00,
+      "verdict": "KEEP",
+      "market_price_eur": 145.00,
+      "notes": "Design-award case (nogueira+mesh). Modelo corrente Fractal 2024-2026."
+    },
+    {
+      "id": 172,
+      "name": "Corsair 6500X",
+      "category": "Caixas",
+      "catalog_price_eur": 219.00,
+      "verdict": "KEEP",
+      "market_price_eur": 229.00,
+      "notes": "Dual-chamber novo da Corsair (2024 release). Preço alinhado."
+    },
+    {
+      "id": 173,
+      "name": "Phanteks NV7",
+      "category": "Caixas",
+      "catalog_price_eur": 159.00,
+      "verdict": "KEEP",
+      "market_price_eur": 169.00,
+      "notes": "Full-tower Phanteks, suporta GPU 480mm - ideal para RTX 5090."
+    },
+    {
+      "id": 174,
+      "name": "be quiet! Dark Base 802",
+      "category": "Caixas",
+      "catalog_price_eur": 189.00,
+      "verdict": "KEEP",
+      "market_price_eur": 199.00,
+      "notes": "Modular mesh/sólida. Silent Wings 4. Modelo atual be quiet!"
+    },
+    {
+      "id": 176,
+      "name": "SSUPD Meshroom S",
+      "category": "Caixas",
+      "catalog_price_eur": 129.00,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 159.00,
+      "notes": "SFF 14.7L nicho, SSUPD tem supply limitado EU - preço real PT/EU ~150-170€. Subir para 149€ ou marcar como import."
+    },
+    {
+      "id": 10,
+      "name": "NZXT Kraken Elite 360 RGB",
+      "category": "Refrigeração",
+      "catalog_price_eur": 259.99,
+      "verdict": "KEEP",
+      "market_price_eur": 269.00,
+      "notes": "AIO premium com LCD circular. Modelo atual NZXT, handles Ryzen 9 9950X3D/Core Ultra 9."
+    },
+    {
+      "id": 20,
+      "name": "be quiet! Dark Rock Pro 5",
+      "category": "Refrigeração",
+      "catalog_price_eur": 94.99,
+      "verdict": "KEEP",
+      "market_price_eur": 99.00,
+      "notes": "270W TDP air cooler. Suficiente para Ryzen 9 9950X3D (120W) e i9/Ultra 9 em config padrão."
+    },
+    {
+      "id": 78,
+      "name": "Corsair iCUE H150i Elite LCD XT",
+      "category": "Refrigeração",
+      "catalog_price_eur": 239.99,
+      "verdict": "KEEP",
+      "market_price_eur": 249.00,
+      "notes": "360 AIO LCD premium. Modelo atual Corsair."
+    },
+    {
+      "id": 80,
+      "name": "DeepCool AK620 Digital",
+      "category": "Refrigeração",
+      "catalog_price_eur": 74.99,
+      "verdict": "KEEP",
+      "market_price_eur": 79.00,
+      "notes": "Dual tower 260W TDP com ecrã digital. Modelo corrente DeepCool."
+    },
+    {
+      "id": 82,
+      "name": "Corsair A115 Air Cooler",
+      "category": "Refrigeração",
+      "catalog_price_eur": 84.99,
+      "verdict": "KEEP",
+      "market_price_eur": 89.99,
+      "notes": "Air cooler 2024 da Corsair, 270W. Rivaliza AIO 240."
+    },
+    {
+      "id": 83,
+      "name": "EK-AIO 280 D-RGB",
+      "category": "Refrigeração",
+      "catalog_price_eur": 129.99,
+      "verdict": "KEEP",
+      "market_price_eur": 139.00,
+      "notes": "EK brand premium, 280mm radiator. Nicho mas credível."
+    },
+    {
+      "id": 84,
+      "name": "Arctic Freezer 36 A-RGB",
+      "category": "Refrigeração",
+      "catalog_price_eur": 44.99,
+      "verdict": "KEEP",
+      "market_price_eur": 45.00,
+      "notes": "Best-seller budget 2024/2026. Preço correto."
+    },
+    {
+      "id": 85,
+      "name": "Thermalright Peerless Assassin 120 SE",
+      "category": "Refrigeração",
+      "catalog_price_eur": 39.99,
+      "verdict": "KEEP",
+      "market_price_eur": 42.00,
+      "notes": "Hidden gem icónico. Disponível PT via Amazon/KuantoKusta. Preço correto."
+    },
+    {
+      "id": 178,
+      "name": "Corsair iCUE H170i Elite LCD XT",
+      "category": "Refrigeração",
+      "catalog_price_eur": 349.99,
+      "verdict": "KEEP",
+      "market_price_eur": 359.00,
+      "notes": "AIO 420mm top-tier com IPS LCD. Para builds extreme com Ultra 9 / 9950X3D."
+    },
+    {
+      "id": 179,
+      "name": "Noctua NH-D15 G2",
+      "category": "Refrigeração",
+      "catalog_price_eur": 129.99,
+      "verdict": "KEEP",
+      "market_price_eur": 135.00,
+      "notes": "Rei do air cooling, lançado 2024. Confirmado disponível PcComponentes/GlobalData/KuantoKusta PT."
+    },
+    {
+      "id": 180,
+      "name": "Arctic Liquid Freezer III 360 A-RGB",
+      "category": "Refrigeração",
+      "catalog_price_eur": 109.99,
+      "verdict": "KEEP",
+      "market_price_eur": 115.00,
+      "notes": "Value king AIO. Amplamente disponível PT (Chip7, GlobalData, Fnac, PcComponentes, KuantoKusta)."
+    },
+    {
+      "id": 181,
+      "name": "Deepcool Assassin IV",
+      "category": "Refrigeração",
+      "catalog_price_eur": 94.99,
+      "verdict": "KEEP",
+      "market_price_eur": 99.00,
+      "notes": "Dual-tower premium 280W TDP. Modelo atual DeepCool."
+    },
+    {
+      "id": 182,
+      "name": "EK-Nucleus AIO CR360 Dark",
+      "category": "Refrigeração",
+      "catalog_price_eur": 189.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 160.00,
+      "notes": "EK Nucleus CR360 Dark preço market atual ~150-170€. Catalog ~20% alto. Baixar para 169.99€ para competitividade."
+    },
+    {
+      "id": 184,
+      "name": "Lian Li Galahad II Trinity 360",
+      "category": "Refrigeração",
+      "catalog_price_eur": 169.99,
+      "verdict": "KEEP",
+      "market_price_eur": 179.00,
+      "notes": "Asetek 8ª gen pump. Modelo corrente Lian Li 2024/2026."
+    }
+  ]
+}

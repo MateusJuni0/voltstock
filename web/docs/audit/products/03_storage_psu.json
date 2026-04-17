@@ -1,0 +1,291 @@
+{
+  "generated_at": "2026-04-17T00:00:00Z",
+  "slice": "storage+psu",
+  "product_count": 32,
+  "summary": {
+    "keep": 16,
+    "price_drift": 11,
+    "obsolete": 3,
+    "missing": 2
+  },
+  "notes": "2025-2026 NAND/DRAM shortage drove SSD prices up 40-80% vs 2024. Many catalog prices reflect pre-shortage levels and are now well BELOW PT market (risk: negative margin). SATA SSDs remain sold but are declining in demand vs NVMe for system drives — retained as archive/secondary storage. ATX 3.1 is current PSU standard; ATX 3.0 units still sold but should be flagged for refresh within 12 months. EVGA PSU line is wind-down — SuperNOVA G7 still listed at some retailers but no new stock from EVGA since late 2024.",
+  "products": [
+    {
+      "id": 3,
+      "name": "Samsung 990 Pro 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 189.99,
+      "verdict": "KEEP",
+      "market_price_eur": 180.00,
+      "notes": "Top-tier Gen4 NVMe, widely available PT (KuantoKusta 19 stores, Worten, Radio Popular, PcComponentes, CHIP7). Catalog within ±10% of PT market (€160-€200 range)."
+    },
+    {
+      "id": 17,
+      "name": "WD Black SN850X 4TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 389.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 480.00,
+      "notes": "4TB Gen4 premium tier. PT market €450-€520 post-NAND-shortage. Catalog ~20% below market — negative margin risk. Raise to €449."
+    },
+    {
+      "id": 53,
+      "name": "WD Blue SN580 1TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 69.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 89.00,
+      "notes": "Mainstream Gen4 1TB. PT market €80-€95 currently. Catalog ~22% below — raise to €84.99."
+    },
+    {
+      "id": 54,
+      "name": "Kingston NV2 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 99.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 135.00,
+      "notes": "Budget DRAM-less Gen4. PT market €125-€145. Catalog ~26% below. NV2 still current (not EOL). Raise to €129.99."
+    },
+    {
+      "id": 55,
+      "name": "Crucial P3 Plus 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 109.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 140.00,
+      "notes": "Entry Gen4 DRAM-less. PT market €130-€150 post-shortage. Catalog ~21% below."
+    },
+    {
+      "id": 57,
+      "name": "Seagate FireCuda 530 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 199.99,
+      "verdict": "KEEP",
+      "market_price_eur": 210.00,
+      "notes": "Durable Gen4 with heatsink, PS5 popular. Within ±10% of PT market (€195-€225). Note: FireCuda 540 (Gen5) is newer sibling but 530 still widely sold."
+    },
+    {
+      "id": 58,
+      "name": "Crucial T500 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 169.99,
+      "verdict": "KEEP",
+      "market_price_eur": 180.00,
+      "notes": "Current-gen Crucial flagship Gen4. PT market €170-€195 at PcComponentes/Globaldata. Within ±10%."
+    },
+    {
+      "id": 59,
+      "name": "SK Hynix Platinum P41 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 179.99,
+      "verdict": "KEEP",
+      "market_price_eur": 185.00,
+      "notes": "Still current (P51 Gen5 is successor but P41 sold alongside). PT availability via Amazon.es cross-border + some PT retailers. Within ±5%."
+    },
+    {
+      "id": 60,
+      "name": "Kingston KC3000 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "catalog_price_eur": 159.99,
+      "verdict": "KEEP",
+      "market_price_eur": 170.00,
+      "notes": "Flagship Kingston Gen4. PT market €155-€185. Within ±10%."
+    },
+    {
+      "id": 153,
+      "name": "Samsung 990 EVO Plus 2TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 199.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 260.00,
+      "notes": "Gen4 x4 / Gen5 x2 hybrid. Global price surged to ~$325 (€300) in Q1 2026 per Pangoly/Gizmodo. PT market €240-€290. Catalog ~23% below — raise to €249.99. Description's '10.000 MB/s PCIe 5.0' is INCORRECT — real spec is 7.250 MB/s Gen4. Fix description."
+    },
+    {
+      "id": 154,
+      "name": "WD Black SN850X 2TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 169.99,
+      "verdict": "KEEP",
+      "market_price_eur": 175.00,
+      "notes": "Top PS5/gaming Gen4 NVMe. PT market €165-€195. Within ±5%. (Duplicate of ID 17's family — consider consolidating SKUs)."
+    },
+    {
+      "id": 155,
+      "name": "Crucial T700 2TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 249.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 520.00,
+      "notes": "CRITICAL: PCIe Gen5 flagship. PT market €472-€598 per KuantoKusta (6 stores). Catalog is HALF of market price — severe loss-making. T700 (Gen5) is premium tier, not mid-range. Raise to €499.99 or consider replacing with T705 (newer Gen5)."
+    },
+    {
+      "id": 156,
+      "name": "Seagate FireCuda 540 2TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 229.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 320.00,
+      "notes": "Gen5 NVMe. PT market €290-€360. Catalog ~28% below. Raise to €299.99."
+    },
+    {
+      "id": 157,
+      "name": "Kingston KC3000 4TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 339.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 430.00,
+      "notes": "4TB Gen4. PT market €400-€460. Catalog ~21% below."
+    },
+    {
+      "id": 158,
+      "name": "Samsung 870 EVO 4TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 279.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 475.00,
+      "notes": "SATA III 4TB. Radio Popular lists at €474.99 (verified). SATA SSDs technically 'legacy' but remain sold as secondary/archive storage (NOT obsolete — still manufactured and demanded). Catalog is ~41% below market — severe underpricing. Raise to €449 or drop SKU if margin can't be achieved."
+    },
+    {
+      "id": 159,
+      "name": "Corsair MP700 PRO 2TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 269.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 380.00,
+      "notes": "Gen5 flagship with heatsink. PT market €350-€420. Catalog ~29% below. Raise to €349.99."
+    },
+    {
+      "id": 160,
+      "name": "Sabrent Rocket 5 2TB",
+      "category": "Armazenamento",
+      "catalog_price_eur": 209.99,
+      "verdict": "MISSING_FROM_MARKET",
+      "notes": "Sabrent brand has near-zero distribution in PT. Only via Ubuy cross-border (€350+ with fees). KuantoKusta shows no listings. Either drop SKU or reprice at €349 with import-fee disclaimer. Also: Amazon US current price $499 (~€460) — catalog €210 is less than half."
+    },
+    {
+      "id": 62,
+      "name": "Seasonic Focus GX-750 80+ Gold",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 109.99,
+      "verdict": "KEEP",
+      "market_price_eur": 115.00,
+      "notes": "Classic Seasonic 750W ATX 2.x still sold. KuantoKusta PT listings €105-€125. Within ±10%. Note: V3 ATX 3.1 variant (SSR-750FX3) is the current SKU — if stocking new, prefer V3."
+    },
+    {
+      "id": 63,
+      "name": "be quiet! Pure Power 12 M 850W",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 129.99,
+      "verdict": "KEEP",
+      "market_price_eur": 135.00,
+      "notes": "Current gen, ATX 3.0. PT market €125-€145. Within ±5%."
+    },
+    {
+      "id": 64,
+      "name": "EVGA SuperNOVA 1000 G7 80+ Gold",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 179.99,
+      "verdict": "OBSOLETE",
+      "replacement_suggestion": "Corsair RM1000x (2024) ATX 3.1 or Seasonic Focus GX-1000 ATX 3.1",
+      "notes": "EVGA exited consumer GPU in 2022 and has been winding down PSU line. G7 is ATX 2.x (no native 12VHPWR/12V-2x6), not ATX 3.1. Minimal new stock in PT. Replace with current-gen ATX 3.1 unit for RTX 5000/AMD RX 9000 compatibility."
+    },
+    {
+      "id": 65,
+      "name": "Corsair SF750 80+ Platinum SFX",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 169.99,
+      "verdict": "KEEP",
+      "market_price_eur": 185.00,
+      "notes": "SFX gold standard for ITX builds. PT market €170-€200. Still current. Within ±10%. (inStock:false in catalog — verify supplier)."
+    },
+    {
+      "id": 66,
+      "name": "MSI MEG Ai1300P PCIE5 80+ Platinum",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 309.99,
+      "verdict": "KEEP",
+      "market_price_eur": 320.00,
+      "notes": "ATX 3.0 1300W Platinum. PT market €295-€340. Within ±5%. Duplicate of ID 166 (same model, different catalog price) — consolidate SKUs."
+    },
+    {
+      "id": 68,
+      "name": "NZXT C850 80+ Gold (2024)",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 119.99,
+      "verdict": "KEEP",
+      "market_price_eur": 125.00,
+      "notes": "Current gen 2024 refresh with ATX 3.0 + 12VHPWR. PT market €115-€140. Within ±5%."
+    },
+    {
+      "id": 69,
+      "name": "Thermaltake Toughpower GF3 850W",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 119.99,
+      "verdict": "KEEP",
+      "market_price_eur": 130.00,
+      "notes": "ATX 3.0 850W Gold. PT market €115-€140. Within ±10%."
+    },
+    {
+      "id": 161,
+      "name": "Corsair HX1500i",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 419.99,
+      "verdict": "KEEP",
+      "market_price_eur": 440.00,
+      "notes": "Flagship 1500W Platinum digital PSU. PT market €410-€470. Within ±10%."
+    },
+    {
+      "id": 162,
+      "name": "Seasonic PRIME TX-1000",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 369.99,
+      "verdict": "KEEP",
+      "market_price_eur": 380.00,
+      "notes": "Titanium 1000W flagship. PT market €360-€410. Within ±5%. Premium halo SKU."
+    },
+    {
+      "id": 163,
+      "name": "be quiet! Dark Power 13 850W",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 239.99,
+      "verdict": "KEEP",
+      "market_price_eur": 255.00,
+      "notes": "Titanium ATX 3.0. PT market €240-€280. Within ±10%."
+    },
+    {
+      "id": 165,
+      "name": "Corsair RM850x 2024",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 149.99,
+      "verdict": "KEEP",
+      "market_price_eur": 160.00,
+      "notes": "ATX 3.1 + PCIe 5.1, best-seller. PT market €145-€175. Within ±10%. Hero SKU — consider pushing as featured product."
+    },
+    {
+      "id": 166,
+      "name": "MSI MEG Ai1300P PCIE5",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 349.99,
+      "verdict": "KEEP",
+      "market_price_eur": 340.00,
+      "notes": "ATX 3.1 version (vs ID 66 ATX 3.0). Within ±5%. Consolidate with ID 66 (same product family) — dedupe SKU."
+    },
+    {
+      "id": 167,
+      "name": "Thermaltake Toughpower GF3 750W",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 119.99,
+      "verdict": "KEEP",
+      "market_price_eur": 115.00,
+      "notes": "ATX 3.0 750W Gold. PT market €105-€130. Within ±5%."
+    },
+    {
+      "id": 168,
+      "name": "Fractal Design Ion+ 2 860W",
+      "category": "Fontes de Alimentação",
+      "catalog_price_eur": 159.99,
+      "verdict": "MISSING_FROM_MARKET",
+      "notes": "Ion+ 2 Platinum is being phased out — Fractal's current lineup is Ion Gold 2024. Limited PT availability. Listed on Globaldata/PCDiga only sporadically. Consider replacing with Fractal Ion Gold 2024 or dropping SKU."
+    }
+  ]
+}

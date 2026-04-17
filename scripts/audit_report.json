@@ -1,0 +1,2464 @@
+{
+  "total": 202,
+  "with_issues": 202,
+  "clean": 0,
+  "summary": {
+    "image_problems": 16,
+    "gallery_under_3": 202,
+    "features_under_3": 0,
+    "desc_issues": 11
+  },
+  "issues": [
+    {
+      "id": 1,
+      "name": "MSI GeForce RTX 5090 SUPRIM X 32G",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 221,
+      "visible_pct": 65.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 14,
+      "name": "ASUS ROG Strix RTX 4090 OC 24GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 218,
+      "visible_pct": 58.9,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 21,
+      "name": "NVIDIA GeForce RTX 4070 Ti Super 16GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 197,
+      "visible_pct": 48.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 22,
+      "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (9.0% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 91,
+      "visible_pct": 9.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 23,
+      "name": "NVIDIA GeForce RTX 4060 8GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (9.0% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 91,
+      "visible_pct": 9.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 24,
+      "name": "AMD Radeon RX 7900 XTX 24GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 167,
+      "visible_pct": 35.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 25,
+      "name": "AMD Radeon RX 7800 XT 16GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 198,
+      "visible_pct": 38.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 26,
+      "name": "AMD Radeon RX 7600 8GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 271,
+      "visible_pct": 43.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 27,
+      "name": "NVIDIA GeForce RTX 4070 Super 12GB",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 202,
+      "visible_pct": 65.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 2,
+      "name": "AMD Ryzen 7 7800X3D",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 254,
+      "visible_pct": 69.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 13,
+      "name": "Intel Core i9-14900K",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 217,
+      "visible_pct": 77.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 29,
+      "name": "AMD Ryzen 5 7600X",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 206,
+      "visible_pct": 51.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 30,
+      "name": "AMD Ryzen 9 7950X3D",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 260,
+      "visible_pct": 66.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 31,
+      "name": "Intel Core i5-14600K",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 217,
+      "visible_pct": 77.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 32,
+      "name": "Intel Core i7-14700K",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 292,
+      "visible_pct": 32.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 35,
+      "name": "AMD Ryzen 9 7900X",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 104,
+      "visible_pct": 58.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 9,
+      "name": "MSI MAG B650 Tomahawk WiFi",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 432,
+      "visible_pct": 72.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 15,
+      "name": "ASUS ROG Maximus Z790 Hero",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 436,
+      "visible_pct": 44.0,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 37,
+      "name": "MSI MPG B760M Edge WiFi",
+      "category": "Motherboards",
+      "issues": [
+        "IMG: OVER-CROPPED (only 2.5% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 53,
+      "visible_pct": 2.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 38,
+      "name": "ASUS TUF Gaming B650-PLUS WiFi",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 860,
+      "visible_pct": 61.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 41,
+      "name": "ASUS ROG Strix X670E-E Gaming WiFi",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 417,
+      "visible_pct": 49.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 42,
+      "name": "MSI MEG Z790 ACE",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 338,
+      "visible_pct": 73.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 43,
+      "name": "Gigabyte X670E Aorus Master",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 358,
+      "visible_pct": 77.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 44,
+      "name": "ASRock B760M Pro RS WiFi",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 372,
+      "visible_pct": 63.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 4,
+      "name": "Corsair Vengeance DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 177,
+      "visible_pct": 20.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 16,
+      "name": "G.Skill Trident Z5 RGB DDR5 64GB",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 272,
+      "visible_pct": 35.7,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 45,
+      "name": "Kingston Fury Beast DDR5 32GB 5600MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 167,
+      "visible_pct": 55.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 46,
+      "name": "Corsair Dominator Platinum RGB DDR5 32GB 6200MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 435,
+      "visible_pct": 50.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 47,
+      "name": "Kingston Fury Renegade DDR5 32GB 6400MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 148,
+      "visible_pct": 19.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 48,
+      "name": "TeamGroup T-Force Delta RGB DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 651,
+      "visible_pct": 42.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 49,
+      "name": "Corsair Vengeance DDR5 16GB 5600MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 255,
+      "visible_pct": 24.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 50,
+      "name": "G.Skill Ripjaws S5 DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 569,
+      "visible_pct": 47.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 52,
+      "name": "Crucial DDR5 32GB 4800MHz",
+      "category": "Memória RAM",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (10.2% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 21,
+      "visible_pct": 10.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 3,
+      "name": "Samsung 990 Pro 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 309,
+      "visible_pct": 39.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 17,
+      "name": "WD Black SN850X 4TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 292,
+      "visible_pct": 39.8,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 53,
+      "name": "WD Blue SN580 1TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 171,
+      "visible_pct": 71.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 54,
+      "name": "Kingston NV2 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 400,
+      "visible_pct": 27.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 55,
+      "name": "Crucial P3 Plus 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 197,
+      "visible_pct": 85.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 57,
+      "name": "Seagate FireCuda 530 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 108,
+      "visible_pct": 86.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 58,
+      "name": "Crucial T500 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 171,
+      "visible_pct": 71.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 59,
+      "name": "SK Hynix Platinum P41 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 400,
+      "visible_pct": 27.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 60,
+      "name": "Kingston KC3000 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "issues": [
+        "IMG: OVER-CROPPED (only 0.1% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 40,
+      "visible_pct": 0.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 62,
+      "name": "Seasonic Focus GX-750 80+ Gold",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 405,
+      "visible_pct": 56.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 63,
+      "name": "be quiet! Pure Power 12 M 850W",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 463,
+      "visible_pct": 27.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 64,
+      "name": "EVGA SuperNOVA 1000 G7 80+ Gold",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 307,
+      "visible_pct": 50.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 65,
+      "name": "Corsair SF750 80+ Platinum SFX",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 397,
+      "visible_pct": 26.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 66,
+      "name": "MSI MEG Ai1300P PCIE5 80+ Platinum",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 272,
+      "visible_pct": 43.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 68,
+      "name": "NZXT C850 80+ Gold (2024)",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 567,
+      "visible_pct": 52.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 69,
+      "name": "Thermaltake Toughpower GF3 850W",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 462,
+      "visible_pct": 64.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 8,
+      "name": "Lian Li Lancool 216 RGB White",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 689,
+      "visible_pct": 77.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 19,
+      "name": "Fractal Design Torrent RGB Black",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 212,
+      "visible_pct": 57.8,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 70,
+      "name": "NZXT H7 Flow RGB",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 845,
+      "visible_pct": 77.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 71,
+      "name": "Corsair 4000D Airflow",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 502,
+      "visible_pct": 67.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 72,
+      "name": "Phanteks Eclipse G360A",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 659,
+      "visible_pct": 83.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 73,
+      "name": "be quiet! Pure Base 500DX",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 211,
+      "visible_pct": 66.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 74,
+      "name": "Cooler Master HAF 700 EVO",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 630,
+      "visible_pct": 76.6,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 75,
+      "name": "HYTE Y60",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 191,
+      "visible_pct": 31.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 76,
+      "name": "Corsair 5000D Airflow",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 248,
+      "visible_pct": 72.2,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 10,
+      "name": "NZXT Kraken Elite 360 RGB",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 302,
+      "visible_pct": 21.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 20,
+      "name": "be quiet! Dark Rock Pro 5",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 539,
+      "visible_pct": 48.6,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 78,
+      "name": "Corsair iCUE H150i Elite LCD XT",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (34 chars)"
+      ],
+      "img_size_kb": 211,
+      "visible_pct": 66.8,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 80,
+      "name": "DeepCool AK620 Digital",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 239,
+      "visible_pct": 38.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 82,
+      "name": "Corsair A115 Air Cooler",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 197,
+      "visible_pct": 85.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 83,
+      "name": "EK-AIO 280 D-RGB",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 253,
+      "visible_pct": 79.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 84,
+      "name": "Arctic Freezer 36 A-RGB",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 260,
+      "visible_pct": 48.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 85,
+      "name": "Thermalright Peerless Assassin 120 SE",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 502,
+      "visible_pct": 67.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 5,
+      "name": "ASUS ROG Swift OLED PG27AQDM",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 299,
+      "visible_pct": 26.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 86,
+      "name": "LG 27GP850-B UltraGear 165Hz",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (22 chars)"
+      ],
+      "img_size_kb": 513,
+      "visible_pct": 33.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 87,
+      "name": "Dell S2722DGM 165Hz Curved",
+      "category": "Monitores",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (6.4% visible)",
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (23 chars)"
+      ],
+      "img_size_kb": 88,
+      "visible_pct": 6.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 88,
+      "name": "Samsung Odyssey G7 32\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (21 chars)"
+      ],
+      "img_size_kb": 474,
+      "visible_pct": 76.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 89,
+      "name": "ASUS TUF Gaming VG27AQ1A",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (7 chars)"
+      ],
+      "img_size_kb": 243,
+      "visible_pct": 46.6,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 90,
+      "name": "BenQ MOBIUZ EX2710Q 165Hz",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (7 chars)"
+      ],
+      "img_size_kb": 475,
+      "visible_pct": 55.0,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 91,
+      "name": "LG UltraGear 27GR95QE OLED 240Hz",
+      "category": "Monitores",
+      "issues": [
+        "IMG: OVER-CROPPED (only 3.1% visible)",
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (12 chars)"
+      ],
+      "img_size_kb": 43,
+      "visible_pct": 3.1,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 92,
+      "name": "Gigabyte M27Q X 240Hz",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (10 chars)"
+      ],
+      "img_size_kb": 344,
+      "visible_pct": 65.4,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 93,
+      "name": "AOC 24G2SP 165Hz",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (7 chars)"
+      ],
+      "img_size_kb": 919,
+      "visible_pct": 57.6,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 94,
+      "name": "MSI MAG 274QRF-QD 170Hz",
+      "category": "Monitores",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (9.5% visible)",
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (35 chars)"
+      ],
+      "img_size_kb": 100,
+      "visible_pct": 9.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 6,
+      "name": "Logitech G Pro X Superlight 2",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 141,
+      "visible_pct": 37.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 7,
+      "name": "Razer BlackWidow V4 Pro",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 509,
+      "visible_pct": 40.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 95,
+      "name": "Razer DeathAdder V3",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (5.7% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 67,
+      "visible_pct": 5.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 96,
+      "name": "SteelSeries Apex Pro TKL (2023)",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 607,
+      "visible_pct": 59.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 97,
+      "name": "Corsair K70 RGB PRO",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 482,
+      "visible_pct": 33.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 98,
+      "name": "Razer Viper V3 Pro",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 76,
+      "visible_pct": 23.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 99,
+      "name": "Logitech MX Master 3S",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 333,
+      "visible_pct": 72.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 100,
+      "name": "HyperX Alloy Origins 65",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 303,
+      "visible_pct": 22.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 101,
+      "name": "Razer Huntsman V3 Pro",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 296,
+      "visible_pct": 57.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 102,
+      "name": "SteelSeries Aerox 5 Wireless",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 387,
+      "visible_pct": 48.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 11,
+      "name": "SteelSeries Arctis Nova Pro Wireless",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 531,
+      "visible_pct": 31.1,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 103,
+      "name": "HyperX Cloud III Wireless",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 391,
+      "visible_pct": 27.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 104,
+      "name": "Logitech G Pro X 2 Lightspeed",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 210,
+      "visible_pct": 19.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 105,
+      "name": "Corsair Virtuoso RGB XT Wireless",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 338,
+      "visible_pct": 38.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 106,
+      "name": "Razer Kraken V4",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 369,
+      "visible_pct": 64.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 107,
+      "name": "Sony WH-1000XM5",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 293,
+      "visible_pct": 55.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 108,
+      "name": "JBL Quantum 910 Wireless",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 149,
+      "visible_pct": 17.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 109,
+      "name": "Corsair HS80 Max Wireless",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 379,
+      "visible_pct": 37.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 110,
+      "name": "Razer BlackShark V2 Pro (2023)",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 251,
+      "visible_pct": 41.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 111,
+      "name": "Audio-Technica ATH-M50x",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 218,
+      "visible_pct": 40.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 12,
+      "name": "Secretlab TITAN Evo 2022 XL",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 2 image(s), need 3+"
+      ],
+      "img_size_kb": 362,
+      "visible_pct": 34.8,
+      "gallery_count": 2,
+      "features_count": 4
+    },
+    {
+      "id": 112,
+      "name": "Razer Iskur V2",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 411,
+      "visible_pct": 47.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 113,
+      "name": "Corsair TC200 Leatherette",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 327,
+      "visible_pct": 25.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 114,
+      "name": "noblechairs HERO ST",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 324,
+      "visible_pct": 25.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 115,
+      "name": "DXRacer Craft Series",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "IMG: VERY_SMALL (<10KB) - may be over-cropped",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 7,
+      "visible_pct": 35.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 116,
+      "name": "AndaSeat Kaiser 3 XL",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 120,
+      "visible_pct": 19.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 117,
+      "name": "Cougar Armor Elite",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 251,
+      "visible_pct": 49.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 118,
+      "name": "AKRacing Masters Pro",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 251,
+      "visible_pct": 49.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 119,
+      "name": "Herman Miller x Logitech Embody Gaming",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (12.1% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 152,
+      "visible_pct": 12.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 120,
+      "name": "Autonomous ErgoChair Pro",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (12.9% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 118,
+      "visible_pct": 12.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 121,
+      "name": "NVIDIA GeForce RTX 5090",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 441,
+      "visible_pct": 26.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 122,
+      "name": "AMD Radeon RX 9070 XT",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 254,
+      "visible_pct": 23.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 123,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 463,
+      "visible_pct": 27.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 124,
+      "name": "ASUS ROG Strix RTX 5080 OC",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 371,
+      "visible_pct": 39.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 125,
+      "name": "MSI Gaming Trio RTX 5070",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 397,
+      "visible_pct": 26.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 126,
+      "name": "Sapphire Nitro+ RX 9070",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 222,
+      "visible_pct": 31.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 128,
+      "name": "Intel Arc B580",
+      "category": "Placas Gráficas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 213,
+      "visible_pct": 32.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 129,
+      "name": "AMD Ryzen 9 9950X",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 292,
+      "visible_pct": 32.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 130,
+      "name": "Intel Core Ultra 9 285K",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 195,
+      "visible_pct": 59.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 131,
+      "name": "AMD Ryzen 7 9700X",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 620,
+      "visible_pct": 43.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 132,
+      "name": "Intel Core Ultra 7 265K",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 104,
+      "visible_pct": 58.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 133,
+      "name": "AMD Ryzen 5 9600X",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 353,
+      "visible_pct": 60.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 134,
+      "name": "AMD Ryzen 9 9900X",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 366,
+      "visible_pct": 28.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 135,
+      "name": "Intel Core Ultra 5 245K",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 105,
+      "visible_pct": 58.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 136,
+      "name": "AMD Ryzen 7 9800X3D",
+      "category": "Processadores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 674,
+      "visible_pct": 52.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 137,
+      "name": "ASUS ROG Crosshair X870E Hero",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 321,
+      "visible_pct": 54.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 138,
+      "name": "MSI MEG Z890 ACE",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 964,
+      "visible_pct": 48.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 139,
+      "name": "Gigabyte B850 AORUS Elite",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 348,
+      "visible_pct": 63.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 140,
+      "name": "ASRock Z890 Taichi",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 405,
+      "visible_pct": 56.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 141,
+      "name": "ASUS ROG Strix B850-F Gaming",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 372,
+      "visible_pct": 63.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 142,
+      "name": "MSI MAG B850 Tomahawk",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 333,
+      "visible_pct": 52.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 143,
+      "name": "Gigabyte Z890 AORUS Master",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 340,
+      "visible_pct": 67.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 144,
+      "name": "ASRock B850M Pro RS",
+      "category": "Motherboards",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 273,
+      "visible_pct": 48.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 145,
+      "name": "G.Skill Trident Z5 RGB DDR5-7200",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 375,
+      "visible_pct": 69.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 146,
+      "name": "Corsair Dominator Titanium DDR5-6400",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 92,
+      "visible_pct": 90.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 147,
+      "name": "Kingston Fury Beast DDR5-6000",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 238,
+      "visible_pct": 57.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 148,
+      "name": "TeamGroup T-Force Delta RGB DDR5-7600",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 318,
+      "visible_pct": 59.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 149,
+      "name": "G.Skill Flare X5 DDR5-6000",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 290,
+      "visible_pct": 62.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 150,
+      "name": "Corsair Vengeance DDR5-5600",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 181,
+      "visible_pct": 73.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 151,
+      "name": "G.Skill Trident Z5 Neo DDR5-6400",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 283,
+      "visible_pct": 66.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 152,
+      "name": "Kingston Fury Renegade DDR5-8000",
+      "category": "Memória RAM",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 286,
+      "visible_pct": 54.5,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 153,
+      "name": "Samsung 990 EVO Plus 2TB",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 141,
+      "visible_pct": 56.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 154,
+      "name": "WD Black SN850X 2TB",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 97,
+      "visible_pct": 83.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 155,
+      "name": "Crucial T700 2TB",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 105,
+      "visible_pct": 84.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 156,
+      "name": "Seagate FireCuda 540 2TB",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 132,
+      "visible_pct": 84.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 157,
+      "name": "Kingston KC3000 4TB",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 108,
+      "visible_pct": 93.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 158,
+      "name": "Samsung 870 EVO 4TB",
+      "category": "Armazenamento",
+      "issues": [
+        "IMG: OVER-CROPPED (only 4.2% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 34,
+      "visible_pct": 4.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 159,
+      "name": "Corsair MP700 PRO 2TB",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 126,
+      "visible_pct": 89.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 160,
+      "name": "Sabrent Rocket 5 2TB",
+      "category": "Armazenamento",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 96,
+      "visible_pct": 58.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 161,
+      "name": "Corsair HX1500i",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 305,
+      "visible_pct": 64.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 162,
+      "name": "Seasonic PRIME TX-1000",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 173,
+      "visible_pct": 82.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 163,
+      "name": "be quiet! Dark Power 13 850W",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 386,
+      "visible_pct": 87.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 165,
+      "name": "Corsair RM850x 2024",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 519,
+      "visible_pct": 55.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 166,
+      "name": "MSI MEG Ai1300P PCIE5",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 272,
+      "visible_pct": 43.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 167,
+      "name": "Thermaltake Toughpower GF3 750W",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 462,
+      "visible_pct": 64.0,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 168,
+      "name": "Fractal Design Ion+ 2 860W",
+      "category": "Fontes de Alimentação",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 158,
+      "visible_pct": 64.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 169,
+      "name": "Lian Li O11 Dynamic EVO 2",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 588,
+      "visible_pct": 75.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 170,
+      "name": "Fractal Design North",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 300,
+      "visible_pct": 89.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 172,
+      "name": "Corsair 6500X",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 197,
+      "visible_pct": 79.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 173,
+      "name": "Phanteks NV7",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 585,
+      "visible_pct": 88.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 174,
+      "name": "be quiet! Dark Base 802",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 208,
+      "visible_pct": 32.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 176,
+      "name": "SSUPD Meshroom S",
+      "category": "Caixas",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 843,
+      "visible_pct": 34.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 178,
+      "name": "Corsair iCUE H170i Elite LCD XT",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 422,
+      "visible_pct": 28.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 179,
+      "name": "Noctua NH-D15 G2",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 534,
+      "visible_pct": 68.1,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 180,
+      "name": "Arctic Liquid Freezer III 360 A-RGB",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 165,
+      "visible_pct": 37.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 181,
+      "name": "Deepcool Assassin IV",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 32,
+      "visible_pct": 28.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 182,
+      "name": "EK-Nucleus AIO CR360 Dark",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 164,
+      "visible_pct": 45.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 184,
+      "name": "Lian Li Galahad II Trinity 360",
+      "category": "Refrigeração",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 201,
+      "visible_pct": 70.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 185,
+      "name": "Samsung Odyssey OLED G8 32\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 322,
+      "visible_pct": 46.9,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 186,
+      "name": "LG UltraGear 27GS95QE 27\\",
+      "category": "Monitores",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (12.3% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 105,
+      "visible_pct": 12.3,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 187,
+      "name": "ASUS ROG Swift PG27AQN 27\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 353,
+      "visible_pct": 59.8,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 188,
+      "name": "Dell Alienware AW3225QF 32\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 130,
+      "visible_pct": 60.8,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 189,
+      "name": "BenQ MOBIUZ EX3210U 32\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 372,
+      "visible_pct": 70.2,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 190,
+      "name": "Gigabyte M27U 27\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 240,
+      "visible_pct": 33.9,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 191,
+      "name": "MSI MAG 341CQP 34\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+",
+        "DESC: Too short (18 chars)"
+      ],
+      "img_size_kb": 375,
+      "visible_pct": 65.8,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 192,
+      "name": "AOC AGON AG275QXL 27\\",
+      "category": "Monitores",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 416,
+      "visible_pct": 65.3,
+      "gallery_count": 1,
+      "features_count": 3
+    },
+    {
+      "id": 193,
+      "name": "Wooting 80HE",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 417,
+      "visible_pct": 42.7,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 196,
+      "name": "Keychron Q1 HE",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 359,
+      "visible_pct": 35.2,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 197,
+      "name": "Pulsar X2V2 Mini Wireless",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 149,
+      "visible_pct": 88.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 198,
+      "name": "SteelSeries Apex Pro TKL 2024",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 366,
+      "visible_pct": 57.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 199,
+      "name": "Endgame Gear OP1we",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 45,
+      "visible_pct": 33.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 200,
+      "name": "Corsair K70 MAX",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 200,
+      "visible_pct": 68.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 202,
+      "name": "Audeze Maxwell Wireless",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 337,
+      "visible_pct": 47.4,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 204,
+      "name": "Razer BlackShark V2 Pro 2024",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 309,
+      "visible_pct": 54.8,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 205,
+      "name": "Beyerdynamic DT 900 PRO X",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 576,
+      "visible_pct": 52.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 206,
+      "name": "Corsair Virtuoso Pro",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 390,
+      "visible_pct": 58.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 209,
+      "name": "Secretlab Titan Evo 2024",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 99,
+      "visible_pct": 33.9,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 213,
+      "name": "Corsair TC200 Fabric",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 235,
+      "visible_pct": 48.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 214,
+      "name": "Steelcase Karman",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 363,
+      "visible_pct": 15.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 215,
+      "name": "IKEA MATCHSPEL",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 585,
+      "visible_pct": 21.3,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 216,
+      "name": "AndaSeat Kaiser 4",
+      "category": "Cadeiras Gaming",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 333,
+      "visible_pct": 20.6,
+      "gallery_count": 1,
+      "features_count": 4
+    },
+    {
+      "id": 220,
+      "name": "Redragon Shark M688 RGB",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 393,
+      "visible_pct": 36.8,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 221,
+      "name": "Attack Shark R1 Pro Wireless",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 231,
+      "visible_pct": 47.7,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 222,
+      "name": "HAVIT MS1006 Gaming Mouse",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "IMG: POSSIBLY_OVER-CROPPED (10.5% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 69,
+      "visible_pct": 10.5,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 223,
+      "name": "Redragon Cobra M711 RGB",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 318,
+      "visible_pct": 34.4,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 224,
+      "name": "Attack Shark X3 Wireless",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 170,
+      "visible_pct": 21.7,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 230,
+      "name": "Large RGB Gaming Mouse Pad 90x40cm",
+      "category": "Mouse Pads",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 224,
+      "visible_pct": 26.8,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 231,
+      "name": "Redragon P027 RGB Mouse Pad XL",
+      "category": "Mouse Pads",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 289,
+      "visible_pct": 28.7,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 232,
+      "name": "Black XXL Mouse Pad 90x40cm",
+      "category": "Mouse Pads",
+      "issues": [
+        "IMG: OVER-CROPPED (only 3.0% visible)",
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 100,
+      "visible_pct": 3.0,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 240,
+      "name": "Aula F75 Mechanical Keyboard 75%",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 343,
+      "visible_pct": 69.6,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 241,
+      "name": "Royal Kludge RK84 Wireless",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 157,
+      "visible_pct": 32.3,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 242,
+      "name": "Redragon K630 Dragonborn 60%",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 412,
+      "visible_pct": 29.4,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 243,
+      "name": "VGN Neon 75 HE Magnetic",
+      "category": "Teclados e Ratos",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 196,
+      "visible_pct": 35.1,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 250,
+      "name": "Redragon H510 Zeus Pro 7.1",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 354,
+      "visible_pct": 26.2,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 251,
+      "name": "HAVIT H2002d Gaming Headset",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 273,
+      "visible_pct": 22.8,
+      "gallery_count": 1,
+      "features_count": 6
+    },
+    {
+      "id": 252,
+      "name": "Onikuma K5 Pro Gaming Headset",
+      "category": "Headsets e Áudio",
+      "issues": [
+        "GALLERY: Only 1 image(s), need 3+"
+      ],
+      "img_size_kb": 288,
+      "visible_pct": 37.2,
+      "gallery_count": 1,
+      "features_count": 6
+    }
+  ]
+}

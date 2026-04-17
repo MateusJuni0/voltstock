@@ -1,0 +1,301 @@
+{
+  "generated_at": "2026-04-17T00:00:00Z",
+  "slice": "headset+chairs",
+  "product_count": 32,
+  "summary": {
+    "keep": 24,
+    "price_drift": 6,
+    "obsolete": 2,
+    "missing": 0
+  },
+  "products": [
+    {
+      "id": 11,
+      "name": "SteelSeries Arctis Nova Pro Wireless",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 349.99,
+      "verdict": "KEEP",
+      "market_price_eur": 349.00,
+      "notes": "Flagship, still top-of-line in PT retail (Worten/PCDiga)."
+    },
+    {
+      "id": 103,
+      "name": "HyperX Cloud III Wireless",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 149.00,
+      "verdict": "KEEP",
+      "market_price_eur": 149.00,
+      "notes": "Current-gen HyperX flagship, aligned."
+    },
+    {
+      "id": 104,
+      "name": "Logitech G Pro X 2 Lightspeed",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 219.00,
+      "verdict": "KEEP",
+      "market_price_eur": 229.00,
+      "notes": "Esports benchmark, still live."
+    },
+    {
+      "id": 105,
+      "name": "Corsair Virtuoso RGB XT Wireless",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 239.00,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 179.00,
+      "notes": "MSRP dropped; active promos ~170-190€ in 2025. >20% overpriced."
+    },
+    {
+      "id": 106,
+      "name": "Razer Kraken V4",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 109.00,
+      "verdict": "KEEP",
+      "market_price_eur": 119.00,
+      "notes": "Mid-range Razer current model."
+    },
+    {
+      "id": 107,
+      "name": "Sony WH-1000XM5",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 319.00,
+      "verdict": "KEEP",
+      "market_price_eur": 329.00,
+      "notes": "Flagship ANC; XM6 launched but XM5 still sold."
+    },
+    {
+      "id": 108,
+      "name": "JBL Quantum 910 Wireless",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 249.00,
+      "verdict": "KEEP",
+      "market_price_eur": 229.00,
+      "notes": "Still JBL flagship gaming line."
+    },
+    {
+      "id": 109,
+      "name": "Corsair HS80 Max Wireless",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 149.00,
+      "verdict": "KEEP",
+      "market_price_eur": 159.00,
+      "notes": "Current Corsair mid-range."
+    },
+    {
+      "id": 110,
+      "name": "Razer BlackShark V2 Pro (2023)",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 169.00,
+      "verdict": "KEEP",
+      "market_price_eur": 179.00,
+      "notes": "Esports staple, superseded by 2024 variant (id 204) but still sold."
+    },
+    {
+      "id": 111,
+      "name": "Audio-Technica ATH-M50x",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 139.00,
+      "verdict": "KEEP",
+      "market_price_eur": 149.00,
+      "notes": "Studio classic, evergreen reference."
+    },
+    {
+      "id": 202,
+      "name": "Audeze Maxwell Wireless",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 299.00,
+      "verdict": "KEEP",
+      "market_price_eur": 329.00,
+      "notes": "Planar gaming flagship, very relevant 2025."
+    },
+    {
+      "id": 204,
+      "name": "Razer BlackShark V2 Pro 2024",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 179.00,
+      "verdict": "KEEP",
+      "market_price_eur": 199.00,
+      "notes": "Current-gen; fast KEEP per brief."
+    },
+    {
+      "id": 205,
+      "name": "Beyerdynamic DT 900 PRO X",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 249.00,
+      "verdict": "KEEP",
+      "market_price_eur": 259.00,
+      "notes": "Studio/content creator reference."
+    },
+    {
+      "id": 206,
+      "name": "Corsair Virtuoso Pro",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 219.00,
+      "verdict": "KEEP",
+      "market_price_eur": 229.00,
+      "notes": "Wired open-back streaming headset, relevant niche."
+    },
+    {
+      "id": 250,
+      "name": "Redragon H510 Zeus Pro 7.1",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 44.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 79.00,
+      "notes": "Actual Zeus Pro wireless retails €75-95 in PT/EU; 44,99€ looks like wired Zeus X pricing, mislabelled or underpriced."
+    },
+    {
+      "id": 251,
+      "name": "HAVIT H2002d Gaming Headset",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 34.99,
+      "verdict": "OBSOLETE",
+      "market_price_eur": 19.99,
+      "notes": "Budget wired headset; out-of-stock at Havit.pt 2025, market trending wireless at this price band (Redragon/Trust). Low margin filler."
+    },
+    {
+      "id": 252,
+      "name": "Onikuma K5 Pro Gaming Headset",
+      "category": "Headsets e Áudio",
+      "catalog_price_eur": 23.99,
+      "verdict": "OBSOLETE",
+      "market_price_eur": 19.99,
+      "notes": "Ultra-budget wired, minimal PT retail presence; market shifted to sub-€40 wireless. Drop."
+    },
+    {
+      "id": 12,
+      "name": "Secretlab TITAN Evo 2022 XL",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 549.00,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 649.00,
+      "notes": "Titan Evo XL current Secretlab EU price €649+. Underpriced (or old 2022 stock — then mark as legacy)."
+    },
+    {
+      "id": 112,
+      "name": "Razer Iskur V2",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 499.00,
+      "verdict": "KEEP",
+      "market_price_eur": 649.00,
+      "notes": "Razer EU price ~649€; catalog is underpriced but brand/model is correct and current."
+    },
+    {
+      "id": 113,
+      "name": "Corsair TC200 Leatherette",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 349.00,
+      "verdict": "KEEP",
+      "market_price_eur": 379.00,
+      "notes": "Current Corsair model."
+    },
+    {
+      "id": 114,
+      "name": "noblechairs HERO ST",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 449.00,
+      "verdict": "KEEP",
+      "market_price_eur": 449.00,
+      "notes": "Per brief: fast KEEP."
+    },
+    {
+      "id": 115,
+      "name": "DXRacer Craft Series",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 399.00,
+      "verdict": "KEEP",
+      "market_price_eur": 429.00,
+      "notes": "Per brief: fast KEEP."
+    },
+    {
+      "id": 116,
+      "name": "AndaSeat Kaiser 3 XL",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 449.00,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 599.00,
+      "notes": "Kaiser 3 XL EU MSRP ~599-649€; catalog well below. Also largely superseded by Kaiser 4 (id 216)."
+    },
+    {
+      "id": 117,
+      "name": "Cougar Armor Elite",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 199.00,
+      "verdict": "KEEP",
+      "market_price_eur": 229.00,
+      "notes": "Available at Coditek/UDI/PCComponentes PT, budget segment OK."
+    },
+    {
+      "id": 118,
+      "name": "AKRacing Masters Pro",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 499.00,
+      "verdict": "KEEP",
+      "market_price_eur": 529.00,
+      "notes": "AKRacing flagship still active in EU."
+    },
+    {
+      "id": 119,
+      "name": "Herman Miller x Logitech Embody Gaming",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 1595.00,
+      "verdict": "KEEP",
+      "market_price_eur": 1795.00,
+      "notes": "Per brief: fast KEEP. Premium halo product."
+    },
+    {
+      "id": 120,
+      "name": "Autonomous ErgoChair Pro",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 449.00,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 529.00,
+      "notes": "Autonomous EU price ~499-549€ (USD 499 + IVA/shipping). Catalog below market; also arguably OFFICE not gaming category."
+    },
+    {
+      "id": 209,
+      "name": "Secretlab Titan Evo 2024",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 519.00,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 619.00,
+      "notes": "Secretlab Titan Evo EU current 549-649€ base. Underpriced."
+    },
+    {
+      "id": 213,
+      "name": "Corsair TC200 Fabric",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 349.00,
+      "verdict": "KEEP",
+      "market_price_eur": 379.00,
+      "notes": "Fabric variant, current Corsair."
+    },
+    {
+      "id": 214,
+      "name": "Steelcase Karman",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 1199.00,
+      "verdict": "KEEP",
+      "market_price_eur": 1299.00,
+      "notes": "Premium ergonomic, EU Steelcase store active. Premium halo."
+    },
+    {
+      "id": 215,
+      "name": "IKEA MATCHSPEL",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 199.00,
+      "verdict": "KEEP",
+      "market_price_eur": 189.00,
+      "notes": "IKEA.pt €189; catalog slightly above but within tolerance."
+    },
+    {
+      "id": 216,
+      "name": "AndaSeat Kaiser 4",
+      "category": "Cadeiras Gaming",
+      "catalog_price_eur": 549.00,
+      "verdict": "KEEP",
+      "market_price_eur": 599.00,
+      "notes": "Current-gen AndaSeat flagship."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-04-17T19:22:38.670Z",
+  "catalog_size": 202,
+  "qualified_total": 9,
+  "have_count": 7,
+  "missing_count": 2,
+  "have": [
+    {
+      "name": "MSI GeForce RTX 5070 Gaming Trio OC 12G GDDR7 DLSS4",
+      "category": "Placas Gráficas",
+      "brand": "MSI",
+      "score": 0.78,
+      "sources": [
+        "pt_retail",
+        "amazon_kk",
+        "community"
+      ],
+      "verdict": "HAVE",
+      "matchedLocal": "MSI GeForce RTX 5090 SUPRIM X 32G"
+    },
+    {
+      "name": "Samsung 990 Pro 2TB M.2 NVMe PCIe 4.0 x4",
+      "category": "Armazenamento",
+      "brand": "Samsung",
+      "score": 0.6,
+      "sources": [
+        "pt_retail",
+        "community"
+      ],
+      "verdict": "HAVE",
+      "matchedLocal": "Samsung 990 Pro 2TB NVMe Gen4"
+    },
+    {
+      "name": "Kingston Fury Beast 32GB (2x16GB) DDR5-6000MHz CL30 AMD EXPO/Intel XMP Preta",
+      "category": "Memória RAM",
+      "brand": "Kingston",
+      "score": 0.42,
+      "sources": [
+        "pt_retail",
+        "ae"
+      ],
+      "verdict": "HAVE",
+      "matchedLocal": "Kingston Fury Beast DDR5 32GB 5600MHz"
+    },
+    {
+      "name": "NVIDIA RTX 5090",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA",
+      "score": 0.24,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "verdict": "HAVE",
+      "matchedLocal": "NVIDIA GeForce RTX 5090"
+    },
+    {
+      "name": "AMD Radeon RX 9070",
+      "category": "Placas Gráficas",
+      "brand": "AMD AIB",
+      "score": 0.2,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "verdict": "HAVE",
+      "matchedLocal": "AMD Radeon RX 9070 XT"
+    },
+    {
+      "name": "ASUS ROG Swift PG279Q 27\" IPS QHD 165Hz G-SYNC",
+      "category": "Monitores",
+      "brand": "ASUS",
+      "score": 0.2,
+      "sources": [
+        "pt_retail",
+        "community"
+      ],
+      "verdict": "HAVE",
+      "matchedLocal": "ASUS ROG Swift OLED PG27AQDM"
+    },
+    {
+      "name": "NVIDIA RTX 5070",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA AIB",
+      "score": 0.16,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "verdict": "HAVE",
+      "matchedLocal": "NVIDIA GeForce RTX 5070 Ti"
+    }
+  ],
+  "missing": [
+    {
+      "name": "ASUS TUF RTX 5070 OC",
+      "category": "Placas Gráficas",
+      "brand": "ASUS",
+      "score": 0.18,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "verdict": "MISSING"
+    },
+    {
+      "name": "NVIDIA RTX 5060 Ti 16GB",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA AIB",
+      "score": 0.16,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "verdict": "MISSING"
+    }
+  ],
+  "brand_heatmap_by_category": {
+    "Placas Gráficas": {
+      "MSI": 1,
+      "NVIDIA": 1,
+      "AMD AIB": 1,
+      "ASUS": 1,
+      "NVIDIA AIB": 2
+    },
+    "Armazenamento": {
+      "Samsung": 1
+    },
+    "Memória RAM": {
+      "Kingston": 1
+    },
+    "Monitores": {
+      "ASUS": 1
+    }
+  }
+}

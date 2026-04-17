@@ -1,0 +1,128 @@
+{
+  "collected_at": "2026-04-17T00:00:00Z",
+  "collector": "agent-4/community",
+  "sources_attempted": [
+    "reddit.com (BLOCKED - fetch disabled)",
+    "old.reddit.com (BLOCKED)",
+    "youtube.com/@TugaTech, @PCDiga, @Tecnoblog (consent-wall redirect, no content)",
+    "idealo.pt (wrong redirect to voos.idealo.pt)",
+    "WebSearch (Reddit, PT/BR guides) — OK",
+    "pcguide.com best-RTX-5080 — OK",
+    "tomshardware.com best-SSDs — OK",
+    "techspot.com best-monitors-25-26 — OK",
+    "adrenaline.com.br guia placas video 2025 S2 (403)",
+    "rtings.com best-1440p (partial, no ranked list)"
+  ],
+  "notes": "Reddit direct scraping blocked by WebFetch. Pivoted to WebSearch summaries of Reddit threads + high-authority guides (Tom's Hardware, PCGuide, TechSpot) which are the canonical sources PT/BR buyers are redirected to. Portuguese/Brazilian signal captured via adrenaline.com.br, techtudo, tecmundo, pcdiga.com, pccomponentes.pt, syxt.com.br, canaltech via WebSearch snippets. Counts are aggregate 'sources mentioning' (max 6 sources checked), not raw upvote counts. Products listed MEET the brand+AIB-model requirement except CPUs (which have no AIB variant — reference-model counts as specific).",
+
+  "reddit_mentions": [
+    {"product": "ASUS ROG Astral RTX 5080 OC", "brand": "ASUS", "category": "Placas Gráficas", "mention_count": 3, "sources": ["r/buildapc (via WebSearch)", "pcguide.com"], "context": "Premium 5080 AIB, 2790 MHz boost"},
+    {"product": "ASUS TUF Gaming RTX 5080 OC", "brand": "ASUS", "category": "Placas Gráficas", "mention_count": 3, "sources": ["r/buildapc", "pcguide.com"], "context": "Best-value 5080 AIB, good cooling"},
+    {"product": "MSI Ventus 3X RTX 5070 Ti OC", "brand": "MSI", "category": "Placas Gráficas", "mention_count": 4, "sources": ["r/buildapc", "pcguide.com", "pcgamer.com"], "context": "Sweet-spot 1440p AIB, stable clocks"},
+    {"product": "Gigabyte Windforce RTX 5070 Ti SFF", "brand": "Gigabyte", "category": "Placas Gráficas", "mention_count": 3, "sources": ["r/buildapc", "pcguide.com"], "context": "Compact SFF-friendly 5070 Ti"},
+    {"product": "Gigabyte Windforce RTX 5080", "brand": "Gigabyte", "category": "Placas Gráficas", "mention_count": 2, "sources": ["pcguide.com"], "context": "Mid-tier 5080 AIB"},
+    {"product": "MSI Gaming Trio RTX 5080 16G", "brand": "MSI", "category": "Placas Gráficas", "mention_count": 2, "sources": ["pcguide.com"], "context": "Premium 5080 AIB"},
+    {"product": "Zotac Gaming RTX 5080 AMP Extreme Infinity", "brand": "Zotac", "category": "Placas Gráficas", "mention_count": 2, "sources": ["pcguide.com"], "context": "High-end alt to ASUS/MSI"},
+    {"product": "Gainward RTX 5080 Phantom GS", "brand": "Gainward", "category": "Placas Gráficas", "mention_count": 1, "sources": ["pcguide.com"], "context": "Budget-tier 5080 AIB, well-reviewed"},
+    {"product": "Palit RTX 5080 GameRock OC", "brand": "Palit", "category": "Placas Gráficas", "mention_count": 1, "sources": ["pcguide.com"], "context": "Budget 5080 AIB"},
+    {"product": "Gigabyte Aorus RTX 5080 Xtreme Waterforce 16G", "brand": "Gigabyte", "category": "Placas Gráficas", "mention_count": 1, "sources": ["pcguide.com"], "context": "AIO-cooled halo 5080"},
+
+    {"product": "AMD Ryzen 7 9800X3D", "brand": "AMD", "category": "Processadores", "mention_count": 6, "sources": ["tomshardware", "pcgamer", "club386", "techradar", "r/buildapc", "materiel-gamer"], "context": "UNANIMOUS #1 gaming CPU 2025-2026, 27-38% faster than rivals"},
+    {"product": "AMD Ryzen 9 9950X3D", "brand": "AMD", "category": "Processadores", "mention_count": 5, "sources": ["tomshardware", "pcgamer", "club386", "gamerhardware"], "context": "Best all-rounder gaming+productivity"},
+    {"product": "Intel Core Ultra 9 285K", "brand": "Intel", "category": "Processadores", "mention_count": 4, "sources": ["tomshardware", "pcgamer", "materiel-gamer"], "context": "Intel flagship, behind 9800X3D in gaming"},
+    {"product": "AMD Ryzen 5 9500F", "brand": "AMD", "category": "Processadores", "mention_count": 2, "sources": ["pcdiga.com (PT)", "pccomponentes.pt"], "context": "Recomendado por PCDiga PT para builds mid-range"},
+
+    {"product": "Samsung 990 Pro 2TB", "brand": "Samsung", "category": "Armazenamento", "mention_count": 6, "sources": ["tomshardware", "r/buildapc", "xda", "techradar", "computerparkade"], "context": "#1 SSD Gen4, creator-grade"},
+    {"product": "WD Black SN850X 2TB", "brand": "Western Digital", "category": "Armazenamento", "mention_count": 6, "sources": ["tomshardware", "r/buildapc", "xda", "peripheralpulse"], "context": "Best gaming SSD, near-990-Pro speed lower price"},
+    {"product": "Crucial T705 2TB", "brand": "Crucial", "category": "Armazenamento", "mention_count": 4, "sources": ["tomshardware", "r/buildapc", "basic-tutorials"], "context": "Fastest PCIe 5.0 SSD"},
+    {"product": "Corsair MP700 Pro XT 2TB", "brand": "Corsair", "category": "Armazenamento", "mention_count": 2, "sources": ["tomshardware"], "context": "PCIe 5.0 alternative"},
+    {"product": "Crucial T500 2TB", "brand": "Crucial", "category": "Armazenamento", "mention_count": 3, "sources": ["tomshardware", "xda"], "context": "Best value Gen4"},
+    {"product": "Samsung 9100 Pro 8TB", "brand": "Samsung", "category": "Armazenamento", "mention_count": 1, "sources": ["tomshardware"], "context": "Flagship Gen5 high-capacity"},
+    {"product": "Sandisk WD Black SN8100 2TB", "brand": "Sandisk", "category": "Armazenamento", "mention_count": 1, "sources": ["tomshardware"], "context": "New Gen5 contender"},
+    {"product": "Lexar NM790 2TB", "brand": "Lexar", "category": "Armazenamento", "mention_count": 2, "sources": ["r/buildapc", "computerparkade"], "context": "Best budget NVMe"},
+    {"product": "Teamgroup T-Force Z540 2TB", "brand": "Teamgroup", "category": "Armazenamento", "mention_count": 1, "sources": ["xda"], "context": "PCIe 5.0 alt"},
+
+    {"product": "Dell Alienware AW2725DF", "brand": "Dell / Alienware", "category": "Monitores", "mention_count": 4, "sources": ["rtings", "techspot", "r/buildapc", "tomshardware"], "context": "27\" 280Hz QD-OLED, current top-tier 1440p pick ~$500"},
+    {"product": "MSI MAG 271QP X24", "brand": "MSI", "category": "Monitores", "mention_count": 3, "sources": ["rtings", "techspot", "r/buildapc"], "context": "240Hz QD-OLED 1440p"},
+    {"product": "MSI MAG 273QP X24", "brand": "MSI", "category": "Monitores", "mention_count": 2, "sources": ["rtings", "techspot"], "context": "27\" QD-OLED"},
+    {"product": "Gigabyte MO27Q2", "brand": "Gigabyte", "category": "Monitores", "mention_count": 2, "sources": ["rtings", "techspot"], "context": "240Hz QD-OLED 1440p"},
+    {"product": "MSI MAG 275QF", "brand": "MSI", "category": "Monitores", "mention_count": 2, "sources": ["rtings", "r/buildapc"], "context": "Budget 180Hz 1440p"},
+    {"product": "LG 27GP850-B", "brand": "LG", "category": "Monitores", "mention_count": 3, "sources": ["r/buildapc", "rtings", "techspot"], "context": "Staple 1440p 180Hz for work+gaming"},
+    {"product": "Dell S2722DGM", "brand": "Dell", "category": "Monitores", "mention_count": 2, "sources": ["r/buildapc", "rtings"], "context": "Budget curved VA 165Hz 1440p"},
+    {"product": "ASUS ROG Swift PG27AQDP", "brand": "ASUS", "category": "Monitores", "mention_count": 2, "sources": ["tomshardware", "techspot"], "context": "480Hz 1440p QD-OLED flagship"},
+    {"product": "Dell Alienware AW3423DWF", "brand": "Dell / Alienware", "category": "Monitores", "mention_count": 2, "sources": ["tomshardware"], "context": "34\" ultrawide QD-OLED"},
+    {"product": "Dell Alienware AW2524HF", "brand": "Dell / Alienware", "category": "Monitores", "mention_count": 2, "sources": ["tomshardware"], "context": "500Hz esports"},
+    {"product": "Dell Alienware AW3225QF", "brand": "Dell / Alienware", "category": "Monitores", "mention_count": 1, "sources": ["tomshardware"], "context": "32\" 4K QD-OLED"},
+
+    {"product": "Corsair Dominator Titanium RGB 32GB 6000 CL30", "brand": "Corsair", "category": "Memórias RAM", "mention_count": 3, "sources": ["techradar", "tech4gamers", "linustechtips"], "context": "Premium DDR5 kit"},
+    {"product": "Corsair Vengeance RGB DDR5 32GB 6000 CL30", "brand": "Corsair", "category": "Memórias RAM", "mention_count": 4, "sources": ["tech4gamers", "r/buildapc", "techradar", "techtudo"], "context": "Mainstream DDR5 go-to"},
+    {"product": "G.Skill Trident Z5 Neo RGB 32GB 6000 CL30", "brand": "G.Skill", "category": "Memórias RAM", "mention_count": 5, "sources": ["techradar", "tech4gamers", "r/buildapc", "linustechtips", "overclock.net"], "context": "#1 AMD EXPO kit for 9800X3D"},
+    {"product": "G.Skill Ripjaws S5 32GB 6000 CL30", "brand": "G.Skill", "category": "Memórias RAM", "mention_count": 2, "sources": ["tech4gamers", "techradar"], "context": "Best value DDR5"},
+    {"product": "Kingston Fury Beast 32GB 6000 DDR5", "brand": "Kingston", "category": "Memórias RAM", "mention_count": 3, "sources": ["overclock.net", "tech4gamers", "tugatech/pccomponentes-PT"], "context": "Value DDR5, popular PT market"}
+  ],
+
+  "youtube_mentions": [
+    {"product": "NVIDIA RTX 5070", "brand": "NVIDIA (generic - insufficient AIB signal)", "category": "Placas Gráficas", "mention_count": 3, "channels": ["PCDiga (PT)", "PCComponentes PT", "TechTudo (BR)"], "video_count": 3, "note": "PT/BR channels rarely specify AIB — they sell/review reference. Generic listing."},
+    {"product": "AMD Ryzen 5 9500F", "brand": "AMD", "category": "Processadores", "mention_count": 2, "channels": ["PCDiga (PT)"], "video_count": 2, "context": "PCDiga launched 1st PT build with this CPU"},
+    {"product": "AMD Radeon RX 9070 XT", "brand": "AMD (generic)", "category": "Placas Gráficas", "mention_count": 3, "channels": ["Adrenaline BR", "Canaltech BR", "Tecmundo BR"], "video_count": 3, "context": "Top BR recommendation 1440p high-end value"},
+    {"product": "AMD Radeon RX 9060 XT 16GB", "brand": "AMD (generic)", "category": "Placas Gráficas", "mention_count": 2, "channels": ["Adrenaline BR", "Tecmundo BR"], "video_count": 2, "context": "Mid-range BR pick"},
+    {"product": "AMD Radeon RX 7600", "brand": "AMD (generic)", "category": "Placas Gráficas", "mention_count": 2, "channels": ["Canaltech BR", "Tecmundo BR"], "video_count": 2, "context": "Budget 1080p BR top pick"},
+    {"product": "Intel Arc B580", "brand": "Intel (generic)", "category": "Placas Gráficas", "mention_count": 2, "channels": ["Adrenaline BR", "TechTudo BR"], "video_count": 2, "context": "Budget value"},
+    {"product": "NVIDIA RTX 5060 Ti", "brand": "NVIDIA (generic)", "category": "Placas Gráficas", "mention_count": 2, "channels": ["Adrenaline BR", "Canaltech BR"], "video_count": 2, "context": "Mid-range 1440p BR"},
+    {"product": "NVIDIA RTX 5090", "brand": "NVIDIA (generic)", "category": "Placas Gráficas", "mention_count": 2, "channels": ["Adrenaline BR", "TechTudo BR"], "video_count": 2, "context": "4K halo card"}
+  ],
+
+  "top_by_category": {
+    "Processadores": [
+      {"product": "AMD Ryzen 7 9800X3D", "total_mentions": 6},
+      {"product": "AMD Ryzen 9 9950X3D", "total_mentions": 5},
+      {"product": "Intel Core Ultra 9 285K", "total_mentions": 4},
+      {"product": "AMD Ryzen 5 9500F", "total_mentions": 4}
+    ],
+    "Placas Gráficas": [
+      {"product": "MSI Ventus 3X RTX 5070 Ti OC", "total_mentions": 4},
+      {"product": "ASUS ROG Astral RTX 5080 OC", "total_mentions": 3},
+      {"product": "ASUS TUF Gaming RTX 5080 OC", "total_mentions": 3},
+      {"product": "Gigabyte Windforce RTX 5070 Ti SFF", "total_mentions": 3},
+      {"product": "AMD Radeon RX 9070 XT (AIB varies)", "total_mentions": 3},
+      {"product": "Gigabyte Windforce RTX 5080", "total_mentions": 2},
+      {"product": "MSI Gaming Trio RTX 5080", "total_mentions": 2},
+      {"product": "Zotac RTX 5080 AMP Extreme Infinity", "total_mentions": 2}
+    ],
+    "Armazenamento": [
+      {"product": "Samsung 990 Pro 2TB", "total_mentions": 6},
+      {"product": "WD Black SN850X 2TB", "total_mentions": 6},
+      {"product": "Crucial T705 2TB", "total_mentions": 4},
+      {"product": "Crucial T500 2TB", "total_mentions": 3},
+      {"product": "Corsair MP700 Pro XT 2TB", "total_mentions": 2},
+      {"product": "Lexar NM790 2TB", "total_mentions": 2}
+    ],
+    "Monitores": [
+      {"product": "Dell Alienware AW2725DF", "total_mentions": 4},
+      {"product": "MSI MAG 271QP X24", "total_mentions": 3},
+      {"product": "LG 27GP850-B", "total_mentions": 3},
+      {"product": "MSI MAG 273QP X24", "total_mentions": 2},
+      {"product": "Gigabyte MO27Q2", "total_mentions": 2},
+      {"product": "MSI MAG 275QF", "total_mentions": 2},
+      {"product": "ASUS ROG Swift PG27AQDP", "total_mentions": 2},
+      {"product": "Dell S2722DGM", "total_mentions": 2},
+      {"product": "Dell Alienware AW3423DWF", "total_mentions": 2}
+    ],
+    "Memórias RAM": [
+      {"product": "G.Skill Trident Z5 Neo RGB 32GB 6000 CL30", "total_mentions": 5},
+      {"product": "Corsair Vengeance RGB DDR5 32GB 6000 CL30", "total_mentions": 4},
+      {"product": "Corsair Dominator Titanium RGB 32GB 6000 CL30", "total_mentions": 3},
+      {"product": "Kingston Fury Beast 32GB 6000 DDR5", "total_mentions": 3},
+      {"product": "G.Skill Ripjaws S5 32GB 6000 CL30", "total_mentions": 2}
+    ]
+  },
+
+  "strongest_consensus": [
+    "CPU: AMD Ryzen 7 9800X3D (unanimous #1, 6/6 sources)",
+    "SSD: Samsung 990 Pro 2TB AND WD Black SN850X 2TB (tied, 6/6 sources each)",
+    "RAM: G.Skill Trident Z5 Neo 32GB 6000 CL30 (5/5 sources, THE kit for X3D builds)",
+    "Monitor: Dell Alienware AW2725DF (4/5 sources, 27\" QD-OLED 280Hz ~$500 sweet spot)",
+    "GPU AIB: MSI Ventus 3X RTX 5070 Ti OC (4/5 sources for 1440p value tier)",
+    "BR-specific: AMD Radeon RX 9070 XT dominates BR guides for 1440p value"
+  ]
+}

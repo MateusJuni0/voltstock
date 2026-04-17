@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-04-17T19:19:47.184Z",
+  "weights": {
+    "pt_retail": 0.4,
+    "amazon_kk": 0.2,
+    "ae": 0.2,
+    "community": 0.2
+  },
+  "signals_loaded": {
+    "pt_retail": 80,
+    "amazon_kk": 140,
+    "ae": 130,
+    "community": 79
+  },
+  "qualified_count": 9,
+  "single_source_count": 288,
+  "top_50_global": [
+    {
+      "name": "MSI GeForce RTX 5070 Gaming Trio OC 12G GDDR7 DLSS4",
+      "brand": "MSI",
+      "category": "Placas Gráficas",
+      "price_eur": 679.9,
+      "score": 0.78,
+      "sources": [
+        "pt_retail",
+        "amazon_kk",
+        "community"
+      ],
+      "source_count": 3
+    },
+    {
+      "name": "Samsung 990 Pro 2TB M.2 NVMe PCIe 4.0 x4",
+      "brand": "Samsung",
+      "category": "Armazenamento",
+      "score": 0.6,
+      "sources": [
+        "pt_retail",
+        "community"
+      ],
+      "source_count": 2
+    },
+    {
+      "name": "Kingston Fury Beast 32GB (2x16GB) DDR5-6000MHz CL30 AMD EXPO/Intel XMP Preta",
+      "brand": "Kingston",
+      "category": "Memória RAM",
+      "price_eur": 282.4,
+      "score": 0.42,
+      "sources": [
+        "pt_retail",
+        "ae"
+      ],
+      "source_count": 2
+    },
+    {
+      "name": "NVIDIA RTX 5090",
+      "brand": "NVIDIA",
+      "category": "Placas Gráficas",
+      "price_eur": 2400,
+      "score": 0.24,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "source_count": 2
+    },
+    {
+      "name": "AMD Radeon RX 9070",
+      "brand": "AMD AIB",
+      "category": "Placas Gráficas",
+      "price_eur": 549,
+      "score": 0.2,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "source_count": 2
+    },
+    {
+      "name": "ASUS ROG Swift PG279Q 27\" IPS QHD 165Hz G-SYNC",
+      "brand": "ASUS",
+      "category": "Monitores",
+      "score": 0.2,
+      "sources": [
+        "pt_retail",
+        "community"
+      ],
+      "source_count": 2
+    },
+    {
+      "name": "ASUS TUF RTX 5070 OC",
+      "brand": "ASUS",
+      "category": "Placas Gráficas",
+      "price_eur": 719,
+      "score": 0.18,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "source_count": 2
+    },
+    {
+      "name": "NVIDIA RTX 5070",
+      "brand": "NVIDIA AIB",
+      "category": "Placas Gráficas",
+      "price_eur": 649,
+      "score": 0.16,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "source_count": 2
+    },
+    {
+      "name": "NVIDIA RTX 5060 Ti 16GB",
+      "brand": "NVIDIA AIB",
+      "category": "Placas Gráficas",
+      "price_eur": 499,
+      "score": 0.16,
+      "sources": [
+        "amazon_kk",
+        "community"
+      ],
+      "source_count": 2
+    }
+  ],
+  "by_category": {
+    "Placas Gráficas": [
+      {
+        "name": "MSI GeForce RTX 5070 Gaming Trio OC 12G GDDR7 DLSS4",
+        "brand": "MSI",
+        "price_eur": 679.9,
+        "score": 0.78,
+        "sources": [
+          "pt_retail",
+          "amazon_kk",
+          "community"
+        ]
+      },
+      {
+        "name": "NVIDIA RTX 5090",
+        "brand": "NVIDIA",
+        "price_eur": 2400,
+        "score": 0.24,
+        "sources": [
+          "amazon_kk",
+          "community"
+        ]
+      },
+      {
+        "name": "AMD Radeon RX 9070",
+        "brand": "AMD AIB",
+        "price_eur": 549,
+        "score": 0.2,
+        "sources": [
+          "amazon_kk",
+          "community"
+        ]
+      },
+      {
+        "name": "ASUS TUF RTX 5070 OC",
+        "brand": "ASUS",
+        "price_eur": 719,
+        "score": 0.18,
+        "sources": [
+          "amazon_kk",
+          "community"
+        ]
+      },
+      {
+        "name": "NVIDIA RTX 5070",
+        "brand": "NVIDIA AIB",
+        "price_eur": 649,
+        "score": 0.16,
+        "sources": [
+          "amazon_kk",
+          "community"
+        ]
+      },
+      {
+        "name": "NVIDIA RTX 5060 Ti 16GB",
+        "brand": "NVIDIA AIB",
+        "price_eur": 499,
+        "score": 0.16,
+        "sources": [
+          "amazon_kk",
+          "community"
+        ]
+      }
+    ],
+    "Armazenamento": [
+      {
+        "name": "Samsung 990 Pro 2TB M.2 NVMe PCIe 4.0 x4",
+        "brand": "Samsung",
+        "score": 0.6,
+        "sources": [
+          "pt_retail",
+          "community"
+        ]
+      }
+    ],
+    "Memória RAM": [
+      {
+        "name": "Kingston Fury Beast 32GB (2x16GB) DDR5-6000MHz CL30 AMD EXPO/Intel XMP Preta",
+        "brand": "Kingston",
+        "price_eur": 282.4,
+        "score": 0.42,
+        "sources": [
+          "pt_retail",
+          "ae"
+        ]
+      }
+    ],
+    "Monitores": [
+      {
+        "name": "ASUS ROG Swift PG279Q 27\" IPS QHD 165Hz G-SYNC",
+        "brand": "ASUS",
+        "score": 0.2,
+        "sources": [
+          "pt_retail",
+          "community"
+        ]
+      }
+    ]
+  }
+}

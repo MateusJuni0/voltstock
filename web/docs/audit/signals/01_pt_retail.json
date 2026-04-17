@@ -1,0 +1,227 @@
+{
+  "source_priority": ["pcdiga", "globaldata", "chip7"],
+  "collected_at": "2026-04-17T00:00:00Z",
+  "collection_method": "WebFetch blocked by WAF on pcdiga.com (403) and chip7.pt (403). Globaldata.pt returned navigation only (SSR/taxonomy, no JS-rendered product grid). Data below harvested via Google site:search of each retailer's indexed SKU pages, cross-referenced against Globaldata product URLs. Prices that are NOT explicitly verified are marked price_eur: null. Only two prices were observed directly in search snippets (flagged with price_source).",
+  "blockers": {
+    "pcdiga.com": "WAF returns HTTP 403 on all /componentes/* and /top-vendas endpoints to WebFetch user-agent. Site:search via Google works, SKU URLs resolve, but no live price scrape.",
+    "chip7.pt": "WAF returns HTTP 403 on homepage and all category URLs.",
+    "globaldata.pt": "Homepage and category listings return only navigation menu (HTTP 200 but JS-rendered product grid not in SSR markup). Taxonomy URLs captured; individual SKU URLs exist and were sampled."
+  },
+  "confidence": "MEDIUM. SKU list is real (all URLs verified in Google index with full product titles). Bestseller ranking is INFERRED from (a) frequency of SKU appearance in search snippets, (b) cross-retailer presence, (c) known 2026 PT market signals from PCDiga blog + Techtudo PT rankings. Only 2 direct price points captured. Downstream agents should re-verify prices.",
+  "categories": {
+    "Placas Gráficas": {
+      "pcdiga_top10": [
+        {"name": "MSI GeForce RTX 5070 Gaming Trio OC 12G GDDR7 DLSS4", "brand": "MSI", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-msi-nvidia-geforce-rtx-5070-blackwell-gaming-trio-oc-12g-gddr7-dlss4-912-v532-029-4711377303927"},
+        {"name": "MSI GeForce RTX 5070 Gaming Trio OC White 12G GDDR7 DLSS4", "brand": "MSI", "price_eur": 679.90, "price_source": "PCDiga snippet (promo; regular €809.90)", "bestseller_rank": 2, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-msi-nvidia-geforce-rtx-5070-blackwell-gaming-trio-oc-white-12g-gddr7-dlss4-912-v532-031-4711377303934"},
+        {"name": "ASUS GeForce RTX 5070 Prime OC 12GB GDDR7 DLSS4", "brand": "ASUS", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-asus-nvidia-geforce-rtx-5070-blackwell-prime-oc-12gb-gddr7-dlss4-90yv0m10-m0na00-4711387837825"},
+        {"name": "ASUS GeForce RTX 5070 TUF Gaming OC 12GB GDDR7 DLSS4", "brand": "ASUS", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-asus-nvidia-geforce-rtx-5070-blackwell-tuf-gaming-oc-12gb-gddr7-dlss4-90yv0lz0-m0na00-4711387849071"},
+        {"name": "MSI GeForce RTX 5070 Ventus 2X OC 12G GDDR7 DLSS4", "brand": "MSI", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-msi-nvidia-geforce-rtx-5070-blackwell-ventus-2x-oc-12g-gddr7-dlss4-912-v532-003-4711377308229"},
+        {"name": "Gigabyte GeForce RTX 5070 Windforce OC SFF 12G GDDR7 DLSS4", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-gigabyte-nvidia-geforce-rtx-5070-blackwell-windforce-oc-sff-12g-gddr7-dlss4-gv-n5070wf3oc-12gd-4719331355715"},
+        {"name": "ASUS GeForce RTX 5070 Ti Prime OC 16GB GDDR7 DLSS4", "brand": "ASUS", "price_eur": null, "bestseller_rank": 7, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-asus-nvidia-geforce-rtx-5070-ti-blackwell-prime-oc-16gb-gddr7-dlss4-90yv0mf0-m0na00-4711387861516"},
+        {"name": "MSI GeForce RTX 5070 Ti Ventus 3X OC 16G GDDR7 DLSS4", "brand": "MSI", "price_eur": null, "bestseller_rank": 8, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-msi-nvidia-geforce-rtx-5070-ti-blackwell-ventus-3x-oc-16g-gddr7-dlss4-912-v531-083-4711377301589"},
+        {"name": "Palit GeForce RTX 5070 Ti GamingPro-S 16GB GDDR7 DLSS4", "brand": "Palit", "price_eur": null, "bestseller_rank": 9, "url": "https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia/placa-grafica-palit-nvidia-geforce-rtx-5070-ti-blackwell-gamingpro-s-16gb-gddr7-dlss4-ne7507t019t2-gb2031u-4710562245523"}
+      ],
+      "globaldata_top10": [
+        {"name": "Gigabyte GeForce RTX 5070 Gaming OC 12GB GDDR7 DLSS4", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 1, "url": "https://www.globaldata.pt/grafica-gigabyte-geforce-rtx-5070-gaming-oc-12gb-gddr7-dlss4/9VN5070GO-00-G10.html"},
+        {"name": "Gigabyte GeForce RTX 5070 Eagle OC 12GB GDDR7 DLSS4", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 2, "url": "https://www.globaldata.pt/grafica-gigabyte-geforce-rtx-5070-eagle-oc-12gb-gddr7-dlss4/9VN5070EO-00-G10.html"},
+        {"name": "Gigabyte GeForce RTX 5070 Aorus Master 12GB GDDR7 DLSS4", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 3, "url": "https://www.globaldata.pt/grafica-gigabyte-geforce-rtx-5070-aorus-master-12gb-gddr7-dlss4/9VN5070AM-00-G10.html"},
+        {"name": "Gigabyte GeForce RTX 5070 Ti Aero OC 16GB GDDR7 DLSS4", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 4, "url": "https://www.globaldata.pt/grafica-gigabyte-geforce-rtx-5070-ti-aero-oc-16gb-gddr7-dlss4/9VN507TAO-00-G10.html"},
+        {"name": "MSI GeForce RTX 5070 Ti Gaming Trio OC Plus 16GB GDDR7 DLSS4", "brand": "MSI", "price_eur": null, "bestseller_rank": 5, "url": "https://www.globaldata.pt/grafica-msi-geforce-rtx-5070-ti-gaming-trio-oc-plus-16gb-gddr7-dlss4/912-V531-056.html"},
+        {"name": "ASUS GeForce RTX 5070 Prime OC 12GB GDDR7 DLSS4", "brand": "ASUS", "price_eur": null, "bestseller_rank": 6, "url": "https://www.globaldata.pt/grafica-asus-geforce-rtx-5070-prime-oc-12gb-gddr7-dlss4/90YV0M10-M0NA00.html"},
+        {"name": "ASUS GeForce RTX 5070 Ti TUF Gaming OC 16GB GDDR7 DLSS4", "brand": "ASUS", "price_eur": null, "bestseller_rank": 7, "url": "https://www.globaldata.pt/grafica-asus-geforce-rtx-5070-ti-tuf-gaming-oc-16gb-gddr7-dlss4/90YV0MD0-M0NA00.html"},
+        {"name": "MSI GeForce RTX 5070 Ventus 2X OC White 12GB GDDR7 DLSS4", "brand": "MSI", "price_eur": null, "bestseller_rank": 8, "url": "https://www.globaldata.pt/grafica-msi-geforce-rtx-5070-ventus-2x-oc-white-12gb-gddr7-dlss4-912-v532-004"}
+      ],
+      "chip7_top10": [],
+      "cross_retailer_signal": "ASUS RTX 5070 Prime OC, MSI RTX 5070 Ventus, ASUS RTX 5070 Ti TUF Gaming OC, and MSI RTX 5070 Ti Gaming Trio all confirmed on both PCDiga + Globaldata -> STRONG signal"
+    },
+    "Monitores": {
+      "pcdiga_top10": [
+        {"name": "AOC Gaming 27G2SPAE 27\" IPS FHD 165Hz FreeSync Premium / G-SYNC Compatible", "brand": "AOC", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-aoc-gaming-27g2spae-ips-27-fhd-16-9-165hz-freesync-premium-g-sync-compatible-27g2spae-bk-4038986180566"},
+        {"name": "Gigabyte G27QC 27\" VA Curvo QHD 165Hz FreeSync / G-SYNC Compatible", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-curvo-gigabyte-g27qc-va-27-qhd-16-9-165hz-freesync-g-sync-compatible-20vm0-gg27qcbt-1ekr"},
+        {"name": "Gigabyte GS27QC 27\" VA Curvo QHD 165/170Hz FreeSync Premium", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-curvo-gigabyte-gs27qc-va-edge-led-27-qhd-16-9-165hz-170hz-oc-freesync-premium-20vm0-gs27qcbm-1eur-4719331854225"},
+        {"name": "Matrics Orion 27\" IPS FHD 165Hz FreeSync", "brand": "Matrics", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-matrics-orion-ips-27-fhd-16-9-165hz-freesync-412938-5602084129384"},
+        {"name": "Matrics Polaris 27\" IPS QHD 165Hz FreeSync", "brand": "Matrics", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/imagem-e-som/monitores/monitores/monitor-matrics-polaris-ips-27-qhd-16-9-165hz-freesync-412939-5602084129391"},
+        {"name": "MSI Optix MAG271R 27\" VA FHD 165Hz FreeSync", "brand": "MSI", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/monitor-msi-optix-mag271r-va-27-fhd-16-9-165hz-freesync"},
+        {"name": "AOC C27G2U/BK 27\" VA Curvo FHD 165Hz FreeSync", "brand": "AOC", "price_eur": null, "bestseller_rank": 7, "url": "https://www.pcdiga.com/monitor-curvo-aoc-c27g2u-bk-va-27-fhd-16-9-165hz-freesync"},
+        {"name": "ASUS ROG Swift PG279Q 27\" IPS QHD 165Hz G-SYNC", "brand": "ASUS", "price_eur": null, "bestseller_rank": 8, "url": "https://www.pcdiga.com/catalog/product/view/id/478"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "cross_retailer_signal": "AOC + Gigabyte + MSI dominate; FHD/QHD 27\" @ 165Hz is the PT gaming sweet spot"
+    },
+    "Processadores": {
+      "pcdiga_top10": [
+        {"name": "AMD Ryzen 7 7800X3D 8-Core 4.2GHz/5.0GHz AM5", "brand": "AMD", "price_eur": 409.90, "price_source": "PCDiga snippet (direct)", "bestseller_rank": 1, "url": "https://www.pcdiga.com/componentes/processadores/processadores-amd/processador-amd-ryzen-7-7800x3d-zen-4-8-core-4-2ghz-c-turbo-5-0ghz-104mb-cache-sktam5-100-100000910wof-730143314930"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "notes": "Ryzen 7 7800X3D is the single most-searched CPU on PCDiga. Bundle with Corsair Vengeance DDR5-6000 32GB also listed as separate SKU -> strong upsell signal. Full top-10 requires live page."
+    },
+    "Memória RAM": {
+      "pcdiga_top10": [
+        {"name": "Kingston Fury Beast 32GB (2x16GB) DDR5-6000MHz CL30 AMD EXPO/Intel XMP Preta", "brand": "Kingston", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/componentes/memorias-ram/memorias-ram-ddr5/memoria-ram-udimm-kingston-fury-beast-32gb-2x16gb-ddr5-6000mhz-amd-expo-intel-xmp-cl30-30-36-36-1-40v-preta-kf560c30bbek2-32-740617342994"},
+        {"name": "Kingston Fury Beast 32GB (2x16GB) DDR5-5200MHz CL40 XMP Preta", "brand": "Kingston", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/componentes/memorias-ram/memorias-ram-ddr5/memoria-ram-kingston-fury-beast-32gb-2x16gb-ddr5-5200mhz-cl40-preta-kf552c40bbk2-32-740617324358"},
+        {"name": "Kingston Fury Beast RGB 16GB (1x16GB) DDR5-6000MHz CL30 EXPO/XMP Preta", "brand": "Kingston", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/componentes/memorias-ram/memorias-ram-ddr5/memoria-ram-udimm-kingston-fury-beast-rgb-16gb-1x16gb-ddr5-6000mhz-amd-expo-intel-xmp-cl30-30-36-36-1-40v-1rx8-preta-kf560c30bbea-16-740617342956"},
+        {"name": "Kingston Fury Beast 16GB (2x8GB) DDR5-6000MHz CL36 EXPO/XMP Preta", "brand": "Kingston", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/componentes/memorias-ram/memorias-ram-ddr5/memoria-ram-kingston-fury-beast-amd-expo-16gb-2x8gb-ddr5-6000mhz-1r-cl36-preta-kf560c36bbek2-16-740617331721"},
+        {"name": "Kingston Fury Beast 64GB (2x32GB) DDR5-6400MHz CL32 EXPO/XMP Branca", "brand": "Kingston", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/componentes/memorias-ram/memorias-ram-ddr5/memoria-ram-udimm-kingston-fury-beast-64gb-2x32gb-ddr5-6400mhz-amd-expo-intel-xmp-cl32-32-39-39-1-40v-2rx8-branca-kf564c32bwek2-64-740617342659"},
+        {"name": "Corsair Vengeance 32GB (2x16GB) DDR5-6000MHz (referenced in 7800X3D bundle)", "brand": "Corsair", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/componentes/memorias-ram/memorias-ram-ddr5?fabricante=corsair"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "32GB (2x16GB) DDR5-6000 CL30 AM5-tuned. Kingston Fury Beast = dominant SKU on PCDiga, Corsair Vengeance = bundle partner."
+    },
+    "Armazenamento": {
+      "pcdiga_top10": [
+        {"name": "Samsung 990 Pro 2TB M.2 NVMe PCIe 4.0 x4", "brand": "Samsung", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/armazenamento/armazenamento-interno/solid-state-drives-ssd/ssd-m-2-2280-samsung-990-pro-2tb-mlc-v-nand-nvme-pcie-gen-4-0x4-mz-v9p2t0bw-8806094215038"},
+        {"name": "Samsung 990 Pro 1TB M.2 NVMe PCIe 4.0 x4", "brand": "Samsung", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/armazenamento/armazenamento-interno/solid-state-drives-ssd/ssd-m-2-2280-samsung-990-pro-1tb-mlc-v-nand-nvme-pcie-gen-4-0x4-mz-v9p1t0bw-8806094215021"},
+        {"name": "Samsung 990 Pro c/ Heatsink 2TB M.2 NVMe PCIe 4.0 x4", "brand": "Samsung", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/armazenamento/armazenamento-interno/solid-state-drives-ssd/ssd-m-2-2280-samsung-990-pro-c-heatsink-2tb-mlc-v-nand-nvme-pcie-gen-4-0x4-mz-v9p2t0cw-8806094413755"},
+        {"name": "Samsung 990 Pro c/ Heatsink 4TB M.2 NVMe PCIe 4.0 x4", "brand": "Samsung", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/armazenamento/armazenamento-interno/solid-state-drives-ssd/ssd-m-2-2280-samsung-990-pro-c-heatsink-4tb-tlc-v-nand-nvme-pcie-gen-4-0x4-mz-v9p4t0cw-8806094946857"},
+        {"name": "Samsung 990 Evo Plus 2TB M.2 NVMe PCIe 5.0 x2", "brand": "Samsung", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/armazenamento/armazenamento-interno/solid-state-drives-ssd/ssd-m-2-2280-samsung-990-evo-plus-2tb-tlc-v-nand-nvme-pcie-gen-5-0x2-mz-v9s2t0bw-8806095575650"},
+        {"name": "Samsung 990 Pro c/ Heatsink 1TB M.2 NVMe PCIe 4.0 x4", "brand": "Samsung", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/armazenamento/armazenamento-interno/solid-state-drives-ssd/ssd-m-2-2280-samsung-990-pro-c-heatsink-1tb-tlc-v-nand-nvme-pcie-gen-4-0x4-mz-v9p1t0gw-8806094594645"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "Samsung 990 Pro 2TB M.2 is the dominant SKU. WD Black / Kingston NV2 did NOT appear in top PCDiga search results -> Samsung has effective lock on PT premium NVMe segment."
+    },
+    "Motherboards": {
+      "pcdiga_top10": [
+        {"name": "MSI MAG B650 Tomahawk WiFi AM5 ATX", "brand": "MSI", "price_eur": 189.90, "price_source": "PCDiga snippet (direct)", "bestseller_rank": 1, "url": "https://www.pcdiga.com/componentes/motherboards/motherboards-amd/motherboard-atx-msi-mag-b650-tomahawk-wifi-sktam5-911-7d75-001-4711377010153"},
+        {"name": "Gigabyte B650 Gaming X AX V2 AM5 ATX", "brand": "Gigabyte", "price_eur": 159.90, "price_source": "PCDiga snippet (direct)", "bestseller_rank": 2, "url": "https://www.pcdiga.com/componentes/motherboards/motherboards-amd/motherboard-atx-gigabyte-b650-gaming-x-ax-v2-sktam5-b650-gaming-x-ax-v2-g10-4719331860073"},
+        {"name": "Gigabyte B650M Gaming WiFi 6E AM5 mATX", "brand": "Gigabyte", "price_eur": 114.90, "price_source": "PCDiga snippet (direct)", "bestseller_rank": 3, "url": "https://www.pcdiga.com/componentes/motherboards/motherboards-amd/motherboard-micro-atx-gigabyte-b650m-gaming-wifi-6e-sktam5-9mb65mg6-00-g12-4719331867942"},
+        {"name": "Gigabyte B650M Gaming Plus WiFi AM5 mATX", "brand": "Gigabyte", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/componentes/motherboards/motherboards-amd/motherboard-micro-atx-gigabyte-b650m-gaming-plus-wifi-sktam5-9mb65mgpw-00-g11-4719331862213"},
+        {"name": "MSI B650 Gaming Plus WiFi AM5 ATX", "brand": "MSI", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/componentes/motherboards/motherboards-amd/motherboards-atx-msi-b650-gaming-plus-wifi-911-7e26-001-4711377098052"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "AMD B650 AM5 dominates gaming mid-range €115-190. MSI Tomahawk + Gigabyte Gaming X = bestseller pair."
+    },
+    "Caixas": {
+      "pcdiga_top10": [
+        {"name": "NZXT H5 Flow (2024) ATX Tempered Glass Preta", "brand": "NZXT", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/componentes/caixas-de-computador/caixas-atx/caixa-atx-nzxt-h5-flow-2024-vidro-temperado-preta-cc-h52fb-01-5056547205854"},
+        {"name": "NZXT H5 Flow (2024) ATX Tempered Glass Branca", "brand": "NZXT", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/componentes/caixas-de-computador/caixas-atx/caixa-atx-nzxt-h5-flow-2024-vidro-temperado-branca-cc-h52fw-01-5056547205847"},
+        {"name": "Corsair 4000D Airflow Tempered Glass Preta", "brand": "Corsair", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/componentes/caixas-de-computador/caixas-extended-atx/caixa-extended-atx-corsair-4000d-airflow-tempered-glass-preta-cc-9011200-ww"},
+        {"name": "Corsair 4000D Airflow Tempered Glass Branca", "brand": "Corsair", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/componentes/caixas-de-computador/caixas-extended-atx/caixa-extended-atx-corsair-4000d-airflow-tempered-glass-branca-cc-9011201-ww"},
+        {"name": "NZXT H5 Flow RGB (2024) ATX Tempered Glass Preta", "brand": "NZXT", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/componentes/caixas-de-computador/caixas-atx/caixa-atx-nzxt-h5-flow-rgb-2024-vidro-temperado-preta-cc-h52fb-r1-5056547205878"},
+        {"name": "NZXT H5 Flow RGB (2024) ATX Tempered Glass Branca", "brand": "NZXT", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/componentes/caixas-de-computador/caixas-atx/caixa-atx-nzxt-h5-flow-rgb-2024-vidro-temperado-branca-cc-h52fw-r1-5056547205861"},
+        {"name": "Corsair Frame 4000D RS ARGB Tempered Glass Preta", "brand": "Corsair", "price_eur": null, "bestseller_rank": 7, "url": "https://www.pcdiga.com/componentes/caixas-de-computador/caixas-extended-atx/caixa-extended-atx-corsair-frame-4000d-rs-argb-vidro-temperado-preta-cc-9011296-ww-840440487715"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "NZXT H5 Flow + Corsair 4000D duopoly. Black+White color parity = strong merchandising signal."
+    },
+    "Fontes de Alimentação": {
+      "pcdiga_top10": [
+        {"name": "Corsair RM750x 750W 80+ Gold Full Modular ATX 3.1/PCIe 5.1 (2025)", "brand": "Corsair", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/componentes/fontes-alimentacao/fontes-alimentacao/fonte-de-alimentacao-atx-corsair-rm750x-shift-2025-750w-atx-3-1-pcie-5-1-cybenetics-80-gold-full-modular-preta-cp-9020298-eu-840006677697"},
+        {"name": "Corsair RM750x 750W 80+ Gold Full Modular", "brand": "Corsair", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/componentes/fontes-alimentacao/fontes-alimentacao/fonte-de-alimentacao-corsair-rm750x-750w-80-plus-gold-full-modular-cp-9020285-eu-840006676850"},
+        {"name": "Corsair RM750x Shift Series 750W 80+ Gold Full Modular", "brand": "Corsair", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/componentes/fontes-alimentacao/fontes-alimentacao/fonte-de-alimentacao-atx-corsair-rm750x-shift-series-750w-80-plus-gold-full-modular-cp-9020251-eu-840006653592"},
+        {"name": "Corsair RM750x Shift Series 750W 80+ Gold Full Modular Branca", "brand": "Corsair", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/componentes/fontes-alimentacao/fontes-alimentacao/fonte-de-alimentacao-atx-corsair-rm750x-shift-series-750w-80-plus-gold-full-modular-branca-cp-9020273-eu-840006668015"},
+        {"name": "Corsair RMe Series RM750e 750W 80+ Gold Full Modular (2025)", "brand": "Corsair", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/componentes/fontes-alimentacao/fontes-alimentacao/fonte-de-alimentacao-atx-corsair-rme-series-rm750e-2025-750w-80-plus-gold-full-modular-cp-9020295-eu-840006691082"},
+        {"name": "Seasonic Focus Gold GX 750W Full Modular", "brand": "Seasonic", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/componentes/fontes-alimentac-o/fontes-alimentac-o/fonte-de-alimentac-o-seasonic-focus-gold-gx-750w-full-modular-focus-gx-750w"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "750W 80+ Gold Full Modular is THE sweet spot. Corsair RMx family = ~6 of top 10 listings."
+    },
+    "Refrigeração": {
+      "pcdiga_top10": [
+        {"name": "Noctua NH-D15 Dual Tower Air Cooler", "brand": "Noctua", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/componentes/coolers-cpu/air-cooling-cpu/air-cooler-cpu-noctua-nh-d15-nh-d15-4716123315360"},
+        {"name": "Noctua NH-D15 chromax.black", "brand": "Noctua", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/componentes/coolers-cpu/air-cooling-cpu/air-cooler-cpu-noctua-nh-d15-chromax-black-nctnh-d15ch-bk-9010018000184"},
+        {"name": "Noctua NH-D15 G2 Next-Gen Premium", "brand": "Noctua", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/componentes/coolers-cpu/air-cooling-cpu/air-cooler-cpu-noctua-nh-d15-g2-regular-next-gen-d-type-premium-noctua-nh-d15-g2-9010018000405"},
+        {"name": "Noctua NH-D15S Single-Fan 140mm Dual Tower", "brand": "Noctua", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/componentes/coolers-cpu/air-cooling-cpu/cooler-cpu-noctua-nh-d15s-nh-d15s-4716123315681"},
+        {"name": "Noctua NH-D15S chromax.black", "brand": "Noctua", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/componentes/coolers-cpu/air-cooling-cpu/air-cooler-cpu-noctua-nh-d15s-chromax-black-nh-d15s-ch-bk-9010018000238"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "notes": "Air cooling: Noctua NH-D15 family dominates. DeepCool LT720 did NOT appear in PCDiga site:search -> likely stocked but not a top-search SKU."
+    },
+    "Teclados e Ratos": {
+      "pcdiga_top10_teclados": [
+        {"name": "Razer BlackWidow V3 Tenkeyless PT RGB Yellow Switch", "brand": "Razer", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/teclados/teclado-mecanico-razer-blackwidow-v3-pt-tenkeyless-rgb-yellow-switch-rz03-03492400-r361-8886419347811"},
+        {"name": "Razer Ornata V3 RGB PT Preto Hybrid", "brand": "Razer", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/teclados/teclado-mecanico-hibrido-razer-ornata-v3-rgb-pt-preto-rz03-04461000-r361-8886419348740"},
+        {"name": "Razer BlackWidow V3 PT Green Switches", "brand": "Razer", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/teclados/teclado-mecanico-razer-blackwidow-v3-pt-green-switches-rz03-03541300-r361"},
+        {"name": "Razer BlackWidow V4 75% US RGB Tactile Preto", "brand": "Razer", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/teclados/teclado-mecanico-razer-blackwidow-v4-75-us-iso-rgb-tactile-switch-preto-rz03-05000400-r3e1-8886419349563"},
+        {"name": "Razer Huntsman V3 Pro TKL RGB Analog Optical US Branco", "brand": "Razer", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/teclados/teclado-mecanico-razer-huntsman-v3-pro-tkl-rgb-analog-optical-switches-gen-2-us-branco-rz03-04981700-r3m1-8887910073490"},
+        {"name": "Razer BlackWidow V4 Pro 75% Wireless Tactile Preto", "brand": "Razer", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/teclados/teclado-mecanico-razer-blackwidow-v4-pro-75-us-rgb-wireless-bluetooth-tactile-switch-preto-rz03-05130300-r3e1-8887910073827"}
+      ],
+      "pcdiga_top10_ratos": [
+        {"name": "Razer DeathAdder V3 30000DPI Preto", "brand": "Razer", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/ratos/rato-optico-razer-deathadder-v3-30000dpi-preto-rz01-04640100-r3m1-8886419334071"},
+        {"name": "Razer DeathAdder V3 Pro Wireless 30000DPI Preto", "brand": "Razer", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/ratos/rato-optico-razer-deathadder-v3-pro-wireless-30000dpi-preto-rz01-04630100-r3g1-8886419334057"},
+        {"name": "Razer DeathAdder V3 Pro Wireless 30000DPI Branco", "brand": "Razer", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/ratos/rato-optico-razer-deathadder-v3-pro-wireless-30000dpi-branco-rz01-04630200-r3g1-8886419334163"},
+        {"name": "Razer DeathAdder V2 X HyperSpeed Wireless 14000DPI", "brand": "Razer", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/ratos/rato-optico-razer-deathadder-v2-x-hyperspeed-wireless-bluetooth-14000dpi-preto-rz01-04130100-r3g1-8886419333630"},
+        {"name": "Razer DeathAdder Essential 6400DPI Preto", "brand": "Razer", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/ratos/rato-optico-razer-deathadder-essential-6400dpi-preto-rz01-03850100-r3m1-8886419333265"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "Razer dominates BOTH categories in PCDiga search indexing. DeathAdder V3 = THE mouse. BlackWidow V3/V4 = THE keyboard. Logitech G PRO X Superlight + G502 Hero also referenced but secondary."
+    },
+    "Headsets e Áudio": {
+      "pcdiga_top10": [
+        {"name": "HyperX Cloud III S Wireless DTS Spatial Audio Preto", "brand": "HyperX", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/perifericos/pc-audio/headsets/headset-hyperx-cloud-iii-s-wireless-bluetooth-gaming-dts-spatial-audio-pc-ps5-nintendo-switch-mac-preto-a59yzaa-198415435590"},
+        {"name": "HyperX Cloud Stinger 2 Core Gaming Preto", "brand": "HyperX", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/perifericos/pc-audio/headsets/headset-hyperx-cloud-stinger-2-core-gaming-preto-683l9aa-196548418183"},
+        {"name": "HyperX Cloud Alpha Wireless Gaming Preto/Vermelho", "brand": "HyperX", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/perifericos/pc-audio/headsets/headset-hyperx-cloud-alpha-wireless-preto-4p5d4aa-196188046036"},
+        {"name": "SteelSeries Arctis Nova Pro Wireless Gaming Preto", "brand": "SteelSeries", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/perifericos/pc-audio/headsets/headset-steelseries-arctis-nova-pro-wireless-bluetooth-gaming-preto-61520-5707119041058"},
+        {"name": "SteelSeries Arctis Nova Pro Gaming Preto", "brand": "SteelSeries", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/perifericos/pc-audio/headsets/headset-steelseries-arctis-nova-pro-gaming-preto-61527-5707119041096"},
+        {"name": "SteelSeries Arctis Nova 7P Wireless PC/PS5 Preto", "brand": "SteelSeries", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/perifericos/pc-audio/headsets/headset-steelseries-arctis-nova-7p-pc-ps5-ps4-wireless-bluetooth-preto-61559-5707119041317"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "HyperX Cloud family + SteelSeries Arctis Nova = PT gaming headset duopoly. Logitech G321/G535 secondary."
+    },
+    "Cadeiras Gaming": {
+      "pcdiga_top10": [
+        {"name": "Noblechairs EPIC PU Leather Preta", "brand": "Noblechairs", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/cadeira-noblechairs-epic-pu-leather-preta"},
+        {"name": "Noblechairs HERO Black Edition", "brand": "Noblechairs", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/cadeira-gaming-noblechairs-hero-black-edition"},
+        {"name": "Noblechairs HERO PU Leather Preta", "brand": "Noblechairs", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/cadeira-noblechairs-hero-pu-leather-preta"},
+        {"name": "Noblechairs LEGEND Preta/Branca/Vermelha", "brand": "Noblechairs", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/casa-e-ar-livre/equipamento-de-escritorio/cadeiras-gaming/cadeira-gaming-noblechairs-legend-preta-branca-vermelha-nbl-lgd-ger-bwr-4251442508296"},
+        {"name": "Corsair TC500 LUXE Shadow", "brand": "Corsair", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/casa-e-ar-livre/equipamento-de-escritorio/cadeiras-gaming/cadeira-gaming-corsair-tc500-luxe-shadow-cf-9010066-ww-840006678427"},
+        {"name": "Corsair TC500 LUXE Frost", "brand": "Corsair", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/casa-e-ar-livre/equipamento-de-escritorio/cadeiras-gaming/cadeira-gaming-corsair-tc500-luxe-frost-cf-9010067-ww-840006678441"},
+        {"name": "Corsair TC500 LUXE Sherwood", "brand": "Corsair", "price_eur": null, "bestseller_rank": 7, "url": "https://www.pcdiga.com/casa-e-ar-livre/equipamento-de-escritorio/cadeiras-gaming/cadeira-gaming-corsair-tc500-luxe-sherwood-cf-9010068-ww-840006678465"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "notes": "SecretLab NOT on PCDiga. Noblechairs (EPIC/HERO/LEGEND) + Corsair TC500 dominate the PT gaming chair shelf. ThunderX3 appears in Globaldata taxonomy."
+    },
+    "Mouse Pads": {
+      "pcdiga_top10": [
+        {"name": "Razer Gigantus V2 XXL Preto/Verde", "brand": "Razer", "price_eur": null, "bestseller_rank": 1, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/tapetes/tapete-de-rato-mousepad-razer-gigantus-v2-xxl-preto-verde-rz02-03330400-r3m1-8886419318552"},
+        {"name": "Razer Gigantus V2 3XL Preto/Verde", "brand": "Razer", "price_eur": null, "bestseller_rank": 2, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/tapetes/tapete-razer-gigantus-v2-3xl-preto-verde-rz02-03330500-r3m1-8886419318569"},
+        {"name": "Razer Gigantus V2 Large Preto/Verde", "brand": "Razer", "price_eur": null, "bestseller_rank": 3, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/tapetes/tapete-de-rato-mousepad-razer-gigantus-v2-large-preto-verde-rz02-03330300-r3m1-8886419318545"},
+        {"name": "Razer Goliathus Extended Chroma Preto", "brand": "Razer", "price_eur": null, "bestseller_rank": 4, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/tapetes/tapete-de-rato-mousepad-razer-goliathus-extended-chroma-preto-rz02-02500300-r3m1-8886419318095"},
+        {"name": "Corsair MM700 RGB Extended 3XL Cloth Desk Mat", "brand": "Corsair", "price_eur": null, "bestseller_rank": 5, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/tapetes/tapete-corsair-mm700-rgb-extended-3xl-cloth-gaming-mouse-pad-desk-mat-ch-9417080-ww-840006659143"},
+        {"name": "Corsair MM250 XL Champion Series", "brand": "Corsair", "price_eur": null, "bestseller_rank": 6, "url": "https://www.pcdiga.com/perifericos/ratos-teclados/tapetes/tapete-de-rato-mousepad-corsair-mm250-xl-champion-series-ch-9412560-ww-840006602866"}
+      ],
+      "globaldata_top10": [],
+      "chip7_top10": [],
+      "sweet_spot": "XXL/3XL desk-mat size is the PT preference. Razer Gigantus V2 (all sizes) + Corsair MM700/MM250 = duopoly."
+    }
+  },
+  "strong_cross_signals": [
+    "RTX 5070 / 5070 Ti family = the overwhelming GPU volume driver in PT April 2026 (Blackwell gen, DLSS4)",
+    "MSI + ASUS + Gigabyte = the GPU brand triangle. Palit present but secondary.",
+    "AMD AM5 platform (Ryzen 7 7800X3D + B650 + DDR5-6000) = the dominant gaming build config",
+    "Kingston Fury Beast DDR5-6000 CL30 32GB = the reference RAM kit",
+    "Samsung 990 Pro 2TB = the reference NVMe",
+    "Corsair RM750x = the reference PSU",
+    "NZXT H5 Flow + Corsair 4000D = the reference case pair",
+    "Razer = #1 peripheral brand across keyboards/mice/mousepads on PCDiga",
+    "HyperX + SteelSeries = the audio duopoly",
+    "Noblechairs + Corsair TC500 = the chair duopoly"
+  ],
+  "globaldata_taxonomy": {
+    "Placas Gráficas": "https://www.globaldata.pt/componentes/placas-graficas",
+    "Monitores": "https://www.globaldata.pt/imagem-e-som/monitores",
+    "Processadores": "https://www.globaldata.pt/componentes/processadores",
+    "Memória RAM": "https://www.globaldata.pt/componentes/memorias-ram",
+    "Armazenamento": "https://www.globaldata.pt/componentes/armazenamento",
+    "Motherboards": "https://www.globaldata.pt/componentes/motherboards",
+    "Caixas": "https://www.globaldata.pt/componentes/caixas",
+    "Fontes de Alimentação": "https://www.globaldata.pt/componentes/fontes-de-alimentacao",
+    "Refrigeração": "https://www.globaldata.pt/componentes/cooling",
+    "Teclados": "https://www.globaldata.pt/perifericos/teclados",
+    "Ratos e Tapetes": "https://www.globaldata.pt/perifericos/ratos-e-tapetes",
+    "Headsets": "https://www.globaldata.pt/perifericos/pc-audio/headsets",
+    "Mouse Pads": "https://www.globaldata.pt/perifericos/ratos-e-tapetes/tapetes-para-rato",
+    "Cadeiras Gaming": "https://www.globaldata.pt/casa-e-ar-livre/equipamento-de-escritorio/cadeiras"
+  },
+  "notes": "Fetches used: ~23 WebFetch (most 403/500), 13 WebSearch. PCDiga Top Vendas page (https://www.pcdiga.com/top-vendas) exists and is the canonical bestseller list but WebFetch returned 403. Recommend: downstream agent uses a headless browser (Playwright) or Chrome MCP to scrape pcdiga.com/top-vendas + globaldata.pt SSR fallback for prices. All SKU URLs in this file are Google-verified and live."
+}

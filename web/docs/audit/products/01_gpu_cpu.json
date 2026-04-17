@@ -1,0 +1,302 @@
+{
+  "generated_at": "2026-04-17T00:00:00Z",
+  "slice": "gpu+cpu",
+  "product_count": 32,
+  "summary": {
+    "keep": 17,
+    "price_drift": 14,
+    "obsolete": 1,
+    "missing": 0
+  },
+  "sources": [
+    "globaldata.pt",
+    "pcdiga.com",
+    "pccomponentes.pt",
+    "kuantokusta.pt",
+    "dlcompare.pt",
+    "chip7.pt",
+    "geekinout.pt"
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "MSI GeForce RTX 5090 SUPRIM X 32G",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 2599.99,
+      "verdict": "KEEP",
+      "market_price_eur": 2700,
+      "notes": "RTX 5090 PT range 2409-2998EUR; SUPRIM X premium tier fits mid-upper band."
+    },
+    {
+      "id": 14,
+      "name": "ASUS ROG Strix RTX 4090 OC 24GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 2099.99,
+      "verdict": "OBSOLETE",
+      "market_price_eur": null,
+      "replacement_suggestion": "ASUS ROG Strix RTX 5090 OC 32GB or keep ASUS ROG RTX 5080 OC (id 124)",
+      "notes": "NVIDIA ceased RTX 4090 production Oct 2024. EOL worldwide, scarce/inflated in EU market. Replaced by RTX 5090."
+    },
+    {
+      "id": 21,
+      "name": "NVIDIA GeForce RTX 4070 Ti Super 16GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 999.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 650,
+      "notes": "dlcompare.pt best price 588.83EUR; PT market typically 600-750EUR. Catalog ~40% above."
+    },
+    {
+      "id": 22,
+      "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 549.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 420,
+      "notes": "PT retail 380-450EUR for 8GB variant. Catalog ~30% above."
+    },
+    {
+      "id": 23,
+      "name": "NVIDIA GeForce RTX 4060 8GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 369.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 300,
+      "notes": "PT retail typically 280-320EUR. Catalog ~20% above."
+    },
+    {
+      "id": 24,
+      "name": "AMD Radeon RX 7900 XTX 24GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 1099.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 900,
+      "notes": "Post RX 9070 XT launch, PT prices dropped to 850-950EUR. Catalog ~18% above."
+    },
+    {
+      "id": 25,
+      "name": "AMD Radeon RX 7800 XT 16GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 599.99,
+      "verdict": "KEEP",
+      "market_price_eur": 550,
+      "notes": "dlcompare.pt best 535EUR; PT range 535-670EUR. Within ±15%."
+    },
+    {
+      "id": 26,
+      "name": "AMD Radeon RX 7600 8GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 319.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 270,
+      "notes": "PT retail 260-290EUR. Catalog ~18% above."
+    },
+    {
+      "id": 27,
+      "name": "NVIDIA GeForce RTX 4070 Super 12GB",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 749.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 580,
+      "notes": "PT retail 550-620EUR post RTX 5070 launch. Catalog ~29% above."
+    },
+    {
+      "id": 121,
+      "name": "NVIDIA GeForce RTX 5090",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 2599.99,
+      "verdict": "KEEP",
+      "market_price_eur": 2600,
+      "notes": "PT range 2409-2998EUR. PNY ~2409EUR, ASUS TUF ~2810EUR, ROG Astral ~2998EUR. Sits exactly on median."
+    },
+    {
+      "id": 122,
+      "name": "AMD Radeon RX 9070 XT",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 799.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 670,
+      "notes": "dlcompare.pt best 639.90EUR; PT MSRP ~550EUR+VAT. Catalog ~19% above."
+    },
+    {
+      "id": 123,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 1099.99,
+      "verdict": "KEEP",
+      "market_price_eur": 1100,
+      "notes": "PT range 900-1400EUR. Catalog sits in middle."
+    },
+    {
+      "id": 124,
+      "name": "ASUS ROG Strix RTX 5080 OC",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 1649.99,
+      "verdict": "KEEP",
+      "market_price_eur": 1550,
+      "notes": "RTX 5080 base 894EUR but ROG Strix OC premium tier typically 1400-1700EUR. Within ±15%."
+    },
+    {
+      "id": 125,
+      "name": "MSI Gaming Trio RTX 5070",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 849.99,
+      "verdict": "KEEP",
+      "market_price_eur": 780,
+      "notes": "RTX 5070 PT range 669-849EUR; MSI Gaming Trio premium sits at top. Within ±15%."
+    },
+    {
+      "id": 126,
+      "name": "Sapphire Nitro+ RX 9070",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 649.99,
+      "verdict": "KEEP",
+      "market_price_eur": 620,
+      "notes": "RX 9070 non-XT launched at 549USD; Sapphire Nitro+ premium AIB ~600-680EUR PT. Within ±15%."
+    },
+    {
+      "id": 128,
+      "name": "Intel Arc B580",
+      "category": "Placas Gráficas",
+      "catalog_price_eur": 329.99,
+      "verdict": "KEEP",
+      "market_price_eur": 290,
+      "notes": "MSRP 229EUR but PT supply-constrained; dlcompare best 278.39EUR. Catalog ~15% above MSRP but aligned with actual retail."
+    },
+    {
+      "id": 2,
+      "name": "AMD Ryzen 7 7800X3D",
+      "category": "Processadores",
+      "catalog_price_eur": 399.99,
+      "verdict": "KEEP",
+      "market_price_eur": 430,
+      "notes": "Chipman 468.90EUR; PT range 420-470EUR. Catalog slightly below market (~8%). Still widely sold despite Zen 5 release."
+    },
+    {
+      "id": 13,
+      "name": "Intel Core i9-14900K",
+      "category": "Processadores",
+      "catalog_price_eur": 599.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 465,
+      "notes": "i9-14900KF PT 464.90EUR. K variant typically 20-40EUR higher. Catalog ~23% above market. 14th gen being phased out by Core Ultra 200S."
+    },
+    {
+      "id": 29,
+      "name": "AMD Ryzen 5 7600X",
+      "category": "Processadores",
+      "catalog_price_eur": 239.99,
+      "verdict": "KEEP",
+      "market_price_eur": 230,
+      "notes": "Widely sold on PCDiga; current PT range 220-260EUR. Within ±15%."
+    },
+    {
+      "id": 30,
+      "name": "AMD Ryzen 9 7950X3D",
+      "category": "Processadores",
+      "catalog_price_eur": 649.99,
+      "verdict": "KEEP",
+      "market_price_eur": 620,
+      "notes": "Available on Globaldata; Zen 4 flagship X3D still sold. PT range 600-680EUR. Within ±15%."
+    },
+    {
+      "id": 31,
+      "name": "Intel Core i5-14600K",
+      "category": "Processadores",
+      "catalog_price_eur": 339.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 265,
+      "notes": "KuantoKusta 264.90EUR. Catalog ~28% above market."
+    },
+    {
+      "id": 32,
+      "name": "Intel Core i7-14700K",
+      "category": "Processadores",
+      "catalog_price_eur": 459.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 390,
+      "notes": "PT retail 389.90EUR (KF variant). K ~10-30EUR more. Catalog ~18% above."
+    },
+    {
+      "id": 35,
+      "name": "AMD Ryzen 9 7900X",
+      "category": "Processadores",
+      "catalog_price_eur": 449.99,
+      "verdict": "KEEP",
+      "market_price_eur": 420,
+      "notes": "oribatejo listed 9900X at 567EUR context; 7900X PT market ~400-450EUR. Within ±15%."
+    },
+    {
+      "id": 129,
+      "name": "AMD Ryzen 9 9950X",
+      "category": "Processadores",
+      "catalog_price_eur": 799.99,
+      "verdict": "KEEP",
+      "market_price_eur": 750,
+      "notes": "Zen 5 flagship, PT range 720-820EUR. Within ±15%."
+    },
+    {
+      "id": 130,
+      "name": "Intel Core Ultra 9 285K",
+      "category": "Processadores",
+      "catalog_price_eur": 699.99,
+      "verdict": "KEEP",
+      "market_price_eur": 650,
+      "notes": "Arrow Lake flagship; PT retail 620-700EUR. Within ±15%."
+    },
+    {
+      "id": 131,
+      "name": "AMD Ryzen 7 9700X",
+      "category": "Processadores",
+      "catalog_price_eur": 419.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 310,
+      "notes": "KuantoKusta avg 311EUR (Mar 2026); PcComponentes 290-350EUR. Catalog ~35% above."
+    },
+    {
+      "id": 132,
+      "name": "Intel Core Ultra 7 265K",
+      "category": "Processadores",
+      "catalog_price_eur": 489.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 390,
+      "notes": "Intel cut 265K price by 100USD recently; PT market ~380-410EUR. Catalog ~25% above."
+    },
+    {
+      "id": 133,
+      "name": "AMD Ryzen 5 9600X",
+      "category": "Processadores",
+      "catalog_price_eur": 289.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 240,
+      "notes": "PcComponentes 238EUR; oribatejo 350EUR. PT effective retail ~230-260EUR. Catalog ~21% above."
+    },
+    {
+      "id": 134,
+      "name": "AMD Ryzen 9 9900X",
+      "category": "Processadores",
+      "catalog_price_eur": 599.99,
+      "verdict": "KEEP",
+      "market_price_eur": 567,
+      "notes": "oribatejo 567.42EUR. Catalog within ~6%."
+    },
+    {
+      "id": 135,
+      "name": "Intel Core Ultra 5 245K",
+      "category": "Processadores",
+      "catalog_price_eur": 349.99,
+      "verdict": "KEEP",
+      "market_price_eur": 330,
+      "notes": "Arrow Lake mid-tier; PT range 310-360EUR. Within ±15%."
+    },
+    {
+      "id": 136,
+      "name": "AMD Ryzen 7 9800X3D",
+      "category": "Processadores",
+      "catalog_price_eur": 649.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 520,
+      "notes": "Amazon 41% discount referenced; PcComponentes PT ~500-550EUR. High demand but catalog ~25% above current market after discounts."
+    }
+  ]
+}

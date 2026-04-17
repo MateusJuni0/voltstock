@@ -1,0 +1,282 @@
+{
+  "generated_at": "2026-04-17T00:00:00Z",
+  "slice": "mb+ram",
+  "product_count": 33,
+  "summary": {
+    "keep": 31,
+    "price_drift": 2,
+    "obsolete": 0,
+    "missing": 0
+  },
+  "method_notes": "Spot-checked 8 representative SKUs via WebSearch (PcComponentes.pt, CHIP7, PCDiga, KuantoKusta, Globaldata, Fnac, Coditek). Remaining items classified by generation heuristic: all motherboards are AM5 (X870E/B850/X670E/B650) or LGA1700/LGA1851 current-to-previous-gen; all RAM is DDR5 (current). No DDR4 or LGA1200/AM4 legacy SKUs found. Z790/B760 retained as KEEP because they remain widely stocked on PT retail (PCDiga, CHIP7, Globaldata) for LGA1700 upgrades, though Intel has moved to LGA1851 Core Ultra 2.",
+  "products": [
+    {
+      "id": 9,
+      "name": "MSI MAG B650 Tomahawk WiFi",
+      "category": "Motherboards",
+      "catalog_price_eur": 219.99,
+      "verdict": "KEEP",
+      "notes": "AM5 B650, fully current for Ryzen 7000/9000. Popular mid-range on PT retail. Price in line with market (~210-230 EUR)."
+    },
+    {
+      "id": 15,
+      "name": "ASUS ROG Maximus Z790 Hero",
+      "category": "Motherboards",
+      "catalog_price_eur": 699.99,
+      "verdict": "KEEP",
+      "market_price_eur": 687.33,
+      "notes": "Verified on Fnac.pt marketplace at 687 EUR. Within ±5% of catalog. LGA1700 previous-gen (Core 14th) but still stocked in PT."
+    },
+    {
+      "id": 37,
+      "name": "MSI MPG B760M Edge WiFi",
+      "category": "Motherboards",
+      "catalog_price_eur": 189.99,
+      "verdict": "KEEP",
+      "notes": "LGA1700 B760 mATX. Previous-gen Intel but widely stocked. Typical PT retail 170-200 EUR."
+    },
+    {
+      "id": 38,
+      "name": "ASUS TUF Gaming B650-PLUS WiFi",
+      "category": "Motherboards",
+      "catalog_price_eur": 209.99,
+      "verdict": "KEEP",
+      "notes": "AM5 B650, current gen. Very common on PT retail at ~200-220 EUR."
+    },
+    {
+      "id": 41,
+      "name": "ASUS ROG Strix X670E-E Gaming WiFi",
+      "category": "Motherboards",
+      "catalog_price_eur": 479.99,
+      "verdict": "KEEP",
+      "notes": "X670E AM5 flagship chipset, still stocked on PT retail. Typical 450-500 EUR."
+    },
+    {
+      "id": 42,
+      "name": "MSI MEG Z790 ACE",
+      "category": "Motherboards",
+      "catalog_price_eur": 649.99,
+      "verdict": "KEEP",
+      "notes": "LGA1700 enthusiast board. Previous-gen but still sold. Superseded by Z890 ACE (id 138) in same catalog."
+    },
+    {
+      "id": 43,
+      "name": "Gigabyte X670E Aorus Master",
+      "category": "Motherboards",
+      "catalog_price_eur": 429.99,
+      "verdict": "KEEP",
+      "notes": "X670E AM5 premium. Available at PcComponentes.pt, Bytestore.pt, CHIP7, Globaldata. Price in normal PT range."
+    },
+    {
+      "id": 44,
+      "name": "ASRock B760M Pro RS WiFi",
+      "category": "Motherboards",
+      "catalog_price_eur": 149.99,
+      "verdict": "KEEP",
+      "market_price_eur": 129.9,
+      "notes": "CHIP7 lists non-WiFi B760 Pro RS/D4 at 129.90 EUR. WiFi variant commands ~20 EUR premium. Catalog within band but towards top."
+    },
+    {
+      "id": 137,
+      "name": "ASUS ROG Crosshair X870E Hero",
+      "category": "Motherboards",
+      "catalog_price_eur": 799.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen AM5 X870E flagship (2024 launch). Available at PcComponentes.pt, Globaldata. International ref ~580 USD but PT retail typically 750-850 EUR with VAT."
+    },
+    {
+      "id": 138,
+      "name": "MSI MEG Z890 ACE",
+      "category": "Motherboards",
+      "catalog_price_eur": 699.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen LGA1851 (Core Ultra 2). Available at PcComponentes.pt, KuantoKusta, Globaldata, Coditek. Flagship enthusiast tier."
+    },
+    {
+      "id": 139,
+      "name": "Gigabyte B850 AORUS Elite",
+      "category": "Motherboards",
+      "catalog_price_eur": 279.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen AM5 B850 (2025 launch). Mid-range mainstream. Price in line with typical PT retail."
+    },
+    {
+      "id": 140,
+      "name": "ASRock Z890 Taichi",
+      "category": "Motherboards",
+      "catalog_price_eur": 549.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen LGA1851 Z890 premium. Launched Q4 2024."
+    },
+    {
+      "id": 141,
+      "name": "ASUS ROG Strix B850-F Gaming",
+      "category": "Motherboards",
+      "catalog_price_eur": 329.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen AM5 B850 ROG mid-high. 2025 launch."
+    },
+    {
+      "id": 142,
+      "name": "MSI MAG B850 Tomahawk",
+      "category": "Motherboards",
+      "catalog_price_eur": 259.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen AM5 B850 mainstream. Direct successor to B650 Tomahawk."
+    },
+    {
+      "id": 143,
+      "name": "Gigabyte Z890 AORUS Master",
+      "category": "Motherboards",
+      "catalog_price_eur": 649.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen LGA1851 Z890 high-end."
+    },
+    {
+      "id": 144,
+      "name": "ASRock B850M Pro RS",
+      "category": "Motherboards",
+      "catalog_price_eur": 169.99,
+      "verdict": "KEEP",
+      "notes": "Current-gen AM5 B850 mATX budget. 2025 launch."
+    },
+    {
+      "id": 4,
+      "name": "Corsair Vengeance DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 139.99,
+      "verdict": "KEEP",
+      "notes": "DDR5-6000 32GB kit is the sweet-spot RAM for AM5 in 2025-2026. Typical PT retail 100-140 EUR at CHIP7/PCDiga/PcComponentes. Catalog slightly above median but within band."
+    },
+    {
+      "id": 16,
+      "name": "G.Skill Trident Z5 RGB DDR5 64GB",
+      "category": "Memória RAM",
+      "catalog_price_eur": 249.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 320,
+      "notes": "64GB (2x32GB) DDR5-6400 Trident Z5 RGB currently retails around 300-340 EUR in PT (Pangoly global ref ~980 USD). Catalog at 249.99 is significantly BELOW market — needs upward adjustment or verify speed spec."
+    },
+    {
+      "id": 45,
+      "name": "Kingston Fury Beast DDR5 32GB 5600MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 109.99,
+      "verdict": "KEEP",
+      "notes": "Fury Beast 32GB DDR5-5600 is entry DDR5 kit. PT retail typically 90-115 EUR."
+    },
+    {
+      "id": 46,
+      "name": "Corsair Dominator Platinum RGB DDR5 32GB 6200MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 199.99,
+      "verdict": "KEEP",
+      "notes": "Dominator Platinum premium tier. Price in line with PT retail (~180-220 EUR)."
+    },
+    {
+      "id": 47,
+      "name": "Kingston Fury Renegade DDR5 32GB 6400MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 169.99,
+      "verdict": "KEEP",
+      "notes": "Fury Renegade is Kingston's enthusiast line. 32GB 6400 kit typical 140-180 EUR in PT."
+    },
+    {
+      "id": 48,
+      "name": "TeamGroup T-Force Delta RGB DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 119.99,
+      "verdict": "KEEP",
+      "notes": "Mid-tier RGB DDR5-6000 32GB. Typical PT retail 105-130 EUR."
+    },
+    {
+      "id": 49,
+      "name": "Corsair Vengeance DDR5 16GB 5600MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 59.99,
+      "verdict": "KEEP",
+      "notes": "16GB DDR5-5600 budget kit. PT retail 50-70 EUR."
+    },
+    {
+      "id": 50,
+      "name": "G.Skill Ripjaws S5 DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 119.99,
+      "verdict": "KEEP",
+      "notes": "Ripjaws S5 is G.Skill's non-RGB mainstream. 32GB 6000 typical 100-130 EUR."
+    },
+    {
+      "id": 52,
+      "name": "Crucial DDR5 32GB 4800MHz",
+      "category": "Memória RAM",
+      "catalog_price_eur": 79.99,
+      "verdict": "KEEP",
+      "notes": "Entry-level DDR5-4800 JEDEC kit, office/workstation tier. Verified on CHIP7, PcComponentes, KuantoKusta. Typical 70-90 EUR."
+    },
+    {
+      "id": 145,
+      "name": "G.Skill Trident Z5 RGB DDR5-7200",
+      "category": "Memória RAM",
+      "catalog_price_eur": 219.99,
+      "verdict": "KEEP",
+      "notes": "High-speed DDR5-7200 enthusiast kit. Typical 200-250 EUR for 32GB in PT."
+    },
+    {
+      "id": 146,
+      "name": "Corsair Dominator Titanium DDR5-6400",
+      "category": "Memória RAM",
+      "catalog_price_eur": 289.99,
+      "verdict": "KEEP",
+      "notes": "Dominator Titanium is Corsair's 2024+ flagship. 6400 MT/s kit premium tier."
+    },
+    {
+      "id": 147,
+      "name": "Kingston Fury Beast DDR5-6000",
+      "category": "Memória RAM",
+      "catalog_price_eur": 129.99,
+      "verdict": "KEEP",
+      "notes": "Fury Beast 6000 CL30/CL36 kit. Verified stock at CHIP7, PcComponentes, KuantoKusta, Webgate. Typical 110-140 EUR for 32GB."
+    },
+    {
+      "id": 148,
+      "name": "TeamGroup T-Force Delta RGB DDR5-7600",
+      "category": "Memória RAM",
+      "catalog_price_eur": 199.99,
+      "verdict": "KEEP",
+      "notes": "High-speed 7600 MT/s RGB kit. Enthusiast tier."
+    },
+    {
+      "id": 149,
+      "name": "G.Skill Flare X5 DDR5-6000",
+      "category": "Memória RAM",
+      "catalog_price_eur": 119.99,
+      "verdict": "KEEP",
+      "notes": "Flare X5 is G.Skill's AMD EXPO-tuned DDR5-6000 mainstream. Very popular for AM5 builds."
+    },
+    {
+      "id": 150,
+      "name": "Corsair Vengeance DDR5-5600",
+      "category": "Memória RAM",
+      "catalog_price_eur": 89.99,
+      "verdict": "KEEP",
+      "notes": "Vengeance non-RGB 5600 budget kit. Typical 75-100 EUR."
+    },
+    {
+      "id": 151,
+      "name": "G.Skill Trident Z5 Neo DDR5-6400",
+      "category": "Memória RAM",
+      "catalog_price_eur": 189.99,
+      "verdict": "KEEP",
+      "notes": "Trident Z5 Neo is AMD EXPO variant. 6400 kit premium for AM5."
+    },
+    {
+      "id": 152,
+      "name": "Kingston Fury Renegade DDR5-8000",
+      "category": "Memória RAM",
+      "catalog_price_eur": 379.99,
+      "verdict": "PRICE_DRIFT",
+      "market_price_eur": 280,
+      "notes": "Fury Renegade DDR5-8000 (likely 32GB CUDIMM kit for LGA1851). PT retail typically 250-320 EUR. Catalog 379.99 is ~20-35% above market — verify size (48GB module vs 32GB kit) or reduce."
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-04-17T19:42:42.848Z",
+  "total_audited": 202,
+  "total_upserts": 48,
+  "price_drift_count": 41,
+  "obsolete_count": 7,
+  "rows": [
+    {
+      "id": 14,
+      "selling_price": 2099.99,
+      "in_stock": false,
+      "reason": "OBSOLETE: NVIDIA ceased RTX 4090 production Oct 2024. EOL worldwide, scarce/inflated in EU market. Replaced by RTX 5090."
+    },
+    {
+      "id": 21,
+      "selling_price": 650,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €999.99 → market €650"
+    },
+    {
+      "id": 22,
+      "selling_price": 420,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €549.99 → market €420"
+    },
+    {
+      "id": 23,
+      "selling_price": 300,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €369.99 → market €300"
+    },
+    {
+      "id": 24,
+      "selling_price": 900,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €1099.99 → market €900"
+    },
+    {
+      "id": 26,
+      "selling_price": 270,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €319.99 → market €270"
+    },
+    {
+      "id": 27,
+      "selling_price": 580,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €749.99 → market €580"
+    },
+    {
+      "id": 122,
+      "selling_price": 670,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €799.99 → market €670"
+    },
+    {
+      "id": 13,
+      "selling_price": 465,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €599.99 → market €465"
+    },
+    {
+      "id": 31,
+      "selling_price": 265,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €339.99 → market €265"
+    },
+    {
+      "id": 32,
+      "selling_price": 390,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €459.99 → market €390"
+    },
+    {
+      "id": 131,
+      "selling_price": 310,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €419.99 → market €310"
+    },
+    {
+      "id": 132,
+      "selling_price": 390,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €489.99 → market €390"
+    },
+    {
+      "id": 133,
+      "selling_price": 240,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €289.99 → market €240"
+    },
+    {
+      "id": 136,
+      "selling_price": 520,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €649.99 → market €520"
+    },
+    {
+      "id": 16,
+      "selling_price": 320,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €249.99 → market €320"
+    },
+    {
+      "id": 152,
+      "selling_price": 280,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €379.99 → market €280"
+    },
+    {
+      "id": 17,
+      "selling_price": 389.99,
+      "in_stock": false,
+      "reason": "DUPLICATE: merged with newer listing"
+    },
+    {
+      "id": 53,
+      "selling_price": 89,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €69.99 → market €89"
+    },
+    {
+      "id": 54,
+      "selling_price": 135,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €99.99 → market €135"
+    },
+    {
+      "id": 55,
+      "selling_price": 140,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €109.99 → market €140"
+    },
+    {
+      "id": 153,
+      "selling_price": 260,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €199.99 → market €260"
+    },
+    {
+      "id": 155,
+      "selling_price": 520,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €249.99 → market €520"
+    },
+    {
+      "id": 156,
+      "selling_price": 320,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €229.99 → market €320"
+    },
+    {
+      "id": 157,
+      "selling_price": 430,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €339.99 → market €430"
+    },
+    {
+      "id": 158,
+      "selling_price": 475,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €279.99 → market €475"
+    },
+    {
+      "id": 159,
+      "selling_price": 380,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €269.99 → market €380"
+    },
+    {
+      "id": 64,
+      "selling_price": 179.99,
+      "in_stock": false,
+      "reason": "OBSOLETE: EVGA exited consumer GPU in 2022 and has been winding down PSU line. G7 is ATX 2.x (no native 12VHPWR/12V-2x6), not ATX 3.1. Minimal new stock in PT. Replace with current-gen ATX 3.1 unit for RTX 5000/AMD RX 9000 compatibility."
+    },
+    {
+      "id": 66,
+      "selling_price": 309.99,
+      "in_stock": false,
+      "reason": "DUPLICATE: merged with newer listing"
+    },
+    {
+      "id": 176,
+      "selling_price": 159,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €129 → market €159"
+    },
+    {
+      "id": 182,
+      "selling_price": 160,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €189.99 → market €160"
+    },
+    {
+      "id": 5,
+      "selling_price": 749,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €899.99 → market €749"
+    },
+    {
+      "id": 86,
+      "selling_price": 299,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €359.99 → market €299"
+    },
+    {
+      "id": 6,
+      "selling_price": 169,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €135 → market €169"
+    },
+    {
+      "id": 7,
+      "selling_price": 230,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €189.5 → market €230"
+    },
+    {
+      "id": 98,
+      "selling_price": 189,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €159 → market €189"
+    },
+    {
+      "id": 102,
+      "selling_price": 129,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €99 → market €129"
+    },
+    {
+      "id": 196,
+      "selling_price": 219,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €179 → market €219"
+    },
+    {
+      "id": 197,
+      "selling_price": 125,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €99 → market €125"
+    },
+    {
+      "id": 242,
+      "selling_price": 54.99,
+      "in_stock": false,
+      "reason": "OBSOLETE: Older 60% red-switch, wired only, no hot-swap. Aula F75 and RK projects dominate budget segment now. Consider swapping for RK R87 or Akko 5075B."
+    },
+    {
+      "id": 105,
+      "selling_price": 179,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €239 → market €179"
+    },
+    {
+      "id": 250,
+      "selling_price": 79,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €44.99 → market €79"
+    },
+    {
+      "id": 251,
+      "selling_price": 34.99,
+      "in_stock": false,
+      "reason": "OBSOLETE: Budget wired headset; out-of-stock at Havit.pt 2025, market trending wireless at this price band (Redragon/Trust). Low margin filler."
+    },
+    {
+      "id": 252,
+      "selling_price": 23.99,
+      "in_stock": false,
+      "reason": "OBSOLETE: Ultra-budget wired, minimal PT retail presence; market shifted to sub-€40 wireless. Drop."
+    },
+    {
+      "id": 12,
+      "selling_price": 649,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €549 → market €649"
+    },
+    {
+      "id": 116,
+      "selling_price": 599,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €449 → market €599"
+    },
+    {
+      "id": 120,
+      "selling_price": 529,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €449 → market €529"
+    },
+    {
+      "id": 209,
+      "selling_price": 619,
+      "in_stock": true,
+      "reason": "PRICE_DRIFT: catalog €519 → market €619"
+    }
+  ]
+}

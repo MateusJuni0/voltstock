@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>VoltStock Image Audit</title>
+<style>
+body { background: #1a1a1a; color: #fff; font-family: Arial; margin: 20px; }
+h1 { color: #ff6f37; }
+h2 { color: #ff9f37; margin-top: 40px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.card { background: #222; border-radius: 8px; padding: 10px; text-align: center; }
+.card img { max-width: 180px; max-height: 180px; object-fit: contain; background: #fff; border-radius: 4px; }
+.card .name { font-size: 11px; margin-top: 5px; color: #ccc; }
+.card .id { font-size: 10px; color: #666; }
+.card .stats { font-size: 9px; color: #888; margin-top: 3px; }
+.card.problem { border: 2px solid #ff4444; }
+.card.suspect { border: 2px solid #ffaa00; }
+.card.ok { border: 1px solid #333; }
+.legend { margin-bottom: 20px; font-size: 13px; }
+.legend span { margin-right: 15px; }
+</style></head><body>
+<h1>VoltStock Image Audit — All 202 Products</h1>
+<div class="legend">
+<span style="color:#ff4444">■ PROBLEM (<15% visible)</span>
+<span style="color:#ffaa00">■ SUSPECT (15-25%)</span>
+<span style="color:#333">■ OK (>25%)</span>
+</div>
+<h2>Armazenamento (17)</h2><div class="grid"><div class="card ok">
+<img src="products/60.png" alt="60">
+<div class="name">Kingston KC3000 2TB NVMe Gen4</div>
+<div class="id">ID 60 | 512x408 | 78KB</div>
+<div class="stats">27.7% visible</div>
+</div><div class="card ok">
+<img src="products/54.png" alt="54">
+<div class="name">Kingston NV2 2TB NVMe Gen4</div>
+<div class="id">ID 54 | 1024x1024 | 400KB</div>
+<div class="stats">28.1% visible</div>
+</div><div class="card ok">
+<img src="products/59.png" alt="59">
+<div class="name">SK Hynix Platinum P41 2TB NVMe Gen4</div>
+<div class="id">ID 59 | 1024x1024 | 400KB</div>
+<div class="stats">28.1% visible</div>
+</div><div class="card ok">
+<img src="products/158.png" alt="158">
+<div class="name">Samsung 870 EVO 4TB</div>
+<div class="id">ID 158 | 1200x900 | 420KB</div>
+<div class="stats">33.6% visible</div>
+</div><div class="card ok">
+<img src="products/3.png" alt="3">
+<div class="name">Samsung 990 Pro 2TB NVMe Gen4</div>
+<div class="id">ID 3 | 800x800 | 309KB</div>
+<div class="stats">39.9% visible</div>
+</div><div class="card ok">
+<img src="products/17.png" alt="17">
+<div class="name">WD Black SN850X 4TB NVMe Gen4</div>
+<div class="id">ID 17 | 800x800 | 292KB</div>
+<div class="stats">41.9% visible</div>
+</div><div class="card ok">
+<img src="products/153.png" alt="153">
+<div class="name">Samsung 990 EVO Plus 2TB</div>
+<div class="id">ID 153 | 640x333 | 141KB</div>
+<div class="stats">57.4% visible</div>
+</div><div class="card ok">
+<img src="products/160.png" alt="160">
+<div class="name">Sabrent Rocket 5 2TB</div>
+<div class="id">ID 160 | 640x271 | 96KB</div>
+<div class="stats">60.0% visible</div>
+</div><div class="card ok">
+<img src="products/53.png" alt="53">
+<div class="name">WD Blue SN580 1TB NVMe Gen4</div>
+<div class="id">ID 53 | 1024x283 | 171KB</div>
+<div class="stats">71.8% visible</div>
+</div><div class="card ok">
+<img src="products/58.png" alt="58">
+<div class="name">Crucial T500 2TB NVMe Gen4</div>
+<div class="id">ID 58 | 1024x283 | 171KB</div>
+<div class="stats">71.8% visible</div>
+</div><div class="card ok">
+<img src="products/156.png" alt="156">
+<div class="name">Seagate FireCuda 540 2TB</div>
+<div class="id">ID 156 | 640x185 | 132KB</div>
+<div class="stats">85.3% visible</div>
+</div><div class="card ok">
+<img src="products/55.png" alt="55">
+<div class="name">Crucial P3 Plus 2TB NVMe Gen4</div>
+<div class="id">ID 55 | 640x537 | 197KB</div>
+<div class="stats">85.7% visible</div>
+</div><div class="card ok">
+<img src="products/154.png" alt="154">
+<div class="name">WD Black SN850X 2TB</div>
+<div class="id">ID 154 | 640x178 | 97KB</div>
+<div class="stats">86.4% visible</div>
+</div><div class="card ok">
+<img src="products/57.png" alt="57">
+<div class="name">Seagate FireCuda 530 2TB NVMe Gen4</div>
+<div class="id">ID 57 | 640x183 | 108KB</div>
+<div class="stats">86.5% visible</div>
+</div><div class="card ok">
+<img src="products/155.png" alt="155">
+<div class="name">Crucial T700 2TB</div>
+<div class="id">ID 155 | 640x179 | 105KB</div>
+<div class="stats">88.9% visible</div>
+</div><div class="card ok">
+<img src="products/159.png" alt="159">
+<div class="name">Corsair MP700 PRO 2TB</div>
+<div class="id">ID 159 | 640x178 | 126KB</div>
+<div class="stats">90.6% visible</div>
+</div><div class="card ok">
+<img src="products/157.png" alt="157">
+<div class="name">Kingston KC3000 4TB</div>
+<div class="id">ID 157 | 640x181 | 108KB</div>
+<div class="stats">93.5% visible</div>
+</div></div><h2>Cadeiras Gaming (15)</h2><div class="grid"><div class="card suspect">
+<img src="products/214.png" alt="214">
+<div class="name">Steelcase Karman</div>
+<div class="id">ID 214 | 1024x1024 | 363KB</div>
+<div class="stats">15.7% visible</div>
+</div><div class="card suspect">
+<img src="products/116.png" alt="116">
+<div class="name">AndaSeat Kaiser 3 XL</div>
+<div class="id">ID 116 | 600x600 | 120KB</div>
+<div class="stats">19.6% visible</div>
+</div><div class="card suspect">
+<img src="products/216.png" alt="216">
+<div class="name">AndaSeat Kaiser 4</div>
+<div class="id">ID 216 | 1024x1024 | 333KB</div>
+<div class="stats">20.8% visible</div>
+</div><div class="card suspect">
+<img src="products/215.png" alt="215">
+<div class="name">IKEA MATCHSPEL</div>
+<div class="id">ID 215 | 1024x1024 | 585KB</div>
+<div class="stats">21.4% visible</div>
+</div><div class="card ok">
+<img src="products/113.png" alt="113">
+<div class="name">Corsair TC200 Leatherette</div>
+<div class="id">ID 113 | 1024x1024 | 327KB</div>
+<div class="stats">25.3% visible</div>
+</div><div class="card ok">
+<img src="products/114.png" alt="114">
+<div class="name">noblechairs HERO ST</div>
+<div class="id">ID 114 | 1024x1024 | 324KB</div>
+<div class="stats">25.5% visible</div>
+</div><div class="card ok">
+<img src="products/209.png" alt="209">
+<div class="name">Secretlab Titan Evo 2024</div>
+<div class="id">ID 209 | 387x600 | 99KB</div>
+<div class="stats">34.3% visible</div>
+</div><div class="card ok">
+<img src="products/12.png" alt="12">
+<div class="name">Secretlab TITAN Evo 2022 XL</div>
+<div class="id">ID 12 | 800x800 | 362KB</div>
+<div class="stats">35.2% visible</div>
+</div><div class="card ok">
+<img src="products/112.png" alt="112">
+<div class="name">Razer Iskur V2</div>
+<div class="id">ID 112 | 554x1024 | 411KB</div>
+<div class="stats">47.6% visible</div>
+</div><div class="card ok">
+<img src="products/213.png" alt="213">
+<div class="name">Corsair TC200 Fabric</div>
+<div class="id">ID 213 | 621x1024 | 235KB</div>
+<div class="stats">48.6% visible</div>
+</div><div class="card ok">
+<img src="products/117.png" alt="117">
+<div class="name">Cougar Armor Elite</div>
+<div class="id">ID 117 | 605x1024 | 251KB</div>
+<div class="stats">49.7% visible</div>
+</div><div class="card ok">
+<img src="products/118.png" alt="118">
+<div class="name">AKRacing Masters Pro</div>
+<div class="id">ID 118 | 605x1024 | 251KB</div>
+<div class="stats">49.7% visible</div>
+</div><div class="card ok">
+<img src="products/115.png" alt="115">
+<div class="name">DXRacer Craft Series</div>
+<div class="id">ID 115 | 658x745 | 277KB</div>
+<div class="stats">52.1% visible</div>
+</div><div class="card ok">
+<img src="products/119.png" alt="119">
+<div class="name">Herman Miller x Logitech Embody Gaming</div>
+<div class="id">ID 119 | 1200x960 | 1445KB</div>
+<div class="stats">100.0% visible</div>
+</div><div class="card ok">
+<img src="products/120.png" alt="120">
+<div class="name">Autonomous ErgoChair Pro</div>
+<div class="id">ID 120 | 1200x675 | 258KB</div>
+<div class="stats">100.0% visible</div>
+</div></div><h2>Caixas (15)</h2><div class="grid"><div class="card ok">
+<img src="products/75.png" alt="75">
+<div class="name">HYTE Y60</div>
+<div class="id">ID 75 | 1024x724 | 191KB</div>
+<div class="stats">31.5% visible</div>
+</div><div class="card ok">
+<img src="products/174.png" alt="174">
+<div class="name">be quiet! Dark Base 802</div>
+<div class="id">ID 174 | 640x494 | 208KB</div>
+<div class="stats">32.7% visible</div>
+</div><div class="card ok">
+<img src="products/176.png" alt="176">
+<div class="name">SSUPD Meshroom S</div>
+<div class="id">ID 176 | 1024x1024 | 843KB</div>
+<div class="stats">34.8% visible</div>
+</div><div class="card ok">
+<img src="products/19.png" alt="19">
+<div class="name">Fractal Design Torrent RGB Black</div>
+<div class="id">ID 19 | 1000x1000 | 212KB</div>
+<div class="stats">58.0% visible</div>
+</div><div class="card ok">
+<img src="products/73.png" alt="73">
+<div class="name">be quiet! Pure Base 500DX</div>
+<div class="id">ID 73 | 640x259 | 211KB</div>
+<div class="stats">67.1% visible</div>
+</div><div class="card ok">
+<img src="products/71.png" alt="71">
+<div class="name">Corsair 4000D Airflow</div>
+<div class="id">ID 71 | 640x689 | 502KB</div>
+<div class="stats">68.3% visible</div>
+</div><div class="card ok">
+<img src="products/76.png" alt="76">
+<div class="name">Corsair 5000D Airflow</div>
+<div class="id">ID 76 | 640x254 | 248KB</div>
+<div class="stats">72.6% visible</div>
+</div><div class="card ok">
+<img src="products/169.png" alt="169">
+<div class="name">Lian Li O11 Dynamic EVO 2</div>
+<div class="id">ID 169 | 640x762 | 588KB</div>
+<div class="stats">75.3% visible</div>
+</div><div class="card ok">
+<img src="products/74.png" alt="74">
+<div class="name">Cooler Master HAF 700 EVO</div>
+<div class="id">ID 74 | 640x802 | 630KB</div>
+<div class="stats">76.8% visible</div>
+</div><div class="card ok">
+<img src="products/8.png" alt="8">
+<div class="name">Lian Li Lancool 216 RGB White</div>
+<div class="id">ID 8 | 640x711 | 689KB</div>
+<div class="stats">77.2% visible</div>
+</div><div class="card ok">
+<img src="products/172.png" alt="172">
+<div class="name">Corsair 6500X</div>
+<div class="id">ID 172 | 640x701 | 197KB</div>
+<div class="stats">79.8% visible</div>
+</div><div class="card ok">
+<img src="products/70.png" alt="70">
+<div class="name">NZXT H7 Flow RGB</div>
+<div class="id">ID 70 | 640x902 | 845KB</div>
+<div class="stats">79.9% visible</div>
+</div><div class="card ok">
+<img src="products/72.png" alt="72">
+<div class="name">Phanteks Eclipse G360A</div>
+<div class="id">ID 72 | 640x799 | 659KB</div>
+<div class="stats">86.1% visible</div>
+</div><div class="card ok">
+<img src="products/173.png" alt="173">
+<div class="name">Phanteks NV7</div>
+<div class="id">ID 173 | 640x736 | 585KB</div>
+<div class="stats">89.0% visible</div>
+</div><div class="card ok">
+<img src="products/170.png" alt="170">
+<div class="name">Fractal Design North</div>
+<div class="id">ID 170 | 640x841 | 300KB</div>
+<div class="stats">89.4% visible</div>
+</div></div><h2>Fontes de Alimentação (14)</h2><div class="grid"><div class="card ok">
+<img src="products/65.png" alt="65">
+<div class="name">Corsair SF750 80+ Platinum SFX</div>
+<div class="id">ID 65 | 768x1024 | 397KB</div>
+<div class="stats">26.3% visible</div>
+</div><div class="card ok">
+<img src="products/63.png" alt="63">
+<div class="name">be quiet! Pure Power 12 M 850W</div>
+<div class="id">ID 63 | 768x1024 | 463KB</div>
+<div class="stats">27.2% visible</div>
+</div><div class="card ok">
+<img src="products/166.png" alt="166">
+<div class="name">MSI MEG Ai1300P PCIE5</div>
+<div class="id">ID 166 | 640x626 | 272KB</div>
+<div class="stats">43.8% visible</div>
+</div><div class="card ok">
+<img src="products/66.png" alt="66">
+<div class="name">MSI MEG Ai1300P PCIE5 80+ Platinum</div>
+<div class="id">ID 66 | 640x626 | 272KB</div>
+<div class="stats">43.8% visible</div>
+</div><div class="card ok">
+<img src="products/64.png" alt="64">
+<div class="name">EVGA SuperNOVA 1000 G7 80+ Gold</div>
+<div class="id">ID 64 | 750x750 | 307KB</div>
+<div class="stats">50.3% visible</div>
+</div><div class="card ok">
+<img src="products/68.png" alt="68">
+<div class="name">NZXT C850 80+ Gold (2024)</div>
+<div class="id">ID 68 | 1024x1024 | 567KB</div>
+<div class="stats">52.8% visible</div>
+</div><div class="card ok">
+<img src="products/165.png" alt="165">
+<div class="name">Corsair RM850x 2024</div>
+<div class="id">ID 165 | 1024x1024 | 519KB</div>
+<div class="stats">55.6% visible</div>
+</div><div class="card ok">
+<img src="products/62.png" alt="62">
+<div class="name">Seasonic Focus GX-750 80+ Gold</div>
+<div class="id">ID 62 | 640x629 | 405KB</div>
+<div class="stats">56.2% visible</div>
+</div><div class="card ok">
+<img src="products/167.png" alt="167">
+<div class="name">Thermaltake Toughpower GF3 750W</div>
+<div class="id">ID 167 | 640x577 | 462KB</div>
+<div class="stats">64.1% visible</div>
+</div><div class="card ok">
+<img src="products/69.png" alt="69">
+<div class="name">Thermaltake Toughpower GF3 850W</div>
+<div class="id">ID 69 | 640x577 | 462KB</div>
+<div class="stats">64.1% visible</div>
+</div><div class="card ok">
+<img src="products/161.png" alt="161">
+<div class="name">Corsair HX1500i</div>
+<div class="id">ID 161 | 640x523 | 305KB</div>
+<div class="stats">64.7% visible</div>
+</div><div class="card ok">
+<img src="products/168.png" alt="168">
+<div class="name">Fractal Design Ion+ 2 860W</div>
+<div class="id">ID 168 | 640x459 | 158KB</div>
+<div class="stats">64.7% visible</div>
+</div><div class="card ok">
+<img src="products/162.png" alt="162">
+<div class="name">Seasonic PRIME TX-1000</div>
+<div class="id">ID 162 | 640x285 | 173KB</div>
+<div class="stats">83.1% visible</div>
+</div><div class="card ok">
+<img src="products/163.png" alt="163">
+<div class="name">be quiet! Dark Power 13 850W</div>
+<div class="id">ID 163 | 640x657 | 386KB</div>
+<div class="stats">88.1% visible</div>
+</div></div><h2>Headsets e Áudio (17)</h2><div class="grid"><div class="card suspect">
+<img src="products/108.png" alt="108">
+<div class="name">JBL Quantum 910 Wireless</div>
+<div class="id">ID 108 | 800x600 | 149KB</div>
+<div class="stats">17.8% visible</div>
+</div><div class="card suspect">
+<img src="products/104.png" alt="104">
+<div class="name">Logitech G Pro X 2 Lightspeed</div>
+<div class="id">ID 104 | 1000x750 | 210KB</div>
+<div class="stats">19.3% visible</div>
+</div><div class="card suspect">
+<img src="products/251.png" alt="251">
+<div class="name">HAVIT H2002d Gaming Headset</div>
+<div class="id">ID 251 | 1024x1024 | 273KB</div>
+<div class="stats">23.0% visible</div>
+</div><div class="card ok">
+<img src="products/250.png" alt="250">
+<div class="name">Redragon H510 Zeus Pro 7.1</div>
+<div class="id">ID 250 | 1024x1024 | 354KB</div>
+<div class="stats">26.3% visible</div>
+</div><div class="card ok">
+<img src="products/103.png" alt="103">
+<div class="name">HyperX Cloud III Wireless</div>
+<div class="id">ID 103 | 1024x1024 | 391KB</div>
+<div class="stats">27.4% visible</div>
+</div><div class="card ok">
+<img src="products/11.png" alt="11">
+<div class="name">SteelSeries Arctis Nova Pro Wireless</div>
+<div class="id">ID 11 | 1024x1024 | 531KB</div>
+<div class="stats">31.3% visible</div>
+</div><div class="card ok">
+<img src="products/252.png" alt="252">
+<div class="name">Onikuma K5 Pro Gaming Headset</div>
+<div class="id">ID 252 | 850x850 | 288KB</div>
+<div class="stats">37.4% visible</div>
+</div><div class="card ok">
+<img src="products/109.png" alt="109">
+<div class="name">Corsair HS80 Max Wireless</div>
+<div class="id">ID 109 | 1024x1024 | 379KB</div>
+<div class="stats">37.6% visible</div>
+</div><div class="card ok">
+<img src="products/105.png" alt="105">
+<div class="name">Corsair Virtuoso RGB XT Wireless</div>
+<div class="id">ID 105 | 1024x1024 | 338KB</div>
+<div class="stats">38.1% visible</div>
+</div><div class="card ok">
+<img src="products/111.png" alt="111">
+<div class="name">Audio-Technica ATH-M50x</div>
+<div class="id">ID 111 | 368x1024 | 218KB</div>
+<div class="stats">40.5% visible</div>
+</div><div class="card ok">
+<img src="products/110.png" alt="110">
+<div class="name">Razer BlackShark V2 Pro (2023)</div>
+<div class="id">ID 110 | 640x766 | 251KB</div>
+<div class="stats">41.7% visible</div>
+</div><div class="card ok">
+<img src="products/202.png" alt="202">
+<div class="name">Audeze Maxwell Wireless</div>
+<div class="id">ID 202 | 640x782 | 337KB</div>
+<div class="stats">47.7% visible</div>
+</div><div class="card ok">
+<img src="products/205.png" alt="205">
+<div class="name">Beyerdynamic DT 900 PRO X</div>
+<div class="id">ID 205 | 640x976 | 576KB</div>
+<div class="stats">52.9% visible</div>
+</div><div class="card ok">
+<img src="products/204.png" alt="204">
+<div class="name">Razer BlackShark V2 Pro 2024</div>
+<div class="id">ID 204 | 640x629 | 309KB</div>
+<div class="stats">55.3% visible</div>
+</div><div class="card ok">
+<img src="products/107.png" alt="107">
+<div class="name">Sony WH-1000XM5</div>
+<div class="id">ID 107 | 668x1024 | 293KB</div>
+<div class="stats">56.1% visible</div>
+</div><div class="card ok">
+<img src="products/206.png" alt="206">
+<div class="name">Corsair Virtuoso Pro</div>
+<div class="id">ID 206 | 640x912 | 390KB</div>
+<div class="stats">59.1% visible</div>
+</div><div class="card ok">
+<img src="products/106.png" alt="106">
+<div class="name">Razer Kraken V4</div>
+<div class="id">ID 106 | 640x808 | 369KB</div>
+<div class="stats">68.4% visible</div>
+</div></div><h2>Memória RAM (17)</h2><div class="grid"><div class="card suspect">
+<img src="products/47.png" alt="47">
+<div class="name">Kingston Fury Renegade DDR5 32GB 6400MHz</div>
+<div class="id">ID 47 | 800x800 | 148KB</div>
+<div class="stats">19.4% visible</div>
+</div><div class="card suspect">
+<img src="products/4.png" alt="4">
+<div class="name">Corsair Vengeance DDR5 32GB 6000MHz</div>
+<div class="id">ID 4 | 800x800 | 177KB</div>
+<div class="stats">21.1% visible</div>
+</div><div class="card suspect">
+<img src="products/49.png" alt="49">
+<div class="name">Corsair Vengeance DDR5 16GB 5600MHz</div>
+<div class="id">ID 49 | 1024x1024 | 255KB</div>
+<div class="stats">24.1% visible</div>
+</div><div class="card ok">
+<img src="products/16.png" alt="16">
+<div class="name">G.Skill Trident Z5 RGB DDR5 64GB</div>
+<div class="id">ID 16 | 800x800 | 272KB</div>
+<div class="stats">35.8% visible</div>
+</div><div class="card ok">
+<img src="products/48.png" alt="48">
+<div class="name">TeamGroup T-Force Delta RGB DDR5 32GB 60</div>
+<div class="id">ID 48 | 1000x1000 | 651KB</div>
+<div class="stats">42.6% visible</div>
+</div><div class="card ok">
+<img src="products/50.png" alt="50">
+<div class="name">G.Skill Ripjaws S5 DDR5 32GB 6000MHz</div>
+<div class="id">ID 50 | 1024x549 | 569KB</div>
+<div class="stats">47.3% visible</div>
+</div><div class="card ok">
+<img src="products/46.png" alt="46">
+<div class="name">Corsair Dominator Platinum RGB DDR5 32GB</div>
+<div class="id">ID 46 | 1024x1024 | 435KB</div>
+<div class="stats">50.7% visible</div>
+</div><div class="card ok">
+<img src="products/152.png" alt="152">
+<div class="name">Kingston Fury Renegade DDR5-8000</div>
+<div class="id">ID 152 | 640x415 | 286KB</div>
+<div class="stats">54.8% visible</div>
+</div><div class="card ok">
+<img src="products/45.png" alt="45">
+<div class="name">Kingston Fury Beast DDR5 32GB 5600MHz</div>
+<div class="id">ID 45 | 640x377 | 167KB</div>
+<div class="stats">55.3% visible</div>
+</div><div class="card ok">
+<img src="products/147.png" alt="147">
+<div class="name">Kingston Fury Beast DDR5-6000</div>
+<div class="id">ID 147 | 640x393 | 238KB</div>
+<div class="stats">57.8% visible</div>
+</div><div class="card ok">
+<img src="products/148.png" alt="148">
+<div class="name">TeamGroup T-Force Delta RGB DDR5-7600</div>
+<div class="id">ID 148 | 640x436 | 318KB</div>
+<div class="stats">59.9% visible</div>
+</div><div class="card ok">
+<img src="products/149.png" alt="149">
+<div class="name">G.Skill Flare X5 DDR5-6000</div>
+<div class="id">ID 149 | 640x456 | 290KB</div>
+<div class="stats">62.3% visible</div>
+</div><div class="card ok">
+<img src="products/151.png" alt="151">
+<div class="name">G.Skill Trident Z5 Neo DDR5-6400</div>
+<div class="id">ID 151 | 640x472 | 283KB</div>
+<div class="stats">67.2% visible</div>
+</div><div class="card ok">
+<img src="products/145.png" alt="145">
+<div class="name">G.Skill Trident Z5 RGB DDR5-7200</div>
+<div class="id">ID 145 | 640x446 | 375KB</div>
+<div class="stats">70.0% visible</div>
+</div><div class="card ok">
+<img src="products/150.png" alt="150">
+<div class="name">Corsair Vengeance DDR5-5600</div>
+<div class="id">ID 150 | 640x291 | 181KB</div>
+<div class="stats">73.6% visible</div>
+</div><div class="card ok">
+<img src="products/146.png" alt="146">
+<div class="name">Corsair Dominator Titanium DDR5-6400</div>
+<div class="id">ID 146 | 640x269 | 92KB</div>
+<div class="stats">91.1% visible</div>
+</div><div class="card ok">
+<img src="products/52.png" alt="52">
+<div class="name">Crucial DDR5 32GB 4800MHz</div>
+<div class="id">ID 52 | 1024x534 | 764KB</div>
+<div class="stats">94.8% visible</div>
+</div></div><h2>Monitores (18)</h2><div class="grid"><div class="card ok">
+<img src="products/5.png" alt="5">
+<div class="name">ASUS ROG Swift OLED PG27AQDM</div>
+<div class="id">ID 5 | 800x800 | 299KB</div>
+<div class="stats">26.4% visible</div>
+</div><div class="card ok">
+<img src="products/94.png" alt="94">
+<div class="name">MSI MAG 274QRF-QD 170Hz</div>
+<div class="id">ID 94 | 1000x800 | 366KB</div>
+<div class="stats">29.2% visible</div>
+</div><div class="card ok">
+<img src="products/86.png" alt="86">
+<div class="name">LG 27GP850-B UltraGear 165Hz</div>
+<div class="id">ID 86 | 1024x768 | 513KB</div>
+<div class="stats">33.3% visible</div>
+</div><div class="card ok">
+<img src="products/190.png" alt="190">
+<div class="name">Gigabyte M27U 27\</div>
+<div class="id">ID 190 | 640x547 | 240KB</div>
+<div class="stats">39.1% visible</div>
+</div><div class="card ok">
+<img src="products/89.png" alt="89">
+<div class="name">ASUS TUF Gaming VG27AQ1A</div>
+<div class="id">ID 89 | 692x692 | 243KB</div>
+<div class="stats">46.6% visible</div>
+</div><div class="card ok">
+<img src="products/185.png" alt="185">
+<div class="name">Samsung Odyssey OLED G8 32\</div>
+<div class="id">ID 185 | 640x489 | 322KB</div>
+<div class="stats">48.6% visible</div>
+</div><div class="card ok">
+<img src="products/90.png" alt="90">
+<div class="name">BenQ MOBIUZ EX2710Q 165Hz</div>
+<div class="id">ID 90 | 1024x571 | 475KB</div>
+<div class="stats">55.6% visible</div>
+</div><div class="card ok">
+<img src="products/186.png" alt="186">
+<div class="name">LG UltraGear 27GS95QE 27\</div>
+<div class="id">ID 186 | 730x730 | 656KB</div>
+<div class="stats">57.8% visible</div>
+</div><div class="card ok">
+<img src="products/93.png" alt="93">
+<div class="name">AOC 24G2SP 165Hz</div>
+<div class="id">ID 93 | 1024x1024 | 919KB</div>
+<div class="stats">57.9% visible</div>
+</div><div class="card ok">
+<img src="products/91.png" alt="91">
+<div class="name">LG UltraGear 27GR95QE OLED 240Hz</div>
+<div class="id">ID 91 | 730x730 | 687KB</div>
+<div class="stats">60.6% visible</div>
+</div><div class="card ok">
+<img src="products/188.png" alt="188">
+<div class="name">Dell Alienware AW3225QF 32\</div>
+<div class="id">ID 188 | 640x658 | 130KB</div>
+<div class="stats">61.4% visible</div>
+</div><div class="card ok">
+<img src="products/87.png" alt="87">
+<div class="name">Dell S2722DGM 165Hz Curved</div>
+<div class="id">ID 87 | 1200x675 | 1097KB</div>
+<div class="stats">62.0% visible</div>
+</div><div class="card ok">
+<img src="products/187.png" alt="187">
+<div class="name">ASUS ROG Swift PG27AQN 27\</div>
+<div class="id">ID 187 | 640x538 | 353KB</div>
+<div class="stats">62.4% visible</div>
+</div><div class="card ok">
+<img src="products/192.png" alt="192">
+<div class="name">AOC AGON AG275QXL 27\</div>
+<div class="id">ID 192 | 640x548 | 416KB</div>
+<div class="stats">65.4% visible</div>
+</div><div class="card ok">
+<img src="products/92.png" alt="92">
+<div class="name">Gigabyte M27Q X 240Hz</div>
+<div class="id">ID 92 | 640x518 | 344KB</div>
+<div class="stats">65.9% visible</div>
+</div><div class="card ok">
+<img src="products/191.png" alt="191">
+<div class="name">MSI MAG 341CQP 34\</div>
+<div class="id">ID 191 | 640x383 | 375KB</div>
+<div class="stats">67.7% visible</div>
+</div><div class="card ok">
+<img src="products/189.png" alt="189">
+<div class="name">BenQ MOBIUZ EX3210U 32\</div>
+<div class="id">ID 189 | 640x502 | 372KB</div>
+<div class="stats">72.4% visible</div>
+</div><div class="card ok">
+<img src="products/88.png" alt="88">
+<div class="name">Samsung Odyssey G7 32\</div>
+<div class="id">ID 88 | 640x501 | 474KB</div>
+<div class="stats">77.9% visible</div>
+</div></div><h2>Motherboards (16)</h2><div class="grid"><div class="card suspect">
+<img src="products/37.png" alt="37">
+<div class="name">MSI MPG B760M Edge WiFi</div>
+<div class="id">ID 37 | 1000x800 | 385KB</div>
+<div class="stats">21.0% visible</div>
+</div><div class="card ok">
+<img src="products/15.png" alt="15">
+<div class="name">ASUS ROG Maximus Z790 Hero</div>
+<div class="id">ID 15 | 800x800 | 436KB</div>
+<div class="stats">44.1% visible</div>
+</div><div class="card ok">
+<img src="products/138.png" alt="138">
+<div class="name">MSI MEG Z890 ACE</div>
+<div class="id">ID 138 | 1024x1024 | 964KB</div>
+<div class="stats">48.2% visible</div>
+</div><div class="card ok">
+<img src="products/41.png" alt="41">
+<div class="name">ASUS ROG Strix X670E-E Gaming WiFi</div>
+<div class="id">ID 41 | 800x588 | 417KB</div>
+<div class="stats">49.5% visible</div>
+</div><div class="card ok">
+<img src="products/144.png" alt="144">
+<div class="name">ASRock B850M Pro RS</div>
+<div class="id">ID 144 | 640x391 | 273KB</div>
+<div class="stats">50.9% visible</div>
+</div><div class="card ok">
+<img src="products/142.png" alt="142">
+<div class="name">MSI MAG B850 Tomahawk</div>
+<div class="id">ID 142 | 640x623 | 333KB</div>
+<div class="stats">53.6% visible</div>
+</div><div class="card ok">
+<img src="products/137.png" alt="137">
+<div class="name">ASUS ROG Crosshair X870E Hero</div>
+<div class="id">ID 137 | 640x582 | 321KB</div>
+<div class="stats">54.7% visible</div>
+</div><div class="card ok">
+<img src="products/140.png" alt="140">
+<div class="name">ASRock Z890 Taichi</div>
+<div class="id">ID 140 | 640x629 | 405KB</div>
+<div class="stats">56.2% visible</div>
+</div><div class="card ok">
+<img src="products/38.png" alt="38">
+<div class="name">ASUS TUF Gaming B650-PLUS WiFi</div>
+<div class="id">ID 38 | 800x800 | 860KB</div>
+<div class="stats">61.5% visible</div>
+</div><div class="card ok">
+<img src="products/141.png" alt="141">
+<div class="name">ASUS ROG Strix B850-F Gaming</div>
+<div class="id">ID 141 | 640x506 | 372KB</div>
+<div class="stats">63.8% visible</div>
+</div><div class="card ok">
+<img src="products/44.png" alt="44">
+<div class="name">ASRock B760M Pro RS WiFi</div>
+<div class="id">ID 44 | 640x506 | 372KB</div>
+<div class="stats">63.8% visible</div>
+</div><div class="card ok">
+<img src="products/139.png" alt="139">
+<div class="name">Gigabyte B850 AORUS Elite</div>
+<div class="id">ID 139 | 640x443 | 348KB</div>
+<div class="stats">63.9% visible</div>
+</div><div class="card ok">
+<img src="products/143.png" alt="143">
+<div class="name">Gigabyte Z890 AORUS Master</div>
+<div class="id">ID 143 | 640x394 | 340KB</div>
+<div class="stats">67.8% visible</div>
+</div><div class="card ok">
+<img src="products/9.png" alt="9">
+<div class="name">MSI MAG B650 Tomahawk WiFi</div>
+<div class="id">ID 9 | 640x508 | 432KB</div>
+<div class="stats">72.1% visible</div>
+</div><div class="card ok">
+<img src="products/42.png" alt="42">
+<div class="name">MSI MEG Z790 ACE</div>
+<div class="id">ID 42 | 640x464 | 338KB</div>
+<div class="stats">74.2% visible</div>
+</div><div class="card ok">
+<img src="products/43.png" alt="43">
+<div class="name">Gigabyte X670E Aorus Master</div>
+<div class="id">ID 43 | 640x419 | 358KB</div>
+<div class="stats">77.6% visible</div>
+</div></div><h2>Mouse Pads (3)</h2><div class="grid"><div class="card ok">
+<img src="products/230.png" alt="230">
+<div class="name">Large RGB Gaming Mouse Pad 90x40cm</div>
+<div class="id">ID 230 | 1024x1024 | 224KB</div>
+<div class="stats">26.9% visible</div>
+</div><div class="card ok">
+<img src="products/231.png" alt="231">
+<div class="name">Redragon P027 RGB Mouse Pad XL</div>
+<div class="id">ID 231 | 1024x1024 | 289KB</div>
+<div class="stats">28.9% visible</div>
+</div><div class="card ok">
+<img src="products/232.png" alt="232">
+<div class="name">Black XXL Mouse Pad 90x40cm</div>
+<div class="id">ID 232 | 1200x921 | 1062KB</div>
+<div class="stats">76.5% visible</div>
+</div></div><h2>Placas Gráficas (16)</h2><div class="grid"><div class="card suspect">
+<img src="products/122.png" alt="122">
+<div class="name">AMD Radeon RX 9070 XT</div>
+<div class="id">ID 122 | 800x800 | 254KB</div>
+<div class="stats">23.4% visible</div>
+</div><div class="card ok">
+<img src="products/121.png" alt="121">
+<div class="name">NVIDIA GeForce RTX 5090</div>
+<div class="id">ID 121 | 768x1024 | 441KB</div>
+<div class="stats">26.2% visible</div>
+</div><div class="card ok">
+<img src="products/125.png" alt="125">
+<div class="name">MSI Gaming Trio RTX 5070</div>
+<div class="id">ID 125 | 768x1024 | 397KB</div>
+<div class="stats">26.3% visible</div>
+</div><div class="card ok">
+<img src="products/123.png" alt="123">
+<div class="name">NVIDIA GeForce RTX 5070 Ti</div>
+<div class="id">ID 123 | 768x1024 | 463KB</div>
+<div class="stats">27.2% visible</div>
+</div><div class="card ok">
+<img src="products/126.png" alt="126">
+<div class="name">Sapphire Nitro+ RX 9070</div>
+<div class="id">ID 126 | 800x800 | 222KB</div>
+<div class="stats">32.0% visible</div>
+</div><div class="card ok">
+<img src="products/128.png" alt="128">
+<div class="name">Intel Arc B580</div>
+<div class="id">ID 128 | 1024x576 | 213KB</div>
+<div class="stats">32.7% visible</div>
+</div><div class="card ok">
+<img src="products/23.png" alt="23">
+<div class="name">NVIDIA GeForce RTX 4060 8GB</div>
+<div class="id">ID 23 | 1000x800 | 407KB</div>
+<div class="stats">34.3% visible</div>
+</div><div class="card ok">
+<img src="products/24.png" alt="24">
+<div class="name">AMD Radeon RX 7900 XTX 24GB</div>
+<div class="id">ID 24 | 640x345 | 167KB</div>
+<div class="stats">35.8% visible</div>
+</div><div class="card ok">
+<img src="products/25.png" alt="25">
+<div class="name">AMD Radeon RX 7800 XT 16GB</div>
+<div class="id">ID 25 | 640x346 | 198KB</div>
+<div class="stats">38.8% visible</div>
+</div><div class="card ok">
+<img src="products/124.png" alt="124">
+<div class="name">ASUS ROG Strix RTX 5080 OC</div>
+<div class="id">ID 124 | 800x800 | 371KB</div>
+<div class="stats">39.7% visible</div>
+</div><div class="card ok">
+<img src="products/26.png" alt="26">
+<div class="name">AMD Radeon RX 7600 8GB</div>
+<div class="id">ID 26 | 640x499 | 271KB</div>
+<div class="stats">44.5% visible</div>
+</div><div class="card ok">
+<img src="products/21.png" alt="21">
+<div class="name">NVIDIA GeForce RTX 4070 Ti Super 16GB</div>
+<div class="id">ID 21 | 640x402 | 197KB</div>
+<div class="stats">48.8% visible</div>
+</div><div class="card ok">
+<img src="products/14.png" alt="14">
+<div class="name">ASUS ROG Strix RTX 4090 OC 24GB</div>
+<div class="id">ID 14 | 640x289 | 218KB</div>
+<div class="stats">59.7% visible</div>
+</div><div class="card ok">
+<img src="products/27.png" alt="27">
+<div class="name">NVIDIA GeForce RTX 4070 Super 12GB</div>
+<div class="id">ID 27 | 640x296 | 202KB</div>
+<div class="stats">66.5% visible</div>
+</div><div class="card ok">
+<img src="products/1.png" alt="1">
+<div class="name">MSI GeForce RTX 5090 SUPRIM X 32G</div>
+<div class="id">ID 1 | 640x290 | 221KB</div>
+<div class="stats">66.5% visible</div>
+</div><div class="card ok">
+<img src="products/22.png" alt="22">
+<div class="name">NVIDIA GeForce RTX 4060 Ti 8GB</div>
+<div class="id">ID 22 | 1200x675 | 920KB</div>
+<div class="stats">100.0% visible</div>
+</div></div><h2>Processadores (15)</h2><div class="grid"><div class="card ok">
+<img src="products/134.png" alt="134">
+<div class="name">AMD Ryzen 9 9900X</div>
+<div class="id">ID 134 | 1000x1000 | 366KB</div>
+<div class="stats">30.4% visible</div>
+</div><div class="card ok">
+<img src="products/129.png" alt="129">
+<div class="name">AMD Ryzen 9 9950X</div>
+<div class="id">ID 129 | 800x800 | 292KB</div>
+<div class="stats">32.9% visible</div>
+</div><div class="card ok">
+<img src="products/32.png" alt="32">
+<div class="name">Intel Core i7-14700K</div>
+<div class="id">ID 32 | 800x800 | 292KB</div>
+<div class="stats">32.9% visible</div>
+</div><div class="card ok">
+<img src="products/131.png" alt="131">
+<div class="name">AMD Ryzen 7 9700X</div>
+<div class="id">ID 131 | 1000x1000 | 620KB</div>
+<div class="stats">45.5% visible</div>
+</div><div class="card ok">
+<img src="products/29.png" alt="29">
+<div class="name">AMD Ryzen 5 7600X</div>
+<div class="id">ID 29 | 640x617 | 206KB</div>
+<div class="stats">54.2% visible</div>
+</div><div class="card ok">
+<img src="products/136.png" alt="136">
+<div class="name">AMD Ryzen 7 9800X3D</div>
+<div class="id">ID 136 | 1000x1000 | 674KB</div>
+<div class="stats">55.2% visible</div>
+</div><div class="card ok">
+<img src="products/135.png" alt="135">
+<div class="name">Intel Core Ultra 5 245K</div>
+<div class="id">ID 135 | 600x600 | 105KB</div>
+<div class="stats">58.5% visible</div>
+</div><div class="card ok">
+<img src="products/132.png" alt="132">
+<div class="name">Intel Core Ultra 7 265K</div>
+<div class="id">ID 132 | 600x600 | 104KB</div>
+<div class="stats">58.5% visible</div>
+</div><div class="card ok">
+<img src="products/35.png" alt="35">
+<div class="name">AMD Ryzen 9 7900X</div>
+<div class="id">ID 35 | 600x600 | 104KB</div>
+<div class="stats">58.5% visible</div>
+</div><div class="card ok">
+<img src="products/130.png" alt="130">
+<div class="name">Intel Core Ultra 9 285K</div>
+<div class="id">ID 130 | 600x600 | 195KB</div>
+<div class="stats">60.0% visible</div>
+</div><div class="card ok">
+<img src="products/133.png" alt="133">
+<div class="name">AMD Ryzen 5 9600X</div>
+<div class="id">ID 133 | 800x800 | 353KB</div>
+<div class="stats">62.3% visible</div>
+</div><div class="card ok">
+<img src="products/30.png" alt="30">
+<div class="name">AMD Ryzen 9 7950X3D</div>
+<div class="id">ID 30 | 640x601 | 260KB</div>
+<div class="stats">67.6% visible</div>
+</div><div class="card ok">
+<img src="products/2.png" alt="2">
+<div class="name">AMD Ryzen 7 7800X3D</div>
+<div class="id">ID 2 | 640x605 | 254KB</div>
+<div class="stats">72.6% visible</div>
+</div><div class="card ok">
+<img src="products/13.png" alt="13">
+<div class="name">Intel Core i9-14900K</div>
+<div class="id">ID 13 | 640x773 | 217KB</div>
+<div class="stats">81.8% visible</div>
+</div><div class="card ok">
+<img src="products/31.png" alt="31">
+<div class="name">Intel Core i5-14600K</div>
+<div class="id">ID 31 | 640x773 | 217KB</div>
+<div class="stats">81.8% visible</div>
+</div></div><h2>Refrigeração (14)</h2><div class="grid"><div class="card suspect">
+<img src="products/10.png" alt="10">
+<div class="name">NZXT Kraken Elite 360 RGB</div>
+<div class="id">ID 10 | 1000x1000 | 302KB</div>
+<div class="stats">22.0% visible</div>
+</div><div class="card ok">
+<img src="products/178.png" alt="178">
+<div class="name">Corsair iCUE H170i Elite LCD XT</div>
+<div class="id">ID 178 | 1024x1024 | 422KB</div>
+<div class="stats">28.6% visible</div>
+</div><div class="card ok">
+<img src="products/181.png" alt="181">
+<div class="name">Deepcool Assassin IV</div>
+<div class="id">ID 181 | 640x114 | 32KB</div>
+<div class="stats">28.8% visible</div>
+</div><div class="card ok">
+<img src="products/180.png" alt="180">
+<div class="name">Arctic Liquid Freezer III 360 A-RGB</div>
+<div class="id">ID 180 | 640x288 | 165KB</div>
+<div class="stats">38.1% visible</div>
+</div><div class="card ok">
+<img src="products/80.png" alt="80">
+<div class="name">DeepCool AK620 Digital</div>
+<div class="id">ID 80 | 800x800 | 239KB</div>
+<div class="stats">38.8% visible</div>
+</div><div class="card ok">
+<img src="products/182.png" alt="182">
+<div class="name">EK-Nucleus AIO CR360 Dark</div>
+<div class="id">ID 182 | 640x437 | 164KB</div>
+<div class="stats">46.1% visible</div>
+</div><div class="card ok">
+<img src="products/20.png" alt="20">
+<div class="name">be quiet! Dark Rock Pro 5</div>
+<div class="id">ID 20 | 1024x1024 | 539KB</div>
+<div class="stats">48.7% visible</div>
+</div><div class="card ok">
+<img src="products/84.png" alt="84">
+<div class="name">Arctic Freezer 36 A-RGB</div>
+<div class="id">ID 84 | 640x734 | 260KB</div>
+<div class="stats">48.8% visible</div>
+</div><div class="card ok">
+<img src="products/78.png" alt="78">
+<div class="name">Corsair iCUE H150i Elite LCD XT</div>
+<div class="id">ID 78 | 640x259 | 211KB</div>
+<div class="stats">67.1% visible</div>
+</div><div class="card ok">
+<img src="products/85.png" alt="85">
+<div class="name">Thermalright Peerless Assassin 120 SE</div>
+<div class="id">ID 85 | 640x689 | 502KB</div>
+<div class="stats">68.3% visible</div>
+</div><div class="card ok">
+<img src="products/179.png" alt="179">
+<div class="name">Noctua NH-D15 G2</div>
+<div class="id">ID 179 | 640x627 | 534KB</div>
+<div class="stats">68.3% visible</div>
+</div><div class="card ok">
+<img src="products/184.png" alt="184">
+<div class="name">Lian Li Galahad II Trinity 360</div>
+<div class="id">ID 184 | 640x232 | 201KB</div>
+<div class="stats">71.0% visible</div>
+</div><div class="card ok">
+<img src="products/83.png" alt="83">
+<div class="name">EK-AIO 280 D-RGB</div>
+<div class="id">ID 83 | 640x264 | 253KB</div>
+<div class="stats">80.3% visible</div>
+</div><div class="card ok">
+<img src="products/82.png" alt="82">
+<div class="name">Corsair A115 Air Cooler</div>
+<div class="id">ID 82 | 640x537 | 197KB</div>
+<div class="stats">85.7% visible</div>
+</div></div><h2>Teclados e Ratos (25)</h2><div class="grid"><div class="card suspect">
+<img src="products/224.png" alt="224">
+<div class="name">Attack Shark X3 Wireless</div>
+<div class="id">ID 224 | 1024x1024 | 170KB</div>
+<div class="stats">21.8% visible</div>
+</div><div class="card suspect">
+<img src="products/100.png" alt="100">
+<div class="name">HyperX Alloy Origins 65</div>
+<div class="id">ID 100 | 1024x1024 | 303KB</div>
+<div class="stats">22.8% visible</div>
+</div><div class="card suspect">
+<img src="products/98.png" alt="98">
+<div class="name">Razer Viper V3 Pro</div>
+<div class="id">ID 98 | 500x500 | 76KB</div>
+<div class="stats">23.9% visible</div>
+</div><div class="card ok">
+<img src="products/242.png" alt="242">
+<div class="name">Redragon K630 Dragonborn 60%</div>
+<div class="id">ID 242 | 1024x1024 | 412KB</div>
+<div class="stats">29.5% visible</div>
+</div><div class="card ok">
+<img src="products/241.png" alt="241">
+<div class="name">Royal Kludge RK84 Wireless</div>
+<div class="id">ID 241 | 600x600 | 157KB</div>
+<div class="stats">32.4% visible</div>
+</div><div class="card ok">
+<img src="products/199.png" alt="199">
+<div class="name">Endgame Gear OP1we</div>
+<div class="id">ID 199 | 640x480 | 45KB</div>
+<div class="stats">33.8% visible</div>
+</div><div class="card ok">
+<img src="products/223.png" alt="223">
+<div class="name">Redragon Cobra M711 RGB</div>
+<div class="id">ID 223 | 1000x1000 | 318KB</div>
+<div class="stats">34.5% visible</div>
+</div><div class="card ok">
+<img src="products/97.png" alt="97">
+<div class="name">Corsair K70 RGB PRO</div>
+<div class="id">ID 97 | 1024x1024 | 482KB</div>
+<div class="stats">34.9% visible</div>
+</div><div class="card ok">
+<img src="products/243.png" alt="243">
+<div class="name">VGN Neon 75 HE Magnetic</div>
+<div class="id">ID 243 | 800x800 | 196KB</div>
+<div class="stats">35.2% visible</div>
+</div><div class="card ok">
+<img src="products/196.png" alt="196">
+<div class="name">Keychron Q1 HE</div>
+<div class="id">ID 196 | 1024x1024 | 359KB</div>
+<div class="stats">35.3% visible</div>
+</div><div class="card ok">
+<img src="products/220.png" alt="220">
+<div class="name">Redragon Shark M688 RGB</div>
+<div class="id">ID 220 | 1000x1000 | 393KB</div>
+<div class="stats">36.9% visible</div>
+</div><div class="card ok">
+<img src="products/6.png" alt="6">
+<div class="name">Logitech G Pro X Superlight 2</div>
+<div class="id">ID 6 | 800x800 | 141KB</div>
+<div class="stats">37.6% visible</div>
+</div><div class="card ok">
+<img src="products/193.png" alt="193">
+<div class="name">Wooting 80HE</div>
+<div class="id">ID 193 | 1024x658 | 417KB</div>
+<div class="stats">42.8% visible</div>
+</div><div class="card ok">
+<img src="products/7.png" alt="7">
+<div class="name">Razer BlackWidow V4 Pro</div>
+<div class="id">ID 7 | 1000x1000 | 509KB</div>
+<div class="stats">44.5% visible</div>
+</div><div class="card ok">
+<img src="products/221.png" alt="221">
+<div class="name">Attack Shark R1 Pro Wireless</div>
+<div class="id">ID 221 | 1024x1024 | 231KB</div>
+<div class="stats">47.8% visible</div>
+</div><div class="card ok">
+<img src="products/102.png" alt="102">
+<div class="name">SteelSeries Aerox 5 Wireless</div>
+<div class="id">ID 102 | 640x728 | 387KB</div>
+<div class="stats">49.0% visible</div>
+</div><div class="card ok">
+<img src="products/96.png" alt="96">
+<div class="name">SteelSeries Apex Pro TKL (2023)</div>
+<div class="id">ID 96 | 1024x626 | 607KB</div>
+<div class="stats">60.2% visible</div>
+</div><div class="card ok">
+<img src="products/101.png" alt="101">
+<div class="name">Razer Huntsman V3 Pro</div>
+<div class="id">ID 101 | 640x376 | 296KB</div>
+<div class="stats">67.6% visible</div>
+</div><div class="card ok">
+<img src="products/200.png" alt="200">
+<div class="name">Corsair K70 MAX</div>
+<div class="id">ID 200 | 640x354 | 200KB</div>
+<div class="stats">69.1% visible</div>
+</div><div class="card ok">
+<img src="products/240.png" alt="240">
+<div class="name">Aula F75 Mechanical Keyboard 75%</div>
+<div class="id">ID 240 | 1024x420 | 343KB</div>
+<div class="stats">71.0% visible</div>
+</div><div class="card ok">
+<img src="products/99.png" alt="99">
+<div class="name">Logitech MX Master 3S</div>
+<div class="id">ID 99 | 1024x581 | 333KB</div>
+<div class="stats">72.6% visible</div>
+</div><div class="card ok">
+<img src="products/198.png" alt="198">
+<div class="name">SteelSeries Apex Pro TKL 2024</div>
+<div class="id">ID 198 | 640x593 | 366KB</div>
+<div class="stats">75.7% visible</div>
+</div><div class="card ok">
+<img src="products/197.png" alt="197">
+<div class="name">Pulsar X2V2 Mini Wireless</div>
+<div class="id">ID 197 | 552x1024 | 149KB</div>
+<div class="stats">89.0% visible</div>
+</div><div class="card ok">
+<img src="products/222.png" alt="222">
+<div class="name">HAVIT MS1006 Gaming Mouse</div>
+<div class="id">ID 222 | 800x800 | 64KB</div>
+<div class="stats">100.0% visible</div>
+</div><div class="card ok">
+<img src="products/95.png" alt="95">
+<div class="name">Razer DeathAdder V3</div>
+<div class="id">ID 95 | 1200x800 | 1495KB</div>
+<div class="stats">100.0% visible</div>
+</div></div></body></html>

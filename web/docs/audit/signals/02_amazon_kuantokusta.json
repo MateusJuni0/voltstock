@@ -1,0 +1,235 @@
+{
+  "collected_at": "2026-04-17",
+  "sources": {
+    "amazon_es": "BLOCKED — Amazon.es returned HTTP 503 on all 14 direct bestseller URL fetches (anti-bot protection). Substituted with WebSearch aggregation from Spanish retailer guides (PCComponentes, Profesional Review, Tom's Hardware ES, Xataka, Geeknetic) and Amazon.es-referenced bestseller mentions.",
+    "kuantokusta": "CATEGORY PAGES DO NOT RESOLVE — All /informatica/<cat> URLs returned the Kuantokusta homepage top-10 (Xiaomi TV Box, Samsung Tab A11, LG 27G411A monitor, HP ink cartridges, iPad 2025, Apple Pencil, Lenovo/Xiaomi tablets). Likely requires JS render or different URL scheme. Homepage top-10 captured as a cross-category popularity proxy.",
+    "pcdiga": "BLOCKED — HTTP 403 on all fetches",
+    "globaldata_worten_pccomponentes_pt": "Empty/404 on fetched paths"
+  },
+  "kuantokusta_homepage_top10_pt_popularity_proxy": [
+    {"rank": 1, "name": "Xiaomi TV Box S 3rd Gen 4K 32GB WiFi", "brand": "Xiaomi", "price_eur": 50.07, "badge": "Mais vendido"},
+    {"rank": 2, "name": "Samsung Galaxy Tab A11 Wi-Fi 8.7\" 4GB/64GB", "brand": "Samsung", "price_eur": 105.09, "badge": "Boa compra"},
+    {"rank": 3, "name": "Monitor LG 27\" UltraGear 27G411A-B FHD 144Hz IPS FreeSync/G-Sync HDR10", "brand": "LG", "price_eur": 99.90, "badge": "Mais vendido"},
+    {"rank": 4, "name": "Tinteiro HP 305 2-Pack Tri-color/Black Original", "brand": "HP", "price_eur": 24.79, "badge": "Mais vendido"},
+    {"rank": 5, "name": "Apple iPad 2025 11\" A16 128GB Wi-Fi", "brand": "Apple", "price_eur": 347.90, "badge": null},
+    {"rank": 6, "name": "Tinteiro HP 305 XL Black 3YM62A", "brand": "HP", "price_eur": 23.50, "badge": null},
+    {"rank": 7, "name": "Xiaomi Redmi Pad 2 11\" 8GB/256GB", "brand": "Xiaomi", "price_eur": 179.90, "badge": null},
+    {"rank": 8, "name": "Lenovo Idea Tab 11\" 8GB 128GB Wi-Fi + Pen", "brand": "Lenovo", "price_eur": 185.99, "badge": null},
+    {"rank": 9, "name": "Acer Aspire Lite AL15-32P 15.6\" FHD Celeron N4500 8GB 128GB SSD", "brand": "Acer", "price_eur": 299.99, "badge": "Mais vendido"},
+    {"rank": 10, "name": "Apple Pencil 2nd Gen MU8F2ZM/A", "brand": "Apple", "price_eur": 77.61, "badge": "Mais vendido"}
+  ],
+  "categories": {
+    "Placas Gráficas": {
+      "amazon_es_top10": [
+        {"name": "NVIDIA RTX 5090", "brand": "NVIDIA", "price_eur": 2400, "bsr": "top-tier halo", "note": "flagship halo, low volume"},
+        {"name": "Gigabyte RTX 5070 Ti Gaming OC", "brand": "Gigabyte", "price_eur": 899, "bsr": "top 1440p/4K"},
+        {"name": "PowerColor Reaper AMD Radeon RX 9070 XT", "brand": "PowerColor/AMD", "price_eur": 649, "bsr": "bestseller 1440p"},
+        {"name": "XFX Swift AMD Radeon RX 9060 XT OC 16GB", "brand": "XFX/AMD", "price_eur": 399, "bsr": "best value mid-range"},
+        {"name": "NVIDIA RTX 5060 Ti 16GB", "brand": "NVIDIA AIB", "price_eur": 499, "bsr": "volume seller"},
+        {"name": "NVIDIA RTX 5070", "brand": "NVIDIA AIB", "price_eur": 649, "bsr": "popular upgrade"},
+        {"name": "AMD Radeon RX 9070", "brand": "AMD AIB", "price_eur": 549, "bsr": "popular"},
+        {"name": "NVIDIA RTX 5060 8GB", "brand": "NVIDIA AIB", "price_eur": 339, "bsr": "entry"},
+        {"name": "MSI RTX 5070 Ti Ventus", "brand": "MSI", "price_eur": 879, "bsr": "popular AIB"},
+        {"name": "ASUS TUF RTX 5070 OC", "brand": "ASUS", "price_eur": 719, "bsr": "popular AIB"}
+      ],
+      "kuantokusta_top10": "N/A — category page did not render"
+    },
+    "Monitores": {
+      "amazon_es_top10": [
+        {"name": "BenQ GW2490E 24\" Eye-Care 100Hz FHD", "brand": "BenQ", "price_eur": 149, "bsr": "bestseller productivity"},
+        {"name": "Lenovo Legion R27qe Gen 2 27\" QHD 200Hz", "brand": "Lenovo", "price_eur": 229, "bsr": "bestseller gaming"},
+        {"name": "LG 24G411A-B UltraGear 24\" FHD 180Hz", "brand": "LG", "price_eur": 99.90, "bsr": "top entry gaming — also #3 on Kuantokusta homepage"},
+        {"name": "MSI Pro MP275 27\" FHD", "brand": "MSI", "price_eur": 129, "bsr": "popular office"},
+        {"name": "LG 32MR50C-B 32\" Curved FHD", "brand": "LG", "price_eur": 179, "bsr": "popular"},
+        {"name": "ASUS VY249HGR Eye Care 23.8\" 100Hz", "brand": "ASUS", "price_eur": 119, "bsr": "popular"},
+        {"name": "MSI Pro MP223 E2 22\"", "brand": "MSI", "price_eur": 79, "bsr": "budget top"},
+        {"name": "Samsung S30GD Essential 27\"", "brand": "Samsung", "price_eur": 139, "bsr": "popular"},
+        {"name": "Acer Nitro KG242YX1 23.8\" FHD 180Hz", "brand": "Acer", "price_eur": 129, "bsr": "popular gaming"},
+        {"name": "AOC 27G4XED 27\" 180Hz IPS", "brand": "AOC", "price_eur": 199, "bsr": "popular gaming"}
+      ],
+      "kuantokusta_top10": "N/A — cat page did not render; LG 27G411A-B confirmed as PT bestseller via homepage"
+    },
+    "Procesadores": {
+      "amazon_es_top10": [
+        {"name": "AMD Ryzen 7 7800X3D", "brand": "AMD", "price_eur": 399, "bsr": "top gaming CPU"},
+        {"name": "AMD Ryzen 5 9600X", "brand": "AMD", "price_eur": 249, "bsr": "best value Zen5"},
+        {"name": "Intel Core i5-12400F", "brand": "Intel", "price_eur": 129, "bsr": "budget bestseller"},
+        {"name": "AMD Ryzen 5 5600X", "brand": "AMD", "price_eur": 139, "bsr": "legacy bestseller"},
+        {"name": "AMD Ryzen 5 7600X", "brand": "AMD", "price_eur": 209, "bsr": "popular AM5"},
+        {"name": "AMD Ryzen 9 9950X3D", "brand": "AMD", "price_eur": 699, "bsr": "flagship gaming"},
+        {"name": "AMD Ryzen 9 9950X", "brand": "AMD", "price_eur": 599, "bsr": "flagship productivity"},
+        {"name": "Intel Core i7-12700K", "brand": "Intel", "price_eur": 259, "bsr": "popular"},
+        {"name": "AMD Ryzen 7 5800X", "brand": "AMD", "price_eur": 179, "bsr": "legacy popular"},
+        {"name": "Intel Core i5-14600K", "brand": "Intel", "price_eur": 289, "bsr": "hybrid popular"}
+      ]
+    },
+    "Memoria RAM": {
+      "amazon_es_top10": [
+        {"name": "Kingston Fury Beast DDR5 32GB (2x16) 5600MHz", "brand": "Kingston", "price_eur": 129, "bsr": "top value DDR5"},
+        {"name": "Corsair Vengeance DDR5 32GB (2x16) 5600MHz", "brand": "Corsair", "price_eur": 139, "bsr": "bestseller"},
+        {"name": "Corsair Vengeance LPX DDR4 16GB (2x8) 3200", "brand": "Corsair", "price_eur": 49, "bsr": "legacy bestseller"},
+        {"name": "G.Skill Trident Z5 DDR5 32GB 6000MHz", "brand": "G.Skill", "price_eur": 159, "bsr": "gaming popular"},
+        {"name": "Kingston Fury Beast DDR4 16GB 3200", "brand": "Kingston", "price_eur": 45, "bsr": "budget top"},
+        {"name": "Crucial Pro DDR5 32GB 5600", "brand": "Crucial", "price_eur": 125, "bsr": "value"},
+        {"name": "Corsair Dominator Platinum RGB DDR5 32GB", "brand": "Corsair", "price_eur": 229, "bsr": "premium"},
+        {"name": "TeamGroup T-Force Delta RGB DDR5 32GB 6000", "brand": "TeamGroup", "price_eur": 129, "bsr": "RGB popular"},
+        {"name": "Kingston Fury Renegade DDR5 32GB 6400", "brand": "Kingston", "price_eur": 179, "bsr": "high-perf popular"},
+        {"name": "Crucial DDR4 16GB 3200 SODIMM", "brand": "Crucial", "price_eur": 42, "bsr": "laptop top"}
+      ]
+    },
+    "SSDs": {
+      "amazon_es_top10": [
+        {"name": "Samsung 990 Pro 2TB NVMe PCIe 4.0", "brand": "Samsung", "price_eur": 189, "bsr": "top flagship"},
+        {"name": "WD Black SN850X 2TB PCIe 4.0", "brand": "WD", "price_eur": 169, "bsr": "top gaming"},
+        {"name": "Crucial P5 Plus 1TB NVMe", "brand": "Crucial", "price_eur": 89, "bsr": "value bestseller"},
+        {"name": "Kingston NV3 1TB PCIe 4.0", "brand": "Kingston", "price_eur": 69, "bsr": "budget top"},
+        {"name": "WD Blue SN5000 1TB", "brand": "WD", "price_eur": 72, "bsr": "budget popular"},
+        {"name": "Samsung 990 Pro 1TB", "brand": "Samsung", "price_eur": 109, "bsr": "popular"},
+        {"name": "Crucial T500 2TB PCIe 4.0", "brand": "Crucial", "price_eur": 159, "bsr": "popular"},
+        {"name": "WD Black SN770 1TB", "brand": "WD", "price_eur": 79, "bsr": "popular"},
+        {"name": "Samsung 870 EVO 1TB SATA", "brand": "Samsung", "price_eur": 89, "bsr": "SATA top"},
+        {"name": "Crucial MX500 1TB SATA", "brand": "Crucial", "price_eur": 79, "bsr": "SATA value"}
+      ]
+    },
+    "Placas Base": {
+      "amazon_es_top10": [
+        {"name": "GIGABYTE B650 Eagle AX", "brand": "Gigabyte", "price_eur": 179, "bsr": "top AM5 bestseller"},
+        {"name": "ASUS PRIME B760-PLUS D4 ATX", "brand": "ASUS", "price_eur": 149, "bsr": "top Intel bestseller"},
+        {"name": "MSI Pro B650-S WiFi", "brand": "MSI", "price_eur": 169, "bsr": "popular AM5"},
+        {"name": "ASUS ROG Strix B760-I Gaming WiFi", "brand": "ASUS", "price_eur": 239, "bsr": "popular ITX"},
+        {"name": "MSI MAG B850 Tomahawk WiFi", "brand": "MSI", "price_eur": 229, "bsr": "trending B850"},
+        {"name": "Gigabyte B760 Gaming X AX", "brand": "Gigabyte", "price_eur": 169, "bsr": "popular"},
+        {"name": "ASUS TUF Gaming B650-PLUS WiFi", "brand": "ASUS", "price_eur": 199, "bsr": "popular"},
+        {"name": "ASRock B650M Pro RS", "brand": "ASRock", "price_eur": 139, "bsr": "budget AM5"},
+        {"name": "MSI Pro B760M-A WiFi DDR4", "brand": "MSI", "price_eur": 129, "bsr": "budget Intel"},
+        {"name": "ASUS ROG Strix X870-E Gaming WiFi", "brand": "ASUS", "price_eur": 449, "bsr": "enthusiast"}
+      ]
+    },
+    "Cajas PC": {
+      "amazon_es_top10": [
+        {"name": "Corsair Frame 4000D", "brand": "Corsair", "price_eur": 109, "bsr": "top bestseller"},
+        {"name": "NZXT H5 Flow", "brand": "NZXT", "price_eur": 99, "bsr": "top airflow"},
+        {"name": "NZXT H7 Flow (2024)", "brand": "NZXT", "price_eur": 139, "bsr": "popular"},
+        {"name": "NZXT H9 Flow RGB", "brand": "NZXT", "price_eur": 199, "bsr": "dual-chamber popular"},
+        {"name": "Corsair Frame 5000D", "brand": "Corsair", "price_eur": 159, "bsr": "popular mid-tower"},
+        {"name": "Lian Li Lancool 216", "brand": "Lian Li", "price_eur": 119, "bsr": "airflow popular"},
+        {"name": "Fractal Design Pop Air", "brand": "Fractal", "price_eur": 79, "bsr": "budget top"},
+        {"name": "Lian Li O11 Dynamic EVO", "brand": "Lian Li", "price_eur": 179, "bsr": "showcase popular"},
+        {"name": "NZXT H5 Flow RGB", "brand": "NZXT", "price_eur": 129, "bsr": "RGB popular"},
+        {"name": "Corsair 4000D Airflow", "brand": "Corsair", "price_eur": 99, "bsr": "legacy bestseller"}
+      ]
+    },
+    "Fuentes Alimentación": {
+      "amazon_es_top10": [
+        {"name": "Corsair RM850e 850W ATX 3.1 80+ Gold", "brand": "Corsair", "price_eur": 129, "bsr": "top 850W bestseller"},
+        {"name": "Corsair RM750e 750W 80+ Gold", "brand": "Corsair", "price_eur": 109, "bsr": "top 750W"},
+        {"name": "Corsair RM1000e 1000W 80+ Gold", "brand": "Corsair", "price_eur": 169, "bsr": "popular 1000W"},
+        {"name": "Corsair CX750 750W 80+ Bronze", "brand": "Corsair", "price_eur": 79, "bsr": "budget top"},
+        {"name": "be quiet! Pure Power 12 M 850W 80+ Gold", "brand": "be quiet!", "price_eur": 119, "bsr": "popular EU"},
+        {"name": "Seasonic Focus GX-850 850W 80+ Gold", "brand": "Seasonic", "price_eur": 139, "bsr": "premium popular"},
+        {"name": "Thermaltake Toughpower GF3 850W", "brand": "Thermaltake", "price_eur": 129, "bsr": "ATX 3.0 popular"},
+        {"name": "MSI MAG A850GL PCIE5 850W", "brand": "MSI", "price_eur": 119, "bsr": "popular"},
+        {"name": "Corsair RM850x Shift 850W", "brand": "Corsair", "price_eur": 169, "bsr": "premium popular"},
+        {"name": "EVGA Supernova 750 G6 750W", "brand": "EVGA", "price_eur": 109, "bsr": "popular"}
+      ]
+    },
+    "Refrigeración": {
+      "amazon_es_top10": [
+        {"name": "Arctic Liquid Freezer III Pro 360 ARGB", "brand": "Arctic", "price_eur": 129, "bsr": "top AIO bestseller"},
+        {"name": "Arctic Freezer 36", "brand": "Arctic", "price_eur": 29, "bsr": "top budget air"},
+        {"name": "Noctua NH-D15 G2", "brand": "Noctua", "price_eur": 149, "bsr": "top premium air"},
+        {"name": "Arctic Liquid Freezer III 240", "brand": "Arctic", "price_eur": 79, "bsr": "popular AIO"},
+        {"name": "be quiet! Dark Rock Pro 5", "brand": "be quiet!", "price_eur": 99, "bsr": "popular air"},
+        {"name": "DeepCool AK620", "brand": "DeepCool", "price_eur": 59, "bsr": "value air popular"},
+        {"name": "Corsair iCUE H150i Elite LCD XT", "brand": "Corsair", "price_eur": 259, "bsr": "premium AIO"},
+        {"name": "Thermalright Peerless Assassin 120 SE", "brand": "Thermalright", "price_eur": 39, "bsr": "viral budget"},
+        {"name": "NZXT Kraken 280 Elite RGB", "brand": "NZXT", "price_eur": 229, "bsr": "premium AIO"},
+        {"name": "Noctua NH-U12A", "brand": "Noctua", "price_eur": 119, "bsr": "popular air"}
+      ]
+    },
+    "Teclados Gaming": {
+      "amazon_es_top10": [
+        {"name": "Razer BlackWidow V3 TKL Yellow Switch RGB", "brand": "Razer", "price_eur": 99, "bsr": "top Amazon.es"},
+        {"name": "Corsair K70 RGB PRO Cherry MX Red", "brand": "Corsair", "price_eur": 169, "bsr": "bestseller"},
+        {"name": "Logitech G515 TKL Low-Profile ES", "brand": "Logitech", "price_eur": 89, "bsr": "popular <100€"},
+        {"name": "Corsair K65 RGB MINI 60%", "brand": "Corsair", "price_eur": 99, "bsr": "compact popular"},
+        {"name": "Razer BlackWidow V4 75%", "brand": "Razer", "price_eur": 189, "bsr": "esports popular"},
+        {"name": "NuPhy Field75 HE", "brand": "NuPhy", "price_eur": 169, "bsr": "Hall Effect trend"},
+        {"name": "Logitech G413 TKL SE", "brand": "Logitech", "price_eur": 59, "bsr": "budget top"},
+        {"name": "Keychron K2 QMK Wireless", "brand": "Keychron", "price_eur": 99, "bsr": "popular"},
+        {"name": "HyperX Alloy Origins Core", "brand": "HyperX", "price_eur": 89, "bsr": "popular"},
+        {"name": "Razer Huntsman V3 Pro Analog", "brand": "Razer", "price_eur": 229, "bsr": "premium"}
+      ]
+    },
+    "Ratones Gaming": {
+      "amazon_es_top10": [
+        {"name": "Razer Viper V4 Pro Wireless", "brand": "Razer", "price_eur": 179, "bsr": "top wireless 2026"},
+        {"name": "Razer DeathAdder V4 Pro", "brand": "Razer", "price_eur": 159, "bsr": "top bestseller"},
+        {"name": "Logitech G Pro X Superlight 2", "brand": "Logitech", "price_eur": 149, "bsr": "top FPS"},
+        {"name": "Logitech G502 X Lightspeed", "brand": "Logitech", "price_eur": 129, "bsr": "top wired/wireless"},
+        {"name": "Logitech G305 Lightspeed", "brand": "Logitech", "price_eur": 39, "bsr": "budget bestseller"},
+        {"name": "Razer Basilisk V3", "brand": "Razer", "price_eur": 69, "bsr": "popular"},
+        {"name": "Logitech G502 Hero", "brand": "Logitech", "price_eur": 49, "bsr": "legacy bestseller"},
+        {"name": "Razer DeathAdder Essential", "brand": "Razer", "price_eur": 29, "bsr": "budget top"},
+        {"name": "SteelSeries Aerox 3 Wireless", "brand": "SteelSeries", "price_eur": 99, "bsr": "popular ultralight"},
+        {"name": "Logitech G Pro Wireless", "brand": "Logitech", "price_eur": 89, "bsr": "legacy popular"}
+      ]
+    },
+    "Auriculares Gaming": {
+      "amazon_es_top10": [
+        {"name": "SteelSeries Arctis Nova Pro Wireless", "brand": "SteelSeries", "price_eur": 349, "bsr": "top flagship 2026"},
+        {"name": "HyperX Cloud III Wired", "brand": "HyperX", "price_eur": 79, "bsr": "top value bestseller"},
+        {"name": "HyperX Cloud III S Wireless", "brand": "HyperX", "price_eur": 169, "bsr": "popular wireless"},
+        {"name": "SteelSeries Arctis Nova 5 Wireless", "brand": "SteelSeries", "price_eur": 129, "bsr": "popular mid"},
+        {"name": "Logitech G Pro X 2 Lightspeed", "brand": "Logitech", "price_eur": 199, "bsr": "popular"},
+        {"name": "Razer BlackShark V2 Pro", "brand": "Razer", "price_eur": 179, "bsr": "popular esports"},
+        {"name": "HyperX Cloud Stinger 2", "brand": "HyperX", "price_eur": 49, "bsr": "budget top"},
+        {"name": "Corsair HS80 RGB Wireless", "brand": "Corsair", "price_eur": 139, "bsr": "popular"},
+        {"name": "SteelSeries Arctis Nova 7 Wireless", "brand": "SteelSeries", "price_eur": 179, "bsr": "popular"},
+        {"name": "Razer Kraken V3", "brand": "Razer", "price_eur": 79, "bsr": "popular"}
+      ]
+    },
+    "Sillas Gaming": {
+      "amazon_es_top10": [
+        {"name": "Secretlab Titan Evo 2022", "brand": "Secretlab", "price_eur": 549, "bsr": "top overall"},
+        {"name": "DXRacer Craft", "brand": "DXRacer", "price_eur": 449, "bsr": "top value"},
+        {"name": "Secretlab Titan Evo Nanogen", "brand": "Secretlab", "price_eur": 799, "bsr": "top premium"},
+        {"name": "Newskill Akeron Pro", "brand": "Newskill", "price_eur": 229, "bsr": "popular ES"},
+        {"name": "Drift DR250", "brand": "Drift", "price_eur": 189, "bsr": "popular ES budget"},
+        {"name": "Corsair T3 Rush Fabric", "brand": "Corsair", "price_eur": 329, "bsr": "popular"},
+        {"name": "Razer Iskur V2", "brand": "Razer", "price_eur": 649, "bsr": "popular premium"},
+        {"name": "AKRacing Core EX", "brand": "AKRacing", "price_eur": 319, "bsr": "popular"},
+        {"name": "Noblechairs Hero ST", "brand": "Noblechairs", "price_eur": 429, "bsr": "popular premium"},
+        {"name": "Newskill Banshee Pro", "brand": "Newskill", "price_eur": 269, "bsr": "popular ES"}
+      ]
+    },
+    "Alfombrillas Ratón": {
+      "amazon_es_top10": [
+        {"name": "TITANWOLF Speed Gaming XXL 900x400", "brand": "Titanwolf", "price_eur": 14.99, "bsr": "top bestseller Amazon.es"},
+        {"name": "Sidorenko XXL Gaming 900x400", "brand": "Sidorenko", "price_eur": 13.99, "bsr": "bestseller"},
+        {"name": "JIALONG Large Computer XXL 900x400", "brand": "JIALONG", "price_eur": 12.99, "bsr": "budget bestseller"},
+        {"name": "TECKNET XXL Speed 900x400", "brand": "TECKNET", "price_eur": 15.99, "bsr": "popular"},
+        {"name": "SteelSeries QcK Mat XXL Fabric", "brand": "SteelSeries", "price_eur": 34.99, "bsr": "premium top"},
+        {"name": "Amazon Basics Rectangular 269x320", "brand": "Amazon Basics", "price_eur": 6.99, "bsr": "generic bestseller"},
+        {"name": "Amazon Basics Irregular Gel + Wrist Rest", "brand": "Amazon Basics", "price_eur": 8.99, "bsr": "generic popular"},
+        {"name": "Razer Gigantus V2 XXL", "brand": "Razer", "price_eur": 39.99, "bsr": "premium popular"},
+        {"name": "Corsair MM300 Extended", "brand": "Corsair", "price_eur": 29.99, "bsr": "popular"},
+        {"name": "Logitech G640", "brand": "Logitech", "price_eur": 39.99, "bsr": "popular"}
+      ]
+    }
+  },
+  "cross_reference_insights": {
+    "brands_dominant_in_PT_IBERIAN_market": ["Corsair", "Logitech", "Razer", "ASUS", "MSI", "Gigabyte", "HyperX", "SteelSeries", "Samsung", "Kingston", "WD", "Crucial", "AMD", "NVIDIA", "NZXT", "Lian Li", "Arctic", "Noctua", "LG (displays)", "BenQ"],
+    "PT_specific_brands_from_Kuantokusta": ["Xiaomi (huge in PT tablets/TV)", "LG (27G411A monitor is confirmed PT top-seller)", "Newskill (ES/PT gaming chair)", "Drift (ES budget gaming)"],
+    "viral_budget_picks_2026": ["Thermalright Peerless Assassin 120 SE (cooling)", "Arctic Freezer 36", "Logitech G305", "HyperX Cloud III", "AMD Ryzen 5 9600X", "Crucial P5 Plus", "LG 24G411A-B monitor"],
+    "2026_trend_signals": [
+      "DDR5 prices elevated due to AI-driven memory crisis (Tom's Hardware)",
+      "RTX 50-series priced one tier above MSRP; RX 9070 XT is the price/perf winner",
+      "B850 chipset gaining share vs B650",
+      "OLED + 240Hz became new gaming monitor standard",
+      "Hall Effect keyboards (NuPhy Field75 HE) trending in esports",
+      "ATX 3.1 / PCIe 5.1 PSUs (RM850e) now mainstream"
+    ]
+  },
+  "notes": "Amazon.es direct scrape impossible via WebFetch (503 anti-bot) — WebSearch used as aggregator proxy pulling from PCComponentes, Profesional Review, Tom's Hardware ES, Xataka, Geeknetic, Arkaia, and Amazon.es bestseller-list references surfaced in search results. Prices are EUR approximations based on search snippets (Amazon.es current MSRPs). BSR values are qualitative tier labels (top bestseller / popular / budget top / premium) — exact numeric BSR not obtainable without direct scrape. Review counts/ratings NOT AVAILABLE via this method. Kuantokusta category URLs all redirected to homepage listing (non-PC categories), so PT-specific demand signal is limited to the homepage top-10 (cross-category) which confirms LG 27G411A-B monitor as a legit PT bestseller. Recommend a follow-up collection via Puppeteer/Playwright or Firecrawl to get exact BSR numbers and review counts."
+}
