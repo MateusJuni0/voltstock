@@ -7,6 +7,7 @@ import { createClient } from "@/lib/supabase/client";
 import {
   LayoutDashboard,
   Package,
+  PackageSearch,
   ShoppingBag,
   ShieldAlert,
   Loader2,
@@ -36,6 +37,12 @@ const NAV_ITEMS = [
     href: "/admin/produtos",
     label: "Produtos",
     icon: Package,
+    exact: false,
+  },
+  {
+    href: "/admin/aliexpress",
+    label: "AliExpress",
+    icon: PackageSearch,
     exact: false,
   },
 ];

@@ -3,6 +3,7 @@ import { getStripe } from "@/lib/stripe";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
 import { sendOrderConfirmation, sendSellerNotification } from "@/lib/email";
 import { products as catalogProducts } from "@/data/products";
+import { placeDropshipOrder, type DropshipAeItem } from "@/lib/aliexpress/place-dropship-order";
 import type Stripe from "stripe";
 
 // ── Types ───────────────────────────────────────────────────────────────────
@@ -178,6 +179,60 @@ async function persistOrder(session: Stripe.Checkout.Session): Promise<void> {
         p_quantity: item.quantity,
       });
     }
+  }
+
+  // ── AliExpress dropship auto-order (silent fallback on failure) ───────────
+  try {
+    const productNames = productItems.map((p) => p.product_name);
+    if (productNames.length > 0 && shipping) {
+      const { data: aeMatches } = await supabase
+        .from("ae_products")
+        .select("ae_product_id, name")
+        .in("name", productNames)
+        .eq("active", true);
+
+      const matches = (aeMatches ?? []) as Array<{ ae_product_id: string; name: string }>;
+      if (matches.length > 0) {
+        const aeItems: DropshipAeItem[] = productItems
+          .map((p) => {
+            const match = matches.find((m) => m.name === p.product_name);
+            if (!match) return null;
+            return {
+              ae_product_id: match.ae_product_id,
+              quantity: p.quantity,
+            } satisfies DropshipAeItem;
+          })
+          .filter((x): x is DropshipAeItem => x !== null);
+
+        if (aeItems.length > 0) {
+          // Tag order_items with ae_product_id for downstream tracking sync
+          for (const ae of aeItems) {
+            const match = matches.find((m) => m.ae_product_id === ae.ae_product_id);
+            if (!match) continue;
+            await supabase
+              .from("order_items")
+              .update({ ae_product_id: ae.ae_product_id })
+              .eq("order_id", insertedOrder.id)
+              .eq("product_name", match.name);
+          }
+
+          const placed = await placeDropshipOrder(
+            insertedOrder.id,
+            supabase,
+            aeItems,
+            shipping,
+          );
+          if (!placed.ok) {
+            console.error(
+              `[stripe-webhook] AE dropship FAILED for order ${insertedOrder.id}: ${placed.error}`,
+            );
+          }
+        }
+      }
+    }
+  } catch (aeErr) {
+    const msg = aeErr instanceof Error ? aeErr.message : "ae_step_error";
+    console.error(`[stripe-webhook] AE dropship step error for ${insertedOrder.id}: ${msg}`);
   }
 
   // Send order confirmation email to customer + notification to seller
