@@ -153,8 +153,21 @@ function normalizeAeProduct(raw: unknown, aeProductId: string): NormalizedAe {
   };
 }
 
-export async function POST(request: NextRequest): Promise<NextResponse> {
+async function authorize(
+  request: NextRequest,
+): Promise<{ ok: boolean; reason?: string; userId?: string | null }> {
+  const authHeader = request.headers.get("authorization");
+  const adminSecret = process.env.ADMIN_SECRET;
+  if (adminSecret && authHeader === `Bearer ${adminSecret}`) {
+    return { ok: true, userId: null };
+  }
   const guard = await requireAdmin();
+  if (guard.ok) return { ok: true, userId: guard.userId ?? null };
+  return { ok: false, reason: guard.reason ?? "forbidden" };
+}
+
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  const guard = await authorize(request);
   if (!guard.ok) {
     return NextResponse.json({ error: guard.reason ?? "forbidden" }, { status: 403 });
   }
