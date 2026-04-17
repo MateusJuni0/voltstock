@@ -15,6 +15,8 @@ import { createHmac } from "node:crypto";
 export function signParams(
   params: Record<string, string | number | boolean | undefined>,
   appSecret: string,
+  /** For REST system APIs (e.g. /auth/token/create), prepend the API path to the concat. */
+  apiPath?: string,
 ): string {
   const clean: Record<string, string> = {};
   for (const [k, v] of Object.entries(params)) {
@@ -22,7 +24,8 @@ export function signParams(
     clean[k] = String(v);
   }
   const sortedKeys = Object.keys(clean).sort();
-  const concat = sortedKeys.map((k) => `${k}${clean[k]}`).join("");
+  const paramsConcat = sortedKeys.map((k) => `${k}${clean[k]}`).join("");
+  const concat = apiPath ? `${apiPath}${paramsConcat}` : paramsConcat;
   return createHmac("sha256", appSecret).update(concat, "utf8").digest("hex").toUpperCase();
 }
 
