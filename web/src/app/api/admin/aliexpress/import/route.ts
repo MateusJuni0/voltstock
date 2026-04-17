@@ -95,30 +95,71 @@ interface NormalizedAe {
   stock: number;
 }
 
-function normalizeAeProduct(raw: unknown, aeProductId: string): NormalizedAe {
-  const title =
-    asString(deepFind(raw, (r) => r.subject ?? r.product_title ?? r.title)) ?? "AE Product";
-  const category = asString(deepFind(raw, (r) => r.category_name ?? r.category_id));
-  const cost =
-    asNumber(
-      deepFind(
-        raw,
-        (r) =>
-          r.target_sale_price ??
-          r.sale_price ??
-          r.app_sale_price ??
-          r.original_price ??
-          r.price,
-      ),
-    ) ?? 0;
-  const currency = asString(deepFind(raw, (r) => r.target_sale_price_currency ?? r.currency_code)) ?? "EUR";
-  const mainImage =
-    asString(
-      deepFind(raw, (r) => r.product_main_image_url ?? r.main_image_url ?? r.image_url ?? r.pic_url),
-    ) ?? null;
+function getPath(root: unknown, path: string[]): unknown {
+  let cur: unknown = root;
+  for (const k of path) {
+    if (cur && typeof cur === "object") {
+      cur = (cur as AeRaw)[k];
+    } else {
+      return undefined;
+    }
+  }
+  return cur;
+}
 
-  const galleryRaw = deepFind(raw, (r) => r.image_urls ?? r.product_small_image_urls ?? r.gallery);
+function normalizeAeProduct(raw: unknown, aeProductId: string): NormalizedAe {
+  // Real AE response shape: aliexpress_ds_product_get_response.result.{...}
+  const result =
+    (getPath(raw, ["aliexpress_ds_product_get_response", "result"]) as AeRaw | undefined) ??
+    (raw as AeRaw);
+
+  const baseInfo = (result?.ae_item_base_info_dto as AeRaw | undefined) ?? {};
+  const multimedia = (result?.ae_multimedia_info_dto as AeRaw | undefined) ?? {};
+  const skuWrapper = result?.ae_item_sku_info_dtos as AeRaw | undefined;
+  const skuArray = (skuWrapper?.ae_item_sku_info_d_t_o as AeRaw[] | undefined) ?? [];
+
+  const title =
+    asString(baseInfo.subject) ??
+    asString(deepFind(raw, (r) => r.subject ?? r.product_title ?? r.title)) ??
+    "AE Product";
+
+  const category =
+    asString(baseInfo.category_name) ?? asString(baseInfo.category_id) ?? null;
+
+  // Lowest offer_sale_price across SKUs (EUR dropship cost)
+  let cost = 0;
+  let currency = "EUR";
+  for (const sku of skuArray) {
+    const priceStr =
+      asNumber(sku.offer_sale_price) ??
+      asNumber(sku.offer_bulk_sale_price) ??
+      asNumber(sku.sku_price);
+    if (priceStr != null && priceStr > 0) {
+      if (cost === 0 || priceStr < cost) {
+        cost = priceStr;
+        currency = asString(sku.currency_code) ?? currency;
+      }
+    }
+  }
+  if (cost === 0) {
+    cost =
+      asNumber(
+        deepFind(
+          raw,
+          (r) =>
+            r.offer_sale_price ??
+            r.target_sale_price ??
+            r.sale_price ??
+            r.app_sale_price ??
+            r.original_price ??
+            r.price,
+        ),
+      ) ?? 0;
+  }
+
+  // Gallery from image_urls (semicolon-separated string)
   let gallery: string[] = [];
+  const galleryRaw = multimedia.image_urls ?? deepFind(raw, (r) => r.image_urls);
   if (typeof galleryRaw === "string") {
     gallery = galleryRaw.split(/[;,\n]/).map((s) => s.trim()).filter(Boolean);
   } else if (Array.isArray(galleryRaw)) {
@@ -126,17 +167,22 @@ function normalizeAeProduct(raw: unknown, aeProductId: string): NormalizedAe {
       .map((g) => (typeof g === "string" ? g : asString((g as AeRaw).url)))
       .filter((s): s is string => typeof s === "string" && s.length > 0);
   }
+  const mainImage = gallery[0] ?? null;
 
-  const description = asString(deepFind(raw, (r) => r.detail ?? r.product_description));
-  const features: string[] = [];
+  const description = asString(baseInfo.detail) ?? asString(deepFind(raw, (r) => r.detail));
 
   const supplierUrl =
     asString(deepFind(raw, (r) => r.product_detail_url ?? r.promotion_link)) ??
     `https://www.aliexpress.com/item/${aeProductId}.html`;
 
-  const skus = extractArray(raw, "ae_sku_property_dtos").concat(extractArray(raw, "sku_list"));
-
-  const stock = asNumber(deepFind(raw, (r) => r.stock ?? r.available_stock ?? r.lots_info)) ?? 0;
+  // Sum available stock across SKUs
+  let stock = 0;
+  for (const sku of skuArray) {
+    stock += asNumber(sku.sku_available_stock) ?? 0;
+  }
+  if (stock === 0) {
+    stock = asNumber(deepFind(raw, (r) => r.stock ?? r.available_stock)) ?? 0;
+  }
 
   return {
     title,
@@ -146,9 +192,9 @@ function normalizeAeProduct(raw: unknown, aeProductId: string): NormalizedAe {
     main_image: mainImage,
     gallery,
     description,
-    features,
+    features: [],
     supplier_url: supplierUrl,
-    skus,
+    skus: skuArray,
     stock: Math.max(0, Math.round(stock)),
   };
 }
