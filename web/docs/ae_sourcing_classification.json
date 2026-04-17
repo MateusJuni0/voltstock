@@ -1,0 +1,1846 @@
+{
+  "generated_at": "2026-04-17T23:16:49.414Z",
+  "total": 195,
+  "by_category": {
+    "Placas Gráficas": {
+      "total": 15,
+      "BLOCKED": 15,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 0
+    },
+    "Processadores": {
+      "total": 15,
+      "BLOCKED": 15,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 0
+    },
+    "Motherboards": {
+      "total": 16,
+      "BLOCKED": 10,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 6
+    },
+    "Memória RAM": {
+      "total": 17,
+      "BLOCKED": 16,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 1
+    },
+    "Armazenamento": {
+      "total": 16,
+      "BLOCKED": 13,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 3
+    },
+    "Fontes de Alimentação": {
+      "total": 12,
+      "BLOCKED": 11,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 1
+    },
+    "Caixas": {
+      "total": 15,
+      "BLOCKED": 15,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 0
+    },
+    "Refrigeração": {
+      "total": 14,
+      "BLOCKED": 10,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 4
+    },
+    "Monitores": {
+      "total": 18,
+      "BLOCKED": 16,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 2
+    },
+    "Teclados e Ratos": {
+      "total": 24,
+      "BLOCKED": 15,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 9
+    },
+    "Headsets e Áudio": {
+      "total": 15,
+      "BLOCKED": 12,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 3
+    },
+    "Cadeiras Gaming": {
+      "total": 15,
+      "BLOCKED": 12,
+      "POSSIBLE": 0,
+      "AMBIGUOUS": 3
+    },
+    "Mouse Pads": {
+      "total": 3,
+      "BLOCKED": 0,
+      "POSSIBLE": 3,
+      "AMBIGUOUS": 0
+    }
+  },
+  "globals": {
+    "BLOCKED": 160,
+    "POSSIBLE": 3,
+    "AMBIGUOUS": 32
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "MSI GeForce RTX 5090 SUPRIM X 32G",
+      "category": "Placas Gráficas",
+      "brand": "MSI",
+      "price": "2.599,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 21,
+      "name": "NVIDIA GeForce RTX 4070 Ti Super 16GB",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA",
+      "price": "999,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 22,
+      "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA",
+      "price": "549,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 23,
+      "name": "NVIDIA GeForce RTX 4060 8GB",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA",
+      "price": "369,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 24,
+      "name": "AMD Radeon RX 7900 XTX 24GB",
+      "category": "Placas Gráficas",
+      "brand": "AMD",
+      "price": "1.099,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 25,
+      "name": "AMD Radeon RX 7800 XT 16GB",
+      "category": "Placas Gráficas",
+      "brand": "AMD",
+      "price": "599,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 26,
+      "name": "AMD Radeon RX 7600 8GB",
+      "category": "Placas Gráficas",
+      "brand": "AMD",
+      "price": "319,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 27,
+      "name": "NVIDIA GeForce RTX 4070 Super 12GB",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA",
+      "price": "749,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 2,
+      "name": "AMD Ryzen 7 7800X3D",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "399,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 13,
+      "name": "Intel Core i9-14900K",
+      "category": "Processadores",
+      "brand": "Intel",
+      "price": "599,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 29,
+      "name": "AMD Ryzen 5 7600X",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "239,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 30,
+      "name": "AMD Ryzen 9 7950X3D",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "649,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 31,
+      "name": "Intel Core i5-14600K",
+      "category": "Processadores",
+      "brand": "Intel",
+      "price": "339,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 32,
+      "name": "Intel Core i7-14700K",
+      "category": "Processadores",
+      "brand": "Intel",
+      "price": "459,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 35,
+      "name": "AMD Ryzen 9 7900X",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "449,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 9,
+      "name": "MSI MAG B650 Tomahawk WiFi",
+      "category": "Motherboards",
+      "brand": "MSI",
+      "price": "219,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi mag"
+    },
+    {
+      "id": 15,
+      "name": "ASUS ROG Maximus Z790 Hero",
+      "category": "Motherboards",
+      "brand": "ASUS",
+      "price": "699,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus rog"
+    },
+    {
+      "id": 37,
+      "name": "MSI MPG B760M Edge WiFi",
+      "category": "Motherboards",
+      "brand": "MSI",
+      "price": "189,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi mpg"
+    },
+    {
+      "id": 38,
+      "name": "ASUS TUF Gaming B650-PLUS WiFi",
+      "category": "Motherboards",
+      "brand": "ASUS",
+      "price": "209,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus tuf"
+    },
+    {
+      "id": 41,
+      "name": "ASUS ROG Strix X670E-E Gaming WiFi",
+      "category": "Motherboards",
+      "brand": "ASUS",
+      "price": "479,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus rog"
+    },
+    {
+      "id": 42,
+      "name": "MSI MEG Z790 ACE",
+      "category": "Motherboards",
+      "brand": "MSI",
+      "price": "649,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi meg"
+    },
+    {
+      "id": 43,
+      "name": "Gigabyte X670E Aorus Master",
+      "category": "Motherboards",
+      "brand": "Gigabyte",
+      "price": "429,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 44,
+      "name": "ASRock B760M Pro RS WiFi",
+      "category": "Motherboards",
+      "brand": "ASRock",
+      "price": "149,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 4,
+      "name": "Corsair Vengeance DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "brand": "Corsair",
+      "price": "139,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair vengeance"
+    },
+    {
+      "id": 16,
+      "name": "G.Skill Trident Z5 RGB DDR5 64GB",
+      "category": "Memória RAM",
+      "brand": "G.Skill",
+      "price": "249,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:g.skill trident"
+    },
+    {
+      "id": 45,
+      "name": "Kingston Fury Beast DDR5 32GB 5600MHz",
+      "category": "Memória RAM",
+      "brand": "Kingston",
+      "price": "109,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:kingston fury"
+    },
+    {
+      "id": 46,
+      "name": "Corsair Dominator Platinum RGB DDR5 32GB 6200MHz",
+      "category": "Memória RAM",
+      "brand": "Corsair",
+      "price": "199,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair dominator"
+    },
+    {
+      "id": 47,
+      "name": "Kingston Fury Renegade DDR5 32GB 6400MHz",
+      "category": "Memória RAM",
+      "brand": "Kingston",
+      "price": "169,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:kingston fury"
+    },
+    {
+      "id": 48,
+      "name": "TeamGroup T-Force Delta RGB DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "brand": "TeamGroup",
+      "price": "119,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:teamgroup t-force"
+    },
+    {
+      "id": 49,
+      "name": "Corsair Vengeance DDR5 16GB 5600MHz",
+      "category": "Memória RAM",
+      "brand": "Corsair",
+      "price": "59,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair vengeance"
+    },
+    {
+      "id": 50,
+      "name": "G.Skill Ripjaws S5 DDR5 32GB 6000MHz",
+      "category": "Memória RAM",
+      "brand": "G.Skill",
+      "price": "119,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:g.skill ripjaws"
+    },
+    {
+      "id": 52,
+      "name": "Crucial DDR5 32GB 4800MHz",
+      "category": "Memória RAM",
+      "brand": "Crucial",
+      "price": "79,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 3,
+      "name": "Samsung 990 Pro 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "Samsung",
+      "price": "189,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:samsung 9"
+    },
+    {
+      "id": 53,
+      "name": "WD Blue SN580 1TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "WD",
+      "price": "69,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:wd blue"
+    },
+    {
+      "id": 54,
+      "name": "Kingston NV2 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "Kingston",
+      "price": "99,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 55,
+      "name": "Crucial P3 Plus 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "Crucial",
+      "price": "109,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:crucial p"
+    },
+    {
+      "id": 57,
+      "name": "Seagate FireCuda 530 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "Seagate",
+      "price": "199,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:seagate firecuda"
+    },
+    {
+      "id": 58,
+      "name": "Crucial T500 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "Crucial",
+      "price": "169,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:crucial t5"
+    },
+    {
+      "id": 59,
+      "name": "SK Hynix Platinum P41 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "SK Hynix",
+      "price": "179,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 60,
+      "name": "Kingston KC3000 2TB NVMe Gen4",
+      "category": "Armazenamento",
+      "brand": "Kingston",
+      "price": "159,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:kingston kc"
+    },
+    {
+      "id": 62,
+      "name": "Seasonic Focus GX-750 80+ Gold",
+      "category": "Fontes de Alimentação",
+      "brand": "Seasonic",
+      "price": "109,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:seasonic focus"
+    },
+    {
+      "id": 63,
+      "name": "be quiet! Pure Power 12 M 850W",
+      "category": "Fontes de Alimentação",
+      "brand": "be quiet!",
+      "price": "129,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:be quiet"
+    },
+    {
+      "id": 65,
+      "name": "Corsair SF750 80+ Platinum SFX",
+      "category": "Fontes de Alimentação",
+      "brand": "Corsair",
+      "price": "169,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair sf"
+    },
+    {
+      "id": 68,
+      "name": "NZXT C850 80+ Gold (2024)",
+      "category": "Fontes de Alimentação",
+      "brand": "NZXT",
+      "price": "119,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:nzxt c"
+    },
+    {
+      "id": 69,
+      "name": "Thermaltake Toughpower GF3 850W",
+      "category": "Fontes de Alimentação",
+      "brand": "Thermaltake",
+      "price": "119,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:thermaltake toughpower"
+    },
+    {
+      "id": 8,
+      "name": "Lian Li Lancool 216 RGB White",
+      "category": "Caixas",
+      "brand": "Lian Li",
+      "price": "95,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:lian li"
+    },
+    {
+      "id": 19,
+      "name": "Fractal Design Torrent RGB Black",
+      "category": "Caixas",
+      "brand": "Fractal Design",
+      "price": "199,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:fractal"
+    },
+    {
+      "id": 70,
+      "name": "NZXT H7 Flow RGB",
+      "category": "Caixas",
+      "brand": "NZXT",
+      "price": "129,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:nzxt h"
+    },
+    {
+      "id": 71,
+      "name": "Corsair 4000D Airflow",
+      "category": "Caixas",
+      "brand": "Corsair",
+      "price": "89,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair"
+    },
+    {
+      "id": 72,
+      "name": "Phanteks Eclipse G360A",
+      "category": "Caixas",
+      "brand": "Phanteks",
+      "price": "79,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:phanteks"
+    },
+    {
+      "id": 73,
+      "name": "be quiet! Pure Base 500DX",
+      "category": "Caixas",
+      "brand": "be quiet!",
+      "price": "109,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:be quiet"
+    },
+    {
+      "id": 74,
+      "name": "Cooler Master HAF 700 EVO",
+      "category": "Caixas",
+      "brand": "Cooler Master",
+      "price": "399,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:cooler master haf"
+    },
+    {
+      "id": 75,
+      "name": "HYTE Y60",
+      "category": "Caixas",
+      "brand": "HYTE",
+      "price": "189,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:hyte"
+    },
+    {
+      "id": 76,
+      "name": "Corsair 5000D Airflow",
+      "category": "Caixas",
+      "brand": "Corsair",
+      "price": "149,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair"
+    },
+    {
+      "id": 10,
+      "name": "NZXT Kraken Elite 360 RGB",
+      "category": "Refrigeração",
+      "brand": "NZXT",
+      "price": "259,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:nzxt kraken"
+    },
+    {
+      "id": 20,
+      "name": "be quiet! Dark Rock Pro 5",
+      "category": "Refrigeração",
+      "brand": "be quiet!",
+      "price": "94,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 78,
+      "name": "Corsair iCUE H150i Elite LCD XT",
+      "category": "Refrigeração",
+      "brand": "Corsair",
+      "price": "239,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair icue h"
+    },
+    {
+      "id": 80,
+      "name": "DeepCool AK620 Digital",
+      "category": "Refrigeração",
+      "brand": "DeepCool",
+      "price": "74,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:deepcool ak"
+    },
+    {
+      "id": 82,
+      "name": "Corsair A115 Air Cooler",
+      "category": "Refrigeração",
+      "brand": "Corsair",
+      "price": "84,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 83,
+      "name": "EK-AIO 280 D-RGB",
+      "category": "Refrigeração",
+      "brand": "EK",
+      "price": "129,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:ek-aio"
+    },
+    {
+      "id": 84,
+      "name": "Arctic Freezer 36 A-RGB",
+      "category": "Refrigeração",
+      "brand": "Arctic",
+      "price": "44,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:arctic freezer"
+    },
+    {
+      "id": 85,
+      "name": "Thermalright Peerless Assassin 120 SE",
+      "category": "Refrigeração",
+      "brand": "Thermalright",
+      "price": "39,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:thermalright peerless"
+    },
+    {
+      "id": 5,
+      "name": "ASUS ROG Swift OLED PG27AQDM",
+      "category": "Monitores",
+      "brand": "ASUS",
+      "price": "899,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus rog swift"
+    },
+    {
+      "id": 86,
+      "name": "LG 27GP850-B UltraGear 165Hz",
+      "category": "Monitores",
+      "brand": "LG",
+      "price": "359,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 87,
+      "name": "Dell S2722DGM 165Hz Curved",
+      "category": "Monitores",
+      "brand": "Dell",
+      "price": "269,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:dell s"
+    },
+    {
+      "id": 88,
+      "name": "Samsung Odyssey G7 32\" 240Hz",
+      "category": "Monitores",
+      "brand": "Samsung",
+      "price": "599,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:samsung odyssey"
+    },
+    {
+      "id": 89,
+      "name": "ASUS TUF Gaming VG27AQ1A",
+      "category": "Monitores",
+      "brand": "ASUS",
+      "price": "309,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus tuf gaming"
+    },
+    {
+      "id": 90,
+      "name": "BenQ MOBIUZ EX2710Q 165Hz",
+      "category": "Monitores",
+      "brand": "BenQ",
+      "price": "429,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:benq mobiuz"
+    },
+    {
+      "id": 91,
+      "name": "LG UltraGear 27GR95QE OLED 240Hz",
+      "category": "Monitores",
+      "brand": "LG",
+      "price": "849,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:lg ultragear"
+    },
+    {
+      "id": 92,
+      "name": "Gigabyte M27Q X 240Hz",
+      "category": "Monitores",
+      "brand": "Gigabyte",
+      "price": "379,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:gigabyte m"
+    },
+    {
+      "id": 93,
+      "name": "AOC 24G2SP 165Hz",
+      "category": "Monitores",
+      "brand": "AOC",
+      "price": "149,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 94,
+      "name": "MSI MAG 274QRF-QD 170Hz",
+      "category": "Monitores",
+      "brand": "MSI",
+      "price": "349,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi mag"
+    },
+    {
+      "id": 6,
+      "name": "Logitech G Pro X Superlight 2",
+      "category": "Teclados e Ratos",
+      "brand": "Logitech",
+      "price": "135,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:logitech g"
+    },
+    {
+      "id": 7,
+      "name": "Razer BlackWidow V4 Pro",
+      "category": "Teclados e Ratos",
+      "brand": "Razer",
+      "price": "189,50 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer"
+    },
+    {
+      "id": 95,
+      "name": "Razer DeathAdder V3",
+      "category": "Teclados e Ratos",
+      "brand": "Razer",
+      "price": "89,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer"
+    },
+    {
+      "id": 96,
+      "name": "SteelSeries Apex Pro TKL (2023)",
+      "category": "Teclados e Ratos",
+      "brand": "SteelSeries",
+      "price": "189,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:steelseries"
+    },
+    {
+      "id": 97,
+      "name": "Corsair K70 RGB PRO",
+      "category": "Teclados e Ratos",
+      "brand": "Corsair",
+      "price": "149,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair k"
+    },
+    {
+      "id": 98,
+      "name": "Razer Viper V3 Pro",
+      "category": "Teclados e Ratos",
+      "brand": "Razer",
+      "price": "159,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer"
+    },
+    {
+      "id": 99,
+      "name": "Logitech MX Master 3S",
+      "category": "Teclados e Ratos",
+      "brand": "Logitech",
+      "price": "99,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:logitech mx"
+    },
+    {
+      "id": 100,
+      "name": "HyperX Alloy Origins 65",
+      "category": "Teclados e Ratos",
+      "brand": "HyperX",
+      "price": "89,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:hyperx"
+    },
+    {
+      "id": 101,
+      "name": "Razer Huntsman V3 Pro",
+      "category": "Teclados e Ratos",
+      "brand": "Razer",
+      "price": "249,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer"
+    },
+    {
+      "id": 102,
+      "name": "SteelSeries Aerox 5 Wireless",
+      "category": "Teclados e Ratos",
+      "brand": "SteelSeries",
+      "price": "99,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:steelseries"
+    },
+    {
+      "id": 11,
+      "name": "SteelSeries Arctis Nova Pro Wireless",
+      "category": "Headsets e Áudio",
+      "brand": "SteelSeries",
+      "price": "349,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:steelseries"
+    },
+    {
+      "id": 103,
+      "name": "HyperX Cloud III Wireless",
+      "category": "Headsets e Áudio",
+      "brand": "HyperX",
+      "price": "149,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:hyperx"
+    },
+    {
+      "id": 104,
+      "name": "Logitech G Pro X 2 Lightspeed",
+      "category": "Headsets e Áudio",
+      "brand": "Logitech",
+      "price": "219,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:logitech g"
+    },
+    {
+      "id": 105,
+      "name": "Corsair Virtuoso RGB XT Wireless",
+      "category": "Headsets e Áudio",
+      "brand": "Corsair",
+      "price": "239,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair virtuoso"
+    },
+    {
+      "id": 106,
+      "name": "Razer Kraken V4",
+      "category": "Headsets e Áudio",
+      "brand": "Razer",
+      "price": "109,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer"
+    },
+    {
+      "id": 107,
+      "name": "Sony WH-1000XM5",
+      "category": "Headsets e Áudio",
+      "brand": "Sony",
+      "price": "319,00 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 108,
+      "name": "JBL Quantum 910 Wireless",
+      "category": "Headsets e Áudio",
+      "brand": "JBL",
+      "price": "249,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:jbl quantum"
+    },
+    {
+      "id": 109,
+      "name": "Corsair HS80 Max Wireless",
+      "category": "Headsets e Áudio",
+      "brand": "Corsair",
+      "price": "149,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair hs"
+    },
+    {
+      "id": 110,
+      "name": "Razer BlackShark V2 Pro (2023)",
+      "category": "Headsets e Áudio",
+      "brand": "Razer",
+      "price": "169,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer"
+    },
+    {
+      "id": 111,
+      "name": "Audio-Technica ATH-M50x",
+      "category": "Headsets e Áudio",
+      "brand": "Audio-Technica",
+      "price": "139,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:audio-technica"
+    },
+    {
+      "id": 12,
+      "name": "Secretlab TITAN Evo 2022 XL",
+      "category": "Cadeiras Gaming",
+      "brand": "Secretlab",
+      "price": "549,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:secretlab"
+    },
+    {
+      "id": 112,
+      "name": "Razer Iskur V2",
+      "category": "Cadeiras Gaming",
+      "brand": "Razer",
+      "price": "499,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer iskur"
+    },
+    {
+      "id": 113,
+      "name": "Corsair TC200 Leatherette",
+      "category": "Cadeiras Gaming",
+      "brand": "Corsair",
+      "price": "349,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair"
+    },
+    {
+      "id": 114,
+      "name": "noblechairs HERO ST",
+      "category": "Cadeiras Gaming",
+      "brand": "noblechairs",
+      "price": "449,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:noblechairs"
+    },
+    {
+      "id": 115,
+      "name": "DXRacer Craft Series",
+      "category": "Cadeiras Gaming",
+      "brand": "DXRacer",
+      "price": "399,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:dxracer"
+    },
+    {
+      "id": 116,
+      "name": "AndaSeat Kaiser 3 XL",
+      "category": "Cadeiras Gaming",
+      "brand": "AndaSeat",
+      "price": "449,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:andaseat"
+    },
+    {
+      "id": 117,
+      "name": "Cougar Armor Elite",
+      "category": "Cadeiras Gaming",
+      "brand": "Cougar",
+      "price": "199,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:cougar"
+    },
+    {
+      "id": 118,
+      "name": "AKRacing Masters Pro",
+      "category": "Cadeiras Gaming",
+      "brand": "AKRacing",
+      "price": "499,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:akracing"
+    },
+    {
+      "id": 119,
+      "name": "Herman Miller x Logitech Embody Gaming",
+      "category": "Cadeiras Gaming",
+      "brand": "Herman Miller",
+      "price": "1.595,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:herman miller"
+    },
+    {
+      "id": 120,
+      "name": "Autonomous ErgoChair Pro",
+      "category": "Cadeiras Gaming",
+      "brand": "Autonomous",
+      "price": "449,00 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 121,
+      "name": "NVIDIA GeForce RTX 5090",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA",
+      "price": "2.599,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 122,
+      "name": "AMD Radeon RX 9070 XT",
+      "category": "Placas Gráficas",
+      "brand": "AMD",
+      "price": "799,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 123,
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "category": "Placas Gráficas",
+      "brand": "NVIDIA",
+      "price": "1.099,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 124,
+      "name": "ASUS ROG Strix RTX 5080 OC",
+      "category": "Placas Gráficas",
+      "brand": "ASUS",
+      "price": "1.649,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 125,
+      "name": "MSI Gaming Trio RTX 5070",
+      "category": "Placas Gráficas",
+      "brand": "MSI",
+      "price": "849,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 126,
+      "name": "Sapphire Nitro+ RX 9070",
+      "category": "Placas Gráficas",
+      "brand": "Sapphire",
+      "price": "649,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 128,
+      "name": "Intel Arc B580",
+      "category": "Placas Gráficas",
+      "brand": "Intel",
+      "price": "329,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 129,
+      "name": "AMD Ryzen 9 9950X",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "799,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 130,
+      "name": "Intel Core Ultra 9 285K",
+      "category": "Processadores",
+      "brand": "Intel",
+      "price": "699,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 131,
+      "name": "AMD Ryzen 7 9700X",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "419,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 132,
+      "name": "Intel Core Ultra 7 265K",
+      "category": "Processadores",
+      "brand": "Intel",
+      "price": "489,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 133,
+      "name": "AMD Ryzen 5 9600X",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "289,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 134,
+      "name": "AMD Ryzen 9 9900X",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "599,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 135,
+      "name": "Intel Core Ultra 5 245K",
+      "category": "Processadores",
+      "brand": "Intel",
+      "price": "349,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 136,
+      "name": "AMD Ryzen 7 9800X3D",
+      "category": "Processadores",
+      "brand": "AMD",
+      "price": "649,99 €",
+      "verdict": "BLOCKED",
+      "reason": "category_not_sourceable"
+    },
+    {
+      "id": 137,
+      "name": "ASUS ROG Crosshair X870E Hero",
+      "category": "Motherboards",
+      "brand": "ASUS",
+      "price": "799,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus rog"
+    },
+    {
+      "id": 138,
+      "name": "MSI MEG Z890 ACE",
+      "category": "Motherboards",
+      "brand": "MSI",
+      "price": "699,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi meg"
+    },
+    {
+      "id": 139,
+      "name": "Gigabyte B850 AORUS Elite",
+      "category": "Motherboards",
+      "brand": "Gigabyte",
+      "price": "279,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 140,
+      "name": "ASRock Z890 Taichi",
+      "category": "Motherboards",
+      "brand": "ASRock",
+      "price": "549,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 141,
+      "name": "ASUS ROG Strix B850-F Gaming",
+      "category": "Motherboards",
+      "brand": "ASUS",
+      "price": "329,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus rog"
+    },
+    {
+      "id": 142,
+      "name": "MSI MAG B850 Tomahawk",
+      "category": "Motherboards",
+      "brand": "MSI",
+      "price": "259,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi mag"
+    },
+    {
+      "id": 143,
+      "name": "Gigabyte Z890 AORUS Master",
+      "category": "Motherboards",
+      "brand": "Gigabyte",
+      "price": "649,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 144,
+      "name": "ASRock B850M Pro RS",
+      "category": "Motherboards",
+      "brand": "ASRock",
+      "price": "169,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 145,
+      "name": "G.Skill Trident Z5 RGB DDR5-7200",
+      "category": "Memória RAM",
+      "brand": "G.Skill",
+      "price": "219,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:g.skill trident"
+    },
+    {
+      "id": 146,
+      "name": "Corsair Dominator Titanium DDR5-6400",
+      "category": "Memória RAM",
+      "brand": "Corsair",
+      "price": "289,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair dominator"
+    },
+    {
+      "id": 147,
+      "name": "Kingston Fury Beast DDR5-6000",
+      "category": "Memória RAM",
+      "brand": "Kingston",
+      "price": "129,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:kingston fury"
+    },
+    {
+      "id": 148,
+      "name": "TeamGroup T-Force Delta RGB DDR5-7600",
+      "category": "Memória RAM",
+      "brand": "TeamGroup",
+      "price": "199,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:teamgroup t-force"
+    },
+    {
+      "id": 149,
+      "name": "G.Skill Flare X5 DDR5-6000",
+      "category": "Memória RAM",
+      "brand": "G.Skill",
+      "price": "119,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:g.skill flare"
+    },
+    {
+      "id": 150,
+      "name": "Corsair Vengeance DDR5-5600",
+      "category": "Memória RAM",
+      "brand": "Corsair",
+      "price": "89,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair vengeance"
+    },
+    {
+      "id": 151,
+      "name": "G.Skill Trident Z5 Neo DDR5-6400",
+      "category": "Memória RAM",
+      "brand": "G.Skill",
+      "price": "189,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:g.skill trident"
+    },
+    {
+      "id": 152,
+      "name": "Kingston Fury Renegade DDR5-8000",
+      "category": "Memória RAM",
+      "brand": "Kingston",
+      "price": "379,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:kingston fury"
+    },
+    {
+      "id": 153,
+      "name": "Samsung 990 EVO Plus 2TB",
+      "category": "Armazenamento",
+      "brand": "Samsung",
+      "price": "199,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:samsung 9"
+    },
+    {
+      "id": 154,
+      "name": "WD Black SN850X 2TB",
+      "category": "Armazenamento",
+      "brand": "Western Digital",
+      "price": "169,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:wd black"
+    },
+    {
+      "id": 155,
+      "name": "Crucial T700 2TB",
+      "category": "Armazenamento",
+      "brand": "Crucial",
+      "price": "249,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:crucial t7"
+    },
+    {
+      "id": 156,
+      "name": "Seagate FireCuda 540 2TB",
+      "category": "Armazenamento",
+      "brand": "Seagate",
+      "price": "229,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:seagate firecuda"
+    },
+    {
+      "id": 157,
+      "name": "Kingston KC3000 4TB",
+      "category": "Armazenamento",
+      "brand": "Kingston",
+      "price": "339,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:kingston kc"
+    },
+    {
+      "id": 158,
+      "name": "Samsung 870 EVO 4TB",
+      "category": "Armazenamento",
+      "brand": "Samsung",
+      "price": "279,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:samsung 8"
+    },
+    {
+      "id": 159,
+      "name": "Corsair MP700 PRO 2TB",
+      "category": "Armazenamento",
+      "brand": "Corsair",
+      "price": "269,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 160,
+      "name": "Sabrent Rocket 5 2TB",
+      "category": "Armazenamento",
+      "brand": "Sabrent",
+      "price": "209,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:sabrent rocket"
+    },
+    {
+      "id": 161,
+      "name": "Corsair HX1500i",
+      "category": "Fontes de Alimentação",
+      "brand": "Corsair",
+      "price": "419,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair hx"
+    },
+    {
+      "id": 162,
+      "name": "Seasonic PRIME TX-1000",
+      "category": "Fontes de Alimentação",
+      "brand": "Seasonic",
+      "price": "369,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:seasonic prime"
+    },
+    {
+      "id": 163,
+      "name": "be quiet! Dark Power 13 850W",
+      "category": "Fontes de Alimentação",
+      "brand": "be quiet!",
+      "price": "239,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:be quiet"
+    },
+    {
+      "id": 165,
+      "name": "Corsair RM850x 2024",
+      "category": "Fontes de Alimentação",
+      "brand": "Corsair",
+      "price": "149,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair rm"
+    },
+    {
+      "id": 166,
+      "name": "MSI MEG Ai1300P PCIE5",
+      "category": "Fontes de Alimentação",
+      "brand": "MSI",
+      "price": "349,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi meg"
+    },
+    {
+      "id": 167,
+      "name": "Thermaltake Toughpower GF3 750W",
+      "category": "Fontes de Alimentação",
+      "brand": "Thermaltake",
+      "price": "119,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:thermaltake toughpower"
+    },
+    {
+      "id": 168,
+      "name": "Fractal Design Ion+ 2 860W",
+      "category": "Fontes de Alimentação",
+      "brand": "Fractal Design",
+      "price": "159,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 169,
+      "name": "Lian Li O11 Dynamic EVO 2",
+      "category": "Caixas",
+      "brand": "Lian Li",
+      "price": "179,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:lian li"
+    },
+    {
+      "id": 170,
+      "name": "Fractal Design North",
+      "category": "Caixas",
+      "brand": "Fractal Design",
+      "price": "139,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:fractal"
+    },
+    {
+      "id": 172,
+      "name": "Corsair 6500X",
+      "category": "Caixas",
+      "brand": "Corsair",
+      "price": "219,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair"
+    },
+    {
+      "id": 173,
+      "name": "Phanteks NV7",
+      "category": "Caixas",
+      "brand": "Phanteks",
+      "price": "159,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:phanteks"
+    },
+    {
+      "id": 174,
+      "name": "be quiet! Dark Base 802",
+      "category": "Caixas",
+      "brand": "be quiet!",
+      "price": "189,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:be quiet"
+    },
+    {
+      "id": 176,
+      "name": "SSUPD Meshroom S",
+      "category": "Caixas",
+      "brand": "SSUPD",
+      "price": "129,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:ssupd"
+    },
+    {
+      "id": 178,
+      "name": "Corsair iCUE H170i Elite LCD XT",
+      "category": "Refrigeração",
+      "brand": "Corsair",
+      "price": "349,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair icue h"
+    },
+    {
+      "id": 179,
+      "name": "Noctua NH-D15 G2",
+      "category": "Refrigeração",
+      "brand": "Noctua",
+      "price": "129,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:noctua"
+    },
+    {
+      "id": 180,
+      "name": "Arctic Liquid Freezer III 360 A-RGB",
+      "category": "Refrigeração",
+      "brand": "Arctic",
+      "price": "109,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:arctic liquid"
+    },
+    {
+      "id": 181,
+      "name": "Deepcool Assassin IV",
+      "category": "Refrigeração",
+      "brand": "Deepcool",
+      "price": "94,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 182,
+      "name": "EK-Nucleus AIO CR360 Dark",
+      "category": "Refrigeração",
+      "brand": "EKWB",
+      "price": "189,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 184,
+      "name": "Lian Li Galahad II Trinity 360",
+      "category": "Refrigeração",
+      "brand": "Lian Li",
+      "price": "169,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:lian li galahad"
+    },
+    {
+      "id": 185,
+      "name": "Samsung Odyssey OLED G8 32\"",
+      "category": "Monitores",
+      "brand": "Samsung",
+      "price": "1.099,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:samsung odyssey"
+    },
+    {
+      "id": 186,
+      "name": "LG UltraGear 27GS95QE 27\" OLED",
+      "category": "Monitores",
+      "brand": "LG",
+      "price": "899,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:lg ultragear"
+    },
+    {
+      "id": 187,
+      "name": "ASUS ROG Swift PG27AQN 27\"",
+      "category": "Monitores",
+      "brand": "ASUS",
+      "price": "1.099,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:asus rog swift"
+    },
+    {
+      "id": 188,
+      "name": "Dell Alienware AW3225QF 32\" 4K",
+      "category": "Monitores",
+      "brand": "Dell",
+      "price": "1.199,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:dell alienware"
+    },
+    {
+      "id": 189,
+      "name": "BenQ MOBIUZ EX3210U 32\" 4K",
+      "category": "Monitores",
+      "brand": "BenQ",
+      "price": "749,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:benq mobiuz"
+    },
+    {
+      "id": 190,
+      "name": "Gigabyte M27U 27\" 4K",
+      "category": "Monitores",
+      "brand": "Gigabyte",
+      "price": "489,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:gigabyte m"
+    },
+    {
+      "id": 191,
+      "name": "MSI MAG 341CQP 34\" OLED",
+      "category": "Monitores",
+      "brand": "MSI",
+      "price": "899,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:msi mag"
+    },
+    {
+      "id": 192,
+      "name": "AOC AGON AG275QXL 27\"",
+      "category": "Monitores",
+      "brand": "AOC",
+      "price": "379,99 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:aoc agon"
+    },
+    {
+      "id": 193,
+      "name": "Wooting 80HE",
+      "category": "Teclados e Ratos",
+      "brand": "Wooting",
+      "price": "199,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:wooting"
+    },
+    {
+      "id": 196,
+      "name": "Keychron Q1 HE",
+      "category": "Teclados e Ratos",
+      "brand": "Keychron",
+      "price": "179,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:keychron"
+    },
+    {
+      "id": 197,
+      "name": "Pulsar X2V2 Mini Wireless",
+      "category": "Teclados e Ratos",
+      "brand": "Pulsar",
+      "price": "99,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:pulsar"
+    },
+    {
+      "id": 198,
+      "name": "SteelSeries Apex Pro TKL 2024",
+      "category": "Teclados e Ratos",
+      "brand": "SteelSeries",
+      "price": "189,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:steelseries"
+    },
+    {
+      "id": 199,
+      "name": "Endgame Gear OP1we",
+      "category": "Teclados e Ratos",
+      "brand": "Endgame Gear",
+      "price": "79,00 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 200,
+      "name": "Corsair K70 MAX",
+      "category": "Teclados e Ratos",
+      "brand": "Corsair",
+      "price": "229,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair k"
+    },
+    {
+      "id": 202,
+      "name": "Audeze Maxwell Wireless",
+      "category": "Headsets e Áudio",
+      "brand": "Audeze",
+      "price": "299,00 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 204,
+      "name": "Razer BlackShark V2 Pro 2024",
+      "category": "Headsets e Áudio",
+      "brand": "Razer",
+      "price": "179,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:razer"
+    },
+    {
+      "id": 205,
+      "name": "Beyerdynamic DT 900 PRO X",
+      "category": "Headsets e Áudio",
+      "brand": "Beyerdynamic",
+      "price": "249,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:beyerdynamic"
+    },
+    {
+      "id": 206,
+      "name": "Corsair Virtuoso Pro",
+      "category": "Headsets e Áudio",
+      "brand": "Corsair",
+      "price": "219,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair virtuoso"
+    },
+    {
+      "id": 209,
+      "name": "Secretlab Titan Evo 2024",
+      "category": "Cadeiras Gaming",
+      "brand": "Secretlab",
+      "price": "519,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:secretlab"
+    },
+    {
+      "id": 213,
+      "name": "Corsair TC200 Fabric",
+      "category": "Cadeiras Gaming",
+      "brand": "Corsair",
+      "price": "349,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:corsair"
+    },
+    {
+      "id": 214,
+      "name": "Steelcase Karman",
+      "category": "Cadeiras Gaming",
+      "brand": "Steelcase",
+      "price": "1.199,00 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 215,
+      "name": "IKEA MATCHSPEL",
+      "category": "Cadeiras Gaming",
+      "brand": "IKEA",
+      "price": "199,00 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 216,
+      "name": "AndaSeat Kaiser 4",
+      "category": "Cadeiras Gaming",
+      "brand": "AndaSeat",
+      "price": "549,00 €",
+      "verdict": "BLOCKED",
+      "reason": "brand_retail_exclusive:andaseat"
+    },
+    {
+      "id": 220,
+      "name": "Redragon Shark M688 RGB",
+      "category": "Teclados e Ratos",
+      "brand": "Redragon",
+      "price": "34,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 221,
+      "name": "Attack Shark R1 Pro Wireless",
+      "category": "Teclados e Ratos",
+      "brand": "Attack Shark",
+      "price": "44,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 222,
+      "name": "HAVIT MS1006 Gaming Mouse",
+      "category": "Teclados e Ratos",
+      "brand": "HAVIT",
+      "price": "20,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 223,
+      "name": "Redragon Cobra M711 RGB",
+      "category": "Teclados e Ratos",
+      "brand": "Redragon",
+      "price": "25,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 224,
+      "name": "Attack Shark X3 Wireless",
+      "category": "Teclados e Ratos",
+      "brand": "Attack Shark",
+      "price": "49,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 230,
+      "name": "Large RGB Gaming Mouse Pad 90x40cm",
+      "category": "Mouse Pads",
+      "brand": "Genérico",
+      "price": "23,99 €",
+      "verdict": "POSSIBLE",
+      "reason": "generic_category"
+    },
+    {
+      "id": 231,
+      "name": "Redragon P027 RGB Mouse Pad XL",
+      "category": "Mouse Pads",
+      "brand": "Redragon",
+      "price": "26,99 €",
+      "verdict": "POSSIBLE",
+      "reason": "generic_category"
+    },
+    {
+      "id": 232,
+      "name": "Black XXL Mouse Pad 90x40cm",
+      "category": "Mouse Pads",
+      "brand": "Genérico",
+      "price": "16,99 €",
+      "verdict": "POSSIBLE",
+      "reason": "generic_category"
+    },
+    {
+      "id": 240,
+      "name": "Aula F75 Mechanical Keyboard 75%",
+      "category": "Teclados e Ratos",
+      "brand": "Aula",
+      "price": "84,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 241,
+      "name": "Royal Kludge RK84 Wireless",
+      "category": "Teclados e Ratos",
+      "brand": "Royal Kludge",
+      "price": "74,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 243,
+      "name": "VGN Neon 75 HE Magnetic",
+      "category": "Teclados e Ratos",
+      "brand": "VGN",
+      "price": "99,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    },
+    {
+      "id": 250,
+      "name": "Redragon H510 Zeus Pro 7.1",
+      "category": "Headsets e Áudio",
+      "brand": "Redragon",
+      "price": "44,99 €",
+      "verdict": "AMBIGUOUS",
+      "reason": "no_brand_match_in_branded_category"
+    }
+  ]
+}
