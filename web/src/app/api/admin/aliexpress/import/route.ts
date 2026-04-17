@@ -7,6 +7,12 @@ import { DropshippingApi } from "@/lib/aliexpress";
 interface ImportBody {
   ae_product_id: string;
   margin_percentage?: number;
+  /** Override AE title with our curated product name (required when linking to a local product). */
+  name_override?: string;
+  /** Force a specific selling price (EUR). Bypasses margin calculation. */
+  selling_price_override?: number;
+  /** Link this ae_product to a local products.ts entry by id — enables stock-sync + webhook match. */
+  local_product_id?: number;
 }
 
 interface AeRaw {
@@ -187,10 +193,14 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     }
 
     const normalized = normalizeAeProduct(res.raw, aeProductId);
-    const selling = Math.round(normalized.cost_price * (1 + margin / 100) * 100) / 100;
+    const finalName = body.name_override?.trim() || normalized.title;
+    const selling =
+      typeof body.selling_price_override === "number" && body.selling_price_override > 0
+        ? Math.round(body.selling_price_override * 100) / 100
+        : Math.round(normalized.cost_price * (1 + margin / 100) * 100) / 100;
 
     const supabase = getSupabaseAdmin();
-    let slug = slugify(normalized.title);
+    let slug = slugify(finalName);
     if (!slug) slug = `ae-${aeProductId}`;
 
     // Ensure unique slug — append AE id if collision
@@ -204,7 +214,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     const row = {
       ae_product_id: aeProductId,
       slug,
-      name: normalized.title,
+      name: finalName,
+      local_product_id: body.local_product_id ?? null,
       category: normalized.category,
       cost_price: normalized.cost_price,
       selling_price: selling,
