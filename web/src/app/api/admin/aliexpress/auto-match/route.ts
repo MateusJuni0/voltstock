@@ -193,12 +193,13 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     try {
       const res = await ds.call("aliexpress.ds.text.search", {
-        keywords: p.name,
-        ship_to_country: "PT",
-        target_currency: "EUR",
-        target_language: "PT",
-        page_no: 1,
-        page_size: 10,
+        keyWord: p.name,
+        countryCode: "PT",
+        currency: "EUR",
+        local: "pt_PT",
+        pageSize: 10,
+        pageIndex: 1,
+        sortBy: "orders,desc",
       });
 
       if (!res.ok) {
