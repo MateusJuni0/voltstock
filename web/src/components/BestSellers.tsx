@@ -21,15 +21,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const bestSellerIds = [23, 29, 150, 153, 71, 88, 11, 200];
-
 export function BestSellers() {
   const sectionRef = useRef<HTMLElement>(null);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  const bestSellers = bestSellerIds
-    .map((id) => products.find((p) => p.id === id))
-    .filter((p): p is Product => p !== undefined);
+  // Prefer badge "Mais Vendido", fallback to highest-rated in stock.
+  const flagged = products.filter(
+    (p) => p.badge === "Mais Vendido" && p.inStock !== false,
+  );
+  const bestSellers = (flagged.length >= 4
+    ? flagged
+    : [...products]
+        .filter((p) => p.inStock !== false)
+        .sort((a, b) => Number(b.rating) - Number(a.rating))
+  ).slice(0, 8);
 
   // GSAP staggered entrance
   useEffect(() => {

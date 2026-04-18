@@ -12,16 +12,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const newArrivalIds = [121, 129, 130, 136, 185, 186, 187, 142];
-
 export function NewArrivals() {
   const sectionRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  const arrivals = newArrivalIds
-    .map((id) => products.find((p) => p.id === id))
-    .filter((p): p is Product => p !== undefined);
+  // Most recent arrivals = highest IDs with "Novo" badge, fallback to highest IDs overall.
+  const arrivals = [...products]
+    .filter((p) => p.inStock !== false)
+    .sort((a, b) => b.id - a.id)
+    .slice(0, 12);
 
   // GSAP entrance
   useEffect(() => {

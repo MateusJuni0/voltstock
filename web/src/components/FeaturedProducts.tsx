@@ -25,10 +25,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function FeaturedProducts() {
-  const featuredIds = [1, 136, 185, 137, 169, 178, 209, 6];
-  const featured = featuredIds
-    .map(id => products.find(p => p.id === id))
-    .filter((p): p is Product => p !== undefined);
+  // Mix of categories from in-stock catalog, most recent first for freshness.
+  const byCategory = new Map<string, Product>();
+  for (const p of [...products].sort((a, b) => b.id - a.id)) {
+    if (p.inStock === false) continue;
+    if (!byCategory.has(p.category)) byCategory.set(p.category, p);
+    if (byCategory.size >= 8) break;
+  }
+  let featured = [...byCategory.values()];
+  if (featured.length < 8) {
+    const extras = [...products]
+      .filter((p) => p.inStock !== false && !featured.includes(p))
+      .sort((a, b) => b.id - a.id)
+      .slice(0, 8 - featured.length);
+    featured = featured.concat(extras);
+  }
   const containerRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const cardsContainerRef = useRef<HTMLDivElement>(null);
