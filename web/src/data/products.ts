@@ -615,16 +615,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Redragon"
+      "value": "REDRAGON"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "Bluetooth"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Sem fio de 2,4 GHz"
+    },
+    {
+      "name": "Estilo",
+      "value": "DPI botão ajustar"
+    },
+    {
+      "name": "Bateria incluída",
+      "value": "Não"
+    },
+    {
+      "name": "Orientação da mão",
+      "value": "Direita"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005004662195682.html",
   "brand": "Redragon",
@@ -652,16 +667,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Generic"
+      "value": "Mairuige"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Material",
+      "value": "BORRACHA"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Status dos produtos",
+      "value": "Estoque"
+    },
+    {
+      "name": "Pacote",
+      "value": "Sim"
+    },
+    {
+      "name": "Choice",
+      "value": "yes"
+    },
+    {
+      "name": "Variantes",
+      "value": "250X350X3MM;14:29 / 900X400X4MM;14:29 / 600X300X3MM;14:29"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005005996727145.html",
   "brand": "Generic",
@@ -689,16 +719,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Royal Kludge"
+      "value": "RK"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "Bluetooth/USB"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Sem fio de 2,4 GHz"
+    },
+    {
+      "name": "Estilo de operação",
+      "value": "Mecânico"
+    },
+    {
+      "name": "Linguagem",
+      "value": "Russo"
+    },
+    {
+      "name": "Aplicação",
+      "value": "Área de trabalho"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005006537039533.html",
   "brand": "Royal Kludge",
@@ -726,16 +771,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Redragon"
+      "value": "REDRAGON"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Tipo",
+      "value": "Sem fio de 2,4 GHz"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Bateria incluída",
+      "value": "Não"
+    },
+    {
+      "name": "Orientação da mão",
+      "value": "Direita"
+    },
+    {
+      "name": "pontos por polegada",
+      "value": "8200"
+    },
+    {
+      "name": "Pacote",
+      "value": "Sim"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005006911655686.html",
   "brand": "Redragon",
@@ -766,13 +826,28 @@ export const products: Product[] = [
       "value": "Attack Shark"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Tipo",
+      "value": "Bluetooth sem fio"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Estilo",
+      "value": "DPI botão ajustar"
+    },
+    {
+      "name": "Bateria incluída",
+      "value": "Sim"
+    },
+    {
+      "name": "Fonte de energia",
+      "value": "RECARREGÁVEL"
+    },
+    {
+      "name": "pontos por polegada",
+      "value": "26000"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005007061847291.html",
   "brand": "Attack Shark",
@@ -800,16 +875,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Aula"
+      "value": "AULA"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "USB"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Bluetooth sem fio"
+    },
+    {
+      "name": "aula modelo",
+      "value": "F75"
+    },
+    {
+      "name": "Estilo de operação",
+      "value": "Mecânico"
+    },
+    {
+      "name": "Linguagem",
+      "value": "Reino Unido"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005007099240050.html",
   "brand": "Aula",
@@ -837,16 +927,27 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Generic"
+      "value": "Laumango"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Material",
+      "value": "BORRACHA"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Status dos produtos",
+      "value": "Estoque"
+    },
+    {
+      "name": "Pacote",
+      "value": "Sim"
+    },
+    {
+      "name": "Variantes",
+      "value": "350x600x3mm"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005007781334616.html",
   "brand": "Generic",
@@ -874,16 +975,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Generic"
+      "value": "Mairuige"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Modelo",
+      "value": "RGB"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Estilo",
+      "value": "Anti-slip"
+    },
+    {
+      "name": "Material",
+      "value": "BORRACHA"
+    },
+    {
+      "name": "Model Number",
+      "value": "S, L, XL, XXL RGB"
+    },
+    {
+      "name": "Function",
+      "value": "Non-slip, Durable"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005007996190317.html",
   "brand": "Generic",
@@ -911,16 +1027,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Aula"
+      "value": "AULA"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "USB"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Sem fio de 2,4 GHz"
+    },
+    {
+      "name": "aula modelo",
+      "value": "EPOMAKER X AULA F75 MAX"
+    },
+    {
+      "name": "Estilo de operação",
+      "value": "Mecânico"
+    },
+    {
+      "name": "Linguagem",
+      "value": "Inglês"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005008274420900.html",
   "brand": "Aula",
@@ -948,16 +1079,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Redragon"
+      "value": "REDRAGON"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "Bluetooth"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Bluetooth sem fio"
+    },
+    {
+      "name": "Estilo",
+      "value": "DPI botão ajustar"
+    },
+    {
+      "name": "Bateria incluída",
+      "value": "Sim"
+    },
+    {
+      "name": "Modo de operação",
+      "value": "Optoeletrônico"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005008783738245.html",
   "brand": "Redragon",
@@ -985,7 +1131,11 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Royal Kludge"
+      "value": "RK"
+    },
+    {
+      "name": "Tipo",
+      "value": "Capas de teclas"
     },
     {
       "name": "Origem",
@@ -994,7 +1144,14 @@ export const products: Product[] = [
     {
       "name": "Envio",
       "value": "Para PT"
+    },
+    {
+      "name": "Variantes",
+      "value": "Russian Light Cloud / Russian Camping / English Half Grey"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005008843508905.html",
   "brand": "Royal Kludge",
@@ -1022,16 +1179,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Asus Style"
+      "value": "Potdemiel"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Modelo",
+      "value": "RGB mousepad"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Estilo",
+      "value": "Proteção contra Radiação"
+    },
+    {
+      "name": "Material",
+      "value": "BORRACHA"
+    },
+    {
+      "name": "Model Number",
+      "value": "RGB Mousepad"
+    },
+    {
+      "name": "Feature",
+      "value": "With backlight"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005008960508924.html",
   "brand": "Asus Style",
@@ -1058,17 +1230,32 @@ export const products: Product[] = [
   "badge": "Novo",
   "features": [
     {
-      "name": "Marca",
+      "name": "DPI",
+      "value": "800-22000"
+    },
+    {
+      "name": "Sensor",
+      "value": "PixArt PAW3311"
+    },
+    {
+      "name": "Brand Name",
       "value": "Attack Shark"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Attack Shark Model",
+      "value": "X11"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Battery Included",
+      "value": "Sim"
+    },
+    {
+      "name": "Type",
+      "value": "Sem fio de 2,4 GHz"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005009132541297.html",
   "brand": "Attack Shark",
@@ -1099,13 +1286,28 @@ export const products: Product[] = [
       "value": "Attack Shark"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Tipo",
+      "value": "Sem fio de 2,4 GHz"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Bateria incluída",
+      "value": "Sim"
+    },
+    {
+      "name": "Fonte de energia",
+      "value": "RECARREGÁVEL"
+    },
+    {
+      "name": "pontos por polegada",
+      "value": "22000"
+    },
+    {
+      "name": "Pacote",
+      "value": "Sim"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005009389582350.html",
   "brand": "Attack Shark",
@@ -1132,17 +1334,32 @@ export const products: Product[] = [
   "badge": "Novo",
   "features": [
     {
-      "name": "Marca",
+      "name": "DPI",
+      "value": "420000DPI"
+    },
+    {
+      "name": "Sensor",
+      "value": "PIXART PAW3950MAX Gaming Sensor"
+    },
+    {
+      "name": "Material",
+      "value": "Injection Molded Carbon Fiber"
+    },
+    {
+      "name": "Polling Rate",
+      "value": "8000Hz (Wireless)"
+    },
+    {
+      "name": "Brand Name",
       "value": "Attack Shark"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
-    },
-    {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Attack Shark Model",
+      "value": "R5"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005009455340246.html",
   "brand": "Attack Shark",
@@ -1170,16 +1387,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Redragon"
+      "value": "REDRAGON"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Tipo",
+      "value": "Sem fio de 2,4 GHz"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Bateria incluída",
+      "value": "Não"
+    },
+    {
+      "name": "pontos por polegada",
+      "value": "24600"
+    },
+    {
+      "name": "Pacote",
+      "value": "Sim"
+    },
+    {
+      "name": "Velocidade de movimento, IPS",
+      "value": "600"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005009524597949.html",
   "brand": "Redragon",
@@ -1207,16 +1439,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Aula"
+      "value": "AULA"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "USB"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Bluetooth sem fio"
+    },
+    {
+      "name": "Estilo de operação",
+      "value": "Mecânico"
+    },
+    {
+      "name": "Linguagem",
+      "value": "Inglês"
+    },
+    {
+      "name": "Aplicação",
+      "value": "Área de trabalho"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005009845590858.html",
   "brand": "Aula",
@@ -1244,16 +1491,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Redragon"
+      "value": "REDRAGON"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Tipo",
+      "value": "Bluetooth sem fio"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Bateria incluída",
+      "value": "Sim"
+    },
+    {
+      "name": "pontos por polegada",
+      "value": "12800"
+    },
+    {
+      "name": "Pacote",
+      "value": "Sim"
+    },
+    {
+      "name": "Velocidade de movimento, IPS",
+      "value": "120"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005009884734578.html",
   "brand": "Redragon",
@@ -1284,13 +1546,28 @@ export const products: Product[] = [
       "value": "Attack Shark"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "Bluetooth"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Bluetooth sem fio"
+    },
+    {
+      "name": "Estilo",
+      "value": "DPI botão ajustar"
+    },
+    {
+      "name": "Bateria incluída",
+      "value": "Sim"
+    },
+    {
+      "name": "Modo de operação",
+      "value": "Optoeletrônico"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005009917048224.html",
   "brand": "Attack Shark",
@@ -1318,16 +1595,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Aula"
+      "value": "AULA"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "USB"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Com fio"
+    },
+    {
+      "name": "Estilo de operação",
+      "value": "Mecânico"
+    },
+    {
+      "name": "Linguagem",
+      "value": "Inglês"
+    },
+    {
+      "name": "Aplicação",
+      "value": "Área de trabalho"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005010130792831.html",
   "brand": "Aula",
@@ -1355,16 +1647,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "MSI Style"
+      "value": "Riccu"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Modelo",
+      "value": "RGB Mousepad"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Material",
+      "value": "BORRACHA"
+    },
+    {
+      "name": "Status dos produtos",
+      "value": "Estoque"
+    },
+    {
+      "name": "Pacote",
+      "value": "Sim"
+    },
+    {
+      "name": "Espessura",
+      "value": "3mm/4mm"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005010242416102.html",
   "brand": "MSI Style",
@@ -1392,16 +1699,31 @@ export const products: Product[] = [
   "features": [
     {
       "name": "Marca",
-      "value": "Aula"
+      "value": "AULA"
     },
     {
-      "name": "Origem",
-      "value": "AliExpress"
+      "name": "Interface",
+      "value": "USB"
     },
     {
-      "name": "Envio",
-      "value": "Para PT"
+      "name": "Tipo",
+      "value": "Com fio"
+    },
+    {
+      "name": "aula modelo",
+      "value": "F99 Iso-Es"
+    },
+    {
+      "name": "Estilo de operação",
+      "value": "Mecânico"
+    },
+    {
+      "name": "Linguagem",
+      "value": "Europa"
     }
+  
+  
+  
   ],
   "supplier_url": "https://www.aliexpress.com/item/1005010361382463.html",
   "brand": "Aula",
