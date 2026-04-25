@@ -19,12 +19,19 @@ interface VerifyResult {
   valid: boolean;
   customer_email?: string | null;
   amount_total?: number | null;
+  /** HMAC-signed token for invoice access (cyber-neo CRIT-3 follow-up). */
+  invoice_token?: string | null;
   error?: string;
 }
 
 type PageState =
   | { status: "loading" }
-  | { status: "success"; email: string | null; amount: number | null }
+  | {
+      status: "success";
+      email: string | null;
+      amount: number | null;
+      invoiceToken: string | null;
+    }
   | { status: "error"; message: string };
 
 export default function CheckoutSuccessPage() {
@@ -65,6 +72,7 @@ export default function CheckoutSuccessPage() {
         status: "success",
         email: data.customer_email ?? null,
         amount: data.amount_total ?? null,
+        invoiceToken: data.invoice_token ?? null,
       });
     } catch {
       setState({
@@ -242,7 +250,11 @@ export default function CheckoutSuccessPage() {
           </Link>
 
           <Link
-            href={`/api/invoice?session_id=${sessionId}`}
+            href={
+              state.invoiceToken
+                ? `/api/invoice?session_id=${sessionId}&token=${state.invoiceToken}`
+                : `/api/invoice?session_id=${sessionId}`
+            }
             target="_blank"
             className="w-full h-12 rounded-2xl bg-accent/5 border border-accent/10 text-accent/60 font-medium text-sm flex items-center justify-center gap-2 hover:bg-accent/10 transition-colors"
           >

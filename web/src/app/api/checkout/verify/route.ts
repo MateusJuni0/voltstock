@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStripe, formatAmountFromStripe } from "@/lib/stripe";
+import { signInvoiceToken } from "@/lib/invoice-token";
 import { z } from "zod";
 
 const bodySchema = z.object({
@@ -29,12 +30,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Issue an invoice access token (cyber-neo CRIT-3 follow-up).
+    // Lets the customer download their invoice without auth, expires 90d.
+    // Returns null if INVOICE_SIGNING_SECRET is not configured — client
+    // falls back to authenticated path.
+    const invoiceToken = signInvoiceToken(session_id, "session");
+
     return NextResponse.json({
       valid: true,
       customer_email: session.customer_details?.email ?? null,
       amount_total: session.amount_total
         ? formatAmountFromStripe(session.amount_total)
         : null,
+      invoice_token: invoiceToken,
     });
   } catch (err: unknown) {
     const message =
