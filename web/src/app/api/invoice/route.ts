@@ -1,7 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
+import { createServerSupabase } from "@/lib/supabase/server";
+import { requireAdmin } from "@/lib/admin-guard";
 import { generateInvoiceHtml, generateInvoiceNumber } from "@/lib/invoice";
 
+// CRIT-3 do audit Cyber Neo 2026-04-25: ANTES, qualquer pessoa com order UUID
+// descarregava factura com nome/morada/NIF do cliente (PII / GDPR violation).
+// Auth model:
+//   - Admin (role='admin' em profiles) → pode ver qualquer factura.
+//   - User logged in que é dono (order.user_id === user.id) → pode ver a sua.
+//   - Guest checkout (order.user_id null) → bloqueado neste endpoint
+//     (TODO follow-up: emitir signed token no email de confirmação Stripe).
 export async function GET(request: NextRequest) {
   const orderId = request.nextUrl.searchParams.get("order_id");
   const sessionId = request.nextUrl.searchParams.get("session_id");
@@ -21,6 +30,33 @@ export async function GET(request: NextRequest) {
   if (orderError || !order) {
     return NextResponse.json({ error: "Encomenda não encontrada" }, { status: 404 });
   }
+
+  // ── Auth guard ────────────────────────────────────────────────────────────
+  // 1) Admin primeiro (uso interno: dashboard, scripts CMTec).
+  const adminGuard = await requireAdmin();
+  if (!adminGuard.ok) {
+    // 2) Não é admin: tem que ser session user dono da order.
+    const sb = await createServerSupabase();
+    const {
+      data: { user },
+    } = await sb.auth.getUser();
+
+    if (!user) {
+      return NextResponse.json(
+        { error: "Autenticação necessária para aceder à factura." },
+        { status: 401 },
+      );
+    }
+
+    const orderUserId = (order as { user_id?: string | null }).user_id;
+    if (!orderUserId || orderUserId !== user.id) {
+      return NextResponse.json(
+        { error: "Não tem permissão para aceder a esta factura." },
+        { status: 403 },
+      );
+    }
+  }
+  // ── /Auth guard ───────────────────────────────────────────────────────────
 
   // Fetch order items
   const { data: items } = await supabase

@@ -1,25 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
+import { requireAdmin } from "@/lib/admin-guard";
 import { sendShippingNotification } from "@/lib/email";
 
 // ── GET: List all orders (admin only) ──────────────────────────────────────
 
 export async function GET(request: NextRequest) {
-  const supabase = getSupabaseAdmin();
-
-  // Verify admin role via auth header
-  const authHeader = request.headers.get("x-user-id");
-  if (authHeader) {
-    const { data: profile } = await supabase
-      .from("profiles")
-      .select("role")
-      .eq("id", authHeader)
-      .single();
-
-    if (profile?.role !== "admin") {
-      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
-    }
+  // Auth guard: verifica session + role='admin' em profiles.
+  // ANTES: só verificava role se header 'x-user-id' presente — sem header, request passava sem auth.
+  // CRIT-2 do audit Cyber Neo 2026-04-25.
+  const guard = await requireAdmin();
+  if (!guard.ok) {
+    const status = guard.reason === "unauthenticated" ? 401 : 403;
+    return NextResponse.json({ error: "Forbidden" }, { status });
   }
+
+  const supabase = getSupabaseAdmin();
 
   const { searchParams } = new URL(request.url);
   const status = searchParams.get("status");
@@ -76,6 +72,15 @@ export async function GET(request: NextRequest) {
 // ── PATCH: Update order status/tracking ────────────────────────────────────
 
 export async function PATCH(request: NextRequest) {
+  // Auth guard: PATCH altera status, tracking_code, tracking_url, notes e dispara
+  // email de shipping ao cliente. ANTES: ZERO auth — qualquer request mudava state.
+  // CRIT-2 do audit Cyber Neo 2026-04-25.
+  const guard = await requireAdmin();
+  if (!guard.ok) {
+    const status = guard.reason === "unauthenticated" ? 401 : 403;
+    return NextResponse.json({ error: "Forbidden" }, { status });
+  }
+
   const supabase = getSupabaseAdmin();
   const body = await request.json();
 
