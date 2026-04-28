@@ -36,8 +36,8 @@ function parseProductPrice(priceStr: string): number {
 export async function POST(request: NextRequest) {
   // CSRF: verify Origin header
   const origin = request.headers.get("origin");
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
-  if (!origin || !appUrl.startsWith(origin)) {
+  const allowedOrigins = [process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000', 'https://voltstock1.vercel.app', 'http://localhost:3000'].filter(Boolean);
+  if (!origin || !allowedOrigins.includes(origin)) {
     return NextResponse.json({ error: "Origem não autorizada." }, { status: 403 });
   }
 
